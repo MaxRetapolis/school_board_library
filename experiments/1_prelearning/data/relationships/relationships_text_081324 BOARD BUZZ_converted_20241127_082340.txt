@@ -220,3 +220,120 @@ Here is a sample output based on the instructions:
 
 Note that this is just a sample output, and the actual output may vary based on the specific requirements of the LLaMA 3.2 model.
 
+---- Chunk File Name: 081324 BOARD BUZZ_chunk5_4793_6292.txt ----
+---- Chunk 5 ----
+---- Start Char: 4793 ||| End Char: 6292 ----
+Here are the extracted relationships and their attributes for each document:
+
+**Document 1:**
+
+* **Relationship:** Causal - Cause and Effect
+* **Source Entity:** Recent Incidents at Schools
+* **Target Entity:** Implementation of New Security Policy
+* **Description:** Recent incidents caused the implementation of the new security policy.
+* **Context or Evidence:** "The implementation of the new security policy resulted from the recent incidents at several schools."
+* **Date or Timeframe:** Not specified (Infer from document context)
+* **Document Name:** 081324 BOARD BUZZ.pdf
+* **Chunk Number:** 1
+* **Start Character:** 0
+* **End Character:** 180
+* **Chunk File Name:** 081324 BOARD BUZZ_chunk1_000_180.txt
+
+**Document 2:**
+
+* **Relationship:** Associative - Policy Enforcement
+* **Source Entity:** New Security Policy
+* **Target Entity:** Visitor Sign-In Procedure
+* **Description:** The security policy mandates the visitor sign-in procedure.
+* **Context or Evidence:** "This policy mandates that all visitors sign in at the front office."
+* **Date or Timeframe:** Effective May 2023
+* **Document Name:** 081324 BOARD BUZZ.pdf
+* **Chunk Number:** 1
+* **Start Character:** 181
+* **End Character:** 290
+* **Chunk File Name:** 081324 BOARD BUZZ_chunk1_001_180.txt
+
+**Additional Notes:**
+
+* Attention to Detail: Ensure all extracted information is accurate and relevant.
+* Clarity: Use clear and concise language in the output.
+* Completeness: Extract all relationships and their attributes as per the instructions.
+* Consistency: Follow the output format strictly to maintain uniformity.
+
+The output format should be:
+
+| Relationship | Source Entity | Target Entity | Description | Context or Evidence | Date or Timeframe | Document Name | Chunk Number | Start Character | End Character | Chunk File Name |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+For each document, extract the relevant information and format it according to this template.
+
+---- Chunk File Name: 081324 BOARD BUZZ_chunk6_5992_7491.txt ----
+---- Chunk 6 ----
+---- Start Char: 5992 ||| End Char: 7491 ----
+Here are the extracted relationships and their attributes:
+
+**Relationship 1: Recent Incidents Caused Implementation of New Security Policy**
+
+* Source Entity: Recent Incidents at Schools
+* Target Entity: Implementation of New Security Policy
+* Description: The implementation of the new security policy resulted from recent incidents at schools.
+* Context or Evidence: "The implementation of the new security policy resulted from the recent incidents at several schools."
+* Date or Timeframe: Not specified (Infer from document context)
+* Document Name: None
+* Chunk Number: 1
+* Start Character: 0
+* End Character: 180
+* Chunk File Name: None
+
+**Relationship 2: New Security Policy Mandates Visitor Sign-In Procedure**
+
+* Source Entity: New Security Policy
+* Target Entity: Visitor Sign-In Procedure
+* Description: The new security policy mandates the visitor sign-in procedure.
+* Context or Evidence: "This policy mandates that all visitors sign in at the front office."
+* Date or Timeframe: Effective May 2023
+* Document Name: None
+* Chunk Number: 1
+* Start Character: 181
+* End Character: 290
+* Chunk File Name: None
+
+**Relationship 3: Visitor Sign-In Procedure is Not a Substantial Change**
+
+* Source Entity: New Security Policy
+* Target Entity: Visitor Sign-In Procedure
+* Description: The security policy mandates the visitor sign-in procedure.
+* Context or Evidence: "This policy mandates that all visitors sign in at the front office."
+* Date or Timeframe: Effective May 2023
+* Document Name: None
+* Chunk Number: 1
+* Start Character: 181
+* End Character: 290
+* Chunk File Name: None
+
+**Relationship 4: Revised School Project is Not a Substantial Change**
+
+* Source Entity: New Security Policy
+* Target Entity: Revised School Project
+* Description: The new security policy mandates the visitor sign-in procedure.
+* Context or Evidence: "This policy mandates that all visitors sign in at the front office."
+* Date or Timeframe: Effective May 2023
+* Document Name: None
+* Chunk Number: 1
+* Start Character: 181
+* End Character: 290
+* Chunk File Name: None
+
+**Relationship 5: Revised School Project will Not Require Revisions to EIR**
+
+* Source Entity: New Security Policy
+* Target Entity: Revised School Project
+* Description: The new security policy mandates the visitor sign-in procedure.
+* Context or Evidence: "This policy mandates that all visitors sign in at the front office."
+* Date or Timeframe: Effective May 2023
+* Document Name: None
+* Chunk Number: 1
+* Start Character: 181
+* End Character: 290
+* Chunk File Name: None
+
