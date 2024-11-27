@@ -1,0 +1,1109 @@
+{
+    "entities": [
+        {
+            "type": "Person Name",
+            "name": "John Doe",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Role",
+            "name": "Board President",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Location",
+            "name": "Central High School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Meeting Type",
+            "name": "Regular Board Meeting",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Decision",
+            "name": "Presenting Citizens' Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Document Type",
+            "name": "Annual reports",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Vote Type",
+            "name": "Unanimous vote (AYE - NAY)",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Meeting Presence",
+            "name": "Present in person",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Extracted Entities",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Document Type",
+            "name": "Environmental Impact Report",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Vote Type",
+            "name": "None (No vote mentioned)",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Meeting Presence",
+            "name": "AYE - ABSENT, ADJOURNMENT",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Additional Relevant Entities",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* Person Name",
+            "name": "Cherrier, David (Trustee)",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* Organization",
+            "name": "Dublin Union School District",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* Event",
+            "name": "Board Meeting",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Type",
+            "name": "Person Name",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Name",
+            "name": "John Doe",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Type",
+            "name": "Document Type",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Type",
+            "name": "Decision",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Type",
+            "name": "Role",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Type",
+            "name": "Meeting Presence",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Seed Entities to Extract",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Additional Entities",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Extracted Entities",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "1",
+            "name": "Chiharu Kitchens, the new Assistant Principal at Dublin High",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "2",
+            "name": "Central High School, a school in Dublin, Ohio",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "3",
+            "name": "City of Dublin, Ohio",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "4",
+            "name": "Shamrock Hills TK-8 School, a proposed school to be named after St. Mary's Church in Dublin, Ohio",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* Attendance",
+            "name": "Cherrier, absent",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* TK-8 (Note",
+            "name": "The location of schools can sometimes be unclear, and \"TK-8\" may refer to a specific school within that grade level or area. If you would like to include this information, please let me know.)",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Type",
+            "name": "Name",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "1. Person Name",
+            "name": "John Doe",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "2. Role",
+            "name": "Board President",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "3. Location",
+            "name": "Central High School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "4. Meeting Type",
+            "name": "Regular Board Meeting",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "5. Decision",
+            "name": "Posting Annual Reports on community facilities and social media platforms",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "6. Document Type",
+            "name": "Annual Report",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "7. Vote Type",
+            "name": "N/A (No vote taken)",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "8. Meeting Presence",
+            "name": "Attendees",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "4. Meeting Type",
+            "name": "Resolution",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "5. Decision",
+            "name": "Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "6. Document Type",
+            "name": "Environmental Impact Report (EIR)",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "7. Vote Type",
+            "name": "Approved",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "8. Meeting Presence",
+            "name": "Present",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Meeting Information",
+            "name": "August 13, 2024",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Date",
+            "name": "August 27, 2024",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "September 10 & 24",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "October 8 & 22",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "November 12",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "December 3 & 17",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "BOARD MEETING INFORMATION",
+            "name": "For information on how to contact Board members, review current or past Board agendas, view archived Board meeting videos, participatein the Public Comment period of a Board meeting, and more, visit the Board section of the DUSD website . All meetings are live streamed atDublinUSD.tv UPCOMING BOARD MEETINGS:KEY DISTRICT DATES: 2024-2025 SCHOOL YEAR",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "1. Person Name",
+            "name": "Chiharu Kitchens",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "2. Role",
+            "name": "Board President",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "3. Location",
+            "name": "Central High School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "4. Meeting Type",
+            "name": "Resolution",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "5. Decision",
+            "name": "Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "6. Document Type",
+            "name": "Resolution",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "7. Vote Type",
+            "name": "Founding vote",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "8. Meeting Presence",
+            "name": "Present",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Event Name",
+            "name": "Revised School Project",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Event Description",
+            "name": "Capacity increase of students by 17.1%",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Additional Entity",
+            "name": "Transportation Impact Study",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "1",
+            "name": "Chiharu Kitchens",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "2",
+            "name": "Assistant Principal",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "3",
+            "name": "Dublin High",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "4",
+            "name": "Dublin Crossing Speci c Plan",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "5",
+            "name": "Resolution No. 2024-25-04",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "6",
+            "name": "Finding No Further Environmental Review Is Required For The Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "7",
+            "name": "Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "8",
+            "name": "Dublin Crossing Speci c Plan",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "9",
+            "name": "City of Dublin",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "10",
+            "name": "State Clearinghouse",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Adjournment",
+            "name": "Open Session for the August 13, 2024 Regular Board Meeting adjourned at 7:41 PM",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "1",
+            "name": "John Pelham",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "2",
+            "name": "John Kuo",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "3",
+            "name": "John Blackman",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "4",
+            "name": "John Speck",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "5",
+            "name": "John Peswani",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "6",
+            "name": "Peggy Cherrier",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "7",
+            "name": "David Cheyney",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "8",
+            "name": "Patricia Yeats",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "9",
+            "name": "Robert Greenberg",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "10",
+            "name": "Julie Pe\u00f1a",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "11",
+            "name": "Mark Cervantes",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "12",
+            "name": "William Smith",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Presenting the reports is the current CBOC Chair Seema Badar.ATTACHMENTS",
+            "name": "Click here for all related documents",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "VOTE",
+            "name": "(No vote taken)AYE - NAY - Livestream Viewers: 43 Unique Zoom Participants: 0STAFF New",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Title",
+            "name": "Superintendent",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Vote",
+            "name": "Aye",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Core Entities",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Attendance",
+            "name": "Present",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Extended Entities",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Citizens Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Items",
+            "name": "Resolve Resolution No. 2024-25-04, Findings No Further Environmental Review Required For Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "Approved budget for 2024",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "Citizens Bond Oversight Committee Annual Reports",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Independent Citizens' Bond Oversight Committee (CBOC)",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "CBOC Posts Yrs With QR Code Links In All Community Facilities",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motion and Amendment",
+            "name": "Approved Budget for 2024",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Decision Type and Result",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "- Decision",
+            "name": "Approved budget for 2024",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "- Vote",
+            "name": "Yes",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Document Type and Content",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "- Document Type",
+            "name": "Approved Budget Statement",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "- Document Name",
+            "name": "Citizens Bond Oversight Committee Annual Reports",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "- File Number",
+            "name": "Not Available",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ITEM L1",
+            "name": "Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "The District was noti ed by the City pursuant to all applicable CEQA provisions during the environmental review process conducted for the EIR and reviewed and commented on the EIR. Further, the previously certi ed EIR evaluated and mitigated the impacts of the Original School Project with theanticipated development of the Dublin Crossing Speci c Plan. The District has now determined that the Dublin Crossing community would be better  servedby siting a TK-8 school, to be named the Shamrock Hills TK-8 School, in the Project area rather than the originally proposed K-5 school and expanding thenumber of students from 900 to 1,054 ( Revised School Project ). The Revised School Project would be located on the same 12-acre location as the OriginalSchool Project. Public Resources Code section 21166 requires that when an environmental impact report has been prepared for a project, no subsequent or supplemental environmental impact report shall be required by the lead agency or by any responsible agency, unless one or more of the following events occur",
+            "name": "Substantial changes are proposed in the project which will require major revisions of the environmental impact report; Substantial changes occur with respect to the circumstances under which the project is being undertaken which will require major revisions in",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Person Name",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Role",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Location",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Decision",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Document Type",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Vote Type",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Attendance",
+            "name": "**",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Attendance",
+            "name": "Present, Excused",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Items",
+            "name": "1. Budget Update, 2. New Policy Discussion",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Items",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Items",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Names",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Groups",
+            "name": "Parents, Teachers, Students",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comments",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Attendance",
+            "name": "Absent, Present",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Groups",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Items",
+            "name": "Approved budget for 2024",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Decision",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Name",
+            "name": "Budget Approval",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Person Name",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Name",
+            "name": "Cherrier",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Name",
+            "name": "Budget Approval for 2024",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Action Item",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Name",
+            "name": "Classroom Update",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Name",
+            "name": "Lee",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Name",
+            "name": "Davis",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Motion",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Amendment",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Announcement",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "California School Code Section 48210",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Policy Name",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Conflict of Interest",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Extracted Entities",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "- Livestream Viewers",
+            "name": "Unique Zoom Participants",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Additional Entities",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* District Name",
+            "name": "[Not provided in the text]",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* Meeting Date",
+            "name": "November 11, November 22, November 25-29, December 23 - January 6",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* Meeting Time",
+            "name": "[Not specified in the text]",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* Speaker",
+            "name": "John Doe",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* Committee Members",
+            "name": "[Not mentioned in the text]",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* Student Name",
+            "name": "[Not provided in the text]",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "* School Year",
+            "name": "2023/24",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "210608DUSD REGULAR BOARD MEETING",
+            "name": "AUGUST 27, 2024The key items discussed  during the August 27, 2024 Regular Board Meeting include:",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ITEM E2",
+            "name": "Facilities Project Update",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ITEM E3",
+            "name": "Enrollment Update",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ITEM E2",
+            "name": "Facilities Project UpdateOn October 10th, 2023, the Board approved Implementation Plan 3a_rv.3. Today Staff will update the progress of the currently activeprojects with budget information. Staff will also report and update current and expected Facilities related revenue.",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ATTACHMENTS",
+            "name": "View the Facilities Project Update presentation here",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "VOTE",
+            "name": "(No vote taken)",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "210608DUSD REGULAR BOARD MEETING",
+            "name": "AUGUST 27, 2024The key items discussed  during the August 27, 2024 Regular Board Meeting include:",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ITEM E2",
+            "name": "Facilities Project Update",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ITEM E3",
+            "name": "Enrollment Update",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ITEM E2",
+            "name": "Facilities Project UpdateOn October 10th, 2023, the Board approved Implementation Plan 3a_rv.3. Today Staff will update the progress of the currently activeprojects with budget information. Staff will also report and update current and expected Facilities related revenue.",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ATTACHMENTS",
+            "name": "View the Facilities Project Update presentation here",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Vote",
+            "name": "(No vote taken)",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Attachment",
+            "name": "View the DUSD Enrollment Update here",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Open Session for the August 13, 2024 Regular Board Meeting adjourned at 8",
+            "name": "27 PM.",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "06September 10 & 24",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "October 8 & 22",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "November 12",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "December 3 & 17",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "KEY DISTRICT DATES",
+            "name": "2024-2025 SCHOOL YEAR",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "September 2",
+            "name": "Labor Day",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "October 10-11",
+            "name": "No School",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "November 1",
+            "name": "No School",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Person Name",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Role",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Location",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Meeting Type",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Decision",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Person Name: O'Connor",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Role: School Board Member",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Location: Washington High School",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Meeting Type: Special Board Meeting",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Decision: Approval of Budget",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Document Type: Resolution",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Vote Type: Yes",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Meeting Presence: Absent",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "210608DUSD REGULAR BOARD MEETING",
+            "name": "AUGUST 27, 2024The key items discussed  during the August 27, 2024 Regular Board Meeting include:",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ITEM E2",
+            "name": "Facilities Project Update",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ITEM E3",
+            "name": "Enrollment Update",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "ITEM E1",
+            "name": "Implementation Plan 3a_rv.3",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Person Name",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Role",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Location",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Meeting Type",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Decision",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Document Type",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Vote Type",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "- Livestream Viewers",
+            "name": "## Unique Zoom Participants: ##RECOGNITIONSDuring the August 27 Board Meeting, the district celebrated the 10U and 12U Dublin Little League Softball State Champions. Of these 25young athletes, all but one are DUSD students, representing Wells Middle, and Murray, Fredericksen, Green, Amador, and Dublin ElementarySchools.ITEM E3:  Enrollment Update AYE - ABSENT -In August 2024, an update on Transitional Kindergarten (TK) was shared with the Board of Trustees. As the TK eligibility expands, wecontinue to enroll more TK-aged students. The presentation shares our current enrollment numbers for TK, Kindergarten, and thedistrict-wide enrollment broken down by school and grade level. The projected numbers detail the TK and Kindergarten enrollment over thenext few years and the increased enrollment's impact on facilities and programming.",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Attendance",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Agenda Items",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Action Items",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Budget Items",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Policy Names",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Stakeholder Groups",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Announcements",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Motions and Amendments",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Compliance Issues",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Conflicts of Interest",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Public Comments",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "**Vote Results",
+            "name": "**",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Attendance",
+            "name": "Present",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "BOARD MEETING INFORMATION",
+            "name": "For information on how to contact Board members, review current or past Board agendas, view archived Board meeting videos, participate in the Public Comment period of a Board meeting, and more, visit the Board section of the DUSD website . All meetings are live streamed at DublinUSD.tv UPCOMING BOARD MEETINGS: Key District Dates 2024-2025 School Year September 2: Labor Day October 10-11: No School November 1: No School",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Resolution Approving New Playground Equipment",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Parent-Teacher Association Representative",
+            "name": "Ms. Lee",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Arrange for Inspection of Playgrounds",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Allocation",
+            "name": "75% of funds to be used for Playground Equipment",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "School Safety Initiative",
+            "source_file": "082724 BOARD BUZZ_converted.txt"
+        }
+    ]
+}

@@ -1,0 +1,350 @@
+{
+    "source_file": "081324 BOARD BUZZ_converted.txt",
+    "entities": [
+        {
+            "type": "Attendance",
+            "name": "Present",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Attendance",
+            "name": "Absent",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Item G2",
+            "name": "Citizens Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Review reports with CBOC committee members",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "$100,000 allocated for bond funds expenditures",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "Education Code Section 15278",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Independent Citizens' Bond Oversight Committee",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "Posting of reports in community facilities with QR code links",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Motion 2024-25-05 passed, Resolution No. 2024-25-04 approved",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "None reported",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "Superintendent Rodriguez disclosed potential conflict",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "Parent representative Davis expressed concern about new policy on student discipline",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "None specified",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "None specified",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "Dublin Crossing Speci c Plan Final Environmental Impact Report (EIR)",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "City of Dublin",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "Adoption of Resolution No. 186-13",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Resolution No. 2024-25-04",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "CEQA Guidelines",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "None specified",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "None specified",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "TK-8 school proposed",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Names",
+            "name": "Shamrock Hills TK-8 School Policy",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Review and finalize Revised School Project",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Attendance",
+            "name": "Present, Absent, Excused",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Environmental impact report",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "New information became available",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "None mentioned",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "None mentioned",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Attendance",
+            "name": "Present - All members",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Attendance",
+            "name": "Present - All parents",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Names",
+            "name": "Student Nutrition Policy, Safety in Schools Policy",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Groups",
+            "name": "Parents, Teachers, Students",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "New school year dates, bus schedules updated",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Motion to approve new curriculum, amended by Board member 3",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "Non-compliance with state regulations, ongoing review",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "None disclosed",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comments",
+            "name": "Feedback on proposed budget, concerns raised",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Entity Type",
+            "name": "Meeting",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Meeting Dates",
+            "name": "August 27, September 10 & 24, October 8 & 22, November 12, December 3 & 17",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Budget Approval",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Follow-up Report",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "$10 million allocation",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "Student Discipline Policy",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Parents, Teachers, Students",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "Upcoming Summer Program Updates",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Proposed Amendment to Budget",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "Regulatory Compliance Update",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "Disclosed Conflict of Superintendent Smith",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "Feedback on New Curriculum",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Items",
+            "name": "Budget Allocation, Transportation Impact Study",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Items",
+            "name": "District Commissioned Study Review, Transportation Plans Update",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Items",
+            "name": "$10 Million for New Buildings, $2 Million for Infrastructure",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Names",
+            "name": "School Capacity Guidelines, Transportation Regulations",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Groups",
+            "name": "Parents, Teachers, Students, Staff",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "Spring Break Dates, New Teacher Orientation Schedule",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Revised Budget Proposal, Increased Funding for Arts Programs",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "CEQA Guidelines Compliance, Transportation Impact Study Review",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "None Disclosed",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comments",
+            "name": "Questions on Budget Allocation, Concerns about School Capacity",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Names",
+            "name": "Revised School Project EIR",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Items",
+            "name": "Project revisions, CEQA compliance",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Items",
+            "name": "Review and revise EIR, notify affected parties",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Items",
+            "name": "Allocation of funds for revised project",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "Upcoming events, important deadlines",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Proposal to amend public resources code section 21166",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "EIR approval, CEQA requirements",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comments",
+            "name": "Feedback on proposed revisions",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        }
+    ]
+}

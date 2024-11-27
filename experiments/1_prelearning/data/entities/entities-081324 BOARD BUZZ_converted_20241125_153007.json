@@ -1,0 +1,415 @@
+{
+    "source_file": "081324 BOARD BUZZ_converted.txt",
+    "entities": [
+        {
+            "type": "Attendance",
+            "name": "Present",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Citizens Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Post reports with QR code links in community facilities",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "Shamrock Hills TK-8 School budget allocation",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "Education Code Section 15278 policy review",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Citizens' Bond Oversight Committee, Washington County School District Board of Trustees",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "Availability of annual reports and budget information",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "Environmental compliance review for Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "Disclosed by Superintendent Michael Davis",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Items",
+            "name": "Report presentation",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Items",
+            "name": "N/A",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Items",
+            "name": "N/A",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Names",
+            "name": "N/A",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Groups",
+            "name": "Parents, CBOC members, Families",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "Distribution of reports through various channels",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "N/A",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "N/A",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "N/A",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comments",
+            "name": "N/A",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Parents",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "New school project approved",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "Environmental review complete",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comments",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Budget Allocation",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Follow-up Report",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "$10 Million",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "Student Transportation",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "New Program Launch",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Motion 123 Passed",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "CEQA Violation",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "Superintendent Smith",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "Concerns Raised",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Review of environmental impact report",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Names",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Groups",
+            "name": "Parents, Teachers, Students",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "New information regarding the environmental impact report",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Item L1 continued next page",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "None",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comments",
+            "name": "AYE - ABSENT",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Develop Budget Plan",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Names",
+            "name": "Student Discipline Policy",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Parents and Teachers Association",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Items",
+            "name": "Funding Allocation for New Program",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "ADA Compliance Audit",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "Upcoming Summer Camp Registration",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Motion to Amend Budget Plan",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "Concerns about School Safety",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "New Program Funding",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Superintendent to research funding options",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "$100,000 for new program",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "Washington High School Improvement Plan",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Parents Teachers Students Association",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "Upcoming events and deadlines",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Proposed amendment to policy 12.3",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "Regulatory updates on food service",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "Disclosed conflict of interest by Board Member Smith",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comments",
+            "name": "Feedback on proposed budget",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Policy Revision Update",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Department heads to review and implement changes",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "$500 for policy update implementation",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Teachers Principals Administrators",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "Upcoming training sessions",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Proposed amendment to budget allocation",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "Regulatory updates on student data",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "Disclosed conflict of interest by Board Member Johnson",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comments",
+            "name": "Feedback on policy revision",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Study Transportation Impact",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Revised School Project",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "CEQA Guidelines",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Parents, Teachers, Students",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "Summer Break Dates",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "Regulatory Compliance Review",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "Open Discussion",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Names",
+            "name": "Revised School Project",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "EIR fulfillment requirements updated",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "CEQA requirements met",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "None declared",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Items",
+            "name": "$1.5 million allocated",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        }
+    ]
+}

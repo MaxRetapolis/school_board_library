@@ -1,0 +1,3 @@
+paths:
+  raw_documents: "C:/school_board_library/data/raw_documents"
+  data_folder: "C:/school_board_library/data/index_outputs"

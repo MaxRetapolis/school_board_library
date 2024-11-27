@@ -1,0 +1,105 @@
+{
+    "source_file": "081324 BOARD BUZZ_converted.txt",
+    "entities": [
+        {
+            "type": "1. Person Name",
+            "name": "John Doe",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "2. Role",
+            "name": "Board President",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "3. Location",
+            "name": "Central High School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "4. Meeting Type",
+            "name": "Regular Board Meeting",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "5. Decision",
+            "name": "Posting Annual Reports on community facilities and social media platforms",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "6. Document Type",
+            "name": "Annual Report",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "7. Vote Type",
+            "name": "N/A (No vote taken)",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "8. Meeting Presence",
+            "name": "Attendees",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "4. Meeting Type",
+            "name": "Resolution",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "5. Decision",
+            "name": "Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "6. Document Type",
+            "name": "Environmental Impact Report (EIR)",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "7. Vote Type",
+            "name": "Approved",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "8. Meeting Presence",
+            "name": "Present",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Meeting Information",
+            "name": "August 13, 2024",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Date",
+            "name": "August 27, 2024",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "September 10 & 24",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "October 8 & 22",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "November 12",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "December 3 & 17",
+            "name": "Regular Board Meeting @ 6PM",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "BOARD MEETING INFORMATION",
+            "name": "For information on how to contact Board members, review current or past Board agendas, view archived Board meeting videos, participatein the Public Comment period of a Board meeting, and more, visit the Board section of the DUSD website . All meetings are live streamed atDublinUSD.tv UPCOMING BOARD MEETINGS:KEY DISTRICT DATES: 2024-2025 SCHOOL YEAR",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        }
+    ]
+}

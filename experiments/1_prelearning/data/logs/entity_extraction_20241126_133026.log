@@ -1,0 +1,86 @@
+2024-11-26 13:30:45,663 - INFO - API Connectivity Test Successful.
+2024-11-26 13:30:45,690 - INFO - Loaded 43 available converted file(s).
+2024-11-26 13:30:45,691 - INFO - Selected the first 1 file(s) to process.
+2024-11-26 13:30:45,697 - INFO - \U0001f4c4 Processing Document: 081324 BOARD BUZZ.pdf
+2024-11-26 13:30:45,697 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 9 chunk(s) with overlap.
+2024-11-26 13:30:45,697 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 9 chunk(s).
+2024-11-26 13:30:45,701 - INFO - \U0001f504 Processing Chunk 1/9 of '081324 BOARD BUZZ.pdf'
+2024-11-26 13:30:45,704 - INFO - Ollama API prompt for Chunk 1: 
+You are an AI language model tasked with extracting entities from the following text.
+
+Please extract entities and provide them in the following JSON format:
+
+{
+  "source_file": "<source_file>",
+  "entities": [
+    {"type": "<entity_type>", "name": "<entity_name>"},
+    ...
+  ]
+}
+
+Here is the text:
+
+
+210608DUSD REGULAR BOARD MEETING: AUGUST 13, 2024The key items discussed  during the August 13, 2024 Regular Board Meeting include:  ITEM G2 : Citizens  Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023  ITEM L1 : Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 SchoolITEM G2 : Citizens  Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023The Independent Citizens' Bond Oversight Committee (CBOC) is submitting the 2021-2022 and 2022-2023 Annual Reports to the Board of Trustees. Due tocommittee membership turnover, the 2021-2022 report has not been presented to the Board and both reports are being presented simultaneously. Thepurpose of the CBOC is to inform the public and the Board regarding expenditures of bond funds pursuant to Education Code Section 15278. In order tonotify the community of the availability of the reports, the CBOC has decided to post  yers with QR code links in all community facilities such as City Hall,
+2024-11-26 13:31:32,646 - INFO - Ollama API response for Chunk 1: {
+  "source_file": "<source_file>",
+  "entities": [
+    {
+      "type": "location",
+      "name": "City Hall"
+    },
+    {
+      "type": "organization",
+      "name": "Independent Citizens' Bond Oversight Committee (CBOC)"
+    },
+    {
+      "type": "organization",
+      "name": "Board of Trustees"
+    },
+    {
+      "type": "location",
+      "name": "Shamrock Hills TK-8 School"
+    },
+    {
+      "type": "number",
+      "value": "2024-25-04"
+    },
+    {
+      "type": "date",
+      "value": "August 13, 2024"
+    },
+    {
+      "type": "organization",
+      "name": "CBOC"
+    }
+  ],
+  "extra_info":
+  {
+    "entities_with_dates": [
+      {
+        "type": "location",
+        "name": "City Hall",
+        "dates": [
+          "2021-2022",
+          "2022-2023"
+        ]
+      },
+      {
+        "type": "organization",
+        "name": "Independent Citizens' Bond Oversight Committee (CBOC)",
+        "dates": [
+          "2021-2022",
+          "2022-2023"
+        ],
+        "additional_info":{
+          "location_type": "annual_report"
+        }
+      },
+      {
+        "type": "organization",
+        "name": "Board of Trustees"
+        }
+    ]
+  }
+}
+2024-11-26 13:31:32,647 - INFO - \u2705 Extracted 7 entities from Chunk 1.

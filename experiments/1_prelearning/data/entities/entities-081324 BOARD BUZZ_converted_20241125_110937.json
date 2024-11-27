@@ -1,0 +1,120 @@
+{
+    "source_file": "081324 BOARD BUZZ_converted.txt",
+    "entities": [
+        {
+            "type": "1",
+            "name": "Chiharu Kitchens",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "2",
+            "name": "Assistant Principal",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "3",
+            "name": "Dublin High",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "4",
+            "name": "Dublin Crossing Speci c Plan",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "5",
+            "name": "Resolution No. 2024-25-04",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "6",
+            "name": "Finding No Further Environmental Review Is Required For The Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "7",
+            "name": "Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "8",
+            "name": "Dublin Crossing Speci c Plan",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "9",
+            "name": "City of Dublin",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "10",
+            "name": "State Clearinghouse",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Adjournment",
+            "name": "Open Session for the August 13, 2024 Regular Board Meeting adjourned at 7:41 PM",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "1",
+            "name": "John Pelham",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "2",
+            "name": "John Kuo",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "3",
+            "name": "John Blackman",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "4",
+            "name": "John Speck",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "5",
+            "name": "John Peswani",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "6",
+            "name": "Peggy Cherrier",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "7",
+            "name": "David Cheyney",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "8",
+            "name": "Patricia Yeats",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "9",
+            "name": "Robert Greenberg",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "10",
+            "name": "Julie Pe\u00f1a",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "11",
+            "name": "Mark Cervantes",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "12",
+            "name": "William Smith",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        }
+    ]
+}

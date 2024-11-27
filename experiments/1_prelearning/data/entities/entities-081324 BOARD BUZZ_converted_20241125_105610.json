@@ -1,0 +1,60 @@
+{
+    "source_file": "081324 BOARD BUZZ_converted.txt",
+    "entities": [
+        {
+            "type": "1. Person Name",
+            "name": "Chiharu Kitchens",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "2. Role",
+            "name": "Board President",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "3. Location",
+            "name": "Central High School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "4. Meeting Type",
+            "name": "Resolution",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "5. Decision",
+            "name": "Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 School",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "6. Document Type",
+            "name": "Resolution",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "7. Vote Type",
+            "name": "Founding vote",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "8. Meeting Presence",
+            "name": "Present",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Event Name",
+            "name": "Revised School Project",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Event Description",
+            "name": "Capacity increase of students by 17.1%",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Additional Entity",
+            "name": "Transportation Impact Study",
+            "source_file": "081324 BOARD BUZZ_converted.txt"
+        }
+    ]
+}

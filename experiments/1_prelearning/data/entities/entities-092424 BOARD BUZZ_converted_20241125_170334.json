@@ -1,0 +1,420 @@
+{
+    "source_file": "092424 BOARD BUZZ_converted.txt",
+    "entities": [
+        {
+            "type": "Attendance",
+            "name": "Present",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Contract Amendment No. 1 for Design and Construction for Shamrock Hills School",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Items",
+            "name": "Review and approve amendment; notify stakeholders of changes",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "$500,000 allocated for school renovation",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "Instructional Materials Policy",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Parents, Teachers, Students",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "Upcoming parent-teacher conferences",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "None",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "Regulatory compliance with California Education Code Section 60119",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "Superintendent John Smith disclosed financial interest in contracting firm",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "Parent expressed concern about instructional materials quality",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Sexual Health Instructional Materials for Grade 5",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Items",
+            "name": "Review and approve materials; provide teacher training on implementation",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "Sex Education Policy",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "Upcoming school health fair",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "Compliance with California Department of Public Health guidelines",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "Board member Jane Doe disclosed personal connection to educational publishing company",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Public Hearing on Textbook Requirements",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Review and adopt resolution on textbook requirements",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "Allocation for textbooks and instructional materials",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "California Education Code Section 60119",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "Post notice of public hearing at least ten days before the hearing",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Adopted resolution on textbook requirements with amendments",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "State statute requirement for public hearing on textbook requirements",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "None disclosed or discussed",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "Feedback from parents and teachers",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "Facilities Master Plan",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Attendance",
+            "name": "Full Board Present",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Shamrock Hills School Construction",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Review and approve amendment adding scope for Phase 1 Increment 1",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "$5,912,434.00",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Parents",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Teachers",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "Concerns regarding construction timeline and budget allocation",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Review and Revision of Curriculum",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Items",
+            "name": "Draft revised curriculum document, Schedule follow-up meeting",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Names",
+            "name": "Kindergarten Through Grade 12 Schools and Local Community College PublicEducation Facilities Modernization, Repair, and Safety Bond Act of 2024",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Groups",
+            "name": "Parents, Teachers, Students",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "Upcoming parent-teacher conferences scheduled for December",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Resolution 2024-25-10, Supporting Proposition 2",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "None disclosed",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "Jane Smith (Board President) - Potential conflict due to her role as Board President and financial ties to certain district contractors",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Discussion of School Safety Measures",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Review and revise school safety protocols by June 1st",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "New Student Enrollment Procedures",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Parent-Teacher Association",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "Upcoming Summer Camp Dates",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Seconded motion to adopt new student enrollment procedures, pending review and revision",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "Regulatory updates on IEP requirements",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "Disclosed conflict between Board Member Jane Doe and a district vendor",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "Request for more information on the proposed budget cuts",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Discussion of COVID-19 Vaccination Mandates",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Review and revise district vaccination policies by February 15th",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "New Student Vaccine Requirements",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Stakeholder Group",
+            "name": "Teachers Union Representative",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "Upcoming Staff Development Workshops",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Motion to adopt new student vaccine requirements, pending review and revision",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "Regulatory updates on EEOC guidelines",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "Disclosed conflict between Board Member John Smith and a pharmaceutical vendor",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "Concerns about the impact of vaccination mandates on student health",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "Budget Allocation Review",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Follow-up meeting with district staff",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "$10 million allocated to education programs",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "New Curriculum Policy",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Proposal for new school start times",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "Regulatory update on special needs services",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "Superintendent's husband works in the district",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comment",
+            "name": "Concerns about school security measures",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Agenda Item",
+            "name": "2024 Budget Review",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Action Item",
+            "name": "Follow-up with Department Heads",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Budget Item",
+            "name": "$10 million allocation",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Name",
+            "name": "Curriculum Revision",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcement",
+            "name": "New technology installation",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Passed motion to approve budget",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issue",
+            "name": "NCLB compliance review",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflict of Interest",
+            "name": "None disclosed",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Attendance",
+            "name": "Absent",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Policy Names",
+            "name": "Standardized Testing, Curriculum Review",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Announcements",
+            "name": "Upcoming events and deadlines",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Motions and Amendments",
+            "name": "Proposed budget allocation changes",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Compliance Issues",
+            "name": "Regulatory update on special education services",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Conflicts of Interest",
+            "name": "Disclosed conflict of interest by Board Member Johnson",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        },
+        {
+            "type": "Public Comments",
+            "name": "Feedback from community members regarding school improvements",
+            "source_file": "092424 BOARD BUZZ_converted.txt"
+        }
+    ]
+}
