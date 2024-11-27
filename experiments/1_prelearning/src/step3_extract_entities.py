@@ -12,8 +12,8 @@ import time  # Add import for timing
 # Configuration Section
 # =======================
 
-# Path to the JSON file containing the list of available converted files
-AVAILABLE_FILES_JSON = r"C:\school_board_library\experiments\1_prelearning\data\2_AVAILABLE_CONVERTED_FILES.JSON"
+# Correct the path to the JSON file to match the actual filename
+AVAILABLE_FILES_JSON = r"C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json"
 
 # Directory to save the extracted entities
 ENTITIES_DIR = r"C:\school_board_library\experiments\1_prelearning\data\entities"
@@ -27,7 +27,13 @@ os.makedirs(LOGS_DIR, exist_ok=True)
 EXTRACTED_ENTITIES_FILE = os.path.join(ENTITIES_DIR, "extracted_entities.json")
 
 # Number of lines per chunk
-LINES_PER_CHUNK = 10  # Reduced from 20 to 10
+LINES_PER_CHUNK = 20  # Changed from 10 to 20
+
+# Number of characters per chunk
+CHARS_PER_CHUNK = 1500  # Changed from 2500 to 1500 characters
+
+# Overlap size in characters
+OVERLAP_CHARS = 300  # Overlap decreased from 400 to 300 characters
 
 # =======================
 # Logging Configuration
@@ -125,14 +131,27 @@ def parse_arguments():
     """
     Parses command-line arguments.
     """
+    import argparse  # Ensure argparse is imported
+    
+    def positive_int_or_all(value):
+        if value.lower() == 'all':
+            return 'all'
+        try:
+            ivalue = int(value)
+            if ivalue < 1:
+                raise argparse.ArgumentTypeError("Number must be a positive integer or 'all'.")
+            return ivalue
+        except ValueError:
+            raise argparse.ArgumentTypeError("Number must be a positive integer or 'all'.")
+    
     parser = argparse.ArgumentParser(description="Extract entities from school board meeting documents.")
     
-    # Only keep --number_of_files and --model arguments
+    # Updated --number_of_files argument to accept integers and 'all'
     parser.add_argument(
         '--number_of_files',
-        choices=['1', 'all'],
-        default='1',
-        help="Number of files to process: '1' for a single file or 'all' to process all available files."
+        type=positive_int_or_all,
+        default=1,
+        help="Number of files to process: specify a positive integer (e.g., '5') or 'all' to process all available files."
     )
     
     parser.add_argument(
@@ -163,19 +182,16 @@ def load_available_files(json_path):
             sys.exit(1)
         
         if not available_files:
-            logging.warning(f"No entries found in available files JSON: {json_path}")
-            print(f"⚠️ No entries found in available files JSON: {json_path}")
+            logging.warning(f"No available files found in '{json_path}'. Exiting.")
+            sys.exit(1)
         
-        logging.info(f"Loaded {len(available_files)} available converted file(s).")
-        print(f"✅ Loaded {len(available_files)} available converted file(s).")
+        logging.info(f"Loaded {len(available_files)} available file(s) from '{json_path}'.")
+        print(f"✅ Loaded {len(available_files)} available file(s) from '{json_path}'.")
+        
         return available_files
-    except json.JSONDecodeError as e:
-        logging.error(f"Error decoding JSON from '{json_path}': {e}")
-        print(f"❌ Error decoding JSON from '{json_path}': {e}")
-        sys.exit(1)
     except Exception as e:
-        logging.error(f"Unexpected error reading '{json_path}': {e}")
-        print(f"❌ Unexpected error reading '{json_path}': {e}")
+        logging.error(f"Failed to load available files from '{json_path}': {e}")
+        print(f"❌ Failed to load available files from '{json_path}': {e}")
         sys.exit(1)
 
 def select_files_to_process(available_files, num_files, process_all):
@@ -202,48 +218,67 @@ def select_files_to_process(available_files, num_files, process_all):
             print(f"⚠️ 'converted_file_path' missing for '{original_file}'. Skipping this file.")
             continue
         
-        if not os.path.isfile(converted_path):
-            logging.warning(f"Converted file not found: {converted_path}. Skipping '{original_file}'.")
-            print(f"⚠️ Converted file not found: {converted_path}. Skipping '{original_file}'.")
+        # Normalize the path to handle backslashes correctly
+        normalized_path = os.path.normpath(converted_path)
+        
+        if not os.path.isfile(normalized_path):
+            logging.warning(f"Converted file not found: {normalized_path}. Skipping '{original_file}'.")
+            print(f"⚠️ Converted file not found: {normalized_path}. Skipping '{original_file}'.")
             continue
         
-        valid_selected_files.append(file_info)
+        valid_selected_files.append({
+            "original_file_name": original_file,
+            "converted_file_path": normalized_path
+        })
     
     logging.info(f"{len(valid_selected_files)} out of {len(selected_files)} selected file(s) are valid and will be processed.")
     print(f"✅ {len(valid_selected_files)} out of {len(selected_files)} selected file(s) are valid and will be processed.")
     
     return valid_selected_files
 
-def split_text_into_chunks(file_path, lines_per_chunk):
+def split_text_into_chunks(file_path, chars_per_chunk=CHARS_PER_CHUNK, overlap_chars=OVERLAP_CHARS):
     """
-    Splits the text file into chunks of specified number of lines with overlap.
-    Each new chunk starts with 2 lines from the previous chunk.
+    Splits the text file into chunks of specified number of characters with overlap.
+    Each chunk starts and ends on a complete word.
     """
-    overlap = 2  # Number of overlapping lines
+    import string
+
+    punctuation = set(string.punctuation)
     chunks = []
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            current_chunk = []
-            previous_lines = []
-            for line in f:
-                current_chunk.append(line.strip())
-                if len(current_chunk) == lines_per_chunk:
-                    # Prepend the overlapping lines from the previous chunk
-                    if previous_lines:
-                        chunk = '\n'.join(previous_lines + current_chunk)
-                    else:
-                        chunk = '\n'.join(current_chunk)
-                    chunks.append(chunk)
-                    # Update previous_lines to the last 2 lines of the current chunk
-                    previous_lines = current_chunk[-overlap:]
-                    current_chunk = []
-            if current_chunk:
-                if previous_lines:
-                    chunk = '\n'.join(previous_lines + current_chunk)
-                else:
-                    chunk = '\n'.join(current_chunk)
-                chunks.append(chunk)
-        logging.info(f"Split '{file_path}' into {len(chunks)} chunk(s) with overlap.")
+            text = f.read()
+        
+        start = 0
+        text_length = len(text)
+        
+        while (start < text_length):
+            end = start + chars_per_chunk
+            if end >= text_length:
+                chunk = text[start:].strip()
+                chunks.append((chunk, start, text_length))
+                break
+            else:
+                # Move 'end' back to the last space or punctuation to avoid splitting words
+                while end > start and text[end] not in punctuation and text[end] != ' ':
+                    end -= 1
+                if end == start:
+                    # If no space or punctuation found, extend to the next space
+                    end = text.find(' ', start + chars_per_chunk)
+                    if end == -1:
+                        end = text_length
+                chunk = text[start:end].strip()
+                chunks.append((chunk, start, end))
+                
+                # Determine the new start with overlap
+                overlap_start = end - overlap_chars
+                # Ensure overlap_start does not split a word
+                while overlap_start > start and text[overlap_start] not in punctuation and text[overlap_start] != ' ':
+                    overlap_start -= 1
+                if overlap_start <= start:
+                    overlap_start = end  # No valid overlap found, move to the end
+                start = overlap_start
+        logging.info(f"Split '{file_path}' into {len(chunks)} chunk(s) based on characters with overlap on word boundaries.")
         return chunks
     except Exception as e:
         logging.error(f"Error reading file '{file_path}': {e}")
@@ -281,22 +316,69 @@ def call_ollama(prompt):
         print(f"❌ Unexpected error during Ollama command: {e}")
         return None
 
-def parse_ollama_response(response, source_file):
+def process_model_output(response, document_name, chunk_number):
     """
-    Parses the Ollama response and converts it into the defined JSON structure.
+    Processes the raw model output and adds Document Name and Chunk Number.
+    Converts it into a structured JSON format.
+    Ensures that all attributes are captured without loss.
     """
     try:
-        data = json.loads(response)
-        entities = data.get("entities", [])
+        # Initialize the final entities list
+        entities = []
+
+        # Split the response into sections based on headings
+        sections = re.split(r'\*\*([A-Za-z\s]+)\*\*', response)
+        current_section = None
+
+        for i in range(1, len(sections), 2):
+            current_section = sections[i].strip()
+            content = sections[i + 1].strip()
+            
+            # Split the content into individual entities
+            entity_blocks = re.split(r'\n\d+\.', content)
+            for block in entity_blocks:
+                if block.strip() == '':
+                    continue
+                # Extract entity details using regex
+                matches = re.findall(r'\* (.+?): (.+)', block)
+                entity = {}
+                for match in matches:
+                    key, value = match
+                    entity[key.strip()] = value.strip()
+                # Assign the section as the entity type if not already set
+                if current_section and 'type' not in entity:
+                    entity['type'] = current_section
+                if 'Event Name' in entity:
+                    entity['name'] = entity.pop('Event Name')
+                # Add Document Name and Chunk Number
+                entity['Document Name'] = document_name
+                entity['Chunk Number'] = chunk_number
+                entities.append(entity)
+        
+        return {"entities": entities}
+    except Exception as e:
+        logging.error(f"Failed to process model output: {e}")
+        return {"entities": []}
+
+def parse_ollama_response(response, source_file, chunk_number):
+    """
+    Parses the Ollama response and converts it into the defined JSON structure.
+    Utilizes the process_model_output function to handle non-JSON responses.
+    """
+    try:
+        processed_data = process_model_output(response, source_file, chunk_number)
+        entities = processed_data.get("entities", [])
         parsed_entities = []
         for entity in entities:
             entity_type = entity.get("type", "").strip()
-            entity_name = entity.get("name", entity.get("value", "")).strip()
+            entity_name = entity.get("name", "").strip()
             if entity_type and entity_name:
                 parsed_entities.append({"type": entity_type, "name": entity_name})
+        # Log the parsed entities as JSON
+        logging.info(f"Parsed Entities for Source '{source_file}': {json.dumps(parsed_entities)}")
         return {"source_file": source_file, "entities": parsed_entities}
-    except json.JSONDecodeError as e:
-        logging.error(f"JSON decoding failed: {e}")
+    except Exception as e:
+        logging.error(f"Error processing model output for '{source_file}': {e}")
         return {"source_file": source_file, "entities": []}
 
 def sanitize_filename(filename):
@@ -355,12 +437,15 @@ def clean_text(text):
     text = re.sub(r'[\x00-\x1F\x7F]', '', text)
     return text
 
+import time  # Ensure time is imported for tracking chunk processing time
+
 def extract_entities(selected_files):
     """
     Extracts entities from the selected documents.
     """
     all_entities = []
-    total_lines_processed = 0  # Initialize line counter
+    total_chars_processed = 0  # Changed from lines to characters
+    per_chunk_timings = []      # List to store timing info for each chunk
     
     for file_info in selected_files:
         processed_file = file_info.get("converted_file_path")
@@ -381,13 +466,19 @@ def extract_entities(selected_files):
             f"entities-{sanitized_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         )
         
+        # Define the new entities_text file
+        entities_text_file = os.path.join(
+            ENTITIES_DIR,
+            f"entities_text_{sanitized_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+        )
+        
         if os.path.isfile(entities_file):
             logging.info(f"Entities already extracted for '{original_file}'. Skipping (use --overwrite to reprocess).")
             print(f"ℹ️ Entities already extracted for '{original_file}'. Skipping (use --overwrite to reprocess).")
             continue
         
         # Split the document into chunks
-        chunks = split_text_into_chunks(processed_file, LINES_PER_CHUNK)
+        chunks = split_text_into_chunks(processed_file, chars_per_chunk=CHARS_PER_CHUNK, overlap_chars=OVERLAP_CHARS)
         
         if not chunks:
             logging.warning(f"No chunks created for '{original_file}'. Skipping this file.")
@@ -399,29 +490,77 @@ def extract_entities(selected_files):
         
         document_entities = []
         
-        for idx, chunk in enumerate(chunks, start=1):
+        for idx, (chunk, start_char, end_char) in enumerate(chunks, start=1):
             logging.info(f"🔄 Processing Chunk {idx}/{len(chunks)} of '{original_file}'")
             print(f"🔄 Processing Chunk {idx}/{len(chunks)} of '{original_file}'")
+            
+            # Start timing for the chunk
+            chunk_start_time = time.time()
             
             # Clean the chunk to remove problematic characters
             cleaned_chunk = clean_text(chunk)
             
-            # Update lines processed
-            lines_in_chunk = len(chunk.split('\n'))
-            total_lines_processed += lines_in_chunk
+            # Calculate chunk size in characters
+            chunk_size = len(cleaned_chunk)
+            total_chars_processed += chunk_size
             
-            # Prepare the prompt with cleaned text
-            prompt = (PROMPT_TEMPLATE.replace("<source_file>", os.path.basename(processed_file)) +
-                      "\n\nText to analyze:\n\n" + cleaned_chunk)
+            # Write chunk to documents_chunks folder
+            document_base = sanitize_filename(os.path.splitext(original_file)[0])
+            chunk_filename = f"{document_base}_chunk{idx}_{start_char}_{end_char}.txt"
+            chunk_filepath = os.path.join(r"C:\school_board_library\experiments\1_prelearning\data\documents_chunks", chunk_filename)
+            try:
+                with open(chunk_filepath, 'w', encoding='utf-8') as chunk_file:
+                    chunk_file.write(cleaned_chunk)
+                logging.info(f"📄 Written chunk {idx} to '{chunk_filepath}'.")
+                print(f"📄 Written chunk {idx} to '{chunk_filepath}'.")
+            except Exception as e:
+                logging.error(f"❌ Failed to write chunk {idx} to '{chunk_filepath}': {e}")
+                print(f"❌ Failed to write chunk {idx} to '{chunk_filepath}': {e}")
+            
+            # Prepare the prompt with cleaned text and explicitly annotate Document Name and Chunk Details
+            prompt = (
+                PROMPT_TEMPLATE.replace("<source_file>", os.path.basename(processed_file)) +
+                f"\n\n**Document Name:** {original_file}\n" +    # Added Document Name annotation
+                f"**Chunk Number:** {idx}\n" +                   # Added Chunk Number annotation
+                f"**Start Character:** {start_char}\n" +         # Added Start Character annotation
+                f"**End Character:** {end_char}\n" +             # Added End Character annotation
+                f"**Chunk File Name:** {chunk_filename}\n" +      # Added Chunk File Name annotation
+                "\n\nText to analyze:\n\n" + cleaned_chunk
+            )
             logging.info(f"Ollama API prompt for Chunk {idx}: {prompt}")  # Log the full prompt sent
             
             # Call Ollama API
             response = call_ollama(prompt)
             if response:
+                # End timing for the chunk
+                chunk_end_time = time.time()
+                chunk_duration = chunk_end_time - chunk_start_time
+                
+                # Record timing information for the chunk
+                time_per_char_chunk = round(chunk_duration / chunk_size, 6) if chunk_size > 0 else 0  # Calculated time per character
+                per_chunk_timings.append({
+                    "Chunk Number": idx,
+                    "Chunk Size (chars)": chunk_size,
+                    "Time Taken (seconds)": round(chunk_duration, 6),
+                    "Time per Character (seconds)": time_per_char_chunk  # Added time per character
+                })
+                
                 # Log the full API response
                 logging.info(f"Ollama API response for Chunk {idx}: {response}")
                 
-                entities = parse_ollama_response(response, os.path.basename(processed_file))
+                # Write the exact model output to the entities_text file
+                try:
+                    with open(entities_text_file, 'a', encoding='utf-8') as text_file:
+                        text_file.write(f"---- Chunk File Name: {chunk_filename} ----\n")
+                        text_file.write(f"---- Chunk {idx} ----\n")
+                        text_file.write(f"---- Start Char: {start_char} ||| End Char: {end_char} ----\n")
+                        text_file.write(response + "\n\n")
+                    logging.info(f"📄 Written model output for Chunk {idx} to '{entities_text_file}'.")
+                except Exception as e:
+                    logging.error(f"❌ Failed to write model output to '{entities_text_file}': {e}")
+                    print(f"❌ Failed to write model output to '{entities_text_file}': {e}")
+                
+                entities = parse_ollama_response(response, os.path.basename(processed_file), idx)
                 if entities["entities"]:
                     # Filter out seed entities
                     filtered_entities = [
@@ -431,38 +570,39 @@ def extract_entities(selected_files):
                     document_entities.extend(filtered_entities)
                     logging.info(f"✅ Extracted {len(filtered_entities)} entities from Chunk {idx}.")
                     print(f"✅ Extracted {len(filtered_entities)} entities from Chunk {idx}.")
+                    
+                    # Extract event names
+                    event_names = [entity["name"] for entity in filtered_entities if entity["type"] == "Event Name"]
+                    logging.info(f"🔍 Event Names for Chunk {idx}: {event_names}")
+                    print(f"🔍 Event Names: {event_names}")
+                    print(f"📊 Number of Events: {len(event_names)}")
+                    
                     # Print the list of extracted entities
                     entity_names = [entity.get("name", "") for entity in filtered_entities]
                     print(f"Entities: {entity_names}")
+                    logging.info(f"\n\n-----------\nmodel {OLLAMA_MODEL} response\n{response}\n----------\n\n")
                 else:
                     logging.warning(f"No entities found in response for Chunk {idx} of '{original_file}'.")
                     print(f"⚠️ No entities found in response for Chunk {idx} of '{original_file}'.")
-            else:
-                logging.error(f"❌ No response received from Ollama for Chunk {idx} of '{original_file}'.")
-                print(f"❌ No response received from Ollama for Chunk {idx} of '{original_file}'.")
         
         if not document_entities:
             logging.warning(f"No entities extracted for '{original_file}'.")
             print(f"⚠️ No entities extracted for '{original_file}'.")
             continue
         
-        # Remove duplicate entities within the document
-        unique_entities = []
-        seen = set()
-        for entity in document_entities:
-            entity_type = entity.get("type", "").strip()
-            entity_name = entity.get("name", "").strip()
-            if not entity_type or not entity_name:
-                continue
-            entity_tuple = (entity_type, entity_name)
-            if entity_tuple not in seen:
-                seen.add(entity_tuple)
-                unique_entities.append(entity)
-        
-        if not unique_entities:
-            logging.warning(f"No unique entities found for '{original_file}'.")
-            print(f"⚠️ No unique entities found for '{original_file}'.")
-            continue
+        # Remove or comment out the deduplication code to retain all entities
+        # unique_entities = []
+        # seen = set()
+        # for entity in document_entities:
+        #     entity_type = entity.get("type", "").strip()
+        #     entity_name = entity.get("name", "").strip()
+        #     if not entity_type or not entity_name:
+        #         continue
+        #     entity_tuple = (entity_type, entity_name)
+        #     if entity_tuple not in seen:
+        #         seen.add(entity_tuple)
+        #         unique_entities.append(entity)
+        unique_entities = document_entities  # Retain all entities
         
         # Prepare the final JSON structure with source_file
         final_entities = {
@@ -481,20 +621,7 @@ def extract_entities(selected_files):
             logging.error(f"❌ Failed to write extracted entities to '{entities_file}': {e}")
             print(f"❌ Failed to write extracted entities to '{entities_file}': {e}")
     
-    return all_entities, total_lines_processed  # Return lines processed
-
-def aggregate_all_entities(all_entities):
-    """
-    Aggregates all entities into a single JSON file.
-    """
-    try:
-        with open(EXTRACTED_ENTITIES_FILE, 'w', encoding='utf-8') as f:
-            json.dump({"entities": all_entities}, f, indent=4)
-        logging.info(f"📄 Successfully aggregated and saved {len(all_entities)} entities to '{EXTRACTED_ENTITIES_FILE}'.")
-        print(f"📄 Successfully aggregated and saved {len(all_entities)} entities to '{EXTRACTED_ENTITIES_FILE}'.")
-    except Exception as e:
-        logging.error(f"❌ Failed to write aggregated entities to '{EXTRACTED_ENTITIES_FILE}': {e}")
-        print(f"❌ Failed to write aggregated entities to '{EXTRACTED_ENTITIES_FILE}': {e}")
+    return all_entities, total_chars_processed, per_chunk_timings  # Return chars processed and timings
 
 # =======================
 # Main Execution
@@ -545,29 +672,49 @@ def main():
         print("❌ No valid files selected for processing. Exiting program.")
         sys.exit(1)
     
+    # Clear the documents_chunks folder before processing
+    chunks_folder = r"C:\school_board_library\experiments\1_prelearning\data\documents_chunks"
+    try:
+        if os.path.exists(chunks_folder):
+            for filename in os.listdir(chunks_folder):
+                file_path = os.path.join(chunks_folder, filename)
+                if os.path.isfile(file_path):
+                    os.unlink(file_path)
+            logging.info(f"Cleared the documents_chunks folder: {chunks_folder}")
+            print(f"✅ Cleared the documents_chunks folder: {chunks_folder}")
+        else:
+            os.makedirs(chunks_folder)
+            logging.info(f"Created the documents_chunks folder: {chunks_folder}")
+            print(f"✅ Created the documents_chunks folder: {chunks_folder}")
+    except Exception as e:
+        logging.error(f"❌ Failed to clear or create documents_chunks folder '{chunks_folder}': {e}")
+        print(f"❌ Failed to clear or create documents_chunks folder '{chunks_folder}': {e}")
+        sys.exit(1)
+    
     # Extract entities from the selected files
-    all_entities, total_lines = extract_entities(files_to_process)  # Removed overwrite parameter
+    all_entities, total_chars, per_chunk_timings = extract_entities(files_to_process)  # Modified return values
     
     # Aggregate all entities into a single JSON file
-    aggregated_entities = []
-    try:
-        for entity_file in os.listdir(ENTITIES_DIR):
-            if entity_file.startswith("entities-") and entity_file.endswith(".json"):
-                with open(os.path.join(ENTITIES_DIR, entity_file), 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    if "entities" in data and isinstance(data["entities"], list):
-                        aggregated_entities.extend(data["entities"])
-    except Exception as e:
-        logging.error(f"❌ Failed to aggregate entities: {e}")
-        print(f"❌ Failed to aggregate entities: {e}")
-        
+    # aggregated_entities = []
+    # try:
+    #     for entity_file in os.listdir(ENTITIES_DIR):
+    #         if entity_file.startswith("entities-") and entity_file.endsWith(".json"):
+    #             with open(os.path.join(ENTITIES_DIR, entity_file), 'r', encoding='utf-8') as f:
+    #                 data = json.load(f)
+    #                 if "entities" in data and isinstance(data["entities"], list):
+    #                     aggregated_entities.extend(data["entities"])
+    # except Exception as e:
+    #     logging.error(f"❌ Failed to aggregate entities: {e}")
+    #     print(f"❌ Failed to aggregate entities: {e}")
+    
     # Call the aggregate_all_entities function directly
-    aggregate_all_entities(aggregated_entities)
+    # aggregate_all_entities(aggregated_entities)
     
     # End benchmarking
     end_time = datetime.now()
     duration = end_time - start_time
-    time_per_line = duration.total_seconds() / total_lines if total_lines > 0 else 0
+    total_elapsed_time = duration.total_seconds()  # Added total elapsed time
+    time_per_char = duration.total_seconds() / total_chars if total_chars > 0 else 0  # Changed to characters
     
     # Create benchmark file
     benchmark_filename = os.path.join(
@@ -577,14 +724,25 @@ def main():
         with open(benchmark_filename, 'w', encoding='utf-8') as bf:
             bf.write(f"Start Time: {start_time.strftime('%Y-%m-%d %H:%M:%S')}\n")
             bf.write(f"End Time: {end_time.strftime('%Y-%m-%d %H:%M:%S')}\n")
-            bf.write(f"Number of Lines Processed: {total_lines}\n")
-            bf.write(f"Time per Line (seconds): {time_per_line:.6f}\n")
+            bf.write(f"Total Elapsed Time (seconds): {total_elapsed_time:.6f}\n")  # Added total elapsed time
+            bf.write(f"Number of Characters Processed: {total_chars}\n")
+            bf.write(f"Time per Character (seconds): {time_per_char:.6f}\n")
             bf.write(f"Model Used: {OLLAMA_MODEL}\n")
+            bf.write("\nPer Chunk Timings:\n")
+            bf.write("Chunk Number | Chunk Size (chars) | Time Taken (seconds) | Time per Character (seconds)\n")  # Updated header
+            bf.write("-----------------------------------------------------------------------------\n")
+            for timing in per_chunk_timings:
+                bf.write(f"{timing['Chunk Number']} | {timing['Chunk Size (chars)']} | {timing['Time Taken (seconds)']} | {timing['Time per Character (seconds)']}\n")  # Added time per character
         logging.info(f"📄 Benchmark data saved to '{benchmark_filename}'.")
         print(f"📄 Benchmark data saved to '{benchmark_filename}'.")
     except Exception as e:
         logging.error(f"❌ Failed to write benchmark data to '{benchmark_filename}': {e}")
         print(f"❌ Failed to write benchmark data to '{benchmark_filename}': {e}")
+        sys.exit(1)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        logging.error(f"An error occurred: {e}")
+        sys.exit(1)

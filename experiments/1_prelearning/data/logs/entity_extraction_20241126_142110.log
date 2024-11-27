@@ -1,11 +1,11 @@
-2024-11-26 14:11:45,965 - INFO - API Connectivity Test Successful.
-2024-11-26 14:11:45,987 - INFO - Loaded 43 available converted file(s).
-2024-11-26 14:11:45,988 - INFO - Selected the first 1 file(s) to process.
-2024-11-26 14:11:45,988 - INFO - \U0001f4c4 Processing Document: 081324 BOARD BUZZ.pdf
-2024-11-26 14:11:45,988 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 9 chunk(s) with overlap.
-2024-11-26 14:11:45,988 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 9 chunk(s).
-2024-11-26 14:11:45,994 - INFO - \U0001f504 Processing Chunk 1/9 of '081324 BOARD BUZZ.pdf'
-2024-11-26 14:11:45,994 - INFO - Ollama API prompt for Chunk 1: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
+2024-11-26 14:21:18,893 - INFO - API Connectivity Test Successful.
+2024-11-26 14:21:18,914 - INFO - Loaded 43 available converted file(s).
+2024-11-26 14:21:18,915 - INFO - Selected the first 1 file(s) to process.
+2024-11-26 14:21:18,916 - INFO - \U0001f4c4 Processing Document: 081324 BOARD BUZZ.pdf
+2024-11-26 14:21:18,918 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 9 chunk(s) with overlap.
+2024-11-26 14:21:18,918 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 9 chunk(s).
+2024-11-26 14:21:18,943 - INFO - \U0001f504 Processing Chunk 1/9 of '081324 BOARD BUZZ.pdf'
+2024-11-26 14:21:18,943 - INFO - Ollama API prompt for Chunk 1: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
 
 Ontology Expert Mode Activation
 
@@ -152,54 +152,90 @@ Additional Notes
 Text to analyze:
 
 210608DUSD REGULAR BOARD MEETING: AUGUST 13, 2024The key items discussed  during the August 13, 2024 Regular Board Meeting include:  ITEM G2 : Citizens  Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023  ITEM L1 : Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 SchoolITEM G2 : Citizens  Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023The Independent Citizens' Bond Oversight Committee (CBOC) is submitting the 2021-2022 and 2022-2023 Annual Reports to the Board of Trustees. Due tocommittee membership turnover, the 2021-2022 report has not been presented to the Board and both reports are being presented simultaneously. Thepurpose of the CBOC is to inform the public and the Board regarding expenditures of bond funds pursuant to Education Code Section 15278. In order tonotify the community of the availability of the reports, the CBOC has decided to post  yers with QR code links in all community facilities such as City Hall,
-2024-11-26 14:14:10,497 - INFO - Ollama API response for Chunk 1: I can provide the extracted entities and attributes for the School Board Documents in Ontology-Based Entity Extraction from School Board Operations.
+2024-11-26 14:24:48,421 - INFO - Ollama API response for Chunk 1: I can help you extract entities from the provided school board documents based on the predefined ontology for the School Board New Member Copilot.
+
+Here are the extracted entities:
 
 **Events**
 
-1. **Board Meeting**
+1. Annual Budget Meeting (2024)
 	* Event Name: Annual Budget Meeting
 	* Event Type: Budget Cycle
-	* Date and Time: May 5th
+	* Date and Time: August 13, 2024
 	* Location: District Office
 	* Participants: Board members
 	* Agenda Items or Topics Discussed: Proposed allocations for the upcoming fiscal year
 	* Decisions Made or Outcomes: Budget approved with a majority vote
 	* Related Documents: Proposed Budget Report
-2. **Committee Session**
+
+2. Curriculum Committee Meeting (2024)
 	* Event Name: Curriculum Committee Meeting
 	* Event Type: Committee Session
-	* Date and Time: September 10th
+	* Date and Time: September 10, 2024
 	* Location: Not specified
 	* Participants: Curriculum Committee members, teachers, subject matter experts
 	* Agenda Items or Topics Discussed: Review of new science textbooks
 	* Decisions Made or Outcomes: Not specified
 	* Related Documents: Textbook Evaluation Reports
 
+3. Citizens Bond Oversight Committee Annual Reports (2021-2022 and 2022-2023)
+	* Event Name: Citizens Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023
+	* Event Type: Budget Cycle
+	* Date and Time: August 13, 2024 (mentioned as an item in the text)
+	* Location: Not specified
+	* Participants: Board members
+	* Agenda Items or Topics Discussed: Proposed allocations for the upcoming fiscal year
+	* Decisions Made or Outcomes: Budget approved with a majority vote
+	* Related Documents: Proposed Budget Report
+
 **People**
 
-1. **Board Members**
-	* Event Name: Annual Budget Meeting (listed under Board Member)
-2. **Teachers and Subject Matter Experts**
-	* Event Name: Curriculum Committee Meeting (listed under Teachers and subject matter experts)
+1. Independent Citizens' Bond Oversight Committee (CBOC)
+	* Event Name: Independent Citizens' Bond Oversight Committee (CBOC)
+	* Event Type: Organization
+	* Date and Time: August 13, 2024
+	* Location: Not specified
+	* Participants: Board members
 
 **Organizations**
 
-1. **School District**
-	* Event Name: Annual Budget Meeting
-	* Event Type: Budget Cycle
-	* Date and Time: May 5th
-	* Location: District Office
+1. School District
+	* Event Name: Not specified
+	* Event Type: Organization
+	* Date and Time: Not specified
+	* Location: Not specified
+	* Participants: Not specified
+	* Agenda Items or Topics Discussed: Not specified
+	* Decisions Made or Outcomes: Not specified
+	* Related Documents: Not specified
 
 **Documents**
 
-1. **Annual Budget Report**
-	* Event Name: Annual Budget Meeting (listed under Events)
-2. **Curriculum Reports**
-	* Event Name: Curriculum Committee Meeting (listed under Events)
-2024-11-26 14:14:10,497 - ERROR - JSON decoding failed: Expecting value: line 1 column 1 (char 0)
-2024-11-26 14:14:10,497 - WARNING - No entities found in response for Chunk 1 of '081324 BOARD BUZZ.pdf'.
-2024-11-26 14:14:10,501 - INFO - \U0001f504 Processing Chunk 2/9 of '081324 BOARD BUZZ.pdf'
-2024-11-26 14:14:10,501 - INFO - Ollama API prompt for Chunk 2: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
+1. Proposed Budget Report (2024)
+	* Event Name: Proposed Budget Report
+	* Event Type: Document
+	* Date and Time: August 13, 2024
+	* Location: District Office
+	* Participants: Board members
+	* Agenda Items or Topics Discussed: Proposed allocations for the upcoming fiscal year
+	* Decisions Made or Outcomes: Budget approved with a majority vote
+	* Related Documents: Not specified
+
+**Resources**
+
+1. City Hall (mentioned as a location in the document)
+	* Event Name: Not specified
+	* Event Type: Resource
+	* Date and Time: Not specified
+	* Location: City Hall
+	* Participants: Not specified
+	* Agenda Items or Topics Discussed: Not specified
+	* Decisions Made or Outcomes: Not specified
+	* Related Documents: Not specified
+2024-11-26 14:24:48,421 - ERROR - JSON decoding failed: Expecting value: line 1 column 1 (char 0)
+2024-11-26 14:24:48,421 - WARNING - No entities found in response for Chunk 1 of '081324 BOARD BUZZ.pdf'.
+2024-11-26 14:24:48,422 - INFO - \U0001f504 Processing Chunk 2/9 of '081324 BOARD BUZZ.pdf'
+2024-11-26 14:24:48,422 - INFO - Ollama API prompt for Chunk 2: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
 
 Ontology Expert Mode Activation
 

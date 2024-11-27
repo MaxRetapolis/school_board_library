@@ -1,0 +1,21 @@
+{
+    "source_file": "081324 BOARD BUZZ_converted.txt",
+    "entities": [
+        {
+            "type": "District Office",
+            "name": "Memorial Day"
+        },
+        {
+            "type": "District Office",
+            "name": "Last Day of School"
+        },
+        {
+            "type": "District Office",
+            "name": "Juneteenth"
+        },
+        {
+            "type": "District Office",
+            "name": "Juneteenth"
+        }
+    ]
+}

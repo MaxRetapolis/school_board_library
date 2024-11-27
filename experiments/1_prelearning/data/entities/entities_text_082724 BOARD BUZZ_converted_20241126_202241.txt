@@ -1,0 +1,81 @@
+----- Chunk 1 -----
+Here is the extracted information from the text:
+
+**Event:** Regular Board Meeting
+
+* Date: August 27, 2024
+* Location: Not specified
+
+**Key Items Discussed:**
+
+1. **ITEM E2: Facilities Project Update**
+	* Progress update on currently active projects with budget information
+	* Report and update on current and expected Facilities-related revenue
+2. **ITEM E3: Enrollment Update**
+	* Update on Transitional Kindergarten (TK) eligibility
+	* Current enrollment numbers for TK, Kindergarten, and district-wide enrollment
+	* Projected numbers of TK and Kindergarten enrollment over the next few years
+
+**Votes Taken:**
+
+1. **ITEM E2:** No vote taken
+2. **ITEM E3:** No vote taken
+
+**Recognitions:**
+
+1. Celebration of 10U and 12U Dublin Little League Softball State Champions
+
+**Adjournment:**
+
+* Open session for the August 13, 2024 Regular Board Meeting adjourned at 8:27 PM
+* All Consent Agenda items (ITEMS G1-K5) were approved, minus ITEM G4, which will return at a future date.
+
+**Consent Agenda:**
+
+* September 10 and 24: Regular Board Meeting @ 6PM
+* October 8 and 22: Regular Board Meeting @ 6PM
+* November 12: Regular Board Meeting @ 6PM
+* December 3 and 17: Regular Board Meeting @ 6PM
+
+**Board Meeting Information:**
+
+* For information on how to contact Board members, review current or past Board agendas, view archived Board meeting videos, participate in the Public Comment period of a Board meeting, and more, visit the Board section of the DUSD website.
+* All meetings are live streamed at DublinUSD.tv.
+
+**Upcoming Board Meetings:**
+
+* KEY DISTRICT DATES: 2024-2025 SCHOOL YEAR
+	+ September 2: Labor Day
+	+ October 10-11: No meeting
+
+**Unique Zoom Participants:** ##
+
+----- Chunk 2 -----
+The task is to extract and categorize entities from provided chunks of documents related to school board operations.
+
+1. Read the document carefully.
+2. Identify and extract events.
+3. Extract relevant attributes.
+4. Differentiate between entities.
+5. Provide structured output.
+
+The extracted information should be in the following format:
+
+Event:
+- Event Name:
+- Event Type:
+- Date and Time:
+- Location:
+- Participants:
+- Agenda Items or Topics Discussed:
+- Decisions Made or Outcomes:
+- Related Documents:
+- Document Name:
+- Chunk Number:
+- Start Character:
+- End Character:
+- Chunk File Name:
+
+
+Examples are provided to illustrate how the extracted entities should be presented.
+

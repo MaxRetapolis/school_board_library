@@ -1,12 +1,17 @@
-Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
+2024-11-26 14:51:36,783 - INFO - API Connectivity Test Successful.
+2024-11-26 14:51:36,800 - INFO - Loaded 43 available converted file(s).
+2024-11-26 14:51:36,801 - INFO - Selected the first 1 file(s) to process.
+2024-11-26 14:51:36,802 - INFO - \U0001f4c4 Processing Document: 081324 BOARD BUZZ.pdf
+2024-11-26 14:51:36,804 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 9 chunk(s) with overlap.
+2024-11-26 14:51:36,805 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 9 chunk(s).
+2024-11-26 14:51:36,829 - INFO - \U0001f504 Processing Chunk 1/9 of '081324 BOARD BUZZ.pdf'
+2024-11-26 14:51:36,829 - INFO - Ollama API prompt for Chunk 1: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
 
 **Ontology Expert Mode Activation**
 
 You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, and states within specific domains.
 
 **Goal**
-
-You are helping school board members understand the materials created in the board meetings. **The analysis focuses on publicly available documents to promote civic transparency and enable parents to oversee official entities effectively.**
 
 Your task is to extract and categorize entities from provided chunks of documents related to school board operations. The extracted entities should be mapped according to the predefined ontology for the School Board New Member Copilot, which includes:
 
@@ -53,11 +58,6 @@ Events are dynamic occurrences or happenings that take place at a specific point
     - **Agenda Items or Topics Discussed:** Key issues or subjects addressed during the event.
     - **Decisions Made or Outcomes:** Results or resolutions from the event.
     - **Related Documents:** Any documents associated with the event (e.g., meeting minutes, reports).
-    - **Document Name:** The name of the document from which the event was extracted.
-    - **Chunk Number:** The sequence number of the chunk within the document.
-    - **Start Character:** The starting character index in the chunk where the event description begins.
-    - **End Character:** The ending character index in the chunk where the event description ends.
-    - **Chunk File Name:** The name of the chunk file containing the event.
 
 **Differences with Other Entities**
 
@@ -67,40 +67,6 @@ Events are dynamic occurrences or happenings that take place at a specific point
     - **Resources:** Assets like budget items, facilities, or equipment.
 
 *Note:* While events are actions or occurrences, other entities are static or semi-static elements that may participate in or be affected by events.
-
-**Attributes to Extract for Each Entity**
-
-For each entity type, extract the relevant attributes:
-
-- **Events:**
-    - **Event Name:** The official or commonly used name of the event.
-    - **Event Type:** Category of the event (e.g., Board Meeting, Policy Approval).
-    - **Date and Time:** When the event occurred or is scheduled to occur. **Ensure that the year is included. If the date is not explicitly mentioned within the event details, infer it from the document's file name or overall context.**
-    - **Location:** Where the event took place or will take place.
-    - **Participants:**
-        - **People:** Individuals involved, including their roles or positions.
-        - **Organizations:** Groups or entities participating in the event.
-    - **Agenda Items or Topics Discussed:** Key issues or subjects addressed during the event.
-    - **Decisions Made or Outcomes:** Results or resolutions from the event.
-    - **Related Documents:** Any documents associated with the event (e.g., meeting minutes, reports).
-    - **Resources Involved:** Any resources utilized or discussed during the event (e.g., budget items, facilities).
-    - **Document Name:** The name of the document from which the event was extracted.
-    - **Chunk Number:** The sequence number of the chunk within the document.
-    - **Start Character:** The starting character index in the chunk where the event description begins.
-    - **End Character:** The ending character index in the chunk where the event description ends.
-    - **Chunk File Name:** The name of the chunk file containing the event.
-
-- **People:**
-    // ...existing attributes...
-
-- **Organizations:**
-    // ...existing attributes...
-
-- **Documents:**
-    // ...existing attributes...
-
-- **Resources:**
-    // ...existing attributes...
 
 **Instructions**
 
@@ -123,12 +89,6 @@ For each entity type, extract the relevant attributes:
     5. **Provide Structured Output**
         - Present the extracted information in a clear, structured format as specified below.
 
-    6. **Handling Meeting Transcripts**
-        - If the document appears to be a meeting transcript (identified by multiple timestamps):
-            - Derive public feedback.
-            - Identify speakers and their associations (e.g., board members, invitees, teachers, parents).
-            - Determine parents' positions for each event, including relevant quotes.
-
 **Output Format**
 
 For each event extracted, provide the information in the following format:
@@ -143,11 +103,6 @@ Event:
 - **Agenda Items or Topics Discussed:**
 - **Decisions Made or Outcomes:**
 - **Related Documents:**
-- **Document Name:**
-- **Chunk Number:**
-- **Start Character:**
-- **End Character:**
-- **Chunk File Name:**
 
 **Examples**
 
@@ -169,11 +124,6 @@ Event:
 - **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
 - **Decisions Made or Outcomes:** Budget approved with a majority vote
 - **Related Documents:** Proposed Budget Report
-- **Document Name:** Budget_Report_2023.pdf
-- **Chunk Number:** 1
-- **Start Character:** 0
-- **End Character:** 479
-- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
 
 **Example 2**
 
@@ -193,11 +143,6 @@ Event:
 - **Agenda Items or Topics Discussed:** Review of new science textbooks
 - **Decisions Made or Outcomes:** Not specified
 - **Related Documents:** Textbook Evaluation Reports
-- **Document Name:** Curriculum_Review_Sept2023.docx
-- **Chunk Number:** 2
-- **Start Character:** 480
-- **End Character:** 950
-- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
 
 **Additional Notes**
 
@@ -205,3 +150,7 @@ Event:
     - **Clarity:** Use clear and concise language in the output.
     - **Completeness:** Extract all events and their attributes as per the instructions.
     - **Omission:** If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+
+Text to analyze:
+
+210608DUSD REGULAR BOARD MEETING: AUGUST 13, 2024The key items discussed  during the August 13, 2024 Regular Board Meeting include:  ITEM G2 : Citizens  Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023  ITEM L1 : Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 SchoolITEM G2 : Citizens  Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023The Independent Citizens' Bond Oversight Committee (CBOC) is submitting the 2021-2022 and 2022-2023 Annual Reports to the Board of Trustees. Due tocommittee membership turnover, the 2021-2022 report has not been presented to the Board and both reports are being presented simultaneously. Thepurpose of the CBOC is to inform the public and the Board regarding expenditures of bond funds pursuant to Education Code Section 15278. In order tonotify the community of the availability of the reports, the CBOC has decided to post  yers with QR code links in all community facilities such as City Hall,

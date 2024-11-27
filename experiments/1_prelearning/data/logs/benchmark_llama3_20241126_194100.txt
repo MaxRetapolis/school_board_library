@@ -1,0 +1,13 @@
+Start Time: 2024-11-26 19:34:11
+End Time: 2024-11-26 19:41:00
+Number of Characters Processed: 8819
+Time per Character (seconds): 0.046381
+Model Used: llama3.2:1b
+
+Per Chunk Timings:
+Chunk Number | Chunk Size (chars) | Time Taken (seconds)
+-----------------------------------------------
+1 | 2475 | 84.882501
+2 | 2482 | 109.156063
+3 | 2443 | 133.878017
+4 | 1419 | 70.997654

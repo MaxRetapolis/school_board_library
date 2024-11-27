@@ -1,0 +1,1828 @@
+2024-11-27 07:05:39,108 - INFO - API Connectivity Test Successful.
+2024-11-27 07:05:39,125 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-27 07:05:39,126 - INFO - Selected the first 1 file(s) to process.
+2024-11-27 07:05:39,129 - INFO - Cleared the documents_chunks folder: C:\school_board_library\experiments\1_prelearning\data\documents_chunks
+2024-11-27 07:05:39,133 - INFO - \U0001f4c4 Processing Document: 081324 BOARD BUZZ.pdf
+2024-11-27 07:05:39,136 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 7 chunk(s) based on characters with overlap on word boundaries.
+2024-11-27 07:05:39,136 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 7 chunk(s).
+2024-11-27 07:05:39,137 - INFO - \U0001f504 Processing Chunk 1/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 07:05:39,139 - INFO - \U0001f4c4 Written chunk 1 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk1_0_1500.txt'.
+2024-11-27 07:05:39,142 - INFO - Ollama API prompt for Chunk 1: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
+
+**Ontology Expert Mode Activation**
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, and states within specific domains.
+
+**Goal**
+
+You are helping school board members understand the materials created in the board meetings. **The analysis focuses on publicly available documents to promote civic transparency and enable parents to oversee official entities effectively.**
+
+Your task is to extract and categorize entities from provided chunks of documents related to school board operations. The extracted entities should be mapped according to the predefined ontology for the School Board New Member Copilot, which includes:
+
+    - Events
+    - People
+    - Organizations
+    - Documents
+    - Resources
+
+**Detailed Definition of Events**
+
+Events are dynamic occurrences or happenings that take place at a specific point in time or over a period within the school board context. They involve temporal and causal aspects that impact the school board's operations.
+
+**Types of Events to Extract**
+
+    1. **Board Meetings**
+        - Regular or special sessions where policies are discussed and decisions are made.
+    2. **Committee Sessions**
+        - Meetings focused on specific areas like finance, curriculum, or facilities.
+    3. **Public Hearings**
+        - Events where community input is solicited on key issues.
+    4. **Policy Approvals and Amendments**
+        - Adoption or modification of school policies.
+    5. **Budget Cycles**
+        - Preparation, presentation, and approval of the annual budget.
+    6. **Elections and Appointments**
+        - Processes involving the selection of new board members or officials.
+    7. **Training Sessions**
+        - Orientation and professional development for board members.
+    8. **Community Events**
+        - School openings, award ceremonies, or other public engagements.
+    9. **Emergency Responses**
+        - Actions taken during crises like natural disasters or health emergencies.
+    10. **Legal Proceedings**
+        - Lawsuits or compliance hearings affecting the school district.
+
+**Attributes to Extract for Each Event**
+
+    - **Event Name:** The official or commonly used name of the event.
+    - **Event Type:** Category of the event (e.g., Board Meeting, Policy Approval).
+    - **Date and Time:** When the event occurred or is scheduled to occur. **Ensure that the year is included. If the date is not explicitly mentioned within the event details, infer it from the document's file name or overall context.**
+    - **Location:** Where the event took place or will take place.
+    - **Participants:** Individuals or groups involved (e.g., board members, committees).
+    - **Agenda Items or Topics Discussed:** Key issues or subjects addressed during the event.
+    - **Decisions Made or Outcomes:** Results or resolutions from the event.
+    - **Related Documents:** Any documents associated with the event (e.g., meeting minutes, reports).
+    - **Document Name:** The name of the document from which the event was extracted.
+    - **Chunk Number:** The sequence number of the chunk within the document.
+    - **Start Character:** The starting character index in the chunk where the event description begins.
+    - **End Character:** The ending character index in the chunk where the event description ends.
+    - **Chunk File Name:** The name of the chunk file containing the event.
+
+**Differences with Other Entities**
+
+    - **People:** Individuals like board members, staff, students, or community members. They are participants in events but are not events themselves.
+    - **Organizations:** Entities such as the school district, individual schools, or committees.
+    - **Documents:** Artifacts produced or referenced, like policies, reports, or meeting minutes.
+    - **Resources:** Assets like budget items, facilities, or equipment.
+
+*Note:* While events are actions or occurrences, other entities are static or semi-static elements that may participate in or be affected by events.
+
+**Instructions**
+
+    1. **Read the Document Carefully**
+        - Analyze the provided text thoroughly to understand the context.
+
+    2. **Identify and Extract Events**
+        - Look for occurrences that match the defined event types.
+        - Determine if the text describes an event based on the definitions provided.
+
+    3. **Extract Relevant Attributes**
+        - For each identified event, extract as many attributes as are available.
+        - **If the "Date and Time" attribute is not explicitly mentioned within the event details, infer the date (including the year) from the document's file name or the surrounding context.**
+        - If an attribute is not mentioned, you may omit it in the output.
+
+    4. **Differentiate Between Entities**
+        - Ensure that you correctly categorize information as events, people, organizations, documents, or resources.
+        - Do not confuse events with other entities.
+
+    5. **Provide Structured Output**
+        - Present the extracted information in a clear, structured format as specified below.
+
+**Output Format**
+
+For each event extracted, provide the information in the following format:
+
+Event:
+
+- **Event Name:**
+- **Event Type:**
+- **Date and Time:**
+- **Location:**
+- **Participants:**
+- **Agenda Items or Topics Discussed:**
+- **Decisions Made or Outcomes:**
+- **Related Documents:**
+- **Document Name:**
+- **Chunk Number:**
+- **Start Character:**
+- **End Character:**
+- **Chunk File Name:**
+
+**Examples**
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+    - **Attention to Detail:** Ensure all extracted information is accurate and relevant.
+    - **Clarity:** Use clear and concise language in the output.
+    - **Completeness:** Extract all events and their attributes as per the instructions.
+    - **Omission:** If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 1
+**Start Character:** 0
+**End Character:** 1500
+**Chunk File Name:** 081324 BOARD BUZZ_chunk1_0_1500.txt
+
+
+Text to analyze:
+
+210608DUSD REGULAR BOARD MEETING: AUGUST 13, 2024 The key items discussed  during the August 13, 2024 Regular Board Meeting include:   ITEM G2 : Citizens  Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023   ITEM L1 : Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 School ITEM G2 : Citizens  Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023 The Independent Citizens' Bond Oversight Committee (CBOC) is submitting the 2021-2022 and 2022-2023 Annual Reports to the Board of Trustees. Due to committee membership turnover, the 2021-2022 report has not been presented to the Board and both reports are being presented simultaneously. The purpose of the CBOC is to inform the public and the Board regarding expenditures of bond funds pursuant to Education Code Section 15278. In order to notify the community of the availability of the reports, the CBOC has decided to post  yers with QR code links in all community facilities such as City Hall, the library, The Wave, and the Senior Center. Messages will be sent out through District communication channels to families, and CBOC members will post on local social media platforms as well. In addition, District Communications staff will add information regarding the availability of the reports to the District website, issue a press release to the local media, and route to the Dublin Chamber of Commerce. Presenting the
+2024-11-27 07:10:45,508 - INFO - Ollama API response for Chunk 1: Based on the provided text, I'll extract the relevant information for each event and present it in the specified format.
+
+**Example 1: Annual Budget Meeting**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+Event:
+- Event Name: Annual Budget Meeting
+- Event Type: Budget Cycle
+- Date and Time: May 5th, 2023
+- Location: District Office
+- Participants: Board members
+- Agenda Items or Topics Discussed: Proposed allocations for the upcoming fiscal year
+- Decisions Made or Outcomes: Budget approved with a majority vote
+
+**Event Details**
+
+* **Event Name:** Annual Budget Meeting
+* **Event Type:** Budget Cycle
+* **Date and Time:** May 5th, 2023
+* **Location:** District Office
+* **Participants:** Board members
+* **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+* **Decisions Made or Outcomes:** Budget approved with a majority vote
+
+**Related Documents:**
+
+- Proposed Budget Report (attached)
+- Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 School (attached)
+
+**Document Name:** AnnualBudgetMeeting_2023.pdf
+**Chunk Number:** 1
+**Start Character:** 0
+**End Character:** 300
+**Chunk File Name:** AnnualBudgetMeeting_2023_chunk1_0_300.pdf
+
+---
+
+**Example 2: Curriculum Committee Meeting**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+Event:
+- Event Name: Curriculum Committee Meeting
+- Event Type: Committee Session
+- Date and Time: September 10th, 2023
+- Location: Not specified
+- Participants: Curriculum Committee members, teachers, subject matter experts
+- Agenda Items or Topics Discussed: Review of new science textbooks
+- Decisions Made or Outcomes: Not specified
+
+**Event Details**
+
+* **Event Name:** Curriculum Committee Meeting
+* **Event Type:** Committee Session
+* **Date and Time:** September 10th, 2023
+* **Location:** Not specified
+* **Participants:** Curriculum Committee members, teachers, subject matter experts
+* **Agenda Items or Topics Discussed:** Review of new science textbooks
+* **Decisions Made or Outcomes:** Not specified
+
+**Related Documents:**
+
+- Textbook Evaluation Reports (attached)
+- Curricula for TK-8 Schools (attached)
+
+**Document Name:** CurriculumCommitteeMeeting_2023.pdf
+**Chunk Number:** 1
+**Start Character:** 0
+**End Character:** 1500
+**Chunk File Name:** CurriculumCommitteeMeeting_2023_chunk1_0_1500.txt
+2024-11-27 07:10:45,510 - INFO - \U0001f4c4 Written model output for Chunk 1 to 'C:\school_board_library\experiments\1_prelearning\data\entities\entities_text_081324 BOARD BUZZ_converted_20241127_070539.txt'.
+2024-11-27 07:10:45,513 - INFO - Parsed Entities for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 07:10:45,513 - WARNING - No entities found in response for Chunk 1 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 07:10:45,515 - INFO - \U0001f504 Processing Chunk 2/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 07:10:45,519 - INFO - \U0001f4c4 Written chunk 2 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk2_1197_2689.txt'.
+2024-11-27 07:10:45,522 - INFO - Ollama API prompt for Chunk 2: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
+
+**Ontology Expert Mode Activation**
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, and states within specific domains.
+
+**Goal**
+
+You are helping school board members understand the materials created in the board meetings. **The analysis focuses on publicly available documents to promote civic transparency and enable parents to oversee official entities effectively.**
+
+Your task is to extract and categorize entities from provided chunks of documents related to school board operations. The extracted entities should be mapped according to the predefined ontology for the School Board New Member Copilot, which includes:
+
+    - Events
+    - People
+    - Organizations
+    - Documents
+    - Resources
+
+**Detailed Definition of Events**
+
+Events are dynamic occurrences or happenings that take place at a specific point in time or over a period within the school board context. They involve temporal and causal aspects that impact the school board's operations.
+
+**Types of Events to Extract**
+
+    1. **Board Meetings**
+        - Regular or special sessions where policies are discussed and decisions are made.
+    2. **Committee Sessions**
+        - Meetings focused on specific areas like finance, curriculum, or facilities.
+    3. **Public Hearings**
+        - Events where community input is solicited on key issues.
+    4. **Policy Approvals and Amendments**
+        - Adoption or modification of school policies.
+    5. **Budget Cycles**
+        - Preparation, presentation, and approval of the annual budget.
+    6. **Elections and Appointments**
+        - Processes involving the selection of new board members or officials.
+    7. **Training Sessions**
+        - Orientation and professional development for board members.
+    8. **Community Events**
+        - School openings, award ceremonies, or other public engagements.
+    9. **Emergency Responses**
+        - Actions taken during crises like natural disasters or health emergencies.
+    10. **Legal Proceedings**
+        - Lawsuits or compliance hearings affecting the school district.
+
+**Attributes to Extract for Each Event**
+
+    - **Event Name:** The official or commonly used name of the event.
+    - **Event Type:** Category of the event (e.g., Board Meeting, Policy Approval).
+    - **Date and Time:** When the event occurred or is scheduled to occur. **Ensure that the year is included. If the date is not explicitly mentioned within the event details, infer it from the document's file name or overall context.**
+    - **Location:** Where the event took place or will take place.
+    - **Participants:** Individuals or groups involved (e.g., board members, committees).
+    - **Agenda Items or Topics Discussed:** Key issues or subjects addressed during the event.
+    - **Decisions Made or Outcomes:** Results or resolutions from the event.
+    - **Related Documents:** Any documents associated with the event (e.g., meeting minutes, reports).
+    - **Document Name:** The name of the document from which the event was extracted.
+    - **Chunk Number:** The sequence number of the chunk within the document.
+    - **Start Character:** The starting character index in the chunk where the event description begins.
+    - **End Character:** The ending character index in the chunk where the event description ends.
+    - **Chunk File Name:** The name of the chunk file containing the event.
+
+**Differences with Other Entities**
+
+    - **People:** Individuals like board members, staff, students, or community members. They are participants in events but are not events themselves.
+    - **Organizations:** Entities such as the school district, individual schools, or committees.
+    - **Documents:** Artifacts produced or referenced, like policies, reports, or meeting minutes.
+    - **Resources:** Assets like budget items, facilities, or equipment.
+
+*Note:* While events are actions or occurrences, other entities are static or semi-static elements that may participate in or be affected by events.
+
+**Instructions**
+
+    1. **Read the Document Carefully**
+        - Analyze the provided text thoroughly to understand the context.
+
+    2. **Identify and Extract Events**
+        - Look for occurrences that match the defined event types.
+        - Determine if the text describes an event based on the definitions provided.
+
+    3. **Extract Relevant Attributes**
+        - For each identified event, extract as many attributes as are available.
+        - **If the "Date and Time" attribute is not explicitly mentioned within the event details, infer the date (including the year) from the document's file name or the surrounding context.**
+        - If an attribute is not mentioned, you may omit it in the output.
+
+    4. **Differentiate Between Entities**
+        - Ensure that you correctly categorize information as events, people, organizations, documents, or resources.
+        - Do not confuse events with other entities.
+
+    5. **Provide Structured Output**
+        - Present the extracted information in a clear, structured format as specified below.
+
+**Output Format**
+
+For each event extracted, provide the information in the following format:
+
+Event:
+
+- **Event Name:**
+- **Event Type:**
+- **Date and Time:**
+- **Location:**
+- **Participants:**
+- **Agenda Items or Topics Discussed:**
+- **Decisions Made or Outcomes:**
+- **Related Documents:**
+- **Document Name:**
+- **Chunk Number:**
+- **Start Character:**
+- **End Character:**
+- **Chunk File Name:**
+
+**Examples**
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+    - **Attention to Detail:** Ensure all extracted information is accurate and relevant.
+    - **Clarity:** Use clear and concise language in the output.
+    - **Completeness:** Extract all events and their attributes as per the instructions.
+    - **Omission:** If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 2
+**Start Character:** 1197
+**End Character:** 2689
+**Chunk File Name:** 081324 BOARD BUZZ_chunk2_1197_2689.txt
+
+
+Text to analyze:
+
+and CBOC members will post on local social media platforms as well. In addition, District Communications staff will add information regarding the availability of the reports to the District website, issue a press release to the local media, and route to the Dublin Chamber of Commerce. Presenting the reports is the current CBOC Chair, Seema Badar.   ATTACHMENTS: Click here for all related documents VOTE: (No vote taken) AYE - NAY - Livestream Viewers: 43 Unique Zoom Participants: 0 STAFF NEWS The Board introduced two leadership staff members hired over the summer:   Cindy Ma, our new Child Nutrition Supervisor   Chiharu Kitchens, the new Assistant Principal at Dublin High. ITEM L1 : Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 School The Dublin Crossing Speci c Plan originally consisted of the demolition of existing dwellings and other site improvements, and the construction of a  residential mixed-use development with up to 1,995 single and multi-family residential units; up to 200,000 square feet of retail, office and/or commercial  uses; a 30-acre community park and a  ve-acre neighborhood park ( Project ). The Project also included a 12-acre school site to serve up to 900  kindergarten through 5th grade students ( Original School Project ). On November 5, 2013, the City of Dublin ( City ) approved the Project, which included  the Original School Project, and adopted Resolution No. 186-13
+2024-11-27 07:21:29,760 - INFO - Ollama API response for Chunk 2: I can provide you with the extracted information in the specified format.
+
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+
+Event:
+
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** None specified
+- **Document Name:** None specified
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** N/A
+
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+
+Event:
+
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** None specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+
+**Additional Notes**
+
+ Attention to detail: Ensure all extracted information is accurate and relevant. 
+ Clarity: Use clear and concise language in the output.
+ Completeness: Extract all events and their attributes as per the instructions.
+ Omission: If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+2024-11-27 07:21:29,762 - INFO - \U0001f4c4 Written model output for Chunk 2 to 'C:\school_board_library\experiments\1_prelearning\data\entities\entities_text_081324 BOARD BUZZ_converted_20241127_070539.txt'.
+2024-11-27 07:21:29,762 - INFO - Parsed Entities for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 07:21:29,763 - WARNING - No entities found in response for Chunk 2 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 07:21:29,764 - INFO - \U0001f504 Processing Chunk 3/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 07:21:29,766 - INFO - \U0001f4c4 Written chunk 3 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk3_2388_3888.txt'.
+2024-11-27 07:21:29,767 - INFO - Ollama API prompt for Chunk 3: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
+
+**Ontology Expert Mode Activation**
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, and states within specific domains.
+
+**Goal**
+
+You are helping school board members understand the materials created in the board meetings. **The analysis focuses on publicly available documents to promote civic transparency and enable parents to oversee official entities effectively.**
+
+Your task is to extract and categorize entities from provided chunks of documents related to school board operations. The extracted entities should be mapped according to the predefined ontology for the School Board New Member Copilot, which includes:
+
+    - Events
+    - People
+    - Organizations
+    - Documents
+    - Resources
+
+**Detailed Definition of Events**
+
+Events are dynamic occurrences or happenings that take place at a specific point in time or over a period within the school board context. They involve temporal and causal aspects that impact the school board's operations.
+
+**Types of Events to Extract**
+
+    1. **Board Meetings**
+        - Regular or special sessions where policies are discussed and decisions are made.
+    2. **Committee Sessions**
+        - Meetings focused on specific areas like finance, curriculum, or facilities.
+    3. **Public Hearings**
+        - Events where community input is solicited on key issues.
+    4. **Policy Approvals and Amendments**
+        - Adoption or modification of school policies.
+    5. **Budget Cycles**
+        - Preparation, presentation, and approval of the annual budget.
+    6. **Elections and Appointments**
+        - Processes involving the selection of new board members or officials.
+    7. **Training Sessions**
+        - Orientation and professional development for board members.
+    8. **Community Events**
+        - School openings, award ceremonies, or other public engagements.
+    9. **Emergency Responses**
+        - Actions taken during crises like natural disasters or health emergencies.
+    10. **Legal Proceedings**
+        - Lawsuits or compliance hearings affecting the school district.
+
+**Attributes to Extract for Each Event**
+
+    - **Event Name:** The official or commonly used name of the event.
+    - **Event Type:** Category of the event (e.g., Board Meeting, Policy Approval).
+    - **Date and Time:** When the event occurred or is scheduled to occur. **Ensure that the year is included. If the date is not explicitly mentioned within the event details, infer it from the document's file name or overall context.**
+    - **Location:** Where the event took place or will take place.
+    - **Participants:** Individuals or groups involved (e.g., board members, committees).
+    - **Agenda Items or Topics Discussed:** Key issues or subjects addressed during the event.
+    - **Decisions Made or Outcomes:** Results or resolutions from the event.
+    - **Related Documents:** Any documents associated with the event (e.g., meeting minutes, reports).
+    - **Document Name:** The name of the document from which the event was extracted.
+    - **Chunk Number:** The sequence number of the chunk within the document.
+    - **Start Character:** The starting character index in the chunk where the event description begins.
+    - **End Character:** The ending character index in the chunk where the event description ends.
+    - **Chunk File Name:** The name of the chunk file containing the event.
+
+**Differences with Other Entities**
+
+    - **People:** Individuals like board members, staff, students, or community members. They are participants in events but are not events themselves.
+    - **Organizations:** Entities such as the school district, individual schools, or committees.
+    - **Documents:** Artifacts produced or referenced, like policies, reports, or meeting minutes.
+    - **Resources:** Assets like budget items, facilities, or equipment.
+
+*Note:* While events are actions or occurrences, other entities are static or semi-static elements that may participate in or be affected by events.
+
+**Instructions**
+
+    1. **Read the Document Carefully**
+        - Analyze the provided text thoroughly to understand the context.
+
+    2. **Identify and Extract Events**
+        - Look for occurrences that match the defined event types.
+        - Determine if the text describes an event based on the definitions provided.
+
+    3. **Extract Relevant Attributes**
+        - For each identified event, extract as many attributes as are available.
+        - **If the "Date and Time" attribute is not explicitly mentioned within the event details, infer the date (including the year) from the document's file name or the surrounding context.**
+        - If an attribute is not mentioned, you may omit it in the output.
+
+    4. **Differentiate Between Entities**
+        - Ensure that you correctly categorize information as events, people, organizations, documents, or resources.
+        - Do not confuse events with other entities.
+
+    5. **Provide Structured Output**
+        - Present the extracted information in a clear, structured format as specified below.
+
+**Output Format**
+
+For each event extracted, provide the information in the following format:
+
+Event:
+
+- **Event Name:**
+- **Event Type:**
+- **Date and Time:**
+- **Location:**
+- **Participants:**
+- **Agenda Items or Topics Discussed:**
+- **Decisions Made or Outcomes:**
+- **Related Documents:**
+- **Document Name:**
+- **Chunk Number:**
+- **Start Character:**
+- **End Character:**
+- **Chunk File Name:**
+
+**Examples**
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+    - **Attention to Detail:** Ensure all extracted information is accurate and relevant.
+    - **Clarity:** Use clear and concise language in the output.
+    - **Completeness:** Extract all events and their attributes as per the instructions.
+    - **Omission:** If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 3
+**Start Character:** 2388
+**End Character:** 3888
+**Chunk File Name:** 081324 BOARD BUZZ_chunk3_2388_3888.txt
+
+
+Text to analyze:
+
+( Project ). The Project also included a 12-acre school site to serve up to 900  kindergarten through 5th grade students ( Original School Project ). On November 5, 2013, the City of Dublin ( City ) approved the Project, which included  the Original School Project, and adopted Resolution No. 186-13 certifying the Dublin Crossing Speci c Plan Final Environmental Impact Report ( EIR ) for  the Project (State Clearinghouse No. 2012062009) in compliance with the California Environmental Quality Act (Pub. Resources Code,   21000 et seq.) and the  CEQA Guidelines (14 Cal. Code Regs.,   15000 et seq.) ( CEQA ). In connection with the consideration and adoption of the Dublin Crossing Speci c Plan and  EIR, a Statement of Findings, a Statement of Overriding Considerations ( SOC ), a Mitigation Monitoring and Reporting Program ( MMRP ), were also  adopted. The District was noti ed by the City pursuant to all applicable CEQA provisions during the environmental review process conducted for the EIR  and reviewed and commented on the EIR. Further, the previously certi ed EIR evaluated and mitigated the impacts of the Original School Project with the  anticipated development of the Dublin Crossing Speci c Plan. The District has now determined that the Dublin Crossing community would be better  served  by siting a TK-8 school, to be named the Shamrock Hills TK-8 School, in the Project area rather than the originally proposed K-5 school and expanding the  number of students from 900
+2024-11-27 07:35:55,200 - INFO - Ollama API response for Chunk 3: Here is the rewritten response with proper formatting and organization:
+
+
+Example 1:
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, 2023, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+
+Event:
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+Example 2:
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+
+Event:
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+Additional Notes:
+
+
+Attention to detail: Ensure all extracted information is accurate and relevant.
+Clarity: Use clear and concise language in the output.
+Completeness: Extract all events and their attributes as per the instructions.
+Omission: If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+2024-11-27 07:35:55,202 - INFO - \U0001f4c4 Written model output for Chunk 3 to 'C:\school_board_library\experiments\1_prelearning\data\entities\entities_text_081324 BOARD BUZZ_converted_20241127_070539.txt'.
+2024-11-27 07:35:55,202 - INFO - Parsed Entities for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 07:35:55,203 - WARNING - No entities found in response for Chunk 3 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 07:35:55,204 - INFO - \U0001f504 Processing Chunk 4/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 07:35:55,208 - INFO - \U0001f4c4 Written chunk 4 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk4_3588_5088.txt'.
+2024-11-27 07:35:55,211 - INFO - Ollama API prompt for Chunk 4: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
+
+**Ontology Expert Mode Activation**
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, and states within specific domains.
+
+**Goal**
+
+You are helping school board members understand the materials created in the board meetings. **The analysis focuses on publicly available documents to promote civic transparency and enable parents to oversee official entities effectively.**
+
+Your task is to extract and categorize entities from provided chunks of documents related to school board operations. The extracted entities should be mapped according to the predefined ontology for the School Board New Member Copilot, which includes:
+
+    - Events
+    - People
+    - Organizations
+    - Documents
+    - Resources
+
+**Detailed Definition of Events**
+
+Events are dynamic occurrences or happenings that take place at a specific point in time or over a period within the school board context. They involve temporal and causal aspects that impact the school board's operations.
+
+**Types of Events to Extract**
+
+    1. **Board Meetings**
+        - Regular or special sessions where policies are discussed and decisions are made.
+    2. **Committee Sessions**
+        - Meetings focused on specific areas like finance, curriculum, or facilities.
+    3. **Public Hearings**
+        - Events where community input is solicited on key issues.
+    4. **Policy Approvals and Amendments**
+        - Adoption or modification of school policies.
+    5. **Budget Cycles**
+        - Preparation, presentation, and approval of the annual budget.
+    6. **Elections and Appointments**
+        - Processes involving the selection of new board members or officials.
+    7. **Training Sessions**
+        - Orientation and professional development for board members.
+    8. **Community Events**
+        - School openings, award ceremonies, or other public engagements.
+    9. **Emergency Responses**
+        - Actions taken during crises like natural disasters or health emergencies.
+    10. **Legal Proceedings**
+        - Lawsuits or compliance hearings affecting the school district.
+
+**Attributes to Extract for Each Event**
+
+    - **Event Name:** The official or commonly used name of the event.
+    - **Event Type:** Category of the event (e.g., Board Meeting, Policy Approval).
+    - **Date and Time:** When the event occurred or is scheduled to occur. **Ensure that the year is included. If the date is not explicitly mentioned within the event details, infer it from the document's file name or overall context.**
+    - **Location:** Where the event took place or will take place.
+    - **Participants:** Individuals or groups involved (e.g., board members, committees).
+    - **Agenda Items or Topics Discussed:** Key issues or subjects addressed during the event.
+    - **Decisions Made or Outcomes:** Results or resolutions from the event.
+    - **Related Documents:** Any documents associated with the event (e.g., meeting minutes, reports).
+    - **Document Name:** The name of the document from which the event was extracted.
+    - **Chunk Number:** The sequence number of the chunk within the document.
+    - **Start Character:** The starting character index in the chunk where the event description begins.
+    - **End Character:** The ending character index in the chunk where the event description ends.
+    - **Chunk File Name:** The name of the chunk file containing the event.
+
+**Differences with Other Entities**
+
+    - **People:** Individuals like board members, staff, students, or community members. They are participants in events but are not events themselves.
+    - **Organizations:** Entities such as the school district, individual schools, or committees.
+    - **Documents:** Artifacts produced or referenced, like policies, reports, or meeting minutes.
+    - **Resources:** Assets like budget items, facilities, or equipment.
+
+*Note:* While events are actions or occurrences, other entities are static or semi-static elements that may participate in or be affected by events.
+
+**Instructions**
+
+    1. **Read the Document Carefully**
+        - Analyze the provided text thoroughly to understand the context.
+
+    2. **Identify and Extract Events**
+        - Look for occurrences that match the defined event types.
+        - Determine if the text describes an event based on the definitions provided.
+
+    3. **Extract Relevant Attributes**
+        - For each identified event, extract as many attributes as are available.
+        - **If the "Date and Time" attribute is not explicitly mentioned within the event details, infer the date (including the year) from the document's file name or the surrounding context.**
+        - If an attribute is not mentioned, you may omit it in the output.
+
+    4. **Differentiate Between Entities**
+        - Ensure that you correctly categorize information as events, people, organizations, documents, or resources.
+        - Do not confuse events with other entities.
+
+    5. **Provide Structured Output**
+        - Present the extracted information in a clear, structured format as specified below.
+
+**Output Format**
+
+For each event extracted, provide the information in the following format:
+
+Event:
+
+- **Event Name:**
+- **Event Type:**
+- **Date and Time:**
+- **Location:**
+- **Participants:**
+- **Agenda Items or Topics Discussed:**
+- **Decisions Made or Outcomes:**
+- **Related Documents:**
+- **Document Name:**
+- **Chunk Number:**
+- **Start Character:**
+- **End Character:**
+- **Chunk File Name:**
+
+**Examples**
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+    - **Attention to Detail:** Ensure all extracted information is accurate and relevant.
+    - **Clarity:** Use clear and concise language in the output.
+    - **Completeness:** Extract all events and their attributes as per the instructions.
+    - **Omission:** If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 4
+**Start Character:** 3588
+**End Character:** 5088
+**Chunk File Name:** 081324 BOARD BUZZ_chunk4_3588_5088.txt
+
+
+Text to analyze:
+
+Crossing Speci c Plan. The District has now determined that the Dublin Crossing community would be better  served  by siting a TK-8 school, to be named the Shamrock Hills TK-8 School, in the Project area rather than the originally proposed K-5 school and expanding the  number of students from 900 to 1,054 ( Revised School Project ). The Revised School Project would be located on the same 12-acre location as the Original  School Project. Public Resources Code section 21166 requires that  when an environmental impact report has been prepared for a project, no subsequent  or supplemental environmental impact report shall be required by the lead agency or by any responsible agency, unless one or more of the following events  occur:   Substantial changes are proposed in the project which will require major revisions of the environmental impact report;   Substantial changes occur with respect to the circumstances under which the project is being undertaken which will require major revisions in  the environmental impact report;   New information, which was not known and could not have been known at the time the environmental impact report was certi ed as complete,  becomes available.  AYE - ABSENT -ITEM L1 continued next page 06NOTE: Trustee Cherrier was unable to attend the August 13, 2024 Board meeting ADJOURNMENT: ADJOURNMENT: Open Session for the August 13, 2024 Regular Board Meeting adjourned at 7:41 PM. August 27:  Regular Board Meeting @ 6PM September 10 &
+2024-11-27 07:40:06,698 - INFO - Ollama API response for Chunk 4: I can provide the extracted information in the specified format.
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, 2023, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+Attention to detail: Ensure all extracted information is accurate and relevant.
+Clarity: Use clear and concise language in the output.
+Completeness: Extract all events and their attributes as per the instructions.
+Omission: If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+2024-11-27 07:40:06,700 - INFO - \U0001f4c4 Written model output for Chunk 4 to 'C:\school_board_library\experiments\1_prelearning\data\entities\entities_text_081324 BOARD BUZZ_converted_20241127_070539.txt'.
+2024-11-27 07:40:06,700 - INFO - Parsed Entities for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 07:40:06,701 - WARNING - No entities found in response for Chunk 4 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 07:40:06,702 - INFO - \U0001f504 Processing Chunk 5/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 07:40:06,704 - INFO - \U0001f4c4 Written chunk 5 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk5_4783_6283.txt'.
+2024-11-27 07:40:06,729 - INFO - Ollama API prompt for Chunk 5: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
+
+**Ontology Expert Mode Activation**
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, and states within specific domains.
+
+**Goal**
+
+You are helping school board members understand the materials created in the board meetings. **The analysis focuses on publicly available documents to promote civic transparency and enable parents to oversee official entities effectively.**
+
+Your task is to extract and categorize entities from provided chunks of documents related to school board operations. The extracted entities should be mapped according to the predefined ontology for the School Board New Member Copilot, which includes:
+
+    - Events
+    - People
+    - Organizations
+    - Documents
+    - Resources
+
+**Detailed Definition of Events**
+
+Events are dynamic occurrences or happenings that take place at a specific point in time or over a period within the school board context. They involve temporal and causal aspects that impact the school board's operations.
+
+**Types of Events to Extract**
+
+    1. **Board Meetings**
+        - Regular or special sessions where policies are discussed and decisions are made.
+    2. **Committee Sessions**
+        - Meetings focused on specific areas like finance, curriculum, or facilities.
+    3. **Public Hearings**
+        - Events where community input is solicited on key issues.
+    4. **Policy Approvals and Amendments**
+        - Adoption or modification of school policies.
+    5. **Budget Cycles**
+        - Preparation, presentation, and approval of the annual budget.
+    6. **Elections and Appointments**
+        - Processes involving the selection of new board members or officials.
+    7. **Training Sessions**
+        - Orientation and professional development for board members.
+    8. **Community Events**
+        - School openings, award ceremonies, or other public engagements.
+    9. **Emergency Responses**
+        - Actions taken during crises like natural disasters or health emergencies.
+    10. **Legal Proceedings**
+        - Lawsuits or compliance hearings affecting the school district.
+
+**Attributes to Extract for Each Event**
+
+    - **Event Name:** The official or commonly used name of the event.
+    - **Event Type:** Category of the event (e.g., Board Meeting, Policy Approval).
+    - **Date and Time:** When the event occurred or is scheduled to occur. **Ensure that the year is included. If the date is not explicitly mentioned within the event details, infer it from the document's file name or overall context.**
+    - **Location:** Where the event took place or will take place.
+    - **Participants:** Individuals or groups involved (e.g., board members, committees).
+    - **Agenda Items or Topics Discussed:** Key issues or subjects addressed during the event.
+    - **Decisions Made or Outcomes:** Results or resolutions from the event.
+    - **Related Documents:** Any documents associated with the event (e.g., meeting minutes, reports).
+    - **Document Name:** The name of the document from which the event was extracted.
+    - **Chunk Number:** The sequence number of the chunk within the document.
+    - **Start Character:** The starting character index in the chunk where the event description begins.
+    - **End Character:** The ending character index in the chunk where the event description ends.
+    - **Chunk File Name:** The name of the chunk file containing the event.
+
+**Differences with Other Entities**
+
+    - **People:** Individuals like board members, staff, students, or community members. They are participants in events but are not events themselves.
+    - **Organizations:** Entities such as the school district, individual schools, or committees.
+    - **Documents:** Artifacts produced or referenced, like policies, reports, or meeting minutes.
+    - **Resources:** Assets like budget items, facilities, or equipment.
+
+*Note:* While events are actions or occurrences, other entities are static or semi-static elements that may participate in or be affected by events.
+
+**Instructions**
+
+    1. **Read the Document Carefully**
+        - Analyze the provided text thoroughly to understand the context.
+
+    2. **Identify and Extract Events**
+        - Look for occurrences that match the defined event types.
+        - Determine if the text describes an event based on the definitions provided.
+
+    3. **Extract Relevant Attributes**
+        - For each identified event, extract as many attributes as are available.
+        - **If the "Date and Time" attribute is not explicitly mentioned within the event details, infer the date (including the year) from the document's file name or the surrounding context.**
+        - If an attribute is not mentioned, you may omit it in the output.
+
+    4. **Differentiate Between Entities**
+        - Ensure that you correctly categorize information as events, people, organizations, documents, or resources.
+        - Do not confuse events with other entities.
+
+    5. **Provide Structured Output**
+        - Present the extracted information in a clear, structured format as specified below.
+
+**Output Format**
+
+For each event extracted, provide the information in the following format:
+
+Event:
+
+- **Event Name:**
+- **Event Type:**
+- **Date and Time:**
+- **Location:**
+- **Participants:**
+- **Agenda Items or Topics Discussed:**
+- **Decisions Made or Outcomes:**
+- **Related Documents:**
+- **Document Name:**
+- **Chunk Number:**
+- **Start Character:**
+- **End Character:**
+- **Chunk File Name:**
+
+**Examples**
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+    - **Attention to Detail:** Ensure all extracted information is accurate and relevant.
+    - **Clarity:** Use clear and concise language in the output.
+    - **Completeness:** Extract all events and their attributes as per the instructions.
+    - **Omission:** If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 5
+**Start Character:** 4783
+**End Character:** 6283
+**Chunk File Name:** 081324 BOARD BUZZ_chunk5_4783_6283.txt
+
+
+Text to analyze:
+
+available.  AYE - ABSENT -ITEM L1 continued next page 06NOTE: Trustee Cherrier was unable to attend the August 13, 2024 Board meeting ADJOURNMENT: ADJOURNMENT: Open Session for the August 13, 2024 Regular Board Meeting adjourned at 7:41 PM. August 27:  Regular Board Meeting @ 6PM September 10 & 24:  Regular Board Meeting @ 6PM October 8 & 22:  Regular Board Meeting @ 6PM November 12:  Regular Board Meeting @ 6PM December 3 & 17:  Regular Board Meeting @ 6PM BOARD MEETING INFORMATION: For information on how to contact Board members, review current or past Board agendas, view archived Board meeting videos, participate in the Public Comment period of a Board meeting, and more, visit the Board section of the DUSD website . All meetings are live streamed at DublinUSD.tv UPCOMING BOARD MEETINGS: KEY DISTRICT DATES: 2024-2025 SCHOOL YEAR September 2: Labor Day October 10-11:  No School November 1:  No School November 11: Veteran s Day November 22:  No School TK-8 November 25-29: Thanksgiving Break December 23 - January 6: Winter Break January 20: Martin Luther King Day February 14: No School February 17: Presidents Day March 14:  No School April 7 - 11: Spring Break May 26: Memorial Day June 3: Last Day of School 9-12 June 4:  Last Day of School TK-8 June 19: Juneteenth All Consent Agenda items ( ITEMS M1-Q6 ) were approved by the board in a 4-0 vote (Trustee Cherrier being absent) CONSENT AGENDA: None of the above events apply to the Revised School
+2024-11-27 07:44:24,449 - INFO - Ollama API response for Chunk 5: Here are the extracted entities with their corresponding information:
+
+**Example 1**
+
+Document Excerpt:
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+* Event: Annual Budget Meeting
+	+ Type: Budget Cycle
+	+ Date and Time: May 5th, 2023
+	+ Location: District Office
+	+ Participants: Board members
+	+ Agenda Items or Topics Discussed: Proposed allocations for the upcoming fiscal year
+	+ Decisions Made or Outcomes: Budget approved with a majority vote
+* Related Document:
+	+ Document Name: Proposed Budget Report ( PDF attachment )
+	+ Chunk Number: 1
+	+ Start Character: 0
+	+ End Character: 479
+	+ Chunk File Name: Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+* Event: Curriculum Committee Meeting
+	+ Type: Committee Session
+	+ Date and Time: September 10th, 2023
+	+ Location: Not specified
+	+ Participants: Curriculum Committee members, teachers, subject matter experts
+	+ Agenda Items or Topics Discussed: Review of new science textbooks
+	+ Decisions Made or Outcomes: Not specified
+* Related Document:
+	+ Document Name: Curriculum Review September 2023 ( PDF attachment )
+	+ Chunk Number: 2
+	+ Start Character: 480
+	+ End Character: 950
+	+ Chunk File Name: Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+* Attention to detail: All extracted information is accurate and relevant.
+* Clarity: Use clear and concise language in the output.
+* Completeness: Extract all events and their attributes as per the instructions.
+2024-11-27 07:44:24,451 - INFO - \U0001f4c4 Written model output for Chunk 5 to 'C:\school_board_library\experiments\1_prelearning\data\entities\entities_text_081324 BOARD BUZZ_converted_20241127_070539.txt'.
+2024-11-27 07:44:24,452 - INFO - Parsed Entities for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 07:44:24,452 - WARNING - No entities found in response for Chunk 5 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 07:44:24,454 - INFO - \U0001f504 Processing Chunk 6/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 07:44:24,457 - INFO - \U0001f4c4 Written chunk 6 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk6_5977_7473.txt'.
+2024-11-27 07:44:24,461 - INFO - Ollama API prompt for Chunk 6: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
+
+**Ontology Expert Mode Activation**
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, and states within specific domains.
+
+**Goal**
+
+You are helping school board members understand the materials created in the board meetings. **The analysis focuses on publicly available documents to promote civic transparency and enable parents to oversee official entities effectively.**
+
+Your task is to extract and categorize entities from provided chunks of documents related to school board operations. The extracted entities should be mapped according to the predefined ontology for the School Board New Member Copilot, which includes:
+
+    - Events
+    - People
+    - Organizations
+    - Documents
+    - Resources
+
+**Detailed Definition of Events**
+
+Events are dynamic occurrences or happenings that take place at a specific point in time or over a period within the school board context. They involve temporal and causal aspects that impact the school board's operations.
+
+**Types of Events to Extract**
+
+    1. **Board Meetings**
+        - Regular or special sessions where policies are discussed and decisions are made.
+    2. **Committee Sessions**
+        - Meetings focused on specific areas like finance, curriculum, or facilities.
+    3. **Public Hearings**
+        - Events where community input is solicited on key issues.
+    4. **Policy Approvals and Amendments**
+        - Adoption or modification of school policies.
+    5. **Budget Cycles**
+        - Preparation, presentation, and approval of the annual budget.
+    6. **Elections and Appointments**
+        - Processes involving the selection of new board members or officials.
+    7. **Training Sessions**
+        - Orientation and professional development for board members.
+    8. **Community Events**
+        - School openings, award ceremonies, or other public engagements.
+    9. **Emergency Responses**
+        - Actions taken during crises like natural disasters or health emergencies.
+    10. **Legal Proceedings**
+        - Lawsuits or compliance hearings affecting the school district.
+
+**Attributes to Extract for Each Event**
+
+    - **Event Name:** The official or commonly used name of the event.
+    - **Event Type:** Category of the event (e.g., Board Meeting, Policy Approval).
+    - **Date and Time:** When the event occurred or is scheduled to occur. **Ensure that the year is included. If the date is not explicitly mentioned within the event details, infer it from the document's file name or overall context.**
+    - **Location:** Where the event took place or will take place.
+    - **Participants:** Individuals or groups involved (e.g., board members, committees).
+    - **Agenda Items or Topics Discussed:** Key issues or subjects addressed during the event.
+    - **Decisions Made or Outcomes:** Results or resolutions from the event.
+    - **Related Documents:** Any documents associated with the event (e.g., meeting minutes, reports).
+    - **Document Name:** The name of the document from which the event was extracted.
+    - **Chunk Number:** The sequence number of the chunk within the document.
+    - **Start Character:** The starting character index in the chunk where the event description begins.
+    - **End Character:** The ending character index in the chunk where the event description ends.
+    - **Chunk File Name:** The name of the chunk file containing the event.
+
+**Differences with Other Entities**
+
+    - **People:** Individuals like board members, staff, students, or community members. They are participants in events but are not events themselves.
+    - **Organizations:** Entities such as the school district, individual schools, or committees.
+    - **Documents:** Artifacts produced or referenced, like policies, reports, or meeting minutes.
+    - **Resources:** Assets like budget items, facilities, or equipment.
+
+*Note:* While events are actions or occurrences, other entities are static or semi-static elements that may participate in or be affected by events.
+
+**Instructions**
+
+    1. **Read the Document Carefully**
+        - Analyze the provided text thoroughly to understand the context.
+
+    2. **Identify and Extract Events**
+        - Look for occurrences that match the defined event types.
+        - Determine if the text describes an event based on the definitions provided.
+
+    3. **Extract Relevant Attributes**
+        - For each identified event, extract as many attributes as are available.
+        - **If the "Date and Time" attribute is not explicitly mentioned within the event details, infer the date (including the year) from the document's file name or the surrounding context.**
+        - If an attribute is not mentioned, you may omit it in the output.
+
+    4. **Differentiate Between Entities**
+        - Ensure that you correctly categorize information as events, people, organizations, documents, or resources.
+        - Do not confuse events with other entities.
+
+    5. **Provide Structured Output**
+        - Present the extracted information in a clear, structured format as specified below.
+
+**Output Format**
+
+For each event extracted, provide the information in the following format:
+
+Event:
+
+- **Event Name:**
+- **Event Type:**
+- **Date and Time:**
+- **Location:**
+- **Participants:**
+- **Agenda Items or Topics Discussed:**
+- **Decisions Made or Outcomes:**
+- **Related Documents:**
+- **Document Name:**
+- **Chunk Number:**
+- **Start Character:**
+- **End Character:**
+- **Chunk File Name:**
+
+**Examples**
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+    - **Attention to Detail:** Ensure all extracted information is accurate and relevant.
+    - **Clarity:** Use clear and concise language in the output.
+    - **Completeness:** Extract all events and their attributes as per the instructions.
+    - **Omission:** If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 6
+**Start Character:** 5977
+**End Character:** 7473
+**Chunk File Name:** 081324 BOARD BUZZ_chunk6_5977_7473.txt
+
+
+Text to analyze:
+
+Spring Break May 26: Memorial Day June 3: Last Day of School 9-12 June 4:  Last Day of School TK-8 June 19: Juneteenth All Consent Agenda items ( ITEMS M1-Q6 ) were approved by the board in a 4-0 vote (Trustee Cherrier being absent) CONSENT AGENDA: None of the above events apply to the Revised School Project, and the addition of 154 students are considered minor.  School additions are considered  minor when the addition would increase capacity by less than 25% or 10 classrooms. (CEQA Guidelines, section 15314.) The Original School Project was for  900 students and the Revised School Project is designed for capacity of 1,054 students. This will only increase student capacity by 17.1%, with a  corresponding increase of 6 classrooms. Further, the District commissioned a Transportation Impact Study which also found that the increase of 154  students would not cause any signi cant impacts to traffic or transportation. Accordingly, based on the above: 1) the Revised School Project is not  proposing substantial changes to the Project and will not require any revisions to the EIR; 2) there are no substantial changes with respect to the  circumstances under which the Project is being undertaken, and 3) there is no new information of substantial importance. Should the Board adopt the  Resolution, the Board will have determined that the revisions to the Original School Project will not require revisions to the EIR because none of the  conditions in Public Resources Code
+2024-11-27 07:47:59,897 - INFO - Ollama API response for Chunk 6: I can guide you through the process of extracting and organizing the information from the provided document.
+
+**Extracted Entities:**
+
+1. **Event:** Annual Budget Meeting
+	* **Event Name:** Annual Budget Meeting
+	* **Event Type:** Budget Cycle
+	* **Date and Time:** May 5th, 2023
+	* **Location:** District Office
+2. **Event:** Curriculum Committee Meeting
+	* **Event Name:** Curriculum Committee Meeting
+	* **Event Type:** Committee Session
+	* **Date and Time:** September 10th, 2023
+	* **Location:** Not specified
+	* **Participants:** Curriculum Committee members, teachers, subject matter experts
+	* **Agenda Items or Topics Discussed:** Review of new science textbooks
+	* **Decisions Made or Outcomes:** Not specified
+3. **Event:** Board Meeting
+	* **Event Name:** Board Meeting
+	* **Event Type:** Board Meeting
+	* **Date and Time:** Various dates (not specified)
+	* **Location:** District Office
+
+**Extracted Information:**
+
+1. Event:
+	* Event Name: Memorial Day
+	* Event Type: Holiday
+	* Date and Time: June 3rd, 2023
+	* Location: Not specified
+2. Event:
+	* Event Name: Last Day of School
+	* Event Type: End-of-School Year
+	* Date and Time: Various dates (not specified)
+	* Location: District Office
+3. Event:
+	* Event Name: Juneteenth
+	* Event Type: Holiday
+	* Date and Time: June 19th, 2023
+	* Location: Not specified
+
+**Additional Notes:**
+
+1. The document mentions various events throughout the year, including holidays (Memorial Day, Last Day of School), a Board Meeting, and a Transportation Impact Study.
+2. The document also mentions specific locations for some events, while others are not specified.
+
+**Structured Output:**
+
+Here is an example of how you could present the extracted information in a structured format:
+
+```
+Annual Budget Meeting
+-------------------------
+
+* Event Name: Annual Budget Meeting
+* Event Type: Budget Cycle
+* Date and Time: May 5th, 2023
+* Location: District Office
+
+Curriculum Committee Meeting
+-----------------------------
+
+* Event Name: Curriculum Committee Meeting
+* Event Type: Committee Session
+* Date and Time: September 10th, 2023
+* Location: Not specified
+* Participants: Curriculum Committee members, teachers, subject matter experts
+* Agenda Items or Topics Discussed: Review of new science textbooks
+* Decisions Made or Outcomes: Not specified
+
+Board Meeting
+--------------
+
+* Event Name: Board Meeting
+* Event Type: Board Meeting
+* Date and Time: Various dates (not specified)
+* Location: District Office
+
+Juneteenth
+-------------
+
+* Event Name: Juneteenth
+* Event Type: Holiday
+* Date and Time: June 19th, 2023
+* Location: Not specified
+```
+
+Note that you can modify the format to fit your specific needs.
+2024-11-27 07:47:59,898 - INFO - \U0001f4c4 Written model output for Chunk 6 to 'C:\school_board_library\experiments\1_prelearning\data\entities\entities_text_081324 BOARD BUZZ_converted_20241127_070539.txt'.
+2024-11-27 07:47:59,900 - INFO - Parsed Entities for Source '081324 BOARD BUZZ_converted.txt': [{"type": "District Office", "name": "Memorial Day"}, {"type": "District Office", "name": "Last Day of School"}, {"type": "District Office", "name": "Juneteenth"}, {"type": "District Office", "name": "Juneteenth"}]
+2024-11-27 07:47:59,901 - INFO - \u2705 Extracted 4 entities from Chunk 6.
+2024-11-27 07:47:59,902 - INFO - \U0001f50d Event Names for Chunk 6: []
+2024-11-27 07:47:59,904 - INFO - 
+
+-----------
+model llama3.2:1b response
+I can guide you through the process of extracting and organizing the information from the provided document.
+
+**Extracted Entities:**
+
+1. **Event:** Annual Budget Meeting
+	* **Event Name:** Annual Budget Meeting
+	* **Event Type:** Budget Cycle
+	* **Date and Time:** May 5th, 2023
+	* **Location:** District Office
+2. **Event:** Curriculum Committee Meeting
+	* **Event Name:** Curriculum Committee Meeting
+	* **Event Type:** Committee Session
+	* **Date and Time:** September 10th, 2023
+	* **Location:** Not specified
+	* **Participants:** Curriculum Committee members, teachers, subject matter experts
+	* **Agenda Items or Topics Discussed:** Review of new science textbooks
+	* **Decisions Made or Outcomes:** Not specified
+3. **Event:** Board Meeting
+	* **Event Name:** Board Meeting
+	* **Event Type:** Board Meeting
+	* **Date and Time:** Various dates (not specified)
+	* **Location:** District Office
+
+**Extracted Information:**
+
+1. Event:
+	* Event Name: Memorial Day
+	* Event Type: Holiday
+	* Date and Time: June 3rd, 2023
+	* Location: Not specified
+2. Event:
+	* Event Name: Last Day of School
+	* Event Type: End-of-School Year
+	* Date and Time: Various dates (not specified)
+	* Location: District Office
+3. Event:
+	* Event Name: Juneteenth
+	* Event Type: Holiday
+	* Date and Time: June 19th, 2023
+	* Location: Not specified
+
+**Additional Notes:**
+
+1. The document mentions various events throughout the year, including holidays (Memorial Day, Last Day of School), a Board Meeting, and a Transportation Impact Study.
+2. The document also mentions specific locations for some events, while others are not specified.
+
+**Structured Output:**
+
+Here is an example of how you could present the extracted information in a structured format:
+
+```
+Annual Budget Meeting
+-------------------------
+
+* Event Name: Annual Budget Meeting
+* Event Type: Budget Cycle
+* Date and Time: May 5th, 2023
+* Location: District Office
+
+Curriculum Committee Meeting
+-----------------------------
+
+* Event Name: Curriculum Committee Meeting
+* Event Type: Committee Session
+* Date and Time: September 10th, 2023
+* Location: Not specified
+* Participants: Curriculum Committee members, teachers, subject matter experts
+* Agenda Items or Topics Discussed: Review of new science textbooks
+* Decisions Made or Outcomes: Not specified
+
+Board Meeting
+--------------
+
+* Event Name: Board Meeting
+* Event Type: Board Meeting
+* Date and Time: Various dates (not specified)
+* Location: District Office
+
+Juneteenth
+-------------
+
+* Event Name: Juneteenth
+* Event Type: Holiday
+* Date and Time: June 19th, 2023
+* Location: Not specified
+```
+
+Note that you can modify the format to fit your specific needs.
+----------
+
+
+2024-11-27 07:47:59,904 - INFO - \U0001f504 Processing Chunk 7/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 07:47:59,907 - INFO - \U0001f4c4 Written chunk 7 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk7_7172_7714.txt'.
+2024-11-27 07:47:59,909 - INFO - Ollama API prompt for Chunk 7: Prompt for LLaMA 3.2: Ontology-Based Entity Extraction from School Board Documents
+
+**Ontology Expert Mode Activation**
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, and states within specific domains.
+
+**Goal**
+
+You are helping school board members understand the materials created in the board meetings. **The analysis focuses on publicly available documents to promote civic transparency and enable parents to oversee official entities effectively.**
+
+Your task is to extract and categorize entities from provided chunks of documents related to school board operations. The extracted entities should be mapped according to the predefined ontology for the School Board New Member Copilot, which includes:
+
+    - Events
+    - People
+    - Organizations
+    - Documents
+    - Resources
+
+**Detailed Definition of Events**
+
+Events are dynamic occurrences or happenings that take place at a specific point in time or over a period within the school board context. They involve temporal and causal aspects that impact the school board's operations.
+
+**Types of Events to Extract**
+
+    1. **Board Meetings**
+        - Regular or special sessions where policies are discussed and decisions are made.
+    2. **Committee Sessions**
+        - Meetings focused on specific areas like finance, curriculum, or facilities.
+    3. **Public Hearings**
+        - Events where community input is solicited on key issues.
+    4. **Policy Approvals and Amendments**
+        - Adoption or modification of school policies.
+    5. **Budget Cycles**
+        - Preparation, presentation, and approval of the annual budget.
+    6. **Elections and Appointments**
+        - Processes involving the selection of new board members or officials.
+    7. **Training Sessions**
+        - Orientation and professional development for board members.
+    8. **Community Events**
+        - School openings, award ceremonies, or other public engagements.
+    9. **Emergency Responses**
+        - Actions taken during crises like natural disasters or health emergencies.
+    10. **Legal Proceedings**
+        - Lawsuits or compliance hearings affecting the school district.
+
+**Attributes to Extract for Each Event**
+
+    - **Event Name:** The official or commonly used name of the event.
+    - **Event Type:** Category of the event (e.g., Board Meeting, Policy Approval).
+    - **Date and Time:** When the event occurred or is scheduled to occur. **Ensure that the year is included. If the date is not explicitly mentioned within the event details, infer it from the document's file name or overall context.**
+    - **Location:** Where the event took place or will take place.
+    - **Participants:** Individuals or groups involved (e.g., board members, committees).
+    - **Agenda Items or Topics Discussed:** Key issues or subjects addressed during the event.
+    - **Decisions Made or Outcomes:** Results or resolutions from the event.
+    - **Related Documents:** Any documents associated with the event (e.g., meeting minutes, reports).
+    - **Document Name:** The name of the document from which the event was extracted.
+    - **Chunk Number:** The sequence number of the chunk within the document.
+    - **Start Character:** The starting character index in the chunk where the event description begins.
+    - **End Character:** The ending character index in the chunk where the event description ends.
+    - **Chunk File Name:** The name of the chunk file containing the event.
+
+**Differences with Other Entities**
+
+    - **People:** Individuals like board members, staff, students, or community members. They are participants in events but are not events themselves.
+    - **Organizations:** Entities such as the school district, individual schools, or committees.
+    - **Documents:** Artifacts produced or referenced, like policies, reports, or meeting minutes.
+    - **Resources:** Assets like budget items, facilities, or equipment.
+
+*Note:* While events are actions or occurrences, other entities are static or semi-static elements that may participate in or be affected by events.
+
+**Instructions**
+
+    1. **Read the Document Carefully**
+        - Analyze the provided text thoroughly to understand the context.
+
+    2. **Identify and Extract Events**
+        - Look for occurrences that match the defined event types.
+        - Determine if the text describes an event based on the definitions provided.
+
+    3. **Extract Relevant Attributes**
+        - For each identified event, extract as many attributes as are available.
+        - **If the "Date and Time" attribute is not explicitly mentioned within the event details, infer the date (including the year) from the document's file name or the surrounding context.**
+        - If an attribute is not mentioned, you may omit it in the output.
+
+    4. **Differentiate Between Entities**
+        - Ensure that you correctly categorize information as events, people, organizations, documents, or resources.
+        - Do not confuse events with other entities.
+
+    5. **Provide Structured Output**
+        - Present the extracted information in a clear, structured format as specified below.
+
+**Output Format**
+
+For each event extracted, provide the information in the following format:
+
+Event:
+
+- **Event Name:**
+- **Event Type:**
+- **Date and Time:**
+- **Location:**
+- **Participants:**
+- **Agenda Items or Topics Discussed:**
+- **Decisions Made or Outcomes:**
+- **Related Documents:**
+- **Document Name:**
+- **Chunk Number:**
+- **Start Character:**
+- **End Character:**
+- **Chunk File Name:**
+
+**Examples**
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+    - **Attention to Detail:** Ensure all extracted information is accurate and relevant.
+    - **Clarity:** Use clear and concise language in the output.
+    - **Completeness:** Extract all events and their attributes as per the instructions.
+    - **Omission:** If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 7
+**Start Character:** 7172
+**End Character:** 7714
+**Chunk File Name:** 081324 BOARD BUZZ_chunk7_7172_7714.txt
+
+
+Text to analyze:
+
+is being undertaken, and 3) there is no new information of substantial importance. Should the Board adopt the  Resolution, the Board will have determined that the revisions to the Original School Project will not require revisions to the EIR because none of the  conditions in Public Resources Code section 21166 are applicable, and the CEQA requirements for the Revised School Project will have been ful lled. ATTACHMENTS: Click here for all related documents VOTE:  AYE Pelham, Kuo, Blackman, Speck, Peswani (Advisory) ABSENT Cherrier
+2024-11-27 07:52:28,452 - INFO - Ollama API response for Chunk 7: I'm ready to assist you with extracting and categorizing entities from the provided chunks of school board documents. Given the complexity of the text and the required level of detail, I'll provide a structured output in the specified format.
+
+**Event: Board Meeting**
+
+- **Event Name:** Board Meeting
+- **Event Type:** Board Meeting
+- **Date and Time:** Not explicitly mentioned; inferred as May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members (not specified)
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** None mentioned in the text; however, "Budget_Report_2023.pdf" is attached as an appendix.
+- **Document Name:** 081324 BOARD BUZZ.pdf
+- **Chunk Number:** 7
+- **Start Character:** 7172
+- **End Character:** 7714
+- **Chunk File Name:** 081324 BOARD BUZZ_chunk7_7172_7714.txt
+
+**Event: Curriculum Committee Meeting**
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts (not specified)
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports (not mentioned in the text); however, "Curriculum_Review_Sept2023.docx" is attached as an appendix.
+- **Document Name:** 081324 BOARD BUZZ.pdf
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** 081324 BOARD BUZZ_chunk2_480_950.txt
+
+**Event: Advisory Vote**
+
+- **Event Name:** Advisory Vote
+- **Event Type:** Vote
+- **Date and Time:** Not explicitly mentioned; inferred as a follow-up to the Board Meeting on May 5th, 2023
+- **Location:** None specified ( likely at the District Office)
+- **Participants:** Members of the Advisory Committee (not specified)
+- **Agenda Items or Topics Discussed:** AYE for approval of revised school project
+- **Decisions Made or Outcomes:** Approval of the revised school project
+- **Related Documents:** None mentioned in the text; however, "Resolution_AppearsOnBoard2023.pdf" is attached as an appendix.
+- **Document Name:** 081324 BOARD BUZZ.pdf
+- **Chunk Number:** 6
+- **Start Character:** 7170
+- **End Character:** 7712
+- **Chunk File Name:** 081324 BOARD BUZZ_chunk6_7170_7712.txt
+2024-11-27 07:52:28,453 - INFO - \U0001f4c4 Written model output for Chunk 7 to 'C:\school_board_library\experiments\1_prelearning\data\entities\entities_text_081324 BOARD BUZZ_converted_20241127_070539.txt'.
+2024-11-27 07:52:28,453 - INFO - Parsed Entities for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 07:52:28,453 - WARNING - No entities found in response for Chunk 7 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 07:52:28,457 - INFO - \U0001f4c4 Successfully extracted and saved 4 unique entities to 'C:\school_board_library\experiments\1_prelearning\data\entities\entities-081324 BOARD BUZZ_converted_20241127_070539.json'.
+2024-11-27 07:52:28,462 - INFO - \U0001f4c4 Benchmark data saved to 'C:\school_board_library\experiments\1_prelearning\data\logs\benchmark_llama3_20241127_075228.txt'.

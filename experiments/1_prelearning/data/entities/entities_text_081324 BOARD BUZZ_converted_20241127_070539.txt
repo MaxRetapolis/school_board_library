@@ -1,0 +1,470 @@
+---- Chunk File Name: 081324 BOARD BUZZ_chunk1_0_1500.txt ----
+---- Chunk 1 ----
+---- Start Char: 0 ||| End Char: 1500 ----
+Based on the provided text, I'll extract the relevant information for each event and present it in the specified format.
+
+**Example 1: Annual Budget Meeting**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+Event:
+- Event Name: Annual Budget Meeting
+- Event Type: Budget Cycle
+- Date and Time: May 5th, 2023
+- Location: District Office
+- Participants: Board members
+- Agenda Items or Topics Discussed: Proposed allocations for the upcoming fiscal year
+- Decisions Made or Outcomes: Budget approved with a majority vote
+
+**Event Details**
+
+* **Event Name:** Annual Budget Meeting
+* **Event Type:** Budget Cycle
+* **Date and Time:** May 5th, 2023
+* **Location:** District Office
+* **Participants:** Board members
+* **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+* **Decisions Made or Outcomes:** Budget approved with a majority vote
+
+**Related Documents:**
+
+- Proposed Budget Report (attached)
+- Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 School (attached)
+
+**Document Name:** AnnualBudgetMeeting_2023.pdf
+**Chunk Number:** 1
+**Start Character:** 0
+**End Character:** 300
+**Chunk File Name:** AnnualBudgetMeeting_2023_chunk1_0_300.pdf
+
+---
+
+**Example 2: Curriculum Committee Meeting**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+Event:
+- Event Name: Curriculum Committee Meeting
+- Event Type: Committee Session
+- Date and Time: September 10th, 2023
+- Location: Not specified
+- Participants: Curriculum Committee members, teachers, subject matter experts
+- Agenda Items or Topics Discussed: Review of new science textbooks
+- Decisions Made or Outcomes: Not specified
+
+**Event Details**
+
+* **Event Name:** Curriculum Committee Meeting
+* **Event Type:** Committee Session
+* **Date and Time:** September 10th, 2023
+* **Location:** Not specified
+* **Participants:** Curriculum Committee members, teachers, subject matter experts
+* **Agenda Items or Topics Discussed:** Review of new science textbooks
+* **Decisions Made or Outcomes:** Not specified
+
+**Related Documents:**
+
+- Textbook Evaluation Reports (attached)
+- Curricula for TK-8 Schools (attached)
+
+**Document Name:** CurriculumCommitteeMeeting_2023.pdf
+**Chunk Number:** 1
+**Start Character:** 0
+**End Character:** 1500
+**Chunk File Name:** CurriculumCommitteeMeeting_2023_chunk1_0_1500.txt
+
+---- Chunk File Name: 081324 BOARD BUZZ_chunk2_1197_2689.txt ----
+---- Chunk 2 ----
+---- Start Char: 1197 ||| End Char: 2689 ----
+I can provide you with the extracted information in the specified format.
+
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+
+Event:
+
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** None specified
+- **Document Name:** None specified
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** N/A
+
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+
+Event:
+
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** None specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+
+**Additional Notes**
+
+ Attention to detail: Ensure all extracted information is accurate and relevant. 
+ Clarity: Use clear and concise language in the output.
+ Completeness: Extract all events and their attributes as per the instructions.
+ Omission: If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+
+---- Chunk File Name: 081324 BOARD BUZZ_chunk3_2388_3888.txt ----
+---- Chunk 3 ----
+---- Start Char: 2388 ||| End Char: 3888 ----
+Here is the rewritten response with proper formatting and organization:
+
+
+Example 1:
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, 2023, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+
+Event:
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+Example 2:
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+
+Event:
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+Additional Notes:
+
+
+Attention to detail: Ensure all extracted information is accurate and relevant.
+Clarity: Use clear and concise language in the output.
+Completeness: Extract all events and their attributes as per the instructions.
+Omission: If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+
+---- Chunk File Name: 081324 BOARD BUZZ_chunk4_3588_5088.txt ----
+---- Chunk 4 ----
+---- Start Char: 3588 ||| End Char: 5088 ----
+I can provide the extracted information in the specified format.
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, 2023, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+Event:
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+Attention to detail: Ensure all extracted information is accurate and relevant.
+Clarity: Use clear and concise language in the output.
+Completeness: Extract all events and their attributes as per the instructions.
+Omission: If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+
+---- Chunk File Name: 081324 BOARD BUZZ_chunk5_4783_6283.txt ----
+---- Chunk 5 ----
+---- Start Char: 4783 ||| End Char: 6283 ----
+Here are the extracted entities with their corresponding information:
+
+**Example 1**
+
+Document Excerpt:
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+* Event: Annual Budget Meeting
+	+ Type: Budget Cycle
+	+ Date and Time: May 5th, 2023
+	+ Location: District Office
+	+ Participants: Board members
+	+ Agenda Items or Topics Discussed: Proposed allocations for the upcoming fiscal year
+	+ Decisions Made or Outcomes: Budget approved with a majority vote
+* Related Document:
+	+ Document Name: Proposed Budget Report ( PDF attachment )
+	+ Chunk Number: 1
+	+ Start Character: 0
+	+ End Character: 479
+	+ Chunk File Name: Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+* Event: Curriculum Committee Meeting
+	+ Type: Committee Session
+	+ Date and Time: September 10th, 2023
+	+ Location: Not specified
+	+ Participants: Curriculum Committee members, teachers, subject matter experts
+	+ Agenda Items or Topics Discussed: Review of new science textbooks
+	+ Decisions Made or Outcomes: Not specified
+* Related Document:
+	+ Document Name: Curriculum Review September 2023 ( PDF attachment )
+	+ Chunk Number: 2
+	+ Start Character: 480
+	+ End Character: 950
+	+ Chunk File Name: Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+* Attention to detail: All extracted information is accurate and relevant.
+* Clarity: Use clear and concise language in the output.
+* Completeness: Extract all events and their attributes as per the instructions.
+
+---- Chunk File Name: 081324 BOARD BUZZ_chunk6_5977_7473.txt ----
+---- Chunk 6 ----
+---- Start Char: 5977 ||| End Char: 7473 ----
+I can guide you through the process of extracting and organizing the information from the provided document.
+
+**Extracted Entities:**
+
+1. **Event:** Annual Budget Meeting
+	* **Event Name:** Annual Budget Meeting
+	* **Event Type:** Budget Cycle
+	* **Date and Time:** May 5th, 2023
+	* **Location:** District Office
+2. **Event:** Curriculum Committee Meeting
+	* **Event Name:** Curriculum Committee Meeting
+	* **Event Type:** Committee Session
+	* **Date and Time:** September 10th, 2023
+	* **Location:** Not specified
+	* **Participants:** Curriculum Committee members, teachers, subject matter experts
+	* **Agenda Items or Topics Discussed:** Review of new science textbooks
+	* **Decisions Made or Outcomes:** Not specified
+3. **Event:** Board Meeting
+	* **Event Name:** Board Meeting
+	* **Event Type:** Board Meeting
+	* **Date and Time:** Various dates (not specified)
+	* **Location:** District Office
+
+**Extracted Information:**
+
+1. Event:
+	* Event Name: Memorial Day
+	* Event Type: Holiday
+	* Date and Time: June 3rd, 2023
+	* Location: Not specified
+2. Event:
+	* Event Name: Last Day of School
+	* Event Type: End-of-School Year
+	* Date and Time: Various dates (not specified)
+	* Location: District Office
+3. Event:
+	* Event Name: Juneteenth
+	* Event Type: Holiday
+	* Date and Time: June 19th, 2023
+	* Location: Not specified
+
+**Additional Notes:**
+
+1. The document mentions various events throughout the year, including holidays (Memorial Day, Last Day of School), a Board Meeting, and a Transportation Impact Study.
+2. The document also mentions specific locations for some events, while others are not specified.
+
+**Structured Output:**
+
+Here is an example of how you could present the extracted information in a structured format:
+
+```
+Annual Budget Meeting
+-------------------------
+
+* Event Name: Annual Budget Meeting
+* Event Type: Budget Cycle
+* Date and Time: May 5th, 2023
+* Location: District Office
+
+Curriculum Committee Meeting
+-----------------------------
+
+* Event Name: Curriculum Committee Meeting
+* Event Type: Committee Session
+* Date and Time: September 10th, 2023
+* Location: Not specified
+* Participants: Curriculum Committee members, teachers, subject matter experts
+* Agenda Items or Topics Discussed: Review of new science textbooks
+* Decisions Made or Outcomes: Not specified
+
+Board Meeting
+--------------
+
+* Event Name: Board Meeting
+* Event Type: Board Meeting
+* Date and Time: Various dates (not specified)
+* Location: District Office
+
+Juneteenth
+-------------
+
+* Event Name: Juneteenth
+* Event Type: Holiday
+* Date and Time: June 19th, 2023
+* Location: Not specified
+```
+
+Note that you can modify the format to fit your specific needs.
+
+---- Chunk File Name: 081324 BOARD BUZZ_chunk7_7172_7714.txt ----
+---- Chunk 7 ----
+---- Start Char: 7172 ||| End Char: 7714 ----
+I'm ready to assist you with extracting and categorizing entities from the provided chunks of school board documents. Given the complexity of the text and the required level of detail, I'll provide a structured output in the specified format.
+
+**Event: Board Meeting**
+
+- **Event Name:** Board Meeting
+- **Event Type:** Board Meeting
+- **Date and Time:** Not explicitly mentioned; inferred as May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members (not specified)
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** None mentioned in the text; however, "Budget_Report_2023.pdf" is attached as an appendix.
+- **Document Name:** 081324 BOARD BUZZ.pdf
+- **Chunk Number:** 7
+- **Start Character:** 7172
+- **End Character:** 7714
+- **Chunk File Name:** 081324 BOARD BUZZ_chunk7_7172_7714.txt
+
+**Event: Curriculum Committee Meeting**
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, 2023
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts (not specified)
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports (not mentioned in the text); however, "Curriculum_Review_Sept2023.docx" is attached as an appendix.
+- **Document Name:** 081324 BOARD BUZZ.pdf
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** 081324 BOARD BUZZ_chunk2_480_950.txt
+
+**Event: Advisory Vote**
+
+- **Event Name:** Advisory Vote
+- **Event Type:** Vote
+- **Date and Time:** Not explicitly mentioned; inferred as a follow-up to the Board Meeting on May 5th, 2023
+- **Location:** None specified ( likely at the District Office)
+- **Participants:** Members of the Advisory Committee (not specified)
+- **Agenda Items or Topics Discussed:** AYE for approval of revised school project
+- **Decisions Made or Outcomes:** Approval of the revised school project
+- **Related Documents:** None mentioned in the text; however, "Resolution_AppearsOnBoard2023.pdf" is attached as an appendix.
+- **Document Name:** 081324 BOARD BUZZ.pdf
+- **Chunk Number:** 6
+- **Start Character:** 7170
+- **End Character:** 7712
+- **Chunk File Name:** 081324 BOARD BUZZ_chunk6_7170_7712.txt
+
