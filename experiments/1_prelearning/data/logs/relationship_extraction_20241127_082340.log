@@ -1746,3 +1746,356 @@ Begin Processing the Document Chunk Below:
 Text to analyze:
 
 May 26: Memorial Day June 3: Last Day of School 9-12 June 4:  Last Day of School TK-8 June 19: Juneteenth All Consent Agenda items ( ITEMS M1-Q6 ) were approved by the board in a 4-0 vote (Trustee Cherrier being absent) CONSENT AGENDA: None of the above events apply to the Revised School Project, and the addition of 154 students are considered minor.  School additions are considered  minor when the addition would increase capacity by less than 25% or 10 classrooms. (CEQA Guidelines, section 15314.) The Original School Project was for  900 students and the Revised School Project is designed for capacity of 1,054 students. This will only increase student capacity by 17.1%, with a  corresponding increase of 6 classrooms. Further, the District commissioned a Transportation Impact Study which also found that the increase of 154  students would not cause any signi cant impacts to traffic or transportation. Accordingly, based on the above: 1) the Revised School Project is not  proposing substantial changes to the Project and will not require any revisions to the EIR; 2) there are no substantial changes with respect to the  circumstances under which the Project is being undertaken, and 3) there is no new information of substantial importance. Should the Board adopt the  Resolution, the Board will have determined that the revisions to the Original School Project will not require revisions to the EIR because none of the  conditions in Public Resources Code section 21166 are
+2024-11-27 08:43:11,396 - INFO - Ollama API response for Chunk 6: Here are the extracted relationships and their attributes:
+
+**Relationship 1: Recent Incidents Caused Implementation of New Security Policy**
+
+* Source Entity: Recent Incidents at Schools
+* Target Entity: Implementation of New Security Policy
+* Description: The implementation of the new security policy resulted from recent incidents at schools.
+* Context or Evidence: "The implementation of the new security policy resulted from the recent incidents at several schools."
+* Date or Timeframe: Not specified (Infer from document context)
+* Document Name: None
+* Chunk Number: 1
+* Start Character: 0
+* End Character: 180
+* Chunk File Name: None
+
+**Relationship 2: New Security Policy Mandates Visitor Sign-In Procedure**
+
+* Source Entity: New Security Policy
+* Target Entity: Visitor Sign-In Procedure
+* Description: The new security policy mandates the visitor sign-in procedure.
+* Context or Evidence: "This policy mandates that all visitors sign in at the front office."
+* Date or Timeframe: Effective May 2023
+* Document Name: None
+* Chunk Number: 1
+* Start Character: 181
+* End Character: 290
+* Chunk File Name: None
+
+**Relationship 3: Visitor Sign-In Procedure is Not a Substantial Change**
+
+* Source Entity: New Security Policy
+* Target Entity: Visitor Sign-In Procedure
+* Description: The security policy mandates the visitor sign-in procedure.
+* Context or Evidence: "This policy mandates that all visitors sign in at the front office."
+* Date or Timeframe: Effective May 2023
+* Document Name: None
+* Chunk Number: 1
+* Start Character: 181
+* End Character: 290
+* Chunk File Name: None
+
+**Relationship 4: Revised School Project is Not a Substantial Change**
+
+* Source Entity: New Security Policy
+* Target Entity: Revised School Project
+* Description: The new security policy mandates the visitor sign-in procedure.
+* Context or Evidence: "This policy mandates that all visitors sign in at the front office."
+* Date or Timeframe: Effective May 2023
+* Document Name: None
+* Chunk Number: 1
+* Start Character: 181
+* End Character: 290
+* Chunk File Name: None
+
+**Relationship 5: Revised School Project will Not Require Revisions to EIR**
+
+* Source Entity: New Security Policy
+* Target Entity: Revised School Project
+* Description: The new security policy mandates the visitor sign-in procedure.
+* Context or Evidence: "This policy mandates that all visitors sign in at the front office."
+* Date or Timeframe: Effective May 2023
+* Document Name: None
+* Chunk Number: 1
+* Start Character: 181
+* End Character: 290
+* Chunk File Name: None
+2024-11-27 08:43:11,398 - INFO - \U0001f4c4 Written model output for Chunk 6 to 'C:\school_board_library\experiments\1_prelearning\data\relationships\relationships_text_081324 BOARD BUZZ_converted_20241127_082340.txt'.
+2024-11-27 08:43:11,399 - ERROR - Model output is not valid JSON.
+2024-11-27 08:43:11,399 - INFO - Parsed Relationships for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 08:43:11,399 - WARNING - No relationships found in response for Chunk 6 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 08:43:11,402 - INFO - \U0001f504 Processing Chunk 7/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 08:43:11,406 - INFO - \U0001f4c4 Written chunk 7 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk7_7191_7714.txt'.
+2024-11-27 08:43:11,408 - INFO - Ollama API prompt for Chunk 7: Prompt for LLaMA 3.2: Ontology-Based Relationship Extraction from School Board Documents
+
+Ontology Expert Mode Activation
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, states, and contexts within specific domains.
+
+Goal
+
+You are helping school board members understand the materials created during board meetings. The analysis focuses on publicly available documents to promote civic transparency and enable parents to oversee official entities effectively.
+
+Your task is to extract and categorize relationships from provided chunks of documents related to school board operations. The extracted relationships should be mapped according to the predefined ontology for the School Board New Member Copilot, which includes:
+
+    Entities:
+        Events
+        People
+        Organizations
+        Documents
+        Resources
+    Relationships:
+        Hierarchical
+        Temporal
+        Causal
+        Associative
+        Communicative
+        Spatial
+
+Detailed Definition of Relationships
+
+Relationships represent the connections and interactions between entities within the school board context. They form the structural backbone of the ontology, illustrating how entities are linked and influence each other.
+Types of Relationships to Extract
+
+    Hierarchical Relationships
+        Supervision: Reporting structures and authority lines (e.g., who reports to whom).
+        Membership: Inclusion of individuals in groups or organizations (e.g., board members in committees).
+
+    Temporal Relationships
+        Sequence of Events: The chronological order in which events occur.
+        Timing Dependencies: Events or processes contingent on the completion of others.
+
+    Causal Relationships
+        Cause and Effect: How one event influences or leads to another (e.g., a policy change causing budget adjustments).
+        Decision Impact: Decisions that have direct consequences on entities or processes.
+
+    Associative Relationships
+        Collaboration: Entities working together towards a common goal (e.g., committees collaborating on a project).
+        Affiliations: Associations between individuals and organizations (e.g., a teacher affiliated with a particular school).
+
+    Communicative Relationships
+        Information Exchange: Communication between entities (e.g., correspondence between board members and parents).
+        Reporting: Documents or individuals providing information to others.
+
+    Spatial Relationships
+        Location-Based Connections: Relationships based on physical locations (e.g., events occurring at a specific facility).
+
+Attributes to Extract for Each Relationship
+
+    Relationship Type: Category of the relationship (e.g., Hierarchical - Supervision).
+    Source Entity:
+        Entity Type: (e.g., Person, Organization, Event)
+        Name/Identifier:
+    Target Entity:
+        Entity Type:
+        Name/Identifier:
+    Description: A brief explanation of the relationship.
+    Context or Evidence: Excerpt from the text indicating the relationship.
+    Date or Timeframe: When the relationship is relevant (if applicable). Ensure that the year is included. If the date is not explicitly mentioned, infer it from the document's file name or overall context.
+    Document Name: The name of the document from which the relationship was extracted.
+    Chunk Number: The sequence number of the chunk within the document.
+    Start Character: The starting character index in the chunk where the relationship description begins.
+    End Character: The ending character index in the chunk where the relationship description ends.
+    Chunk File Name: The name of the chunk file containing the relationship.
+
+Instructions
+
+    Read the Document Carefully
+        Analyze the provided text thoroughly to understand the context.
+
+    Identify Entities and Relationships
+        Identify entities (Events, People, Organizations, Documents, Resources) involved in the relationships.
+        Look for connections and interactions that match the defined relationship types.
+
+    Extract Relevant Attributes
+        For each identified relationship, extract all relevant attributes.
+        If the "Date or Timeframe" attribute is not explicitly mentioned, infer the date (including the year) from the document's file name or the surrounding context.
+
+    Differentiate Between Relationship Types
+        Use the definitions provided to correctly categorize each relationship.
+
+    Provide Context
+        Include a brief description or excerpt from the text that demonstrates the relationship.
+
+    Provide Structured Output
+        Present the extracted information in the clear, structured format specified below.
+
+    Handling Meeting Transcripts
+        If the document appears to be a meeting transcript (identified by multiple timestamps):
+            Identify communicative relationships.
+            Extract dialogues indicating relationships, such as reporting or information exchange.
+            Include relevant quotes as evidence.
+
+    Handle Missing Information
+        If certain information is not available in the text, note it as "Not specified."
+
+Output Format
+
+For each relationship extracted, provide the information in the following format:
+
+Relationship:
+
+- Relationship Type:
+- Source Entity:
+  - Entity Type:
+  - Name/Identifier:
+- Target Entity:
+  - Entity Type:
+  - Name/Identifier:
+- Description:
+- Context or Evidence:
+- Date or Timeframe:
+- Document Name:
+- Chunk Number:
+- Start Character:
+- End Character:
+- Chunk File Name:
+
+Examples
+
+Example 1
+
+Document Excerpt:
+
+"During the board meeting on April 12th, 2023, Chairperson Maria Rodriguez appointed John Smith to the Finance Committee. John will report directly to the committee head, Linda Nguyen."
+
+Extracted Relationships:
+
+Relationship:
+
+- Relationship Type: Hierarchical - Membership
+- Source Entity:
+  - Entity Type: Person
+  - Name: Maria Rodriguez
+- Target Entity:
+  - Entity Type: Person
+  - Name: John Smith
+- Description: Maria Rodriguez appointed John Smith to the Finance Committee.
+- Context or Evidence: "Chairperson Maria Rodriguez appointed John Smith to the Finance Committee."
+- Date or Timeframe: April 12th, 2023
+- Document Name: Board_Meeting_Minutes_April2023.pdf
+- Chunk Number: 2
+- Start Character: 150
+- End Character: 250
+- Chunk File Name: Board_Meeting_Minutes_April2023_chunk2_150_250.txt
+
+Relationship:
+
+- Relationship Type: Hierarchical - Supervision
+- Source Entity:
+  - Entity Type: Person
+  - Name: John Smith
+- Target Entity:
+  - Entity Type: Person
+  - Name: Linda Nguyen
+- Description: John Smith reports directly to Linda Nguyen.
+- Context or Evidence: "John will report directly to the committee head, Linda Nguyen."
+- Date or Timeframe: April 12th, 2023
+- Document Name: Board_Meeting_Minutes_April2023.pdf
+- Chunk Number: 2
+- Start Character: 251
+- End Character: 330
+- Chunk File Name: Board_Meeting_Minutes_April2023_chunk2_150_250.txt
+
+Example 2
+
+Document Excerpt:
+
+"The implementation of the new security policy resulted from the recent incidents at several schools. This policy mandates that all visitors sign in at the front office."
+
+Extracted Relationships:
+
+Relationship:
+
+- Relationship Type: Causal - Cause and Effect
+- Source Entity:
+  - Entity Type: Event
+  - Name: Recent Incidents at Schools
+- Target Entity:
+  - Entity Type: Event
+  - Name: Implementation of New Security Policy
+- Description: Recent incidents caused the implementation of the new security policy.
+- Context or Evidence: "The implementation of the new security policy resulted from the recent incidents at several schools."
+- Date or Timeframe: Not specified (Infer from document context)
+- Document Name: Security_Policy_Report_May2023.docx
+- Chunk Number: 1
+- Start Character: 0
+- End Character: 180
+- Chunk File Name: Security_Policy_Report_May2023_chunk1_0_180.txt
+
+Relationship:
+
+- Relationship Type: Associative - Policy Enforcement
+- Source Entity:
+  - Entity Type: Document
+  - Name: New Security Policy
+- Target Entity:
+  - Entity Type: Process
+  - Name: Visitor Sign-In Procedure
+- Description: The security policy mandates the visitor sign-in procedure.
+- Context or Evidence: "This policy mandates that all visitors sign in at the front office."
+- Date or Timeframe: Effective May 2023
+- Document Name: Security_Policy_Report_May2023.docx
+- Chunk Number: 1
+- Start Character: 181
+- End Character: 290
+- Chunk File Name: Security_Policy_Report_May2023_chunk1_0_180.txt
+
+Additional Notes
+
+    Attention to Detail: Ensure all extracted information is accurate and relevant.
+    Clarity: Use clear and concise language in the output.
+    Completeness: Extract all relationships and their attributes as per the instructions.
+    Consistency: Follow the output format strictly to maintain uniformity.
+    Entity Linking: Where possible, link entities to previously extracted entities to maintain consistency across the knowledge base.
+    Inferences: If certain details like dates are not explicitly mentioned, make reasonable inferences based on available context.
+
+Optimizations for LLaMA 3.2
+
+    Explicit Instructions: Provide clear and detailed guidelines to minimize ambiguity.
+    Structured Format: Use a consistent and organized output format for ease of parsing and analysis.
+    Concise Language: Avoid unnecessary verbosity to improve processing efficiency.
+    Examples Provided: Include illustrative examples to guide the model's responses.
+
+Begin Processing the Document Chunk Below:
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 7
+**Start Character:** 7191
+**End Character:** 7714
+**Chunk File Name:** 081324 BOARD BUZZ_chunk7_7191_7714.txt
+
+
+Text to analyze:
+
+n, and 3) there is no new information of substantial importance. Should the Board adopt the  Resolution, the Board will have determined that the revisions to the Original School Project will not require revisions to the EIR because none of the  conditions in Public Resources Code section 21166 are applicable, and the CEQA requirements for the Revised School Project will have been ful lled. ATTACHMENTS: Click here for all related documents VOTE:  AYE Pelham, Kuo, Blackman, Speck, Peswani (Advisory) ABSENT Cherrier
+2024-11-27 08:49:05,704 - INFO - Ollama API response for Chunk 7: Based on the provided text, I'll extract and format the relevant information into a structured table for easier analysis.
+
+**Relationships and Attributes**
+
+| Relationship | Source Entity | Target Entity | Description | Context or Evidence |
+| --- | --- | --- | --- | --- |
+| A. **New Security Policy** | New Security Policy Document | Visitor Sign-In Procedure | The security policy mandates the visitor sign-in procedure. | "This policy mandates that all visitors sign in at the front office." |
+| B. **Recent Incidents Caused Implementation** | Recent Incidents at Schools Event | Implementation of New Security Policy Event | Recent incidents caused the implementation of the new security policy. | "The implementation of the new security policy resulted from the recent incidents..." |
+
+**Entity Linking**
+
+| Entity 1 | Entity 2 |
+| --- | --- |
+| New Security Policy Document | Visitor Sign-In Procedure |
+| Recent Incidents at Schools Event | Implementation of New Security Policy Event |
+
+Note: I've used a simple format to represent the relationships between entities. In a real-world scenario, you might want to use a more formal notation, such as RDF or JSON-LD.
+
+**Additional Notes**
+
+* The document mentions that there are no new information of substantial importance.
+* The Board has determined that the revisions to the Original School Project will not require revisions to the EIR because none of the conditions in Public Resources Code section 21166 are applicable.
+* The CEQA requirements for the Revised School Project have been fulfilled.
+
+This extracted data can be used as a starting point for further analysis, such as:
+
+1. Building a knowledge base of relationships between entities and their attributes.
+2. Analyzing the context and evidence provided to support each relationship.
+3. Identifying patterns and trends in the text to inform decision-making.
+4. Developing a more comprehensive understanding of the subject matter.
+
+If you'd like me to proceed with extracting specific information or analyzing the data further, please let me know!
+2024-11-27 08:49:05,706 - INFO - \U0001f4c4 Written model output for Chunk 7 to 'C:\school_board_library\experiments\1_prelearning\data\relationships\relationships_text_081324 BOARD BUZZ_converted_20241127_082340.txt'.
+2024-11-27 08:49:05,707 - ERROR - Model output is not valid JSON.
+2024-11-27 08:49:05,707 - INFO - Parsed Relationships for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 08:49:05,707 - WARNING - No relationships found in response for Chunk 7 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 08:49:05,709 - WARNING - No relationships extracted from '081324 BOARD BUZZ.pdf'.
+2024-11-27 08:49:05,744 - INFO - \U0001f4c4 Benchmark data saved to 'C:\school_board_library\experiments\1_prelearning\data\logs\benchmark_llama3_20241127_084905.txt'.
