@@ -854,3 +854,603 @@ Begin Processing the Document Chunk Below:
 Text to analyze:
 
 The Project also included a 12-acre school site to serve up to 900  kindergarten through 5th grade students ( Original School Project ). On November 5, 2013, the City of Dublin ( City ) approved the Project, which included  the Original School Project, and adopted Resolution No. 186-13 certifying the Dublin Crossing Speci c Plan Final Environmental Impact Report ( EIR ) for  the Project (State Clearinghouse No. 2012062009) in compliance with the California Environmental Quality Act (Pub. Resources Code,   21000 et seq.) and the  CEQA Guidelines (14 Cal. Code Regs.,   15000 et seq.) ( CEQA ). In connection with the consideration and adoption of the Dublin Crossing Speci c Plan and  EIR, a Statement of Findings, a Statement of Overriding Considerations ( SOC ), a Mitigation Monitoring and Reporting Program ( MMRP ), were also  adopted. The District was noti ed by the City pursuant to all applicable CEQA provisions during the environmental review process conducted for the EIR  and reviewed and commented on the EIR. Further, the previously certi ed EIR evaluated and mitigated the impacts of the Original School Project with the  anticipated development of the Dublin Crossing Speci c Plan. The District has now determined that the Dublin Crossing community would be better  served  by siting a TK-8 school, to be named the Shamrock Hills TK-8 School, in the Project area rather than the originally proposed K-5 school and expanding the  number of students from 900 to 1,054
+2024-11-27 08:31:53,539 - INFO - Ollama API response for Chunk 3: Here is the analysis of the provided text:
+
+**Text Summary**
+
+The document appears to be a report on the approval of a new project, including the construction of a school building. The project involves acquiring a 12-acre site in Dublin, California, and has received approvals from various parties.
+
+**Entity Linking**
+
+The following entities have been linked to each other:
+
+* Project: The Original School Project, which was approved by City of Dublin on November 5, 2013.
+* Dublin Crossing Speci c Plan: A plan that outlines the future development of the area and includes a TK-8 school building.
+* Shamrock Hills TK-8 School: The proposed school building to be constructed in the project area.
+
+**Key Relationships**
+
+1. The Original School Project is linked to the Dublin Crossing Speci c Plan, which is also linked to the Shamrock Hills TK-8 School.
+2. The City of Dublin is linked to both the Original School Project and the Dublin Crossing Speci c Plan.
+3. The CEQA Guidelines are linked to the Dublin Crossing Speci c Plan.
+
+**Entity Attributes**
+
+* Name: None
+* Description: None
+* Location: None
+* Date: November 5, 2013 (approval of Original School Project)
+* Purpose: To construct a TK-8 school building in the project area
+
+**Inferences**
+
+Based on the text, we can infer that:
+
+* The Dublin Crossing Speci c Plan includes a TK-8 school building.
+* The Shamrock Hills TK-8 School will be constructed on the 12-acre site.
+* The Original School Project was approved by City of Dublin in November 2013.
+
+**Additional Notes**
+
+* The text provides context for the approval of the project, including CEQA provisions and mitigation measures.
+* The document appears to be a draft or initial version, as it includes "in connection with" clauses for various policies and regulations.
+* The use of specific dates (November 5, 2013) suggests that the information is based on historical records.
+2024-11-27 08:31:53,540 - INFO - \U0001f4c4 Written model output for Chunk 3 to 'C:\school_board_library\experiments\1_prelearning\data\relationships\relationships_text_081324 BOARD BUZZ_converted_20241127_082340.txt'.
+2024-11-27 08:31:53,540 - ERROR - Model output is not valid JSON.
+2024-11-27 08:31:53,541 - INFO - Parsed Relationships for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 08:31:53,541 - WARNING - No relationships found in response for Chunk 3 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 08:31:53,541 - INFO - \U0001f504 Processing Chunk 4/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 08:31:53,543 - INFO - \U0001f4c4 Written chunk 4 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk4_3597_5093.txt'.
+2024-11-27 08:31:53,568 - INFO - Ollama API prompt for Chunk 4: Prompt for LLaMA 3.2: Ontology-Based Relationship Extraction from School Board Documents
+
+Ontology Expert Mode Activation
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, states, and contexts within specific domains.
+
+Goal
+
+You are helping school board members understand the materials created during board meetings. The analysis focuses on publicly available documents to promote civic transparency and enable parents to oversee official entities effectively.
+
+Your task is to extract and categorize relationships from provided chunks of documents related to school board operations. The extracted relationships should be mapped according to the predefined ontology for the School Board New Member Copilot, which includes:
+
+    Entities:
+        Events
+        People
+        Organizations
+        Documents
+        Resources
+    Relationships:
+        Hierarchical
+        Temporal
+        Causal
+        Associative
+        Communicative
+        Spatial
+
+Detailed Definition of Relationships
+
+Relationships represent the connections and interactions between entities within the school board context. They form the structural backbone of the ontology, illustrating how entities are linked and influence each other.
+Types of Relationships to Extract
+
+    Hierarchical Relationships
+        Supervision: Reporting structures and authority lines (e.g., who reports to whom).
+        Membership: Inclusion of individuals in groups or organizations (e.g., board members in committees).
+
+    Temporal Relationships
+        Sequence of Events: The chronological order in which events occur.
+        Timing Dependencies: Events or processes contingent on the completion of others.
+
+    Causal Relationships
+        Cause and Effect: How one event influences or leads to another (e.g., a policy change causing budget adjustments).
+        Decision Impact: Decisions that have direct consequences on entities or processes.
+
+    Associative Relationships
+        Collaboration: Entities working together towards a common goal (e.g., committees collaborating on a project).
+        Affiliations: Associations between individuals and organizations (e.g., a teacher affiliated with a particular school).
+
+    Communicative Relationships
+        Information Exchange: Communication between entities (e.g., correspondence between board members and parents).
+        Reporting: Documents or individuals providing information to others.
+
+    Spatial Relationships
+        Location-Based Connections: Relationships based on physical locations (e.g., events occurring at a specific facility).
+
+Attributes to Extract for Each Relationship
+
+    Relationship Type: Category of the relationship (e.g., Hierarchical - Supervision).
+    Source Entity:
+        Entity Type: (e.g., Person, Organization, Event)
+        Name/Identifier:
+    Target Entity:
+        Entity Type:
+        Name/Identifier:
+    Description: A brief explanation of the relationship.
+    Context or Evidence: Excerpt from the text indicating the relationship.
+    Date or Timeframe: When the relationship is relevant (if applicable). Ensure that the year is included. If the date is not explicitly mentioned, infer it from the document's file name or overall context.
+    Document Name: The name of the document from which the relationship was extracted.
+    Chunk Number: The sequence number of the chunk within the document.
+    Start Character: The starting character index in the chunk where the relationship description begins.
+    End Character: The ending character index in the chunk where the relationship description ends.
+    Chunk File Name: The name of the chunk file containing the relationship.
+
+Instructions
+
+    Read the Document Carefully
+        Analyze the provided text thoroughly to understand the context.
+
+    Identify Entities and Relationships
+        Identify entities (Events, People, Organizations, Documents, Resources) involved in the relationships.
+        Look for connections and interactions that match the defined relationship types.
+
+    Extract Relevant Attributes
+        For each identified relationship, extract all relevant attributes.
+        If the "Date or Timeframe" attribute is not explicitly mentioned, infer the date (including the year) from the document's file name or the surrounding context.
+
+    Differentiate Between Relationship Types
+        Use the definitions provided to correctly categorize each relationship.
+
+    Provide Context
+        Include a brief description or excerpt from the text that demonstrates the relationship.
+
+    Provide Structured Output
+        Present the extracted information in the clear, structured format specified below.
+
+    Handling Meeting Transcripts
+        If the document appears to be a meeting transcript (identified by multiple timestamps):
+            Identify communicative relationships.
+            Extract dialogues indicating relationships, such as reporting or information exchange.
+            Include relevant quotes as evidence.
+
+    Handle Missing Information
+        If certain information is not available in the text, note it as "Not specified."
+
+Output Format
+
+For each relationship extracted, provide the information in the following format:
+
+Relationship:
+
+- Relationship Type:
+- Source Entity:
+  - Entity Type:
+  - Name/Identifier:
+- Target Entity:
+  - Entity Type:
+  - Name/Identifier:
+- Description:
+- Context or Evidence:
+- Date or Timeframe:
+- Document Name:
+- Chunk Number:
+- Start Character:
+- End Character:
+- Chunk File Name:
+
+Examples
+
+Example 1
+
+Document Excerpt:
+
+"During the board meeting on April 12th, 2023, Chairperson Maria Rodriguez appointed John Smith to the Finance Committee. John will report directly to the committee head, Linda Nguyen."
+
+Extracted Relationships:
+
+Relationship:
+
+- Relationship Type: Hierarchical - Membership
+- Source Entity:
+  - Entity Type: Person
+  - Name: Maria Rodriguez
+- Target Entity:
+  - Entity Type: Person
+  - Name: John Smith
+- Description: Maria Rodriguez appointed John Smith to the Finance Committee.
+- Context or Evidence: "Chairperson Maria Rodriguez appointed John Smith to the Finance Committee."
+- Date or Timeframe: April 12th, 2023
+- Document Name: Board_Meeting_Minutes_April2023.pdf
+- Chunk Number: 2
+- Start Character: 150
+- End Character: 250
+- Chunk File Name: Board_Meeting_Minutes_April2023_chunk2_150_250.txt
+
+Relationship:
+
+- Relationship Type: Hierarchical - Supervision
+- Source Entity:
+  - Entity Type: Person
+  - Name: John Smith
+- Target Entity:
+  - Entity Type: Person
+  - Name: Linda Nguyen
+- Description: John Smith reports directly to Linda Nguyen.
+- Context or Evidence: "John will report directly to the committee head, Linda Nguyen."
+- Date or Timeframe: April 12th, 2023
+- Document Name: Board_Meeting_Minutes_April2023.pdf
+- Chunk Number: 2
+- Start Character: 251
+- End Character: 330
+- Chunk File Name: Board_Meeting_Minutes_April2023_chunk2_150_250.txt
+
+Example 2
+
+Document Excerpt:
+
+"The implementation of the new security policy resulted from the recent incidents at several schools. This policy mandates that all visitors sign in at the front office."
+
+Extracted Relationships:
+
+Relationship:
+
+- Relationship Type: Causal - Cause and Effect
+- Source Entity:
+  - Entity Type: Event
+  - Name: Recent Incidents at Schools
+- Target Entity:
+  - Entity Type: Event
+  - Name: Implementation of New Security Policy
+- Description: Recent incidents caused the implementation of the new security policy.
+- Context or Evidence: "The implementation of the new security policy resulted from the recent incidents at several schools."
+- Date or Timeframe: Not specified (Infer from document context)
+- Document Name: Security_Policy_Report_May2023.docx
+- Chunk Number: 1
+- Start Character: 0
+- End Character: 180
+- Chunk File Name: Security_Policy_Report_May2023_chunk1_0_180.txt
+
+Relationship:
+
+- Relationship Type: Associative - Policy Enforcement
+- Source Entity:
+  - Entity Type: Document
+  - Name: New Security Policy
+- Target Entity:
+  - Entity Type: Process
+  - Name: Visitor Sign-In Procedure
+- Description: The security policy mandates the visitor sign-in procedure.
+- Context or Evidence: "This policy mandates that all visitors sign in at the front office."
+- Date or Timeframe: Effective May 2023
+- Document Name: Security_Policy_Report_May2023.docx
+- Chunk Number: 1
+- Start Character: 181
+- End Character: 290
+- Chunk File Name: Security_Policy_Report_May2023_chunk1_0_180.txt
+
+Additional Notes
+
+    Attention to Detail: Ensure all extracted information is accurate and relevant.
+    Clarity: Use clear and concise language in the output.
+    Completeness: Extract all relationships and their attributes as per the instructions.
+    Consistency: Follow the output format strictly to maintain uniformity.
+    Entity Linking: Where possible, link entities to previously extracted entities to maintain consistency across the knowledge base.
+    Inferences: If certain details like dates are not explicitly mentioned, make reasonable inferences based on available context.
+
+Optimizations for LLaMA 3.2
+
+    Explicit Instructions: Provide clear and detailed guidelines to minimize ambiguity.
+    Structured Format: Use a consistent and organized output format for ease of parsing and analysis.
+    Concise Language: Avoid unnecessary verbosity to improve processing efficiency.
+    Examples Provided: Include illustrative examples to guide the model's responses.
+
+Begin Processing the Document Chunk Below:
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 4
+**Start Character:** 3597
+**End Character:** 5093
+**Chunk File Name:** 081324 BOARD BUZZ_chunk4_3597_5093.txt
+
+
+Text to analyze:
+
+Speci c Plan. The District has now determined that the Dublin Crossing community would be better  served  by siting a TK-8 school, to be named the Shamrock Hills TK-8 School, in the Project area rather than the originally proposed K-5 school and expanding the  number of students from 900 to 1,054 ( Revised School Project ). The Revised School Project would be located on the same 12-acre location as the Original  School Project. Public Resources Code section 21166 requires that  when an environmental impact report has been prepared for a project, no subsequent  or supplemental environmental impact report shall be required by the lead agency or by any responsible agency, unless one or more of the following events  occur:   Substantial changes are proposed in the project which will require major revisions of the environmental impact report;   Substantial changes occur with respect to the circumstances under which the project is being undertaken which will require major revisions in  the environmental impact report;   New information, which was not known and could not have been known at the time the environmental impact report was certi ed as complete,  becomes available.  AYE - ABSENT -ITEM L1 continued next page 06NOTE: Trustee Cherrier was unable to attend the August 13, 2024 Board meeting ADJOURNMENT: ADJOURNMENT: Open Session for the August 13, 2024 Regular Board Meeting adjourned at 7:41 PM. August 27:  Regular Board Meeting @ 6PM September 10 & 24:
+2024-11-27 08:34:28,994 - INFO - Ollama API response for Chunk 4: Here is a step-by-step analysis of the document:
+
+**Document Summary**
+
+* The document appears to be an agenda or meeting minutes for a school board meeting.
+* The purpose of the meeting was to discuss the Revised School Project, which involves building a new TK-8 school in the Dublin Crossing area.
+* The proposal was to build a TK-8 school on a 12-acre location.
+
+**Extracted Information**
+
+* **Date**: August 13, 2024
+* **Meeting Type**: Regular Board Meeting
+* **Location**: Boardroom (exact room number not specified)
+* **Attendees**: Trustee Cherrier, possibly other board members?
+* **Revised School Project Details**:
+	+ New TK-8 school to be named Shamrock Hills TK-8 School
+	+ Number of students to increase from 900 to 1,054
+	+ Original proposal: K-5 school and expansion to 900 students
+	+ Revised location: same 12-acre location as the original project
+
+**Entity Linking**
+
+* The document links various entities, including:
+	+ School board members (Trustee Cherrier)
+	+ Project proposers (Dublin Crossing community)
+	+ Stakeholders (parent-teacher associations, local residents)
+
+**Inferences and Hypotheses**
+
+* Based on the context, it is likely that the Revised School Project will require significant changes to the original proposal.
+* The document mentions "substantial changes" proposed in the project which would require major revisions of the environmental impact report.
+* It is also possible that new information or circumstances have arisen since the last environmental impact report was submitted.
+
+**Recommendations**
+
+* Based on the extracted information, it appears that the school board should:
+	+ Review and revise their proposal for the Revised School Project
+	+ Consider alternative locations or designs for the school building
+	+ Evaluate the potential impacts of the project on the community
+
+**Optimizations for LLaMA 3.2**
+
+* Provide clear instructions to minimize ambiguity, such as specifying that the document is an agenda or meeting minutes.
+* Use a structured format with consistent headings and paragraphs.
+* Incorporate concise language to improve processing efficiency.
+* Include examples provided to guide the model's responses.
+
+Here is a sample output based on the instructions:
+
+**Revised School Project Details**
+
+| **Date**: | August 13, 2024 |
+| **Meeting Type**: | Regular Board Meeting |
+| **Location**: | Boardroom (exact room number not specified) |
+| **Attendees**: | Trustee Cherrier, possibly other board members? |
+| **Revised School Project Details**:
+	+ New TK-8 school to be named Shamrock Hills TK-8 School
+	+ Number of students to increase from 900 to 1,054
+	+ Original proposal: K-5 school and expansion to 900 students
+
+Note that this is just a sample output, and the actual output may vary based on the specific requirements of the LLaMA 3.2 model.
+2024-11-27 08:34:28,995 - INFO - \U0001f4c4 Written model output for Chunk 4 to 'C:\school_board_library\experiments\1_prelearning\data\relationships\relationships_text_081324 BOARD BUZZ_converted_20241127_082340.txt'.
+2024-11-27 08:34:28,996 - ERROR - Model output is not valid JSON.
+2024-11-27 08:34:28,997 - INFO - Parsed Relationships for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 08:34:28,997 - WARNING - No relationships found in response for Chunk 4 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 08:34:28,998 - INFO - \U0001f504 Processing Chunk 5/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 08:34:29,027 - INFO - \U0001f4c4 Written chunk 5 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk5_4793_6292.txt'.
+2024-11-27 08:34:29,039 - INFO - Ollama API prompt for Chunk 5: Prompt for LLaMA 3.2: Ontology-Based Relationship Extraction from School Board Documents
+
+Ontology Expert Mode Activation
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, states, and contexts within specific domains.
+
+Goal
+
+You are helping school board members understand the materials created during board meetings. The analysis focuses on publicly available documents to promote civic transparency and enable parents to oversee official entities effectively.
+
+Your task is to extract and categorize relationships from provided chunks of documents related to school board operations. The extracted relationships should be mapped according to the predefined ontology for the School Board New Member Copilot, which includes:
+
+    Entities:
+        Events
+        People
+        Organizations
+        Documents
+        Resources
+    Relationships:
+        Hierarchical
+        Temporal
+        Causal
+        Associative
+        Communicative
+        Spatial
+
+Detailed Definition of Relationships
+
+Relationships represent the connections and interactions between entities within the school board context. They form the structural backbone of the ontology, illustrating how entities are linked and influence each other.
+Types of Relationships to Extract
+
+    Hierarchical Relationships
+        Supervision: Reporting structures and authority lines (e.g., who reports to whom).
+        Membership: Inclusion of individuals in groups or organizations (e.g., board members in committees).
+
+    Temporal Relationships
+        Sequence of Events: The chronological order in which events occur.
+        Timing Dependencies: Events or processes contingent on the completion of others.
+
+    Causal Relationships
+        Cause and Effect: How one event influences or leads to another (e.g., a policy change causing budget adjustments).
+        Decision Impact: Decisions that have direct consequences on entities or processes.
+
+    Associative Relationships
+        Collaboration: Entities working together towards a common goal (e.g., committees collaborating on a project).
+        Affiliations: Associations between individuals and organizations (e.g., a teacher affiliated with a particular school).
+
+    Communicative Relationships
+        Information Exchange: Communication between entities (e.g., correspondence between board members and parents).
+        Reporting: Documents or individuals providing information to others.
+
+    Spatial Relationships
+        Location-Based Connections: Relationships based on physical locations (e.g., events occurring at a specific facility).
+
+Attributes to Extract for Each Relationship
+
+    Relationship Type: Category of the relationship (e.g., Hierarchical - Supervision).
+    Source Entity:
+        Entity Type: (e.g., Person, Organization, Event)
+        Name/Identifier:
+    Target Entity:
+        Entity Type:
+        Name/Identifier:
+    Description: A brief explanation of the relationship.
+    Context or Evidence: Excerpt from the text indicating the relationship.
+    Date or Timeframe: When the relationship is relevant (if applicable). Ensure that the year is included. If the date is not explicitly mentioned, infer it from the document's file name or overall context.
+    Document Name: The name of the document from which the relationship was extracted.
+    Chunk Number: The sequence number of the chunk within the document.
+    Start Character: The starting character index in the chunk where the relationship description begins.
+    End Character: The ending character index in the chunk where the relationship description ends.
+    Chunk File Name: The name of the chunk file containing the relationship.
+
+Instructions
+
+    Read the Document Carefully
+        Analyze the provided text thoroughly to understand the context.
+
+    Identify Entities and Relationships
+        Identify entities (Events, People, Organizations, Documents, Resources) involved in the relationships.
+        Look for connections and interactions that match the defined relationship types.
+
+    Extract Relevant Attributes
+        For each identified relationship, extract all relevant attributes.
+        If the "Date or Timeframe" attribute is not explicitly mentioned, infer the date (including the year) from the document's file name or the surrounding context.
+
+    Differentiate Between Relationship Types
+        Use the definitions provided to correctly categorize each relationship.
+
+    Provide Context
+        Include a brief description or excerpt from the text that demonstrates the relationship.
+
+    Provide Structured Output
+        Present the extracted information in the clear, structured format specified below.
+
+    Handling Meeting Transcripts
+        If the document appears to be a meeting transcript (identified by multiple timestamps):
+            Identify communicative relationships.
+            Extract dialogues indicating relationships, such as reporting or information exchange.
+            Include relevant quotes as evidence.
+
+    Handle Missing Information
+        If certain information is not available in the text, note it as "Not specified."
+
+Output Format
+
+For each relationship extracted, provide the information in the following format:
+
+Relationship:
+
+- Relationship Type:
+- Source Entity:
+  - Entity Type:
+  - Name/Identifier:
+- Target Entity:
+  - Entity Type:
+  - Name/Identifier:
+- Description:
+- Context or Evidence:
+- Date or Timeframe:
+- Document Name:
+- Chunk Number:
+- Start Character:
+- End Character:
+- Chunk File Name:
+
+Examples
+
+Example 1
+
+Document Excerpt:
+
+"During the board meeting on April 12th, 2023, Chairperson Maria Rodriguez appointed John Smith to the Finance Committee. John will report directly to the committee head, Linda Nguyen."
+
+Extracted Relationships:
+
+Relationship:
+
+- Relationship Type: Hierarchical - Membership
+- Source Entity:
+  - Entity Type: Person
+  - Name: Maria Rodriguez
+- Target Entity:
+  - Entity Type: Person
+  - Name: John Smith
+- Description: Maria Rodriguez appointed John Smith to the Finance Committee.
+- Context or Evidence: "Chairperson Maria Rodriguez appointed John Smith to the Finance Committee."
+- Date or Timeframe: April 12th, 2023
+- Document Name: Board_Meeting_Minutes_April2023.pdf
+- Chunk Number: 2
+- Start Character: 150
+- End Character: 250
+- Chunk File Name: Board_Meeting_Minutes_April2023_chunk2_150_250.txt
+
+Relationship:
+
+- Relationship Type: Hierarchical - Supervision
+- Source Entity:
+  - Entity Type: Person
+  - Name: John Smith
+- Target Entity:
+  - Entity Type: Person
+  - Name: Linda Nguyen
+- Description: John Smith reports directly to Linda Nguyen.
+- Context or Evidence: "John will report directly to the committee head, Linda Nguyen."
+- Date or Timeframe: April 12th, 2023
+- Document Name: Board_Meeting_Minutes_April2023.pdf
+- Chunk Number: 2
+- Start Character: 251
+- End Character: 330
+- Chunk File Name: Board_Meeting_Minutes_April2023_chunk2_150_250.txt
+
+Example 2
+
+Document Excerpt:
+
+"The implementation of the new security policy resulted from the recent incidents at several schools. This policy mandates that all visitors sign in at the front office."
+
+Extracted Relationships:
+
+Relationship:
+
+- Relationship Type: Causal - Cause and Effect
+- Source Entity:
+  - Entity Type: Event
+  - Name: Recent Incidents at Schools
+- Target Entity:
+  - Entity Type: Event
+  - Name: Implementation of New Security Policy
+- Description: Recent incidents caused the implementation of the new security policy.
+- Context or Evidence: "The implementation of the new security policy resulted from the recent incidents at several schools."
+- Date or Timeframe: Not specified (Infer from document context)
+- Document Name: Security_Policy_Report_May2023.docx
+- Chunk Number: 1
+- Start Character: 0
+- End Character: 180
+- Chunk File Name: Security_Policy_Report_May2023_chunk1_0_180.txt
+
+Relationship:
+
+- Relationship Type: Associative - Policy Enforcement
+- Source Entity:
+  - Entity Type: Document
+  - Name: New Security Policy
+- Target Entity:
+  - Entity Type: Process
+  - Name: Visitor Sign-In Procedure
+- Description: The security policy mandates the visitor sign-in procedure.
+- Context or Evidence: "This policy mandates that all visitors sign in at the front office."
+- Date or Timeframe: Effective May 2023
+- Document Name: Security_Policy_Report_May2023.docx
+- Chunk Number: 1
+- Start Character: 181
+- End Character: 290
+- Chunk File Name: Security_Policy_Report_May2023_chunk1_0_180.txt
+
+Additional Notes
+
+    Attention to Detail: Ensure all extracted information is accurate and relevant.
+    Clarity: Use clear and concise language in the output.
+    Completeness: Extract all relationships and their attributes as per the instructions.
+    Consistency: Follow the output format strictly to maintain uniformity.
+    Entity Linking: Where possible, link entities to previously extracted entities to maintain consistency across the knowledge base.
+    Inferences: If certain details like dates are not explicitly mentioned, make reasonable inferences based on available context.
+
+Optimizations for LLaMA 3.2
+
+    Explicit Instructions: Provide clear and detailed guidelines to minimize ambiguity.
+    Structured Format: Use a consistent and organized output format for ease of parsing and analysis.
+    Concise Language: Avoid unnecessary verbosity to improve processing efficiency.
+    Examples Provided: Include illustrative examples to guide the model's responses.
+
+Begin Processing the Document Chunk Below:
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 5
+**Start Character:** 4793
+**End Character:** 6292
+**Chunk File Name:** 081324 BOARD BUZZ_chunk5_4793_6292.txt
+
+
+Text to analyze:
+
+.  AYE - ABSENT -ITEM L1 continued next page 06NOTE: Trustee Cherrier was unable to attend the August 13, 2024 Board meeting ADJOURNMENT: ADJOURNMENT: Open Session for the August 13, 2024 Regular Board Meeting adjourned at 7:41 PM. August 27:  Regular Board Meeting @ 6PM September 10 & 24:  Regular Board Meeting @ 6PM October 8 & 22:  Regular Board Meeting @ 6PM November 12:  Regular Board Meeting @ 6PM December 3 & 17:  Regular Board Meeting @ 6PM BOARD MEETING INFORMATION: For information on how to contact Board members, review current or past Board agendas, view archived Board meeting videos, participate in the Public Comment period of a Board meeting, and more, visit the Board section of the DUSD website . All meetings are live streamed at DublinUSD.tv UPCOMING BOARD MEETINGS: KEY DISTRICT DATES: 2024-2025 SCHOOL YEAR September 2: Labor Day October 10-11:  No School November 1:  No School November 11: Veteran s Day November 22:  No School TK-8 November 25-29: Thanksgiving Break December 23 - January 6: Winter Break January 20: Martin Luther King Day February 14: No School February 17: Presidents Day March 14:  No School April 7 - 11: Spring Break May 26: Memorial Day June 3: Last Day of School 9-12 June 4:  Last Day of School TK-8 June 19: Juneteenth All Consent Agenda items ( ITEMS M1-Q6 ) were approved by the board in a 4-0 vote (Trustee Cherrier being absent) CONSENT AGENDA: None of the above events apply to the Revised School Project,
