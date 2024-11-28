@@ -1,0 +1,158 @@
+---- Chunk File Name: 082724 BOARD BUZZ_chunk1_0_1497.txt ----
+---- Chunk 1 ----
+---- Start Char: 0 ||| End Char: 1497 ----
+Here is the reformatted text with the requested information:
+
+**Document Excerpt**
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, **2023**
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+**Example 1**
+
+Document Excerpt:
+
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+Extracted Entities:
+
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, **2023**
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+**Example 2**
+
+Document Excerpt:
+
+"On September 10th, the Curriculum Committee convened to review new science textbooks. Teachers and subject matter experts provided input during the session."
+
+Extracted Entities:
+
+- **Event Name:** Curriculum Committee Meeting
+- **Event Type:** Committee Session
+- **Date and Time:** September 10th, **2023**
+- **Location:** Not specified
+- **Participants:** Curriculum Committee members, teachers, subject matter experts
+- **Agenda Items or Topics Discussed:** Review of new science textbooks
+- **Decisions Made or Outcomes:** Not specified
+- **Related Documents:** Textbook Evaluation Reports
+- **Document Name:** Curriculum_Review_Sept2023.docx
+- **Chunk Number:** 2
+- **Start Character:** 480
+- **End Character:** 950
+- **Chunk File Name:** Curriculum_Review_Sept2023_chunk2_480_950.txt
+
+**Additional Notes**
+
+* Attention to detail: Ensure all extracted information is accurate and relevant.
+* Clarity: Use clear and concise language in the output.
+* Completeness: Extract all events and their attributes as per the instructions.
+
+**Document Name:** 082724 BOARD BUZZ.pdf
+**Chunk Number:** 1
+**Start Character:** 0
+**End Character:** 1497
+**Chunk File Name:** 082724 BOARD BUZZ_chunk1_0_1497.txt
+
+---- Chunk File Name: 082724 BOARD BUZZ_chunk2_1194_2694.txt ----
+---- Chunk 2 ----
+---- Start Char: 1194 ||| End Char: 2694 ----
+Here are the extracted entities in the specified format:
+
+**Event:**
+
+* **Event Name:** Current Enrollment Numbers Update
+* **Event Type:** Public Information Session
+* **Date and Time:** August 13, 2024 (Open Session)
+* **Location:** Dublin USD Board Meeting Room
+* **Participants:**
+	+ Trustee Cherrier (arrived during ITEM E3 of the agenda)
+* **Agenda Items or Topics Discussed:** Update on current enrollment numbers for TK, Kindergarten, and district-wide enrollment broken down by school and grade level.
+* **Decisions Made or Outcomes:** Projected numbers detail the TK and Kindergarten enrollment over the next few years and the increased enrollment's impact on facilities and programming.
+
+**Related Documents:**
+
+* None
+
+**Document Name:**
+* Not specified
+* ATTACHMENTS:
+	+ Current Enrollment Numbers Update.pdf (attached)
+
+**Chunk Number:**
+* 2
+* Start Character: 1194
+* End Character: 2694
+* Chunk File Name: Current Enrollment Numbers Update_chunk2_1194_2694.txt
+
+---- Chunk File Name: 082724 BOARD BUZZ_chunk3_2391_2907.txt ----
+---- Chunk 3 ----
+---- Start Char: 2391 ||| End Char: 2907 ----
+Here are the extracted information in a structured format as per the specified output format:
+
+### Event: BOARD MEETINGS
+#### **Event Name:** BOARD MEETINGS
+#### **Event Type:** CONFERENCE OR MEETING
+#### **Date and Time:** September 2, 2024 - January 6, 2025
+#### **Location:** 
+#### **Participants:** All attendees
+
+### Document Excerpt:
+"The Annual Budget Meeting was held on May 5th, **2023**, at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote."
+
+### Extracted Entities:
+
+#### Event:
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date and Time:** May 5th, 2023
+- **Location:** District Office
+- **Participants:** Board members
+- **Agenda Items or Topics Discussed:** Proposed allocations for the upcoming fiscal year
+- **Decisions Made or Outcomes:** Budget approved with a majority vote
+- **Related Documents:** Proposed Budget Report
+- **Document Name:** Budget_Report_2023.pdf
+- **Chunk Number:** 1
+- **Start Character:** 0
+- **End Character:** 479
+- **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
+
+#### Document:
+- **Document Name:** Annual Budget Meeting Agenda
+- **Document Date:** May 5th, 2023
+- **Document Type:** Conference Report
+- **Document Content:** The Annual Budget Meeting was held on [Date] at the District Office. Board members discussed the proposed allocations for the upcoming fiscal year. The budget was approved with a majority vote.
+
+#### Related Documents:
+- **Textbook Evaluation Reports**: Not specified
+
+### Additional Notes:
+
+**Text to analyze:**
+BOARD MEETINGS: KEY DISTRICT DATES: 2024-2025 SCHOOL YEAR September 2: Labor Day October 10-11: No School November 1: No School November 11: Veteran s Day November 22: No School TK-8 November 25-29: Thanksgiving Break December 23 - January 6: Winter Break January 20: Martin Luther King Day February 14: No School February 17: Presidents Day March 14: No School April 7 - 11: Spring Break May 26: Memorial Day June 3: Last Day of School 9-12 June 4: Last Day of School TK-8 June 19: Juneteenth
+
