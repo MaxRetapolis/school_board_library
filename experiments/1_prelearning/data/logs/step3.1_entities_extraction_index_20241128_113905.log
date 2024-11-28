@@ -1,4 +1,9 @@
-Prompt for LLaMA 3.2: Ontology-Based Entity Indexing from School Board Documents
+2024-11-28 11:39:07,505 - INFO - Number of files to process: 1
+2024-11-28 11:39:07,505 - INFO - Model selected: small
+2024-11-28 11:39:07,506 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-28 11:39:07,506 - INFO - Selected the first 1 file(s) to process.
+2024-11-28 11:39:07,508 - INFO - \U0001f680 Starting processing for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 11:39:07,532 - INFO - \U0001f504 Starting processing for prompt: Prompt for LLaMA 3.2: Ontology-Based Entity Indexing from School Board Documents
 
 **Ontology Expert Mode Activation**
 
@@ -138,3 +143,12 @@ Provide the index of entities in the following format:
 - **Clarity:** Use clear and concise language.
 - **Completeness:** Extract all entities necessary to create a comprehensive index.
 - **Description Limit:** Ensure each entity is described in under 100 words across all attributes. We are building an index and only need to create a collection of distinct events; details about each event will be extracted in the next step after this one.
+
+2024-11-28 11:39:07,533 - INFO - \U0001f50d Starting token calculation for prompt.
+2024-11-28 11:39:07,541 - INFO - \U0001f4a1 Prompt tokens: 1362
+2024-11-28 11:39:07,547 - INFO - \u2705 Total tokens (3179) within limit. Output token buffer set to 20000. No chunking needed.
+2024-11-28 11:39:07,548 - INFO - \u2705 Finished processing prompt for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 11:39:07,550 - INFO - \U0001f3c1 Finished processing for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 11:39:07,551 - INFO - \U0001f4ca Total tokens for 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt': 3179
+2024-11-28 11:39:07,552 - INFO - \u23f1\ufe0f Elapsed time for 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt': 0.018808 seconds
+2024-11-28 11:39:07,553 - ERROR - Failed to load prompt from 'C:\school_board_library\experiments\1_prelearning\data\prompts\prompt_entities_index.txt\prompt_entities_index.txt': [Errno 2] No such file or directory: 'C:\\school_board_library\\experiments\\1_prelearning\\data\\prompts\\prompt_entities_index.txt\\prompt_entities_index.txt'

@@ -7,6 +7,7 @@ import logging
 from pathlib import Path
 from datetime import datetime
 import time  # Add import for timing
+import re  # Add necessary import
 
 # =======================
 # Configuration Section
@@ -439,13 +440,28 @@ def clean_text(text):
 
 import time  # Ensure time is imported for tracking chunk processing time
 
+def construct_full_prompt(prompt_template, doc_text, original_file):
+    """
+    Constructs the full prompt by combining the template, document name, and text.
+    """
+    return f"{prompt_template}\n\nDocument Name: {original_file}\n\nText to analyze:\n\n{doc_text}"
+
+def extract_text(file_path):
+    # Function to extract text from documents
+    # Implement as needed for .txt, .pdf, .docx files
+    if file_path.endswith('.txt'):
+        with open(file_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    # Add extraction for .pdf, .docx as required
+    return ""
+
 def extract_entities(selected_files):
     """
     Extracts entities from the selected documents.
     """
     all_entities = []
-    total_chars_processed = 0  # Changed from lines to characters
-    per_chunk_timings = []      # List to store timing info for each chunk
+    total_chars_processed = 0
+    per_chunk_timings = []
     
     for file_info in selected_files:
         processed_file = file_info.get("converted_file_path")
@@ -459,173 +475,69 @@ def extract_entities(selected_files):
         logging.info(f"📄 Processing Document: {original_file}")
         print(f"📄 Processing Document: {original_file}")
         
-        # Define a unique entities file per document with timestamp
-        sanitized_name = sanitize_filename(os.path.basename(processed_file))
-        entities_file = os.path.join(
+        # Define the output filename with timestamp
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_filename = os.path.join(
             ENTITIES_DIR,
-            f"entities-{sanitized_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            f"entities_extraction_index_{timestamp}.txt"
         )
         
-        # Define the new entities_text file
-        entities_text_file = os.path.join(
-            ENTITIES_DIR,
-            f"entities_text_{sanitized_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
-        )
-        
-        if os.path.isfile(entities_file):
-            logging.info(f"Entities already extracted for '{original_file}'. Skipping (use --overwrite to reprocess).")
-            print(f"ℹ️ Entities already extracted for '{original_file}'. Skipping (use --overwrite to reprocess).")
+        if os.path.isfile(output_filename):
+            logging.info(f"Entities extraction index already exists for '{original_file}'. Skipping.")
+            print(f"ℹ️ Entities extraction index already exists for '{original_file}'. Skipping.")
             continue
         
-        # Split the document into chunks
-        chunks = split_text_into_chunks(processed_file, chars_per_chunk=CHARS_PER_CHUNK, overlap_chars=OVERLAP_CHARS)
+        # Log the start of analysis
+        print("🚀 Starting analysis without chunking.")
+        logging.info("🚀 Starting analysis without chunking.")
         
-        if not chunks:
-            logging.warning(f"No chunks created for '{original_file}'. Skipping this file.")
-            print(f"⚠️ No chunks created for '{original_file}'. Skipping this file.")
-            continue
+        # Extract the full text of the document
+        doc_text = extract_text(processed_file)
         
-        logging.info(f"Split '{processed_file}' into {len(chunks)} chunk(s).")
-        print(f"✅ Split '{processed_file}' into {len(chunks)} chunk(s).")
+        # Prepare the full prompt
+        full_prompt = f"{PROMPT_TEMPLATE}\n\nText to analyze:\n\n{doc_text}"
+        logging.info(f"Ollama API prompt for '{original_file}': {full_prompt}")  # Log the full prompt sent
         
-        document_entities = []
+        # Call Ollama API
+        response = call_ollama(full_prompt)
+        if response:
+            # Process the response and extract entities
+            parsed_entities = parse_ollama_response(response, original_file, 1)
+            all_entities.append(parsed_entities)
+            logging.info(f"✅ Successfully extracted entities for '{original_file}'.")
+        else:
+            logging.error(f"❌ Failed to extract entities for '{original_file}'.")
+            print(f"❌ Failed to extract entities for '{original_file}'.")
         
-        for idx, (chunk, start_char, end_char) in enumerate(chunks, start=1):
-            logging.info(f"🔄 Processing Chunk {idx}/{len(chunks)} of '{original_file}'")
-            print(f"🔄 Processing Chunk {idx}/{len(chunks)} of '{original_file}'")
-            
-            # Start timing for the chunk
-            chunk_start_time = time.time()
-            
-            # Clean the chunk to remove problematic characters
-            cleaned_chunk = clean_text(chunk)
-            
-            # Calculate chunk size in characters
-            chunk_size = len(cleaned_chunk)
-            total_chars_processed += chunk_size
-            
-            # Write chunk to documents_chunks folder
-            document_base = sanitize_filename(os.path.splitext(original_file)[0])
-            chunk_filename = f"{document_base}_chunk{idx}_{start_char}_{end_char}.txt"
-            chunk_filepath = os.path.join(r"C:\school_board_library\experiments\1_prelearning\data\documents_chunks", chunk_filename)
-            try:
-                with open(chunk_filepath, 'w', encoding='utf-8') as chunk_file:
-                    chunk_file.write(cleaned_chunk)
-                logging.info(f"📄 Written chunk {idx} to '{chunk_filepath}'.")
-                print(f"📄 Written chunk {idx} to '{chunk_filepath}'.")
-            except Exception as e:
-                logging.error(f"❌ Failed to write chunk {idx} to '{chunk_filepath}': {e}")
-                print(f"❌ Failed to write chunk {idx} to '{chunk_filepath}': {e}")
-            
-            # Prepare the prompt with cleaned text and explicitly annotate Document Name and Chunk Details
-            prompt = (
-                PROMPT_TEMPLATE.replace("<source_file>", os.path.basename(processed_file)) +
-                f"\n\n**Document Name:** {original_file}\n" +    # Added Document Name annotation
-                f"**Chunk Number:** {idx}\n" +                   # Added Chunk Number annotation
-                f"**Start Character:** {start_char}\n" +         # Added Start Character annotation
-                f"**End Character:** {end_char}\n" +             # Added End Character annotation
-                f"**Chunk File Name:** {chunk_filename}\n" +      # Added Chunk File Name annotation
-                "\n\nText to analyze:\n\n" + cleaned_chunk
-            )
-            logging.info(f"Ollama API prompt for Chunk {idx}: {prompt}")  # Log the full prompt sent
-            
-            # Call Ollama API
-            response = call_ollama(prompt)
-            if response:
-                # End timing for the chunk
-                chunk_end_time = time.time()
-                chunk_duration = chunk_end_time - chunk_start_time
-                
-                # Record timing information for the chunk
-                time_per_char_chunk = round(chunk_duration / chunk_size, 6) if chunk_size > 0 else 0  # Calculated time per character
-                per_chunk_timings.append({
-                    "Chunk Number": idx,
-                    "Chunk Size (chars)": chunk_size,
-                    "Time Taken (seconds)": round(chunk_duration, 6),
-                    "Time per Character (seconds)": time_per_char_chunk  # Added time per character
-                })
-                
-                # Log the full API response
-                logging.info(f"Ollama API response for Chunk {idx}: {response}")
-                
-                # Write the exact model output to the entities_text file
-                try:
-                    with open(entities_text_file, 'a', encoding='utf-8') as text_file:
-                        text_file.write(f"---- Chunk File Name: {chunk_filename} ----\n")
-                        text_file.write(f"---- Chunk {idx} ----\n")
-                        text_file.write(f"---- Start Char: {start_char} ||| End Char: {end_char} ----\n")
-                        text_file.write(response + "\n\n")
-                    logging.info(f"📄 Written model output for Chunk {idx} to '{entities_text_file}'.")
-                except Exception as e:
-                    logging.error(f"❌ Failed to write model output to '{entities_text_file}': {e}")
-                    print(f"❌ Failed to write model output to '{entities_text_file}': {e}")
-                
-                entities = parse_ollama_response(response, os.path.basename(processed_file), idx)
-                if entities["entities"]:
-                    # Filter out seed entities
-                    filtered_entities = [
-                        entity for entity in entities["entities"]
-                        if entity["type"] not in SEED_ENTITY_TYPES
-                    ]
-                    document_entities.extend(filtered_entities)
-                    logging.info(f"✅ Extracted {len(filtered_entities)} entities from Chunk {idx}.")
-                    print(f"✅ Extracted {len(filtered_entities)} entities from Chunk {idx}.")
-                    
-                    # Extract event names
-                    event_names = [entity["name"] for entity in filtered_entities if entity["type"] == "Event Name"]
-                    logging.info(f"🔍 Event Names for Chunk {idx}: {event_names}")
-                    print(f"🔍 Event Names: {event_names}")
-                    print(f"📊 Number of Events: {len(event_names)}")
-                    
-                    # Print the list of extracted entities
-                    entity_names = [entity.get("name", "") for entity in filtered_entities]
-                    print(f"Entities: {entity_names}")
-                    logging.info(f"\n\n-----------\nmodel {OLLAMA_MODEL} response\n{response}\n----------\n\n")
-                else:
-                    logging.warning(f"No entities found in response for Chunk {idx} of '{original_file}'.")
-                    print(f"⚠️ No entities found in response for Chunk {idx} of '{original_file}'.")
-        
-        if not document_entities:
-            logging.warning(f"No entities extracted for '{original_file}'.")
-            print(f"⚠️ No entities extracted for '{original_file}'.")
-            continue
-        
-        # Remove or comment out the deduplication code to retain all entities
-        # unique_entities = []
-        # seen = set()
-        # for entity in document_entities:
-        #     entity_type = entity.get("type", "").strip()
-        #     entity_name = entity.get("name", "").strip()
-        #     if not entity_type or not entity_name:
-        #         continue
-        #     entity_tuple = (entity_type, entity_name)
-        #     if entity_tuple not in seen:
-        #         seen.add(entity_tuple)
-        #         unique_entities.append(entity)
-        unique_entities = document_entities  # Retain all entities
-        
-        # Prepare the final JSON structure with source_file
-        final_entities = {
-            "source_file": os.path.basename(processed_file),
-            "entities": unique_entities
-        }
-        
-        # Save the extracted entities for the document
-        try:
-            with open(entities_file, 'w', encoding='utf-8') as f:
-                json.dump(final_entities, f, indent=4)
-            logging.info(f"📄 Successfully extracted and saved {len(unique_entities)} unique entities to '{entities_file}'.")
-            print(f"📄 Successfully extracted and saved {len(unique_entities)} unique entities to '{entities_file}'.")
-            all_entities.extend(unique_entities)
-        except Exception as e:
-            logging.error(f"❌ Failed to write extracted entities to '{entities_file}': {e}")
-            print(f"❌ Failed to write extracted entities to '{entities_file}': {e}")
+        # Log the end of analysis
+        print("🏁 Finished analysis without chunking.")
+        logging.info("🏁 Finished analysis without chunking.")
     
+        # Define the path to save the extracted entities
+        EXTRACTED_ENTITIES_FILE = os.path.join(ENTITIES_DIR, "extracted_entities.txt")
+        
+    # ...existing code...
+
+            # Save the extracted entities to a TXT file
+            with open(EXTRACTED_ENTITIES_FILE, 'w', encoding='utf-8') as ef:
+                for entity in all_entities:
+                    ef.write(f"{entity}\n")
+            logging.info(f"Extracted entities saved to '{EXTRACTED_ENTITIES_FILE}'.")
+            print(f"✅ Extracted entities saved to '{EXTRACTED_ENTITIES_FILE}'.")
+        
+            # Log prompts sent and responses received
+            logging.info("Prompts sent to Ollama and responses received have been logged in the log file.")
+
+    # ...existing code...
+
+        # Remove JSON aggregation and handle entities as plain text
+        # ...existing code...
+
     return all_entities, total_chars_processed, per_chunk_timings  # Return chars processed and timings
 
-# =======================
-# Main Execution
-# =======================
+# ...existing code...
+
+# ...existing code...
 
 def main():
     """
@@ -698,7 +610,7 @@ def main():
     # aggregated_entities = []
     # try:
     #     for entity_file in os.listdir(ENTITIES_DIR):
-    #         if entity_file.startswith("entities-") and entity_file.endsWith(".json"):
+    #         if entity_file.startswith("entities-") and entity_file endsWith(".json"):
     #             with open(os.path.join(ENTITIES_DIR, entity_file), 'r', encoding='utf-8') as f:
     #                 data = json.load(f)
     #                 if "entities" in data and isinstance(data["entities"], list):

@@ -1,4 +1,9 @@
-Prompt for LLaMA 3.2: Ontology-Based Entity Indexing from School Board Documents
+2024-11-28 11:17:27,640 - INFO - Number of files to process: 1
+2024-11-28 11:17:27,640 - INFO - Model selected: small
+2024-11-28 11:17:27,665 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-28 11:17:27,666 - INFO - Selected the first 1 file(s) to process.
+2024-11-28 11:17:27,671 - INFO - \U0001f680 Starting processing for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 11:17:27,750 - INFO - \U0001f504 Starting processing for prompt: Prompt for LLaMA 3.2: Ontology-Based Entity Indexing from School Board Documents
 
 **Ontology Expert Mode Activation**
 
@@ -137,4 +142,12 @@ Provide the index of entities in the following format:
 - **Uniqueness:** Ensure each entity is listed only once in the index.
 - **Clarity:** Use clear and concise language.
 - **Completeness:** Extract all entities necessary to create a comprehensive index.
-- **Description Limit:** Ensure each entity is described in under 100 words across all attributes. We are building an index and only need to create a collection of distinct events; details about each event will be extracted in the next step after this one.
+- **Token Limit:** Ensure the output is less than 10,000 tokens.
+
+2024-11-28 11:17:27,776 - INFO - \U0001f50d Starting token calculation for prompt.
+2024-11-28 11:17:27,783 - INFO - \U0001f4a1 Prompt tokens: 1329
+2024-11-28 11:17:27,793 - INFO - \u2705 Total tokens (3146) within limit. Output token buffer set to 20000. No chunking needed.
+2024-11-28 11:17:27,794 - INFO - \u2705 Finished processing prompt for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 11:17:27,795 - INFO - \U0001f3c1 Finished processing for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 11:17:27,797 - INFO - \U0001f4ca Total tokens for 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt': 3146
+2024-11-28 11:17:27,799 - INFO - \u23f1\ufe0f Elapsed time for 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt': 0.104479 seconds

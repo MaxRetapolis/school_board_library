@@ -1,4 +1,9 @@
-Prompt for LLaMA 3.2: Ontology-Based Entity Indexing from School Board Documents
+2024-11-28 12:13:31,519 - INFO - Number of files to process: 1
+2024-11-28 12:13:31,521 - INFO - Model selected: small
+2024-11-28 12:13:31,523 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-28 12:13:31,526 - INFO - Selected the first 1 file(s) to process.
+2024-11-28 12:13:31,530 - INFO - \U0001f680 Starting processing for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 12:13:31,531 - INFO - \U0001f504 Starting processing for prompt: Prompt for LLaMA 3.2: Ontology-Based Entity Indexing from School Board Documents
 
 **Ontology Expert Mode Activation**
 
@@ -138,3 +143,12 @@ Provide the index of entities in the following format:
 - **Clarity:** Use clear and concise language.
 - **Completeness:** Extract all entities necessary to create a comprehensive index.
 - **Description Limit:** Ensure each entity is described in under 100 words across all attributes. We are building an index and only need to create a collection of distinct events; details about each event will be extracted in the next step after this one.
+
+2024-11-28 12:13:31,532 - INFO - \U0001f50d Starting token calculation for prompt.
+2024-11-28 12:13:31,539 - INFO - \U0001f4a1 Prompt tokens: 1362
+2024-11-28 12:13:31,558 - INFO - \u2705 Total tokens (3179) within limit. Output token buffer set to 20000. No chunking needed.
+2024-11-28 12:13:31,560 - INFO - \u2705 Finished processing prompt for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 12:13:31,563 - INFO - \U0001f3c1 Finished processing for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 12:13:31,566 - INFO - \U0001f4ca Total tokens for 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt': 3179
+2024-11-28 12:13:31,567 - INFO - \u23f1\ufe0f Elapsed time for 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt': 0.034208 seconds
+2024-11-28 12:13:31,567 - INFO - \U0001f4c4 Processing Document: 081324 BOARD BUZZ.pdf

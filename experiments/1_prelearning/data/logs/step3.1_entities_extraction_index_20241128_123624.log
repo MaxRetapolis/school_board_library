@@ -1,0 +1,5 @@
+2024-11-28 12:36:25,848 - INFO - Number of files to process: 1
+2024-11-28 12:36:25,849 - INFO - Model selected: small
+2024-11-28 12:36:25,849 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-28 12:36:25,851 - INFO - Selected the first 1 file(s) to process.
+2024-11-28 12:36:25,852 - INFO - \U0001f680 Starting processing for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
