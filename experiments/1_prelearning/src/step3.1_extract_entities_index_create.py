@@ -41,6 +41,7 @@ def parse_arguments():
         default='small',
         help="Model size to use for tokenization."
     )
+    print("✅ Parsed command-line arguments.")
     return parser.parse_args()
 
 # =======================
@@ -97,6 +98,7 @@ def load_available_files(json_path):
         with open(json_path, 'r', encoding='utf-8') as f:
             available_files = json.load(f)
         logging.info(f"Loaded {len(available_files)} available file(s) from '{json_path}'.")
+        print(f"✅ Loaded {len(available_files)} available file(s) from '{json_path}'.")
         return available_files
     except Exception as e:
         logging.error(f"Failed to load available files from '{json_path}': {e}")
@@ -111,9 +113,11 @@ def select_files(available_files, number_of_files):
     if number_of_files == 'all':
         selected_files = available_files
         logging.info("Selected to process all available files.")
+        print("✅ Selected to process all available files.")
     else:
         selected_files = available_files[:number_of_files]
         logging.info(f"Selected the first {number_of_files} file(s) to process.")
+        print(f"✅ Selected the first {number_of_files} file(s) to process.")
     return selected_files
 
 # =======================
@@ -134,9 +138,9 @@ def main():
     
     # Initialize tokenizer based on selected model
     if args.model == 'small':
-        tokenizer = tiktoken.get_encoding("cl100k_base_small")  # Example encoding
+        tokenizer = tiktoken.get_encoding("cl100k_base")  # Use valid encoding
     else:
-        tokenizer = tiktoken.get_encoding("cl100k_base_large")  # Example encoding
+        tokenizer = tiktoken.get_encoding("cl100k_base")  # Use the same encoding or another valid one
     
     for doc in documents:
         for prompt in prompts:
@@ -146,12 +150,14 @@ def main():
             doc_tokens = len(tokenizer.encode(doc_text))
             total_tokens = prompt_tokens + doc_tokens
             
+            print(f"📄 Processing Document: {doc}")
+            
             if total_tokens > MAX_TOKENS:
-                print(f"Document '{doc}' with prompt exceeds {MAX_TOKENS} tokens. Needs chunking.")
+                print(f"❌ Document '{doc}' with prompt exceeds {MAX_TOKENS} tokens. Needs chunking.")
                 logging.info(f"Document '{doc}' with prompt exceeds {MAX_TOKENS} tokens. Needs chunking.")
                 # TODO: Implement chunking logic here
             else:
-                print(f"Document '{doc}' with prompt fits within {MAX_TOKENS} tokens.")
+                print(f"✅ Document '{doc}' with prompt fits within {MAX_TOKENS} tokens.")
                 logging.info(f"Document '{doc}' with prompt fits within {MAX_TOKENS} tokens.")
                 # TODO: Proceed with processing
 
