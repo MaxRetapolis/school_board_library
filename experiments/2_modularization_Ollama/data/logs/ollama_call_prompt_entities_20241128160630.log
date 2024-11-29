@@ -1,0 +1,42 @@
+2024-11-28 16:06:30,598 - INFO - Logging initialized.
+2024-11-28 16:06:30,599 - INFO - Step: Starting Ollama Canary...
+2024-11-28 16:06:30,600 - INFO - Step: Loading prompt file: c:/school_board_library/experiments/2_modularization_Ollama/prompts/prompt_entities.txt
+2024-11-28 16:06:30,631 - INFO - Step: Prompt loaded successfully.
+2024-11-28 16:06:30,633 - INFO - Step 1 completed in 0.0331 seconds.
+2024-11-28 16:06:30,634 - INFO - Step: Loading context file: c:/school_board_library/experiments/2_modularization_Ollama/inbound_documents/081324 BOARD BUZZ_converted.txt
+2024-11-28 16:06:30,635 - INFO - Step: Context loaded successfully.
+2024-11-28 16:06:30,636 - INFO - Step 2 completed in 0.0031 seconds.
+2024-11-28 16:06:30,636 - INFO - Step: Selecting model: small
+2024-11-28 16:06:30,637 - INFO - Step: Model selected: llama3.2:1b
+2024-11-28 16:06:30,637 - INFO - Step 3 completed in 0.0015 seconds.
+2024-11-28 16:06:30,638 - INFO - Step: Combined prompt and context.
+2024-11-28 16:06:30,638 - INFO - Step 4 completed in 0.0007 seconds.
+2024-11-28 16:06:30,639 - INFO - Step: Calling Ollama API with combined text...
+2024-11-28 16:10:28,570 - INFO - Step: Received response from Ollama:
+2024-11-28 16:10:28,571 - INFO - This appears to be a meeting minutes document from the Dublin Unified School District's Board of Education. Here is a summary of the key points:
+
+**Regular Board Meeting Minutes - August 13, 2024**
+
+* The board met at 7:41 PM and adjourned.
+* Key events:
+	+ Trustee Cherrier was unable to attend.
+	+ Labor Day (September 2), No School (October 10-11), Veteran's Day (November 1), Thanksgiving Break (November 25-29), Martin Luther King Day (January 20), Presidents' Day (February 17), Memorial Day (May 26), and Last Day of School (June 3) were all approved without action.
+* Consent Agenda:
+	+ None of the above events apply to the Revised School Project, as it was approved in a 4-0 vote with Trustee Cherrier absent.
+
+**Revised School Project**
+
+* The Revised School Project will increase student capacity by 17.1% from the Original School Project, from 900 students to 1,054.
+* This is considered minor according to CEQA Guidelines (section 15314).
+* A Transportation Impact Study found that the increase of 154 students would not cause any significant impacts to traffic or transportation.
+* The Revised School Project does not propose substantial changes to the project and will not require revisions to the Environmental Impact Report.
+
+**Other Events**
+
+* Open Session for the August 13, 2024 Regular Board Meeting was scheduled for September 10 & 24 at 6 PM.
+2024-11-28 16:10:28,571 - INFO - Step 5 completed in 237.9323 seconds.
+2024-11-28 16:10:28,573 - INFO - Step: Ensured output directory exists: C:\school_board_library\experiments\2_modularization_Ollama\data\model_output
+2024-11-28 16:10:28,575 - INFO - Step: Output file path: C:\school_board_library\experiments\2_modularization_Ollama\data\model_output\ollama_call_prompt_entities_20241128161028.txt
+2024-11-28 16:10:28,589 - INFO - Step: Model output written to file: C:\school_board_library\experiments\2_modularization_Ollama\data\model_output\ollama_call_prompt_entities_20241128161028.txt
+2024-11-28 16:10:28,590 - INFO - Step 6 completed in 0.0176 seconds.
+2024-11-28 16:10:28,590 - INFO - Total execution time: 237.9914 seconds.

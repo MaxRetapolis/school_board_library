@@ -1,0 +1,5 @@
+2024-11-28 17:23:46,013 - INFO - Logging initialized.
+2024-11-28 17:23:46,013 - INFO - Step: Starting tokenization process
+2024-11-28 17:23:46,015 - INFO - Step: Reading file: c:/school_board_library/experiments/2_modularization_Ollama/inbound_documents/8-27-2024.auto_generated_captions_converted.txt
+2024-11-28 17:23:46,018 - INFO - Step: File read successfully.
+2024-11-28 17:23:46,018 - INFO - Step: Tokenizing content...
