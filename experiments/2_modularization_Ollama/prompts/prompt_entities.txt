@@ -159,8 +159,10 @@ For each entity extracted, provide the information in the following format:
 - **Resources Involved:**
 - **Document Name:**
 - **Chunk Number:**
-- **Start Character:**
-- **End Character:**
+- **Start Character Count:**
+- **End Character Count:**
+- **Start Word Count:**
+- **End Word Count:**
 - **Chunk File Name:**
 
 **Person:**
@@ -172,8 +174,10 @@ For each entity extracted, provide the information in the following format:
 - **Participation in Events:**
 - **Document Name:**
 - **Chunk Number:**
-- **Start Character:**
-- **End Character:**
+- **Start Character Count:**
+- **End Character Count:**
+- **Start Word Count:**
+- **End Word Count:**
 - **Chunk File Name:**
 
 **Organization:**
@@ -184,8 +188,10 @@ For each entity extracted, provide the information in the following format:
 - **Events Participated In:**
 - **Document Name:**
 - **Chunk Number:**
-- **Start Character:**
-- **End Character:**
+- **Start Character Count:**
+- **End Character Count:**
+- **Start Word Count:**
+- **End Word Count:**
 - **Chunk File Name:**
 
 **Document:**
@@ -197,8 +203,10 @@ For each entity extracted, provide the information in the following format:
 - **Related Events:**
 - **Summary or Abstract:**
 - **Chunk Number:**
-- **Start Character:**
-- **End Character:**
+- **Start Character Count:**
+- **End Character Count:**
+- **Start Word Count:**
+- **End Word Count:**
 - **Chunk File Name:**
 
 **Resource:**
@@ -208,8 +216,10 @@ For each entity extracted, provide the information in the following format:
 - **Associated Events:**
 - **Document Name:**
 - **Chunk Number:**
-- **Start Character:**
-- **End Character:**
+- **Start Character Count:**
+- **End Character Count:**
+- **Start Word Count:**
+- **End Word Count:**
 - **Chunk File Name:**
 
 **Examples**
@@ -245,8 +255,10 @@ Extracted Entities:
 - **Resources Involved:** Upcoming fiscal year's budget allocations
 - **Document Name:** Budget_Report_2023.pdf
 - **Chunk Number:** 1
-- **Start Character:** 0
-- **End Character:** 479
+- **Start Character Count:** 0
+- **End Character Count:** 479
+- **Start Word Count:** 0
+- **End Word Count:** 80
 - **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
 
 **Person:**
@@ -257,8 +269,10 @@ Extracted Entities:
 - **Participation in Events:** Annual Budget Meeting
 - **Document Name:** Budget_Report_2023.pdf
 - **Chunk Number:** 1
-- **Start Character:** 50
-- **End Character:** 70
+- **Start Character Count:** 50
+- **End Character Count:** 70
+- **Start Word Count:** 10
+- **End Word Count:** 14
 - **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
 
 **Person:**
@@ -269,8 +283,10 @@ Extracted Entities:
 - **Participation in Events:** Annual Budget Meeting
 - **Document Name:** Budget_Report_2023.pdf
 - **Chunk Number:** 1
-- **Start Character:** 71
-- **End Character:** 90
+- **Start Character Count:** 71
+- **End Character Count:** 90
+- **Start Word Count:** 15
+- **End Word Count:** 18
 - **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
 
 **Organization:**
@@ -281,8 +297,10 @@ Extracted Entities:
 - **Events Participated In:** Annual Budget Meeting
 - **Document Name:** Budget_Report_2023.pdf
 - **Chunk Number:** 1
-- **Start Character:** 30
-- **End Character:** 90
+- **Start Character Count:** 30
+- **End Character Count:** 90
+- **Start Word Count:** 6
+- **End Word Count:** 18
 - **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
 
 **Document:**
@@ -294,8 +312,10 @@ Extracted Entities:
 - **Related Events:** Annual Budget Meeting
 - **Summary or Abstract:** Report detailing proposed budget allocations for the upcoming fiscal year.
 - **Chunk Number:** 1
-- **Start Character:** 0
-- **End Character:** 479
+- **Start Character Count:** 0
+- **End Character Count:** 479
+- **Start Word Count:** 0
+- **End Word Count:** 80
 - **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
 
 **Resource:**
@@ -305,8 +325,10 @@ Extracted Entities:
 - **Associated Events:** Annual Budget Meeting
 - **Document Name:** Budget_Report_2023.pdf
 - **Chunk Number:** 1
-- **Start Character:** 200
-- **End Character:** 300
+- **Start Character Count:** 200
+- **End Character Count:** 300
+- **Start Word Count:** 40
+- **End Word Count:** 60
 - **Chunk File Name:** Budget_Report_2023_chunk1_0_479.txt
 
 **Additional Notes**

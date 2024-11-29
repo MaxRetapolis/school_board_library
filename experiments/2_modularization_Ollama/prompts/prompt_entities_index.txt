@@ -23,46 +23,25 @@ Your task is to extract and list unique entities from provided chunks of documen
 
 2. **Identify and Extract Entities**
    - Look for all unique entities that match the defined categories in the ontology.
+   - **For Events:**
+     - **Ensure Separation:** Clearly separate each event in the output, even if multiple events are interleaved in the source text.
+     - **Unique Event IDs:** Assign a distinct identifier to each event (e.g., Event_20230427_001) to ensure uniqueness across different program runs.
    - For each entity, extract key attributes sufficient to distinguish it from others.
    - Focus on essential information to create a clear and concise index.
 
 3. **Provide Structured Output**
    - Present the extracted information in a structured format as specified below.
+   - **For Events:**
+     - Include all critical attributes as defined in the ontology to facilitate comprehensive event-by-event analysis.
    - Ensure each entity is described in 100 words or less across all attributes.
 
-**Attributes to Extract for Each Entity**
-
-- **Events:**
-  - **Event Identifier:** A unique identifier (e.g., Event 1, Event 2).
-  - **Event Name:** The official or commonly used name of the event.
-  - **Event Type:** Category of the event (e.g., Board Meeting, Policy Approval).
-  - **Date:** When the event occurred or is scheduled to occur (include the year).
-  - **Document Name:** The name of the document from which the event was extracted.
-
-- **People:**
-  - **Person Identifier:** A unique identifier (e.g., Person 1, Person 2).
-  - **Full Name:** The full name of the person.
-  - **Role or Title:** Their role within the school board context.
-  - **Affiliated Organization:** The organization they are associated with.
-  - **Document Name:** The name of the document from which the person was extracted.
-
-- **Organizations:**
-  - **Organization Identifier:** A unique identifier (e.g., Organization 1).
-  - **Organization Name:** The official name of the organization.
-  - **Type:** Type of organization (e.g., School Board, Committee).
-  - **Document Name:** The name of the document from which the organization was extracted.
-
-- **Documents:**
-  - **Document Identifier:** A unique identifier (e.g., Document 1).
-  - **Document Name:** The name of the document.
-  - **Date:** Date of the document (include the year).
-  - **Document Type:** Type of document (e.g., Meeting Minutes, Policy Report).
-
-- **Resources:**
-  - **Resource Identifier:** A unique identifier (e.g., Resource 1).
-  - **Resource Name:** Name or description of the resource.
-  - **Resource Type:** Type of resource (e.g., Budget Item, Facility).
-  - **Document Name:** The name of the document from which the resource was extracted.
+4. **Dual Output Format**
+   - **Plain Text Output:** Provide the structured index as detailed in the **Output Format** section.
+   - **Structured JSON Output:**
+     - At the end of the plain text output, include the entire extracted data in JSON format.
+     - Encapsulate the JSON output with the following markers:
+       - Start of JSON: `---output JSON starts---`
+       - End of JSON: `---output JSON ends---`
 
 **Output Format**
 
@@ -131,6 +110,56 @@ Provide the index of entities in the following format:
     - **Resource Name:** New Science Textbooks
     - **Resource Type:** Educational Material
     - **Document Name:** Curriculum_Review_Sept2023.docx
+
+**Dual Output Example**
+
+**Plain Text Output:**
+
+- **Entity Type:** Events
+
+  - **Event Identifier:** Event 1
+    - **Event Name:** Annual Budget Meeting
+    - **Event Type:** Budget Cycle
+    - **Date:** May 5th, 2023
+    - **Document Name:** Budget_Report_2023.pdf
+
+  ...
+
+**Structured JSON Output:**
+
+---output JSON starts---
+{
+  "Events": [
+    {
+      "Event Identifier": "Event 1",
+      "Event Name": "Annual Budget Meeting",
+      "Event Type": "Budget Cycle",
+      "Date": "May 5th, 2023",
+      "Document Name": "Budget_Report_2023.pdf"
+    },
+    ...
+  ],
+  "People": [
+    {
+      "Person Identifier": "Person 1",
+      "Full Name": "Maria Rodriguez",
+      "Role or Title": "Chairperson",
+      "Affiliated Organization": "School Board",
+      "Document Name": "Board_Meeting_Minutes_May2023.pdf"
+    },
+    ...
+  ],
+  "Organizations": [
+    ...
+  ],
+  "Documents": [
+    ...
+  ],
+  "Resources": [
+    ...
+  ]
+}
+---output JSON ends---
 
 **Additional Notes**
 

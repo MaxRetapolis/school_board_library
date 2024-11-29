@@ -9,7 +9,7 @@ def main():
     logging.info("Starting inbound file indexing and tokenization process")
     
     inbound_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "inbound_documents")
-    output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "model_output")
+    output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "index")
     os.makedirs(output_dir, exist_ok=True)
     output_file = os.path.join(output_dir, "tokenized_inbound_document_index.json")
     

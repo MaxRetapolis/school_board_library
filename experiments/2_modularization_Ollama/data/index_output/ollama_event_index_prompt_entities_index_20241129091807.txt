@@ -1,0 +1,76 @@
+I'll assist you in creating an ontology-based entity index from the provided School Board documents.
+
+**Ontology Expert Mode Activation**
+
+To begin, let's define our ontology for the School Board New Member Copilot. We will categorize entities into the following groups:
+
+* **Events**: Meetings, proceedings, and other events related to school board operations
+* **People**: Individuals involved in the school board, such as trustees, administrators, and committee members
+* **Organizations**: Educational institutions, schools, and districts that participate in the school board
+* **Documents**: Reports, policies, and other documents related to the school board's activities
+* **Resources**: Materials, materials, and other resources used by the school board
+
+**Instruction 1: Read the Document Carefully**
+
+Please carefully read through the provided text document. Analyze the context of the meeting minutes or agenda for a school board meeting.
+
+**Instruction 2: Identify and Extract Entities**
+
+Using our defined ontology, identify unique entities mentioned in the document that match each category. For events:
+
+* Separate each event in the output, even if multiple events are interleaved in the source text.
+* Assign a distinct identifier to each event (e.g., Event_20230427_001).
+* Focus on essential information to create a clear and concise index.
+
+**Instruction 3: Provide Structured Output**
+
+Present the extracted information in a structured format as specified below. For events:
+
+* Include all critical attributes as defined in our ontology to facilitate comprehensive event-by-event analysis.
+* Ensure each entity is described in 100 words or less across all attributes.
+
+For example, if an event is listed as "Annual Budget Meeting", we would extract attributes such as "Event Name: Annual Budget Meeting", "Event Type: Budget Cycle", and "Date".
+
+**Instruction 4: Dual Output Format**
+
+Provide the index of entities in the following format:
+
+* **Entity Type**: Events
+* **Plain Text Output**
+* **Structured JSON Output**
+
+For example:
+```
+Plain Text Output:
+- Events
+  - Event 1
+    - Event Name: Annual Budget Meeting
+    - Event Type: Budget Cycle
+    - Date: May 5th, 2023
+
+- People
+  - Person 1
+    - Full Name: Maria Rodriguez
+    - Role or Title: Chairperson
+    - Affiliated Organization: School Board
+
+- Organizations
+  - District ABC
+    - Full Name: Education District ABC
+
+- Documents
+  - Report on Title IX Compliance
+    - Document Name: Report on Title IX Compliance
+
+- Resources
+  - New Science Textbooks
+    - Resource Type: Educational Material
+```
+
+**Additional Notes**
+
+* Ensure uniqueness of each entity.
+* Use clear and concise language.
+* Extract all entities necessary to create a comprehensive index.
+
+Please proceed with extracting the relevant information from the document. I'll assist you in creating the ontology-based entity index.

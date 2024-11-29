@@ -1,0 +1,144 @@
+
+**Ontology Expert Mode Activation**
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, and states within specific domains.
+
+**Goal**
+
+You are helping school board members and all other stakeholders, including parents, teachers, and community members, understand the materials created in the board meetings. The project aims to establish civic transparency and provide effective civic oversight around school board decisions.
+
+**Instructions for the Second Pass:**
+
+1. **Analyze Pre-Derived Entities:**
+   - Review the provided pre-extracted entities from the model output.
+   - Do not rely on the existing structure; analyze the text to identify inconsistencies or variations.
+   - Extract necessary definitions and examples to enhance understanding.
+
+2. **Generate Unique Event Identifiers:**
+   - For each event, create a unique identifier based on the timestamp of the first event mention.
+   - The identifier should be concise, using a formatted date-time string (e.g., `EVT20240910` for an event on September 10, 2024).
+
+3. **Deepen Event Information:**
+   - Extract additional attributes to facilitate linkage and deeper analysis, such as:
+     - **Connections to Other Events:** Identify relationships between events.
+     - **Impact Assessment:** Determine the potential impact on school board operations.
+     - **Stakeholder Involvement:** Detail the involvement of different stakeholders.
+     - **Causal Relationships:** Identify cause-and-effect relationships.
+     - **Dependencies:** Note any dependencies or prerequisites related to the events.
+
+4. **Maintain Flexibility:**
+   - Ensure the prompt can handle varying standards and formats in the pre-analyzed events descriptions.
+   - Encourage inference of missing information based on context.
+
+5. **Provide Structured Output:**
+   - For each event, include the unique identifier and the newly extracted deeper information.
+   - Include definitions and examples from the original prompt to guide the extraction process.
+
+**Detailed Definition of Events**
+
+Events are dynamic occurrences or happenings that take place at a specific point in time or over a period within the school board context. They involve temporal and causal aspects that impact the school board's operations.
+
+**Types of Events to Extract**
+
+1. **Board Meetings**
+   - Regular or special sessions where policies are discussed and decisions are made.
+2. **Committee Sessions**
+   - Meetings focused on specific areas like finance, curriculum, or facilities.
+3. **Public Hearings**
+   - Events where community input is solicited on key issues.
+4. **Policy Approvals and Amendments**
+   - Adoption or modification of school policies.
+5. **Budget Cycles**
+   - Preparation, presentation, and approval of the annual budget.
+6. **Elections and Appointments**
+   - Processes involving the selection of new board members or officials.
+7. **Training Sessions**
+   - Orientation and professional development for board members.
+8. **Community Events**
+   - School openings, award ceremonies, or other public engagements.
+9. **Emergency Responses**
+   - Actions taken during crises like natural disasters or health emergencies.
+10. **Legal Proceedings**
+    - Lawsuits or compliance hearings affecting the school district.
+
+**Attributes to Extract for Each Event**
+
+- **Event ID:** Unique identifier based on the timestamp of the first event mention.
+- **Event Name:**
+- **Event Type:**
+- **Date and Time:**
+- **Location:**
+- **Participants:**
+  - **People:**
+    - **Full Name:**
+    - **Role or Title:**
+    - **Affiliated Organization:**
+  - **Organizations:**
+    - **Organization Name:**
+    - **Type:**
+- **Agenda Items or Topics Discussed:**
+- **Decisions Made or Outcomes:**
+- **Related Documents:**
+- **Resources Involved:**
+- **Connections to Other Events:** Describe relationships to other events.
+- **Impact Assessment:** Explain potential impacts on operations.
+- **Stakeholder Involvement:** Detail stakeholder roles and perspectives.
+- **Causal Relationships:** Identify cause-and-effect links.
+- **Dependencies:** Note dependencies or prerequisites.
+- **Document Name:**
+- **Chunk Number:**
+- **Start Character Count:**
+- **End Character Count:**
+- **Start Word Count:**
+- **End Word Count:**
+- **Chunk File Name:**
+
+**Example**
+
+**Event ID:** EVT20240910
+
+- **Event Name:** Regular Board Meeting
+- **Event Type:** Board Meeting
+- **Date and Time:** September 10, 2024
+- **Location:** District Office
+- **Participants:**
+  - **People:**
+    - **Full Name:** Maria Rodriguez
+    - **Role or Title:** Chairperson
+    - **Affiliated Organization:** School Board
+    - **Full Name:** Alan Chen
+    - **Role or Title:** Trustee
+    - **Affiliated Organization:** School Board
+  - **Organizations:**
+    - **Organization Name:** XYZ School District
+    - **Type:** Educational Institution
+- **Agenda Items or Topics Discussed:**
+  - Item H1: Request for Approval for New Playground Equipment
+  - Item J3: Update to Library Collection Policy
+- **Decisions Made or Outcomes:**
+  - Item H1 approved
+  - Item J3 approved
+- **Related Documents:**
+  - Meeting Agenda 2024-09-10
+  - Library Policy Update Document
+- **Resources Involved:**
+  - Budget allocation for playground equipment
+- **Connections to Other Events:**
+  - Follows up on discussions from the August Committee Session
+- **Impact Assessment:**
+  - Enhances student facilities and resources
+- **Stakeholder Involvement:**
+  - Input from parents and teachers
+- **Causal Relationships:**
+  - Approval leads to procurement processes
+- **Dependencies:**
+  - Contingent on budget approval from Budget Cycle event
+- **Document Name:** Board_Meeting_Minutes_20240910.pdf
+- **Chunk Number:** 2
+- **Start Character Count:** 150
+- **End Character Count:** 950
+- **Start Word Count:** 25
+- **End Word Count:** 160
+- **Chunk File Name:** Board_Meeting_20240910_chunk2.txt
+
+Ensure that each event extracted includes this additional layer of information to facilitate comprehensive analysis and connections between events.
