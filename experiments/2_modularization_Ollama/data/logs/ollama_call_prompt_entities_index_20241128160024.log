@@ -1,0 +1,14 @@
+2024-11-28 16:00:24,288 - INFO - Logging initialized.
+2024-11-28 16:00:24,289 - INFO - Step: Starting Ollama Canary...
+2024-11-28 16:00:24,290 - INFO - Step: Loading prompt file: c:/school_board_library/experiments/2_modularization_Ollama/prompts/prompt_entities_index.txt
+2024-11-28 16:00:24,291 - INFO - Step: Prompt loaded successfully.
+2024-11-28 16:00:24,292 - INFO - Step 1 completed in 0.0024 seconds.
+2024-11-28 16:00:24,293 - INFO - Step: Loading context file: c:/school_board_library/experiments/2_modularization_Ollama/inbound_documents/081324 BOARD BUZZ_converted.txt
+2024-11-28 16:00:24,317 - INFO - Step: Context loaded successfully.
+2024-11-28 16:00:24,317 - INFO - Step 2 completed in 0.0250 seconds.
+2024-11-28 16:00:24,317 - INFO - Step: Selecting model: small
+2024-11-28 16:00:24,319 - INFO - Step: Model selected: llama3.2:1b
+2024-11-28 16:00:24,319 - INFO - Step 3 completed in 0.0018 seconds.
+2024-11-28 16:00:24,320 - INFO - Step: Combined prompt and context.
+2024-11-28 16:00:24,320 - INFO - Step 4 completed in 0.0008 seconds.
+2024-11-28 16:00:24,321 - INFO - Step: Calling Ollama API with combined text...
