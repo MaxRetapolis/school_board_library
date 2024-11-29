@@ -1,0 +1,11 @@
+2024-11-29 07:50:00,936 - INFO - Logging initialized.
+2024-11-29 07:50:00,936 - INFO - Step: Starting tokenization process
+2024-11-29 07:50:00,939 - INFO - Step: Reading file: c:/school_board_library/experiments/2_modularization_Ollama/inbound_documents/10-8-2024.auto_generated_captions_converted.txt
+2024-11-29 07:50:00,944 - INFO - Step: File read successfully.
+2024-11-29 07:50:00,945 - INFO - Step: Tokenizing content...
+2024-11-29 07:50:03,267 - INFO - Step: Tokenization completed.
+2024-11-29 07:50:03,268 - INFO - Step: Saving token summary to file: c:\school_board_library\experiments\2_modularization_Ollama\data\model_output\token_summary_20241129075000.txt
+2024-11-29 07:50:03,294 - INFO - Step: Token summary saved successfully.
+2024-11-29 07:50:03,295 - INFO - Step: Tokenization process completed in 2.3581 seconds
+2024-11-29 07:50:03,306 - INFO - Number of tokens: 125744
+2024-11-29 07:50:03,307 - INFO - Output saved to: c:\school_board_library\experiments\2_modularization_Ollama\data\model_output\token_summary_20241129075000.txt

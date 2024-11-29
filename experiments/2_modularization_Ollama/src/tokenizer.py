@@ -41,7 +41,16 @@ def tokenize(content):
     logging.info("Step: Tokenization completed.")
     return tokens
 
-def save_tokens(tokens, output_file, input_file):
+def count_words(content):
+    return len(content.split())
+
+def count_lines(content):
+    return len(content.splitlines())
+
+def count_chars(content):
+    return len(content)
+
+def save_tokens(tokens, output_file, input_file, num_words, num_lines, num_chars):
     print(f"Step: Saving token summary to file: {output_file}")
     logging.info(f"Step: Saving token summary to file: {output_file}")
     try:
@@ -51,6 +60,9 @@ def save_tokens(tokens, output_file, input_file):
         with open(output_file, 'w', encoding='utf-8') as file:
             file.write(f"Processed File: {input_file}\n")
             file.write(f"Total Number of Tokens: {len(tokens)}\n")
+            file.write(f"Total Number of Words: {num_words}\n")
+            file.write(f"Total Number of Lines: {num_lines}\n")
+            file.write(f"Total Number of Characters: {num_chars}\n")
         print("Step: Token summary saved successfully.")
         logging.info("Step: Token summary saved successfully.")
     except Exception as e:
@@ -71,15 +83,24 @@ def main(input_file):
     content = read_file(input_file)
     if content:
         tokens = tokenize(content)
-        save_tokens(tokens, output_file, input_file)
+        num_words = count_words(content)
+        num_lines = count_lines(content)
+        num_chars = count_chars(content)
+        save_tokens(tokens, output_file, input_file, num_words, num_lines, num_chars)
     
-    end_time = time.perf_counter()
-    processing_time = end_time - start_time
-    logging.info(f"Step: Tokenization process completed in {processing_time:.4f} seconds")
-    print(f"Number of tokens: {len(tokens)}")
-    print(f"Output saved to: {output_file}")
-    logging.info(f"Number of tokens: {len(tokens)}")
-    logging.info(f"Output saved to: {output_file}")
+        end_time = time.perf_counter()
+        processing_time = end_time - start_time
+        logging.info(f"Step: Tokenization process completed in {processing_time:.4f} seconds")
+        print(f"Number of tokens: {len(tokens)}")
+        print(f"Number of words: {num_words}")
+        print(f"Number of lines: {num_lines}")
+        print(f"Number of characters: {num_chars}")
+        print(f"Output saved to: {output_file}")
+        logging.info(f"Number of tokens: {len(tokens)}")
+        logging.info(f"Number of words: {num_words}")
+        logging.info(f"Number of lines: {num_lines}")
+        logging.info(f"Number of characters: {num_chars}")
+        logging.info(f"Output saved to: {output_file}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Tokenizer Script")
