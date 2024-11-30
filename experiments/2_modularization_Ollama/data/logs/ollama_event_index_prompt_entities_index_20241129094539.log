@@ -1,0 +1,10 @@
+2024-11-29 09:45:39,568 - INFO - Logging initialized.
+2024-11-29 09:45:39,569 - INFO - Step: Starting Ollama Event Indexer...
+2024-11-29 09:45:39,571 - INFO - Step: Loading prompt file: c:/school_board_library/experiments/2_modularization_Ollama/prompts/prompt_entities_index.txt
+2024-11-29 09:45:39,572 - INFO - Step: Prompt loaded successfully.
+2024-11-29 09:45:39,574 - INFO - Step: Loading previous model output file: c:/school_board_library/experiments/2_modularization_Ollama/data/model_output/ollama_call_prompt_entities_20241129084129.txt
+2024-11-29 09:45:39,598 - INFO - Step: Previous model output loaded successfully.
+2024-11-29 09:45:39,598 - INFO - Step: Combined prompt and previous model output.
+2024-11-29 09:45:39,598 - INFO - Step: Selecting model: small
+2024-11-29 09:45:39,603 - INFO - Step: Model selected: llama3.2:1b
+2024-11-29 09:45:39,606 - INFO - Step: Calling Ollama API with combined text...

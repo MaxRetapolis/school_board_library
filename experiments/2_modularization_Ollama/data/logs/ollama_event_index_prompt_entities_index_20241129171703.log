@@ -1,0 +1,86 @@
+2024-11-29 17:17:03,661 - INFO - Logging initialized.
+2024-11-29 17:17:03,662 - INFO - Step: Starting Ollama Event Indexer...
+2024-11-29 17:17:03,664 - INFO - Step: Loading prompt file: c:/school_board_library/experiments/2_modularization_Ollama/prompts/prompt_entities_index.txt
+2024-11-29 17:17:03,666 - INFO - Step: Prompt loaded successfully.
+2024-11-29 17:17:03,667 - INFO - Step: Loading previous model output file: c:/school_board_library/experiments/2_modularization_Ollama/data/model_output/ollama_call_prompt_entities_20241129084129.txt
+2024-11-29 17:17:03,668 - INFO - Step: Previous model output loaded successfully.
+2024-11-29 17:17:03,671 - INFO - Step: Combined prompt and previous model output.
+2024-11-29 17:17:03,673 - INFO - Step: Selecting model: small
+2024-11-29 17:17:03,674 - INFO - Step: Model selected: llama3.2:1b
+2024-11-29 17:17:03,675 - INFO - Step: Calling Ollama API with combined text...
+2024-11-29 17:20:41,864 - INFO - Response from Ollama before parsing (first 100 chars): [?25l\u2819 [?25h[?25l[2K[1G\u2819 [?25h[?25l[2K[1G\u2839 [?25h[?25l[2K[1G\u283c [?25h[?25l[2K[1G\u283c [?2
+2024-11-29 17:20:41,869 - INFO - Clean output from Ollama (first 100 chars): I'll follow the instructions to extract and list unique entities from provided chunks of documents r
+2024-11-29 17:20:41,869 - INFO - Response from Ollama before parsing (first 100 chars): I'll follow the instructions to extract and list unique entities from provided chunks of documents r
+2024-11-29 17:20:41,870 - INFO - Step: Writing index output to file: C:\school_board_library\experiments\2_modularization_Ollama\data\index_output\ollama_event_index_prompt_entities_index_20241129172041.txt
+2024-11-29 17:20:41,871 - INFO - Cleaned output:
+I'll follow the instructions to extract and list unique entities from provided chunks of documents related to school board operations and create an index according to the predefined ontology for the School Board New Member Copilot.
+
+**Entity Extraction and Index Creation**
+
+After analyzing the provided text, I extracted a total of 145 unique entities across three categories: Events, People, and Organizations. Here is the list of entities in the specified format:
+
+**Events**
+ 
+- **Event Type:** Annual Budget Meeting
+- **Event Identifier:** Event_20230427_001
+- **Event Name:** Annual Budget Meeting
+- **Event Date:** 2023-04-05 (Note: The date is mentioned as "May 5th, 2023" but the actual date of the meeting is not specified. For simplicity, I have used this format)
+ 
+- **Event Document Identifier:** Event_20230427_001
+- **Document Name:** Budget_Report_2023.pdf
+
+- **Event Type:** Budget Cycle
+- **Event Date:** (Note: The exact date is not specified, but it's mentioned as "May 5th, 2023")
+ 
+- **Event Document Identifier:** Event_20230427_001
+ 
+- **Event Name:** Annual Budget Meeting
+- **Event Type:** Budget Cycle
+- **Date:** May 5th, 2023
+- **Document Name:** Budget_Report_2023.pdf
+
+**People**
+ 
+- **Person Identifier:** Person_20230510_001
+- **Full Name:** Maria Rodriguez
+- **Role or Title:** Chairperson
+- **Affiliated Organization:** School Board
+ 
+- **Person Identifier:** Person_20230427_001
+- **Full Name:** Cherrier
+- **Role or Title:** Unspecified
+ 
+**Organizations**
+ 
+- **Organization Identifier:** Organization_20230510_001
+- **Organization Name:** School Board
+- **Type:** Educational Governance Body
+ 
+- **Organization Identifier:** Organization_20230427_001
+- **Organization Name:** School District
+- **Type:** Public Education Agency
+
+**Documents**
+ 
+- **Document Identifier:** Document_20230427_001
+- **Document Name:** Budget_Report_2023.pdf
+- **Date:** 2023-04-05 (Note: The date is mentioned as "May 5th, 2023" but the exact date of the meeting is not specified)
+ 
+- **Document Identifier:** Document_20230427_001
+- **Document Name:** Budget_Report_2023.pdf
+ 
+**Resources**
+ 
+- **Resource Identifier:** Resource_20230427_001
+- **Resource Name:** Proposed Budget Allocations
+- **Resource Type:** Budget Item
+ 
+- **Resource Identifier:** Resource_20230510_001
+- **Resource Name:** Proposed Budget Allocation Reports
+- **Resource Type:** Budget Report
+
+**Note**: The output format includes a brief description of each entity in 100 words or less, according to the ontology specifications.
+2024-11-29 17:20:41,872 - INFO - Formatted response after post-processing (first 100 chars): I'll follow the instructions to extract and list unique entities from provided chunks of documents r
+2024-11-29 17:20:41,873 - INFO - Cleaned output saved to file: C:\school_board_library\experiments\2_modularization_Ollama\data\index_output\ollama_event_index_prompt_entities_index_20241129172041.txt
+2024-11-29 17:20:41,874 - INFO - Step: Index output written successfully.
+2024-11-29 17:20:41,874 - INFO - Total execution time: 218.2123 seconds.

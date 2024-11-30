@@ -1,0 +1,146 @@
+I'll assist you in creating an ontology-based entity index from the provided document.
+
+**Ontology Expert Mode Activation**
+
+To begin, I need to understand the predefined ontology for the School Board New Member Copilot. The ontology includes entities such as:
+
+* Events
+* People
+* Organizations
+* Documents
+* Resources
+
+The ontology also defines relationships between these entities, including:
+* Event → Category (e.g., Meeting, Vote, Policy Update)
+* Person → Role (e.g., Chairperson, Treasurer)
+* Organization → Type (e.g., Educational Governance Body, Committee)
+
+**Identifying and Extracting Entities**
+
+Using the provided document as a starting point, I will extract unique entities that match the predefined categories in the ontology.
+
+Here's a step-by-step analysis of the document:
+
+1. **Events**: There are several events mentioned in the document:
+	* Annual Budget Meeting (Event 1)
+	* Curriculum Committee Meeting (Event 2)
+	* Open Session Notes (Event 3)
+	* Key District Dates (Event 4)
+2. **People**: I extracted the following entities:
+	* Maria Rodriguez (Person 1, Chairperson of School Board)
+	* Alan Chen (Person 2, Treasurer of School Board)
+3. **Organizations**: There is only one entity mentioned:
+	* School Board
+4. **Documents**: Several documents are mentioned:
+	* Budget Report 2023 (Document 1)
+	* Curriculum Review Sept 2023 (Document 2)
+5. **Resources**: One resource is mentioned:
+	* Proposed Budget Allocations
+
+**Structured Output**
+
+Here's the extracted information in a structured format, following the specified output formats:
+
+**Plain Text Output**
+```markdown
+# Events
+## Annual Budget Meeting
+### Event Identifier: Event 1
+### Event Name: Annual Budget Meeting
+### Event Type: Budget Cycle
+### Date: May 5th, 2023
+### Document Name: Budget_Report_2023.pdf
+
+## Curriculum Committee Meeting
+### Event Identifier: Event 2
+### Event Name: Curriculum Committee Meeting
+### Event Type: Committee Meeting
+### Date: September 10th, 2024
+### Document Name: None (open session)
+
+## Open Session Notes
+### Event Identifier: Event 3
+### Event Name: Open Session Notes
+### Event Type: Open Session Discussion
+### Date: September 10th, 2024
+### Document Name: None
+
+## Key District Dates
+### Event Identifier: Event 4
+### Event Name: Key District Dates
+### Event Type: Announcement of School Dates and Breaks
+### Date: 2024-2025 school year
+### Document Name: None
+```
+
+**Structured JSON Output**
+```json
+{
+  "Events": [
+    {
+      "Event Identifier": "Event 1",
+      "Event Name": "Annual Budget Meeting",
+      "Event Type": "Budget Cycle",
+      "Date": "May 5th, 2023",
+      "Document Name": "Budget_Report_2023.pdf"
+    },
+    {
+      "Event Identifier": "Event 2",
+      "Event Name": "Curriculum Committee Meeting",
+      "Event Type": "Committee Meeting",
+      "Date": "September 10th, 2024",
+      "Document Name": null
+    },
+    {
+      "Event Identifier": "Event 3",
+      "Event Name": "Open Session Notes",
+      "Event Type": "Open Session Discussion",
+      "Date": "September 10th, 2024",
+      "Document Name": null
+    },
+    {
+      "Event Identifier": "Event 4",
+      "Event Name": "Key District Dates",
+      "Event Type": "Announcement of School Dates and Breaks",
+      "Date": "2024-2025 school year",
+      "Document Name": null
+    }
+  ],
+  "People": [
+    {
+      "Person Identifier": "Maria Rodriguez",
+      "Full Name": "Maria Rodriguez",
+      "Role or Title": "Chairperson of School Board",
+      "Affiliated Organization": "School Board"
+    },
+    {
+      "Person Identifier": "Alan Chen",
+      "Full Name": "Alan Chen",
+      "Role or Title": "Treasurer of School Board",
+      "Affiliated Organization": "School Board"
+    }
+  ],
+  "Organizations": [
+    {
+      "Organization Identifier": "School Board"
+    }
+  ],
+  "Documents": [
+    {
+      "Document Identifier": "Budget_Report_2023.pdf"
+    },
+    {
+      "Document Identifier": "Curriculum Review Sept 2023.pdf"
+    }
+  ],
+  "Resources": [
+    {
+      "Resource Identifier": "Proposed Budget Allocations"
+    }
+  ]
+}
+```
+
+Please let me know if this meets your requirements or if you need further assistance.
+
+⠋ ⠙ ⠹ ⠸ ⠼ ⠦ ⠧ ⠇ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠼ ⠼ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠹ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠙ ⠹ ⠸ ⠼ ⠴ ⠧ ⠇ ⠏ ⠋ ⠋ ⠙ ⠹ ⠼ ⠼ ⠦ ⠧ ⠧ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠼ ⠦ ⠧ ⠇ ⠏ ⠏ ⠋ ⠹ ⠹ ⠼ ⠴ ⠦ ⠦ ⠧ ⠏ ⠋ ⠙ ⠹ ⠸ ⠸ ⠴ ⠦ ⠧ ⠇ ⠏ ⠏ ⠙ ⠙ ⠸ ⠸ ⠼ ⠴ ⠦ ⠇ ⠇ ⠋ ⠋ ⠹ ⠸ ⠼ ⠴ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠹ ⠸ ⠼ ⠼ ⠦ ⠧ ⠧ ⠇ ⠏ ⠙ ⠙ ⠸ ⠸ ⠼ ⠴ ⠦ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠸ ⠼ ⠦ ⠦ ⠧ ⠇ ⠋ ⠋ ⠙ ⠸ ⠼ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠸ ⠼ ⠴ ⠴ ⠧ ⠇ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠹ ⠸ ⠼ ⠴ ⠦ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠋ ⠋ ⠹ ⠸ ⠼ ⠴ ⠴ ⠧ ⠇ ⠇ ⠋ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠇ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠼ ⠼ ⠦ ⠧ ⠇ ⠇ ⠏ ⠋ ⠙ ⠸ ⠼ ⠴ ⠦ ⠦ ⠧ ⠇ ⠏ ⠋ ⠹ ⠸ ⠸ ⠼ ⠴ ⠧ ⠇ ⠇ ⠋ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠇ ⠏ ⠋ ⠙ ⠹ ⠼ ⠴ ⠦ ⠧ ⠧ ⠏ ⠋ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠙ ⠙ ⠹ ⠸ ⠴ ⠦ ⠦ ⠧ ⠇ ⠋ ⠙ ⠙ ⠹ ⠼ ⠴ ⠦ ⠦ ⠧ ⠏ ⠋ ⠙ ⠙ ⠸ ⠸ ⠼ ⠴ ⠦ ⠧ ⠏ ⠏ ⠋ ⠹ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠏ ⠋ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠏ ⠏ ⠙ ⠙ ⠹ ⠼ ⠴ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠸ ⠸ ⠼ ⠴ ⠦ ⠇ ⠇ ⠋ ⠙ ⠹ ⠸ ⠼ ⠼ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠹ ⠸ ⠼ ⠴ ⠴ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠧ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠋ ⠙ ⠸ ⠸ ⠴ ⠦ ⠧ ⠇ ⠏ ⠏ ⠙ ⠙ ⠸ ⠼ ⠴ ⠦ ⠧ ⠧ ⠏ ⠏ ⠋ ⠹ ⠸ ⠸ ⠼ ⠴ ⠦ ⠧ ⠏ ⠋ ⠋ ⠙ ⠹ ⠸ ⠴ ⠦ ⠧ ⠇ ⠏ ⠏ ⠙ ⠙ ⠸ ⠸ ⠴ ⠦ ⠧ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠼ ⠴ ⠦ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠼ ⠼ ⠴ ⠦ ⠧ ⠇ ⠋ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠧ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠋ ⠙ ⠙ ⠹ ⠸ ⠼ ⠴ ⠧ ⠧ ⠇ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠦ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠹ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠴ ⠴ ⠦ ⠧ ⠙ ⠙ ⠹ ⠸ ⠼ ⠦ ⠧ ⠇ ⠏ ⠏ ⠙ ⠹ ⠸ ⠼ ⠦ ⠦ ⠧ ⠏ ⠏ ⠋ ⠹ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠏ ⠏ ⠙ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠧ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠸ ⠴ ⠦ ⠧ ⠇ ⠇ ⠋ ⠙ ⠙ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠹ ⠸ ⠼ ⠦ ⠦ ⠧ ⠏ ⠏ ⠙ ⠙ ⠸ ⠸ ⠼ ⠦ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠸ ⠸ ⠼ ⠦ ⠧ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠧ ⠧ ⠏ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠼ ⠼ ⠦ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠸ ⠸ ⠼ ⠴ ⠦ ⠇ ⠇ ⠏ ⠋ ⠙ ⠸ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠹ ⠹ ⠼ ⠼ ⠦ ⠧ ⠧ ⠇ ⠋ ⠙ ⠹ ⠸ ⠸ ⠴ ⠴ ⠦ ⠇ ⠇ ⠋ ⠙ ⠹ ⠸ ⠸ ⠴ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠴ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠋ ⠙ ⠹ ⠸ ⠴ ⠦ ⠦ ⠇ ⠏ ⠋ ⠋ ⠹ ⠸ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠹ ⠹ ⠸ ⠼ ⠴ ⠧ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠙ ⠹ ⠹ ⠸ ⠼ ⠴ ⠦ ⠇ ⠏ ⠏ ⠋ ⠙ ⠸ ⠼ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠧ ⠧ ⠇ ⠏ ⠋ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠇ ⠏ ⠋ ⠙ ⠹ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠋ ⠹ ⠹ ⠸ ⠴ ⠦ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠼ ⠼ ⠴ ⠧ ⠧ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠸ ⠴ ⠦ ⠧ ⠇ ⠏ ⠏ ⠙ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠸ ⠸ ⠴ ⠴ ⠦ ⠇ ⠇ ⠏ ⠋ ⠙ ⠹ ⠼ ⠼ ⠦ ⠧ ⠧ ⠏ ⠏ ⠙ ⠙ ⠹ ⠸ ⠴ ⠦ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠴ ⠦ ⠧ ⠇ ⠇ ⠏ ⠙ ⠹ ⠸ ⠼ ⠼ ⠴ ⠦ ⠧ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠼ ⠴ ⠦ ⠧ ⠇ ⠋ ⠙ ⠹ ⠹ ⠼ ⠴ ⠦ ⠧ ⠧ ⠏ ⠙ ⠙ ⠙ ⠸ ⠼ ⠴ ⠦ ⠧ ⠧ ⠏ ⠋ ⠙ ⠙ ⠸ ⠸ ⠴ ⠴ ⠦ ⠇ ⠏ ⠋ ⠙ ⠹ ⠹ ⠸ ⠼ ⠦ ⠧ ⠇ ⠇ ⠋ ⠋ ⠹ ⠸ ⠸ ⠴ ⠦ ⠧ ⠇ ⠏ ⠏ ⠙ ⠹ ⠸ ⠼ ⠴ ⠴ ⠧ ⠧ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠇ ⠏ ⠋ ⠹ ⠸ ⠼ ⠼ ⠴ ⠧ ⠇ ⠇ ⠋ ⠙ ⠹ ⠸ ⠼ ⠴

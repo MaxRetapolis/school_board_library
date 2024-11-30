@@ -4,10 +4,12 @@ import os
 from datetime import datetime
 import logging
 import time
+import re  # Added import
 
 def initialize_logging(prompt_file):
     prompt_name = os.path.splitext(os.path.basename(prompt_file))[0]
-    timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+    prompt_name = os.path.splitext(os.path.basename(prompt_file))[0]
+    timestamp = datetime.now().strftime("%Y%m%d%H%M%S")  # Added timestamp definition
     log_dir = r"C:\school_board_library\experiments\2_modularization_Ollama\data\logs"
     os.makedirs(log_dir, exist_ok=True)
     log_file = os.path.join(log_dir, f"ollama_event_index_{prompt_name}_{timestamp}.log")
@@ -26,18 +28,21 @@ def call_ollama(prompt, model):
     print("Step: Initiating Ollama subprocess...")
     try:
         result = subprocess.run(
-            ['ollama', 'run', model],
+            ['ollama', 'run', model],  # Removed '--no-spinner'
             input=prompt,
             text=True,
-            capture_output=True,
+            stdout=subprocess.PIPE,        # Capture stdout
+            stderr=subprocess.STDOUT,      # Redirect stderr to stdout
             encoding='utf-8',
             errors='replace'
         )
         print("Step: Ollama subprocess completed.")
-        output = (result.stdout or '') + (result.stderr or '')
+        output = result.stdout or ''  # Capture all output from stdout
+        print(f"Response from Ollama before post-processing (first 100 chars): {output[:100]}")
+        logging.info(f"Response from Ollama before parsing (first 100 chars): {output[:100]}")
+        logging.debug(f"Complete response from Ollama:\n{output}")  # Added complete output logging
         if output.strip():
             # Remove ANSI escape sequences and non-printable characters from the output
-            import re
             ansi_escape = re.compile(r'''
                 \x1B  # ESC
                 (?:   # 7-bit C1 Fe Escape sequences
@@ -51,10 +56,16 @@ def call_ollama(prompt, model):
             ''', re.VERBOSE)
             # Remove ANSI escape sequences
             clean_output = ansi_escape.sub('', output)
-            # Remove non-printable characters
-            clean_output = ''.join(char for char in clean_output if char.isprintable())
+            # Remove spinner characters (Unicode Braille Patterns)
+            spinner_pattern = re.compile(r'[\u2800-\u28FF]')
+            clean_output = spinner_pattern.sub('', clean_output)
+            # Remove non-Unicode characters from the start and end
+            clean_output = clean_output.strip().encode('utf-8', 'ignore').decode('utf-8')
+            
             print("Step: Received clean output from Ollama.")
-            return clean_output.strip()
+            logging.info(f"Clean output from Ollama (first 100 chars): {clean_output[:100]}")
+            logging.debug(f"Complete clean output from Ollama:\n{clean_output}")  # Updated logging
+            return clean_output
         else:
             print("Step: Ollama returned no output.")
             return ""
@@ -64,6 +75,17 @@ def call_ollama(prompt, model):
     except Exception as e:
         print(f"Step: Unexpected error during Ollama command: {e}")
         return None
+
+def clean_and_format_output(raw_output):
+    """
+    Cleans the raw model output by removing non-Unicode characters.
+    Preserves formatting of the surrounding text.
+    """
+    # Remove non-Unicode characters from the start and end
+    structured_output = raw_output.strip().encode('utf-8', 'ignore').decode('utf-8')
+    
+    logging.info(f"Cleaned output:\n{structured_output}")
+    return structured_output
 
 def run_indexer(prompt_file, previous_output_file, model):
     initialize_logging(prompt_file)
@@ -99,7 +121,7 @@ def run_indexer(prompt_file, previous_output_file, model):
 
     # Step 3: Combine prompt and previous model output
     combined_text = prompt + "\n\n" + previous_output
-    print("Step: Combined prompt and previous model output.")
+    print(f"Prompt sent to Ollama (first 100 chars): {combined_text[:100]}")
     logging.info("Step: Combined prompt and previous model output.")
 
     # Step 4: Select model
@@ -121,8 +143,8 @@ def run_indexer(prompt_file, previous_output_file, model):
     logging.info("Step: Calling Ollama API with combined text...")
     response = call_ollama(combined_text, selected_model)
     if response:
-        print("Step: Received response from Ollama.")
-        logging.info("Step: Received response from Ollama.")
+        print(f"Response from Ollama before post-processing (first 100 chars): {response[:100]}")
+        logging.info(f"Response from Ollama before parsing (first 100 chars): {response[:100]}")
 
         # Write response to file
         prompt_name = os.path.splitext(os.path.basename(prompt_file))[0]
@@ -132,10 +154,21 @@ def run_indexer(prompt_file, previous_output_file, model):
         output_file = os.path.join(output_dir, f"ollama_event_index_{prompt_name}_{timestamp}.txt")
         print(f"Step: Writing index output to file: {output_file}")
         logging.info(f"Step: Writing index output to file: {output_file}")
-        with open(output_file, 'w', encoding='utf-8') as f:
-            f.write(response)
-        print("Step: Index output written successfully.")
-        logging.info("Step: Index output written successfully.")
+        
+        # Clean and format the response before writing
+        formatted_response = clean_and_format_output(response)
+        if formatted_response:
+            print(f"Formatted response after post-processing (first 100 chars): {formatted_response[:100]}")
+            logging.info(f"Formatted response after post-processing (first 100 chars): {formatted_response[:100]}")
+            with open(output_file, 'w', encoding='utf-8') as f:
+                f.write(formatted_response)
+            logging.info(f"Cleaned output saved to file: {output_file}")  # Added confirmation of file saving
+            print("Step: Index output written successfully.")
+            logging.info("Step: Index output written successfully.")
+        else:
+            print("Step: Failed to format the model output.")
+            logging.error("Step: Failed to format the model output.")
+            logging.debug(f"Formatted response is None. Raw response:\n{response}")  # Added debug log for raw response
     else:
         print("Step: No response received from Ollama.")
         logging.warning("Step: No response received from Ollama.")
@@ -151,6 +184,4 @@ def main():
     args = parser.parse_args()
 
     run_indexer(args.prompt_file, args.previous_output_file, args.model)
-
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__":    main()

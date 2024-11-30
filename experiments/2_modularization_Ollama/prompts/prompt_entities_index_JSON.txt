@@ -35,56 +35,85 @@ Your task is to extract and list unique entities from provided chunks of documen
      - Include all critical attributes as defined in the ontology to facilitate comprehensive event-by-event analysis.
    - Ensure each entity is described in 100 words or less across all attributes.
 
+4. **Dual Output Format**
+   - **Plain Text Output:** Provide the structured index as detailed in the **Output Format** section.
+   - **Structured JSON Output:**
+     - At the end of the plain text output, include the entire extracted data in JSON format.
+     - Encapsulate the JSON output with the following markers:
+       - Start of JSON: `---output JSON starts---`
+       - End of JSON: `---output JSON ends---`
+
 **Output Format**
 
 Provide the index of entities in the following format:
 
 - **Entity Type:** Events
 
-  - **Event Identifier:** Event_YYYYMMDD_XXX
-    - **Event Name:** [Event Name]
-    - **Event Type:** [Event Type]
-    - **Date:** [Date]
-    - **Document Name:** [Document Name]
+  - **Event Identifier:** Event 1
+    - **Event Name:** Annual Budget Meeting
+    - **Event Type:** Budget Cycle
+    - **Date:** May 5th, 2023
+    - **Document Name:** Budget_Report_2023.pdf
+
+  - **Event Identifier:** Event 2
+    - **Event Name:** Curriculum Committee Meeting
+    - **Event Type:** Committee Session
+    - **Date:** September 10th, 2023
+    - **Document Name:** Curriculum_Review_Sept2023.docx
 
 - **Entity Type:** People
 
-  - **Person Identifier:** Person_YYYYMMDD_XXX
-    - **Full Name:** [Full Name]
-    - **Role or Title:** [Role or Title]
-    - **Affiliated Organization:** [Affiliated Organization]
-    - **Document Name:** [Document Name]
+  - **Person Identifier:** Person 1
+    - **Full Name:** Maria Rodriguez
+    - **Role or Title:** Chairperson
+    - **Affiliated Organization:** School Board
+    - **Document Name:** Board_Meeting_Minutes_May2023.pdf
+
+  - **Person Identifier:** Person 2
+    - **Full Name:** Alan Chen
+    - **Role or Title:** Treasurer
+    - **Affiliated Organization:** School Board
+    - **Document Name:** Budget_Report_2023.pdf
 
 - **Entity Type:** Organizations
 
-  - **Organization Identifier:** Organization_YYYYMMDD_XXX
-    - **Organization Name:** [Organization Name]
-    - **Type:** [Type]
-    - **Document Name:** [Document Name]
+  - **Organization Identifier:** Organization 1
+    - **Organization Name:** School Board
+    - **Type:** Educational Governance Body
+    - **Document Name:** Board_Meeting_Minutes_May2023.pdf
+
+  - **Organization Identifier:** Organization 2
+    - **Organization Name:** Curriculum Committee
+    - **Type:** Committee
+    - **Document Name:** Curriculum_Review_Sept2023.docx
 
 - **Entity Type:** Documents
 
-  - **Document Identifier:** Document_YYYYMMDD_XXX
-    - **Document Name:** [Document Name]
-    - **Date:** [Date]
-    - **Document Type:** [Document Type]
+  - **Document Identifier:** Document 1
+    - **Document Name:** Budget_Report_2023.pdf
+    - **Date:** May 5th, 2023
+    - **Document Type:** Financial Report
+
+  - **Document Identifier:** Document 2
+    - **Document Name:** Curriculum_Review_Sept2023.docx
+    - **Date:** September 10th, 2023
+    - **Document Type:** Review Document
 
 - **Entity Type:** Resources
 
-  - **Resource Identifier:** Resource_YYYYMMDD_XXX
-    - **Resource Name:** [Resource Name]
-    - **Resource Type:** [Resource Type]
-    - **Document Name:** [Document Name]
+  - **Resource Identifier:** Resource 1
+    - **Resource Name:** Proposed Budget Allocations
+    - **Resource Type:** Budget Item
+    - **Document Name:** Budget_Report_2023.pdf
 
-- **Entity Type:** Events
+  - **Resource Identifier:** Resource 2
+    - **Resource Name:** New Science Textbooks
+    - **Resource Type:** Educational Material
+    - **Document Name:** Curriculum_Review_Sept2023.docx
 
-  - **Event Identifier:** Event_YYYYMMDD_XXX
-    - **Event Name:** [Event Name]
-    - **Event Type:** [Event Type]
-    - **Date:** [Date]
-    - **Document Name:** [Document Name]
+**Dual Output Example**
 
-**Examples:**
+**Plain Text Output:**
 
 - **Entity Type:** Events
 
@@ -94,31 +123,30 @@ Provide the index of entities in the following format:
     - **Date:** May 5th, 2023
     - **Document Name:** Budget_Report_2023.pdf
 
-- **Entity Type:** People
+  - **Event Identifier:** Event_20230510_002
+    - **Event Name:** Curriculum Committee Meeting
+    - **Event Type:** Committee Session
+    - **Date:** September 10th, 2023
+    - **Document Name:** Curriculum_Review_Sept2023.docx
 
-  - **Person Identifier:** Person_20230510_001
-    - **Full Name:** Maria Rodriguez
-    - **Role or Title:** Chairperson
-    - **Affiliated Organization:** School Board
-    - **Document Name:** Board_Meeting_Minutes_May2023.pdf
-
-- **Entity Type:** Organizations
-
-  - **Organization Identifier:** Organization_20230510_001
-    - **Organization Name:** School Board
-    - **Type:** Educational Governance Body
-    - **Document Name:** Board_Meeting_Minutes_May2023.pdf
-
-- **Entity Type:** Documents
-
-  - **Document Identifier:** Document_20230510_001
-    - **Document Name:** Budget_Report_2023.pdf
-    - **Date:** May 5th, 2023
-    - **Document Type:** Financial Report
-
-- **Entity Type:** Resources
-
-  - **Resource Identifier:** Resource_20230510_001
-    - **Resource Name:** Proposed Budget Allocations
-    - **Resource Type:** Budget Item
-    - **Document Name:** Budget_Report_2023.pdf
+**Structured JSON Output:**
+---output JSON starts---
+{
+  "Events": [
+    {
+      "Event Identifier": "Event_20230427_001",
+      "Event Name": "Annual Budget Meeting",
+      "Event Type": "Budget Cycle",
+      "Date": "May 5th, 2023",
+      "Document Name": "Budget_Report_2023.pdf"
+    },
+    {
+      "Event Identifier": "Event_20230510_002",
+      "Event Name": "Curriculum Committee Meeting",
+      "Event Type": "Committee Session",
+      "Date": "September 10th, 2023",
+      "Document Name": "Curriculum_Review_Sept2023.docx"
+    }
+  ]
+}
+---output JSON ends---

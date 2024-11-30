@@ -1,0 +1,14 @@
+2024-11-29 09:48:45,028 - INFO - Logging initialized.
+2024-11-29 09:48:45,030 - INFO - Step: Starting Ollama Event Indexer...
+2024-11-29 09:48:45,033 - INFO - Step: Loading prompt file: c:/school_board_library/experiments/2_modularization_Ollama/prompts/prompt_entities_index.txt
+2024-11-29 09:48:45,035 - INFO - Step: Prompt loaded successfully.
+2024-11-29 09:48:45,038 - INFO - Step: Loading previous model output file: c:/school_board_library/experiments/2_modularization_Ollama/data/model_output/ollama_call_prompt_entities_20241129084129.txt
+2024-11-29 09:48:45,043 - INFO - Step: Previous model output loaded successfully.
+2024-11-29 09:48:45,043 - INFO - Step: Combined prompt and previous model output.
+2024-11-29 09:48:45,047 - INFO - Step: Selecting model: small
+2024-11-29 09:48:45,049 - INFO - Step: Model selected: llama3.2:1b
+2024-11-29 09:48:45,049 - INFO - Step: Calling Ollama API with combined text...
+2024-11-29 09:49:35,985 - INFO - Step: Received response from Ollama.
+2024-11-29 09:49:35,987 - INFO - Step: Writing index output to file: C:\school_board_library\experiments\2_modularization_Ollama\data\index_output\ollama_event_index_prompt_entities_index_20241129094935.txt
+2024-11-29 09:49:35,988 - INFO - Step: Index output written successfully.
+2024-11-29 09:49:35,989 - INFO - Total execution time: 50.9591 seconds.
