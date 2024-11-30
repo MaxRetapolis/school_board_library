@@ -1,119 +1,23 @@
-Prompt for LLaMA 3.2: Ontology-Based Entity Indexing from School Board Documents
-
-**Ontology Expert Mode Activation**
-
-You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, and states within specific domains.
-
-**Goal**
-
-You are helping school board members and all other stakeholders, including parents, teachers, and community members, understand the materials created in the board meetings. **The project aims to establish civic transparency and provide effective civic oversight around school board decisions, ensuring that all stakeholder groups have access to and can engage with publicly available documents to promote accountability and informed participation.**
-
-Your task is to extract and list unique entities from provided chunks of documents related to school board operations to create an index. The extracted entities should be categorized according to the predefined ontology for the School Board New Member Copilot, which includes:
-
-- Events
-- People
-- Organizations
-- Documents
-- Resources
-
 **Instructions**
 
-1. **Read the Document Carefully**
-   - Analyze the provided text thoroughly to understand the context.
+1. **Read the Entities Text File Carefully**
+   - Analyze the provided text file containing the extracted entities.
+   - Understand the structure and formatting used for listing the entities.
 
 2. **Identify and Extract Entities**
-   - Look for all unique entities that match the defined categories in the ontology.
-   - **For Events:**
-     - **Ensure Separation:** Clearly separate each event in the output, even if multiple events are interleaved in the source text.
-     - **Unique Event IDs:** Assign a distinct identifier to each event (e.g., Event_20230427_001) to ensure uniqueness across different program runs.
-   - For each entity, extract key attributes sufficient to distinguish it from others.
-   - Focus on essential information to create a clear and concise index.
+   - Locate each entity and its attributes based on the headings and bullet points.
+   - Ensure all entities are captured according to their types: Events, People, Organizations, Documents, Resources.
 
-3. **Provide Structured Output**
-   - Present the extracted information in a structured format as specified below.
-   - **For Events:**
-     - Include all critical attributes as defined in the ontology to facilitate comprehensive event-by-event analysis.
-   - Ensure each entity is described in 100 words or less across all attributes.
+3. **Map Entities to JSON Structure**
+   - For each entity, map the extracted attributes to the corresponding keys in the JSON format.
+   - Maintain the hierarchical grouping of entities by their types.
 
-4. **Dual Output Format**
-   - **Plain Text Output:** Provide the structured index as detailed in the **Output Format** section.
-   - **Structured JSON Output:**
-     - At the end of the plain text output, include the entire extracted data in JSON format.
-     - Encapsulate the JSON output with the following markers:
-       - Start of JSON: `---output JSON starts---`
-       - End of JSON: `---output JSON ends---`
+4. **Provide Structured JSON Output**
+   - Assemble the entities into a JSON-formatted output as specified below.
 
-**Output Format**
+**Examples**
 
-Provide the index of entities in the following format:
-
-- **Entity Type:** Events
-
-  - **Event Identifier:** Event 1
-    - **Event Name:** Annual Budget Meeting
-    - **Event Type:** Budget Cycle
-    - **Date:** May 5th, 2023
-    - **Document Name:** Budget_Report_2023.pdf
-
-  - **Event Identifier:** Event 2
-    - **Event Name:** Curriculum Committee Meeting
-    - **Event Type:** Committee Session
-    - **Date:** September 10th, 2023
-    - **Document Name:** Curriculum_Review_Sept2023.docx
-
-- **Entity Type:** People
-
-  - **Person Identifier:** Person 1
-    - **Full Name:** Maria Rodriguez
-    - **Role or Title:** Chairperson
-    - **Affiliated Organization:** School Board
-    - **Document Name:** Board_Meeting_Minutes_May2023.pdf
-
-  - **Person Identifier:** Person 2
-    - **Full Name:** Alan Chen
-    - **Role or Title:** Treasurer
-    - **Affiliated Organization:** School Board
-    - **Document Name:** Budget_Report_2023.pdf
-
-- **Entity Type:** Organizations
-
-  - **Organization Identifier:** Organization 1
-    - **Organization Name:** School Board
-    - **Type:** Educational Governance Body
-    - **Document Name:** Board_Meeting_Minutes_May2023.pdf
-
-  - **Organization Identifier:** Organization 2
-    - **Organization Name:** Curriculum Committee
-    - **Type:** Committee
-    - **Document Name:** Curriculum_Review_Sept2023.docx
-
-- **Entity Type:** Documents
-
-  - **Document Identifier:** Document 1
-    - **Document Name:** Budget_Report_2023.pdf
-    - **Date:** May 5th, 2023
-    - **Document Type:** Financial Report
-
-  - **Document Identifier:** Document 2
-    - **Document Name:** Curriculum_Review_Sept2023.docx
-    - **Date:** September 10th, 2023
-    - **Document Type:** Review Document
-
-- **Entity Type:** Resources
-
-  - **Resource Identifier:** Resource 1
-    - **Resource Name:** Proposed Budget Allocations
-    - **Resource Type:** Budget Item
-    - **Document Name:** Budget_Report_2023.pdf
-
-  - **Resource Identifier:** Resource 2
-    - **Resource Name:** New Science Textbooks
-    - **Resource Type:** Educational Material
-    - **Document Name:** Curriculum_Review_Sept2023.docx
-
-**Dual Output Example**
-
-**Plain Text Output:**
+Given the following extracted entities in the output text file:
 
 - **Entity Type:** Events
 
@@ -123,14 +27,8 @@ Provide the index of entities in the following format:
     - **Date:** May 5th, 2023
     - **Document Name:** Budget_Report_2023.pdf
 
-  - **Event Identifier:** Event_20230510_002
-    - **Event Name:** Curriculum Committee Meeting
-    - **Event Type:** Committee Session
-    - **Date:** September 10th, 2023
-    - **Document Name:** Curriculum_Review_Sept2023.docx
+The corresponding JSON output should be:
 
-**Structured JSON Output:**
----output JSON starts---
 {
   "Events": [
     {
@@ -139,14 +37,96 @@ Provide the index of entities in the following format:
       "Event Type": "Budget Cycle",
       "Date": "May 5th, 2023",
       "Document Name": "Budget_Report_2023.pdf"
-    },
-    {
-      "Event Identifier": "Event_20230510_002",
-      "Event Name": "Curriculum Committee Meeting",
-      "Event Type": "Committee Session",
-      "Date": "September 10th, 2023",
-      "Document Name": "Curriculum_Review_Sept2023.docx"
     }
   ]
 }
----output JSON ends---
+
+Given the following extracted entities in the output text file:
+
+- **Entity Type:** People
+
+  - **Person Identifier:** Person_20230510_001
+    - **Full Name:** Maria Rodriguez
+    - **Role or Title:** Chairperson
+    - **Affiliated Organization:** School Board
+    - **Document Name:** Board_Meeting_Minutes_May2023.pdf
+
+The corresponding JSON output should be:
+
+{
+  "People": [
+    {
+      "Person Identifier": "Person_20230510_001",
+      "Full Name": "Maria Rodriguez",
+      "Role or Title": "Chairperson",
+      "Affiliated Organization": "School Board",
+      "Document Name": "Board_Meeting_Minutes_May2023.pdf"
+    }
+  ]
+}
+
+Given the following extracted entities in the output text file:
+
+- **Entity Type:** Organizations
+
+  - **Organization Identifier:** Organization_20230510_001
+    - **Organization Name:** School Board
+    - **Type:** Educational Governance Body
+    - **Document Name:** Board_Meeting_Minutes_May2023.pdf
+
+The corresponding JSON output should be:
+
+{
+  "Organizations": [
+    {
+      "Organization Identifier": "Organization_20230510_001",
+      "Organization Name": "School Board",
+      "Type": "Educational Governance Body",
+      "Document Name": "Board_Meeting_Minutes_May2023.pdf"
+    }
+  ]
+}
+
+Given the following extracted entities in the output text file:
+
+- **Entity Type:** Documents
+
+  - **Document Identifier:** Document_20230510_001
+    - **Document Name:** Budget_Report_2023.pdf
+    - **Date:** May 5th, 2023
+    - **Document Type:** Financial Report
+
+The corresponding JSON output should be:
+
+{
+  "Documents": [
+    {
+      "Document Identifier": "Document_20230510_001",
+      "Document Name": "Budget_Report_2023.pdf",
+      "Date": "May 5th, 2023",
+      "Document Type": "Financial Report"
+    }
+  ]
+}
+
+Given the following extracted entities in the output text file:
+
+- **Entity Type:** Resources
+
+  - **Resource Identifier:** Resource_20230510_001
+    - **Resource Name:** Proposed Budget Allocations
+    - **Resource Type:** Budget Item
+    - **Document Name:** Budget_Report_2023.pdf
+
+The corresponding JSON output should be:
+
+{
+  "Resources": [
+    {
+      "Resource Identifier": "Resource_20230510_001",
+      "Resource Name": "Proposed Budget Allocations",
+      "Resource Type": "Budget Item",
+      "Document Name": "Budget_Report_2023.pdf"
+    }
+  ]
+}

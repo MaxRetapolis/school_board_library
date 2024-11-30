@@ -1,0 +1,11 @@
+2024-11-29 18:48:23,752 - INFO - Logging initialized.
+2024-11-29 18:48:23,753 - INFO - Starting Ollama Index TXT to JSON Converter V2...
+2024-11-29 18:48:23,756 - INFO - Text file loaded successfully.
+2024-11-29 18:48:23,757 - INFO - Starting parse_text_to_json function.
+2024-11-29 18:48:23,759 - ERROR - Error in parse_text_to_json: 'Regex' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "c:\school_board_library\experiments\2_modularization_Ollama\src\ollama_index_txt_JSON_converter_v2.py", line 33, in parse_text_to_json
+    value = restOfLine.strip()
+            ^^^^^^^^^^^^^^^^
+AttributeError: 'Regex' object has no attribute 'strip'
+2024-11-29 18:48:23,787 - ERROR - Failed to parse text to JSON.

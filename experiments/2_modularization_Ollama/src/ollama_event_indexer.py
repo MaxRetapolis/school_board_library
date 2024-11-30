@@ -8,7 +8,6 @@ import re  # Added import
 
 def initialize_logging(prompt_file):
     prompt_name = os.path.splitext(os.path.basename(prompt_file))[0]
-    prompt_name = os.path.splitext(os.path.basename(prompt_file))[0]
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")  # Added timestamp definition
     log_dir = r"C:\school_board_library\experiments\2_modularization_Ollama\data\logs"
     os.makedirs(log_dir, exist_ok=True)
@@ -17,7 +16,7 @@ def initialize_logging(prompt_file):
         filename=log_file,
         filemode='a',
         format='%(asctime)s - %(levelname)s - %(message)s',
-        level=logging.INFO
+        level=logging.DEBUG  # Changed from INFO to DEBUG for more detailed logs
     )
     logging.info("Logging initialized.")
 

@@ -38,6 +38,7 @@ Your task is to extract and list unique entities from provided chunks of documen
 **Output Format**
 
 Provide the index of entities in the following format:
+Make sure each entity type is output exactly as below. It must have "Entity Type" before the actual entity type and the format should be as below.
 
 - **Entity Type:** Events
 

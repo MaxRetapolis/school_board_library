@@ -1,0 +1,10 @@
+2024-11-29 18:49:31,567 - INFO - Logging initialized.
+2024-11-29 18:49:31,570 - INFO - Starting Ollama Index TXT to JSON Converter V2...
+2024-11-29 18:49:31,574 - INFO - Text file loaded successfully.
+2024-11-29 18:49:31,575 - INFO - Starting parse_text_to_json function.
+2024-11-29 18:49:31,578 - ERROR - Error in parse_text_to_json: No entity type found in the text.
+Traceback (most recent call last):
+  File "c:\school_board_library\experiments\2_modularization_Ollama\src\ollama_index_txt_JSON_converter_v2.py", line 33, in parse_text_to_json
+    raise ValueError("No entity type found in the text.")
+ValueError: No entity type found in the text.
+2024-11-29 18:49:31,609 - ERROR - Failed to parse text to JSON.
