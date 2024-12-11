@@ -1,3 +1,5 @@
+you are en expert in knowledge management, specifically knowledge graphs and ontology.
+
 **Instructions**
 
 1. **Read the Entities Text File Carefully**

@@ -1,0 +1,95 @@
+Prompt:
+
+You are an expert in knowledge management, specifically in knowledge graphs and ontology development. Your task is to analyze a provided strategy text and extract all relevant conceptual elements in a structured JSON format. The goal is to transform the unstructured strategy into a comprehensive, explorable knowledge base representation.
+
+Instructions:
+
+Read the Provided Strategy Text Thoroughly
+Carefully examine the entire strategy text. It describes a framework for designing a knowledge environment (a "School Board New Member Copilot") and details various categories of information—such as events, artifacts, processes, entities, states, and more.
+
+Identify and Extract All Conceptual Elements
+Break down the strategy text into its fundamental components. These include, but are not limited to:
+
+Entities (Classes): People (Board Members, Staff, Students, Parents, Community Members), Organizations (School District, Schools, Committees), Documents (Policies, Reports, Minutes, Agendas), Resources (Budget Items, Facilities).
+Events: Board Meetings, Committee Sessions, Public Hearings, Policy Approvals, Budget Cycles, Elections, Training Sessions, Community Events, Emergency Responses, Legal Proceedings.
+Artifacts: Meeting Agendas/Minutes, Policy Documents, Financial Reports, Strategic Plans, Committee Reports, Correspondence, Legal Documents, Educational Materials, Performance Data, Public Feedback.
+Processes: Decision-Making (Policy Development, Budgeting), Compliance (Regulatory Adherence), Community Engagement (Feedback Mechanisms).
+States and Conditions: Policy Status (Draft, Under Review, Approved, Archived), Member Status (Newly Elected, Incumbent, Term Expired), Budget Status (Proposed, Revised, Finalized).
+Context and Environment: Legal Framework (Education codes, regulations), Socio-Economic Factors, Educational Standards.
+Ontology Components: Classes, Properties, Relationships, Constraints.
+Relationships: Hierarchical (Supervision, Membership), Temporal (Sequence of Events), Causal (Cause and Effect), Associative (Collaboration).
+Technologies and Tools (if mentioned), Workflows, Features, Analytical Capabilities, Benefits, Challenges and Mitigation Strategies, Next Steps.
+Make sure to capture all these conceptual groupings and any additional relevant categories described in the strategy.
+
+Organize the Extracted Data into a JSON Structure
+Present the extracted information as a top-level JSON object with keys for each major category. For example, you might have:
+
+json
+Copy code
+{
+  "Entities": {
+    "People": [...],
+    "Organizations": [...],
+    "Documents": [...],
+    "Resources": [...]
+  },
+  "Events": [...],
+  "Artifacts": [...],
+  "Processes": [...],
+  "States and Conditions": [...],
+  "Context": {...},
+  "Ontology Components": {...},
+  "Relationships": [...],
+  "Technologies and Tools": [...],
+  "Workflow": [...],
+  "Features": [...],
+  "Analytical Capabilities": [...],
+  "Benefits": [...],
+  "Challenges and Mitigation Strategies": {
+    "Data Privacy and Security": [...],
+    "Data Quality": [...],
+    "User Adoption": [...],
+    "Scalability": [...],
+    "Interoperability": [...]
+  },
+  "Next Steps": [...]
+}
+Within each category, use arrays or objects as appropriate.
+For each entry, list attributes or descriptions if they are provided (e.g., for Documents, note types: Active, Pending, Historical; for People, note attributes like Roles, Terms, Committees).
+If hierarchical or nested structures are mentioned, reflect that hierarchy in the JSON.
+Maintain Consistency with the Strategy’s Terminology
+Use the exact terms and categories as outlined in the strategy. Preserve the hierarchical relationships and grouping as described.
+
+No Invented Data
+Only include information explicitly mentioned in the strategy. Do not assume or infer data that is not stated.
+
+Comprehensive Coverage
+The final JSON should serve as a structured "map" of all the concepts the strategy discusses—entities, events, artifacts, processes, states, contexts, technologies, relationships, and next steps.
+
+Example (Simplified Illustration)
+If the strategy mentions “Board Meetings” under events, include it like:
+
+json
+Copy code
+"Events": [
+  {
+    "Type": "Board Meetings",
+    "Description": "Regular sessions where policies are discussed and decisions made"
+  },
+  ...
+]
+If the strategy discusses “Policy Documents” as artifacts, represent them as:
+
+json
+Copy code
+"Artifacts": [
+  {
+    "Type": "Policy Documents",
+    "Description": "Official statements outlining rules and guidelines"
+  },
+  ...
+]
+Your final output:
+
+Should be a single JSON object encapsulating all extracted information.
+Should reflect the full richness of the strategy document, including all categories, subcategories, and attributes mentioned.
