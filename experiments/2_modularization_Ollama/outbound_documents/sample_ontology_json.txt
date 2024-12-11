@@ -1,0 +1,338 @@
+{
+  "Entities": {
+    "People": [
+      {
+        "Name": "Trustee Spec",
+        "Role": "Board Member",
+        "Affiliation": "Dublin Unified School District Board of Trustees"
+      },
+      {
+        "Name": "Trustee Blackman",
+        "Role": "Board Member",
+        "Affiliation": "Dublin Unified School District Board of Trustees"
+      },
+      {
+        "Name": "Trustee Chair",
+        "Role": "Board Member",
+        "Affiliation": "Dublin Unified School District Board of Trustees"
+      },
+      {
+        "Name": "Vice President Quo",
+        "Role": "Vice President, Board Member",
+        "Affiliation": "Dublin Unified School District Board of Trustees"
+      },
+      {
+        "Name": "President Pelham",
+        "Role": "President, Board Member",
+        "Affiliation": "Dublin Unified School District Board of Trustees"
+      },
+      {
+        "Name": "Student Trustee (Pei)",
+        "Role": "Student Board Member",
+        "Affiliation": "Dublin Unified School District"
+      },
+      {
+        "Name": "Dr. Campbell",
+        "Role": "Assistant Superintendent",
+        "Affiliation": "Dublin Unified School District"
+      },
+      {
+        "Name": "Chris Hobbs",
+        "Role": "Chief Business Officer (CBO)",
+        "Affiliation": "Dublin Unified School District"
+      },
+      {
+        "Name": "Thomas Moore",
+        "Role": "Assistant Superintendent of Facilities Planning and Construction",
+        "Affiliation": "Dublin Unified School District"
+      },
+      {
+        "Name": "Wells Principal (Name mentioned as Kanye Gs)",
+        "Role": "Principal",
+        "Affiliation": "Wells Middle School, DUSD"
+      },
+      {
+        "Name": "Dublin Little League 10 and under Softball Team (Players and Coaches)",
+        "Role": "Youth Athletes and Coaches",
+        "Affiliation": "Dublin Little League"
+      },
+      {
+        "Name": "Dublin Little League 12 and under Softball Team (Players and Coaches)",
+        "Role": "Youth Athletes and Coaches",
+        "Affiliation": "Dublin Little League"
+      },
+      {
+        "Name": "Dr. Funk",
+        "Role": "Superintendent",
+        "Affiliation": "Dublin Unified School District"
+      }
+    ],
+    "Organizations": [
+      {
+        "Organization Name": "Dublin Unified School District Board of Trustees",
+        "Type": "Governing Body for the School District"
+      },
+      {
+        "Organization Name": "Dublin Unified School District",
+        "Type": "Public School District"
+      },
+      {
+        "Organization Name": "Dublin Little League",
+        "Type": "Youth Sports Organization"
+      },
+      {
+        "Organization Name": "DTA (Dublin Teachers Association)",
+        "Type": "Teachers Union"
+      },
+      {
+        "Organization Name": "CSCA (California School Employees Association)",
+        "Type": "Classified Staff Union"
+      },
+      {
+        "Organization Name": "Emerald High School",
+        "Type": "Public High School in DUSD"
+      },
+      {
+        "Organization Name": "Dublin High School",
+        "Type": "Public High School in DUSD"
+      },
+      {
+        "Organization Name": "Wells Middle School",
+        "Type": "Public Middle School in DUSD"
+      },
+      {
+        "Organization Name": "Valley High School",
+        "Type": "Public High School (Continuation) in DUSD"
+      }
+    ],
+    "Documents": [
+      {
+        "Document Type": "Agenda",
+        "Context": "Adoption of meeting agenda discussed in board meeting"
+      },
+      {
+        "Document Type": "Meeting Minutes",
+        "Context": "Board meeting minutes generated from sessions"
+      },
+      {
+        "Document Type": "Policy Documents",
+        "Context": "Referenced during discussion of policies and procedures"
+      },
+      {
+        "Document Type": "Financial Reports",
+        "Context": "Referenced in budget and facilities project updates"
+      },
+      {
+        "Document Type": "Congratulatory Certificates",
+        "Context": "Presented to the Dublin Little League softball teams"
+      },
+      {
+        "Document Type": "Mission Statement",
+        "Context": "DUSD Mission Statement read at the start of the board meeting"
+      },
+      {
+        "Document Type": "Board Meeting Agendas",
+        "Context": "Used to guide the order of business in the board meeting"
+      }
+    ],
+    "Resources": [
+      {
+        "Resource Name": "Facilities Project Updates",
+        "Resource Type": "Infrastructure Planning Data",
+        "Context": "Presented during the board meeting for various school construction and improvement projects"
+      },
+      {
+        "Resource Name": "Enrollment Update Data",
+        "Resource Type": "Student Enrollment Information",
+        "Context": "Discussed to understand enrollment trends and capacity"
+      },
+      {
+        "Resource Name": "Budget Data",
+        "Resource Type": "Financial Resource Information",
+        "Context": "Updates provided during board meeting"
+      }
+    ]
+  },
+  "Events": [
+    {
+      "Event Name": "Dublin Unified School District Board Meeting",
+      "Event Type": "Board Governance Session",
+      "Participants": [
+        "Board of Trustees",
+        "Superintendent",
+        "Staff",
+        "Community Members",
+        "Student Representatives"
+      ],
+      "Key Activities": [
+        "Roll Call and Establishing Quorum",
+        "Adoption of Agenda",
+        "Pledge of Allegiance",
+        "Reading of Mission Statement",
+        "Recognition of Dublin Little League Softball Teams",
+        "Facilities Project Updates",
+        "Enrollment Update",
+        "Public Comments",
+        "Discussion of Next Steps and Future Agendas"
+      ]
+    },
+    {
+      "Event Name": "Recognition of Dublin Little League Teams",
+      "Event Type": "Celebration/Commendation",
+      "Participants": [
+        "Board of Trustees",
+        "Little League Players and Coaches",
+        "Community Members"
+      ],
+      "Outcome": "Certificates of Special Congressional Recognition Presented"
+    },
+    {
+      "Event Name": "Back to School Nights (Emerald High, Dublin High, Valley High)",
+      "Event Type": "School Community Engagement",
+      "Participants": [
+        "Students",
+        "Parents/Guardians",
+        "Teachers",
+        "Administrators"
+      ],
+      "Context": "Opportunity for families to meet teachers, learn course expectations, and engage with school activities"
+    },
+    {
+      "Event Name": "Grand Opening Celebration of Emerald High School",
+      "Event Type": "School Launch Event",
+      "Participants": [
+        "District Staff",
+        "Community Members",
+        "Students and Families"
+      ],
+      "Activities": [
+        "Time Capsule Ceremony by Dublin Historical Society",
+        "Cheer Team Performances",
+        "Hip Hop Dance Team Showcase",
+        "Free Face Painting, Henna, Games, Balloon Animals, Food Trucks"
+      ]
+    }
+  ],
+  "Artifacts": [
+    {
+      "Type": "Meeting Agendas/Minutes",
+      "Description": "Official records guiding board meeting proceedings"
+    },
+    {
+      "Type": "Policy Documents",
+      "Description": "Written directives outlining district rules and guidelines"
+    },
+    {
+      "Type": "Financial Reports",
+      "Description": "Budget documents, strategic plans, and enrollment data updates"
+    },
+    {
+      "Type": "Certificates of Special Congressional Recognition",
+      "Description": "Awards presented to softball teams for their achievements"
+    },
+    {
+      "Type": "Mission Statement",
+      "Description": "The guiding educational and organizational goal statement of DUSD"
+    }
+  ],
+  "Processes": [
+    {
+      "Name": "Board Meeting Procedural Steps",
+      "Description": "Roll call, adoption of agenda, pledge of allegiance, mission statement reading, recognition, public comments, and reports"
+    },
+    {
+      "Name": "Facilities Planning and Budgeting",
+      "Description": "Review of construction timelines, budgets, encumbrances, and completion dates for schools"
+    },
+    {
+      "Name": "Recognition Process",
+      "Description": "A formal approach to honoring achievements of community members, such as softball teams, during board meetings"
+    }
+  ],
+  "States and Conditions": [
+    {
+      "Name": "Quorum Established",
+      "Description": "Board meeting begins with sufficient members present to conduct official business"
+    },
+    {
+      "Name": "Projects Underway",
+      "Description": "Facilities projects at various schools in different phases (design, construction, completion)"
+    },
+    {
+      "Name": "Enrollment Trends",
+      "Description": "Elementary, middle, and high school enrollment numbers considered for staffing and resources"
+    }
+  ],
+  "Context": {
+    "Legal Framework": "Board Meetings comply with public governance and transparency laws",
+    "Socio-Economic Factors": "Community engagement through events and back-to-school nights",
+    "Educational Standards": "Review of policies and updates aligns with district’s educational mission"
+  },
+  "Ontology Components": {
+    "Classes": ["People", "Organizations", "Documents", "Events", "Artifacts", "Resources"],
+    "Properties": ["Role", "Affiliation", "Type", "Name"],
+    "Relationships": ["Board supervises District", "District recognizes Community Achievements"],
+    "Constraints": "Compliance with state laws and district policies"
+  },
+  "Relationships": [
+    {
+      "Type": "Membership",
+      "Description": "Trustees are members of the Board"
+    },
+    {
+      "Type": "Representation",
+      "Description": "Student Trustee represents student interests to the Board"
+    },
+    {
+      "Type": "Community Engagement",
+      "Description": "Events like back-to-school nights foster relationship between district and families"
+    }
+  ],
+  "Technologies and Tools": [
+    {
+      "Name": "ESPN Broadcast",
+      "Context": "12 and under softball team’s games were aired on ESPN"
+    }
+  ],
+  "Workflow": [
+    {
+      "Name": "Board Meeting Workflow",
+      "Steps": [
+        "Roll Call",
+        "Adopt Agenda",
+        "Pledge of Allegiance",
+        "Read Mission Statement",
+        "Present Recognitions",
+        "Hear Reports and Updates",
+        "Public Comments",
+        "Board Discussion and Actions",
+        "Adjournment"
+      ]
+    }
+  ],
+  "Features": [],
+  "Analytical Capabilities": [],
+  "Benefits": [
+    {
+      "Name": "Community Recognition",
+      "Description": "Highlighting student and community achievements encourages positive engagement"
+    }
+  ],
+  "Challenges and Mitigation Strategies": {
+    "Data Privacy and Security": [],
+    "Data Quality": [],
+    "User Adoption": [],
+    "Scalability": [],
+    "Interoperability": []
+  },
+  "Next Steps": [
+    {
+      "Action": "Complete facilities projects as per timelines",
+      "Outcome": "Enhanced educational environment and resources"
+    },
+    {
+      "Action": "Continued community engagement through public meetings",
+      "Outcome": "Transparent decision-making and stakeholder trust"
+    }
+  ]
+}
