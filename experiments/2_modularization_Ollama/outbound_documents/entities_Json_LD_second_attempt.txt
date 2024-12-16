@@ -1,0 +1,184 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "ex": "http://example.org/schoolboard#"
+  },
+  "@graph": [
+    {
+      "@type": "schema:Organization",
+      "schema:name": "Dublin Unified School District Board of Trustees",
+      "ex:documentName": "Meeting Minutes - August 13, 2024"
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Trustee Spec",
+      "schema:jobTitle": "Trustee",
+      "ex:affiliation": "Dublin Unified School District Board of Trustees",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:roleWithinOrganization": null
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Trustee Blackman",
+      "ex:affiliation": "Dublin Unified School District Board of Trustees",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:roleWithinOrganization": null
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Vice President Quo",
+      "schema:jobTitle": "Vice President",
+      "ex:affiliation": "Dublin Unified School District Board of Trustees",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:roleWithinOrganization": null
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "President Pelham",
+      "schema:jobTitle": "President",
+      "ex:affiliation": "Dublin Unified School District Board of Trustees",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:roleWithinOrganization": null
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Trustee Pei",
+      "ex:affiliation": "Dublin Unified School District Board of Trustees",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:roleWithinOrganization": null
+    },
+    {
+      "@type": "schema:CreativeWork",
+      "schema:name": "Agenda",
+      "ex:documentType": null,
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:description": null
+    },
+    {
+      "@type": "schema:CreativeWork",
+      "schema:name": "Dublin Unified School District mission statement",
+      "ex:documentType": "Mission Statement",
+      "ex:description": "Educate every student to become a lifelong learner by providing a safe and supportive environment that fosters collective responsibility for each student's success.",
+       "ex:documentName": "Meeting Minutes - August 13, 2024"
+    },
+        {
+      "@type": "schema:Organization",
+      "schema:name": "Dublin Little League",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:type": null
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Dr. Campbell",
+      "ex:affiliation": "Dublin Unified School District",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:roleWithinOrganization": null
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Coach Jimmy Dikes",
+      "ex:affiliation": "Dublin Little League",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:roleWithinOrganization": "Coach"
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Coach Schafer",
+      "ex:affiliation": "Dublin Little League",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:roleWithinOrganization": "Coach"
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Vanessa Kehe",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+        "ex:roleWithinOrganization": "Parent"
+    },
+    {
+      "@type": "schema:CreativeWork",
+      "schema:name": "Congressional Recognition Award",
+      "ex:resourceType": "Award",
+      "ex:documentName": "Meeting Minutes - August 13, 2024"
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Congressman Eric Swalwell",
+      "ex:documentName": "Meeting Minutes - August 13, 2024"
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Student Board Member",
+      "ex:affiliation": "Dublin Unified School District",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:roleWithinOrganization": null
+    },
+    {
+      "@type": "schema:Organization",
+      "schema:name": "Emerald High School",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:type": "High School"
+    },
+        {
+      "@type": "schema:Organization",
+      "schema:name": "Valley High School",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:type": "High School"
+    },
+        {
+      "@type": "schema:Organization",
+      "schema:name": "Dublin High School",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:type": "High School"
+    },
+                {
+      "@type": "schema:Organization",
+      "schema:name": "Las Positas college",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:type": "College"
+    },
+                {
+      "@type": "schema:Organization",
+      "schema:name": "National Student Board Member Association",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+      "ex:type": "Association"
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Superintendent Funk",
+      "ex:affiliation": "Dublin Unified School District",
+      "ex:documentName": "Meeting Minutes - August 13, 2024",
+        "ex:roleWithinOrganization": "Superintendent"
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Thomas Moore",
+      "ex:affiliation": "Dublin Unified School District",
+      "schema:jobTitle": "Assistant Superintendent of Facilities",
+      "ex:documentName": "Meeting Minutes - August 13, 2024"
+    },
+        {
+      "@type": "schema:Person",
+      "schema:name": "Chris Hobbs",
+      "ex:affiliation": "Dublin Unified School District",
+      "schema:jobTitle": "CBO",
+      "ex:documentName": "Meeting Minutes - August 13, 2024"
+    },
+        {
+      "@type": "schema:Person",
+      "schema:name": "Curtis Haar",
+      "ex:affiliation": "Dublin Unified School District",
+      "schema:jobTitle": "Director",
+      "ex:documentName": "Meeting Minutes - August 13, 2024"
+    },
+{
+      "@type": "schema:Person",
+      "schema:name": "Ram S.",
+      "ex:documentName": "Meeting Minutes - August 13, 2024"
+    },
+    {
+      "@type": "schema:Person",
+      "schema:name": "Caroline M.",
+      "ex:documentName": "Meeting Minutes - August 13, 2024"
+    }
+  ]
+}

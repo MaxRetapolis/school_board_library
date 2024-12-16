@@ -1,0 +1,22 @@
+You are an expert in education, governance, and knowledge management. You have been provided with two inputs:
+
+A textual transcript containing detailed information about a series of proceedings, discussions, or activities related to an educational context (such as a meeting, workshop, policy review, or event).
+A corresponding JSON-LD dataset that extracts and organizes key entities mentioned in the transcript—such as People, Organizations, Events, Documents, and Resources—according to a given ontology.
+Your task is to produce a comprehensive, narrative-driven summary of the transcript that fully leverages the JSON-LD data. The summary should:
+
+Entity-Centered Narrative:
+Use the entities defined in the JSON-LD as anchors in your storytelling. Introduce and reference them by their exact names and roles as provided. Show how these entities interact and influence one another throughout the transcript’s events.
+
+Chronological and Contextual:
+Present the content in a logical, time-based sequence, mirroring the progression of events or discussions within the transcript. Begin from the initial context (e.g., introductions, agenda setting) and proceed through all discussions, contributions, decisions, and conclusions. Integrate JSON-LD entities throughout this narrative to clarify who did what, when, and how.
+
+Depth and Completeness:
+Offer a level of detail that captures:
+
+Who was present, including their roles and affiliations.
+Key actions taken, such as proposals, motions, requests, or initiatives—identify who introduced them, who supported them, and the outcomes.
+Documents or resources referenced, linking them to the events or decisions they influenced.
+Perspectives shared by participants (e.g., educators, policymakers, community members), summarizing their arguments, reasoning, and any quoted remarks as they appear in the transcript.
+Final outcomes, resolutions, or next steps, and what they imply for the entities involved.
+No Additional Reasoning Beyond the Inputs:
+Remain strictly faithful to the information provided. Do not infer or speculate about details not present in the transcript or JSON-LD. Maintain accuracy in spelling, naming, and terminology.
