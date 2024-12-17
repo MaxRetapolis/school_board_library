@@ -121,3 +121,14 @@ Experiment 3 aims to refine the ontology definition and document summarization p
    - **Improved solution:** Migrated to JSON-LD (Linked Data) format for the ontology and extended existing Schema.org ontologies to be as specific to the education domain as possible. This, anekdotally, improved quality of document summarization by another 10 %.
    - **Benefit:** An approach that can be automated through a prompt chain and can be used to extract entities and relationships from large documents as well as re-summarize them en-masse.
    - **Potential Concern:** Using SOTA models will be expensive, around $3 per document. Need to figure out how to stay within the free tier of OpenAI and Gemini.
+
+### Anekdotal evidence suggests that the quality of the document summarization has improved by 20% by using a two step approach and JSON-LD ontology. ###
+
+| Criteria                   | GPT O1 1 Step | Gemini 2.0 1 Step | GPT O1 2 Step (ontology) | Gemini 2.0 2 Step (ontology) | GPT O1 2 Step (JSON-LD ontology) |
+|----------------------------|--------------:|------------------:|-------------------------:|-----------------------------:|---------------------------------:|
+| **Accuracy**               | 35            | 38                | 37                       | 39                           | 39                               |
+| **Completeness**           | 25            | 27                | 28                       | 29                           | 30                               |
+| **Detail**                 | 18            | 15                | 17                       | 19                           | 20                               |
+| **Organization & Clarity** | 8             | 9                 | 8                        | 9                            | 9                                |
+| **Total Score**            | 86            | 89                | 90                       | 96                           | **98**                           |
+|----------------------------|--------------:|------------------:|-------------------------:|-----------------------------:|---------------------------------:|
