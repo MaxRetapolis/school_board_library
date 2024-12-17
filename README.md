@@ -4,6 +4,10 @@
 
 This repository contains a document processing pipeline designed to extract entities and relationships from school board meeting transcripts and build a structured knowledge graph. The pipeline leverages local Language Learning Models (LLMs) through Ollama to ensure data security and control.
 
+## TLDR and Current State ##
+My goal is to build a scalable "deep knowledge" extraction process that would derive ontology from the documents and use it to co-index both documents and ontology for improved retrieval.
+I figured out necessary prompts and a two step knowledge extraction process. Figuring out how to scale this process staying within the free tier of the SOTA models.
+
 ## Pipeline Components
 
 1. **Document Indexing** (`step1_read_documents.py`): Reads and indexes documents from the inbound directory.
@@ -109,3 +113,11 @@ Experiment 3 aims to refine the ontology definition and document summarization p
    - Explore strategies to summarize documents exceeding the 128K token limit of LLama3.2.
    - Evaluate the impact of utilizing the full context window versus chunking documents into smaller segments (e.g., 60K tokens) on summary quality.
 
+## Experiment 3 - Lessons Learned
+
+1. **Re-summarizing original documents WITH ontology looks very promising**:
+   - **Challenge:** Local Models (Llama 3.2, Llama 3.3), and earlier SOTA models (GPT-4o) have a token limit of 128K tokens. This limit restricts the ability to summarize large documents effectively. They also struggle producing high quality json ontologies.
+   - **Solution:** Manually processed documents through GPT O1 and Gemini 2.0 using a 2 step approach. First, summarize the document to identify the ontology. Second, re-summarize the document with prompts emphasizing the ontology. This approach has shown to be very effective in extracting entities and relationships from large documents. A two step approach shows a 10% increase in quality of document summarization.
+   - **Improved solution:** Migrated to JSON-LD (Linked Data) format for the ontology and extended existing Schema.org ontologies to be as specific to the education domain as possible. This, anekdotally, improved quality of document summarization by another 10 %.
+   - **Benefit:** An approach that can be automated through a prompt chain and can be used to extract entities and relationships from large documents as well as re-summarize them en-masse.
+   - **Potential Concern:** Using SOTA models will be expensive, around $3 per document. Need to figure out how to stay within the free tier of OpenAI and Gemini.
