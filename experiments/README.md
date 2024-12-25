@@ -8,15 +8,6 @@ This repository contains a document processing pipeline designed to extract enti
 My goal is to build a scalable "deep knowledge" extraction process that would derive ontology from the documents and use it to co-index both documents and ontology for improved retrieval.
 I figured out necessary prompts and a two step knowledge extraction process. Figuring out how to scale this process staying within the free tier of the SOTA models.
 
-## Rethinking the approach ##
-My goal is to build a scalable "deep knowledge" extraction process that would derive ontology from the documents and use it to co-index both documents and ontology for improved retrieval.
-I figured out necessary prompts and a two step knowledge extraction process. Figuring out how to scale this process staying within the free tier of the SOTA models.
-
-## Postulates ##
-1. With my best efforts, the quality of the code will be limited. I will write in small modules that can be replaced or upgraded easily.
-2. I will always start with lazy/ greedy approach asking LLMs to do it and then replacing with proper programming solutions (e.g. named entity recognition).
-3. I will leverage as much pre-existing knowledge as possible. I will use existing ontologies and extend them to my use case.
-
 ## Pipeline Components
 
 1. **Document Indexing** (`step1_read_documents.py`): Reads and indexes documents from the inbound directory.
