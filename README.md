@@ -4,7 +4,7 @@
 
 My belief is that 60 % of copilot use cases can be solved with "shallow" knowledge (1-pass summarization and out of the box tools such as LlamaIndex), while 40 % will require "deep" knowledge with drastically higher requirements for quality of answers and incorporation of expert feedback. By focusing on the "deep" knowledge I bet on companies behind SOTA models commoditizing simpler use cases and solving them at a very low cost. I also bet on the fact that "deep" knowledge will be much harder to commoditize and will require a lot of human input to get right. Finally, it is just fun working on harder problems.
 
-I ran a number of experiments and am rewriting the pipeline based on the learnings.
+I ran a number of experiments (code in the experiments folder), and am rewriting the pipeline based on the learnings.
 
 ## Design Principles ##
 1. Modularity, linearity, databus/ document storage
