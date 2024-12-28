@@ -1,4 +1,4 @@
-# School Board Document Processing Pipeline
+# School Board Сopilot
 
 ## Overview
 
