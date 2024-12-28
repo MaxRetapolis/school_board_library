@@ -1,4 +1,4 @@
-# School Board Сopilot
+# School Board Library Copilot
 
 ## Overview
 
