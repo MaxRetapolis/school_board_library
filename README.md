@@ -26,140 +26,375 @@ This readme file will describe in detail the components as I build them.
 
 # Step 1 - Document Storage ELT Process
 
-## Goal
+## 1.1 Document Intake
 
-Create a document storage system where diverse document types are represented uniformly as plain text, images with OCR text, and linked metadata, ready for further processing (such as ontology extraction).
+-   **`inbound_directory`:** The entry point for new documents.
+-   **`extractor_factory.py`:**
+    -   Monitors the `inbound_directory`.
+    -   Identifies the file type of each new document.
+    -   Creates the appropriate `Extractor` instance based on the file type.
 
-## ELT Steps for Source Documents
+## 1.2 Initial Metadata Extraction
 
-### 1. Extract
+-   **`MetadataManager`:**
+    -   `extract_basic_metadata(document)`: Extracts basic file metadata (filename, type, dates, size).
+    -   `create_temp_metadata_file(document)`: Creates a temporary JSON file (e.g., `document_id_temp.json`) to store metadata during processing.
 
-#### Document Intake
+## 1.3 Document Class
 
-- **Create an inbound directory** to receive all source documents.
-- **Develop an `extractor.py` script** that monitors this directory.
-  - This script will identify the file type (e.g., `.txt`, `.pdf`, `.pptx`, `.jpg`, `.png`, `.csv`, `.xlsx`) of each new document.
+import os
+import uuid
 
-#### Initial Metadata
+class Document:
+    def __init__(self, file_path, document_id=None):
+        self.file_path = file_path
+        self.file_name = os.path.basename(file_path)
+        self.file_type = os.path.splitext(file_path)[1].lower()
+        self.document_id = document_id or str(uuid.uuid4())  # Generate UUID if not provided
+        self.metadata = {}
+        self.content = {}  # Store extracted content of different types (text, table, etc.)
+        self.status = "initialized"
 
-- **Extract basic file metadata**:
-  - Filename
-  - File type
-  - Creation date
-  - Modification date
-  - File size
-- **Store metadata** in a temporary `metadata_temp.json` file associated with each document.
+    def update_metadata(self, new_metadata):
+        self.metadata.update(new_metadata)
 
-### 2. Load
+    def add_content(self, content_type, content_data):
+        self.content[content_type] = content_data
 
-#### Raw Document Storage
+    def set_status(self, status):
+        self.status = status
 
-- **Create a `raw_documents` directory**.
-- **Move the original files** from `inbound` to `raw_documents`, preserving the original file structure or creating a new structure based on the source or document type. This serves as an archive of the original documents.
+## 1.4 Extractor Classes
 
-#### Staging Area
+from abc import ABC, abstractmethod
 
-- **Create a `staging` directory**. This is where temporary files will be placed during the transformation process.
+class Extractor(ABC):
+    def __init__(self, document):
+        self.document = document
 
-### 3. Transform
+    @abstractmethod
+    def extract_content(self):
+        pass
 
-#### Text Documents (`.txt`, `.docx`, `.pdf` with text layer)
+    @abstractmethod
+    def extract_metadata(self):
+        pass
 
-- **Extract Text Content**:
-  - Use libraries like `textract` or `PyMuPDF`.
-- **Normalize the Text**:
-  - Convert to lowercase
-  - Remove extra whitespace
-  - Handle special characters (based on specific needs)
-- **Save the Normalized Text**:
-  - Save as a `.txt` file in the `staging` directory, named after the original file (e.g., `document123.txt`).
-- **Update `metadata_temp.json`**:
-  - Add:
-    ```json
-    {
-      "text_path": "path/to/staging/document123.txt",
-      "status": "text_extracted"
-    }
-    ```
+class TextExtractor(Extractor):
+    def extract_content(self):
+        # Use libraries like textract, tika, or others
+        text = self.extract_text(self.document.file_path)
+        normalized_text = self.normalize_text(text)
+        self.document.add_content("text", normalized_text)
+        self.document.set_status("text_extracted")
 
-#### Presentations (`.pptx`)
+    def extract_metadata(self):
+        text_stats = self.calculate_text_stats(self.document.content["text"])
+        self.document.update_metadata({"text_stats": text_stats})
 
-- **Extract Text from Slides**:
-  - Use a library like `python-pptx`.
-  - Concatenate text from all slides, adding separators to indicate slide breaks.
-- **Normalize the Text** (as above).
-- **Save the Extracted Text**:
-  - Save as a `.txt` file in `staging`.
-- **Update `metadata_temp.json`** similarly to text documents.
+    def extract_text(self, file_path):
+        #Specific text extraction logic
+        pass
 
-#### Tables (`.csv`, `.xlsx`)
+    def normalize_text(self, text):
+        # Apply text normalization (lowercase, whitespace removal, etc.)
+        pass
 
-- **Read Tables**:
-  - Use libraries like `pandas` or `openpyxl`.
-- **Convert to Plain Text Representation**:
-  - Consider different formats:
-    - CSV-like: comma-separated values
-    - Markdown tables: for better readability
-    - Plain text with fixed-width columns
-- **Save the Tables**:
-  - Save each table as a separate `.txt` file in `staging`.
-- **Update `metadata_temp.json`**:
-  - Include an array of table paths in `staging`, along with metadata about each table (e.g., number of rows, columns).
+    def calculate_text_stats(self, text):
+        # Calculate word count, char count, etc.
+        pass
 
-#### Images (`.jpg`, `.png`, `.pdf` with scanned images)
+class PDFExtractor(TextExtractor):
+    def extract_text(self, file_path):
+        # Use PyMuPDF or other PDF-specific library
+        pass
 
-- **Perform OCR**:
-  - Use Tesseract OCR (via the `pytesseract` wrapper) to extract text.
-- **Save OCR Text**:
-  - Save the extracted OCR text as a `.txt` file in `staging`.
-- **Save Image Copy**:
-  - Save a copy of the image in a `staging/images` subdirectory.
-- **Update `metadata_temp.json`**:
-  - Add:
-    ```json
-    {
-      "image_path": "path/to/staging/images/image123.jpg",
-      "ocr_text_path": "path/to/staging/image123.txt",
-      "status": "ocr_completed"
-    }
-    ```
+class DOCXExtractor(TextExtractor):
+    def extract_text(self, file_path):
+        # Use python-docx library
+        pass
 
-#### Document Metadata Refinement
+class TXTExtractor(TextExtractor):
+    def extract_text(self, file_path):
+        with open(file_path, 'r') as f:
+            return f.read()
 
-- **Refine Initial Metadata in `metadata_temp.json`**:
-  - Add:
-    - `document_id`: a unique identifier
-    - `document_type`: based on refined categorization (e.g., "meeting minutes", "agenda", "report"). This may require initial rules or heuristics based on filename or content.
-    - `is_ocr_required`: indicates which documents needed OCR
-- **Save Refined Metadata**:
-  - Save as `metadata.json` in the `staging` directory.
+class PPTXExtractor(TextExtractor):
+    def extract_text(self, file_path):
+        # Use python-pptx library
+        pass
 
-### Normalized Document Storage (Output)
+class ImageExtractor(Extractor):
+    def extract_content(self):
+        # Use pytesseract for OCR
+        ocr_text = self.perform_ocr(self.document.file_path)
+        self.document.add_content("ocr_text", ocr_text)
+        self.document.set_status("ocr_completed")
 
-After the Transform step, your `staging` directory will contain:
+    def extract_metadata(self):
+        # No image-specific metadata for now, but could add dimensions, etc.
+        pass
 
-- **`.txt` Files**:
-  - Normalized plain text representation of text documents, presentations, tables, and image OCR.
-- **`images` Subdirectory**:
-  - Copies of images that underwent OCR.
-- **`metadata.json`**:
-  - Structured metadata for each document, linking to the text and image files in the `staging` directory.
+    def perform_ocr(self, file_path):
+        # Perform OCR using Tesseract
+        pass
 
-## Next Steps (Looking Ahead)
+class TableExtractor(Extractor):
+    def extract_content(self):
+        tables = self.extract_tables(self.document.file_path)
+        self.document.add_content("tables", tables)
+        self.document.set_status("tables_extracted")
 
-### Chunking
+    def extract_metadata(self):
+        table_metadata = []
+        for i, table in enumerate(self.document.content["tables"]):
+            table_metadata.append({
+                "table_index": i,
+                "rows": len(table),
+                "columns": len(table[0]) if table else 0
+            })
+        self.document.update_metadata({"table_stats": table_metadata})
 
-- **Decide on a Chunking Strategy**:
-  - Fixed-size, semantic, etc.
-- **Create a `chunker.py` Script**:
-  - Split the normalized text into chunks.
+    def extract_tables(self, file_path):
+        # Specific table extraction logic
+        pass
 
-### Co-indexing
+class CSVExtractor(TableExtractor):
+    def extract_tables(self, file_path):
+        # Use pandas or csv module
+        pass
 
-- **Create an Index**:
-  - Use a database or search engine.
-  - Link document metadata, text chunks, and image OCR data.
-  - Enable efficient retrieval.
+class XLSXExtractor(TableExtractor):
+    def extract_tables(self, file_path):
+        # Use pandas or openpyxl
+        pass
 
----
+# 2. Load
+## 2.1 Raw Document Storage
 
+### StorageManager:
+- store_raw_document(document): Moves the original document from inbound to raw_documents.
+- get_raw_document_path(document): Returns the path of a document in raw_documents.
+## 2.2 Staging Area
+- staging_directory: Used for temporary files during transformation.
+
+# 3. Transform
+## 3.1 Content-Specific Transformation
+
+### Transformer Classes:
+class Transformer(ABC):
+    def __init__(self, document):
+        self.document = document
+
+    @abstractmethod
+    def transform(self):
+        pass
+
+class TextNormalizer(Transformer):
+    def transform(self):
+        # Further text processing if needed (stemming, lemmatization, etc.)
+        pass
+
+class TableToTextConverter(Transformer):
+    def transform(self):
+        # Convert table data to different text formats (CSV, Markdown, etc.)
+        for i, table in enumerate(self.document.content["tables"]):
+            text_representation = self.convert_table(table)
+            self.document.add_content(f"table_{i}_text", text_representation)
+
+    def convert_table(self, table):
+        # Convert table to desired text format
+        pass
+
+## 3.2 Metadata Refinement
+### MetadataManager:
+- update_metadata(document, new_metadata): Adds or updates metadata fields.
+- finalize_metadata(document):
+- Adds document_id.
+- Determines document_type using DocumentClassifier.
+- Sets is_ocr_required flag.
+- save_metadata(document): Saves the final metadata as document_id.json in staging.
+
+## 3.3 DocumentClassifier
+### DocumentClassifier
+- classify_document(document): Assigns a document_type based on rules or heuristics.
+
+class DocumentClassifier:
+    def classify_document(self, document):
+        # Basic example: classify based on filename keywords
+        if "meeting_minutes" in document.file_name.lower():
+            return "meeting minutes"
+        elif "agenda" in document.file_name.lower():
+            return "agenda"
+        elif "report" in document.file_name.lower():
+            return "report"
+        # Add more rules as needed
+        else:
+            return "unknown"
+
+## 4. Pipeline Orchestration
+### 4.1 The Pipeline Class
+
+import os
+import shutil
+import uuid
+
+class Pipeline:
+    def __init__(self, inbound_dir, raw_documents_dir, staging_dir):
+        self.inbound_dir = inbound_dir
+        self.raw_documents_dir = raw_documents_dir
+        self.staging_dir = staging_dir
+        self.storage_manager = StorageManager(raw_documents_dir, staging_dir)
+        self.metadata_manager = MetadataManager(staging_dir)
+        self.document_classifier = DocumentClassifier()
+        self.extractor_factory = ExtractorFactory()
+
+    def run(self):
+        for filename in os.listdir(self.inbound_dir):
+            file_path = os.path.join(self.inbound_dir, filename)
+            if os.path.isfile(file_path):
+                try:
+                    self.process_document(file_path)
+                except Exception as e:
+                    print(f"Error processing {filename}: {e}")
+                    # Implement error handling
+
+    def process_document(self, file_path):
+        document = Document(file_path)
+
+        # 1. Extract
+        extractor = self.extractor_factory.create_extractor(document)
+        
+        initial_metadata = self.metadata_manager.extract_basic_metadata(document)
+        document.update_metadata(initial_metadata)
+        self.metadata_manager.create_temp_metadata_file(document)
+
+        extractor.extract_content()
+        extractor.extract_metadata()
+
+        # 2. Load (Raw)
+        self.storage_manager.store_raw_document(document)
+
+        # 3. Transform
+        if "text" in document.content:
+            text_normalizer = TextNormalizer(document)
+            text_normalizer.transform()
+        if "tables" in document.content:
+            table_converter = TableToTextConverter(document)
+            table_converter.transform()
+        if "ocr_text" in document.content:
+            # You might want to normalize OCR text as well
+            pass
+
+        # 3. Load (Transformed) & Metadata Finalization
+        self.storage_manager.store_transformed_content(document)
+        document.update_metadata({"document_type": self.document_classifier.classify_document(document)})
+        document.update_metadata({"is_ocr_required": "ocr_text" in document.content})
+        self.metadata_manager.finalize_metadata(document)
+        self.metadata_manager.save_metadata(document)
+
+        document.set_status("completed")
+
+        # Clean up temp metadata file
+        self.metadata_manager.delete_temp_metadata_file(document)
+
+## 4.2 StorageManager
+
+class StorageManager:
+    def __init__(self, raw_documents_dir, staging_dir):
+        self.raw_documents_dir = raw_documents_dir
+        self.staging_dir = staging_dir
+
+    def store_raw_document(self, document):
+        destination_path = os.path.join(self.raw_documents_dir, document.file_name)
+        shutil.copy(document.file_path, destination_path)  # Copy to preserve original
+        document.update_metadata({"raw_path": destination_path})
+
+    def get_raw_document_path(self, document):
+        return document.metadata.get("raw_path")
+
+    def store_transformed_content(self, document):
+        for content_type, content_data in document.content.items():
+            if content_type == "text" or content_type.startswith("table_") or content_type == "ocr_text":
+                content_path = os.path.join(self.staging_dir, f"{document.document_id}_{content_type}.txt")
+                with open(content_path, "w", encoding="utf-8") as f:
+                    f.write(content_data)
+                document.update_metadata({f"{content_type}_path": content_path})
+            elif content_type == "image":
+                content_path = os.path.join(self.staging_dir, f"{document.document_id}_{content_type}.{document.file_type}")
+                shutil.copy(document.file_path, content_path)
+                document.update_metadata({f"{content_type}_path": content_path})
+
+## 4.3 MetadataManager
+
+import json
+
+class MetadataManager:
+    def __init__(self, staging_dir):
+        self.staging_dir = staging_dir
+
+    def extract_basic_metadata(self, document):
+        return {
+            "file_name": document.file_name,
+            "file_type": document.file_type,
+            "creation_date": os.path.getctime(document.file_path),
+            "modification_date": os.path.getmtime(document.file_path),
+            "file_size": os.path.getsize(document.file_path),
+        }
+
+    def create_temp_metadata_file(self, document):
+        temp_metadata_path = os.path.join(self.staging_dir, f"{document.document_id}_temp.json")
+        with open(temp_metadata_path, "w") as f:
+            json.dump(document.metadata, f, indent=4)
+
+    def update_metadata(self, document, new_metadata):
+        document.update_metadata(new_metadata)
+
+    def finalize_metadata(self, document):
+        # Add any final metadata fields if needed
+        pass
+
+    def save_metadata(self, document):
+        metadata_path = os.path.join(self.staging_dir, f"{document.document_id}.json")
+        with open(metadata_path, "w") as f:
+            json.dump(document.metadata, f, indent=4)
+    
+    def delete_temp_metadata_file(self, document):
+        temp_metadata_path = os.path.join(self.staging_dir, f"{document.document_id}_temp.json")
+        if os.path.exists(temp_metadata_path):
+            os.remove(temp_metadata_path)
+
+## 4.4 ExtractorFactory
+
+class ExtractorFactory:
+    def create_extractor(self, document):
+        if document.file_type == ".pdf":
+            return PDFExtractor(document)
+        elif document.file_type == ".docx":
+            return DOCXExtractor(document)
+        elif document.file_type == ".txt":
+            return TXTExtractor(document)
+        elif document.file_type == ".pptx":
+            return PPTXExtractor(document)
+        elif document.file_type == ".csv":
+            return CSVExtractor(document)
+        elif document.file_type == ".xlsx":
+            return XLSXExtractor(document)
+        elif document.file_type in [".jpg", ".jpeg", ".png", ".tif", ".tiff"]:
+            return ImageExtractor(document)
+        else:
+            raise ValueError(f"Unsupported file type: {document.file_type}")
+
+### Running the Pipeline
+Create directories if they don't exist
+inbound_directory = "inbound"
+raw_documents_directory = "raw_documents"
+staging_directory = "staging"
+
+os.makedirs(inbound_directory, exist_ok=True)
+os.makedirs(raw_documents_directory, exist_ok=True)
+os.makedirs(staging_directory, exist_ok=True)
+
+### Initialize and run the pipeline
+pipeline = Pipeline(inbound_directory, raw_documents_directory, staging_directory)
+pipeline.run()
