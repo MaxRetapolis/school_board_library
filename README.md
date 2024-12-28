@@ -21,14 +21,16 @@ This readme file will describe in detail the components as I build them.
 
 ## Pipeline Components
 
-1. Document Storage ELT Process - "shallow knowledge"
+1. Document Storage ELT Process - "shallow knowledge" creation
 2. Ontology Extraction ELT Process
 3. Document re-summarization with Ontology - "deep knowledge"
 4. Entities Reconciliation - "deep knowledge" (borrow best ideas from Senzing)
 5. Building links between documents, ontology, and metadata
 6. Building a search engine on top of the indexed data - supporting multi-modal queries (text, ontology, metadata)
 
-## 1. Document Storage ELT Process
+# 1. Document Storage ELT Process - "shallow knowledge"
+
+## 1.1 Document Storage ELT Process
 
 ### `inbound_directory`
 
@@ -51,7 +53,7 @@ This readme file will describe in detail the components as I build them.
 - **Rationale:**  
   The ExtractorFactory implements the Factory design pattern, which is ideal for abstracting the creation of related objects. This decouples the pipeline from the specific Extractor implementations. Adding support for a new document type becomes as simple as creating a new Extractor class and updating the factory, without modifying any other part of the pipeline. It promotes loose coupling and enhances the system's extensibility.
 
-## 2. Extraction
+## 1.2. Extraction
 
 ### `Extractor` (Abstract Base Class)
 
@@ -74,7 +76,7 @@ This readme file will describe in detail the components as I build them.
 - **Rationale:**  
   Centralizing metadata handling in a dedicated class provides several benefits. It separates concerns, keeping extraction logic clean and focused. It allows for consistent metadata formatting and validation across all document types. A dedicated manager also simplifies future enhancements, such as adding support for more sophisticated metadata or integrating with a metadata database. Centralizing this logic also prevents duplication of metadata extraction and transformation code across different Extractor classes.
 
-## 3. Load (Raw)
+## 1.3. Load (Raw)
 
 ### StorageManager
 
@@ -83,7 +85,7 @@ This readme file will describe in detail the components as I build them.
 - **Rationale:**  
   The StorageManager abstracts the underlying storage mechanism, decoupling the pipeline from the specifics of file system operations or cloud storage. This makes it easy to switch between different storage backends (e.g., local file system, AWS S3, Azure Blob Storage) without impacting other parts of the system. It also provides a single point of control for managing document storage, improving consistency and reducing redundancy. Having a dedicated manager, rather than managing storage logic in multiple locations, makes it easy to implement additional features like backups or storage optimizations centrally.
 
-## 4. Transformation
+## 1.4. Transformation
 
 ### `Transformer` (Abstract Base Class)
 
@@ -106,7 +108,7 @@ This readme file will describe in detail the components as I build them.
 - **Rationale:**  
   Encapsulating document classification logic in a dedicated class promotes modularity and allows for easy modification or replacement of the classification mechanism. The classifier could start with simple rules based on file extensions or keywords and later be upgraded to use machine learning models without affecting other parts of the system. This separation also allows for independent testing and optimization of the classification process. A dedicated class also allows for easy addition of new document types or modification of the classification logic for existing ones.
 
-## 5. Load (Transformed)
+## 1.5. Load (Transformed)
 
 ### StorageManager
 
@@ -115,7 +117,7 @@ This readme file will describe in detail the components as I build them.
 - **Rationale:**  
   Reusing the StorageManager for both raw and transformed data simplifies the architecture and ensures consistent storage management practices.
 
-## 6. Pipeline Orchestration
+## 1.6. Pipeline Orchestration
 
 ### Pipeline
 
