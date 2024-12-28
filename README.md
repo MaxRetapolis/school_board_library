@@ -42,7 +42,7 @@ This readme file will describe in detail the components as I build them.
 
 ## 1.3 Document Class
 
-import os
+''' import os
 import uuid
 
 class Document:
@@ -62,11 +62,11 @@ class Document:
         self.content[content_type] = content_data
 
     def set_status(self, status):
-        self.status = status
+        self.status = status '''
 
 ## 1.4 Extractor Classes
 
-from abc import ABC, abstractmethod
+''' from abc import ABC, abstractmethod
 
 class Extractor(ABC):
     def __init__(self, document):
@@ -167,7 +167,7 @@ class CSVExtractor(TableExtractor):
 class XLSXExtractor(TableExtractor):
     def extract_tables(self, file_path):
         # Use pandas or openpyxl
-        pass
+        pass '''
 
 # 2. Load
 ## 2.1 Raw Document Storage
