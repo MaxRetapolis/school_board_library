@@ -28,378 +28,126 @@ This readme file will describe in detail the components as I build them.
 5. Building links between documents, ontology, and metadata
 6. Building a search engine on top of the indexed data - supporting multi-modal queries (text, ontology, metadata)
 
+## 1. Document Storage ELT Process
 
-# Step 1 - Document Storage ELT Process
+### `inbound_directory`
 
-## 1.1 Document Intake
+- **Role:** The designated entry point for all new documents.
+  
+- **Rationale:**  
+  Using a directory as the entry point is a simple, standard, and universally understood mechanism for adding files to a system. It's easy to integrate with other systems and requires no special tools or protocols. This approach decouples the document source from the processing pipeline. It allows users to manually drop files in, or any process to write data in, without the process needing to know where the data is coming from. A file system watcher can then be used by the downstream process to be notified when new data has arrived.
 
--   **`inbound_directory`:** The entry point for new documents.
--   **`extractor_factory.py`:**
-    -   Monitors the `inbound_directory`.
-    -   Identifies the file type of each new document.
-    -   Creates the appropriate `Extractor` instance based on the file type.
+### Document Class
 
-## 1.2 Initial Metadata Extraction
+- **Role:** Represents a single document throughout the pipeline, encapsulating content, metadata, and processing status.
+  
+- **Rationale:**  
+  The Document class is crucial for maintaining data integrity and simplifying data flow. By encapsulating all relevant information about a document in a single object, we avoid the need to pass multiple variables between functions, reducing the risk of errors and making the code easier to understand. It's also very extensible; if later on there is more relevant data to the document, this can be easily added into the class. This promotes the single responsibility principle at a document level and facilitates efficient tracking of the document's journey through the pipeline.
 
--   **`MetadataManager`:**
-    -   `extract_basic_metadata(document)`: Extracts basic file metadata (filename, type, dates, size).
-    -   `create_temp_metadata_file(document)`: Creates a temporary JSON file (e.g., `document_id_temp.json`) to store metadata during processing.
+### ExtractorFactory
 
-## 1.3 Document Class
+- **Role:** Creates the appropriate Extractor instance based on the document type.
+  
+- **Rationale:**  
+  The ExtractorFactory implements the Factory design pattern, which is ideal for abstracting the creation of related objects. This decouples the pipeline from the specific Extractor implementations. Adding support for a new document type becomes as simple as creating a new Extractor class and updating the factory, without modifying any other part of the pipeline. It promotes loose coupling and enhances the system's extensibility.
 
-''' import os
-import uuid
+## 2. Extraction
 
-class Document:
-    def __init__(self, file_path, document_id=None):
-        self.file_path = file_path
-        self.file_name = os.path.basename(file_path)
-        self.file_type = os.path.splitext(file_path)[1].lower()
-        self.document_id = document_id or str(uuid.uuid4())  # Generate UUID if not provided
-        self.metadata = {}
-        self.content = {}  # Store extracted content of different types (text, table, etc.)
-        self.status = "initialized"
+### `Extractor` (Abstract Base Class)
 
-    def update_metadata(self, new_metadata):
-        self.metadata.update(new_metadata)
+- **Role:** Defines the interface for all content and metadata extractors.
+  
+- **Rationale:**  
+  An abstract base class enforces a consistent interface across all Extractor implementations. This ensures that every extractor provides the necessary methods (`extract_content`, `extract_metadata`), making them interchangeable and promoting code predictability. It also allows for polymorphism, where the Pipeline can treat all extractors uniformly. Using ABCs also allows for much easier testing and validation, as you can test that each concrete implementation of the ABC matches the required interface.
 
-    def add_content(self, content_type, content_data):
-        self.content[content_type] = content_data
+### Concrete Extractor Classes (e.g., `PDFExtractor`, `DOCXExtractor`, `ImageExtractor`, `CSVExtractor`)
 
-    def set_status(self, status):
-        self.status = status '''
+- **Role:** Implement the actual extraction logic for a specific document type.
+  
+- **Rationale:**  
+  Separating extraction logic by document type is fundamental for modularity. Each Extractor class focuses on a single, well-defined task, making them easier to develop, test, and maintain. This approach also allows for the use of specialized libraries tailored to each document format (e.g., PyMuPDF for PDF, python-docx for DOCX). Specialization at the Extractor level also ensures better performance as each document can be processed in an optimal way for its type.
 
-## 1.4 Extractor Classes
+### MetadataManager
 
-''' from abc import ABC, abstractmethod
+- **Role:** Handles metadata extraction, storage, and management.
+  
+- **Rationale:**  
+  Centralizing metadata handling in a dedicated class provides several benefits. It separates concerns, keeping extraction logic clean and focused. It allows for consistent metadata formatting and validation across all document types. A dedicated manager also simplifies future enhancements, such as adding support for more sophisticated metadata or integrating with a metadata database. Centralizing this logic also prevents duplication of metadata extraction and transformation code across different Extractor classes.
 
-class Extractor(ABC):
-    def __init__(self, document):
-        self.document = document
+## 3. Load (Raw)
 
-    @abstractmethod
-    def extract_content(self):
-        pass
+### StorageManager
 
-    @abstractmethod
-    def extract_metadata(self):
-        pass
+- **Role:** Manages the storage of both raw and transformed documents.
+  
+- **Rationale:**  
+  The StorageManager abstracts the underlying storage mechanism, decoupling the pipeline from the specifics of file system operations or cloud storage. This makes it easy to switch between different storage backends (e.g., local file system, AWS S3, Azure Blob Storage) without impacting other parts of the system. It also provides a single point of control for managing document storage, improving consistency and reducing redundancy. Having a dedicated manager, rather than managing storage logic in multiple locations, makes it easy to implement additional features like backups or storage optimizations centrally.
 
-class TextExtractor(Extractor):
-    def extract_content(self):
-        # Use libraries like textract, tika, or others
-        text = self.extract_text(self.document.file_path)
-        normalized_text = self.normalize_text(text)
-        self.document.add_content("text", normalized_text)
-        self.document.set_status("text_extracted")
+## 4. Transformation
 
-    def extract_metadata(self):
-        text_stats = self.calculate_text_stats(self.document.content["text"])
-        self.document.update_metadata({"text_stats": text_stats})
+### `Transformer` (Abstract Base Class)
 
-    def extract_text(self, file_path):
-        #Specific text extraction logic
-        pass
+- **Role:** Defines the interface for content transformation classes.
+  
+- **Rationale:**  
+  Similar to the Extractor ABC, the Transformer ABC ensures consistency across all transformation implementations. This allows the pipeline to apply transformations in a uniform way, regardless of their specific logic. It promotes code reusability and makes it easier to add new transformation steps to the pipeline. Using an ABC also ensures each concrete transformer implements the expected interface.
 
-    def normalize_text(self, text):
-        # Apply text normalization (lowercase, whitespace removal, etc.)
-        pass
+### Concrete Transformer Classes (e.g., `TextNormalizer`, `TableToTextConverter`)
 
-    def calculate_text_stats(self, text):
-        # Calculate word count, char count, etc.
-        pass
+- **Role:** Implement specific transformation logic.
+  
+- **Rationale:**  
+  Isolating transformation logic into separate classes promotes modularity and maintainability. Each Transformer focuses on a single task, making them easier to understand, test, and modify independently. This approach also allows for the creation of reusable transformation components that can be applied in different combinations or even in other pipelines. Specialized transformers also ensure they are focused on a single task, meaning they are more efficient and effective at that task.
 
-class PDFExtractor(TextExtractor):
-    def extract_text(self, file_path):
-        # Use PyMuPDF or other PDF-specific library
-        pass
-
-class DOCXExtractor(TextExtractor):
-    def extract_text(self, file_path):
-        # Use python-docx library
-        pass
-
-class TXTExtractor(TextExtractor):
-    def extract_text(self, file_path):
-        with open(file_path, 'r') as f:
-            return f.read()
-
-class PPTXExtractor(TextExtractor):
-    def extract_text(self, file_path):
-        # Use python-pptx library
-        pass
-
-class ImageExtractor(Extractor):
-    def extract_content(self):
-        # Use pytesseract for OCR
-        ocr_text = self.perform_ocr(self.document.file_path)
-        self.document.add_content("ocr_text", ocr_text)
-        self.document.set_status("ocr_completed")
-
-    def extract_metadata(self):
-        # No image-specific metadata for now, but could add dimensions, etc.
-        pass
-
-    def perform_ocr(self, file_path):
-        # Perform OCR using Tesseract
-        pass
-
-class TableExtractor(Extractor):
-    def extract_content(self):
-        tables = self.extract_tables(self.document.file_path)
-        self.document.add_content("tables", tables)
-        self.document.set_status("tables_extracted")
-
-    def extract_metadata(self):
-        table_metadata = []
-        for i, table in enumerate(self.document.content["tables"]):
-            table_metadata.append({
-                "table_index": i,
-                "rows": len(table),
-                "columns": len(table[0]) if table else 0
-            })
-        self.document.update_metadata({"table_stats": table_metadata})
-
-    def extract_tables(self, file_path):
-        # Specific table extraction logic
-        pass
-
-class CSVExtractor(TableExtractor):
-    def extract_tables(self, file_path):
-        # Use pandas or csv module
-        pass
-
-class XLSXExtractor(TableExtractor):
-    def extract_tables(self, file_path):
-        # Use pandas or openpyxl
-        pass '''
-
-# 2. Load
-## 2.1 Raw Document Storage
-
-### StorageManager:
-- store_raw_document(document): Moves the original document from inbound to raw_documents.
-- get_raw_document_path(document): Returns the path of a document in raw_documents.
-## 2.2 Staging Area
-- staging_directory: Used for temporary files during transformation.
-
-# 3. Transform
-## 3.1 Content-Specific Transformation
-
-### Transformer Classes:
-class Transformer(ABC):
-    def __init__(self, document):
-        self.document = document
-
-    @abstractmethod
-    def transform(self):
-        pass
-
-class TextNormalizer(Transformer):
-    def transform(self):
-        # Further text processing if needed (stemming, lemmatization, etc.)
-        pass
-
-class TableToTextConverter(Transformer):
-    def transform(self):
-        # Convert table data to different text formats (CSV, Markdown, etc.)
-        for i, table in enumerate(self.document.content["tables"]):
-            text_representation = self.convert_table(table)
-            self.document.add_content(f"table_{i}_text", text_representation)
-
-    def convert_table(self, table):
-        # Convert table to desired text format
-        pass
-
-## 3.2 Metadata Refinement
-### MetadataManager:
-- update_metadata(document, new_metadata): Adds or updates metadata fields.
-- finalize_metadata(document):
-- Adds document_id.
-- Determines document_type using DocumentClassifier.
-- Sets is_ocr_required flag.
-- save_metadata(document): Saves the final metadata as document_id.json in staging.
-
-## 3.3 DocumentClassifier
 ### DocumentClassifier
-- classify_document(document): Assigns a document_type based on rules or heuristics.
 
-class DocumentClassifier:
-    def classify_document(self, document):
-        # Basic example: classify based on filename keywords
-        if "meeting_minutes" in document.file_name.lower():
-            return "meeting minutes"
-        elif "agenda" in document.file_name.lower():
-            return "agenda"
-        elif "report" in document.file_name.lower():
-            return "report"
-        # Add more rules as needed
-        else:
-            return "unknown"
+- **Role:** Assigns a `document_type` to the document.
+  
+- **Rationale:**  
+  Encapsulating document classification logic in a dedicated class promotes modularity and allows for easy modification or replacement of the classification mechanism. The classifier could start with simple rules based on file extensions or keywords and later be upgraded to use machine learning models without affecting other parts of the system. This separation also allows for independent testing and optimization of the classification process. A dedicated class also allows for easy addition of new document types or modification of the classification logic for existing ones.
 
-## 4. Pipeline Orchestration
-### 4.1 The Pipeline Class
+## 5. Load (Transformed)
 
-import os
-import shutil
-import uuid
+### StorageManager
 
-class Pipeline:
-    def __init__(self, inbound_dir, raw_documents_dir, staging_dir):
-        self.inbound_dir = inbound_dir
-        self.raw_documents_dir = raw_documents_dir
-        self.staging_dir = staging_dir
-        self.storage_manager = StorageManager(raw_documents_dir, staging_dir)
-        self.metadata_manager = MetadataManager(staging_dir)
-        self.document_classifier = DocumentClassifier()
-        self.extractor_factory = ExtractorFactory()
+- **Role:** Handles storing the transformed content, as described in the "Load (Raw)" section.
+  
+- **Rationale:**  
+  Reusing the StorageManager for both raw and transformed data simplifies the architecture and ensures consistent storage management practices.
 
-    def run(self):
-        for filename in os.listdir(self.inbound_dir):
-            file_path = os.path.join(self.inbound_dir, filename)
-            if os.path.isfile(file_path):
-                try:
-                    self.process_document(file_path)
-                except Exception as e:
-                    print(f"Error processing {filename}: {e}")
-                    # Implement error handling
+## 6. Pipeline Orchestration
 
-    def process_document(self, file_path):
-        document = Document(file_path)
+### Pipeline
 
-        # 1. Extract
-        extractor = self.extractor_factory.create_extractor(document)
-        
-        initial_metadata = self.metadata_manager.extract_basic_metadata(document)
-        document.update_metadata(initial_metadata)
-        self.metadata_manager.create_temp_metadata_file(document)
+- **Role:** The main orchestrator that controls the entire ELT process.
+  
+- **Rationale:**  
+  The Pipeline class is essential for coordinating the interactions between all other components. It provides a central point of control for the workflow, making the overall process easier to understand and manage. The Pipeline also handles error handling and logging, ensuring that the system operates reliably. By abstracting the workflow into a dedicated class, we can easily modify the pipeline's behavior (e.g., adding or removing steps) without affecting the individual components. A dedicated orchestrator makes it easier to implement features like asynchronous processing or conditional execution of pipeline steps.
 
-        extractor.extract_content()
-        extractor.extract_metadata()
+### Directories
 
-        # 2. Load (Raw)
-        self.storage_manager.store_raw_document(document)
+- **`inbound_directory`:** Where new documents arrive.
+- **`raw_documents_directory`:** Stores the original, unprocessed documents.
+- **`staging_directory`:** Stores transformed content and final metadata.
+  
+- **Rationale:**  
+  Using separate directories for different stages of the process provides a clear organizational structure and helps to prevent accidental modification or deletion of data. It also simplifies data management and allows for easy inspection of the data at each stage. Clearly defined directories also allow for better access control and security measures to be implemented.
 
-        # 3. Transform
-        if "text" in document.content:
-            text_normalizer = TextNormalizer(document)
-            text_normalizer.transform()
-        if "tables" in document.content:
-            table_converter = TableToTextConverter(document)
-            table_converter.transform()
-        if "ocr_text" in document.content:
-            # You might want to normalize OCR text as well
-            pass
+## Design Principles
 
-        # 3. Load (Transformed) & Metadata Finalization
-        self.storage_manager.store_transformed_content(document)
-        document.update_metadata({"document_type": self.document_classifier.classify_document(document)})
-        document.update_metadata({"is_ocr_required": "ocr_text" in document.content})
-        self.metadata_manager.finalize_metadata(document)
-        self.metadata_manager.save_metadata(document)
+This design prioritizes modularity, making the system:
 
-        document.set_status("completed")
+- **Maintainable:**  
+  Each component has a clear responsibility, making it easy to locate and fix bugs or make changes.
 
-        # Clean up temp metadata file
-        self.metadata_manager.delete_temp_metadata_file(document)
+- **Extensible:**  
+  Adding new features (like supporting new document types or transformations) is straightforward and doesn't require modifying existing code.
 
-## 4.2 StorageManager
+- **Testable:**  
+  Each module can be tested independently, ensuring the reliability of the entire system.
 
-class StorageManager:
-    def __init__(self, raw_documents_dir, staging_dir):
-        self.raw_documents_dir = raw_documents_dir
-        self.staging_dir = staging_dir
+- **Reusable:**  
+  Components like Transformers can be reused in other projects or pipelines.
 
-    def store_raw_document(self, document):
-        destination_path = os.path.join(self.raw_documents_dir, document.file_name)
-        shutil.copy(document.file_path, destination_path)  # Copy to preserve original
-        document.update_metadata({"raw_path": destination_path})
-
-    def get_raw_document_path(self, document):
-        return document.metadata.get("raw_path")
-
-    def store_transformed_content(self, document):
-        for content_type, content_data in document.content.items():
-            if content_type == "text" or content_type.startswith("table_") or content_type == "ocr_text":
-                content_path = os.path.join(self.staging_dir, f"{document.document_id}_{content_type}.txt")
-                with open(content_path, "w", encoding="utf-8") as f:
-                    f.write(content_data)
-                document.update_metadata({f"{content_type}_path": content_path})
-            elif content_type == "image":
-                content_path = os.path.join(self.staging_dir, f"{document.document_id}_{content_type}.{document.file_type}")
-                shutil.copy(document.file_path, content_path)
-                document.update_metadata({f"{content_type}_path": content_path})
-
-## 4.3 MetadataManager
-
-import json
-
-class MetadataManager:
-    def __init__(self, staging_dir):
-        self.staging_dir = staging_dir
-
-    def extract_basic_metadata(self, document):
-        return {
-            "file_name": document.file_name,
-            "file_type": document.file_type,
-            "creation_date": os.path.getctime(document.file_path),
-            "modification_date": os.path.getmtime(document.file_path),
-            "file_size": os.path.getsize(document.file_path),
-        }
-
-    def create_temp_metadata_file(self, document):
-        temp_metadata_path = os.path.join(self.staging_dir, f"{document.document_id}_temp.json")
-        with open(temp_metadata_path, "w") as f:
-            json.dump(document.metadata, f, indent=4)
-
-    def update_metadata(self, document, new_metadata):
-        document.update_metadata(new_metadata)
-
-    def finalize_metadata(self, document):
-        # Add any final metadata fields if needed
-        pass
-
-    def save_metadata(self, document):
-        metadata_path = os.path.join(self.staging_dir, f"{document.document_id}.json")
-        with open(metadata_path, "w") as f:
-            json.dump(document.metadata, f, indent=4)
-    
-    def delete_temp_metadata_file(self, document):
-        temp_metadata_path = os.path.join(self.staging_dir, f"{document.document_id}_temp.json")
-        if os.path.exists(temp_metadata_path):
-            os.remove(temp_metadata_path)
-
-## 4.4 ExtractorFactory
-
-class ExtractorFactory:
-    def create_extractor(self, document):
-        if document.file_type == ".pdf":
-            return PDFExtractor(document)
-        elif document.file_type == ".docx":
-            return DOCXExtractor(document)
-        elif document.file_type == ".txt":
-            return TXTExtractor(document)
-        elif document.file_type == ".pptx":
-            return PPTXExtractor(document)
-        elif document.file_type == ".csv":
-            return CSVExtractor(document)
-        elif document.file_type == ".xlsx":
-            return XLSXExtractor(document)
-        elif document.file_type in [".jpg", ".jpeg", ".png", ".tif", ".tiff"]:
-            return ImageExtractor(document)
-        else:
-            raise ValueError(f"Unsupported file type: {document.file_type}")
-
-### Running the Pipeline
-Create directories if they don't exist
-inbound_directory = "inbound"
-raw_documents_directory = "raw_documents"
-staging_directory = "staging"
-
-os.makedirs(inbound_directory, exist_ok=True)
-os.makedirs(raw_documents_directory, exist_ok=True)
-os.makedirs(staging_directory, exist_ok=True)
-
-### Initialize and run the pipeline
-pipeline = Pipeline(inbound_directory, raw_documents_directory, staging_directory)
-pipeline.run()
+- **Flexible:**  
+  The system can be adapted to different storage backends or processing requirements with minimal effort.
