@@ -21,7 +21,7 @@ This readme file will describe in detail the components as I build them.
 
 ## Pipeline Components
 
-1. Document Storage ELT Process - "shallow knowledge" creation
+1. Document Storage ELT Process - "shallow knowledge" creation (use Llamaindex/ Llamaparsing as much as possible)
 2. Ontology Extraction ELT Process
 3. Document re-summarization with Ontology - "deep knowledge"
 4. Entities Reconciliation - "deep knowledge" (borrow best ideas from Senzing)
