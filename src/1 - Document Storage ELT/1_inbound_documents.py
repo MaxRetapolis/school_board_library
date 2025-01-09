@@ -17,7 +17,7 @@ DEFAULT_FOLDERS = {
     "new": "New_Documents",
     "processing": "In_Processing",
     "duplicates": "Duplicates",
-    "classified": "In_Processing_Classified"
+    "classified": "Classified"
 }
 FOLDER_LIST_FILE = os.path.join(ROOT_FOLDER, "folder_list.json")  # File to store the list of folders
 INDEX_FILE = os.path.join(ROOT_FOLDER, "documents_index.json")  # Ensure index file is in the documents folder
@@ -143,6 +143,20 @@ def handle_new_document(document, main_index, document_id, new_doc_folder, in_pr
     main_index[str(document.document_id)] = document.to_dict()
     print(f"Handled new document {document.filename}, assigned ID: {document_id}")
 
+def move_to_classified_folder(doc_id, doc_data, classified_folder):
+    """Moves the document to the classified folder based on its document type."""
+    document_type = doc_data["document_type"]
+    destination_folder = os.path.join(classified_folder, document_type)
+    os.makedirs(destination_folder, exist_ok=True)
+    new_filepath = os.path.join(destination_folder, os.path.basename(doc_data["filepath"]))
+    try:
+        shutil.move(doc_data["filepath"], new_filepath)
+        doc_data["filepath"] = new_filepath
+        doc_data["status"] = "Classified"
+        logging.info(f"Moved document {doc_id} to {destination_folder}")
+    except Exception as e:
+        logging.error(f"Error moving document {doc_id} to {destination_folder}: {e}")
+
 # --- Main Processing Logic ---
 def process_documents():
     """Main function to process documents in the specified folders."""
@@ -183,7 +197,7 @@ def process_documents():
     new_docs_folder = DEFAULT_FOLDERS["new"]
     in_processing_folder = DEFAULT_FOLDERS["processing"]
     duplicates_folder = DEFAULT_FOLDERS["duplicates"]
-    in_processing_classified_folder = DEFAULT_FOLDERS["classified"]
+    classified_folder = DEFAULT_FOLDERS["classified"]
     
     if new_docs_folder in temp_indexes:
       for temp_doc_id, doc_dict in temp_indexes[new_docs_folder].items():

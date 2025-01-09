@@ -1,11 +1,13 @@
 import json
 import logging
 import os
+import shutil  # Import shutil for moving files
 
 # --- Configuration ---
 ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
 INDEX_FILE = os.path.join(ROOT_FOLDER, "documents_index.json")  # Ensure index file is in the documents folder
 IN_PROCESSING_FOLDER = os.path.join(ROOT_FOLDER, "In_Processing")  # Folder for documents in processing
+CLASSIFIED_FOLDER = os.path.join(ROOT_FOLDER, "Classified")  # Folder for classified documents
 
 # --- Logging Setup ---
 LOGS_FOLDER = os.path.join(os.path.dirname(ROOT_FOLDER), "logs")
@@ -166,13 +168,27 @@ def determine_document_type(doc_id, index, primary_classification):
         else:
             return "PPTX-Unknown"
 
-    # Handling for TXT, CSV, XLSX, RTF, HTML, XML, ZIP, ODT documents
-    elif primary_classification in ("TXT", "CSV", "XLSX", "RTF", "HTML", "XML", "ZIP", "ODT"):
+    # Handling for TXT, VTT, VRT, CSV, XLSX, RTF, HTML, XML, ZIP, ODT documents
+    elif primary_classification in ("TXT", "VTT", "VRT", "CSV", "XLSX", "RTF", "HTML", "XML", "ZIP", "ODT"):
         return "Text-Only"
 
     # Default to primary classification if no specific logic is defined
     else:
         return primary_classification
+
+def move_to_classified_folder(doc_id, doc_data, classified_folder):
+    """Moves the document to the classified folder based on its document type."""
+    document_type = doc_data["document_type"]
+    destination_folder = os.path.join(classified_folder, document_type)
+    os.makedirs(destination_folder, exist_ok=True)
+    new_filepath = os.path.join(destination_folder, os.path.basename(doc_data["filepath"]))
+    try:
+        shutil.move(doc_data["filepath"], new_filepath)
+        doc_data["filepath"] = new_filepath
+        doc_data["status"] = "Classified"
+        logging.info(f"Moved document {doc_id} to {destination_folder}")
+    except Exception as e:
+        logging.error(f"Error moving document {doc_id} to {destination_folder}: {e}")
 
 # --- Main Classification Logic ---
 def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index):
@@ -207,6 +223,9 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     document_type = determine_document_type(doc_id, index, primary_classification)
     index[doc_id]["document_type"] = document_type
     logging.info(f"Document {doc_id} classified as: {document_type}")
+
+    # Move document to classified folder
+    move_to_classified_folder(doc_id, doc_data, CLASSIFIED_FOLDER)
 
 # --- Main Execution ---
 if __name__ == "__main__":
