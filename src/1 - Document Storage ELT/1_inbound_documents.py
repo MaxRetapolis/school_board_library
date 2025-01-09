@@ -1,4 +1,11 @@
 import os
+import hashlib  # Import hashlib for hashing document contents
+# Ensure the directory for the log file exists
+ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
+LOGS_FOLDER = os.path.join(os.path.dirname(ROOT_FOLDER), "logs")
+os.makedirs(LOGS_FOLDER, exist_ok=True)
+LOG_FILE = os.path.join(LOGS_FOLDER, "document_pipeline.log")
+
 import json
 import shutil
 import datetime
@@ -6,7 +13,6 @@ import logging
 import uuid
 
 # --- Configuration ---
-ROOT_FOLDER = "c:/school_board_library/data/documents"  # Root folder location
 DEFAULT_FOLDERS = {
     "new": "New_Documents",
     "processing": "In_Processing",
@@ -14,8 +20,7 @@ DEFAULT_FOLDERS = {
     "classified": "In_Processing_Classified"
 }
 FOLDER_LIST_FILE = os.path.join(ROOT_FOLDER, "folder_list.json")  # File to store the list of folders
-INDEX_FILE = os.path.join(ROOT_FOLDER, "documents_index.json")
-LOG_FILE = os.path.join(ROOT_FOLDER, "document_pipeline.log")
+INDEX_FILE = os.path.join(ROOT_FOLDER, "documents_index.json")  # Ensure index file is in the documents folder
 
 # --- Logging Setup ---
 logging.basicConfig(filename=LOG_FILE, level=logging.INFO,
@@ -45,7 +50,17 @@ def load_folder_list(folder_list_file=FOLDER_LIST_FILE):
 def create_folders(folder_list):
     """Creates the necessary folders if they don't exist."""
     for folder in folder_list:
-        os.makedirs(os.path.join(ROOT_FOLDER, folder), exist_ok=True)
+        folder_path = os.path.join(ROOT_FOLDER, folder)
+        os.makedirs(folder_path, exist_ok=True)
+        print(f"Ensured folder exists: {folder_path}")
+
+def hash_file(filepath):
+    """Generates a SHA-256 hash of the file contents."""
+    sha256_hash = hashlib.sha256()
+    with open(filepath, "rb") as f:
+        for byte_block in iter(lambda: f.read(4096), b""):
+            sha256_hash.update(byte_block)
+    return sha256_hash.hexdigest()
 
 # --- Document Class ---
 class Document:
@@ -54,7 +69,7 @@ class Document:
         self.filename = os.path.basename(filepath)
         self.extension = os.path.splitext(self.filename)[1].lower()
         self.size = os.path.getsize(filepath)
-        self.creation_date = datetime.datetime.fromtimestamp(os.path.getctime(filepath))
+        self.hash = hash_file(filepath)  # Generate hash of the file contents
         self.status = None  # Will be set based on the folder
         self.document_id = None  # Will be assigned later
         self.metadata = {}
@@ -67,7 +82,7 @@ class Document:
             "filename": self.filename,
             "extension": self.extension,
             "size": self.size,
-            "creation_date": self.creation_date.isoformat(),
+            "hash": self.hash,
             "status": self.status,
             "metadata": self.metadata,
         }
@@ -80,9 +95,11 @@ class Document:
             self.filepath = new_filepath
             self.status = os.path.basename(destination_folder) # Update status to folder name
             logging.info(f"Moved document {self.filename} to {destination_folder}")
+            print(f"Moved document {self.filename} to {destination_folder}")
         except Exception as e:
             logging.error(f"Error moving document {self.filename} to {destination_folder}: {e}")
             self.status = "Errors"
+            print(f"Error moving document {self.filename} to {destination_folder}: {e}")
 
 # --- Helper Functions ---
 def load_index(index_file):
@@ -113,8 +130,10 @@ def save_index(index_file, index):
         with open(index_file, "w") as f:
             json.dump(index, f, indent=4)
         logging.info("Index saved successfully.")
+        print("Index saved successfully.")
     except Exception as e:
         logging.error(f"Error saving index to {index_file}: {e}")
+        print(f"Error saving index to {index_file}: {e}")
 
 def handle_new_document(document, main_index, document_id, new_doc_folder, in_proc_folder):
     """Handles the processing of a new document."""
@@ -122,21 +141,25 @@ def handle_new_document(document, main_index, document_id, new_doc_folder, in_pr
     document.status = "In_Processing"
     document.move_to_folder(os.path.join(ROOT_FOLDER, in_proc_folder))
     main_index[str(document.document_id)] = document.to_dict()
+    print(f"Handled new document {document.filename}, assigned ID: {document_id}")
 
 # --- Main Processing Logic ---
 def process_documents():
     """Main function to process documents in the specified folders."""
     logging.info("Script started.")
+    print("Script started.")
 
     # Load the folder list
     folder_list = load_folder_list(FOLDER_LIST_FILE)
     if not folder_list:
         logging.error("No folders specified in the folder list and no default folders available. Exiting.")
+        print("No folders specified in the folder list and no default folders available. Exiting.")
         return  # Exit if folder list is empty and no defaults
 
     # Step 1: Initialization and Load Main Index
     main_index, next_document_id = load_index(INDEX_FILE)
     logging.info(f"Loaded index with {len(main_index)} documents, next document ID: {next_document_id}")
+    print(f"Loaded index with {len(main_index)} documents, next document ID: {next_document_id}")
     create_folders(folder_list)
 
     # Step 2: Create Temporary Indexes for Each Folder
@@ -152,6 +175,7 @@ def process_documents():
                 doc.status = folder_name
                 temp_indexes[folder_name][temp_doc_id] = doc.to_dict()
         logging.info(f"Found {len(temp_indexes[folder_name])} documents in {folder_name}")
+        print(f"Found {len(temp_indexes[folder_name])} documents in {folder_name}")
 
     # Step 3: Compare Indexes, Identify Edge Cases, and Determine Actions
 
@@ -172,18 +196,21 @@ def process_documents():
           for existing_doc_id, existing_doc_dict in main_index.items():
               if (doc.filename == existing_doc_dict["filename"] and
                       doc.size == existing_doc_dict["size"] and
-                      doc.creation_date.isoformat() == existing_doc_dict["creation_date"]):
+                      doc.hash == existing_doc_dict["hash"]):  # Compare using hash instead of creation date
                   match_found = True
+                  print(f"Duplicate found: {doc.filename}")
                   if existing_doc_dict["status"] in ["In_Processing", "Duplicates", "Processed"]:
                       # Duplicate found
                       doc.move_to_folder(os.path.join(ROOT_FOLDER, duplicates_folder))
                       main_index[existing_doc_id]["status"] = "Duplicates"
                       main_index[existing_doc_id]["filepath"] = doc.filepath
                       logging.info(f"Moved duplicate document {doc.filename} from {new_docs_folder} to {duplicates_folder}")
+                      print(f"Moved duplicate document {doc.filename} from {new_docs_folder} to {duplicates_folder}")
                   elif existing_doc_dict["status"] == "Errors":
                       # Retry document previously in Error
                       handle_new_document(doc, main_index, next_document_id, new_docs_folder, in_processing_folder)
                       logging.info(f"Retrying processing of document {doc.filename} previously in Errors, moved from {new_docs_folder} to {in_processing_folder}, assigned ID: {next_document_id}")
+                      print(f"Retrying processing of document {doc.filename} previously in Errors, moved from {new_docs_folder} to {in_processing_folder}, assigned ID: {next_document_id}")
                       next_document_id += 1
                   break  # Exit the inner loop once a match is found
 
@@ -191,6 +218,7 @@ def process_documents():
               # New document
               handle_new_document(doc, main_index, next_document_id, new_docs_folder, in_processing_folder)
               logging.info(f"Moved new document {doc.filename} from {new_docs_folder} to {in_processing_folder}, assigned ID: {next_document_id}")
+              print(f"Moved new document {doc.filename} from {new_docs_folder} to {in_processing_folder}, assigned ID: {next_document_id}")
               next_document_id += 1
       
       # Step 3.1.5 Save index
@@ -209,13 +237,14 @@ def process_documents():
               for existing_doc_id, existing_doc_dict in main_index.items():
                   if (doc.filename == existing_doc_dict["filename"] and
                           doc.size == existing_doc_dict["size"] and
-                          doc.creation_date.isoformat() == existing_doc_dict["creation_date"]):
+                          doc.hash == existing_doc_dict["hash"]):  # Compare using hash instead of creation date
                       match_found = True
                       break
               
               if not match_found:
                 # Anomaly: Document not found in the main index
                 logging.info(f"Found document {doc.filename} in {folder_name} that was not in the main index. Adding to index with ID: {next_document_id}")
+                print(f"Found document {doc.filename} in {folder_name} that was not in the main index. Adding to index with ID: {next_document_id}")
                 doc.document_id = str(next_document_id)
                 next_document_id += 1
                 
@@ -230,6 +259,7 @@ def process_documents():
           save_index(INDEX_FILE, main_index)
 
     logging.info("Script finished.")
+    print("Script finished.")
 
 if __name__ == "__main__":
     process_documents()

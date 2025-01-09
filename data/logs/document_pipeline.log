@@ -1,0 +1,484 @@
+2025-01-08 15:37:37,591 - INFO - Script started.
+2025-01-08 15:37:37,591 - ERROR - Folder list file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\folder_list.json. Using default folders.
+2025-01-08 15:37:37,591 - INFO - Loaded index with 0 documents, next document ID: 0
+2025-01-08 15:37:37,594 - INFO - Found 53 documents in New_Documents
+2025-01-08 15:37:37,594 - INFO - Found 0 documents in In_Processing
+2025-01-08 15:37:37,594 - INFO - Found 0 documents in Duplicates
+2025-01-08 15:37:37,594 - INFO - Found 0 documents in In_Processing_Classified
+2025-01-08 15:37:37,599 - INFO - Moved document 081324 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,599 - INFO - Moved new document 081324 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 0
+2025-01-08 15:37:37,601 - INFO - Moved document 082724 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,601 - INFO - Moved new document 082724 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 1
+2025-01-08 15:37:37,604 - INFO - Moved document 091024 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,604 - INFO - Moved new document 091024 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 2
+2025-01-08 15:37:37,606 - INFO - Moved document 092424 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,606 - INFO - Moved new document 092424 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 3
+2025-01-08 15:37:37,608 - INFO - Moved document 10-22-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,608 - INFO - Moved new document 10-22-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 4
+2025-01-08 15:37:37,610 - INFO - Moved document 10-8-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,610 - INFO - Moved new document 10-8-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 5
+2025-01-08 15:37:37,613 - INFO - Moved document 102224 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,613 - INFO - Moved new document 102224 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 6
+2025-01-08 15:37:37,615 - INFO - Moved document 11-12-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,615 - INFO - Moved new document 11-12-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 7
+2025-01-08 15:37:37,617 - INFO - Moved document 111224 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,617 - INFO - Moved new document 111224 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 8
+2025-01-08 15:37:37,619 - INFO - Moved document 2023-24 Prop 28 Annual Report.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,619 - INFO - Moved new document 2023-24 Prop 28 Annual Report.pdf from New_Documents to In_Processing, assigned ID: 9
+2025-01-08 15:37:37,622 - INFO - Moved document 2024-25 Prop 28 Presentation.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,622 - INFO - Moved new document 2024-25 Prop 28 Presentation.pdf from New_Documents to In_Processing, assigned ID: 10
+2025-01-08 15:37:37,624 - INFO - Moved document 7-2-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,624 - INFO - Moved new document 7-2-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 11
+2025-01-08 15:37:37,626 - INFO - Moved document 8-13-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,626 - INFO - Moved new document 8-13-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 12
+2025-01-08 15:37:37,628 - INFO - Moved document 8-27-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,628 - INFO - Moved new document 8-27-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 13
+2025-01-08 15:37:37,631 - INFO - Moved document 9-10-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,631 - INFO - Moved new document 9-10-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 14
+2025-01-08 15:37:37,632 - INFO - Moved document 9-24-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,632 - INFO - Moved new document 9-24-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 15
+2025-01-08 15:37:37,634 - INFO - Moved document Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,634 - INFO - Moved new document Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf from New_Documents to In_Processing, assigned ID: 16
+2025-01-08 15:37:37,636 - INFO - Moved document documents_index.json to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,636 - INFO - Moved new document documents_index.json from New_Documents to In_Processing, assigned ID: 17
+2025-01-08 15:37:37,639 - INFO - Moved document Meeting Minutes - 1.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,640 - INFO - Moved new document Meeting Minutes - 1.pdf from New_Documents to In_Processing, assigned ID: 18
+2025-01-08 15:37:37,642 - INFO - Moved document Meeting Minutes - 2.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,642 - INFO - Moved new document Meeting Minutes - 2.pdf from New_Documents to In_Processing, assigned ID: 19
+2025-01-08 15:37:37,644 - INFO - Moved document Meeting Minutes - 3.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,644 - INFO - Moved new document Meeting Minutes - 3.pdf from New_Documents to In_Processing, assigned ID: 20
+2025-01-08 15:37:37,646 - INFO - Moved document Meeting Minutes - 4.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,646 - INFO - Moved new document Meeting Minutes - 4.pdf from New_Documents to In_Processing, assigned ID: 21
+2025-01-08 15:37:37,648 - INFO - Moved document Meeting Minutes - 5.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,649 - INFO - Moved new document Meeting Minutes - 5.pdf from New_Documents to In_Processing, assigned ID: 22
+2025-01-08 15:37:37,651 - INFO - Moved document Meeting Minutes - 6.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,651 - INFO - Moved new document Meeting Minutes - 6.pdf from New_Documents to In_Processing, assigned ID: 23
+2025-01-08 15:37:37,653 - INFO - Moved document Meeting Minutes - 7.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,653 - INFO - Moved new document Meeting Minutes - 7.pdf from New_Documents to In_Processing, assigned ID: 24
+2025-01-08 15:37:37,655 - INFO - Moved document Meeting Minutes - 8.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,655 - INFO - Moved new document Meeting Minutes - 8.pdf from New_Documents to In_Processing, assigned ID: 25
+2025-01-08 15:37:37,658 - INFO - Moved document Regular Meeting of the Board of Trustees-08-13-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,658 - INFO - Moved new document Regular Meeting of the Board of Trustees-08-13-2024.pdf from New_Documents to In_Processing, assigned ID: 26
+2025-01-08 15:37:37,660 - INFO - Moved document Regular Meeting of the Board of Trustees-08-27-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,660 - INFO - Moved new document Regular Meeting of the Board of Trustees-08-27-2024.pdf from New_Documents to In_Processing, assigned ID: 27
+2025-01-08 15:37:37,662 - INFO - Moved document Regular Meeting of the Board of Trustees-09-10-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,662 - INFO - Moved new document Regular Meeting of the Board of Trustees-09-10-2024.pdf from New_Documents to In_Processing, assigned ID: 28
+2025-01-08 15:37:37,664 - INFO - Moved document Regular Meeting of the Board of Trustees-09-24-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,664 - INFO - Moved new document Regular Meeting of the Board of Trustees-09-24-2024.pdf from New_Documents to In_Processing, assigned ID: 29
+2025-01-08 15:37:37,667 - INFO - Moved document Regular Meeting of the Board of Trustees-10-08-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,667 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-08-2024.pdf from New_Documents to In_Processing, assigned ID: 30
+2025-01-08 15:37:37,669 - INFO - Moved document Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,669 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf from New_Documents to In_Processing, assigned ID: 31
+2025-01-08 15:37:37,671 - INFO - Moved document Regular Meeting of the Board of Trustees-10-22-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,671 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-22-2024.pdf from New_Documents to In_Processing, assigned ID: 32
+2025-01-08 15:37:37,673 - INFO - Moved document Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,673 - INFO - Moved new document Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf from New_Documents to In_Processing, assigned ID: 33
+2025-01-08 15:37:37,676 - INFO - Moved document Regular Meeting of the Board of Trustees-11-12-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,676 - INFO - Moved new document Regular Meeting of the Board of Trustees-11-12-2024.pdf from New_Documents to In_Processing, assigned ID: 34
+2025-01-08 15:37:37,677 - INFO - Moved document Shamrock Presentation 9_24_24 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,678 - INFO - Moved new document Shamrock Presentation 9_24_24 (1).pdf from New_Documents to In_Processing, assigned ID: 35
+2025-01-08 15:37:37,679 - INFO - Moved document SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,680 - INFO - Moved new document SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf from New_Documents to In_Processing, assigned ID: 36
+2025-01-08 15:37:37,682 - INFO - Moved document Weekly Community Update - 062824 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,682 - INFO - Moved new document Weekly Community Update - 062824 (1).pdf from New_Documents to In_Processing, assigned ID: 37
+2025-01-08 15:37:37,684 - INFO - Moved document Weekly Community Update - 071224 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,685 - INFO - Moved new document Weekly Community Update - 071224 (1).pdf from New_Documents to In_Processing, assigned ID: 38
+2025-01-08 15:37:37,686 - INFO - Moved document Weekly Community Update - 072624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,686 - INFO - Moved new document Weekly Community Update - 072624.pdf from New_Documents to In_Processing, assigned ID: 39
+2025-01-08 15:37:37,688 - INFO - Moved document Weekly Community Update - 080924.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,688 - INFO - Moved new document Weekly Community Update - 080924.pdf from New_Documents to In_Processing, assigned ID: 40
+2025-01-08 15:37:37,690 - INFO - Moved document Weekly Community Update - 081624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,691 - INFO - Moved new document Weekly Community Update - 081624.pdf from New_Documents to In_Processing, assigned ID: 41
+2025-01-08 15:37:37,693 - INFO - Moved document Weekly Community Update - 082324 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,693 - INFO - Moved new document Weekly Community Update - 082324 (1).pdf from New_Documents to In_Processing, assigned ID: 42
+2025-01-08 15:37:37,695 - INFO - Moved document Weekly Community Update - 083024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,695 - INFO - Moved new document Weekly Community Update - 083024 (1).pdf from New_Documents to In_Processing, assigned ID: 43
+2025-01-08 15:37:37,697 - INFO - Moved document Weekly Community Update - 090624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,697 - INFO - Moved new document Weekly Community Update - 090624.pdf from New_Documents to In_Processing, assigned ID: 44
+2025-01-08 15:37:37,699 - INFO - Moved document Weekly Community Update - 091324.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,699 - INFO - Moved new document Weekly Community Update - 091324.pdf from New_Documents to In_Processing, assigned ID: 45
+2025-01-08 15:37:37,702 - INFO - Moved document Weekly Community Update - 092024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,702 - INFO - Moved new document Weekly Community Update - 092024.pdf from New_Documents to In_Processing, assigned ID: 46
+2025-01-08 15:37:37,704 - INFO - Moved document Weekly Community Update - 092724.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,704 - INFO - Moved new document Weekly Community Update - 092724.pdf from New_Documents to In_Processing, assigned ID: 47
+2025-01-08 15:37:37,706 - INFO - Moved document Weekly Community Update - 100424.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,706 - INFO - Moved new document Weekly Community Update - 100424.pdf from New_Documents to In_Processing, assigned ID: 48
+2025-01-08 15:37:37,708 - INFO - Moved document Weekly Community Update - 102524.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,708 - INFO - Moved new document Weekly Community Update - 102524.pdf from New_Documents to In_Processing, assigned ID: 49
+2025-01-08 15:37:37,711 - INFO - Moved document Weekly Community Update - 110124.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,711 - INFO - Moved new document Weekly Community Update - 110124.pdf from New_Documents to In_Processing, assigned ID: 50
+2025-01-08 15:37:37,713 - INFO - Moved document Weekly Community Update - 110824.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,713 - INFO - Moved new document Weekly Community Update - 110824.pdf from New_Documents to In_Processing, assigned ID: 51
+2025-01-08 15:37:37,716 - INFO - Moved document Weekly Community Update - 111524 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:37:37,716 - INFO - Moved new document Weekly Community Update - 111524 (1).pdf from New_Documents to In_Processing, assigned ID: 52
+2025-01-08 15:37:37,718 - INFO - Index saved successfully.
+2025-01-08 15:37:37,719 - INFO - Index saved successfully.
+2025-01-08 15:37:37,719 - INFO - Index saved successfully.
+2025-01-08 15:37:37,720 - INFO - Index saved successfully.
+2025-01-08 15:37:37,720 - INFO - Script finished.
+2025-01-08 15:42:59,984 - INFO - Script started.
+2025-01-08 15:42:59,984 - ERROR - Folder list file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\folder_list.json. Using default folders.
+2025-01-08 15:42:59,984 - INFO - Loaded index with 53 documents, next document ID: 53
+2025-01-08 15:42:59,986 - INFO - Found 12 documents in New_Documents
+2025-01-08 15:42:59,988 - INFO - Found 53 documents in In_Processing
+2025-01-08 15:42:59,988 - INFO - Found 0 documents in Duplicates
+2025-01-08 15:42:59,988 - INFO - Found 0 documents in In_Processing_Classified
+2025-01-08 15:42:59,994 - INFO - Moved document 081324 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:42:59,994 - INFO - Moved new document 081324 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 53
+2025-01-08 15:42:59,998 - INFO - Moved document 082724 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:42:59,999 - INFO - Moved new document 082724 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 54
+2025-01-08 15:43:00,002 - INFO - Moved document 091024 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:43:00,002 - INFO - Moved new document 091024 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 55
+2025-01-08 15:43:00,006 - INFO - Moved document 092424 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:43:00,007 - INFO - Moved new document 092424 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 56
+2025-01-08 15:43:00,010 - INFO - Moved document 10-22-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:43:00,010 - INFO - Moved new document 10-22-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 57
+2025-01-08 15:43:00,014 - INFO - Moved document 10-8-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:43:00,015 - INFO - Moved new document 10-8-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 58
+2025-01-08 15:43:00,018 - INFO - Moved document 102224 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:43:00,019 - INFO - Moved new document 102224 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 59
+2025-01-08 15:43:00,023 - INFO - Moved document 11-12-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:43:00,023 - INFO - Moved new document 11-12-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 60
+2025-01-08 15:43:00,044 - INFO - Moved document 111224 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:43:00,044 - INFO - Moved new document 111224 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 61
+2025-01-08 15:43:00,049 - INFO - Moved document 2023-24 Prop 28 Annual Report.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:43:00,049 - INFO - Moved new document 2023-24 Prop 28 Annual Report.pdf from New_Documents to In_Processing, assigned ID: 62
+2025-01-08 15:43:00,053 - INFO - Moved document 2024-25 Prop 28 Presentation.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:43:00,053 - INFO - Moved new document 2024-25 Prop 28 Presentation.pdf from New_Documents to In_Processing, assigned ID: 63
+2025-01-08 15:43:00,058 - INFO - Moved document Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:43:00,058 - INFO - Moved new document Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf from New_Documents to In_Processing, assigned ID: 64
+2025-01-08 15:43:00,059 - INFO - Index saved successfully.
+2025-01-08 15:43:00,062 - INFO - Index saved successfully.
+2025-01-08 15:43:00,063 - INFO - Index saved successfully.
+2025-01-08 15:43:00,064 - INFO - Index saved successfully.
+2025-01-08 15:43:00,064 - INFO - Script finished.
+2025-01-08 15:45:02,282 - INFO - Script started.
+2025-01-08 15:45:02,282 - ERROR - Folder list file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\folder_list.json. Using default folders.
+2025-01-08 15:45:02,282 - INFO - Loaded index with 0 documents, next document ID: 0
+2025-01-08 15:45:02,284 - INFO - Found 52 documents in New_Documents
+2025-01-08 15:45:02,285 - INFO - Found 0 documents in In_Processing
+2025-01-08 15:45:02,285 - INFO - Found 0 documents in Duplicates
+2025-01-08 15:45:02,285 - INFO - Found 0 documents in In_Processing_Classified
+2025-01-08 15:45:02,289 - INFO - Moved document 081324 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,289 - INFO - Moved new document 081324 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 0
+2025-01-08 15:45:02,291 - INFO - Moved document 082724 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,291 - INFO - Moved new document 082724 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 1
+2025-01-08 15:45:02,293 - INFO - Moved document 091024 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,293 - INFO - Moved new document 091024 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 2
+2025-01-08 15:45:02,296 - INFO - Moved document 092424 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,296 - INFO - Moved new document 092424 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 3
+2025-01-08 15:45:02,298 - INFO - Moved document 10-22-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,298 - INFO - Moved new document 10-22-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 4
+2025-01-08 15:45:02,300 - INFO - Moved document 10-8-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,300 - INFO - Moved new document 10-8-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 5
+2025-01-08 15:45:02,301 - INFO - Moved document 102224 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,302 - INFO - Moved new document 102224 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 6
+2025-01-08 15:45:02,304 - INFO - Moved document 11-12-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,304 - INFO - Moved new document 11-12-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 7
+2025-01-08 15:45:02,306 - INFO - Moved document 111224 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,306 - INFO - Moved new document 111224 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 8
+2025-01-08 15:45:02,307 - INFO - Moved document 2023-24 Prop 28 Annual Report.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,307 - INFO - Moved new document 2023-24 Prop 28 Annual Report.pdf from New_Documents to In_Processing, assigned ID: 9
+2025-01-08 15:45:02,309 - INFO - Moved document 2024-25 Prop 28 Presentation.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,309 - INFO - Moved new document 2024-25 Prop 28 Presentation.pdf from New_Documents to In_Processing, assigned ID: 10
+2025-01-08 15:45:02,312 - INFO - Moved document 7-2-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,312 - INFO - Moved new document 7-2-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 11
+2025-01-08 15:45:02,314 - INFO - Moved document 8-13-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,314 - INFO - Moved new document 8-13-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 12
+2025-01-08 15:45:02,315 - INFO - Moved document 8-27-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,315 - INFO - Moved new document 8-27-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 13
+2025-01-08 15:45:02,317 - INFO - Moved document 9-10-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,317 - INFO - Moved new document 9-10-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 14
+2025-01-08 15:45:02,320 - INFO - Moved document 9-24-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,320 - INFO - Moved new document 9-24-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 15
+2025-01-08 15:45:02,322 - INFO - Moved document Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,322 - INFO - Moved new document Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf from New_Documents to In_Processing, assigned ID: 16
+2025-01-08 15:45:02,324 - INFO - Moved document Meeting Minutes - 1.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,324 - INFO - Moved new document Meeting Minutes - 1.pdf from New_Documents to In_Processing, assigned ID: 17
+2025-01-08 15:45:02,326 - INFO - Moved document Meeting Minutes - 2.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,326 - INFO - Moved new document Meeting Minutes - 2.pdf from New_Documents to In_Processing, assigned ID: 18
+2025-01-08 15:45:02,329 - INFO - Moved document Meeting Minutes - 3.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,329 - INFO - Moved new document Meeting Minutes - 3.pdf from New_Documents to In_Processing, assigned ID: 19
+2025-01-08 15:45:02,330 - INFO - Moved document Meeting Minutes - 4.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,331 - INFO - Moved new document Meeting Minutes - 4.pdf from New_Documents to In_Processing, assigned ID: 20
+2025-01-08 15:45:02,332 - INFO - Moved document Meeting Minutes - 5.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,332 - INFO - Moved new document Meeting Minutes - 5.pdf from New_Documents to In_Processing, assigned ID: 21
+2025-01-08 15:45:02,334 - INFO - Moved document Meeting Minutes - 6.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,334 - INFO - Moved new document Meeting Minutes - 6.pdf from New_Documents to In_Processing, assigned ID: 22
+2025-01-08 15:45:02,337 - INFO - Moved document Meeting Minutes - 7.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,337 - INFO - Moved new document Meeting Minutes - 7.pdf from New_Documents to In_Processing, assigned ID: 23
+2025-01-08 15:45:02,339 - INFO - Moved document Meeting Minutes - 8.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,339 - INFO - Moved new document Meeting Minutes - 8.pdf from New_Documents to In_Processing, assigned ID: 24
+2025-01-08 15:45:02,340 - INFO - Moved document Regular Meeting of the Board of Trustees-08-13-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,341 - INFO - Moved new document Regular Meeting of the Board of Trustees-08-13-2024.pdf from New_Documents to In_Processing, assigned ID: 25
+2025-01-08 15:45:02,342 - INFO - Moved document Regular Meeting of the Board of Trustees-08-27-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,342 - INFO - Moved new document Regular Meeting of the Board of Trustees-08-27-2024.pdf from New_Documents to In_Processing, assigned ID: 26
+2025-01-08 15:45:02,345 - INFO - Moved document Regular Meeting of the Board of Trustees-09-10-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,345 - INFO - Moved new document Regular Meeting of the Board of Trustees-09-10-2024.pdf from New_Documents to In_Processing, assigned ID: 27
+2025-01-08 15:45:02,347 - INFO - Moved document Regular Meeting of the Board of Trustees-09-24-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,347 - INFO - Moved new document Regular Meeting of the Board of Trustees-09-24-2024.pdf from New_Documents to In_Processing, assigned ID: 28
+2025-01-08 15:45:02,349 - INFO - Moved document Regular Meeting of the Board of Trustees-10-08-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,349 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-08-2024.pdf from New_Documents to In_Processing, assigned ID: 29
+2025-01-08 15:45:02,351 - INFO - Moved document Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,351 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf from New_Documents to In_Processing, assigned ID: 30
+2025-01-08 15:45:02,354 - INFO - Moved document Regular Meeting of the Board of Trustees-10-22-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,354 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-22-2024.pdf from New_Documents to In_Processing, assigned ID: 31
+2025-01-08 15:45:02,355 - INFO - Moved document Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,356 - INFO - Moved new document Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf from New_Documents to In_Processing, assigned ID: 32
+2025-01-08 15:45:02,357 - INFO - Moved document Regular Meeting of the Board of Trustees-11-12-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,358 - INFO - Moved new document Regular Meeting of the Board of Trustees-11-12-2024.pdf from New_Documents to In_Processing, assigned ID: 33
+2025-01-08 15:45:02,359 - INFO - Moved document Shamrock Presentation 9_24_24 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,359 - INFO - Moved new document Shamrock Presentation 9_24_24 (1).pdf from New_Documents to In_Processing, assigned ID: 34
+2025-01-08 15:45:02,362 - INFO - Moved document SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,362 - INFO - Moved new document SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf from New_Documents to In_Processing, assigned ID: 35
+2025-01-08 15:45:02,364 - INFO - Moved document Weekly Community Update - 062824 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,364 - INFO - Moved new document Weekly Community Update - 062824 (1).pdf from New_Documents to In_Processing, assigned ID: 36
+2025-01-08 15:45:02,366 - INFO - Moved document Weekly Community Update - 071224 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,366 - INFO - Moved new document Weekly Community Update - 071224 (1).pdf from New_Documents to In_Processing, assigned ID: 37
+2025-01-08 15:45:02,367 - INFO - Moved document Weekly Community Update - 072624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,368 - INFO - Moved new document Weekly Community Update - 072624.pdf from New_Documents to In_Processing, assigned ID: 38
+2025-01-08 15:45:02,370 - INFO - Moved document Weekly Community Update - 080924.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,371 - INFO - Moved new document Weekly Community Update - 080924.pdf from New_Documents to In_Processing, assigned ID: 39
+2025-01-08 15:45:02,372 - INFO - Moved document Weekly Community Update - 081624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,372 - INFO - Moved new document Weekly Community Update - 081624.pdf from New_Documents to In_Processing, assigned ID: 40
+2025-01-08 15:45:02,374 - INFO - Moved document Weekly Community Update - 082324 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,374 - INFO - Moved new document Weekly Community Update - 082324 (1).pdf from New_Documents to In_Processing, assigned ID: 41
+2025-01-08 15:45:02,376 - INFO - Moved document Weekly Community Update - 083024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,376 - INFO - Moved new document Weekly Community Update - 083024 (1).pdf from New_Documents to In_Processing, assigned ID: 42
+2025-01-08 15:45:02,378 - INFO - Moved document Weekly Community Update - 090624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,379 - INFO - Moved new document Weekly Community Update - 090624.pdf from New_Documents to In_Processing, assigned ID: 43
+2025-01-08 15:45:02,380 - INFO - Moved document Weekly Community Update - 091324.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,380 - INFO - Moved new document Weekly Community Update - 091324.pdf from New_Documents to In_Processing, assigned ID: 44
+2025-01-08 15:45:02,382 - INFO - Moved document Weekly Community Update - 092024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,382 - INFO - Moved new document Weekly Community Update - 092024.pdf from New_Documents to In_Processing, assigned ID: 45
+2025-01-08 15:45:02,384 - INFO - Moved document Weekly Community Update - 092724.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,384 - INFO - Moved new document Weekly Community Update - 092724.pdf from New_Documents to In_Processing, assigned ID: 46
+2025-01-08 15:45:02,386 - INFO - Moved document Weekly Community Update - 100424.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,386 - INFO - Moved new document Weekly Community Update - 100424.pdf from New_Documents to In_Processing, assigned ID: 47
+2025-01-08 15:45:02,388 - INFO - Moved document Weekly Community Update - 102524.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,388 - INFO - Moved new document Weekly Community Update - 102524.pdf from New_Documents to In_Processing, assigned ID: 48
+2025-01-08 15:45:02,390 - INFO - Moved document Weekly Community Update - 110124.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,390 - INFO - Moved new document Weekly Community Update - 110124.pdf from New_Documents to In_Processing, assigned ID: 49
+2025-01-08 15:45:02,391 - INFO - Moved document Weekly Community Update - 110824.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,392 - INFO - Moved new document Weekly Community Update - 110824.pdf from New_Documents to In_Processing, assigned ID: 50
+2025-01-08 15:45:02,395 - INFO - Moved document Weekly Community Update - 111524 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:02,395 - INFO - Moved new document Weekly Community Update - 111524 (1).pdf from New_Documents to In_Processing, assigned ID: 51
+2025-01-08 15:45:02,396 - INFO - Index saved successfully.
+2025-01-08 15:45:02,397 - INFO - Index saved successfully.
+2025-01-08 15:45:02,398 - INFO - Index saved successfully.
+2025-01-08 15:45:02,399 - INFO - Index saved successfully.
+2025-01-08 15:45:02,399 - INFO - Script finished.
+2025-01-08 15:45:55,497 - INFO - Script started.
+2025-01-08 15:45:55,498 - ERROR - Folder list file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\folder_list.json. Using default folders.
+2025-01-08 15:45:55,498 - INFO - Loaded index with 52 documents, next document ID: 52
+2025-01-08 15:45:55,499 - INFO - Found 11 documents in New_Documents
+2025-01-08 15:45:55,501 - INFO - Found 52 documents in In_Processing
+2025-01-08 15:45:55,501 - INFO - Found 0 documents in Duplicates
+2025-01-08 15:45:55,501 - INFO - Found 0 documents in In_Processing_Classified
+2025-01-08 15:45:55,515 - INFO - Moved document 081324 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:55,515 - INFO - Moved new document 081324 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 52
+2025-01-08 15:45:55,521 - INFO - Moved document 082724 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:55,521 - INFO - Moved new document 082724 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 53
+2025-01-08 15:45:55,524 - INFO - Moved document 091024 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:55,524 - INFO - Moved new document 091024 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 54
+2025-01-08 15:45:55,530 - INFO - Moved document 10-22-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:55,530 - INFO - Moved new document 10-22-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 55
+2025-01-08 15:45:55,533 - INFO - Moved document 10-8-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:55,534 - INFO - Moved new document 10-8-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 56
+2025-01-08 15:45:55,539 - INFO - Moved document 11-12-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:55,539 - INFO - Moved new document 11-12-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 57
+2025-01-08 15:45:55,543 - INFO - Moved document 2023-24 Prop 28 Annual Report.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:55,543 - INFO - Moved new document 2023-24 Prop 28 Annual Report.pdf from New_Documents to In_Processing, assigned ID: 58
+2025-01-08 15:45:55,549 - INFO - Moved document 2024-25 Prop 28 Presentation.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:55,549 - INFO - Moved new document 2024-25 Prop 28 Presentation.pdf from New_Documents to In_Processing, assigned ID: 59
+2025-01-08 15:45:55,553 - INFO - Moved document 8-27-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:55,553 - INFO - Moved new document 8-27-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 60
+2025-01-08 15:45:55,559 - INFO - Moved document 9-10-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:55,559 - INFO - Moved new document 9-10-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 61
+2025-01-08 15:45:55,562 - INFO - Moved document 9-24-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:45:55,563 - INFO - Moved new document 9-24-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 62
+2025-01-08 15:45:55,564 - INFO - Index saved successfully.
+2025-01-08 15:45:55,566 - INFO - Index saved successfully.
+2025-01-08 15:45:55,567 - INFO - Index saved successfully.
+2025-01-08 15:45:55,568 - INFO - Index saved successfully.
+2025-01-08 15:45:55,568 - INFO - Script finished.
+2025-01-08 15:54:43,931 - INFO - Script started.
+2025-01-08 15:54:43,932 - ERROR - Folder list file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\folder_list.json. Using default folders.
+2025-01-08 15:54:43,932 - INFO - Loaded index with 0 documents, next document ID: 0
+2025-01-08 15:54:44,298 - INFO - Found 52 documents in New_Documents
+2025-01-08 15:54:44,299 - INFO - Found 0 documents in In_Processing
+2025-01-08 15:54:44,299 - INFO - Found 0 documents in Duplicates
+2025-01-08 15:54:44,299 - INFO - Found 0 documents in In_Processing_Classified
+2025-01-08 15:54:44,311 - INFO - Moved document 081324 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,311 - INFO - Moved new document 081324 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 0
+2025-01-08 15:54:44,313 - INFO - Moved document 082724 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,313 - INFO - Moved new document 082724 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 1
+2025-01-08 15:54:44,316 - INFO - Moved document 091024 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,316 - INFO - Moved new document 091024 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 2
+2025-01-08 15:54:44,319 - INFO - Moved document 092424 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,319 - INFO - Moved new document 092424 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 3
+2025-01-08 15:54:44,321 - INFO - Moved document 10-22-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,321 - INFO - Moved new document 10-22-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 4
+2025-01-08 15:54:44,323 - INFO - Moved document 10-8-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,324 - INFO - Moved new document 10-8-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 5
+2025-01-08 15:54:44,327 - INFO - Moved document 102224 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,327 - INFO - Moved new document 102224 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 6
+2025-01-08 15:54:44,330 - INFO - Moved document 11-12-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,330 - INFO - Moved new document 11-12-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 7
+2025-01-08 15:54:44,331 - INFO - Moved document 111224 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,332 - INFO - Moved new document 111224 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 8
+2025-01-08 15:54:44,333 - INFO - Moved document 2023-24 Prop 28 Annual Report.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,334 - INFO - Moved new document 2023-24 Prop 28 Annual Report.pdf from New_Documents to In_Processing, assigned ID: 9
+2025-01-08 15:54:44,337 - INFO - Moved document 2024-25 Prop 28 Presentation.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,337 - INFO - Moved new document 2024-25 Prop 28 Presentation.pdf from New_Documents to In_Processing, assigned ID: 10
+2025-01-08 15:54:44,339 - INFO - Moved document 7-2-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,340 - INFO - Moved new document 7-2-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 11
+2025-01-08 15:54:44,341 - INFO - Moved document 8-13-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,341 - INFO - Moved new document 8-13-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 12
+2025-01-08 15:54:44,343 - INFO - Moved document 8-27-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,344 - INFO - Moved new document 8-27-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 13
+2025-01-08 15:54:44,346 - INFO - Moved document 9-10-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,347 - INFO - Moved new document 9-10-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 14
+2025-01-08 15:54:44,349 - INFO - Moved document 9-24-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,349 - INFO - Moved new document 9-24-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 15
+2025-01-08 15:54:44,351 - INFO - Moved document Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,352 - INFO - Moved new document Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf from New_Documents to In_Processing, assigned ID: 16
+2025-01-08 15:54:44,356 - INFO - Moved document Meeting Minutes - 1.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,357 - INFO - Moved new document Meeting Minutes - 1.pdf from New_Documents to In_Processing, assigned ID: 17
+2025-01-08 15:54:44,362 - INFO - Moved document Meeting Minutes - 2.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,362 - INFO - Moved new document Meeting Minutes - 2.pdf from New_Documents to In_Processing, assigned ID: 18
+2025-01-08 15:54:44,368 - INFO - Moved document Meeting Minutes - 3.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,368 - INFO - Moved new document Meeting Minutes - 3.pdf from New_Documents to In_Processing, assigned ID: 19
+2025-01-08 15:54:44,373 - INFO - Moved document Meeting Minutes - 4.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,373 - INFO - Moved new document Meeting Minutes - 4.pdf from New_Documents to In_Processing, assigned ID: 20
+2025-01-08 15:54:44,376 - INFO - Moved document Meeting Minutes - 5.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,376 - INFO - Moved new document Meeting Minutes - 5.pdf from New_Documents to In_Processing, assigned ID: 21
+2025-01-08 15:54:44,382 - INFO - Moved document Meeting Minutes - 6.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,382 - INFO - Moved new document Meeting Minutes - 6.pdf from New_Documents to In_Processing, assigned ID: 22
+2025-01-08 15:54:44,388 - INFO - Moved document Meeting Minutes - 7.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,388 - INFO - Moved new document Meeting Minutes - 7.pdf from New_Documents to In_Processing, assigned ID: 23
+2025-01-08 15:54:44,390 - INFO - Moved document Meeting Minutes - 8.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,390 - INFO - Moved new document Meeting Minutes - 8.pdf from New_Documents to In_Processing, assigned ID: 24
+2025-01-08 15:54:44,392 - INFO - Moved document Regular Meeting of the Board of Trustees-08-13-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,392 - INFO - Moved new document Regular Meeting of the Board of Trustees-08-13-2024.pdf from New_Documents to In_Processing, assigned ID: 25
+2025-01-08 15:54:44,395 - INFO - Moved document Regular Meeting of the Board of Trustees-08-27-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,396 - INFO - Moved new document Regular Meeting of the Board of Trustees-08-27-2024.pdf from New_Documents to In_Processing, assigned ID: 26
+2025-01-08 15:54:44,398 - INFO - Moved document Regular Meeting of the Board of Trustees-09-10-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,399 - INFO - Moved new document Regular Meeting of the Board of Trustees-09-10-2024.pdf from New_Documents to In_Processing, assigned ID: 27
+2025-01-08 15:54:44,400 - INFO - Moved document Regular Meeting of the Board of Trustees-09-24-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,401 - INFO - Moved new document Regular Meeting of the Board of Trustees-09-24-2024.pdf from New_Documents to In_Processing, assigned ID: 28
+2025-01-08 15:54:44,402 - INFO - Moved document Regular Meeting of the Board of Trustees-10-08-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,402 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-08-2024.pdf from New_Documents to In_Processing, assigned ID: 29
+2025-01-08 15:54:44,405 - INFO - Moved document Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,406 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf from New_Documents to In_Processing, assigned ID: 30
+2025-01-08 15:54:44,409 - INFO - Moved document Regular Meeting of the Board of Trustees-10-22-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,409 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-22-2024.pdf from New_Documents to In_Processing, assigned ID: 31
+2025-01-08 15:54:44,411 - INFO - Moved document Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,411 - INFO - Moved new document Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf from New_Documents to In_Processing, assigned ID: 32
+2025-01-08 15:54:44,413 - INFO - Moved document Regular Meeting of the Board of Trustees-11-12-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,413 - INFO - Moved new document Regular Meeting of the Board of Trustees-11-12-2024.pdf from New_Documents to In_Processing, assigned ID: 33
+2025-01-08 15:54:44,416 - INFO - Moved document Shamrock Presentation 9_24_24 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,416 - INFO - Moved new document Shamrock Presentation 9_24_24 (1).pdf from New_Documents to In_Processing, assigned ID: 34
+2025-01-08 15:54:44,419 - INFO - Moved document SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,419 - INFO - Moved new document SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf from New_Documents to In_Processing, assigned ID: 35
+2025-01-08 15:54:44,422 - INFO - Moved document Weekly Community Update - 062824 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,423 - INFO - Moved new document Weekly Community Update - 062824 (1).pdf from New_Documents to In_Processing, assigned ID: 36
+2025-01-08 15:54:44,426 - INFO - Moved document Weekly Community Update - 071224 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,426 - INFO - Moved new document Weekly Community Update - 071224 (1).pdf from New_Documents to In_Processing, assigned ID: 37
+2025-01-08 15:54:44,430 - INFO - Moved document Weekly Community Update - 072624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,430 - INFO - Moved new document Weekly Community Update - 072624.pdf from New_Documents to In_Processing, assigned ID: 38
+2025-01-08 15:54:44,433 - INFO - Moved document Weekly Community Update - 080924.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,434 - INFO - Moved new document Weekly Community Update - 080924.pdf from New_Documents to In_Processing, assigned ID: 39
+2025-01-08 15:54:44,437 - INFO - Moved document Weekly Community Update - 081624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,437 - INFO - Moved new document Weekly Community Update - 081624.pdf from New_Documents to In_Processing, assigned ID: 40
+2025-01-08 15:54:44,440 - INFO - Moved document Weekly Community Update - 082324 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,441 - INFO - Moved new document Weekly Community Update - 082324 (1).pdf from New_Documents to In_Processing, assigned ID: 41
+2025-01-08 15:54:44,445 - INFO - Moved document Weekly Community Update - 083024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,445 - INFO - Moved new document Weekly Community Update - 083024 (1).pdf from New_Documents to In_Processing, assigned ID: 42
+2025-01-08 15:54:44,449 - INFO - Moved document Weekly Community Update - 090624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,449 - INFO - Moved new document Weekly Community Update - 090624.pdf from New_Documents to In_Processing, assigned ID: 43
+2025-01-08 15:54:44,451 - INFO - Moved document Weekly Community Update - 091324.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,451 - INFO - Moved new document Weekly Community Update - 091324.pdf from New_Documents to In_Processing, assigned ID: 44
+2025-01-08 15:54:44,455 - INFO - Moved document Weekly Community Update - 092024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,456 - INFO - Moved new document Weekly Community Update - 092024.pdf from New_Documents to In_Processing, assigned ID: 45
+2025-01-08 15:54:44,459 - INFO - Moved document Weekly Community Update - 092724.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,460 - INFO - Moved new document Weekly Community Update - 092724.pdf from New_Documents to In_Processing, assigned ID: 46
+2025-01-08 15:54:44,463 - INFO - Moved document Weekly Community Update - 100424.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,463 - INFO - Moved new document Weekly Community Update - 100424.pdf from New_Documents to In_Processing, assigned ID: 47
+2025-01-08 15:54:44,466 - INFO - Moved document Weekly Community Update - 102524.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,466 - INFO - Moved new document Weekly Community Update - 102524.pdf from New_Documents to In_Processing, assigned ID: 48
+2025-01-08 15:54:44,469 - INFO - Moved document Weekly Community Update - 110124.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,469 - INFO - Moved new document Weekly Community Update - 110124.pdf from New_Documents to In_Processing, assigned ID: 49
+2025-01-08 15:54:44,472 - INFO - Moved document Weekly Community Update - 110824.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,472 - INFO - Moved new document Weekly Community Update - 110824.pdf from New_Documents to In_Processing, assigned ID: 50
+2025-01-08 15:54:44,476 - INFO - Moved document Weekly Community Update - 111524 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-08 15:54:44,476 - INFO - Moved new document Weekly Community Update - 111524 (1).pdf from New_Documents to In_Processing, assigned ID: 51
+2025-01-08 15:54:44,477 - INFO - Index saved successfully.
+2025-01-08 15:54:44,478 - INFO - Index saved successfully.
+2025-01-08 15:54:44,479 - INFO - Index saved successfully.
+2025-01-08 15:54:44,480 - INFO - Index saved successfully.
+2025-01-08 15:54:44,480 - INFO - Script finished.
+2025-01-08 15:55:11,797 - INFO - Script started.
+2025-01-08 15:55:11,797 - ERROR - Folder list file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\folder_list.json. Using default folders.
+2025-01-08 15:55:11,797 - INFO - Loaded index with 52 documents, next document ID: 52
+2025-01-08 15:55:11,825 - INFO - Found 10 documents in New_Documents
+2025-01-08 15:55:12,037 - INFO - Found 52 documents in In_Processing
+2025-01-08 15:55:12,037 - INFO - Found 0 documents in Duplicates
+2025-01-08 15:55:12,037 - INFO - Found 0 documents in In_Processing_Classified
+2025-01-08 15:55:12,050 - INFO - Moved document 081324 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:12,050 - INFO - Moved duplicate document 081324 BOARD BUZZ.pdf from New_Documents to Duplicates
+2025-01-08 15:55:12,052 - INFO - Moved document 082724 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:12,052 - INFO - Moved duplicate document 082724 BOARD BUZZ.pdf from New_Documents to Duplicates
+2025-01-08 15:55:12,054 - INFO - Moved document 091024 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:12,054 - INFO - Moved duplicate document 091024 BOARD BUZZ.pdf from New_Documents to Duplicates
+2025-01-08 15:55:12,057 - INFO - Moved document 10-22-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:12,058 - INFO - Moved duplicate document 10-22-2024.auto_generated_captions.vtt from New_Documents to Duplicates
+2025-01-08 15:55:12,060 - INFO - Moved document 10-8-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:12,060 - INFO - Moved duplicate document 10-8-2024.auto_generated_captions.vtt from New_Documents to Duplicates
+2025-01-08 15:55:12,062 - INFO - Moved document 11-12-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:12,062 - INFO - Moved duplicate document 11-12-2024.auto_generated_captions.vtt from New_Documents to Duplicates
+2025-01-08 15:55:12,064 - INFO - Moved document 2023-24 Prop 28 Annual Report.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:12,064 - INFO - Moved duplicate document 2023-24 Prop 28 Annual Report.pdf from New_Documents to Duplicates
+2025-01-08 15:55:12,068 - INFO - Moved document 2024-25 Prop 28 Presentation.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:12,068 - INFO - Moved duplicate document 2024-25 Prop 28 Presentation.pdf from New_Documents to Duplicates
+2025-01-08 15:55:12,071 - INFO - Moved document 9-10-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:12,071 - INFO - Moved duplicate document 9-10-2024.subtitle.webvtt.vtt from New_Documents to Duplicates
+2025-01-08 15:55:12,072 - INFO - Moved document 9-24-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:12,072 - INFO - Moved duplicate document 9-24-2024.subtitle.webvtt.vtt from New_Documents to Duplicates
+2025-01-08 15:55:12,073 - INFO - Index saved successfully.
+2025-01-08 15:55:12,111 - INFO - Index saved successfully.
+2025-01-08 15:55:12,112 - INFO - Index saved successfully.
+2025-01-08 15:55:12,113 - INFO - Index saved successfully.
+2025-01-08 15:55:12,113 - INFO - Script finished.
+2025-01-08 15:55:46,319 - INFO - Script started.
+2025-01-08 15:55:46,320 - ERROR - Folder list file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\folder_list.json. Using default folders.
+2025-01-08 15:55:46,320 - INFO - Loaded index with 52 documents, next document ID: 52
+2025-01-08 15:55:46,348 - INFO - Found 10 documents in New_Documents
+2025-01-08 15:55:46,387 - INFO - Found 52 documents in In_Processing
+2025-01-08 15:55:46,390 - INFO - Found 10 documents in Duplicates
+2025-01-08 15:55:46,390 - INFO - Found 0 documents in In_Processing_Classified
+2025-01-08 15:55:46,396 - INFO - Moved document 081324 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:46,396 - INFO - Moved duplicate document 081324 BOARD BUZZ.pdf from New_Documents to Duplicates
+2025-01-08 15:55:46,401 - INFO - Moved document 082724 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:46,401 - INFO - Moved duplicate document 082724 BOARD BUZZ.pdf from New_Documents to Duplicates
+2025-01-08 15:55:46,405 - INFO - Moved document 091024 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:46,405 - INFO - Moved duplicate document 091024 BOARD BUZZ.pdf from New_Documents to Duplicates
+2025-01-08 15:55:46,410 - INFO - Moved document 10-22-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:46,410 - INFO - Moved duplicate document 10-22-2024.auto_generated_captions.vtt from New_Documents to Duplicates
+2025-01-08 15:55:46,414 - INFO - Moved document 10-8-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:46,414 - INFO - Moved duplicate document 10-8-2024.auto_generated_captions.vtt from New_Documents to Duplicates
+2025-01-08 15:55:46,419 - INFO - Moved document 11-12-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:46,419 - INFO - Moved duplicate document 11-12-2024.auto_generated_captions.vtt from New_Documents to Duplicates
+2025-01-08 15:55:46,423 - INFO - Moved document 2023-24 Prop 28 Annual Report.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:46,423 - INFO - Moved duplicate document 2023-24 Prop 28 Annual Report.pdf from New_Documents to Duplicates
+2025-01-08 15:55:46,429 - INFO - Moved document 2024-25 Prop 28 Presentation.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:46,429 - INFO - Moved duplicate document 2024-25 Prop 28 Presentation.pdf from New_Documents to Duplicates
+2025-01-08 15:55:46,432 - INFO - Moved document 9-10-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:46,433 - INFO - Moved duplicate document 9-10-2024.subtitle.webvtt.vtt from New_Documents to Duplicates
+2025-01-08 15:55:46,437 - INFO - Moved document 9-24-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Duplicates
+2025-01-08 15:55:46,437 - INFO - Moved duplicate document 9-24-2024.subtitle.webvtt.vtt from New_Documents to Duplicates
+2025-01-08 15:55:46,439 - INFO - Index saved successfully.
+2025-01-08 15:55:46,475 - INFO - Index saved successfully.
+2025-01-08 15:55:46,532 - INFO - Index saved successfully.
+2025-01-08 15:55:46,533 - INFO - Index saved successfully.
+2025-01-08 15:55:46,533 - INFO - Script finished.

@@ -2,8 +2,16 @@ import json
 import logging
 import os
 
+# --- Configuration ---
+ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
+INDEX_FILE = os.path.join(ROOT_FOLDER, "documents_index.json")  # Ensure index file is in the documents folder
+IN_PROCESSING_FOLDER = os.path.join(ROOT_FOLDER, "In_Processing")  # Folder for documents in processing
+
 # --- Logging Setup ---
-logging.basicConfig(level=logging.INFO,
+LOGS_FOLDER = os.path.join(os.path.dirname(ROOT_FOLDER), "logs")
+os.makedirs(LOGS_FOLDER, exist_ok=True)
+LOG_FILE = os.path.join(LOGS_FOLDER, "document_classifier.log")
+logging.basicConfig(filename=LOG_FILE, level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Load the decision tree
@@ -167,7 +175,7 @@ def determine_document_type(doc_id, index, primary_classification):
         return primary_classification
 
 # --- Main Classification Logic ---
-def classify_document(doc_id, doc_data, decision_tree, use_case_to_function):
+def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index):
     """Classifies a document based on the decision tree."""
     filepath = doc_data["filepath"]
     extension = get_file_extension(filepath)
@@ -226,22 +234,23 @@ if __name__ == "__main__":
         "analyze_odt_structure": classify_odt_document,
     }
 
-    # Sample document index (replace with your actual index)
-    index = {
-        "doc1": {
-            "filepath": "path/to/document1.pdf",
-            "metadata": {}
-        },
-        "doc2": {
-            "filepath": "path/to/document2.docx",
-            "metadata": {}
-        }
-        # ... more documents
-    }
+    # Load the document index
+    try:
+        with open(INDEX_FILE, "r") as f:
+            index = json.load(f)
+    except Exception as e:
+        logging.error(f"Error loading document index: {e}")
+        exit(1)  # Exit if document index loading failed
 
-    # Classify documents in the index
+    # Classify documents in the In_Processing folder
     for doc_id, doc_data in index.items():
-        classify_document(doc_id, doc_data, decision_tree, use_case_to_function)
+        if doc_data["status"] == "In_Processing":
+            classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index)
 
-    # Output the classified index (optional)
-    # print(json.dumps(index, indent=4))
+    # Save the updated document index
+    try:
+        with open(INDEX_FILE, "w") as f:
+            json.dump(index, f, indent=4)
+        logging.info("Updated document index saved successfully.")
+    except Exception as e:
+        logging.error(f"Error saving updated document index: {e}")
