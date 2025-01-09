@@ -117,6 +117,10 @@ def classify_docx_document(filepath):
         logging.error(f"Error classifying DOCX document: {e}")
         return "DOCX-Unknown"
 
+def classify_doc_document(filepath):
+    """Classifies a DOC document to analyze its structure."""
+    return classify_docx_document(filepath)
+
 def classify_image_document(filepath):
     """Classifies an image document to analyze its content."""
     try:
@@ -364,6 +368,10 @@ def determine_document_type(doc_id, index, primary_classification):
         else:
             return "DOCX-Unknown"
 
+    # Handling for DOC documents
+    elif primary_classification == "DOC":
+        return determine_document_type(doc_id, index, "DOCX")
+
     # Handling for image documents (JPEG, PNG, GIF, BMP)
     elif primary_classification in ("JPEG", "PNG", "GIF", "BMP"):
         return "Image-Only"
@@ -464,6 +472,7 @@ if __name__ == "__main__":
         "detect_images_in_pdf": classify_pdf_for_images,
         "detect_tables_in_pdf": classify_pdf_for_tables,
         "analyze_docx_structure": classify_docx_document,
+        "analyze_doc_structure": classify_doc_document,
         "analyze_image_content": classify_image_document,
         "analyze_tiff_for_multi_page": classify_tiff_as_multipage,
         "analyze_pptx_content": classify_pptx_document,

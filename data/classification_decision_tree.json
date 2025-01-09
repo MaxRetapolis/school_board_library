@@ -11,6 +11,12 @@
             "use_cases": ["analyze_docx_structure"]
         }
     },
+    "doc": {
+        "primary": "DOC",
+        "secondary": {
+            "use_cases": ["analyze_docx_structure"]
+        }
+    },
     "jpeg": {
         "primary": "JPEG",
         "secondary": {
