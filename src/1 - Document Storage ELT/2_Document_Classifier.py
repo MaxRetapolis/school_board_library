@@ -11,6 +11,11 @@ import pandas as pd  # Import pandas for CSV and Excel processing
 import pypandoc  # Import pypandoc for RTF processing
 from bs4 import BeautifulSoup  # Import BeautifulSoup for HTML processing
 import xml.etree.ElementTree as ET  # Import ElementTree for XML processing
+import zipfile  # Import zipfile for ZIP processing
+from odf.opendocument import load  # Import odfpy for ODT processing
+from odf.text import P  # Import odfpy text elements
+from odf.draw import Image as ODFImage  # Import odfpy image elements
+from odf.table import Table  # Import odfpy table elements
 
 # --- Configuration ---
 ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
@@ -255,14 +260,51 @@ def classify_xml_document(filepath):
         return "XML-Unknown"
 
 def classify_zip_contents(filepath):
-    """Placeholder for ZIP classification."""
-    # Implement logic to extract and classify ZIP contents
-    return "Text-Only"
+    """Classifies a ZIP document to analyze its content."""
+    try:
+        with zipfile.ZipFile(filepath, 'r') as zip_ref:
+            if zip_ref.namelist():  # Check if the ZIP file contains any files
+                return "Archive"
+            else:
+                return "Archive-Empty"
+    except Exception as e:
+        logging.error(f"Error classifying ZIP document: {e}")
+        return "Archive-Unknown"
 
 def classify_odt_document(filepath):
-    """Placeholder for ODT classification."""
-    # Implement logic to analyze ODT content
-    return "Text-Only"
+    """Classifies an ODT document to analyze its structure."""
+    try:
+        doc = load(filepath)
+        has_text = False
+        has_images = False
+        has_tables = False
+
+        for element in doc.getElementsByType(P):
+            if element.text.strip():
+                has_text = True
+                break
+
+        for element in doc.getElementsByType(ODFImage):
+            has_images = True
+            break
+
+        for element in doc.getElementsByType(Table):
+            has_tables = True
+            break
+
+        if has_text and has_images and has_tables:
+            return "ODT-Text-with-Images-and-Tables"
+        elif has_text and has_images:
+            return "ODT-Text-with-Images"
+        elif has_text and has_tables:
+            return "ODT-Text-with-Tables"
+        elif has_text:
+            return "ODT-Text-Only"
+        else:
+            return "ODT-Unknown"
+    except Exception as e:
+        logging.error(f"Error classifying ODT document: {e}")
+        return "ODT-Unknown"
 
 def update_classification_combinations(primary_classification, secondary_classifications):
     """Updates the classification combinations file with new combinations."""
