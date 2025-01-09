@@ -31,13 +31,20 @@ LOG_FILE = os.path.join(LOGS_FOLDER, "document_classifier.log")
 logging.basicConfig(filename=LOG_FILE, level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
+# Add console handler
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+logging.getLogger().addHandler(console_handler)
+
 # Load the decision tree
 def load_decision_tree(filepath):
     """Loads the decision tree from a JSON file."""
+    decision_tree_path = os.path.join(os.path.dirname(__file__), filepath)
     try:
-        with open(filepath, "r") as f:
+        with open(decision_tree_path, "r") as f:
             decision_tree = json.load(f)
-        logging.info(f"Decision tree loaded from {filepath}")
+        logging.info(f"Decision tree loaded from {decision_tree_path}")
         return decision_tree
     except Exception as e:
         logging.error(f"Error loading decision tree: {e}")
