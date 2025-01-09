@@ -343,7 +343,7 @@ def update_classification_combinations(primary_classification, secondary_classif
 # --- Helper Functions ---
 def get_file_extension(filepath):
     """Extracts the file extension from a filepath."""
-    return os.path.splitext(filepath)[1].lower()
+    return os.path.splitext(filepath)[1].lower().lstrip('.')  # Remove the leading dot
 
 def determine_document_type(doc_id, index, primary_classification):
     """Determines the final document type based on primary and secondary classifications."""
@@ -427,6 +427,7 @@ def move_to_classified_folder(doc_id, doc_data, classified_folder):
 # --- Main Classification Logic ---
 def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index):
     """Classifies a document based on the decision tree."""
+    filepath = doc_data["filepath"]  # Retrieve the filepath from doc_data
     # Log the start of classification attempt
     logging.info(f"Attempting to classify document ID: {doc_id}, Filepath: {filepath}")
 
@@ -516,6 +517,7 @@ if __name__ == "__main__":
         "analyze_xml_structure": classify_xml_document,
         "extract_and_classify_zip": classify_zip_contents,
         "analyze_odt_structure": classify_odt_document,
+        "analyze_vtt_content": analyze_vtt_content,  # Add classification function for VTT files
     }
 
     # Load the document index

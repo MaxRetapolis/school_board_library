@@ -1,2 +1,130 @@
 2025-01-08 21:24:34,458 - ERROR - Error loading decision tree: [Errno 2] No such file or directory: 'classification_decision_tree.json'
 2025-01-08 21:26:48,675 - ERROR - Error loading decision tree: [Errno 2] No such file or directory: 'classification_decision_tree.json'
+2025-01-08 21:27:56,114 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-08 21:27:56,129 - INFO - Attempting to classify document ID: 3, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\092424 BOARD BUZZ.pdf
+2025-01-08 21:27:56,129 - WARNING - No classification rule found for extension '.pdf' (document ID: 3)
+2025-01-08 21:27:56,129 - INFO - Successfully classified document ID: 3
+2025-01-08 21:27:56,129 - INFO - Attempting to classify document ID: 6, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\102224 BOARD BUZZ.pdf
+2025-01-08 21:27:56,130 - WARNING - No classification rule found for extension '.pdf' (document ID: 6)
+2025-01-08 21:27:56,130 - INFO - Successfully classified document ID: 6
+2025-01-08 21:27:56,130 - INFO - Attempting to classify document ID: 8, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\111224 BOARD BUZZ.pdf
+2025-01-08 21:27:56,130 - WARNING - No classification rule found for extension '.pdf' (document ID: 8)
+2025-01-08 21:27:56,130 - INFO - Successfully classified document ID: 8
+2025-01-08 21:27:56,130 - INFO - Attempting to classify document ID: 11, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\7-2-2024.subtitle.webvtt.vtt
+2025-01-08 21:27:56,130 - WARNING - No classification rule found for extension '.vtt' (document ID: 11)
+2025-01-08 21:27:56,130 - INFO - Successfully classified document ID: 11
+2025-01-08 21:27:56,130 - INFO - Attempting to classify document ID: 12, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-13-2024.subtitle.webvtt.vtt
+2025-01-08 21:27:56,130 - WARNING - No classification rule found for extension '.vtt' (document ID: 12)
+2025-01-08 21:27:56,130 - INFO - Successfully classified document ID: 12
+2025-01-08 21:27:56,130 - INFO - Attempting to classify document ID: 13, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-27-2024.auto_generated_captions.vtt
+2025-01-08 21:27:56,130 - WARNING - No classification rule found for extension '.vtt' (document ID: 13)
+2025-01-08 21:27:56,131 - INFO - Successfully classified document ID: 13
+2025-01-08 21:27:56,131 - INFO - Attempting to classify document ID: 16, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf
+2025-01-08 21:27:56,131 - WARNING - No classification rule found for extension '.pdf' (document ID: 16)
+2025-01-08 21:27:56,131 - INFO - Successfully classified document ID: 16
+2025-01-08 21:27:56,131 - INFO - Attempting to classify document ID: 17, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 1.pdf
+2025-01-08 21:27:56,131 - WARNING - No classification rule found for extension '.pdf' (document ID: 17)
+2025-01-08 21:27:56,131 - INFO - Successfully classified document ID: 17
+2025-01-08 21:27:56,131 - INFO - Attempting to classify document ID: 18, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 2.pdf
+2025-01-08 21:27:56,131 - WARNING - No classification rule found for extension '.pdf' (document ID: 18)
+2025-01-08 21:27:56,131 - INFO - Successfully classified document ID: 18
+2025-01-08 21:27:56,131 - INFO - Attempting to classify document ID: 19, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 3.pdf
+2025-01-08 21:27:56,131 - WARNING - No classification rule found for extension '.pdf' (document ID: 19)
+2025-01-08 21:27:56,131 - INFO - Successfully classified document ID: 19
+2025-01-08 21:27:56,131 - INFO - Attempting to classify document ID: 20, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 4.pdf
+2025-01-08 21:27:56,131 - WARNING - No classification rule found for extension '.pdf' (document ID: 20)
+2025-01-08 21:27:56,131 - INFO - Successfully classified document ID: 20
+2025-01-08 21:27:56,131 - INFO - Attempting to classify document ID: 21, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 5.pdf
+2025-01-08 21:27:56,132 - WARNING - No classification rule found for extension '.pdf' (document ID: 21)
+2025-01-08 21:27:56,132 - INFO - Successfully classified document ID: 21
+2025-01-08 21:27:56,132 - INFO - Attempting to classify document ID: 22, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 6.pdf
+2025-01-08 21:27:56,132 - WARNING - No classification rule found for extension '.pdf' (document ID: 22)
+2025-01-08 21:27:56,132 - INFO - Successfully classified document ID: 22
+2025-01-08 21:27:56,132 - INFO - Attempting to classify document ID: 23, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 7.pdf
+2025-01-08 21:27:56,132 - WARNING - No classification rule found for extension '.pdf' (document ID: 23)
+2025-01-08 21:27:56,132 - INFO - Successfully classified document ID: 23
+2025-01-08 21:27:56,132 - INFO - Attempting to classify document ID: 24, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 8.pdf
+2025-01-08 21:27:56,132 - WARNING - No classification rule found for extension '.pdf' (document ID: 24)
+2025-01-08 21:27:56,132 - INFO - Successfully classified document ID: 24
+2025-01-08 21:27:56,132 - INFO - Attempting to classify document ID: 25, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-13-2024.pdf
+2025-01-08 21:27:56,132 - WARNING - No classification rule found for extension '.pdf' (document ID: 25)
+2025-01-08 21:27:56,132 - INFO - Successfully classified document ID: 25
+2025-01-08 21:27:56,132 - INFO - Attempting to classify document ID: 26, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-27-2024.pdf
+2025-01-08 21:27:56,132 - WARNING - No classification rule found for extension '.pdf' (document ID: 26)
+2025-01-08 21:27:56,132 - INFO - Successfully classified document ID: 26
+2025-01-08 21:27:56,132 - INFO - Attempting to classify document ID: 27, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-10-2024.pdf
+2025-01-08 21:27:56,132 - WARNING - No classification rule found for extension '.pdf' (document ID: 27)
+2025-01-08 21:27:56,133 - INFO - Successfully classified document ID: 27
+2025-01-08 21:27:56,133 - INFO - Attempting to classify document ID: 28, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-24-2024.pdf
+2025-01-08 21:27:56,133 - WARNING - No classification rule found for extension '.pdf' (document ID: 28)
+2025-01-08 21:27:56,133 - INFO - Successfully classified document ID: 28
+2025-01-08 21:27:56,133 - INFO - Attempting to classify document ID: 29, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-08-2024.pdf
+2025-01-08 21:27:56,133 - WARNING - No classification rule found for extension '.pdf' (document ID: 29)
+2025-01-08 21:27:56,133 - INFO - Successfully classified document ID: 29
+2025-01-08 21:27:56,133 - INFO - Attempting to classify document ID: 30, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf
+2025-01-08 21:27:56,133 - WARNING - No classification rule found for extension '.pdf' (document ID: 30)
+2025-01-08 21:27:56,134 - INFO - Successfully classified document ID: 30
+2025-01-08 21:27:56,134 - INFO - Attempting to classify document ID: 31, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024.pdf
+2025-01-08 21:27:56,134 - WARNING - No classification rule found for extension '.pdf' (document ID: 31)
+2025-01-08 21:27:56,134 - INFO - Successfully classified document ID: 31
+2025-01-08 21:27:56,134 - INFO - Attempting to classify document ID: 32, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf
+2025-01-08 21:27:56,134 - WARNING - No classification rule found for extension '.pdf' (document ID: 32)
+2025-01-08 21:27:56,134 - INFO - Successfully classified document ID: 32
+2025-01-08 21:27:56,135 - INFO - Attempting to classify document ID: 33, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024.pdf
+2025-01-08 21:27:56,135 - WARNING - No classification rule found for extension '.pdf' (document ID: 33)
+2025-01-08 21:27:56,135 - INFO - Successfully classified document ID: 33
+2025-01-08 21:27:56,135 - INFO - Attempting to classify document ID: 34, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Shamrock Presentation 9_24_24 (1).pdf
+2025-01-08 21:27:56,135 - WARNING - No classification rule found for extension '.pdf' (document ID: 34)
+2025-01-08 21:27:56,135 - INFO - Successfully classified document ID: 34
+2025-01-08 21:27:56,135 - INFO - Attempting to classify document ID: 35, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf
+2025-01-08 21:27:56,135 - WARNING - No classification rule found for extension '.pdf' (document ID: 35)
+2025-01-08 21:27:56,135 - INFO - Successfully classified document ID: 35
+2025-01-08 21:27:56,135 - INFO - Attempting to classify document ID: 36, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 062824 (1).pdf
+2025-01-08 21:27:56,135 - WARNING - No classification rule found for extension '.pdf' (document ID: 36)
+2025-01-08 21:27:56,136 - INFO - Successfully classified document ID: 36
+2025-01-08 21:27:56,136 - INFO - Attempting to classify document ID: 37, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 071224 (1).pdf
+2025-01-08 21:27:56,136 - WARNING - No classification rule found for extension '.pdf' (document ID: 37)
+2025-01-08 21:27:56,136 - INFO - Successfully classified document ID: 37
+2025-01-08 21:27:56,136 - INFO - Attempting to classify document ID: 38, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 072624.pdf
+2025-01-08 21:27:56,136 - WARNING - No classification rule found for extension '.pdf' (document ID: 38)
+2025-01-08 21:27:56,136 - INFO - Successfully classified document ID: 38
+2025-01-08 21:27:56,136 - INFO - Attempting to classify document ID: 39, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 080924.pdf
+2025-01-08 21:27:56,136 - WARNING - No classification rule found for extension '.pdf' (document ID: 39)
+2025-01-08 21:27:56,136 - INFO - Successfully classified document ID: 39
+2025-01-08 21:27:56,136 - INFO - Attempting to classify document ID: 40, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 081624.pdf
+2025-01-08 21:27:56,136 - WARNING - No classification rule found for extension '.pdf' (document ID: 40)
+2025-01-08 21:27:56,136 - INFO - Successfully classified document ID: 40
+2025-01-08 21:27:56,136 - INFO - Attempting to classify document ID: 41, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 082324 (1).pdf
+2025-01-08 21:27:56,136 - WARNING - No classification rule found for extension '.pdf' (document ID: 41)
+2025-01-08 21:27:56,137 - INFO - Successfully classified document ID: 41
+2025-01-08 21:27:56,137 - INFO - Attempting to classify document ID: 42, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 083024 (1).pdf
+2025-01-08 21:27:56,137 - WARNING - No classification rule found for extension '.pdf' (document ID: 42)
+2025-01-08 21:27:56,137 - INFO - Successfully classified document ID: 42
+2025-01-08 21:27:56,137 - INFO - Attempting to classify document ID: 43, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 090624.pdf
+2025-01-08 21:27:56,137 - WARNING - No classification rule found for extension '.pdf' (document ID: 43)
+2025-01-08 21:27:56,137 - INFO - Successfully classified document ID: 43
+2025-01-08 21:27:56,137 - INFO - Attempting to classify document ID: 44, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 091324.pdf
+2025-01-08 21:27:56,137 - WARNING - No classification rule found for extension '.pdf' (document ID: 44)
+2025-01-08 21:27:56,137 - INFO - Successfully classified document ID: 44
+2025-01-08 21:27:56,137 - INFO - Attempting to classify document ID: 45, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092024.pdf
+2025-01-08 21:27:56,138 - WARNING - No classification rule found for extension '.pdf' (document ID: 45)
+2025-01-08 21:27:56,138 - INFO - Successfully classified document ID: 45
+2025-01-08 21:27:56,138 - INFO - Attempting to classify document ID: 46, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092724.pdf
+2025-01-08 21:27:56,138 - WARNING - No classification rule found for extension '.pdf' (document ID: 46)
+2025-01-08 21:27:56,138 - INFO - Successfully classified document ID: 46
+2025-01-08 21:27:56,138 - INFO - Attempting to classify document ID: 47, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 100424.pdf
+2025-01-08 21:27:56,138 - WARNING - No classification rule found for extension '.pdf' (document ID: 47)
+2025-01-08 21:27:56,138 - INFO - Successfully classified document ID: 47
+2025-01-08 21:27:56,139 - INFO - Attempting to classify document ID: 48, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 102524.pdf
+2025-01-08 21:27:56,139 - WARNING - No classification rule found for extension '.pdf' (document ID: 48)
+2025-01-08 21:27:56,139 - INFO - Successfully classified document ID: 48
+2025-01-08 21:27:56,139 - INFO - Attempting to classify document ID: 49, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110124.pdf
+2025-01-08 21:27:56,139 - WARNING - No classification rule found for extension '.pdf' (document ID: 49)
+2025-01-08 21:27:56,139 - INFO - Successfully classified document ID: 49
+2025-01-08 21:27:56,139 - INFO - Attempting to classify document ID: 50, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110824.pdf
+2025-01-08 21:27:56,139 - WARNING - No classification rule found for extension '.pdf' (document ID: 50)
+2025-01-08 21:27:56,139 - INFO - Successfully classified document ID: 50
+2025-01-08 21:27:56,139 - INFO - Attempting to classify document ID: 51, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 111524 (1).pdf
+2025-01-08 21:27:56,139 - WARNING - No classification rule found for extension '.pdf' (document ID: 51)
+2025-01-08 21:27:56,139 - INFO - Successfully classified document ID: 51
+2025-01-08 21:27:56,141 - INFO - Updated document index saved successfully.
