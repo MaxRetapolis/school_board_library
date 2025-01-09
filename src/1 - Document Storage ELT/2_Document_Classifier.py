@@ -16,7 +16,6 @@ from odf.opendocument import load  # Import odfpy for ODT processing
 from odf.text import P  # Import odfpy text elements
 from odf.draw import Image as ODFImage  # Import odfpy image elements
 from odf.table import Table  # Import odfpy table elements
-from concurrent.futures import ThreadPoolExecutor, as_completed  # Import for parallel processing
 
 # --- Configuration ---
 ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
@@ -421,11 +420,14 @@ def move_to_classified_folder(doc_id, doc_data, classified_folder):
 # --- Main Classification Logic ---
 def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index):
     """Classifies a document based on the decision tree."""
-    filepath = doc_data["filepath"]
+    # Log the start of classification attempt
+    logging.info(f"Attempting to classify document ID: {doc_id}, Filepath: {filepath}")
+
     extension = get_file_extension(filepath)
 
     if extension not in decision_tree:
-        logging.warning(f"No classification rule found for extension '{extension}' (document ID: {doc_id})")
+        outcome = f"No classification rule found for extension '{extension}'"
+        logging.warning(f"{outcome} (document ID: {doc_id})")
         return
 
     primary_classification = decision_tree[extension]["primary"]
@@ -455,39 +457,32 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     index[doc_id]["document_type"] = document_type
     logging.info(f"Document {doc_id} classified as: {document_type}")
 
+    # Log the classification outcome
+    logging.info(f"Completed classification for document ID: {doc_id}, Outcome: {document_type}")
+
     # Update classification combinations
     update_classification_combinations(primary_classification, secondary_classifications)
 
     # Move document to classified folder
     move_to_classified_folder(doc_id, doc_data, CLASSIFIED_FOLDER)
 
-def classify_documents_concurrently(index, decision_tree, use_case_to_function):
-    """Classifies documents in parallel using ThreadPoolExecutor."""
+    # Log the movement outcome
+    logging.info(f"Document ID: {doc_id} moved to Classified folder as: {document_type}")
+
+def classify_documents_sequentially(index, decision_tree, use_case_to_function):
+    """Classifies documents one at a time sequentially."""
     documents_to_classify = [
         (doc_id, doc_data) 
         for doc_id, doc_data in index.items() 
         if doc_data["status"] == "In_Processing"
     ]
 
-    with ThreadPoolExecutor(max_workers=5) as executor:
-        future_to_doc = {
-            executor.submit(
-                classify_document, 
-                doc_id, 
-                doc_data, 
-                decision_tree, 
-                use_case_to_function, 
-                index
-            ): doc_id for doc_id, doc_data in documents_to_classify
-        }
-
-        for future in as_completed(future_to_doc):
-            doc_id = future_to_doc[future]
-            try:
-                future.result()
-                logging.info(f"Successfully classified document ID: {doc_id}")
-            except Exception as e:
-                logging.error(f"Error classifying document ID {doc_id}: {e}")
+    for doc_id, doc_data in documents_to_classify:
+        try:
+            classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index)
+            logging.info(f"Successfully classified document ID: {doc_id}")
+        except Exception as e:
+            logging.error(f"Error classifying document ID {doc_id}: {e}")
 
 # --- Main Execution ---
 if __name__ == "__main__":
@@ -524,8 +519,8 @@ if __name__ == "__main__":
         logging.error(f"Error loading document index: {e}")
         exit(1)  # Exit if document index loading failed
 
-    # Classify documents in the In_Processing folder concurrently
-    classify_documents_concurrently(index, decision_tree, use_case_to_function)
+    # Classify documents in the In_Processing folder sequentially
+    classify_documents_sequentially(index, decision_tree, use_case_to_function)
 
     # Save the updated document index
     try:
