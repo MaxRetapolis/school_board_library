@@ -2,6 +2,12 @@ import json
 import logging
 import os
 import shutil  # Import shutil for moving files
+import fitz  # Import PyMuPDF for PDF processing
+import tabula  # Import tabula-py for table extraction
+from docx import Document as DocxDocument  # Import python-docx for DOCX processing
+from PIL import Image  # Import Pillow for image processing
+from pptx import Presentation  # Import python-pptx for PPTX processing
+import pandas as pd  # Import pandas for CSV and Excel processing
 
 # --- Configuration ---
 ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
@@ -27,63 +33,172 @@ def load_decision_tree(filepath):
         logging.error(f"Error loading decision tree: {e}")
         return None
 
-# Placeholder classification functions
+# Classification functions
 def classify_pdf_for_text(filepath):
-    """Placeholder for PDF text classification."""
-    # Implement logic to check if PDF contains text using PyMuPDF or pdfminer.six
-    # For now, just return True
-    return True  
+    """Classifies a PDF document to check if it contains text."""
+    try:
+        doc = fitz.open(filepath)
+        for page_num in range(len(doc)):
+            page = doc.load_page(page_num)
+            text = page.get_text()
+            if text.strip():  # Check if the extracted text is non-empty
+                return True
+        return False
+    except Exception as e:
+        logging.error(f"Error classifying PDF for text: {e}")
+        return False
 
 def classify_pdf_for_images(filepath):
-    """Placeholder for PDF image classification."""
-    # Implement logic to check if PDF contains images using PyMuPDF
-    # For now, just return True
-    return True
+    """Classifies a PDF document to check if it contains images."""
+    try:
+        doc = fitz.open(filepath)
+        for page_num in range(len(doc)):
+            page = doc.load_page(page_num)
+            images = page.get_images(full=True)
+            if images:  # Check if any images are found
+                return True
+        return False
+    except Exception as e:
+        logging.error(f"Error classifying PDF for images: {e}")
+        return False
 
 def classify_pdf_for_tables(filepath):
-    """Placeholder for PDF table classification."""
-    # Implement logic to check if PDF contains tables using tabula-py
-    # For now, just return False
-    return False
+    """Classifies a PDF document to check if it contains tables."""
+    try:
+        tables = tabula.read_pdf(filepath, pages='all', multiple_tables=True)
+        if tables:  # Check if any tables are found
+            return True
+        return False
+    except Exception as e:
+        logging.error(f"Error classifying PDF for tables: {e}")
+        return False
 
 def classify_docx_document(filepath):
-    """Placeholder for DOCX classification."""
-    # Implement logic to analyze DOCX structure using python-docx
-    # For now, return a default value
-    return "DOCX-Text-Only"  
+    """Classifies a DOCX document to analyze its structure."""
+    try:
+        doc = DocxDocument(filepath)
+        has_text = False
+        has_images = False
+        has_tables = False
+
+        for paragraph in doc.paragraphs:
+            if paragraph.text.strip():
+                has_text = True
+                break
+
+        for rel in doc.part.rels.values():
+            if "image" in rel.target_ref:
+                has_images = True
+                break
+
+        if doc.tables:
+            has_tables = True
+
+        if has_text and has_images and has_tables:
+            return "DOCX-Text-with-Images-and-Tables"
+        elif has_text and has_images:
+            return "DOCX-Text-with-Images"
+        elif has_text and has_tables:
+            return "DOCX-Text-with-Tables"
+        elif has_text:
+            return "DOCX-Text-Only"
+        else:
+            return "DOCX-Unknown"
+    except Exception as e:
+        logging.error(f"Error classifying DOCX document: {e}")
+        return "DOCX-Unknown"
 
 def classify_image_document(filepath):
-    """Placeholder for image classification."""
-    # Implement logic for basic image analysis
-    # For now, just return the default value
-    return "Image-Only"
+    """Classifies an image document to analyze its content."""
+    try:
+        with Image.open(filepath) as img:
+            format = img.format
+            size = img.size
+            mode = img.mode
+            return f"Image-{format}-{size[0]}x{size[1]}-{mode}"
+    except Exception as e:
+        logging.error(f"Error classifying image document: {e}")
+        return "Image-Unknown"
 
 def classify_tiff_as_multipage(filepath):
-    """Placeholder for TIFF multipage check."""
-    # Implement logic to check if TIFF is multipage
-    # For now, just return False
-    return False
+    """Classifies a TIFF document to check if it is multipage."""
+    try:
+        with Image.open(filepath) as img:
+            if getattr(img, "n_frames", 1) > 1:  # Check if the TIFF has multiple frames
+                return True
+        return False
+    except Exception as e:
+        logging.error(f"Error classifying TIFF as multipage: {e}")
+        return False
 
 def classify_pptx_document(filepath):
-    """Placeholder for PPTX classification."""
-    # Implement logic to extract text and images from PPTX using python-pptx
-    # For now, return a default value
-    return "PPTX-Text-Only"
+    """Classifies a PPTX document to analyze its structure."""
+    try:
+        presentation = Presentation(filepath)
+        has_text = False
+        has_images = False
+
+        for slide in presentation.slides:
+            for shape in slide.shapes:
+                if hasattr(shape, "text") and shape.text.strip():
+                    has_text = True
+                if shape.shape_type == 13:  # Shape type 13 corresponds to pictures
+                    has_images = True
+
+        if has_text and has_images:
+            return "PPTX-Text-with-Images"
+        elif has_text:
+            return "PPTX-Text-Only"
+        elif has_images:
+            return "PPTX-Image-Only"
+        else:
+            return "PPTX-Unknown"
+    except Exception as e:
+        logging.error(f"Error classifying PPTX document: {e}")
+        return "PPTX-Unknown"
 
 def classify_text_document(filepath):
-    """Placeholder for TXT classification."""
-    # Implement logic to analyze plain text content
-    return "Text-Only"
+    """Classifies a TXT document to analyze its content."""
+    try:
+        with open(filepath, "r", encoding="utf-8") as file:
+            content = file.read()
+            if content.strip():  # Check if the text content is non-empty
+                return "Text-Only"
+            else:
+                return "Text-Empty"
+    except Exception as e:
+        logging.error(f"Error classifying TXT document: {e}")
+        return "Text-Unknown"
 
 def classify_csv_document(filepath):
-    """Placeholder for CSV classification."""
-    # Implement logic to analyze CSV structure
-    return "Text-Only"
+    """Classifies a CSV document to analyze its structure."""
+    try:
+        df = pd.read_csv(filepath)
+        if not df.empty:  # Check if the DataFrame is not empty
+            return "Table-Only"
+        else:
+            return "Table-Empty"
+    except Exception as e:
+        logging.error(f"Error classifying CSV document: {e}")
+        return "Table-Unknown"
 
 def classify_excel_document(filepath):
-    """Placeholder for XLSX classification."""
-    # Implement logic to analyze XLSX content
-    return "Text-Only"
+    """Classifies an Excel document (XLS/XLSX) to analyze its structure."""
+    try:
+        if filepath.endswith('.xlsx'):
+            df = pd.read_excel(filepath, engine='openpyxl')
+        elif filepath.endswith('.xls'):
+            df = pd.read_excel(filepath, engine='xlrd')
+        else:
+            return "Table-Unknown"
+
+        if not df.empty:  # Check if the DataFrame is not empty
+            return "Table-Only"
+        else:
+            return "Table-Empty"
+    except Exception as e:
+        logging.error(f"Error classifying Excel document: {e}")
+        return "Table-Unknown"
 
 def classify_rtf_document(filepath):
     """Placeholder for RTF classification."""
@@ -168,8 +283,8 @@ def determine_document_type(doc_id, index, primary_classification):
         else:
             return "PPTX-Unknown"
 
-    # Handling for TXT, VTT, VRT, CSV, XLSX, RTF, HTML, XML, ZIP, ODT documents
-    elif primary_classification in ("TXT", "VTT", "VRT", "CSV", "XLSX", "RTF", "HTML", "XML", "ZIP", "ODT"):
+    # Handling for TXT, VTT, VRT, CSV, XLS, XLSX, RTF, HTML, XML, ZIP, ODT documents
+    elif primary_classification in ("TXT", "VTT", "VRT", "CSV", "XLS", "XLSX", "RTF", "HTML", "XML", "ZIP", "ODT"):
         return "Text-Only"
 
     # Default to primary classification if no specific logic is defined
