@@ -16,6 +16,7 @@ from odf.opendocument import load  # Import odfpy for ODT processing
 from odf.text import P  # Import odfpy text elements
 from odf.draw import Image as ODFImage  # Import odfpy image elements
 from odf.table import Table  # Import odfpy table elements
+from concurrent.futures import ThreadPoolExecutor, as_completed  # Import for parallel processing
 
 # --- Configuration ---
 ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
@@ -460,6 +461,34 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     # Move document to classified folder
     move_to_classified_folder(doc_id, doc_data, CLASSIFIED_FOLDER)
 
+def classify_documents_concurrently(index, decision_tree, use_case_to_function):
+    """Classifies documents in parallel using ThreadPoolExecutor."""
+    documents_to_classify = [
+        (doc_id, doc_data) 
+        for doc_id, doc_data in index.items() 
+        if doc_data["status"] == "In_Processing"
+    ]
+
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        future_to_doc = {
+            executor.submit(
+                classify_document, 
+                doc_id, 
+                doc_data, 
+                decision_tree, 
+                use_case_to_function, 
+                index
+            ): doc_id for doc_id, doc_data in documents_to_classify
+        }
+
+        for future in as_completed(future_to_doc):
+            doc_id = future_to_doc[future]
+            try:
+                future.result()
+                logging.info(f"Successfully classified document ID: {doc_id}")
+            except Exception as e:
+                logging.error(f"Error classifying document ID {doc_id}: {e}")
+
 # --- Main Execution ---
 if __name__ == "__main__":
     # Load the decision tree
@@ -495,10 +524,8 @@ if __name__ == "__main__":
         logging.error(f"Error loading document index: {e}")
         exit(1)  # Exit if document index loading failed
 
-    # Classify documents in the In_Processing folder
-    for doc_id, doc_data in index.items():
-        if doc_data["status"] == "In_Processing":
-            classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index)
+    # Classify documents in the In_Processing folder concurrently
+    classify_documents_concurrently(index, decision_tree, use_case_to_function)
 
     # Save the updated document index
     try:

@@ -1,16 +1,17 @@
 import os
 import hashlib  # Import hashlib for hashing document contents
-# Ensure the directory for the log file exists
-ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
-LOGS_FOLDER = os.path.join(os.path.dirname(ROOT_FOLDER), "logs")
-os.makedirs(LOGS_FOLDER, exist_ok=True)
-LOG_FILE = os.path.join(LOGS_FOLDER, "document_pipeline.log")
-
 import json
 import shutil
 import datetime
 import logging
 import uuid
+from helpers import move_file, get_file_extension  # Import helper functions
+
+# Ensure the directory for the log file exists
+ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
+LOGS_FOLDER = os.path.join(os.path.dirname(ROOT_FOLDER), "logs")
+os.makedirs(LOGS_FOLDER, exist_ok=True)
+LOG_FILE = os.path.join(LOGS_FOLDER, "document_pipeline.log")
 
 # --- Configuration ---
 DEFAULT_FOLDERS = {
@@ -149,13 +150,10 @@ def move_to_classified_folder(doc_id, doc_data, classified_folder):
     destination_folder = os.path.join(classified_folder, document_type)
     os.makedirs(destination_folder, exist_ok=True)
     new_filepath = os.path.join(destination_folder, os.path.basename(doc_data["filepath"]))
-    try:
-        shutil.move(doc_data["filepath"], new_filepath)
-        doc_data["filepath"] = new_filepath
-        doc_data["status"] = "Classified"
-        logging.info(f"Moved document {doc_id} to {destination_folder}")
-    except Exception as e:
-        logging.error(f"Error moving document {doc_id} to {destination_folder}: {e}")
+    move_file(doc_data["filepath"], new_filepath)
+    doc_data["filepath"] = new_filepath
+    doc_data["status"] = "Classified"
+    logging.info(f"Moved document {doc_id} to {destination_folder}")
 
 # --- Main Processing Logic ---
 def process_documents():
