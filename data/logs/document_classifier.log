@@ -128,3 +128,4 @@
 2025-01-08 21:27:56,139 - WARNING - No classification rule found for extension '.pdf' (document ID: 51)
 2025-01-08 21:27:56,139 - INFO - Successfully classified document ID: 51
 2025-01-08 21:27:56,141 - INFO - Updated document index saved successfully.
+2025-01-08 21:45:36,465 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json

@@ -271,6 +271,19 @@ def classify_xml_document(filepath):
         logging.error(f"Error classifying XML document: {e}")
         return "XML-Unknown"
 
+def classify_vtt_document(filepath):
+    """Classifies a VTT document to analyze its content."""
+    try:
+        with open(filepath, "r", encoding="utf-8") as file:
+            content = file.read()
+            if content.strip():  # Check if the text content is non-empty
+                return "VTT-Text-Only"
+            else:
+                return "VTT-Text-Empty"
+    except Exception as e:
+        logging.error(f"Error classifying VTT document: {e}")
+        return "VTT-Unknown"
+
 def classify_zip_contents(filepath):
     """Classifies a ZIP document to analyze its content."""
     try:
@@ -351,17 +364,16 @@ def determine_document_type(doc_id, index, primary_classification):
 
     # Handling for PDF documents
     if primary_classification == "PDF":
-        if metadata.get("classify_pdf_for_text"):
-            if metadata.get("classify_pdf_for_images"):
-                return "Text-with-Images" if not metadata.get("classify_pdf_for_tables") else "Text-with-Images-and-Tables"
-            elif metadata.get("classify_pdf_for_tables"):
-                return "Text-with-Tables"
-            else:
-                return "Text-Only"
-        elif metadata.get("classify_pdf_for_images"):
-            return "Image-Only"
-        else:
-            return "PDF-Unknown"
+        classifications = []
+        if metadata.get("extract_text_from_pdf"):
+            classifications.append("Text")
+        if metadata.get("detect_images_in_pdf"):
+            classifications.append("Images")
+        if metadata.get("detect_tables_in_pdf"):
+            classifications.append("Tables")
+
+        document_type = "PDF-" + "-".join(classifications) if classifications else "PDF-Unknown"
+        return document_type
 
     # Handling for DOCX documents
     elif primary_classification == "DOCX":
@@ -414,13 +426,19 @@ def move_to_classified_folder(doc_id, doc_data, classified_folder):
     """Moves the document to the classified folder based on its document type."""
     document_type = doc_data["document_type"]
     destination_folder = os.path.join(classified_folder, document_type)
-    os.makedirs(destination_folder, exist_ok=True)
-    new_filepath = os.path.join(destination_folder, os.path.basename(doc_data["filepath"]))
     try:
+        # Check if destination_folder exists before attempting to create
+        if not os.path.exists(destination_folder):
+            os.makedirs(destination_folder, exist_ok=True)
+            logging.info(f"Created Classified subfolder: {destination_folder}")
+        else:
+            logging.debug(f"Classified subfolder already exists: {destination_folder}")
+
+        new_filepath = os.path.join(destination_folder, os.path.basename(doc_data["filepath"]))
         shutil.move(doc_data["filepath"], new_filepath)
         doc_data["filepath"] = new_filepath
         doc_data["status"] = "Classified"
-        logging.info(f"Moved document {doc_id} to {destination_folder}")
+        logging.info(f"Moved document {doc_id} to {destination_folder} with type: {document_type}")
     except Exception as e:
         logging.error(f"Error moving document {doc_id} to {destination_folder}: {e}")
 
@@ -454,10 +472,10 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
                 if isinstance(result, list):
                     for item in result:
                         index[doc_id]["metadata"][use_case] = item
-                        secondary_classifications.append(use_case)
+                        secondary_classifications.append(item)  # Append the classification result
                 else:
                     index[doc_id]["metadata"][use_case] = result
-                    secondary_classifications.append(use_case)
+                    secondary_classifications.append(result)  # Append the classification result
                 logging.info(f"Use case '{use_case}' returned: {result}")
 
     # Determine final document type
@@ -465,16 +483,15 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     index[doc_id]["document_type"] = document_type
     logging.info(f"Document {doc_id} classified as: {document_type}")
 
-    # Log the classification outcome
+    # Log the classification outcome with detailed information
     logging.info(f"Completed classification for document ID: {doc_id}, Outcome: {document_type}")
 
     # Update classification combinations
     update_classification_combinations(primary_classification, secondary_classifications)
+    logging.info(f"Classification combinations updated for document ID: {doc_id} with: {secondary_classifications}")
 
     # Move document to classified folder
     move_to_classified_folder(doc_id, doc_data, CLASSIFIED_FOLDER)
-
-    # Log the movement outcome
     logging.info(f"Document ID: {doc_id} moved to Classified folder as: {document_type}")
 
 def classify_documents_sequentially(index, decision_tree, use_case_to_function):
@@ -488,7 +505,7 @@ def classify_documents_sequentially(index, decision_tree, use_case_to_function):
     for doc_id, doc_data in documents_to_classify:
         try:
             classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index)
-            logging.info(f"Successfully classified document ID: {doc_id}")
+            logging.info(f"Successfully classified document ID: {doc_id} with type: {doc_data['document_type']}")
         except Exception as e:
             logging.error(f"Error classifying document ID {doc_id}: {e}")
 
@@ -497,6 +514,7 @@ if __name__ == "__main__":
     # Load the decision tree
     decision_tree = load_decision_tree("classification_decision_tree.json")
     if not decision_tree:
+        logging.error("Decision tree loading failed. Exiting.")
         exit(1)  # Exit if decision tree loading failed
 
     # Mapping of use cases to classification functions
@@ -504,7 +522,7 @@ if __name__ == "__main__":
         "extract_text_from_pdf": classify_pdf_for_text,
         "detect_images_in_pdf": classify_pdf_for_images,
         "detect_tables_in_pdf": classify_pdf_for_tables,
-        "analyze_docx_structure": classify_docx_document,
+        "analyze_vtt_content": classify_vtt_document,  # Add classification function for VTT files
         "analyze_doc_structure": classify_doc_document,
         "analyze_image_content": classify_image_document,
         "analyze_tiff_for_multi_page": classify_tiff_as_multipage,
@@ -524,9 +542,21 @@ if __name__ == "__main__":
     try:
         with open(INDEX_FILE, "r") as f:
             index = json.load(f)
+        logging.info(f"Document index loaded from {INDEX_FILE}")
     except Exception as e:
         logging.error(f"Error loading document index: {e}")
         exit(1)  # Exit if document index loading failed
+
+    # Ensure Classified folder exists
+    if not os.path.exists(CLASSIFIED_FOLDER):
+        try:
+            os.makedirs(CLASSIFIED_FOLDER, exist_ok=True)
+            logging.info(f"Created Classified folder: {CLASSIFIED_FOLDER}")
+        except Exception as e:
+            logging.error(f"Error creating Classified folder: {e}")
+            exit(1)  # Exit if Classified folder creation failed
+    else:
+        logging.debug(f"Classified folder already exists: {CLASSIFIED_FOLDER}")
 
     # Classify documents in the In_Processing folder sequentially
     classify_documents_sequentially(index, decision_tree, use_case_to_function)
