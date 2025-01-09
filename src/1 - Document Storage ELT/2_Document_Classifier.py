@@ -8,12 +8,14 @@ from docx import Document as DocxDocument  # Import python-docx for DOCX process
 from PIL import Image  # Import Pillow for image processing
 from pptx import Presentation  # Import python-pptx for PPTX processing
 import pandas as pd  # Import pandas for CSV and Excel processing
+import pypandoc  # Import pypandoc for RTF processing
 
 # --- Configuration ---
 ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
 INDEX_FILE = os.path.join(ROOT_FOLDER, "documents_index.json")  # Ensure index file is in the documents folder
 IN_PROCESSING_FOLDER = os.path.join(ROOT_FOLDER, "In_Processing")  # Folder for documents in processing
 CLASSIFIED_FOLDER = os.path.join(ROOT_FOLDER, "Classified")  # Folder for classified documents
+COMBINATIONS_FILE = os.path.join(ROOT_FOLDER, "classification_combinations.json")  # File to store classification combinations
 
 # --- Logging Setup ---
 LOGS_FOLDER = os.path.join(os.path.dirname(ROOT_FOLDER), "logs")
@@ -201,9 +203,16 @@ def classify_excel_document(filepath):
         return "Table-Unknown"
 
 def classify_rtf_document(filepath):
-    """Placeholder for RTF classification."""
-    # Implement logic to analyze RTF content
-    return "Text-Only"
+    """Classifies an RTF document to analyze its content."""
+    try:
+        content = pypandoc.convert_file(filepath, 'plain')
+        if content.strip():  # Check if the text content is non-empty
+            return "Text-Only"
+        else:
+            return "Text-Empty"
+    except Exception as e:
+        logging.error(f"Error classifying RTF document: {e}")
+        return "Text-Unknown"
 
 def classify_html_document(filepath):
     """Placeholder for HTML classification."""
@@ -224,6 +233,28 @@ def classify_odt_document(filepath):
     """Placeholder for ODT classification."""
     # Implement logic to analyze ODT content
     return "Text-Only"
+
+def update_classification_combinations(primary_classification, secondary_classifications):
+    """Updates the classification combinations file with new combinations."""
+    try:
+        if os.path.exists(COMBINATIONS_FILE):
+            with open(COMBINATIONS_FILE, "r") as f:
+                combinations = json.load(f)
+        else:
+            combinations = []
+
+        new_combination = {
+            "primary_classification": primary_classification,
+            "secondary_classifications": secondary_classifications
+        }
+
+        if new_combination not in combinations:
+            combinations.append(new_combination)
+            with open(COMBINATIONS_FILE, "w") as f:
+                json.dump(combinations, f, indent=4)
+            logging.info(f"Updated classification combinations with: {new_combination}")
+    except Exception as e:
+        logging.error(f"Error updating classification combinations: {e}")
 
 # --- Helper Functions ---
 def get_file_extension(filepath):
@@ -320,6 +351,7 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     index[doc_id]["metadata"]["document_type"] = primary_classification
 
     secondary_use_cases = decision_tree[extension]["secondary"]["use_cases"]
+    secondary_classifications = []
 
     # Execute use cases in order
     for use_case in secondary_use_cases:
@@ -330,14 +362,19 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
                 if isinstance(result, list):
                     for item in result:
                         index[doc_id]["metadata"][use_case] = item
+                        secondary_classifications.append(use_case)
                 else:
                     index[doc_id]["metadata"][use_case] = result
+                    secondary_classifications.append(use_case)
                 logging.info(f"Use case '{use_case}' returned: {result}")
 
     # Determine final document type
     document_type = determine_document_type(doc_id, index, primary_classification)
     index[doc_id]["document_type"] = document_type
     logging.info(f"Document {doc_id} classified as: {document_type}")
+
+    # Update classification combinations
+    update_classification_combinations(primary_classification, secondary_classifications)
 
     # Move document to classified folder
     move_to_classified_folder(doc_id, doc_data, CLASSIFIED_FOLDER)

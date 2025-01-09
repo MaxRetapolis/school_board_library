@@ -77,6 +77,12 @@
             "use_cases": ["analyze_xlsx_content"]
         }
     },
+    "xls": {
+        "primary": "XLS",
+        "secondary": {
+            "use_cases": ["analyze_xlsx_content"]
+        }
+    },
     "rtf": {
         "primary": "RTF",
         "secondary": {
