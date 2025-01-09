@@ -37,6 +37,7 @@ def load_decision_tree(filepath):
     try:
         with open(filepath, "r") as f:
             decision_tree = json.load(f)
+        logging.info(f"Decision tree loaded from {filepath}")
         return decision_tree
     except Exception as e:
         logging.error(f"Error loading decision tree: {e}")
