@@ -9,6 +9,8 @@ from PIL import Image  # Import Pillow for image processing
 from pptx import Presentation  # Import python-pptx for PPTX processing
 import pandas as pd  # Import pandas for CSV and Excel processing
 import pypandoc  # Import pypandoc for RTF processing
+from bs4 import BeautifulSoup  # Import BeautifulSoup for HTML processing
+import xml.etree.ElementTree as ET  # Import ElementTree for XML processing
 
 # --- Configuration ---
 ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
@@ -215,14 +217,42 @@ def classify_rtf_document(filepath):
         return "Text-Unknown"
 
 def classify_html_document(filepath):
-    """Placeholder for HTML classification."""
-    # Implement logic to analyze HTML content
-    return "Text-Only"
+    """Classifies an HTML document to analyze its content."""
+    try:
+        with open(filepath, "r", encoding="utf-8") as file:
+            soup = BeautifulSoup(file, "html.parser")
+            has_text = bool(soup.get_text(strip=True))
+            has_images = bool(soup.find_all("img"))
+            if has_text and has_images:
+                return "HTML-Text-with-Images"
+            elif has_text:
+                return "HTML-Text-Only"
+            elif has_images:
+                return "HTML-Image-Only"
+            else:
+                return "HTML-Unknown"
+    except Exception as e:
+        logging.error(f"Error classifying HTML document: {e}")
+        return "HTML-Unknown"
 
 def classify_xml_document(filepath):
-    """Placeholder for XML classification."""
-    # Implement logic to analyze XML content
-    return "Text-Only"
+    """Classifies an XML document to analyze its content."""
+    try:
+        tree = ET.parse(filepath)
+        root = tree.getroot()
+        has_text = bool(root.text.strip() if root.text else False)
+        has_elements = bool(root.findall(".//*"))
+        if has_text and has_elements:
+            return "XML-Text-with-Elements"
+        elif has_text:
+            return "XML-Text-Only"
+        elif has_elements:
+            return "XML-Elements-Only"
+        else:
+            return "XML-Unknown"
+    except Exception as e:
+        logging.error(f"Error classifying XML document: {e}")
+        return "XML-Unknown"
 
 def classify_zip_contents(filepath):
     """Placeholder for ZIP classification."""
