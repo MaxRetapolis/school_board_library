@@ -1,0 +1,31 @@
+[
+    {
+        "primary_classification": "PDF",
+        "secondary_classifications": [
+            "Text",
+            "Images"
+        ]
+    },
+    {
+        "primary_classification": "VTT",
+        "secondary_classifications": [
+            "VTT-Text-Only"
+        ]
+    },
+    {
+        "primary_classification": "PDF",
+        "secondary_classifications": [
+            "Images"
+        ]
+    },
+    {
+        "primary_classification": "PDF",
+        "secondary_classifications": []
+    },
+    {
+        "primary_classification": "PDF",
+        "secondary_classifications": [
+            "Text"
+        ]
+    }
+]

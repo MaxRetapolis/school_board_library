@@ -144,13 +144,5 @@
                 "analyze_odt_structure"
             ]
         }
-    },
-    "vtt": {
-        "primary": "VTT",
-        "secondary": {
-            "use_cases": [
-                "analyze_vtt_content"
-            ]
-        }
     }
 }

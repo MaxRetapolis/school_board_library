@@ -1,3 +1,37 @@
+# School Board Library Document Management
+
+## Overview
+This project manages the storage, classification, and maintenance of documents for the school board library. It processes various document types, classifies them based on their content, and organizes them into designated folders.
+
+## Configuration
+All configuration settings are centralized in the [`config.py`](./config.py) file. Ensure that this file is properly set up before running the scripts.
+
+## Modules
+- `1_inbound_documents.py`: Handles the ingestion and initial processing of new documents.
+- `2_Document_Classifier.py`: Classifies documents based on their content and moves them to appropriate folders.
+- `file_operations.py`: Contains functions for file manipulation.
+- `index_management.py`: Manages the document index.
+- `logging_setup.py`: Configures logging for the application.
+- `utils.py`: Provides utility functions used across the project.
+
+## Setup
+1. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+2. Configure the `config.py` with appropriate paths and settings.
+3. Run the scripts as needed:
+    ```bash
+    python 1_inbound_documents.py
+    python 2_Document_Classifier.py
+    ```
+
+## Logging
+Logs are stored in the `logs` folder as specified in the `config.py`. Check these logs for detailed information about the operations and any errors encountered.
+
+## License
+This project is licensed under the MIT License.
+
 # Document Storage ELT Process: Building Blocks and High-Level Flow
 
 This document outlines the key components and workflow of a modular and observable ELT (Extract, Load, Transform) pipeline for document storage.

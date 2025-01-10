@@ -1,36 +1,36 @@
 {
-    "0": {
-        "document_id": 0,
-        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\Duplicates\\081324 BOARD BUZZ.pdf",
+    "0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d": {
+        "document_id": "0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d",
+        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\081324 BOARD BUZZ.pdf",
         "filename": "081324 BOARD BUZZ.pdf",
         "extension": ".pdf",
         "size": 128231,
         "hash": "0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d",
-        "status": "Duplicates",
+        "status": "In_Processing",
         "metadata": {}
     },
-    "1": {
-        "document_id": 1,
-        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\Duplicates\\082724 BOARD BUZZ.pdf",
+    "5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e": {
+        "document_id": "5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e",
+        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\082724 BOARD BUZZ.pdf",
         "filename": "082724 BOARD BUZZ.pdf",
         "extension": ".pdf",
         "size": 121216,
         "hash": "5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e",
-        "status": "Duplicates",
+        "status": "In_Processing",
         "metadata": {}
     },
-    "2": {
-        "document_id": 2,
-        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\Duplicates\\091024 BOARD BUZZ.pdf",
+    "dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef": {
+        "document_id": "dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef",
+        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\091024 BOARD BUZZ.pdf",
         "filename": "091024 BOARD BUZZ.pdf",
         "extension": ".pdf",
         "size": 131588,
         "hash": "dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef",
-        "status": "Duplicates",
+        "status": "In_Processing",
         "metadata": {}
     },
-    "3": {
-        "document_id": 3,
+    "63c3240c119e0bcd8564bb452ef8084bd12d3afe1c8c4861b9929e18b1bbdf7a": {
+        "document_id": "63c3240c119e0bcd8564bb452ef8084bd12d3afe1c8c4861b9929e18b1bbdf7a",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\092424 BOARD BUZZ.pdf",
         "filename": "092424 BOARD BUZZ.pdf",
         "extension": ".pdf",
@@ -39,28 +39,28 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "4": {
-        "document_id": 4,
-        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\Duplicates\\10-22-2024.auto_generated_captions.vtt",
+    "7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa": {
+        "document_id": "7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa",
+        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\10-22-2024.auto_generated_captions.vtt",
         "filename": "10-22-2024.auto_generated_captions.vtt",
         "extension": ".vtt",
         "size": 175913,
         "hash": "7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa",
-        "status": "Duplicates",
+        "status": "In_Processing",
         "metadata": {}
     },
-    "5": {
-        "document_id": 5,
-        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\Duplicates\\10-8-2024.auto_generated_captions.vtt",
+    "65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b": {
+        "document_id": "65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b",
+        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\10-8-2024.auto_generated_captions.vtt",
         "filename": "10-8-2024.auto_generated_captions.vtt",
         "extension": ".vtt",
         "size": 347259,
         "hash": "65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b",
-        "status": "Duplicates",
+        "status": "In_Processing",
         "metadata": {}
     },
-    "6": {
-        "document_id": 6,
+    "02b724fce7b8a45382e5d3bc885c31bcf5bcdf6b8b8aca89ce904e87be8c8e2f": {
+        "document_id": "02b724fce7b8a45382e5d3bc885c31bcf5bcdf6b8b8aca89ce904e87be8c8e2f",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\102224 BOARD BUZZ.pdf",
         "filename": "102224 BOARD BUZZ.pdf",
         "extension": ".pdf",
@@ -69,18 +69,18 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "7": {
-        "document_id": 7,
-        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\Duplicates\\11-12-2024.auto_generated_captions.vtt",
+    "7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4": {
+        "document_id": "7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4",
+        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\11-12-2024.auto_generated_captions.vtt",
         "filename": "11-12-2024.auto_generated_captions.vtt",
         "extension": ".vtt",
         "size": 412197,
         "hash": "7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4",
-        "status": "Duplicates",
+        "status": "In_Processing",
         "metadata": {}
     },
-    "8": {
-        "document_id": 8,
+    "a87a05b7329b56662f3f43d182e942a38154b95c1ccc499d491a431cff31aa77": {
+        "document_id": "a87a05b7329b56662f3f43d182e942a38154b95c1ccc499d491a431cff31aa77",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\111224 BOARD BUZZ.pdf",
         "filename": "111224 BOARD BUZZ.pdf",
         "extension": ".pdf",
@@ -89,28 +89,28 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "9": {
-        "document_id": 9,
-        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\Duplicates\\2023-24 Prop 28 Annual Report.pdf",
+    "b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2": {
+        "document_id": "b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2",
+        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\2023-24 Prop 28 Annual Report.pdf",
         "filename": "2023-24 Prop 28 Annual Report.pdf",
         "extension": ".pdf",
         "size": 324499,
         "hash": "b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2",
-        "status": "Duplicates",
+        "status": "In_Processing",
         "metadata": {}
     },
-    "10": {
-        "document_id": 10,
-        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\Duplicates\\2024-25 Prop 28 Presentation.pdf",
+    "430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0": {
+        "document_id": "430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0",
+        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\2024-25 Prop 28 Presentation.pdf",
         "filename": "2024-25 Prop 28 Presentation.pdf",
         "extension": ".pdf",
         "size": 1193803,
         "hash": "430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0",
-        "status": "Duplicates",
+        "status": "In_Processing",
         "metadata": {}
     },
-    "11": {
-        "document_id": 11,
+    "3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103": {
+        "document_id": "3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\7-2-2024.subtitle.webvtt.vtt",
         "filename": "7-2-2024.subtitle.webvtt.vtt",
         "extension": ".vtt",
@@ -119,8 +119,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "12": {
-        "document_id": 12,
+    "9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e": {
+        "document_id": "9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\8-13-2024.subtitle.webvtt.vtt",
         "filename": "8-13-2024.subtitle.webvtt.vtt",
         "extension": ".vtt",
@@ -129,8 +129,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "13": {
-        "document_id": 13,
+    "2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f": {
+        "document_id": "2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\8-27-2024.auto_generated_captions.vtt",
         "filename": "8-27-2024.auto_generated_captions.vtt",
         "extension": ".vtt",
@@ -139,28 +139,28 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "14": {
-        "document_id": 14,
-        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\Duplicates\\9-10-2024.subtitle.webvtt.vtt",
+    "149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa": {
+        "document_id": "149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa",
+        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\9-10-2024.subtitle.webvtt.vtt",
         "filename": "9-10-2024.subtitle.webvtt.vtt",
         "extension": ".vtt",
         "size": 182625,
         "hash": "149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa",
-        "status": "Duplicates",
+        "status": "In_Processing",
         "metadata": {}
     },
-    "15": {
-        "document_id": 15,
-        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\Duplicates\\9-24-2024.subtitle.webvtt.vtt",
+    "147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459": {
+        "document_id": "147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459",
+        "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\9-24-2024.subtitle.webvtt.vtt",
         "filename": "9-24-2024.subtitle.webvtt.vtt",
         "extension": ".vtt",
         "size": 155124,
         "hash": "147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459",
-        "status": "Duplicates",
+        "status": "In_Processing",
         "metadata": {}
     },
-    "16": {
-        "document_id": 16,
+    "3250db99420a0f35508a7c0070246c308ffebed374be8df14d3f386f0f27932c": {
+        "document_id": "3250db99420a0f35508a7c0070246c308ffebed374be8df14d3f386f0f27932c",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf",
         "filename": "Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf",
         "extension": ".pdf",
@@ -169,8 +169,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "17": {
-        "document_id": 17,
+    "be9c43bb8a40b8cd7f10cfce50592c936e111f0e7df271d7ca2dc0ab4dc37c63": {
+        "document_id": "be9c43bb8a40b8cd7f10cfce50592c936e111f0e7df271d7ca2dc0ab4dc37c63",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Meeting Minutes - 1.pdf",
         "filename": "Meeting Minutes - 1.pdf",
         "extension": ".pdf",
@@ -179,8 +179,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "18": {
-        "document_id": 18,
+    "07b69cf201418f5abf9008c7648405871c7f1980f292445cb36498f91e18e802": {
+        "document_id": "07b69cf201418f5abf9008c7648405871c7f1980f292445cb36498f91e18e802",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Meeting Minutes - 2.pdf",
         "filename": "Meeting Minutes - 2.pdf",
         "extension": ".pdf",
@@ -189,8 +189,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "19": {
-        "document_id": 19,
+    "4e355198b027cb3f105e36ea8e6a1ee2a7cb163653150e48cf57e8e510c53891": {
+        "document_id": "4e355198b027cb3f105e36ea8e6a1ee2a7cb163653150e48cf57e8e510c53891",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Meeting Minutes - 3.pdf",
         "filename": "Meeting Minutes - 3.pdf",
         "extension": ".pdf",
@@ -199,8 +199,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "20": {
-        "document_id": 20,
+    "13350d88caafa77e51bc9178d890dad0172b2b2557f3fa40fa0d257da7c9a86b": {
+        "document_id": "13350d88caafa77e51bc9178d890dad0172b2b2557f3fa40fa0d257da7c9a86b",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Meeting Minutes - 4.pdf",
         "filename": "Meeting Minutes - 4.pdf",
         "extension": ".pdf",
@@ -209,8 +209,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "21": {
-        "document_id": 21,
+    "494220dc71a4613384be88693e80a53c11bcd51b0df201a21e2c72d539902b71": {
+        "document_id": "494220dc71a4613384be88693e80a53c11bcd51b0df201a21e2c72d539902b71",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Meeting Minutes - 5.pdf",
         "filename": "Meeting Minutes - 5.pdf",
         "extension": ".pdf",
@@ -219,8 +219,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "22": {
-        "document_id": 22,
+    "9b8121fbf97d378b86d33a57c52dd1fb3cc242f5bdeb3143dd5ecf2a742ce3cd": {
+        "document_id": "9b8121fbf97d378b86d33a57c52dd1fb3cc242f5bdeb3143dd5ecf2a742ce3cd",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Meeting Minutes - 6.pdf",
         "filename": "Meeting Minutes - 6.pdf",
         "extension": ".pdf",
@@ -229,8 +229,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "23": {
-        "document_id": 23,
+    "10743e776f014d3c6275cceaf4986939a696bdd7fdc690e17762357c2339f124": {
+        "document_id": "10743e776f014d3c6275cceaf4986939a696bdd7fdc690e17762357c2339f124",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Meeting Minutes - 7.pdf",
         "filename": "Meeting Minutes - 7.pdf",
         "extension": ".pdf",
@@ -239,8 +239,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "24": {
-        "document_id": 24,
+    "1457637122affe5767665bb789119e30b1ca0d3ac5c322edcdc70dd2938c6e84": {
+        "document_id": "1457637122affe5767665bb789119e30b1ca0d3ac5c322edcdc70dd2938c6e84",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Meeting Minutes - 8.pdf",
         "filename": "Meeting Minutes - 8.pdf",
         "extension": ".pdf",
@@ -249,8 +249,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "25": {
-        "document_id": 25,
+    "0ef85b81d84ef88e25260c5ed70ed49b5938f9669b622008702397001f23e614": {
+        "document_id": "0ef85b81d84ef88e25260c5ed70ed49b5938f9669b622008702397001f23e614",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Regular Meeting of the Board of Trustees-08-13-2024.pdf",
         "filename": "Regular Meeting of the Board of Trustees-08-13-2024.pdf",
         "extension": ".pdf",
@@ -259,8 +259,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "26": {
-        "document_id": 26,
+    "cd93020aa391271b9ecdec9a0b647f5c75a9982568bfd4041342e0d4d4f9d979": {
+        "document_id": "cd93020aa391271b9ecdec9a0b647f5c75a9982568bfd4041342e0d4d4f9d979",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Regular Meeting of the Board of Trustees-08-27-2024.pdf",
         "filename": "Regular Meeting of the Board of Trustees-08-27-2024.pdf",
         "extension": ".pdf",
@@ -269,8 +269,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "27": {
-        "document_id": 27,
+    "cb9021cf86861da128563e0fd56296bbd6b196722be2eafeb6266c72d86b7f6b": {
+        "document_id": "cb9021cf86861da128563e0fd56296bbd6b196722be2eafeb6266c72d86b7f6b",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Regular Meeting of the Board of Trustees-09-10-2024.pdf",
         "filename": "Regular Meeting of the Board of Trustees-09-10-2024.pdf",
         "extension": ".pdf",
@@ -279,8 +279,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "28": {
-        "document_id": 28,
+    "804b99e9bff9be67672f2fe0f6668ce43a34eba9e8be2b50757de398e0030057": {
+        "document_id": "804b99e9bff9be67672f2fe0f6668ce43a34eba9e8be2b50757de398e0030057",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Regular Meeting of the Board of Trustees-09-24-2024.pdf",
         "filename": "Regular Meeting of the Board of Trustees-09-24-2024.pdf",
         "extension": ".pdf",
@@ -289,8 +289,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "29": {
-        "document_id": 29,
+    "667db199644cd9f3f1324a774850e8ce42be0a336e813aae2eb2221e5e540d09": {
+        "document_id": "667db199644cd9f3f1324a774850e8ce42be0a336e813aae2eb2221e5e540d09",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Regular Meeting of the Board of Trustees-10-08-2024.pdf",
         "filename": "Regular Meeting of the Board of Trustees-10-08-2024.pdf",
         "extension": ".pdf",
@@ -299,8 +299,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "30": {
-        "document_id": 30,
+    "10bd1b6341ce51b1e25a74e5d863fe5ef0e9437cdd87509a0e74d008073b3178": {
+        "document_id": "10bd1b6341ce51b1e25a74e5d863fe5ef0e9437cdd87509a0e74d008073b3178",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf",
         "filename": "Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf",
         "extension": ".pdf",
@@ -309,8 +309,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "31": {
-        "document_id": 31,
+    "8af74f6b08729b6990be755284f2b0cad9c2f65488d79d91ff76f2abc15b557d": {
+        "document_id": "8af74f6b08729b6990be755284f2b0cad9c2f65488d79d91ff76f2abc15b557d",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Regular Meeting of the Board of Trustees-10-22-2024.pdf",
         "filename": "Regular Meeting of the Board of Trustees-10-22-2024.pdf",
         "extension": ".pdf",
@@ -319,8 +319,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "32": {
-        "document_id": 32,
+    "e414ca7dfd5b709460abcbe98f2435a3bcc334135ba5962dba0bfc4809b7f450": {
+        "document_id": "e414ca7dfd5b709460abcbe98f2435a3bcc334135ba5962dba0bfc4809b7f450",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf",
         "filename": "Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf",
         "extension": ".pdf",
@@ -329,8 +329,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "33": {
-        "document_id": 33,
+    "40ac2d62ffbef74e24d566484fee9876fad5f98fac13856416041e48936f39d9": {
+        "document_id": "40ac2d62ffbef74e24d566484fee9876fad5f98fac13856416041e48936f39d9",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Regular Meeting of the Board of Trustees-11-12-2024.pdf",
         "filename": "Regular Meeting of the Board of Trustees-11-12-2024.pdf",
         "extension": ".pdf",
@@ -339,8 +339,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "34": {
-        "document_id": 34,
+    "01705b8ab6c128a2faa4d21bfc2906c3ed08289b07cc43c1cfdd01e49bd7a9ff": {
+        "document_id": "01705b8ab6c128a2faa4d21bfc2906c3ed08289b07cc43c1cfdd01e49bd7a9ff",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Shamrock Presentation 9_24_24 (1).pdf",
         "filename": "Shamrock Presentation 9_24_24 (1).pdf",
         "extension": ".pdf",
@@ -349,8 +349,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "35": {
-        "document_id": 35,
+    "cd437bb6cd1a9cbb21af350e17d96610d84ea3908f8ce109e7fdfa9c9001eeaf": {
+        "document_id": "cd437bb6cd1a9cbb21af350e17d96610d84ea3908f8ce109e7fdfa9c9001eeaf",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf",
         "filename": "SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf",
         "extension": ".pdf",
@@ -359,8 +359,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "36": {
-        "document_id": 36,
+    "b3d7339b95fbe3e18008b110a18432c85feb69d08aae8d282c677da2ad42abb9": {
+        "document_id": "b3d7339b95fbe3e18008b110a18432c85feb69d08aae8d282c677da2ad42abb9",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 062824 (1).pdf",
         "filename": "Weekly Community Update - 062824 (1).pdf",
         "extension": ".pdf",
@@ -369,8 +369,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "37": {
-        "document_id": 37,
+    "d3c1d373c0498e5c6c015d2420dc5fe1b600d7ef8f12f1a1e88995a26594ff6a": {
+        "document_id": "d3c1d373c0498e5c6c015d2420dc5fe1b600d7ef8f12f1a1e88995a26594ff6a",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 071224 (1).pdf",
         "filename": "Weekly Community Update - 071224 (1).pdf",
         "extension": ".pdf",
@@ -379,8 +379,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "38": {
-        "document_id": 38,
+    "1091639732a37ee566733304af55d4e3d89de896288d8034180f0bb5478c8854": {
+        "document_id": "1091639732a37ee566733304af55d4e3d89de896288d8034180f0bb5478c8854",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 072624.pdf",
         "filename": "Weekly Community Update - 072624.pdf",
         "extension": ".pdf",
@@ -389,8 +389,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "39": {
-        "document_id": 39,
+    "3d549a4a43a89974324645a0d32ae06f5a8a1fe4bb98472d291030c1de179691": {
+        "document_id": "3d549a4a43a89974324645a0d32ae06f5a8a1fe4bb98472d291030c1de179691",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 080924.pdf",
         "filename": "Weekly Community Update - 080924.pdf",
         "extension": ".pdf",
@@ -399,8 +399,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "40": {
-        "document_id": 40,
+    "5b4446baf8401790c2586b948d7ab9fc4d2b57aad6be270605009e56012c81b1": {
+        "document_id": "5b4446baf8401790c2586b948d7ab9fc4d2b57aad6be270605009e56012c81b1",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 081624.pdf",
         "filename": "Weekly Community Update - 081624.pdf",
         "extension": ".pdf",
@@ -409,8 +409,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "41": {
-        "document_id": 41,
+    "3db8f84919f384408fde8e56f0676a3edcdd910e3ea5ed4ddf20772d47c247af": {
+        "document_id": "3db8f84919f384408fde8e56f0676a3edcdd910e3ea5ed4ddf20772d47c247af",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 082324 (1).pdf",
         "filename": "Weekly Community Update - 082324 (1).pdf",
         "extension": ".pdf",
@@ -419,8 +419,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "42": {
-        "document_id": 42,
+    "3971afd11fefe5351b4771b25f2ead34d9441ff3e5087820fab4e90198363c7c": {
+        "document_id": "3971afd11fefe5351b4771b25f2ead34d9441ff3e5087820fab4e90198363c7c",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 083024 (1).pdf",
         "filename": "Weekly Community Update - 083024 (1).pdf",
         "extension": ".pdf",
@@ -429,8 +429,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "43": {
-        "document_id": 43,
+    "f0f3354717f38ce845f5d4179c4879bd0fe50fa53565336334a43f304d557fb1": {
+        "document_id": "f0f3354717f38ce845f5d4179c4879bd0fe50fa53565336334a43f304d557fb1",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 090624.pdf",
         "filename": "Weekly Community Update - 090624.pdf",
         "extension": ".pdf",
@@ -439,8 +439,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "44": {
-        "document_id": 44,
+    "49ca8831739ef25bbaa20039067f84be173c0680751772aa7f18db41d4918d23": {
+        "document_id": "49ca8831739ef25bbaa20039067f84be173c0680751772aa7f18db41d4918d23",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 091324.pdf",
         "filename": "Weekly Community Update - 091324.pdf",
         "extension": ".pdf",
@@ -449,8 +449,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "45": {
-        "document_id": 45,
+    "b86fc366cde65a6c104495b1186e534cfacf145ab37bba5cd9fe996c37afa6cf": {
+        "document_id": "b86fc366cde65a6c104495b1186e534cfacf145ab37bba5cd9fe996c37afa6cf",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 092024.pdf",
         "filename": "Weekly Community Update - 092024.pdf",
         "extension": ".pdf",
@@ -459,8 +459,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "46": {
-        "document_id": 46,
+    "a0164679562e769b5dabd83972e8664b4f0a71b8dbf390de8681be24828800c3": {
+        "document_id": "a0164679562e769b5dabd83972e8664b4f0a71b8dbf390de8681be24828800c3",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 092724.pdf",
         "filename": "Weekly Community Update - 092724.pdf",
         "extension": ".pdf",
@@ -469,8 +469,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "47": {
-        "document_id": 47,
+    "f7a1f7e7a1a51c70c4050ca47bdaf801129c479cc713f3f096c4e93180cada76": {
+        "document_id": "f7a1f7e7a1a51c70c4050ca47bdaf801129c479cc713f3f096c4e93180cada76",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 100424.pdf",
         "filename": "Weekly Community Update - 100424.pdf",
         "extension": ".pdf",
@@ -479,8 +479,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "48": {
-        "document_id": 48,
+    "ae05cfb3174640cab0fe816d378147d3c6aab3b888b0db8b3ec367614cf5bf90": {
+        "document_id": "ae05cfb3174640cab0fe816d378147d3c6aab3b888b0db8b3ec367614cf5bf90",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 102524.pdf",
         "filename": "Weekly Community Update - 102524.pdf",
         "extension": ".pdf",
@@ -489,8 +489,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "49": {
-        "document_id": 49,
+    "fcf31c4e2c13bb11a9b1e5dc71a8b5a0e0374fd2e7fcb86429d9e882170f71f4": {
+        "document_id": "fcf31c4e2c13bb11a9b1e5dc71a8b5a0e0374fd2e7fcb86429d9e882170f71f4",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 110124.pdf",
         "filename": "Weekly Community Update - 110124.pdf",
         "extension": ".pdf",
@@ -499,8 +499,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "50": {
-        "document_id": 50,
+    "48712573a7379045af34c47384aa5cc9ab525ab0294634447480724a9c7d5735": {
+        "document_id": "48712573a7379045af34c47384aa5cc9ab525ab0294634447480724a9c7d5735",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 110824.pdf",
         "filename": "Weekly Community Update - 110824.pdf",
         "extension": ".pdf",
@@ -509,8 +509,8 @@
         "status": "In_Processing",
         "metadata": {}
     },
-    "51": {
-        "document_id": 51,
+    "83af1fdf062dafb34c9260680b81b9bf5f1344cc914025e29fd470720bf88d32": {
+        "document_id": "83af1fdf062dafb34c9260680b81b9bf5f1344cc914025e29fd470720bf88d32",
         "filepath": "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\In_Processing\\Weekly Community Update - 111524 (1).pdf",
         "filename": "Weekly Community Update - 111524 (1).pdf",
         "extension": ".pdf",

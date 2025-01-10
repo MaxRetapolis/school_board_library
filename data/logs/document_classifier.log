@@ -129,3 +129,1398 @@
 2025-01-08 21:27:56,139 - INFO - Successfully classified document ID: 51
 2025-01-08 21:27:56,141 - INFO - Updated document index saved successfully.
 2025-01-08 21:45:36,465 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-08 21:46:55,334 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-08 21:46:55,334 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-08 21:46:55,335 - INFO - Created Classified folder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
+2025-01-08 21:46:55,335 - INFO - Attempting to classify document ID: 3, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\092424 BOARD BUZZ.pdf
+2025-01-08 21:46:55,361 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:55,362 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:55,563 - WARNING - Error importing jpype dependencies. Fallback to subprocess.
+2025-01-08 21:46:55,563 - WARNING - No module named 'jpype'
+2025-01-08 21:46:55,565 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:55,565 - INFO - Document 3 classified as: PDF-Text-Images
+2025-01-08 21:46:55,565 - INFO - Completed classification for document ID: 3, Outcome: PDF-Text-Images
+2025-01-08 21:46:55,566 - INFO - Updated classification combinations with: {'primary_classification': 'PDF', 'secondary_classifications': [True, True]}
+2025-01-08 21:46:55,566 - INFO - Classification combinations updated for document ID: 3 with: [True, True]
+2025-01-08 21:46:55,566 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-08 21:46:55,571 - INFO - Moved document 3 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:55,571 - INFO - Document ID: 3 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:55,571 - INFO - Successfully classified document ID: 3 with type: PDF-Text-Images
+2025-01-08 21:46:55,571 - INFO - Attempting to classify document ID: 6, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\102224 BOARD BUZZ.pdf
+2025-01-08 21:46:55,580 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:55,581 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:55,585 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:55,585 - INFO - Document 6 classified as: PDF-Text-Images
+2025-01-08 21:46:55,585 - INFO - Completed classification for document ID: 6, Outcome: PDF-Text-Images
+2025-01-08 21:46:55,589 - INFO - Classification combinations updated for document ID: 6 with: [True, True]
+2025-01-08 21:46:55,591 - INFO - Moved document 6 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:55,591 - INFO - Document ID: 6 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:55,591 - INFO - Successfully classified document ID: 6 with type: PDF-Text-Images
+2025-01-08 21:46:55,591 - INFO - Attempting to classify document ID: 8, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\111224 BOARD BUZZ.pdf
+2025-01-08 21:46:55,601 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:55,601 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:55,604 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:55,605 - INFO - Document 8 classified as: PDF-Text-Images
+2025-01-08 21:46:55,605 - INFO - Completed classification for document ID: 8, Outcome: PDF-Text-Images
+2025-01-08 21:46:55,605 - INFO - Classification combinations updated for document ID: 8 with: [True, True]
+2025-01-08 21:46:55,607 - INFO - Moved document 8 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:55,607 - INFO - Document ID: 8 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:55,607 - INFO - Successfully classified document ID: 8 with type: PDF-Text-Images
+2025-01-08 21:46:55,607 - INFO - Attempting to classify document ID: 11, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\7-2-2024.subtitle.webvtt.vtt
+2025-01-08 21:46:55,613 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 21:46:55,614 - INFO - Document 11 classified as: Text-Only
+2025-01-08 21:46:55,614 - INFO - Completed classification for document ID: 11, Outcome: Text-Only
+2025-01-08 21:46:55,614 - INFO - Updated classification combinations with: {'primary_classification': 'VTT', 'secondary_classifications': ['VTT-Text-Only']}
+2025-01-08 21:46:55,615 - INFO - Classification combinations updated for document ID: 11 with: ['VTT-Text-Only']
+2025-01-08 21:46:55,615 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only
+2025-01-08 21:46:55,617 - INFO - Moved document 11 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 21:46:55,618 - INFO - Document ID: 11 moved to Classified folder as: Text-Only
+2025-01-08 21:46:55,618 - INFO - Successfully classified document ID: 11 with type: Text-Only
+2025-01-08 21:46:55,618 - INFO - Attempting to classify document ID: 12, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-13-2024.subtitle.webvtt.vtt
+2025-01-08 21:46:55,623 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 21:46:55,624 - INFO - Document 12 classified as: Text-Only
+2025-01-08 21:46:55,624 - INFO - Completed classification for document ID: 12, Outcome: Text-Only
+2025-01-08 21:46:55,628 - INFO - Classification combinations updated for document ID: 12 with: ['VTT-Text-Only']
+2025-01-08 21:46:55,630 - INFO - Moved document 12 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 21:46:55,630 - INFO - Document ID: 12 moved to Classified folder as: Text-Only
+2025-01-08 21:46:55,630 - INFO - Successfully classified document ID: 12 with type: Text-Only
+2025-01-08 21:46:55,630 - INFO - Attempting to classify document ID: 13, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-27-2024.auto_generated_captions.vtt
+2025-01-08 21:46:55,637 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 21:46:55,637 - INFO - Document 13 classified as: Text-Only
+2025-01-08 21:46:55,637 - INFO - Completed classification for document ID: 13, Outcome: Text-Only
+2025-01-08 21:46:55,637 - INFO - Classification combinations updated for document ID: 13 with: ['VTT-Text-Only']
+2025-01-08 21:46:55,639 - INFO - Moved document 13 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 21:46:55,639 - INFO - Document ID: 13 moved to Classified folder as: Text-Only
+2025-01-08 21:46:55,639 - INFO - Successfully classified document ID: 13 with type: Text-Only
+2025-01-08 21:46:55,639 - INFO - Attempting to classify document ID: 16, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf
+2025-01-08 21:46:55,651 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:55,652 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:55,658 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:55,658 - INFO - Document 16 classified as: PDF-Text-Images
+2025-01-08 21:46:55,658 - INFO - Completed classification for document ID: 16, Outcome: PDF-Text-Images
+2025-01-08 21:46:55,658 - INFO - Classification combinations updated for document ID: 16 with: [True, True]
+2025-01-08 21:46:55,660 - INFO - Moved document 16 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:55,660 - INFO - Document ID: 16 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:55,660 - INFO - Successfully classified document ID: 16 with type: PDF-Text-Images
+2025-01-08 21:46:55,660 - INFO - Attempting to classify document ID: 17, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 1.pdf
+2025-01-08 21:46:55,913 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:55,913 - INFO - Document 17 classified as: PDF-Unknown
+2025-01-08 21:46:55,913 - INFO - Completed classification for document ID: 17, Outcome: PDF-Unknown
+2025-01-08 21:46:55,914 - INFO - Updated classification combinations with: {'primary_classification': 'PDF', 'secondary_classifications': []}
+2025-01-08 21:46:55,914 - INFO - Classification combinations updated for document ID: 17 with: []
+2025-01-08 21:46:55,914 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown
+2025-01-08 21:46:55,917 - INFO - Moved document 17 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:46:55,917 - INFO - Document ID: 17 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:46:55,917 - INFO - Successfully classified document ID: 17 with type: PDF-Unknown
+2025-01-08 21:46:55,917 - INFO - Attempting to classify document ID: 18, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 2.pdf
+2025-01-08 21:46:56,172 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:56,173 - INFO - Document 18 classified as: PDF-Unknown
+2025-01-08 21:46:56,173 - INFO - Completed classification for document ID: 18, Outcome: PDF-Unknown
+2025-01-08 21:46:56,173 - INFO - Classification combinations updated for document ID: 18 with: []
+2025-01-08 21:46:56,175 - INFO - Moved document 18 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:46:56,175 - INFO - Document ID: 18 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:46:56,175 - INFO - Successfully classified document ID: 18 with type: PDF-Unknown
+2025-01-08 21:46:56,175 - INFO - Attempting to classify document ID: 19, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 3.pdf
+2025-01-08 21:46:56,387 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:56,387 - INFO - Document 19 classified as: PDF-Unknown
+2025-01-08 21:46:56,387 - INFO - Completed classification for document ID: 19, Outcome: PDF-Unknown
+2025-01-08 21:46:56,387 - INFO - Classification combinations updated for document ID: 19 with: []
+2025-01-08 21:46:56,389 - INFO - Moved document 19 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:46:56,389 - INFO - Document ID: 19 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:46:56,389 - INFO - Successfully classified document ID: 19 with type: PDF-Unknown
+2025-01-08 21:46:56,389 - INFO - Attempting to classify document ID: 20, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 4.pdf
+2025-01-08 21:46:56,599 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:56,600 - INFO - Document 20 classified as: PDF-Unknown
+2025-01-08 21:46:56,600 - INFO - Completed classification for document ID: 20, Outcome: PDF-Unknown
+2025-01-08 21:46:56,600 - INFO - Classification combinations updated for document ID: 20 with: []
+2025-01-08 21:46:56,603 - INFO - Moved document 20 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:46:56,603 - INFO - Document ID: 20 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:46:56,603 - INFO - Successfully classified document ID: 20 with type: PDF-Unknown
+2025-01-08 21:46:56,603 - INFO - Attempting to classify document ID: 21, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 5.pdf
+2025-01-08 21:46:56,735 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:56,735 - INFO - Document 21 classified as: PDF-Unknown
+2025-01-08 21:46:56,735 - INFO - Completed classification for document ID: 21, Outcome: PDF-Unknown
+2025-01-08 21:46:56,735 - INFO - Classification combinations updated for document ID: 21 with: []
+2025-01-08 21:46:56,737 - INFO - Moved document 21 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:46:56,737 - INFO - Document ID: 21 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:46:56,737 - INFO - Successfully classified document ID: 21 with type: PDF-Unknown
+2025-01-08 21:46:56,737 - INFO - Attempting to classify document ID: 22, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 6.pdf
+2025-01-08 21:46:56,955 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:56,956 - INFO - Document 22 classified as: PDF-Unknown
+2025-01-08 21:46:56,956 - INFO - Completed classification for document ID: 22, Outcome: PDF-Unknown
+2025-01-08 21:46:56,956 - INFO - Classification combinations updated for document ID: 22 with: []
+2025-01-08 21:46:56,958 - INFO - Moved document 22 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:46:56,958 - INFO - Document ID: 22 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:46:56,958 - INFO - Successfully classified document ID: 22 with type: PDF-Unknown
+2025-01-08 21:46:56,958 - INFO - Attempting to classify document ID: 23, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 7.pdf
+2025-01-08 21:46:57,197 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,197 - INFO - Document 23 classified as: PDF-Unknown
+2025-01-08 21:46:57,197 - INFO - Completed classification for document ID: 23, Outcome: PDF-Unknown
+2025-01-08 21:46:57,198 - INFO - Classification combinations updated for document ID: 23 with: []
+2025-01-08 21:46:57,199 - INFO - Moved document 23 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:46:57,199 - INFO - Document ID: 23 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:46:57,200 - INFO - Successfully classified document ID: 23 with type: PDF-Unknown
+2025-01-08 21:46:57,200 - INFO - Attempting to classify document ID: 24, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 8.pdf
+2025-01-08 21:46:57,243 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,243 - INFO - Document 24 classified as: PDF-Unknown
+2025-01-08 21:46:57,243 - INFO - Completed classification for document ID: 24, Outcome: PDF-Unknown
+2025-01-08 21:46:57,244 - INFO - Classification combinations updated for document ID: 24 with: []
+2025-01-08 21:46:57,246 - INFO - Moved document 24 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:46:57,246 - INFO - Document ID: 24 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:46:57,246 - INFO - Successfully classified document ID: 24 with type: PDF-Unknown
+2025-01-08 21:46:57,246 - INFO - Attempting to classify document ID: 25, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-13-2024.pdf
+2025-01-08 21:46:57,255 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,261 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,261 - INFO - Document 25 classified as: PDF-Text
+2025-01-08 21:46:57,261 - INFO - Completed classification for document ID: 25, Outcome: PDF-Text
+2025-01-08 21:46:57,262 - INFO - Updated classification combinations with: {'primary_classification': 'PDF', 'secondary_classifications': [True]}
+2025-01-08 21:46:57,262 - INFO - Classification combinations updated for document ID: 25 with: [True]
+2025-01-08 21:46:57,262 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-08 21:46:57,264 - INFO - Moved document 25 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:46:57,264 - INFO - Document ID: 25 moved to Classified folder as: PDF-Text
+2025-01-08 21:46:57,264 - INFO - Successfully classified document ID: 25 with type: PDF-Text
+2025-01-08 21:46:57,264 - INFO - Attempting to classify document ID: 26, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-27-2024.pdf
+2025-01-08 21:46:57,272 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,277 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,277 - INFO - Document 26 classified as: PDF-Text
+2025-01-08 21:46:57,278 - INFO - Completed classification for document ID: 26, Outcome: PDF-Text
+2025-01-08 21:46:57,283 - INFO - Classification combinations updated for document ID: 26 with: [True]
+2025-01-08 21:46:57,284 - INFO - Moved document 26 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:46:57,284 - INFO - Document ID: 26 moved to Classified folder as: PDF-Text
+2025-01-08 21:46:57,285 - INFO - Successfully classified document ID: 26 with type: PDF-Text
+2025-01-08 21:46:57,285 - INFO - Attempting to classify document ID: 27, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-10-2024.pdf
+2025-01-08 21:46:57,291 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,296 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,296 - INFO - Document 27 classified as: PDF-Text
+2025-01-08 21:46:57,297 - INFO - Completed classification for document ID: 27, Outcome: PDF-Text
+2025-01-08 21:46:57,297 - INFO - Classification combinations updated for document ID: 27 with: [True]
+2025-01-08 21:46:57,298 - INFO - Moved document 27 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:46:57,299 - INFO - Document ID: 27 moved to Classified folder as: PDF-Text
+2025-01-08 21:46:57,299 - INFO - Successfully classified document ID: 27 with type: PDF-Text
+2025-01-08 21:46:57,299 - INFO - Attempting to classify document ID: 28, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-24-2024.pdf
+2025-01-08 21:46:57,308 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,312 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,312 - INFO - Document 28 classified as: PDF-Text
+2025-01-08 21:46:57,312 - INFO - Completed classification for document ID: 28, Outcome: PDF-Text
+2025-01-08 21:46:57,313 - INFO - Classification combinations updated for document ID: 28 with: [True]
+2025-01-08 21:46:57,315 - INFO - Moved document 28 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:46:57,315 - INFO - Document ID: 28 moved to Classified folder as: PDF-Text
+2025-01-08 21:46:57,315 - INFO - Successfully classified document ID: 28 with type: PDF-Text
+2025-01-08 21:46:57,316 - INFO - Attempting to classify document ID: 29, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-08-2024.pdf
+2025-01-08 21:46:57,324 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,325 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,329 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,329 - INFO - Document 29 classified as: PDF-Text-Images
+2025-01-08 21:46:57,329 - INFO - Completed classification for document ID: 29, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,329 - INFO - Classification combinations updated for document ID: 29 with: [True, True]
+2025-01-08 21:46:57,331 - INFO - Moved document 29 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,331 - INFO - Document ID: 29 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,331 - INFO - Successfully classified document ID: 29 with type: PDF-Text-Images
+2025-01-08 21:46:57,331 - INFO - Attempting to classify document ID: 30, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf
+2025-01-08 21:46:57,339 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,346 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,346 - INFO - Document 30 classified as: PDF-Text
+2025-01-08 21:46:57,346 - INFO - Completed classification for document ID: 30, Outcome: PDF-Text
+2025-01-08 21:46:57,346 - INFO - Classification combinations updated for document ID: 30 with: [True]
+2025-01-08 21:46:57,348 - INFO - Moved document 30 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:46:57,348 - INFO - Document ID: 30 moved to Classified folder as: PDF-Text
+2025-01-08 21:46:57,348 - INFO - Successfully classified document ID: 30 with type: PDF-Text
+2025-01-08 21:46:57,348 - INFO - Attempting to classify document ID: 31, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024.pdf
+2025-01-08 21:46:57,356 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,362 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,362 - INFO - Document 31 classified as: PDF-Text
+2025-01-08 21:46:57,362 - INFO - Completed classification for document ID: 31, Outcome: PDF-Text
+2025-01-08 21:46:57,362 - INFO - Classification combinations updated for document ID: 31 with: [True]
+2025-01-08 21:46:57,365 - INFO - Moved document 31 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:46:57,366 - INFO - Document ID: 31 moved to Classified folder as: PDF-Text
+2025-01-08 21:46:57,366 - INFO - Successfully classified document ID: 31 with type: PDF-Text
+2025-01-08 21:46:57,366 - INFO - Attempting to classify document ID: 32, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf
+2025-01-08 21:46:57,374 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,379 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,379 - INFO - Document 32 classified as: PDF-Text
+2025-01-08 21:46:57,379 - INFO - Completed classification for document ID: 32, Outcome: PDF-Text
+2025-01-08 21:46:57,379 - INFO - Classification combinations updated for document ID: 32 with: [True]
+2025-01-08 21:46:57,381 - INFO - Moved document 32 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:46:57,381 - INFO - Document ID: 32 moved to Classified folder as: PDF-Text
+2025-01-08 21:46:57,381 - INFO - Successfully classified document ID: 32 with type: PDF-Text
+2025-01-08 21:46:57,381 - INFO - Attempting to classify document ID: 33, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024.pdf
+2025-01-08 21:46:57,390 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,395 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,395 - INFO - Document 33 classified as: PDF-Text
+2025-01-08 21:46:57,395 - INFO - Completed classification for document ID: 33, Outcome: PDF-Text
+2025-01-08 21:46:57,395 - INFO - Classification combinations updated for document ID: 33 with: [True]
+2025-01-08 21:46:57,397 - INFO - Moved document 33 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:46:57,397 - INFO - Document ID: 33 moved to Classified folder as: PDF-Text
+2025-01-08 21:46:57,397 - INFO - Successfully classified document ID: 33 with type: PDF-Text
+2025-01-08 21:46:57,397 - INFO - Attempting to classify document ID: 34, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Shamrock Presentation 9_24_24 (1).pdf
+2025-01-08 21:46:57,546 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,547 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,549 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,549 - INFO - Document 34 classified as: PDF-Text-Images
+2025-01-08 21:46:57,549 - INFO - Completed classification for document ID: 34, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,550 - INFO - Classification combinations updated for document ID: 34 with: [True, True]
+2025-01-08 21:46:57,553 - INFO - Moved document 34 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,553 - INFO - Document ID: 34 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,553 - INFO - Successfully classified document ID: 34 with type: PDF-Text-Images
+2025-01-08 21:46:57,553 - INFO - Attempting to classify document ID: 35, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf
+2025-01-08 21:46:57,560 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,565 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,565 - INFO - Document 35 classified as: PDF-Text
+2025-01-08 21:46:57,565 - INFO - Completed classification for document ID: 35, Outcome: PDF-Text
+2025-01-08 21:46:57,565 - INFO - Classification combinations updated for document ID: 35 with: [True]
+2025-01-08 21:46:57,568 - INFO - Moved document 35 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:46:57,568 - INFO - Document ID: 35 moved to Classified folder as: PDF-Text
+2025-01-08 21:46:57,568 - INFO - Successfully classified document ID: 35 with type: PDF-Text
+2025-01-08 21:46:57,568 - INFO - Attempting to classify document ID: 36, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 062824 (1).pdf
+2025-01-08 21:46:57,577 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,578 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,582 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,582 - INFO - Document 36 classified as: PDF-Text-Images
+2025-01-08 21:46:57,582 - INFO - Completed classification for document ID: 36, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,582 - INFO - Classification combinations updated for document ID: 36 with: [True, True]
+2025-01-08 21:46:57,585 - INFO - Moved document 36 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,585 - INFO - Document ID: 36 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,585 - INFO - Successfully classified document ID: 36 with type: PDF-Text-Images
+2025-01-08 21:46:57,585 - INFO - Attempting to classify document ID: 37, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 071224 (1).pdf
+2025-01-08 21:46:57,593 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,594 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,597 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,597 - INFO - Document 37 classified as: PDF-Text-Images
+2025-01-08 21:46:57,597 - INFO - Completed classification for document ID: 37, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,597 - INFO - Classification combinations updated for document ID: 37 with: [True, True]
+2025-01-08 21:46:57,599 - INFO - Moved document 37 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,599 - INFO - Document ID: 37 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,599 - INFO - Successfully classified document ID: 37 with type: PDF-Text-Images
+2025-01-08 21:46:57,599 - INFO - Attempting to classify document ID: 38, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 072624.pdf
+2025-01-08 21:46:57,608 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,609 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,612 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,612 - INFO - Document 38 classified as: PDF-Text-Images
+2025-01-08 21:46:57,612 - INFO - Completed classification for document ID: 38, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,613 - INFO - Classification combinations updated for document ID: 38 with: [True, True]
+2025-01-08 21:46:57,615 - INFO - Moved document 38 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,615 - INFO - Document ID: 38 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,615 - INFO - Successfully classified document ID: 38 with type: PDF-Text-Images
+2025-01-08 21:46:57,615 - INFO - Attempting to classify document ID: 39, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 080924.pdf
+2025-01-08 21:46:57,625 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,626 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,629 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,629 - INFO - Document 39 classified as: PDF-Text-Images
+2025-01-08 21:46:57,629 - INFO - Completed classification for document ID: 39, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,630 - INFO - Classification combinations updated for document ID: 39 with: [True, True]
+2025-01-08 21:46:57,632 - INFO - Moved document 39 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,632 - INFO - Document ID: 39 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,632 - INFO - Successfully classified document ID: 39 with type: PDF-Text-Images
+2025-01-08 21:46:57,632 - INFO - Attempting to classify document ID: 40, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 081624.pdf
+2025-01-08 21:46:57,641 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,642 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,646 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,646 - INFO - Document 40 classified as: PDF-Text-Images
+2025-01-08 21:46:57,646 - INFO - Completed classification for document ID: 40, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,646 - INFO - Classification combinations updated for document ID: 40 with: [True, True]
+2025-01-08 21:46:57,649 - INFO - Moved document 40 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,649 - INFO - Document ID: 40 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,649 - INFO - Successfully classified document ID: 40 with type: PDF-Text-Images
+2025-01-08 21:46:57,649 - INFO - Attempting to classify document ID: 41, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 082324 (1).pdf
+2025-01-08 21:46:57,657 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,658 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,661 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,661 - INFO - Document 41 classified as: PDF-Text-Images
+2025-01-08 21:46:57,662 - INFO - Completed classification for document ID: 41, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,662 - INFO - Classification combinations updated for document ID: 41 with: [True, True]
+2025-01-08 21:46:57,663 - INFO - Moved document 41 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,663 - INFO - Document ID: 41 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,663 - INFO - Successfully classified document ID: 41 with type: PDF-Text-Images
+2025-01-08 21:46:57,663 - INFO - Attempting to classify document ID: 42, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 083024 (1).pdf
+2025-01-08 21:46:57,673 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,673 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,676 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,676 - INFO - Document 42 classified as: PDF-Text-Images
+2025-01-08 21:46:57,676 - INFO - Completed classification for document ID: 42, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,677 - INFO - Classification combinations updated for document ID: 42 with: [True, True]
+2025-01-08 21:46:57,678 - INFO - Moved document 42 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,678 - INFO - Document ID: 42 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,678 - INFO - Successfully classified document ID: 42 with type: PDF-Text-Images
+2025-01-08 21:46:57,679 - INFO - Attempting to classify document ID: 43, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 090624.pdf
+2025-01-08 21:46:57,688 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,689 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,692 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,692 - INFO - Document 43 classified as: PDF-Text-Images
+2025-01-08 21:46:57,692 - INFO - Completed classification for document ID: 43, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,692 - INFO - Classification combinations updated for document ID: 43 with: [True, True]
+2025-01-08 21:46:57,695 - INFO - Moved document 43 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,695 - INFO - Document ID: 43 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,695 - INFO - Successfully classified document ID: 43 with type: PDF-Text-Images
+2025-01-08 21:46:57,695 - INFO - Attempting to classify document ID: 44, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 091324.pdf
+2025-01-08 21:46:57,704 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,705 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,708 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,708 - INFO - Document 44 classified as: PDF-Text-Images
+2025-01-08 21:46:57,708 - INFO - Completed classification for document ID: 44, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,708 - INFO - Classification combinations updated for document ID: 44 with: [True, True]
+2025-01-08 21:46:57,711 - INFO - Moved document 44 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,711 - INFO - Document ID: 44 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,711 - INFO - Successfully classified document ID: 44 with type: PDF-Text-Images
+2025-01-08 21:46:57,711 - INFO - Attempting to classify document ID: 45, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092024.pdf
+2025-01-08 21:46:57,722 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,723 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,726 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,726 - INFO - Document 45 classified as: PDF-Text-Images
+2025-01-08 21:46:57,726 - INFO - Completed classification for document ID: 45, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,726 - INFO - Classification combinations updated for document ID: 45 with: [True, True]
+2025-01-08 21:46:57,728 - INFO - Moved document 45 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,728 - INFO - Document ID: 45 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,728 - INFO - Successfully classified document ID: 45 with type: PDF-Text-Images
+2025-01-08 21:46:57,728 - INFO - Attempting to classify document ID: 46, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092724.pdf
+2025-01-08 21:46:57,739 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,739 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,743 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,743 - INFO - Document 46 classified as: PDF-Text-Images
+2025-01-08 21:46:57,743 - INFO - Completed classification for document ID: 46, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,743 - INFO - Classification combinations updated for document ID: 46 with: [True, True]
+2025-01-08 21:46:57,745 - INFO - Moved document 46 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,745 - INFO - Document ID: 46 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,745 - INFO - Successfully classified document ID: 46 with type: PDF-Text-Images
+2025-01-08 21:46:57,745 - INFO - Attempting to classify document ID: 47, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 100424.pdf
+2025-01-08 21:46:57,755 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,756 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,759 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,759 - INFO - Document 47 classified as: PDF-Text-Images
+2025-01-08 21:46:57,759 - INFO - Completed classification for document ID: 47, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,759 - INFO - Classification combinations updated for document ID: 47 with: [True, True]
+2025-01-08 21:46:57,762 - INFO - Moved document 47 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,762 - INFO - Document ID: 47 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,762 - INFO - Successfully classified document ID: 47 with type: PDF-Text-Images
+2025-01-08 21:46:57,762 - INFO - Attempting to classify document ID: 48, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 102524.pdf
+2025-01-08 21:46:57,774 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,775 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,778 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,778 - INFO - Document 48 classified as: PDF-Text-Images
+2025-01-08 21:46:57,778 - INFO - Completed classification for document ID: 48, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,778 - INFO - Classification combinations updated for document ID: 48 with: [True, True]
+2025-01-08 21:46:57,781 - INFO - Moved document 48 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,781 - INFO - Document ID: 48 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,781 - INFO - Successfully classified document ID: 48 with type: PDF-Text-Images
+2025-01-08 21:46:57,781 - INFO - Attempting to classify document ID: 49, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110124.pdf
+2025-01-08 21:46:57,792 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,793 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,796 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,796 - INFO - Document 49 classified as: PDF-Text-Images
+2025-01-08 21:46:57,797 - INFO - Completed classification for document ID: 49, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,797 - INFO - Classification combinations updated for document ID: 49 with: [True, True]
+2025-01-08 21:46:57,799 - INFO - Moved document 49 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,799 - INFO - Document ID: 49 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,799 - INFO - Successfully classified document ID: 49 with type: PDF-Text-Images
+2025-01-08 21:46:57,799 - INFO - Attempting to classify document ID: 50, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110824.pdf
+2025-01-08 21:46:57,808 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,809 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,813 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,813 - INFO - Document 50 classified as: PDF-Text-Images
+2025-01-08 21:46:57,813 - INFO - Completed classification for document ID: 50, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,813 - INFO - Classification combinations updated for document ID: 50 with: [True, True]
+2025-01-08 21:46:57,815 - INFO - Moved document 50 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,815 - INFO - Document ID: 50 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,815 - INFO - Successfully classified document ID: 50 with type: PDF-Text-Images
+2025-01-08 21:46:57,815 - INFO - Attempting to classify document ID: 51, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 111524 (1).pdf
+2025-01-08 21:46:57,825 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:46:57,825 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:46:57,829 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:46:57,829 - INFO - Document 51 classified as: PDF-Text-Images
+2025-01-08 21:46:57,829 - INFO - Completed classification for document ID: 51, Outcome: PDF-Text-Images
+2025-01-08 21:46:57,829 - INFO - Classification combinations updated for document ID: 51 with: [True, True]
+2025-01-08 21:46:57,832 - INFO - Moved document 51 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:46:57,832 - INFO - Document ID: 51 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:46:57,832 - INFO - Successfully classified document ID: 51 with type: PDF-Text-Images
+2025-01-08 21:46:57,834 - INFO - Updated document index saved successfully.
+2025-01-08 21:57:01,540 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-08 21:57:01,540 - ERROR - Error loading document index: [Errno 2] No such file or directory: 'C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\\documents_index.json'
+2025-01-08 21:58:36,851 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-08 21:58:36,852 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-08 21:58:36,853 - INFO - Attempting to classify document ID: 0, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\081324 BOARD BUZZ.pdf
+2025-01-08 21:58:36,861 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:36,862 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:37,057 - WARNING - Error importing jpype dependencies. Fallback to subprocess.
+2025-01-08 21:58:37,057 - WARNING - No module named 'jpype'
+2025-01-08 21:58:37,061 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,062 - INFO - Document 0 classified as: PDF-Text-Images
+2025-01-08 21:58:37,062 - INFO - Completed classification for document ID: 0, Outcome: PDF-Text-Images
+2025-01-08 21:58:37,063 - INFO - Updated classification combinations with: {'primary_classification': 'PDF', 'secondary_classifications': [True, True]}
+2025-01-08 21:58:37,063 - INFO - Classification combinations updated for document ID: 0 with: [True, True]
+2025-01-08 21:58:37,063 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-08 21:58:37,068 - INFO - Moved document 0 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:37,068 - INFO - Document ID: 0 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:37,068 - INFO - Successfully classified document ID: 0 with type: PDF-Text-Images
+2025-01-08 21:58:37,068 - INFO - Attempting to classify document ID: 1, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\082724 BOARD BUZZ.pdf
+2025-01-08 21:58:37,072 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:37,073 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:37,076 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,076 - INFO - Document 1 classified as: PDF-Text-Images
+2025-01-08 21:58:37,076 - INFO - Completed classification for document ID: 1, Outcome: PDF-Text-Images
+2025-01-08 21:58:37,077 - INFO - Classification combinations updated for document ID: 1 with: [True, True]
+2025-01-08 21:58:37,079 - INFO - Moved document 1 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:37,079 - INFO - Document ID: 1 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:37,079 - INFO - Successfully classified document ID: 1 with type: PDF-Text-Images
+2025-01-08 21:58:37,080 - INFO - Attempting to classify document ID: 2, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\091024 BOARD BUZZ.pdf
+2025-01-08 21:58:37,085 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:37,086 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:37,088 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,089 - INFO - Document 2 classified as: PDF-Text-Images
+2025-01-08 21:58:37,089 - INFO - Completed classification for document ID: 2, Outcome: PDF-Text-Images
+2025-01-08 21:58:37,089 - INFO - Classification combinations updated for document ID: 2 with: [True, True]
+2025-01-08 21:58:37,091 - INFO - Moved document 2 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:37,091 - INFO - Document ID: 2 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:37,091 - INFO - Successfully classified document ID: 2 with type: PDF-Text-Images
+2025-01-08 21:58:37,091 - INFO - Attempting to classify document ID: 3, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\092424 BOARD BUZZ.pdf
+2025-01-08 21:58:37,097 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:37,098 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:37,100 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,101 - INFO - Document 3 classified as: PDF-Text-Images
+2025-01-08 21:58:37,101 - INFO - Completed classification for document ID: 3, Outcome: PDF-Text-Images
+2025-01-08 21:58:37,101 - INFO - Classification combinations updated for document ID: 3 with: [True, True]
+2025-01-08 21:58:37,104 - INFO - Moved document 3 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:37,104 - INFO - Document ID: 3 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:37,104 - INFO - Successfully classified document ID: 3 with type: PDF-Text-Images
+2025-01-08 21:58:37,104 - INFO - Attempting to classify document ID: 4, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\10-22-2024.auto_generated_captions.vtt
+2025-01-08 21:58:37,105 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 21:58:37,105 - INFO - Document 4 classified as: Text-Only
+2025-01-08 21:58:37,105 - INFO - Completed classification for document ID: 4, Outcome: Text-Only
+2025-01-08 21:58:37,106 - INFO - Updated classification combinations with: {'primary_classification': 'VTT', 'secondary_classifications': ['VTT-Text-Only']}
+2025-01-08 21:58:37,106 - INFO - Classification combinations updated for document ID: 4 with: ['VTT-Text-Only']
+2025-01-08 21:58:37,106 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only
+2025-01-08 21:58:37,108 - INFO - Moved document 4 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 21:58:37,108 - INFO - Document ID: 4 moved to Classified folder as: Text-Only
+2025-01-08 21:58:37,108 - INFO - Successfully classified document ID: 4 with type: Text-Only
+2025-01-08 21:58:37,109 - INFO - Attempting to classify document ID: 5, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\10-8-2024.auto_generated_captions.vtt
+2025-01-08 21:58:37,109 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 21:58:37,109 - INFO - Document 5 classified as: Text-Only
+2025-01-08 21:58:37,109 - INFO - Completed classification for document ID: 5, Outcome: Text-Only
+2025-01-08 21:58:37,110 - INFO - Classification combinations updated for document ID: 5 with: ['VTT-Text-Only']
+2025-01-08 21:58:37,112 - INFO - Moved document 5 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 21:58:37,112 - INFO - Document ID: 5 moved to Classified folder as: Text-Only
+2025-01-08 21:58:37,112 - INFO - Successfully classified document ID: 5 with type: Text-Only
+2025-01-08 21:58:37,112 - INFO - Attempting to classify document ID: 6, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\102224 BOARD BUZZ.pdf
+2025-01-08 21:58:37,116 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:37,117 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:37,120 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,120 - INFO - Document 6 classified as: PDF-Text-Images
+2025-01-08 21:58:37,120 - INFO - Completed classification for document ID: 6, Outcome: PDF-Text-Images
+2025-01-08 21:58:37,120 - INFO - Classification combinations updated for document ID: 6 with: [True, True]
+2025-01-08 21:58:37,122 - INFO - Moved document 6 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:37,122 - INFO - Document ID: 6 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:37,122 - INFO - Successfully classified document ID: 6 with type: PDF-Text-Images
+2025-01-08 21:58:37,122 - INFO - Attempting to classify document ID: 7, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\11-12-2024.auto_generated_captions.vtt
+2025-01-08 21:58:37,123 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 21:58:37,123 - INFO - Document 7 classified as: Text-Only
+2025-01-08 21:58:37,123 - INFO - Completed classification for document ID: 7, Outcome: Text-Only
+2025-01-08 21:58:37,124 - INFO - Classification combinations updated for document ID: 7 with: ['VTT-Text-Only']
+2025-01-08 21:58:37,126 - INFO - Moved document 7 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 21:58:37,126 - INFO - Document ID: 7 moved to Classified folder as: Text-Only
+2025-01-08 21:58:37,127 - INFO - Successfully classified document ID: 7 with type: Text-Only
+2025-01-08 21:58:37,127 - INFO - Attempting to classify document ID: 8, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\111224 BOARD BUZZ.pdf
+2025-01-08 21:58:37,131 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:37,132 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:37,135 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,135 - INFO - Document 8 classified as: PDF-Text-Images
+2025-01-08 21:58:37,135 - INFO - Completed classification for document ID: 8, Outcome: PDF-Text-Images
+2025-01-08 21:58:37,135 - INFO - Classification combinations updated for document ID: 8 with: [True, True]
+2025-01-08 21:58:37,137 - INFO - Moved document 8 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:37,137 - INFO - Document ID: 8 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:37,137 - INFO - Successfully classified document ID: 8 with type: PDF-Text-Images
+2025-01-08 21:58:37,138 - INFO - Attempting to classify document ID: 9, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\2023-24 Prop 28 Annual Report.pdf
+2025-01-08 21:58:37,139 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:37,142 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,143 - INFO - Document 9 classified as: PDF-Images
+2025-01-08 21:58:37,143 - INFO - Completed classification for document ID: 9, Outcome: PDF-Images
+2025-01-08 21:58:37,143 - INFO - Updated classification combinations with: {'primary_classification': 'PDF', 'secondary_classifications': [True]}
+2025-01-08 21:58:37,143 - INFO - Classification combinations updated for document ID: 9 with: [True]
+2025-01-08 21:58:37,144 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Images
+2025-01-08 21:58:37,146 - INFO - Moved document 9 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Images with type: PDF-Images
+2025-01-08 21:58:37,146 - INFO - Document ID: 9 moved to Classified folder as: PDF-Images
+2025-01-08 21:58:37,146 - INFO - Successfully classified document ID: 9 with type: PDF-Images
+2025-01-08 21:58:37,146 - INFO - Attempting to classify document ID: 10, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\2024-25 Prop 28 Presentation.pdf
+2025-01-08 21:58:37,148 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:37,148 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:37,151 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,152 - INFO - Document 10 classified as: PDF-Text-Images
+2025-01-08 21:58:37,152 - INFO - Completed classification for document ID: 10, Outcome: PDF-Text-Images
+2025-01-08 21:58:37,160 - INFO - Classification combinations updated for document ID: 10 with: [True, True]
+2025-01-08 21:58:37,162 - INFO - Moved document 10 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:37,162 - INFO - Document ID: 10 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:37,162 - INFO - Successfully classified document ID: 10 with type: PDF-Text-Images
+2025-01-08 21:58:37,162 - INFO - Attempting to classify document ID: 11, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\7-2-2024.subtitle.webvtt.vtt
+2025-01-08 21:58:37,162 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 21:58:37,163 - INFO - Document 11 classified as: Text-Only
+2025-01-08 21:58:37,163 - INFO - Completed classification for document ID: 11, Outcome: Text-Only
+2025-01-08 21:58:37,163 - INFO - Classification combinations updated for document ID: 11 with: ['VTT-Text-Only']
+2025-01-08 21:58:37,166 - INFO - Moved document 11 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 21:58:37,166 - INFO - Document ID: 11 moved to Classified folder as: Text-Only
+2025-01-08 21:58:37,166 - INFO - Successfully classified document ID: 11 with type: Text-Only
+2025-01-08 21:58:37,166 - INFO - Attempting to classify document ID: 12, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-13-2024.subtitle.webvtt.vtt
+2025-01-08 21:58:37,166 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 21:58:37,166 - INFO - Document 12 classified as: Text-Only
+2025-01-08 21:58:37,167 - INFO - Completed classification for document ID: 12, Outcome: Text-Only
+2025-01-08 21:58:37,167 - INFO - Classification combinations updated for document ID: 12 with: ['VTT-Text-Only']
+2025-01-08 21:58:37,168 - INFO - Moved document 12 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 21:58:37,169 - INFO - Document ID: 12 moved to Classified folder as: Text-Only
+2025-01-08 21:58:37,169 - INFO - Successfully classified document ID: 12 with type: Text-Only
+2025-01-08 21:58:37,169 - INFO - Attempting to classify document ID: 13, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-27-2024.auto_generated_captions.vtt
+2025-01-08 21:58:37,169 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 21:58:37,169 - INFO - Document 13 classified as: Text-Only
+2025-01-08 21:58:37,170 - INFO - Completed classification for document ID: 13, Outcome: Text-Only
+2025-01-08 21:58:37,170 - INFO - Classification combinations updated for document ID: 13 with: ['VTT-Text-Only']
+2025-01-08 21:58:37,172 - INFO - Moved document 13 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 21:58:37,172 - INFO - Document ID: 13 moved to Classified folder as: Text-Only
+2025-01-08 21:58:37,172 - INFO - Successfully classified document ID: 13 with type: Text-Only
+2025-01-08 21:58:37,172 - INFO - Attempting to classify document ID: 14, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\9-10-2024.subtitle.webvtt.vtt
+2025-01-08 21:58:37,172 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 21:58:37,172 - INFO - Document 14 classified as: Text-Only
+2025-01-08 21:58:37,173 - INFO - Completed classification for document ID: 14, Outcome: Text-Only
+2025-01-08 21:58:37,173 - INFO - Classification combinations updated for document ID: 14 with: ['VTT-Text-Only']
+2025-01-08 21:58:37,174 - INFO - Moved document 14 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 21:58:37,175 - INFO - Document ID: 14 moved to Classified folder as: Text-Only
+2025-01-08 21:58:37,175 - INFO - Successfully classified document ID: 14 with type: Text-Only
+2025-01-08 21:58:37,175 - INFO - Attempting to classify document ID: 15, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\9-24-2024.subtitle.webvtt.vtt
+2025-01-08 21:58:37,175 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 21:58:37,175 - INFO - Document 15 classified as: Text-Only
+2025-01-08 21:58:37,175 - INFO - Completed classification for document ID: 15, Outcome: Text-Only
+2025-01-08 21:58:37,176 - INFO - Classification combinations updated for document ID: 15 with: ['VTT-Text-Only']
+2025-01-08 21:58:37,178 - INFO - Moved document 15 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 21:58:37,178 - INFO - Document ID: 15 moved to Classified folder as: Text-Only
+2025-01-08 21:58:37,178 - INFO - Successfully classified document ID: 15 with type: Text-Only
+2025-01-08 21:58:37,179 - INFO - Attempting to classify document ID: 16, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf
+2025-01-08 21:58:37,184 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:37,185 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:37,190 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,190 - INFO - Document 16 classified as: PDF-Text-Images
+2025-01-08 21:58:37,190 - INFO - Completed classification for document ID: 16, Outcome: PDF-Text-Images
+2025-01-08 21:58:37,191 - INFO - Classification combinations updated for document ID: 16 with: [True, True]
+2025-01-08 21:58:37,192 - INFO - Moved document 16 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:37,192 - INFO - Document ID: 16 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:37,193 - INFO - Successfully classified document ID: 16 with type: PDF-Text-Images
+2025-01-08 21:58:37,193 - INFO - Attempting to classify document ID: 17, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 1.pdf
+2025-01-08 21:58:37,424 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,425 - INFO - Document 17 classified as: PDF-Unknown
+2025-01-08 21:58:37,425 - INFO - Completed classification for document ID: 17, Outcome: PDF-Unknown
+2025-01-08 21:58:37,425 - INFO - Updated classification combinations with: {'primary_classification': 'PDF', 'secondary_classifications': []}
+2025-01-08 21:58:37,425 - INFO - Classification combinations updated for document ID: 17 with: []
+2025-01-08 21:58:37,426 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown
+2025-01-08 21:58:37,427 - INFO - Moved document 17 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:58:37,428 - INFO - Document ID: 17 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:58:37,428 - INFO - Successfully classified document ID: 17 with type: PDF-Unknown
+2025-01-08 21:58:37,428 - INFO - Attempting to classify document ID: 18, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 2.pdf
+2025-01-08 21:58:37,659 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,660 - INFO - Document 18 classified as: PDF-Unknown
+2025-01-08 21:58:37,661 - INFO - Completed classification for document ID: 18, Outcome: PDF-Unknown
+2025-01-08 21:58:37,662 - INFO - Classification combinations updated for document ID: 18 with: []
+2025-01-08 21:58:37,666 - INFO - Moved document 18 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:58:37,666 - INFO - Document ID: 18 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:58:37,666 - INFO - Successfully classified document ID: 18 with type: PDF-Unknown
+2025-01-08 21:58:37,666 - INFO - Attempting to classify document ID: 19, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 3.pdf
+2025-01-08 21:58:37,856 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:37,857 - INFO - Document 19 classified as: PDF-Unknown
+2025-01-08 21:58:37,858 - INFO - Completed classification for document ID: 19, Outcome: PDF-Unknown
+2025-01-08 21:58:37,859 - INFO - Classification combinations updated for document ID: 19 with: []
+2025-01-08 21:58:37,864 - INFO - Moved document 19 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:58:37,864 - INFO - Document ID: 19 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:58:37,865 - INFO - Successfully classified document ID: 19 with type: PDF-Unknown
+2025-01-08 21:58:37,865 - INFO - Attempting to classify document ID: 20, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 4.pdf
+2025-01-08 21:58:38,055 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,056 - INFO - Document 20 classified as: PDF-Unknown
+2025-01-08 21:58:38,056 - INFO - Completed classification for document ID: 20, Outcome: PDF-Unknown
+2025-01-08 21:58:38,057 - INFO - Classification combinations updated for document ID: 20 with: []
+2025-01-08 21:58:38,059 - INFO - Moved document 20 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:58:38,060 - INFO - Document ID: 20 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:58:38,060 - INFO - Successfully classified document ID: 20 with type: PDF-Unknown
+2025-01-08 21:58:38,060 - INFO - Attempting to classify document ID: 21, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 5.pdf
+2025-01-08 21:58:38,176 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,177 - INFO - Document 21 classified as: PDF-Unknown
+2025-01-08 21:58:38,177 - INFO - Completed classification for document ID: 21, Outcome: PDF-Unknown
+2025-01-08 21:58:38,177 - INFO - Classification combinations updated for document ID: 21 with: []
+2025-01-08 21:58:38,179 - INFO - Moved document 21 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:58:38,179 - INFO - Document ID: 21 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:58:38,179 - INFO - Successfully classified document ID: 21 with type: PDF-Unknown
+2025-01-08 21:58:38,179 - INFO - Attempting to classify document ID: 22, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 6.pdf
+2025-01-08 21:58:38,383 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,383 - INFO - Document 22 classified as: PDF-Unknown
+2025-01-08 21:58:38,384 - INFO - Completed classification for document ID: 22, Outcome: PDF-Unknown
+2025-01-08 21:58:38,384 - INFO - Classification combinations updated for document ID: 22 with: []
+2025-01-08 21:58:38,388 - INFO - Moved document 22 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:58:38,388 - INFO - Document ID: 22 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:58:38,388 - INFO - Successfully classified document ID: 22 with type: PDF-Unknown
+2025-01-08 21:58:38,389 - INFO - Attempting to classify document ID: 23, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 7.pdf
+2025-01-08 21:58:38,606 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,607 - INFO - Document 23 classified as: PDF-Unknown
+2025-01-08 21:58:38,607 - INFO - Completed classification for document ID: 23, Outcome: PDF-Unknown
+2025-01-08 21:58:38,608 - INFO - Classification combinations updated for document ID: 23 with: []
+2025-01-08 21:58:38,612 - INFO - Moved document 23 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:58:38,613 - INFO - Document ID: 23 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:58:38,613 - INFO - Successfully classified document ID: 23 with type: PDF-Unknown
+2025-01-08 21:58:38,613 - INFO - Attempting to classify document ID: 24, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 8.pdf
+2025-01-08 21:58:38,648 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,649 - INFO - Document 24 classified as: PDF-Unknown
+2025-01-08 21:58:38,649 - INFO - Completed classification for document ID: 24, Outcome: PDF-Unknown
+2025-01-08 21:58:38,650 - INFO - Classification combinations updated for document ID: 24 with: []
+2025-01-08 21:58:38,652 - INFO - Moved document 24 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 21:58:38,652 - INFO - Document ID: 24 moved to Classified folder as: PDF-Unknown
+2025-01-08 21:58:38,653 - INFO - Successfully classified document ID: 24 with type: PDF-Unknown
+2025-01-08 21:58:38,653 - INFO - Attempting to classify document ID: 25, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-13-2024.pdf
+2025-01-08 21:58:38,656 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,662 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,662 - INFO - Document 25 classified as: PDF-Text
+2025-01-08 21:58:38,663 - INFO - Completed classification for document ID: 25, Outcome: PDF-Text
+2025-01-08 21:58:38,663 - INFO - Classification combinations updated for document ID: 25 with: [True]
+2025-01-08 21:58:38,664 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-08 21:58:38,666 - INFO - Moved document 25 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:58:38,666 - INFO - Document ID: 25 moved to Classified folder as: PDF-Text
+2025-01-08 21:58:38,667 - INFO - Successfully classified document ID: 25 with type: PDF-Text
+2025-01-08 21:58:38,667 - INFO - Attempting to classify document ID: 26, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-27-2024.pdf
+2025-01-08 21:58:38,669 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,675 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,675 - INFO - Document 26 classified as: PDF-Text
+2025-01-08 21:58:38,675 - INFO - Completed classification for document ID: 26, Outcome: PDF-Text
+2025-01-08 21:58:38,676 - INFO - Classification combinations updated for document ID: 26 with: [True]
+2025-01-08 21:58:38,679 - INFO - Moved document 26 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:58:38,679 - INFO - Document ID: 26 moved to Classified folder as: PDF-Text
+2025-01-08 21:58:38,679 - INFO - Successfully classified document ID: 26 with type: PDF-Text
+2025-01-08 21:58:38,679 - INFO - Attempting to classify document ID: 27, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-10-2024.pdf
+2025-01-08 21:58:38,682 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,686 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,686 - INFO - Document 27 classified as: PDF-Text
+2025-01-08 21:58:38,687 - INFO - Completed classification for document ID: 27, Outcome: PDF-Text
+2025-01-08 21:58:38,687 - INFO - Classification combinations updated for document ID: 27 with: [True]
+2025-01-08 21:58:38,690 - INFO - Moved document 27 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:58:38,690 - INFO - Document ID: 27 moved to Classified folder as: PDF-Text
+2025-01-08 21:58:38,690 - INFO - Successfully classified document ID: 27 with type: PDF-Text
+2025-01-08 21:58:38,690 - INFO - Attempting to classify document ID: 28, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-24-2024.pdf
+2025-01-08 21:58:38,693 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,698 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,698 - INFO - Document 28 classified as: PDF-Text
+2025-01-08 21:58:38,698 - INFO - Completed classification for document ID: 28, Outcome: PDF-Text
+2025-01-08 21:58:38,698 - INFO - Classification combinations updated for document ID: 28 with: [True]
+2025-01-08 21:58:38,701 - INFO - Moved document 28 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:58:38,701 - INFO - Document ID: 28 moved to Classified folder as: PDF-Text
+2025-01-08 21:58:38,701 - INFO - Successfully classified document ID: 28 with type: PDF-Text
+2025-01-08 21:58:38,701 - INFO - Attempting to classify document ID: 29, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-08-2024.pdf
+2025-01-08 21:58:38,704 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,705 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,709 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,709 - INFO - Document 29 classified as: PDF-Text-Images
+2025-01-08 21:58:38,709 - INFO - Completed classification for document ID: 29, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,709 - INFO - Classification combinations updated for document ID: 29 with: [True, True]
+2025-01-08 21:58:38,711 - INFO - Moved document 29 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,711 - INFO - Document ID: 29 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,711 - INFO - Successfully classified document ID: 29 with type: PDF-Text-Images
+2025-01-08 21:58:38,711 - INFO - Attempting to classify document ID: 30, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf
+2025-01-08 21:58:38,713 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,719 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,719 - INFO - Document 30 classified as: PDF-Text
+2025-01-08 21:58:38,719 - INFO - Completed classification for document ID: 30, Outcome: PDF-Text
+2025-01-08 21:58:38,719 - INFO - Classification combinations updated for document ID: 30 with: [True]
+2025-01-08 21:58:38,722 - INFO - Moved document 30 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:58:38,722 - INFO - Document ID: 30 moved to Classified folder as: PDF-Text
+2025-01-08 21:58:38,722 - INFO - Successfully classified document ID: 30 with type: PDF-Text
+2025-01-08 21:58:38,722 - INFO - Attempting to classify document ID: 31, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024.pdf
+2025-01-08 21:58:38,725 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,730 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,730 - INFO - Document 31 classified as: PDF-Text
+2025-01-08 21:58:38,730 - INFO - Completed classification for document ID: 31, Outcome: PDF-Text
+2025-01-08 21:58:38,731 - INFO - Classification combinations updated for document ID: 31 with: [True]
+2025-01-08 21:58:38,732 - INFO - Moved document 31 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:58:38,732 - INFO - Document ID: 31 moved to Classified folder as: PDF-Text
+2025-01-08 21:58:38,733 - INFO - Successfully classified document ID: 31 with type: PDF-Text
+2025-01-08 21:58:38,733 - INFO - Attempting to classify document ID: 32, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf
+2025-01-08 21:58:38,735 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,740 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,741 - INFO - Document 32 classified as: PDF-Text
+2025-01-08 21:58:38,741 - INFO - Completed classification for document ID: 32, Outcome: PDF-Text
+2025-01-08 21:58:38,741 - INFO - Classification combinations updated for document ID: 32 with: [True]
+2025-01-08 21:58:38,743 - INFO - Moved document 32 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:58:38,743 - INFO - Document ID: 32 moved to Classified folder as: PDF-Text
+2025-01-08 21:58:38,743 - INFO - Successfully classified document ID: 32 with type: PDF-Text
+2025-01-08 21:58:38,743 - INFO - Attempting to classify document ID: 33, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024.pdf
+2025-01-08 21:58:38,745 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,750 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,751 - INFO - Document 33 classified as: PDF-Text
+2025-01-08 21:58:38,751 - INFO - Completed classification for document ID: 33, Outcome: PDF-Text
+2025-01-08 21:58:38,751 - INFO - Classification combinations updated for document ID: 33 with: [True]
+2025-01-08 21:58:38,753 - INFO - Moved document 33 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:58:38,753 - INFO - Document ID: 33 moved to Classified folder as: PDF-Text
+2025-01-08 21:58:38,753 - INFO - Successfully classified document ID: 33 with type: PDF-Text
+2025-01-08 21:58:38,753 - INFO - Attempting to classify document ID: 34, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Shamrock Presentation 9_24_24 (1).pdf
+2025-01-08 21:58:38,755 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,756 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,759 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,759 - INFO - Document 34 classified as: PDF-Text-Images
+2025-01-08 21:58:38,760 - INFO - Completed classification for document ID: 34, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,760 - INFO - Classification combinations updated for document ID: 34 with: [True, True]
+2025-01-08 21:58:38,762 - INFO - Moved document 34 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,762 - INFO - Document ID: 34 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,763 - INFO - Successfully classified document ID: 34 with type: PDF-Text-Images
+2025-01-08 21:58:38,763 - INFO - Attempting to classify document ID: 35, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf
+2025-01-08 21:58:38,765 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,769 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,769 - INFO - Document 35 classified as: PDF-Text
+2025-01-08 21:58:38,769 - INFO - Completed classification for document ID: 35, Outcome: PDF-Text
+2025-01-08 21:58:38,769 - INFO - Classification combinations updated for document ID: 35 with: [True]
+2025-01-08 21:58:38,771 - INFO - Moved document 35 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 21:58:38,771 - INFO - Document ID: 35 moved to Classified folder as: PDF-Text
+2025-01-08 21:58:38,771 - INFO - Successfully classified document ID: 35 with type: PDF-Text
+2025-01-08 21:58:38,772 - INFO - Attempting to classify document ID: 36, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 062824 (1).pdf
+2025-01-08 21:58:38,775 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,775 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,779 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,779 - INFO - Document 36 classified as: PDF-Text-Images
+2025-01-08 21:58:38,779 - INFO - Completed classification for document ID: 36, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,779 - INFO - Classification combinations updated for document ID: 36 with: [True, True]
+2025-01-08 21:58:38,781 - INFO - Moved document 36 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,781 - INFO - Document ID: 36 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,781 - INFO - Successfully classified document ID: 36 with type: PDF-Text-Images
+2025-01-08 21:58:38,781 - INFO - Attempting to classify document ID: 37, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 071224 (1).pdf
+2025-01-08 21:58:38,784 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,784 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,788 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,788 - INFO - Document 37 classified as: PDF-Text-Images
+2025-01-08 21:58:38,788 - INFO - Completed classification for document ID: 37, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,788 - INFO - Classification combinations updated for document ID: 37 with: [True, True]
+2025-01-08 21:58:38,790 - INFO - Moved document 37 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,790 - INFO - Document ID: 37 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,790 - INFO - Successfully classified document ID: 37 with type: PDF-Text-Images
+2025-01-08 21:58:38,790 - INFO - Attempting to classify document ID: 38, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 072624.pdf
+2025-01-08 21:58:38,793 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,794 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,797 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,797 - INFO - Document 38 classified as: PDF-Text-Images
+2025-01-08 21:58:38,797 - INFO - Completed classification for document ID: 38, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,798 - INFO - Classification combinations updated for document ID: 38 with: [True, True]
+2025-01-08 21:58:38,800 - INFO - Moved document 38 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,801 - INFO - Document ID: 38 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,801 - INFO - Successfully classified document ID: 38 with type: PDF-Text-Images
+2025-01-08 21:58:38,801 - INFO - Attempting to classify document ID: 39, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 080924.pdf
+2025-01-08 21:58:38,804 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,805 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,808 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,809 - INFO - Document 39 classified as: PDF-Text-Images
+2025-01-08 21:58:38,809 - INFO - Completed classification for document ID: 39, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,809 - INFO - Classification combinations updated for document ID: 39 with: [True, True]
+2025-01-08 21:58:38,811 - INFO - Moved document 39 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,811 - INFO - Document ID: 39 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,811 - INFO - Successfully classified document ID: 39 with type: PDF-Text-Images
+2025-01-08 21:58:38,811 - INFO - Attempting to classify document ID: 40, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 081624.pdf
+2025-01-08 21:58:38,814 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,815 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,818 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,818 - INFO - Document 40 classified as: PDF-Text-Images
+2025-01-08 21:58:38,818 - INFO - Completed classification for document ID: 40, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,819 - INFO - Classification combinations updated for document ID: 40 with: [True, True]
+2025-01-08 21:58:38,820 - INFO - Moved document 40 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,821 - INFO - Document ID: 40 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,821 - INFO - Successfully classified document ID: 40 with type: PDF-Text-Images
+2025-01-08 21:58:38,821 - INFO - Attempting to classify document ID: 41, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 082324 (1).pdf
+2025-01-08 21:58:38,823 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,824 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,828 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,828 - INFO - Document 41 classified as: PDF-Text-Images
+2025-01-08 21:58:38,828 - INFO - Completed classification for document ID: 41, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,828 - INFO - Classification combinations updated for document ID: 41 with: [True, True]
+2025-01-08 21:58:38,830 - INFO - Moved document 41 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,830 - INFO - Document ID: 41 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,830 - INFO - Successfully classified document ID: 41 with type: PDF-Text-Images
+2025-01-08 21:58:38,830 - INFO - Attempting to classify document ID: 42, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 083024 (1).pdf
+2025-01-08 21:58:38,833 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,833 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,837 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,837 - INFO - Document 42 classified as: PDF-Text-Images
+2025-01-08 21:58:38,837 - INFO - Completed classification for document ID: 42, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,837 - INFO - Classification combinations updated for document ID: 42 with: [True, True]
+2025-01-08 21:58:38,840 - INFO - Moved document 42 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,840 - INFO - Document ID: 42 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,840 - INFO - Successfully classified document ID: 42 with type: PDF-Text-Images
+2025-01-08 21:58:38,840 - INFO - Attempting to classify document ID: 43, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 090624.pdf
+2025-01-08 21:58:38,842 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,843 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,846 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,846 - INFO - Document 43 classified as: PDF-Text-Images
+2025-01-08 21:58:38,846 - INFO - Completed classification for document ID: 43, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,847 - INFO - Classification combinations updated for document ID: 43 with: [True, True]
+2025-01-08 21:58:38,848 - INFO - Moved document 43 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,848 - INFO - Document ID: 43 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,848 - INFO - Successfully classified document ID: 43 with type: PDF-Text-Images
+2025-01-08 21:58:38,848 - INFO - Attempting to classify document ID: 44, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 091324.pdf
+2025-01-08 21:58:38,851 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,851 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,854 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,854 - INFO - Document 44 classified as: PDF-Text-Images
+2025-01-08 21:58:38,854 - INFO - Completed classification for document ID: 44, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,855 - INFO - Classification combinations updated for document ID: 44 with: [True, True]
+2025-01-08 21:58:38,856 - INFO - Moved document 44 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,857 - INFO - Document ID: 44 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,857 - INFO - Successfully classified document ID: 44 with type: PDF-Text-Images
+2025-01-08 21:58:38,857 - INFO - Attempting to classify document ID: 45, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092024.pdf
+2025-01-08 21:58:38,860 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,860 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,863 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,863 - INFO - Document 45 classified as: PDF-Text-Images
+2025-01-08 21:58:38,864 - INFO - Completed classification for document ID: 45, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,864 - INFO - Classification combinations updated for document ID: 45 with: [True, True]
+2025-01-08 21:58:38,865 - INFO - Moved document 45 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,866 - INFO - Document ID: 45 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,866 - INFO - Successfully classified document ID: 45 with type: PDF-Text-Images
+2025-01-08 21:58:38,866 - INFO - Attempting to classify document ID: 46, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092724.pdf
+2025-01-08 21:58:38,870 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,871 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,874 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,874 - INFO - Document 46 classified as: PDF-Text-Images
+2025-01-08 21:58:38,874 - INFO - Completed classification for document ID: 46, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,874 - INFO - Classification combinations updated for document ID: 46 with: [True, True]
+2025-01-08 21:58:38,877 - INFO - Moved document 46 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,877 - INFO - Document ID: 46 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,877 - INFO - Successfully classified document ID: 46 with type: PDF-Text-Images
+2025-01-08 21:58:38,877 - INFO - Attempting to classify document ID: 47, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 100424.pdf
+2025-01-08 21:58:38,880 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,881 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,884 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,884 - INFO - Document 47 classified as: PDF-Text-Images
+2025-01-08 21:58:38,884 - INFO - Completed classification for document ID: 47, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,885 - INFO - Classification combinations updated for document ID: 47 with: [True, True]
+2025-01-08 21:58:38,886 - INFO - Moved document 47 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,886 - INFO - Document ID: 47 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,887 - INFO - Successfully classified document ID: 47 with type: PDF-Text-Images
+2025-01-08 21:58:38,887 - INFO - Attempting to classify document ID: 48, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 102524.pdf
+2025-01-08 21:58:38,891 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,892 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,895 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,895 - INFO - Document 48 classified as: PDF-Text-Images
+2025-01-08 21:58:38,895 - INFO - Completed classification for document ID: 48, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,895 - INFO - Classification combinations updated for document ID: 48 with: [True, True]
+2025-01-08 21:58:38,897 - INFO - Moved document 48 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,897 - INFO - Document ID: 48 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,897 - INFO - Successfully classified document ID: 48 with type: PDF-Text-Images
+2025-01-08 21:58:38,897 - INFO - Attempting to classify document ID: 49, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110124.pdf
+2025-01-08 21:58:38,901 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,902 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,905 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,905 - INFO - Document 49 classified as: PDF-Text-Images
+2025-01-08 21:58:38,905 - INFO - Completed classification for document ID: 49, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,906 - INFO - Classification combinations updated for document ID: 49 with: [True, True]
+2025-01-08 21:58:38,907 - INFO - Moved document 49 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,907 - INFO - Document ID: 49 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,908 - INFO - Successfully classified document ID: 49 with type: PDF-Text-Images
+2025-01-08 21:58:38,908 - INFO - Attempting to classify document ID: 50, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110824.pdf
+2025-01-08 21:58:38,911 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,912 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,915 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,915 - INFO - Document 50 classified as: PDF-Text-Images
+2025-01-08 21:58:38,915 - INFO - Completed classification for document ID: 50, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,915 - INFO - Classification combinations updated for document ID: 50 with: [True, True]
+2025-01-08 21:58:38,918 - INFO - Moved document 50 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,918 - INFO - Document ID: 50 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,918 - INFO - Successfully classified document ID: 50 with type: PDF-Text-Images
+2025-01-08 21:58:38,918 - INFO - Attempting to classify document ID: 51, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 111524 (1).pdf
+2025-01-08 21:58:38,922 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 21:58:38,923 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 21:58:38,926 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 21:58:38,926 - INFO - Document 51 classified as: PDF-Text-Images
+2025-01-08 21:58:38,927 - INFO - Completed classification for document ID: 51, Outcome: PDF-Text-Images
+2025-01-08 21:58:38,927 - INFO - Classification combinations updated for document ID: 51 with: [True, True]
+2025-01-08 21:58:38,930 - INFO - Moved document 51 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 21:58:38,930 - INFO - Document ID: 51 moved to Classified folder as: PDF-Text-Images
+2025-01-08 21:58:38,930 - INFO - Successfully classified document ID: 51 with type: PDF-Text-Images
+2025-01-08 21:58:38,931 - INFO - Updated document index saved successfully.
+2025-01-08 22:26:31,784 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-08 22:26:31,790 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-08 22:26:31,791 - INFO - Attempting to classify document ID: 63, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\081324 BOARD BUZZ.pdf
+2025-01-08 22:26:31,799 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:31,799 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:32,000 - WARNING - Error importing jpype dependencies. Fallback to subprocess.
+2025-01-08 22:26:32,000 - WARNING - No module named 'jpype'
+2025-01-08 22:26:32,003 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,003 - INFO - Document 63 classified as: PDF-Text-Images
+2025-01-08 22:26:32,003 - INFO - Completed classification for document ID: 63, Outcome: PDF-Text-Images
+2025-01-08 22:26:32,004 - INFO - Updated classification combinations with: {'primary_classification': 'PDF', 'secondary_classifications': ['Text', 'Images']}
+2025-01-08 22:26:32,004 - INFO - Classification combinations updated for document ID: 63 with: ['Text', 'Images']
+2025-01-08 22:26:32,004 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-08 22:26:32,008 - INFO - Moved document 63 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:32,008 - INFO - Document ID: 63 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:32,008 - INFO - Successfully classified document ID: 63 with type: PDF-Text-Images
+2025-01-08 22:26:32,008 - INFO - Attempting to classify document ID: 64, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\082724 BOARD BUZZ.pdf
+2025-01-08 22:26:32,011 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:32,012 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:32,015 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,015 - INFO - Document 64 classified as: PDF-Text-Images
+2025-01-08 22:26:32,015 - INFO - Completed classification for document ID: 64, Outcome: PDF-Text-Images
+2025-01-08 22:26:32,020 - INFO - Classification combinations updated for document ID: 64 with: ['Text', 'Images']
+2025-01-08 22:26:32,021 - INFO - Moved document 64 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:32,021 - INFO - Document ID: 64 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:32,021 - INFO - Successfully classified document ID: 64 with type: PDF-Text-Images
+2025-01-08 22:26:32,022 - INFO - Attempting to classify document ID: 65, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\091024 BOARD BUZZ.pdf
+2025-01-08 22:26:32,027 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:32,028 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:32,030 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,031 - INFO - Document 65 classified as: PDF-Text-Images
+2025-01-08 22:26:32,031 - INFO - Completed classification for document ID: 65, Outcome: PDF-Text-Images
+2025-01-08 22:26:32,031 - INFO - Classification combinations updated for document ID: 65 with: ['Text', 'Images']
+2025-01-08 22:26:32,033 - INFO - Moved document 65 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:32,033 - INFO - Document ID: 65 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:32,033 - INFO - Successfully classified document ID: 65 with type: PDF-Text-Images
+2025-01-08 22:26:32,033 - INFO - Attempting to classify document ID: 66, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\092424 BOARD BUZZ.pdf
+2025-01-08 22:26:32,038 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:32,039 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:32,042 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,042 - INFO - Document 66 classified as: PDF-Text-Images
+2025-01-08 22:26:32,042 - INFO - Completed classification for document ID: 66, Outcome: PDF-Text-Images
+2025-01-08 22:26:32,043 - INFO - Classification combinations updated for document ID: 66 with: ['Text', 'Images']
+2025-01-08 22:26:32,045 - INFO - Moved document 66 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:32,045 - INFO - Document ID: 66 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:32,045 - INFO - Successfully classified document ID: 66 with type: PDF-Text-Images
+2025-01-08 22:26:32,045 - INFO - Attempting to classify document ID: 67, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\10-22-2024.auto_generated_captions.vtt
+2025-01-08 22:26:32,046 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 22:26:32,046 - INFO - Document 67 classified as: Text-Only
+2025-01-08 22:26:32,046 - INFO - Completed classification for document ID: 67, Outcome: Text-Only
+2025-01-08 22:26:32,046 - INFO - Updated classification combinations with: {'primary_classification': 'VTT', 'secondary_classifications': ['VTT-Text-Only']}
+2025-01-08 22:26:32,046 - INFO - Classification combinations updated for document ID: 67 with: ['VTT-Text-Only']
+2025-01-08 22:26:32,047 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only
+2025-01-08 22:26:32,048 - INFO - Moved document 67 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 22:26:32,048 - INFO - Document ID: 67 moved to Classified folder as: Text-Only
+2025-01-08 22:26:32,048 - INFO - Successfully classified document ID: 67 with type: Text-Only
+2025-01-08 22:26:32,049 - INFO - Attempting to classify document ID: 68, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\10-8-2024.auto_generated_captions.vtt
+2025-01-08 22:26:32,049 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 22:26:32,049 - INFO - Document 68 classified as: Text-Only
+2025-01-08 22:26:32,049 - INFO - Completed classification for document ID: 68, Outcome: Text-Only
+2025-01-08 22:26:32,054 - INFO - Classification combinations updated for document ID: 68 with: ['VTT-Text-Only']
+2025-01-08 22:26:32,056 - INFO - Moved document 68 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 22:26:32,056 - INFO - Document ID: 68 moved to Classified folder as: Text-Only
+2025-01-08 22:26:32,056 - INFO - Successfully classified document ID: 68 with type: Text-Only
+2025-01-08 22:26:32,056 - INFO - Attempting to classify document ID: 69, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\102224 BOARD BUZZ.pdf
+2025-01-08 22:26:32,060 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:32,061 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:32,064 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,064 - INFO - Document 69 classified as: PDF-Text-Images
+2025-01-08 22:26:32,064 - INFO - Completed classification for document ID: 69, Outcome: PDF-Text-Images
+2025-01-08 22:26:32,064 - INFO - Classification combinations updated for document ID: 69 with: ['Text', 'Images']
+2025-01-08 22:26:32,066 - INFO - Moved document 69 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:32,066 - INFO - Document ID: 69 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:32,066 - INFO - Successfully classified document ID: 69 with type: PDF-Text-Images
+2025-01-08 22:26:32,066 - INFO - Attempting to classify document ID: 70, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\11-12-2024.auto_generated_captions.vtt
+2025-01-08 22:26:32,067 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 22:26:32,067 - INFO - Document 70 classified as: Text-Only
+2025-01-08 22:26:32,067 - INFO - Completed classification for document ID: 70, Outcome: Text-Only
+2025-01-08 22:26:32,067 - INFO - Classification combinations updated for document ID: 70 with: ['VTT-Text-Only']
+2025-01-08 22:26:32,070 - INFO - Moved document 70 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 22:26:32,070 - INFO - Document ID: 70 moved to Classified folder as: Text-Only
+2025-01-08 22:26:32,071 - INFO - Successfully classified document ID: 70 with type: Text-Only
+2025-01-08 22:26:32,071 - INFO - Attempting to classify document ID: 71, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\111224 BOARD BUZZ.pdf
+2025-01-08 22:26:32,076 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:32,076 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:32,079 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,079 - INFO - Document 71 classified as: PDF-Text-Images
+2025-01-08 22:26:32,079 - INFO - Completed classification for document ID: 71, Outcome: PDF-Text-Images
+2025-01-08 22:26:32,079 - INFO - Classification combinations updated for document ID: 71 with: ['Text', 'Images']
+2025-01-08 22:26:32,081 - INFO - Moved document 71 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:32,081 - INFO - Document ID: 71 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:32,081 - INFO - Successfully classified document ID: 71 with type: PDF-Text-Images
+2025-01-08 22:26:32,081 - INFO - Attempting to classify document ID: 72, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\2023-24 Prop 28 Annual Report.pdf
+2025-01-08 22:26:32,082 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:32,086 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,086 - INFO - Document 72 classified as: PDF-Images
+2025-01-08 22:26:32,086 - INFO - Completed classification for document ID: 72, Outcome: PDF-Images
+2025-01-08 22:26:32,086 - INFO - Updated classification combinations with: {'primary_classification': 'PDF', 'secondary_classifications': ['Images']}
+2025-01-08 22:26:32,086 - INFO - Classification combinations updated for document ID: 72 with: ['Images']
+2025-01-08 22:26:32,087 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Images
+2025-01-08 22:26:32,088 - INFO - Moved document 72 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Images with type: PDF-Images
+2025-01-08 22:26:32,088 - INFO - Document ID: 72 moved to Classified folder as: PDF-Images
+2025-01-08 22:26:32,088 - INFO - Successfully classified document ID: 72 with type: PDF-Images
+2025-01-08 22:26:32,088 - INFO - Attempting to classify document ID: 73, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\2024-25 Prop 28 Presentation.pdf
+2025-01-08 22:26:32,090 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:32,091 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:32,094 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,094 - INFO - Document 73 classified as: PDF-Text-Images
+2025-01-08 22:26:32,094 - INFO - Completed classification for document ID: 73, Outcome: PDF-Text-Images
+2025-01-08 22:26:32,099 - INFO - Classification combinations updated for document ID: 73 with: ['Text', 'Images']
+2025-01-08 22:26:32,101 - INFO - Moved document 73 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:32,101 - INFO - Document ID: 73 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:32,101 - INFO - Successfully classified document ID: 73 with type: PDF-Text-Images
+2025-01-08 22:26:32,101 - INFO - Attempting to classify document ID: 74, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\7-2-2024.subtitle.webvtt.vtt
+2025-01-08 22:26:32,101 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 22:26:32,101 - INFO - Document 74 classified as: Text-Only
+2025-01-08 22:26:32,101 - INFO - Completed classification for document ID: 74, Outcome: Text-Only
+2025-01-08 22:26:32,102 - INFO - Classification combinations updated for document ID: 74 with: ['VTT-Text-Only']
+2025-01-08 22:26:32,104 - INFO - Moved document 74 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 22:26:32,104 - INFO - Document ID: 74 moved to Classified folder as: Text-Only
+2025-01-08 22:26:32,104 - INFO - Successfully classified document ID: 74 with type: Text-Only
+2025-01-08 22:26:32,105 - INFO - Attempting to classify document ID: 75, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-13-2024.subtitle.webvtt.vtt
+2025-01-08 22:26:32,105 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 22:26:32,105 - INFO - Document 75 classified as: Text-Only
+2025-01-08 22:26:32,105 - INFO - Completed classification for document ID: 75, Outcome: Text-Only
+2025-01-08 22:26:32,105 - INFO - Classification combinations updated for document ID: 75 with: ['VTT-Text-Only']
+2025-01-08 22:26:32,107 - INFO - Moved document 75 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 22:26:32,107 - INFO - Document ID: 75 moved to Classified folder as: Text-Only
+2025-01-08 22:26:32,107 - INFO - Successfully classified document ID: 75 with type: Text-Only
+2025-01-08 22:26:32,107 - INFO - Attempting to classify document ID: 76, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-27-2024.auto_generated_captions.vtt
+2025-01-08 22:26:32,108 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 22:26:32,108 - INFO - Document 76 classified as: Text-Only
+2025-01-08 22:26:32,108 - INFO - Completed classification for document ID: 76, Outcome: Text-Only
+2025-01-08 22:26:32,108 - INFO - Classification combinations updated for document ID: 76 with: ['VTT-Text-Only']
+2025-01-08 22:26:32,109 - INFO - Moved document 76 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 22:26:32,109 - INFO - Document ID: 76 moved to Classified folder as: Text-Only
+2025-01-08 22:26:32,110 - INFO - Successfully classified document ID: 76 with type: Text-Only
+2025-01-08 22:26:32,110 - INFO - Attempting to classify document ID: 77, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\9-10-2024.subtitle.webvtt.vtt
+2025-01-08 22:26:32,110 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 22:26:32,110 - INFO - Document 77 classified as: Text-Only
+2025-01-08 22:26:32,110 - INFO - Completed classification for document ID: 77, Outcome: Text-Only
+2025-01-08 22:26:32,111 - INFO - Classification combinations updated for document ID: 77 with: ['VTT-Text-Only']
+2025-01-08 22:26:32,112 - INFO - Moved document 77 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 22:26:32,112 - INFO - Document ID: 77 moved to Classified folder as: Text-Only
+2025-01-08 22:26:32,112 - INFO - Successfully classified document ID: 77 with type: Text-Only
+2025-01-08 22:26:32,112 - INFO - Attempting to classify document ID: 78, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\9-24-2024.subtitle.webvtt.vtt
+2025-01-08 22:26:32,113 - INFO - Use case 'analyze_vtt_content' returned: VTT-Text-Only
+2025-01-08 22:26:32,113 - INFO - Document 78 classified as: Text-Only
+2025-01-08 22:26:32,113 - INFO - Completed classification for document ID: 78, Outcome: Text-Only
+2025-01-08 22:26:32,113 - INFO - Classification combinations updated for document ID: 78 with: ['VTT-Text-Only']
+2025-01-08 22:26:32,116 - INFO - Moved document 78 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-08 22:26:32,116 - INFO - Document ID: 78 moved to Classified folder as: Text-Only
+2025-01-08 22:26:32,116 - INFO - Successfully classified document ID: 78 with type: Text-Only
+2025-01-08 22:26:32,116 - INFO - Attempting to classify document ID: 79, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf
+2025-01-08 22:26:32,121 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:32,122 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:32,127 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,127 - INFO - Document 79 classified as: PDF-Text-Images
+2025-01-08 22:26:32,127 - INFO - Completed classification for document ID: 79, Outcome: PDF-Text-Images
+2025-01-08 22:26:32,127 - INFO - Classification combinations updated for document ID: 79 with: ['Text', 'Images']
+2025-01-08 22:26:32,129 - INFO - Moved document 79 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:32,129 - INFO - Document ID: 79 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:32,129 - INFO - Successfully classified document ID: 79 with type: PDF-Text-Images
+2025-01-08 22:26:32,129 - INFO - Attempting to classify document ID: 80, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 1.pdf
+2025-01-08 22:26:32,361 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,361 - INFO - Document 80 classified as: PDF-Unknown
+2025-01-08 22:26:32,361 - INFO - Completed classification for document ID: 80, Outcome: PDF-Unknown
+2025-01-08 22:26:32,362 - INFO - Updated classification combinations with: {'primary_classification': 'PDF', 'secondary_classifications': []}
+2025-01-08 22:26:32,362 - INFO - Classification combinations updated for document ID: 80 with: []
+2025-01-08 22:26:32,363 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown
+2025-01-08 22:26:32,367 - INFO - Moved document 80 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 22:26:32,367 - INFO - Document ID: 80 moved to Classified folder as: PDF-Unknown
+2025-01-08 22:26:32,367 - INFO - Successfully classified document ID: 80 with type: PDF-Unknown
+2025-01-08 22:26:32,367 - INFO - Attempting to classify document ID: 81, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 2.pdf
+2025-01-08 22:26:32,598 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,598 - INFO - Document 81 classified as: PDF-Unknown
+2025-01-08 22:26:32,599 - INFO - Completed classification for document ID: 81, Outcome: PDF-Unknown
+2025-01-08 22:26:32,599 - INFO - Classification combinations updated for document ID: 81 with: []
+2025-01-08 22:26:32,603 - INFO - Moved document 81 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 22:26:32,603 - INFO - Document ID: 81 moved to Classified folder as: PDF-Unknown
+2025-01-08 22:26:32,603 - INFO - Successfully classified document ID: 81 with type: PDF-Unknown
+2025-01-08 22:26:32,603 - INFO - Attempting to classify document ID: 82, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 3.pdf
+2025-01-08 22:26:32,796 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,797 - INFO - Document 82 classified as: PDF-Unknown
+2025-01-08 22:26:32,797 - INFO - Completed classification for document ID: 82, Outcome: PDF-Unknown
+2025-01-08 22:26:32,798 - INFO - Classification combinations updated for document ID: 82 with: []
+2025-01-08 22:26:32,801 - INFO - Moved document 82 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 22:26:32,801 - INFO - Document ID: 82 moved to Classified folder as: PDF-Unknown
+2025-01-08 22:26:32,801 - INFO - Successfully classified document ID: 82 with type: PDF-Unknown
+2025-01-08 22:26:32,801 - INFO - Attempting to classify document ID: 83, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 4.pdf
+2025-01-08 22:26:32,991 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:32,991 - INFO - Document 83 classified as: PDF-Unknown
+2025-01-08 22:26:32,992 - INFO - Completed classification for document ID: 83, Outcome: PDF-Unknown
+2025-01-08 22:26:32,992 - INFO - Classification combinations updated for document ID: 83 with: []
+2025-01-08 22:26:32,997 - INFO - Moved document 83 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 22:26:32,997 - INFO - Document ID: 83 moved to Classified folder as: PDF-Unknown
+2025-01-08 22:26:32,997 - INFO - Successfully classified document ID: 83 with type: PDF-Unknown
+2025-01-08 22:26:32,997 - INFO - Attempting to classify document ID: 84, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 5.pdf
+2025-01-08 22:26:33,114 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,115 - INFO - Document 84 classified as: PDF-Unknown
+2025-01-08 22:26:33,115 - INFO - Completed classification for document ID: 84, Outcome: PDF-Unknown
+2025-01-08 22:26:33,115 - INFO - Classification combinations updated for document ID: 84 with: []
+2025-01-08 22:26:33,119 - INFO - Moved document 84 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 22:26:33,119 - INFO - Document ID: 84 moved to Classified folder as: PDF-Unknown
+2025-01-08 22:26:33,120 - INFO - Successfully classified document ID: 84 with type: PDF-Unknown
+2025-01-08 22:26:33,120 - INFO - Attempting to classify document ID: 85, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 6.pdf
+2025-01-08 22:26:33,320 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,321 - INFO - Document 85 classified as: PDF-Unknown
+2025-01-08 22:26:33,321 - INFO - Completed classification for document ID: 85, Outcome: PDF-Unknown
+2025-01-08 22:26:33,321 - INFO - Classification combinations updated for document ID: 85 with: []
+2025-01-08 22:26:33,325 - INFO - Moved document 85 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 22:26:33,325 - INFO - Document ID: 85 moved to Classified folder as: PDF-Unknown
+2025-01-08 22:26:33,326 - INFO - Successfully classified document ID: 85 with type: PDF-Unknown
+2025-01-08 22:26:33,326 - INFO - Attempting to classify document ID: 86, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 7.pdf
+2025-01-08 22:26:33,547 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,547 - INFO - Document 86 classified as: PDF-Unknown
+2025-01-08 22:26:33,548 - INFO - Completed classification for document ID: 86, Outcome: PDF-Unknown
+2025-01-08 22:26:33,548 - INFO - Classification combinations updated for document ID: 86 with: []
+2025-01-08 22:26:33,552 - INFO - Moved document 86 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 22:26:33,552 - INFO - Document ID: 86 moved to Classified folder as: PDF-Unknown
+2025-01-08 22:26:33,553 - INFO - Successfully classified document ID: 86 with type: PDF-Unknown
+2025-01-08 22:26:33,553 - INFO - Attempting to classify document ID: 87, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 8.pdf
+2025-01-08 22:26:33,588 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,589 - INFO - Document 87 classified as: PDF-Unknown
+2025-01-08 22:26:33,589 - INFO - Completed classification for document ID: 87, Outcome: PDF-Unknown
+2025-01-08 22:26:33,589 - INFO - Classification combinations updated for document ID: 87 with: []
+2025-01-08 22:26:33,591 - INFO - Moved document 87 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-08 22:26:33,591 - INFO - Document ID: 87 moved to Classified folder as: PDF-Unknown
+2025-01-08 22:26:33,591 - INFO - Successfully classified document ID: 87 with type: PDF-Unknown
+2025-01-08 22:26:33,591 - INFO - Attempting to classify document ID: 88, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-13-2024.pdf
+2025-01-08 22:26:33,594 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,599 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,599 - INFO - Document 88 classified as: PDF-Text
+2025-01-08 22:26:33,600 - INFO - Completed classification for document ID: 88, Outcome: PDF-Text
+2025-01-08 22:26:33,600 - INFO - Updated classification combinations with: {'primary_classification': 'PDF', 'secondary_classifications': ['Text']}
+2025-01-08 22:26:33,600 - INFO - Classification combinations updated for document ID: 88 with: ['Text']
+2025-01-08 22:26:33,601 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-08 22:26:33,602 - INFO - Moved document 88 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 22:26:33,602 - INFO - Document ID: 88 moved to Classified folder as: PDF-Text
+2025-01-08 22:26:33,602 - INFO - Successfully classified document ID: 88 with type: PDF-Text
+2025-01-08 22:26:33,603 - INFO - Attempting to classify document ID: 89, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-27-2024.pdf
+2025-01-08 22:26:33,605 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,610 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,610 - INFO - Document 89 classified as: PDF-Text
+2025-01-08 22:26:33,610 - INFO - Completed classification for document ID: 89, Outcome: PDF-Text
+2025-01-08 22:26:33,615 - INFO - Classification combinations updated for document ID: 89 with: ['Text']
+2025-01-08 22:26:33,618 - INFO - Moved document 89 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 22:26:33,618 - INFO - Document ID: 89 moved to Classified folder as: PDF-Text
+2025-01-08 22:26:33,618 - INFO - Successfully classified document ID: 89 with type: PDF-Text
+2025-01-08 22:26:33,618 - INFO - Attempting to classify document ID: 90, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-10-2024.pdf
+2025-01-08 22:26:33,620 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,626 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,626 - INFO - Document 90 classified as: PDF-Text
+2025-01-08 22:26:33,626 - INFO - Completed classification for document ID: 90, Outcome: PDF-Text
+2025-01-08 22:26:33,626 - INFO - Classification combinations updated for document ID: 90 with: ['Text']
+2025-01-08 22:26:33,628 - INFO - Moved document 90 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 22:26:33,628 - INFO - Document ID: 90 moved to Classified folder as: PDF-Text
+2025-01-08 22:26:33,628 - INFO - Successfully classified document ID: 90 with type: PDF-Text
+2025-01-08 22:26:33,628 - INFO - Attempting to classify document ID: 91, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-24-2024.pdf
+2025-01-08 22:26:33,630 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,636 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,636 - INFO - Document 91 classified as: PDF-Text
+2025-01-08 22:26:33,636 - INFO - Completed classification for document ID: 91, Outcome: PDF-Text
+2025-01-08 22:26:33,636 - INFO - Classification combinations updated for document ID: 91 with: ['Text']
+2025-01-08 22:26:33,638 - INFO - Moved document 91 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 22:26:33,638 - INFO - Document ID: 91 moved to Classified folder as: PDF-Text
+2025-01-08 22:26:33,638 - INFO - Successfully classified document ID: 91 with type: PDF-Text
+2025-01-08 22:26:33,638 - INFO - Attempting to classify document ID: 92, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-08-2024.pdf
+2025-01-08 22:26:33,640 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,641 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,645 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,645 - INFO - Document 92 classified as: PDF-Text-Images
+2025-01-08 22:26:33,645 - INFO - Completed classification for document ID: 92, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,645 - INFO - Classification combinations updated for document ID: 92 with: ['Text', 'Images']
+2025-01-08 22:26:33,647 - INFO - Moved document 92 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,647 - INFO - Document ID: 92 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,647 - INFO - Successfully classified document ID: 92 with type: PDF-Text-Images
+2025-01-08 22:26:33,647 - INFO - Attempting to classify document ID: 93, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf
+2025-01-08 22:26:33,649 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,655 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,655 - INFO - Document 93 classified as: PDF-Text
+2025-01-08 22:26:33,655 - INFO - Completed classification for document ID: 93, Outcome: PDF-Text
+2025-01-08 22:26:33,655 - INFO - Classification combinations updated for document ID: 93 with: ['Text']
+2025-01-08 22:26:33,658 - INFO - Moved document 93 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 22:26:33,658 - INFO - Document ID: 93 moved to Classified folder as: PDF-Text
+2025-01-08 22:26:33,658 - INFO - Successfully classified document ID: 93 with type: PDF-Text
+2025-01-08 22:26:33,658 - INFO - Attempting to classify document ID: 94, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024.pdf
+2025-01-08 22:26:33,661 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,666 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,666 - INFO - Document 94 classified as: PDF-Text
+2025-01-08 22:26:33,666 - INFO - Completed classification for document ID: 94, Outcome: PDF-Text
+2025-01-08 22:26:33,667 - INFO - Classification combinations updated for document ID: 94 with: ['Text']
+2025-01-08 22:26:33,668 - INFO - Moved document 94 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 22:26:33,668 - INFO - Document ID: 94 moved to Classified folder as: PDF-Text
+2025-01-08 22:26:33,669 - INFO - Successfully classified document ID: 94 with type: PDF-Text
+2025-01-08 22:26:33,669 - INFO - Attempting to classify document ID: 95, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf
+2025-01-08 22:26:33,671 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,676 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,676 - INFO - Document 95 classified as: PDF-Text
+2025-01-08 22:26:33,676 - INFO - Completed classification for document ID: 95, Outcome: PDF-Text
+2025-01-08 22:26:33,676 - INFO - Classification combinations updated for document ID: 95 with: ['Text']
+2025-01-08 22:26:33,678 - INFO - Moved document 95 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 22:26:33,678 - INFO - Document ID: 95 moved to Classified folder as: PDF-Text
+2025-01-08 22:26:33,678 - INFO - Successfully classified document ID: 95 with type: PDF-Text
+2025-01-08 22:26:33,678 - INFO - Attempting to classify document ID: 96, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024.pdf
+2025-01-08 22:26:33,680 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,685 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,686 - INFO - Document 96 classified as: PDF-Text
+2025-01-08 22:26:33,686 - INFO - Completed classification for document ID: 96, Outcome: PDF-Text
+2025-01-08 22:26:33,686 - INFO - Classification combinations updated for document ID: 96 with: ['Text']
+2025-01-08 22:26:33,687 - INFO - Moved document 96 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 22:26:33,688 - INFO - Document ID: 96 moved to Classified folder as: PDF-Text
+2025-01-08 22:26:33,688 - INFO - Successfully classified document ID: 96 with type: PDF-Text
+2025-01-08 22:26:33,688 - INFO - Attempting to classify document ID: 97, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Shamrock Presentation 9_24_24 (1).pdf
+2025-01-08 22:26:33,690 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,691 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,694 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,694 - INFO - Document 97 classified as: PDF-Text-Images
+2025-01-08 22:26:33,694 - INFO - Completed classification for document ID: 97, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,694 - INFO - Classification combinations updated for document ID: 97 with: ['Text', 'Images']
+2025-01-08 22:26:33,697 - INFO - Moved document 97 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,697 - INFO - Document ID: 97 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,697 - INFO - Successfully classified document ID: 97 with type: PDF-Text-Images
+2025-01-08 22:26:33,697 - INFO - Attempting to classify document ID: 98, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf
+2025-01-08 22:26:33,699 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,703 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,704 - INFO - Document 98 classified as: PDF-Text
+2025-01-08 22:26:33,704 - INFO - Completed classification for document ID: 98, Outcome: PDF-Text
+2025-01-08 22:26:33,704 - INFO - Classification combinations updated for document ID: 98 with: ['Text']
+2025-01-08 22:26:33,706 - INFO - Moved document 98 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-08 22:26:33,706 - INFO - Document ID: 98 moved to Classified folder as: PDF-Text
+2025-01-08 22:26:33,706 - INFO - Successfully classified document ID: 98 with type: PDF-Text
+2025-01-08 22:26:33,706 - INFO - Attempting to classify document ID: 99, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 062824 (1).pdf
+2025-01-08 22:26:33,709 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,710 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,713 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,713 - INFO - Document 99 classified as: PDF-Text-Images
+2025-01-08 22:26:33,713 - INFO - Completed classification for document ID: 99, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,713 - INFO - Classification combinations updated for document ID: 99 with: ['Text', 'Images']
+2025-01-08 22:26:33,715 - INFO - Moved document 99 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,715 - INFO - Document ID: 99 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,715 - INFO - Successfully classified document ID: 99 with type: PDF-Text-Images
+2025-01-08 22:26:33,715 - INFO - Attempting to classify document ID: 100, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 071224 (1).pdf
+2025-01-08 22:26:33,718 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,718 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,722 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,722 - INFO - Document 100 classified as: PDF-Text-Images
+2025-01-08 22:26:33,722 - INFO - Completed classification for document ID: 100, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,722 - INFO - Classification combinations updated for document ID: 100 with: ['Text', 'Images']
+2025-01-08 22:26:33,724 - INFO - Moved document 100 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,724 - INFO - Document ID: 100 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,724 - INFO - Successfully classified document ID: 100 with type: PDF-Text-Images
+2025-01-08 22:26:33,724 - INFO - Attempting to classify document ID: 101, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 072624.pdf
+2025-01-08 22:26:33,727 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,727 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,731 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,731 - INFO - Document 101 classified as: PDF-Text-Images
+2025-01-08 22:26:33,731 - INFO - Completed classification for document ID: 101, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,731 - INFO - Classification combinations updated for document ID: 101 with: ['Text', 'Images']
+2025-01-08 22:26:33,734 - INFO - Moved document 101 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,734 - INFO - Document ID: 101 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,734 - INFO - Successfully classified document ID: 101 with type: PDF-Text-Images
+2025-01-08 22:26:33,734 - INFO - Attempting to classify document ID: 102, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 080924.pdf
+2025-01-08 22:26:33,737 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,738 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,741 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,741 - INFO - Document 102 classified as: PDF-Text-Images
+2025-01-08 22:26:33,741 - INFO - Completed classification for document ID: 102, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,741 - INFO - Classification combinations updated for document ID: 102 with: ['Text', 'Images']
+2025-01-08 22:26:33,743 - INFO - Moved document 102 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,743 - INFO - Document ID: 102 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,743 - INFO - Successfully classified document ID: 102 with type: PDF-Text-Images
+2025-01-08 22:26:33,743 - INFO - Attempting to classify document ID: 103, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 081624.pdf
+2025-01-08 22:26:33,747 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,747 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,751 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,751 - INFO - Document 103 classified as: PDF-Text-Images
+2025-01-08 22:26:33,751 - INFO - Completed classification for document ID: 103, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,751 - INFO - Classification combinations updated for document ID: 103 with: ['Text', 'Images']
+2025-01-08 22:26:33,753 - INFO - Moved document 103 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,753 - INFO - Document ID: 103 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,753 - INFO - Successfully classified document ID: 103 with type: PDF-Text-Images
+2025-01-08 22:26:33,753 - INFO - Attempting to classify document ID: 104, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 082324 (1).pdf
+2025-01-08 22:26:33,756 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,757 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,760 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,760 - INFO - Document 104 classified as: PDF-Text-Images
+2025-01-08 22:26:33,760 - INFO - Completed classification for document ID: 104, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,761 - INFO - Classification combinations updated for document ID: 104 with: ['Text', 'Images']
+2025-01-08 22:26:33,762 - INFO - Moved document 104 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,762 - INFO - Document ID: 104 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,762 - INFO - Successfully classified document ID: 104 with type: PDF-Text-Images
+2025-01-08 22:26:33,763 - INFO - Attempting to classify document ID: 105, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 083024 (1).pdf
+2025-01-08 22:26:33,765 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,766 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,768 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,769 - INFO - Document 105 classified as: PDF-Text-Images
+2025-01-08 22:26:33,769 - INFO - Completed classification for document ID: 105, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,769 - INFO - Classification combinations updated for document ID: 105 with: ['Text', 'Images']
+2025-01-08 22:26:33,772 - INFO - Moved document 105 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,772 - INFO - Document ID: 105 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,772 - INFO - Successfully classified document ID: 105 with type: PDF-Text-Images
+2025-01-08 22:26:33,772 - INFO - Attempting to classify document ID: 106, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 090624.pdf
+2025-01-08 22:26:33,775 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,775 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,778 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,778 - INFO - Document 106 classified as: PDF-Text-Images
+2025-01-08 22:26:33,779 - INFO - Completed classification for document ID: 106, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,779 - INFO - Classification combinations updated for document ID: 106 with: ['Text', 'Images']
+2025-01-08 22:26:33,780 - INFO - Moved document 106 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,781 - INFO - Document ID: 106 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,781 - INFO - Successfully classified document ID: 106 with type: PDF-Text-Images
+2025-01-08 22:26:33,781 - INFO - Attempting to classify document ID: 107, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 091324.pdf
+2025-01-08 22:26:33,783 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,784 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,787 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,787 - INFO - Document 107 classified as: PDF-Text-Images
+2025-01-08 22:26:33,788 - INFO - Completed classification for document ID: 107, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,788 - INFO - Classification combinations updated for document ID: 107 with: ['Text', 'Images']
+2025-01-08 22:26:33,789 - INFO - Moved document 107 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,789 - INFO - Document ID: 107 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,790 - INFO - Successfully classified document ID: 107 with type: PDF-Text-Images
+2025-01-08 22:26:33,790 - INFO - Attempting to classify document ID: 108, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092024.pdf
+2025-01-08 22:26:33,793 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,794 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,797 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,797 - INFO - Document 108 classified as: PDF-Text-Images
+2025-01-08 22:26:33,797 - INFO - Completed classification for document ID: 108, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,797 - INFO - Classification combinations updated for document ID: 108 with: ['Text', 'Images']
+2025-01-08 22:26:33,800 - INFO - Moved document 108 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,800 - INFO - Document ID: 108 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,800 - INFO - Successfully classified document ID: 108 with type: PDF-Text-Images
+2025-01-08 22:26:33,800 - INFO - Attempting to classify document ID: 109, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092724.pdf
+2025-01-08 22:26:33,804 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,805 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,808 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,808 - INFO - Document 109 classified as: PDF-Text-Images
+2025-01-08 22:26:33,808 - INFO - Completed classification for document ID: 109, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,808 - INFO - Classification combinations updated for document ID: 109 with: ['Text', 'Images']
+2025-01-08 22:26:33,810 - INFO - Moved document 109 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,810 - INFO - Document ID: 109 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,810 - INFO - Successfully classified document ID: 109 with type: PDF-Text-Images
+2025-01-08 22:26:33,810 - INFO - Attempting to classify document ID: 110, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 100424.pdf
+2025-01-08 22:26:33,814 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,815 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,818 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,818 - INFO - Document 110 classified as: PDF-Text-Images
+2025-01-08 22:26:33,818 - INFO - Completed classification for document ID: 110, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,818 - INFO - Classification combinations updated for document ID: 110 with: ['Text', 'Images']
+2025-01-08 22:26:33,820 - INFO - Moved document 110 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,820 - INFO - Document ID: 110 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,820 - INFO - Successfully classified document ID: 110 with type: PDF-Text-Images
+2025-01-08 22:26:33,820 - INFO - Attempting to classify document ID: 111, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 102524.pdf
+2025-01-08 22:26:33,825 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,826 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,829 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,829 - INFO - Document 111 classified as: PDF-Text-Images
+2025-01-08 22:26:33,829 - INFO - Completed classification for document ID: 111, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,829 - INFO - Classification combinations updated for document ID: 111 with: ['Text', 'Images']
+2025-01-08 22:26:33,831 - INFO - Moved document 111 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,831 - INFO - Document ID: 111 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,831 - INFO - Successfully classified document ID: 111 with type: PDF-Text-Images
+2025-01-08 22:26:33,832 - INFO - Attempting to classify document ID: 112, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110124.pdf
+2025-01-08 22:26:33,836 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,836 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,840 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,840 - INFO - Document 112 classified as: PDF-Text-Images
+2025-01-08 22:26:33,840 - INFO - Completed classification for document ID: 112, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,840 - INFO - Classification combinations updated for document ID: 112 with: ['Text', 'Images']
+2025-01-08 22:26:33,843 - INFO - Moved document 112 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,843 - INFO - Document ID: 112 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,843 - INFO - Successfully classified document ID: 112 with type: PDF-Text-Images
+2025-01-08 22:26:33,843 - INFO - Attempting to classify document ID: 113, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110824.pdf
+2025-01-08 22:26:33,846 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,847 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,850 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,850 - INFO - Document 113 classified as: PDF-Text-Images
+2025-01-08 22:26:33,850 - INFO - Completed classification for document ID: 113, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,850 - INFO - Classification combinations updated for document ID: 113 with: ['Text', 'Images']
+2025-01-08 22:26:33,852 - INFO - Moved document 113 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,852 - INFO - Document ID: 113 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,852 - INFO - Successfully classified document ID: 113 with type: PDF-Text-Images
+2025-01-08 22:26:33,852 - INFO - Attempting to classify document ID: 114, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 111524 (1).pdf
+2025-01-08 22:26:33,856 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-08 22:26:33,856 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-08 22:26:33,860 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-08 22:26:33,860 - INFO - Document 114 classified as: PDF-Text-Images
+2025-01-08 22:26:33,860 - INFO - Completed classification for document ID: 114, Outcome: PDF-Text-Images
+2025-01-08 22:26:33,860 - INFO - Classification combinations updated for document ID: 114 with: ['Text', 'Images']
+2025-01-08 22:26:33,863 - INFO - Moved document 114 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-08 22:26:33,863 - INFO - Document ID: 114 moved to Classified folder as: PDF-Text-Images
+2025-01-08 22:26:33,863 - INFO - Successfully classified document ID: 114 with type: PDF-Text-Images
+2025-01-08 22:26:33,865 - INFO - Updated document index saved successfully.
+2025-01-09 16:10:42,954 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-09 16:10:42,955 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-09 16:10:42,956 - INFO - Index cleansing complete. Removed 0 missing documents.
+2025-01-09 16:13:10,541 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-09 16:13:10,542 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json

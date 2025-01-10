@@ -17,19 +17,30 @@ from odf.text import P  # Import odfpy text elements
 from odf.draw import Image as ODFImage  # Import odfpy image elements
 from odf.table import Table  # Import odfpy table elements
 
+import sys
+import os  # Ensure os is imported
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from index_management import load_index, save_index, index_exists, cleanse_index
+from file_operations import move_file, delete_file
+from utils import generate_document_id
+from logging_setup import setup_logging, get_logger
+
+# Import configuration
+from config import ROOT_FOLDER, INDEX_FILE, LOGS_FOLDER, LOG_FILE, CLASSIFIED_FOLDER
+
+# Initialize logging using config
+setup_logging(LOG_FILE)
+logger = get_logger(__name__)
+
 # --- Configuration ---
-ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"  # Root folder location
-INDEX_FILE = os.path.join(ROOT_FOLDER, "documents_index.json")  # Ensure index file is in the documents folder
-IN_PROCESSING_FOLDER = os.path.join(ROOT_FOLDER, "In_Processing")  # Folder for documents in processing
-CLASSIFIED_FOLDER = os.path.join(ROOT_FOLDER, "Classified")  # Folder for classified documents
-COMBINATIONS_FILE = os.path.join(ROOT_FOLDER, "classification_combinations.json")  # File to store classification combinations
+ROOT_FOLDER = ROOT_FOLDER  # Already imported from config.py
+INDEX_FILE = INDEX_FILE
+CLASSIFIED_FOLDER = CLASSIFIED_FOLDER
 
 # --- Logging Setup ---
-LOGS_FOLDER = os.path.join(os.path.dirname(ROOT_FOLDER), "logs")
 os.makedirs(LOGS_FOLDER, exist_ok=True)
-LOG_FILE = os.path.join(LOGS_FOLDER, "document_classifier.log")
-logging.basicConfig(filename=LOG_FILE, level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Add console handler
 console_handler = logging.StreamHandler()
@@ -442,7 +453,43 @@ def move_to_classified_folder(doc_id, doc_data, classified_folder):
     except Exception as e:
         logging.error(f"Error moving document {doc_id} to {destination_folder}: {e}")
 
+from datetime import datetime  # Import datetime for timestamping
+
+def move_to_duplicates_folder(doc_id, doc_data):
+    """Moves the duplicate document to the Duplicates folder.
+    
+    If the document is already in the Duplicates folder, appends a timestamp to the filename.
+    """
+    duplicates_folder = os.path.join(ROOT_FOLDER, "Duplicates")
+    try:
+        if not os.path.exists(duplicates_folder):
+            os.makedirs(duplicates_folder, exist_ok=True)
+            logging.info(f"Created Duplicates folder: {duplicates_folder}")
+        else:
+            logging.debug(f"Duplicates folder already exists: {duplicates_folder}")
+
+        current_folder = os.path.dirname(doc_data["filepath"])
+        filename = os.path.basename(doc_data["filepath"])
+
+        if os.path.abspath(current_folder) == os.path.abspath(duplicates_folder):
+            # Append timestamp to filename to indicate version
+            name, ext = os.path.splitext(filename)
+            timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+            new_filename = f"{name}_{timestamp}{ext}"
+            logging.info(f"Appending timestamp to duplicate filename: {new_filename}")
+        else:
+            new_filename = filename
+
+        new_filepath = os.path.join(duplicates_folder, new_filename)
+        shutil.move(doc_data["filepath"], new_filepath)
+        doc_data["filepath"] = new_filepath
+        doc_data["status"] = "Duplicates"
+        logging.info(f"Moved document {doc_id} to Duplicates folder as {new_filename}")
+    except Exception as e:
+        logging.error(f"Error moving document {doc_id} to Duplicates folder: {e}")
+
 # --- Main Classification Logic ---
+
 def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index):
     """Classifies a document based on the decision tree."""
     filepath = doc_data["filepath"]  # Retrieve the filepath from doc_data
@@ -454,6 +501,27 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     if extension not in decision_tree:
         outcome = f"No classification rule found for extension '{extension}'"
         logging.warning(f"{outcome} (document ID: {doc_id})")
+        return
+
+    # Check for duplicates based on hash
+    current_hash = doc_data.get("hash")
+    duplicate_found = False
+    original_doc_id = None
+
+    for existing_id, existing_data in index.items():
+        if existing_id != doc_id and existing_data.get("hash") == current_hash:
+            duplicate_found = True
+            original_doc_id = existing_id
+            break
+
+    if duplicate_found:
+        logging.info(f"Duplicate detected: Document ID {doc_id} is a duplicate of Document ID {original_doc_id}")
+        # Update only the duplicate's status and metadata
+        index[doc_id]["status"] = "Duplicates"
+        index[doc_id]["metadata"]["duplicate_of"] = original_doc_id
+        # Move duplicate to Duplicates folder
+        move_to_duplicates_folder(doc_id, doc_data)
+        logging.info(f"Moved duplicate document ID: {doc_id} to Duplicates folder")
         return
 
     primary_classification = decision_tree[extension]["primary"]
@@ -474,8 +542,22 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
                         index[doc_id]["metadata"][use_case] = item
                         secondary_classifications.append(item)  # Append the classification result
                 else:
-                    index[doc_id]["metadata"][use_case] = result
-                    secondary_classifications.append(result)  # Append the classification result
+                    # Map boolean results to specific classification labels
+                    if isinstance(result, bool):
+                        classification_label = ""
+                        if use_case == "extract_text_from_pdf" and result:
+                            classification_label = "Text"
+                        elif use_case == "detect_images_in_pdf" and result:
+                            classification_label = "Images"
+                        elif use_case == "detect_tables_in_pdf" and result:
+                            classification_label = "Tables"
+                        # Add more mappings as needed for other use cases
+                        if classification_label:
+                            index[doc_id]["metadata"][use_case] = classification_label
+                            secondary_classifications.append(classification_label)
+                    else:
+                        index[doc_id]["metadata"][use_case] = result
+                        secondary_classifications.append(result)  # Append the classification result
                 logging.info(f"Use case '{use_case}' returned: {result}")
 
     # Determine final document type
@@ -494,20 +576,39 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     move_to_classified_folder(doc_id, doc_data, CLASSIFIED_FOLDER)
     logging.info(f"Document ID: {doc_id} moved to Classified folder as: {document_type}")
 
+def initialize_index(index_file):
+    if not index_exists(index_file):
+        index = {}
+        save_index(index_file, index)
+    else:
+        index = load_index(index_file)
+    return index
+
+index = initialize_index(INDEX_FILE)
+
 def classify_documents_sequentially(index, decision_tree, use_case_to_function):
-    """Classifies documents one at a time sequentially."""
+    from helpers import save_index  # Import save_index here to avoid circular imports
+    
+    # Cleanse index before classification
+    index = cleanse_index(index, ["In_Processing", "Duplicates", "Classified"])
+    save_index(INDEX_FILE, index)
+    
     documents_to_classify = [
         (doc_id, doc_data) 
         for doc_id, doc_data in index.items() 
         if doc_data["status"] == "In_Processing"
     ]
-
+    
     for doc_id, doc_data in documents_to_classify:
         try:
             classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index)
-            logging.info(f"Successfully classified document ID: {doc_id} with type: {doc_data['document_type']}")
         except Exception as e:
-            logging.error(f"Error classifying document ID {doc_id}: {e}")
+            logging.error(f"Error classifying document {doc_id}: {e}")
+            index[doc_id]["status"] = "Errors"
+            save_index(INDEX_FILE, index)
+    
+    # Save index after classification
+    save_index(INDEX_FILE, index)
 
 # --- Main Execution ---
 if __name__ == "__main__":
@@ -522,7 +623,7 @@ if __name__ == "__main__":
         "extract_text_from_pdf": classify_pdf_for_text,
         "detect_images_in_pdf": classify_pdf_for_images,
         "detect_tables_in_pdf": classify_pdf_for_tables,
-        "analyze_vtt_content": classify_vtt_document,  # Add classification function for VTT files
+        "analyze_vtt_content": classify_vtt_document,  # Corrected mapping for VTT files
         "analyze_doc_structure": classify_doc_document,
         "analyze_image_content": classify_image_document,
         "analyze_tiff_for_multi_page": classify_tiff_as_multipage,
@@ -535,7 +636,6 @@ if __name__ == "__main__":
         "analyze_xml_structure": classify_xml_document,
         "extract_and_classify_zip": classify_zip_contents,
         "analyze_odt_structure": classify_odt_document,
-        "analyze_vtt_content": analyze_vtt_content,  # Add classification function for VTT files
     }
 
     # Load the document index
