@@ -374,7 +374,7 @@ def determine_document_type(doc_id, index, primary_classification):
     metadata = index[doc_id]["metadata"]
 
     # Handling for PDF documents
-    if primary_classification == "PDF":
+    if (primary_classification == "PDF"):
         classifications = []
         if metadata.get("extract_text_from_pdf"):
             classifications.append("Text")
@@ -587,8 +587,6 @@ def initialize_index(index_file):
 index = initialize_index(INDEX_FILE)
 
 def classify_documents_sequentially(index, decision_tree, use_case_to_function):
-    from helpers import save_index  # Import save_index here to avoid circular imports
-    
     # Cleanse index before classification
     index = cleanse_index(index, ["In_Processing", "Duplicates", "Classified"])
     save_index(INDEX_FILE, index)

@@ -1737,3 +1737,291 @@
 2025-01-09 16:38:38,334 - INFO - Script started.
 2025-01-09 16:38:38,334 - INFO - Loaded index with 52 documents.
 2025-01-09 16:38:38,335 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\081324 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:40:42,845 - INFO - Script started.
+2025-01-09 16:40:42,845 - INFO - Loaded index with 52 documents.
+2025-01-09 16:40:42,846 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\081324 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:41:40,172 - INFO - Script started.
+2025-01-09 16:41:40,173 - INFO - Loaded index with 52 documents.
+2025-01-09 16:41:40,173 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\081324 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:43:11,971 - INFO - Script started.
+2025-01-09 16:43:11,972 - INFO - Loaded index with 52 documents.
+2025-01-09 16:43:11,973 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\081324 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:44:33,090 - INFO - Script started.
+2025-01-09 16:44:33,090 - INFO - Loaded index with 52 documents.
+2025-01-09 16:44:33,091 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\081324 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:46:36,488 - INFO - Script started.
+2025-01-09 16:46:36,489 - INFO - Loaded index with 52 documents.
+2025-01-09 16:46:36,489 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\081324 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:48:21,780 - INFO - Script started.
+2025-01-09 16:48:21,780 - INFO - Loaded index with 52 documents.
+2025-01-09 16:48:21,781 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\081324 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:48:21,781 - ERROR - Failed to remove Document ID 0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d as it does not exist in the index.
+2025-01-09 16:48:21,781 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\082724 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:48:21,781 - ERROR - Failed to remove Document ID 5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e as it does not exist in the index.
+2025-01-09 16:48:21,781 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\091024 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:48:21,781 - ERROR - Failed to remove Document ID dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef as it does not exist in the index.
+2025-01-09 16:48:21,782 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\092424 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:48:21,782 - ERROR - Failed to remove Document ID 63c3240c119e0bcd8564bb452ef8084bd12d3afe1c8c4861b9929e18b1bbdf7a as it does not exist in the index.
+2025-01-09 16:48:21,782 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\10-22-2024.auto_generated_captions.vtt. Removing from index.
+2025-01-09 16:48:21,782 - ERROR - Failed to remove Document ID 7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa as it does not exist in the index.
+2025-01-09 16:48:21,782 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\10-8-2024.auto_generated_captions.vtt. Removing from index.
+2025-01-09 16:48:21,782 - ERROR - Failed to remove Document ID 65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b as it does not exist in the index.
+2025-01-09 16:48:21,782 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\102224 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:48:21,782 - ERROR - Failed to remove Document ID 02b724fce7b8a45382e5d3bc885c31bcf5bcdf6b8b8aca89ce904e87be8c8e2f as it does not exist in the index.
+2025-01-09 16:48:21,782 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\11-12-2024.auto_generated_captions.vtt. Removing from index.
+2025-01-09 16:48:21,782 - ERROR - Failed to remove Document ID 7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4 as it does not exist in the index.
+2025-01-09 16:48:21,783 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\111224 BOARD BUZZ.pdf. Removing from index.
+2025-01-09 16:48:21,783 - ERROR - Failed to remove Document ID a87a05b7329b56662f3f43d182e942a38154b95c1ccc499d491a431cff31aa77 as it does not exist in the index.
+2025-01-09 16:48:21,783 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\2023-24 Prop 28 Annual Report.pdf. Removing from index.
+2025-01-09 16:48:21,783 - ERROR - Failed to remove Document ID b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2 as it does not exist in the index.
+2025-01-09 16:48:21,783 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\2024-25 Prop 28 Presentation.pdf. Removing from index.
+2025-01-09 16:48:21,783 - ERROR - Failed to remove Document ID 430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0 as it does not exist in the index.
+2025-01-09 16:48:21,783 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\7-2-2024.subtitle.webvtt.vtt. Removing from index.
+2025-01-09 16:48:21,784 - ERROR - Failed to remove Document ID 3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103 as it does not exist in the index.
+2025-01-09 16:48:21,784 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-13-2024.subtitle.webvtt.vtt. Removing from index.
+2025-01-09 16:48:21,784 - ERROR - Failed to remove Document ID 9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e as it does not exist in the index.
+2025-01-09 16:48:21,784 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-27-2024.auto_generated_captions.vtt. Removing from index.
+2025-01-09 16:48:21,784 - ERROR - Failed to remove Document ID 2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f as it does not exist in the index.
+2025-01-09 16:48:21,784 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\9-10-2024.subtitle.webvtt.vtt. Removing from index.
+2025-01-09 16:48:21,784 - ERROR - Failed to remove Document ID 149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa as it does not exist in the index.
+2025-01-09 16:48:21,784 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\9-24-2024.subtitle.webvtt.vtt. Removing from index.
+2025-01-09 16:48:21,785 - ERROR - Failed to remove Document ID 147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459 as it does not exist in the index.
+2025-01-09 16:48:21,785 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf. Removing from index.
+2025-01-09 16:48:21,785 - ERROR - Failed to remove Document ID 3250db99420a0f35508a7c0070246c308ffebed374be8df14d3f386f0f27932c as it does not exist in the index.
+2025-01-09 16:48:21,785 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 1.pdf. Removing from index.
+2025-01-09 16:48:21,785 - ERROR - Failed to remove Document ID be9c43bb8a40b8cd7f10cfce50592c936e111f0e7df271d7ca2dc0ab4dc37c63 as it does not exist in the index.
+2025-01-09 16:48:21,785 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 2.pdf. Removing from index.
+2025-01-09 16:48:21,785 - ERROR - Failed to remove Document ID 07b69cf201418f5abf9008c7648405871c7f1980f292445cb36498f91e18e802 as it does not exist in the index.
+2025-01-09 16:48:21,785 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 3.pdf. Removing from index.
+2025-01-09 16:48:21,785 - ERROR - Failed to remove Document ID 4e355198b027cb3f105e36ea8e6a1ee2a7cb163653150e48cf57e8e510c53891 as it does not exist in the index.
+2025-01-09 16:48:21,785 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 4.pdf. Removing from index.
+2025-01-09 16:48:21,785 - ERROR - Failed to remove Document ID 13350d88caafa77e51bc9178d890dad0172b2b2557f3fa40fa0d257da7c9a86b as it does not exist in the index.
+2025-01-09 16:48:21,785 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 5.pdf. Removing from index.
+2025-01-09 16:48:21,785 - ERROR - Failed to remove Document ID 494220dc71a4613384be88693e80a53c11bcd51b0df201a21e2c72d539902b71 as it does not exist in the index.
+2025-01-09 16:48:21,785 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 6.pdf. Removing from index.
+2025-01-09 16:48:21,786 - ERROR - Failed to remove Document ID 9b8121fbf97d378b86d33a57c52dd1fb3cc242f5bdeb3143dd5ecf2a742ce3cd as it does not exist in the index.
+2025-01-09 16:48:21,786 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 7.pdf. Removing from index.
+2025-01-09 16:48:21,786 - ERROR - Failed to remove Document ID 10743e776f014d3c6275cceaf4986939a696bdd7fdc690e17762357c2339f124 as it does not exist in the index.
+2025-01-09 16:48:21,786 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 8.pdf. Removing from index.
+2025-01-09 16:48:21,786 - ERROR - Failed to remove Document ID 1457637122affe5767665bb789119e30b1ca0d3ac5c322edcdc70dd2938c6e84 as it does not exist in the index.
+2025-01-09 16:48:21,786 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-13-2024.pdf. Removing from index.
+2025-01-09 16:48:21,786 - ERROR - Failed to remove Document ID 0ef85b81d84ef88e25260c5ed70ed49b5938f9669b622008702397001f23e614 as it does not exist in the index.
+2025-01-09 16:48:21,786 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-27-2024.pdf. Removing from index.
+2025-01-09 16:48:21,786 - ERROR - Failed to remove Document ID cd93020aa391271b9ecdec9a0b647f5c75a9982568bfd4041342e0d4d4f9d979 as it does not exist in the index.
+2025-01-09 16:48:21,786 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-10-2024.pdf. Removing from index.
+2025-01-09 16:48:21,786 - ERROR - Failed to remove Document ID cb9021cf86861da128563e0fd56296bbd6b196722be2eafeb6266c72d86b7f6b as it does not exist in the index.
+2025-01-09 16:48:21,786 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-24-2024.pdf. Removing from index.
+2025-01-09 16:48:21,787 - ERROR - Failed to remove Document ID 804b99e9bff9be67672f2fe0f6668ce43a34eba9e8be2b50757de398e0030057 as it does not exist in the index.
+2025-01-09 16:48:21,787 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-08-2024.pdf. Removing from index.
+2025-01-09 16:48:21,787 - ERROR - Failed to remove Document ID 667db199644cd9f3f1324a774850e8ce42be0a336e813aae2eb2221e5e540d09 as it does not exist in the index.
+2025-01-09 16:48:21,787 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf. Removing from index.
+2025-01-09 16:48:21,787 - ERROR - Failed to remove Document ID 10bd1b6341ce51b1e25a74e5d863fe5ef0e9437cdd87509a0e74d008073b3178 as it does not exist in the index.
+2025-01-09 16:48:21,787 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024.pdf. Removing from index.
+2025-01-09 16:48:21,787 - ERROR - Failed to remove Document ID 8af74f6b08729b6990be755284f2b0cad9c2f65488d79d91ff76f2abc15b557d as it does not exist in the index.
+2025-01-09 16:48:21,787 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf. Removing from index.
+2025-01-09 16:48:21,787 - ERROR - Failed to remove Document ID e414ca7dfd5b709460abcbe98f2435a3bcc334135ba5962dba0bfc4809b7f450 as it does not exist in the index.
+2025-01-09 16:48:21,788 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024.pdf. Removing from index.
+2025-01-09 16:48:21,788 - ERROR - Failed to remove Document ID 40ac2d62ffbef74e24d566484fee9876fad5f98fac13856416041e48936f39d9 as it does not exist in the index.
+2025-01-09 16:48:21,788 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Shamrock Presentation 9_24_24 (1).pdf. Removing from index.
+2025-01-09 16:48:21,788 - ERROR - Failed to remove Document ID 01705b8ab6c128a2faa4d21bfc2906c3ed08289b07cc43c1cfdd01e49bd7a9ff as it does not exist in the index.
+2025-01-09 16:48:21,788 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf. Removing from index.
+2025-01-09 16:48:21,788 - ERROR - Failed to remove Document ID cd437bb6cd1a9cbb21af350e17d96610d84ea3908f8ce109e7fdfa9c9001eeaf as it does not exist in the index.
+2025-01-09 16:48:21,788 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 062824 (1).pdf. Removing from index.
+2025-01-09 16:48:21,788 - ERROR - Failed to remove Document ID b3d7339b95fbe3e18008b110a18432c85feb69d08aae8d282c677da2ad42abb9 as it does not exist in the index.
+2025-01-09 16:48:21,788 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 071224 (1).pdf. Removing from index.
+2025-01-09 16:48:21,788 - ERROR - Failed to remove Document ID d3c1d373c0498e5c6c015d2420dc5fe1b600d7ef8f12f1a1e88995a26594ff6a as it does not exist in the index.
+2025-01-09 16:48:21,788 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 072624.pdf. Removing from index.
+2025-01-09 16:48:21,788 - ERROR - Failed to remove Document ID 1091639732a37ee566733304af55d4e3d89de896288d8034180f0bb5478c8854 as it does not exist in the index.
+2025-01-09 16:48:21,788 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 080924.pdf. Removing from index.
+2025-01-09 16:48:21,788 - ERROR - Failed to remove Document ID 3d549a4a43a89974324645a0d32ae06f5a8a1fe4bb98472d291030c1de179691 as it does not exist in the index.
+2025-01-09 16:48:21,789 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 081624.pdf. Removing from index.
+2025-01-09 16:48:21,789 - ERROR - Failed to remove Document ID 5b4446baf8401790c2586b948d7ab9fc4d2b57aad6be270605009e56012c81b1 as it does not exist in the index.
+2025-01-09 16:48:21,789 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 082324 (1).pdf. Removing from index.
+2025-01-09 16:48:21,789 - ERROR - Failed to remove Document ID 3db8f84919f384408fde8e56f0676a3edcdd910e3ea5ed4ddf20772d47c247af as it does not exist in the index.
+2025-01-09 16:48:21,789 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 083024 (1).pdf. Removing from index.
+2025-01-09 16:48:21,789 - ERROR - Failed to remove Document ID 3971afd11fefe5351b4771b25f2ead34d9441ff3e5087820fab4e90198363c7c as it does not exist in the index.
+2025-01-09 16:48:21,789 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 090624.pdf. Removing from index.
+2025-01-09 16:48:21,789 - ERROR - Failed to remove Document ID f0f3354717f38ce845f5d4179c4879bd0fe50fa53565336334a43f304d557fb1 as it does not exist in the index.
+2025-01-09 16:48:21,789 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 091324.pdf. Removing from index.
+2025-01-09 16:48:21,789 - ERROR - Failed to remove Document ID 49ca8831739ef25bbaa20039067f84be173c0680751772aa7f18db41d4918d23 as it does not exist in the index.
+2025-01-09 16:48:21,789 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092024.pdf. Removing from index.
+2025-01-09 16:48:21,789 - ERROR - Failed to remove Document ID b86fc366cde65a6c104495b1186e534cfacf145ab37bba5cd9fe996c37afa6cf as it does not exist in the index.
+2025-01-09 16:48:21,790 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092724.pdf. Removing from index.
+2025-01-09 16:48:21,790 - ERROR - Failed to remove Document ID a0164679562e769b5dabd83972e8664b4f0a71b8dbf390de8681be24828800c3 as it does not exist in the index.
+2025-01-09 16:48:21,790 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 100424.pdf. Removing from index.
+2025-01-09 16:48:21,790 - ERROR - Failed to remove Document ID f7a1f7e7a1a51c70c4050ca47bdaf801129c479cc713f3f096c4e93180cada76 as it does not exist in the index.
+2025-01-09 16:48:21,790 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 102524.pdf. Removing from index.
+2025-01-09 16:48:21,790 - ERROR - Failed to remove Document ID ae05cfb3174640cab0fe816d378147d3c6aab3b888b0db8b3ec367614cf5bf90 as it does not exist in the index.
+2025-01-09 16:48:21,790 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110124.pdf. Removing from index.
+2025-01-09 16:48:21,790 - ERROR - Failed to remove Document ID fcf31c4e2c13bb11a9b1e5dc71a8b5a0e0374fd2e7fcb86429d9e882170f71f4 as it does not exist in the index.
+2025-01-09 16:48:21,791 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110824.pdf. Removing from index.
+2025-01-09 16:48:21,791 - ERROR - Failed to remove Document ID 48712573a7379045af34c47384aa5cc9ab525ab0294634447480724a9c7d5735 as it does not exist in the index.
+2025-01-09 16:48:21,791 - WARNING - Document file not found: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 111524 (1).pdf. Removing from index.
+2025-01-09 16:48:21,791 - ERROR - Failed to remove Document ID 83af1fdf062dafb34c9260680b81b9bf5f1344cc914025e29fd470720bf88d32 as it does not exist in the index.
+2025-01-09 16:48:21,791 - INFO - Index cleansing complete. Removed 52 missing documents.
+2025-01-09 16:48:21,792 - INFO - Starting index rationalization.
+2025-01-09 16:48:21,792 - INFO - Index rationalization complete. Removed 0 duplicates.
+2025-01-09 16:48:21,834 - INFO - Found 52 documents in New_Documents
+2025-01-09 16:48:21,835 - INFO - Found 0 documents in In_Processing
+2025-01-09 16:48:21,838 - INFO - Found 10 documents in Duplicates
+2025-01-09 16:48:21,839 - INFO - Found 0 documents in Classified
+2025-01-09 16:48:21,842 - INFO - Moved document 081324 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,842 - DEBUG - Assigned document ID 0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d to 081324 BOARD BUZZ.pdf
+2025-01-09 16:48:21,843 - INFO - Moved new document 081324 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d
+2025-01-09 16:48:21,846 - INFO - Moved document 082724 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,846 - DEBUG - Assigned document ID 5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e to 082724 BOARD BUZZ.pdf
+2025-01-09 16:48:21,846 - INFO - Moved new document 082724 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e
+2025-01-09 16:48:21,848 - INFO - Moved document 091024 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,848 - DEBUG - Assigned document ID dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef to 091024 BOARD BUZZ.pdf
+2025-01-09 16:48:21,848 - INFO - Moved new document 091024 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef
+2025-01-09 16:48:21,851 - INFO - Moved document 092424 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,851 - DEBUG - Assigned document ID 63c3240c119e0bcd8564bb452ef8084bd12d3afe1c8c4861b9929e18b1bbdf7a to 092424 BOARD BUZZ.pdf
+2025-01-09 16:48:21,851 - INFO - Moved new document 092424 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 63c3240c119e0bcd8564bb452ef8084bd12d3afe1c8c4861b9929e18b1bbdf7a
+2025-01-09 16:48:21,853 - INFO - Moved document 10-22-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,853 - DEBUG - Assigned document ID 7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa to 10-22-2024.auto_generated_captions.vtt
+2025-01-09 16:48:21,853 - INFO - Moved new document 10-22-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa
+2025-01-09 16:48:21,856 - INFO - Moved document 10-8-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,857 - DEBUG - Assigned document ID 65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b to 10-8-2024.auto_generated_captions.vtt
+2025-01-09 16:48:21,857 - INFO - Moved new document 10-8-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b
+2025-01-09 16:48:21,859 - INFO - Moved document 102224 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,859 - DEBUG - Assigned document ID 02b724fce7b8a45382e5d3bc885c31bcf5bcdf6b8b8aca89ce904e87be8c8e2f to 102224 BOARD BUZZ.pdf
+2025-01-09 16:48:21,859 - INFO - Moved new document 102224 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: 02b724fce7b8a45382e5d3bc885c31bcf5bcdf6b8b8aca89ce904e87be8c8e2f
+2025-01-09 16:48:21,861 - INFO - Moved document 11-12-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,861 - DEBUG - Assigned document ID 7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4 to 11-12-2024.auto_generated_captions.vtt
+2025-01-09 16:48:21,861 - INFO - Moved new document 11-12-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4
+2025-01-09 16:48:21,864 - INFO - Moved document 111224 BOARD BUZZ.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,864 - DEBUG - Assigned document ID a87a05b7329b56662f3f43d182e942a38154b95c1ccc499d491a431cff31aa77 to 111224 BOARD BUZZ.pdf
+2025-01-09 16:48:21,864 - INFO - Moved new document 111224 BOARD BUZZ.pdf from New_Documents to In_Processing, assigned ID: a87a05b7329b56662f3f43d182e942a38154b95c1ccc499d491a431cff31aa77
+2025-01-09 16:48:21,867 - INFO - Moved document 2023-24 Prop 28 Annual Report.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,867 - DEBUG - Assigned document ID b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2 to 2023-24 Prop 28 Annual Report.pdf
+2025-01-09 16:48:21,867 - INFO - Moved new document 2023-24 Prop 28 Annual Report.pdf from New_Documents to In_Processing, assigned ID: b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2
+2025-01-09 16:48:21,870 - INFO - Moved document 2024-25 Prop 28 Presentation.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,870 - DEBUG - Assigned document ID 430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0 to 2024-25 Prop 28 Presentation.pdf
+2025-01-09 16:48:21,871 - INFO - Moved new document 2024-25 Prop 28 Presentation.pdf from New_Documents to In_Processing, assigned ID: 430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0
+2025-01-09 16:48:21,872 - INFO - Moved document 7-2-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,873 - DEBUG - Assigned document ID 3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103 to 7-2-2024.subtitle.webvtt.vtt
+2025-01-09 16:48:21,873 - INFO - Moved new document 7-2-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103
+2025-01-09 16:48:21,875 - INFO - Moved document 8-13-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,875 - DEBUG - Assigned document ID 9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e to 8-13-2024.subtitle.webvtt.vtt
+2025-01-09 16:48:21,875 - INFO - Moved new document 8-13-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e
+2025-01-09 16:48:21,878 - INFO - Moved document 8-27-2024.auto_generated_captions.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,878 - DEBUG - Assigned document ID 2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f to 8-27-2024.auto_generated_captions.vtt
+2025-01-09 16:48:21,878 - INFO - Moved new document 8-27-2024.auto_generated_captions.vtt from New_Documents to In_Processing, assigned ID: 2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f
+2025-01-09 16:48:21,880 - INFO - Moved document 9-10-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,881 - DEBUG - Assigned document ID 149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa to 9-10-2024.subtitle.webvtt.vtt
+2025-01-09 16:48:21,881 - INFO - Moved new document 9-10-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa
+2025-01-09 16:48:21,883 - INFO - Moved document 9-24-2024.subtitle.webvtt.vtt to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,883 - DEBUG - Assigned document ID 147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459 to 9-24-2024.subtitle.webvtt.vtt
+2025-01-09 16:48:21,883 - INFO - Moved new document 9-24-2024.subtitle.webvtt.vtt from New_Documents to In_Processing, assigned ID: 147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459
+2025-01-09 16:48:21,886 - INFO - Moved document Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,886 - DEBUG - Assigned document ID 3250db99420a0f35508a7c0070246c308ffebed374be8df14d3f386f0f27932c to Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf
+2025-01-09 16:48:21,886 - INFO - Moved new document Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf from New_Documents to In_Processing, assigned ID: 3250db99420a0f35508a7c0070246c308ffebed374be8df14d3f386f0f27932c
+2025-01-09 16:48:21,892 - INFO - Moved document Meeting Minutes - 1.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,892 - DEBUG - Assigned document ID be9c43bb8a40b8cd7f10cfce50592c936e111f0e7df271d7ca2dc0ab4dc37c63 to Meeting Minutes - 1.pdf
+2025-01-09 16:48:21,892 - INFO - Moved new document Meeting Minutes - 1.pdf from New_Documents to In_Processing, assigned ID: be9c43bb8a40b8cd7f10cfce50592c936e111f0e7df271d7ca2dc0ab4dc37c63
+2025-01-09 16:48:21,897 - INFO - Moved document Meeting Minutes - 2.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,898 - DEBUG - Assigned document ID 07b69cf201418f5abf9008c7648405871c7f1980f292445cb36498f91e18e802 to Meeting Minutes - 2.pdf
+2025-01-09 16:48:21,898 - INFO - Moved new document Meeting Minutes - 2.pdf from New_Documents to In_Processing, assigned ID: 07b69cf201418f5abf9008c7648405871c7f1980f292445cb36498f91e18e802
+2025-01-09 16:48:21,902 - INFO - Moved document Meeting Minutes - 3.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,902 - DEBUG - Assigned document ID 4e355198b027cb3f105e36ea8e6a1ee2a7cb163653150e48cf57e8e510c53891 to Meeting Minutes - 3.pdf
+2025-01-09 16:48:21,903 - INFO - Moved new document Meeting Minutes - 3.pdf from New_Documents to In_Processing, assigned ID: 4e355198b027cb3f105e36ea8e6a1ee2a7cb163653150e48cf57e8e510c53891
+2025-01-09 16:48:21,907 - INFO - Moved document Meeting Minutes - 4.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,907 - DEBUG - Assigned document ID 13350d88caafa77e51bc9178d890dad0172b2b2557f3fa40fa0d257da7c9a86b to Meeting Minutes - 4.pdf
+2025-01-09 16:48:21,907 - INFO - Moved new document Meeting Minutes - 4.pdf from New_Documents to In_Processing, assigned ID: 13350d88caafa77e51bc9178d890dad0172b2b2557f3fa40fa0d257da7c9a86b
+2025-01-09 16:48:21,911 - INFO - Moved document Meeting Minutes - 5.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,912 - DEBUG - Assigned document ID 494220dc71a4613384be88693e80a53c11bcd51b0df201a21e2c72d539902b71 to Meeting Minutes - 5.pdf
+2025-01-09 16:48:21,912 - INFO - Moved new document Meeting Minutes - 5.pdf from New_Documents to In_Processing, assigned ID: 494220dc71a4613384be88693e80a53c11bcd51b0df201a21e2c72d539902b71
+2025-01-09 16:48:21,916 - INFO - Moved document Meeting Minutes - 6.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,916 - DEBUG - Assigned document ID 9b8121fbf97d378b86d33a57c52dd1fb3cc242f5bdeb3143dd5ecf2a742ce3cd to Meeting Minutes - 6.pdf
+2025-01-09 16:48:21,917 - INFO - Moved new document Meeting Minutes - 6.pdf from New_Documents to In_Processing, assigned ID: 9b8121fbf97d378b86d33a57c52dd1fb3cc242f5bdeb3143dd5ecf2a742ce3cd
+2025-01-09 16:48:21,922 - INFO - Moved document Meeting Minutes - 7.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,922 - DEBUG - Assigned document ID 10743e776f014d3c6275cceaf4986939a696bdd7fdc690e17762357c2339f124 to Meeting Minutes - 7.pdf
+2025-01-09 16:48:21,922 - INFO - Moved new document Meeting Minutes - 7.pdf from New_Documents to In_Processing, assigned ID: 10743e776f014d3c6275cceaf4986939a696bdd7fdc690e17762357c2339f124
+2025-01-09 16:48:21,925 - INFO - Moved document Meeting Minutes - 8.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,925 - DEBUG - Assigned document ID 1457637122affe5767665bb789119e30b1ca0d3ac5c322edcdc70dd2938c6e84 to Meeting Minutes - 8.pdf
+2025-01-09 16:48:21,925 - INFO - Moved new document Meeting Minutes - 8.pdf from New_Documents to In_Processing, assigned ID: 1457637122affe5767665bb789119e30b1ca0d3ac5c322edcdc70dd2938c6e84
+2025-01-09 16:48:21,928 - INFO - Moved document Regular Meeting of the Board of Trustees-08-13-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,928 - DEBUG - Assigned document ID 0ef85b81d84ef88e25260c5ed70ed49b5938f9669b622008702397001f23e614 to Regular Meeting of the Board of Trustees-08-13-2024.pdf
+2025-01-09 16:48:21,928 - INFO - Moved new document Regular Meeting of the Board of Trustees-08-13-2024.pdf from New_Documents to In_Processing, assigned ID: 0ef85b81d84ef88e25260c5ed70ed49b5938f9669b622008702397001f23e614
+2025-01-09 16:48:21,930 - INFO - Moved document Regular Meeting of the Board of Trustees-08-27-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,930 - DEBUG - Assigned document ID cd93020aa391271b9ecdec9a0b647f5c75a9982568bfd4041342e0d4d4f9d979 to Regular Meeting of the Board of Trustees-08-27-2024.pdf
+2025-01-09 16:48:21,931 - INFO - Moved new document Regular Meeting of the Board of Trustees-08-27-2024.pdf from New_Documents to In_Processing, assigned ID: cd93020aa391271b9ecdec9a0b647f5c75a9982568bfd4041342e0d4d4f9d979
+2025-01-09 16:48:21,932 - INFO - Moved document Regular Meeting of the Board of Trustees-09-10-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,933 - DEBUG - Assigned document ID cb9021cf86861da128563e0fd56296bbd6b196722be2eafeb6266c72d86b7f6b to Regular Meeting of the Board of Trustees-09-10-2024.pdf
+2025-01-09 16:48:21,933 - INFO - Moved new document Regular Meeting of the Board of Trustees-09-10-2024.pdf from New_Documents to In_Processing, assigned ID: cb9021cf86861da128563e0fd56296bbd6b196722be2eafeb6266c72d86b7f6b
+2025-01-09 16:48:21,935 - INFO - Moved document Regular Meeting of the Board of Trustees-09-24-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,935 - DEBUG - Assigned document ID 804b99e9bff9be67672f2fe0f6668ce43a34eba9e8be2b50757de398e0030057 to Regular Meeting of the Board of Trustees-09-24-2024.pdf
+2025-01-09 16:48:21,935 - INFO - Moved new document Regular Meeting of the Board of Trustees-09-24-2024.pdf from New_Documents to In_Processing, assigned ID: 804b99e9bff9be67672f2fe0f6668ce43a34eba9e8be2b50757de398e0030057
+2025-01-09 16:48:21,938 - INFO - Moved document Regular Meeting of the Board of Trustees-10-08-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,938 - DEBUG - Assigned document ID 667db199644cd9f3f1324a774850e8ce42be0a336e813aae2eb2221e5e540d09 to Regular Meeting of the Board of Trustees-10-08-2024.pdf
+2025-01-09 16:48:21,938 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-08-2024.pdf from New_Documents to In_Processing, assigned ID: 667db199644cd9f3f1324a774850e8ce42be0a336e813aae2eb2221e5e540d09
+2025-01-09 16:48:21,940 - INFO - Moved document Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,941 - DEBUG - Assigned document ID 10bd1b6341ce51b1e25a74e5d863fe5ef0e9437cdd87509a0e74d008073b3178 to Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf
+2025-01-09 16:48:21,941 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf from New_Documents to In_Processing, assigned ID: 10bd1b6341ce51b1e25a74e5d863fe5ef0e9437cdd87509a0e74d008073b3178
+2025-01-09 16:48:21,943 - INFO - Moved document Regular Meeting of the Board of Trustees-10-22-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,943 - DEBUG - Assigned document ID 8af74f6b08729b6990be755284f2b0cad9c2f65488d79d91ff76f2abc15b557d to Regular Meeting of the Board of Trustees-10-22-2024.pdf
+2025-01-09 16:48:21,943 - INFO - Moved new document Regular Meeting of the Board of Trustees-10-22-2024.pdf from New_Documents to In_Processing, assigned ID: 8af74f6b08729b6990be755284f2b0cad9c2f65488d79d91ff76f2abc15b557d
+2025-01-09 16:48:21,945 - INFO - Moved document Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,945 - DEBUG - Assigned document ID e414ca7dfd5b709460abcbe98f2435a3bcc334135ba5962dba0bfc4809b7f450 to Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf
+2025-01-09 16:48:21,945 - INFO - Moved new document Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf from New_Documents to In_Processing, assigned ID: e414ca7dfd5b709460abcbe98f2435a3bcc334135ba5962dba0bfc4809b7f450
+2025-01-09 16:48:21,949 - INFO - Moved document Regular Meeting of the Board of Trustees-11-12-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,949 - DEBUG - Assigned document ID 40ac2d62ffbef74e24d566484fee9876fad5f98fac13856416041e48936f39d9 to Regular Meeting of the Board of Trustees-11-12-2024.pdf
+2025-01-09 16:48:21,949 - INFO - Moved new document Regular Meeting of the Board of Trustees-11-12-2024.pdf from New_Documents to In_Processing, assigned ID: 40ac2d62ffbef74e24d566484fee9876fad5f98fac13856416041e48936f39d9
+2025-01-09 16:48:21,952 - INFO - Moved document Shamrock Presentation 9_24_24 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,952 - DEBUG - Assigned document ID 01705b8ab6c128a2faa4d21bfc2906c3ed08289b07cc43c1cfdd01e49bd7a9ff to Shamrock Presentation 9_24_24 (1).pdf
+2025-01-09 16:48:21,952 - INFO - Moved new document Shamrock Presentation 9_24_24 (1).pdf from New_Documents to In_Processing, assigned ID: 01705b8ab6c128a2faa4d21bfc2906c3ed08289b07cc43c1cfdd01e49bd7a9ff
+2025-01-09 16:48:21,954 - INFO - Moved document SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,954 - DEBUG - Assigned document ID cd437bb6cd1a9cbb21af350e17d96610d84ea3908f8ce109e7fdfa9c9001eeaf to SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf
+2025-01-09 16:48:21,954 - INFO - Moved new document SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf from New_Documents to In_Processing, assigned ID: cd437bb6cd1a9cbb21af350e17d96610d84ea3908f8ce109e7fdfa9c9001eeaf
+2025-01-09 16:48:21,957 - INFO - Moved document Weekly Community Update - 062824 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,958 - DEBUG - Assigned document ID b3d7339b95fbe3e18008b110a18432c85feb69d08aae8d282c677da2ad42abb9 to Weekly Community Update - 062824 (1).pdf
+2025-01-09 16:48:21,958 - INFO - Moved new document Weekly Community Update - 062824 (1).pdf from New_Documents to In_Processing, assigned ID: b3d7339b95fbe3e18008b110a18432c85feb69d08aae8d282c677da2ad42abb9
+2025-01-09 16:48:21,962 - INFO - Moved document Weekly Community Update - 071224 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,962 - DEBUG - Assigned document ID d3c1d373c0498e5c6c015d2420dc5fe1b600d7ef8f12f1a1e88995a26594ff6a to Weekly Community Update - 071224 (1).pdf
+2025-01-09 16:48:21,962 - INFO - Moved new document Weekly Community Update - 071224 (1).pdf from New_Documents to In_Processing, assigned ID: d3c1d373c0498e5c6c015d2420dc5fe1b600d7ef8f12f1a1e88995a26594ff6a
+2025-01-09 16:48:21,965 - INFO - Moved document Weekly Community Update - 072624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,966 - DEBUG - Assigned document ID 1091639732a37ee566733304af55d4e3d89de896288d8034180f0bb5478c8854 to Weekly Community Update - 072624.pdf
+2025-01-09 16:48:21,966 - INFO - Moved new document Weekly Community Update - 072624.pdf from New_Documents to In_Processing, assigned ID: 1091639732a37ee566733304af55d4e3d89de896288d8034180f0bb5478c8854
+2025-01-09 16:48:21,968 - INFO - Moved document Weekly Community Update - 080924.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,968 - DEBUG - Assigned document ID 3d549a4a43a89974324645a0d32ae06f5a8a1fe4bb98472d291030c1de179691 to Weekly Community Update - 080924.pdf
+2025-01-09 16:48:21,968 - INFO - Moved new document Weekly Community Update - 080924.pdf from New_Documents to In_Processing, assigned ID: 3d549a4a43a89974324645a0d32ae06f5a8a1fe4bb98472d291030c1de179691
+2025-01-09 16:48:21,971 - INFO - Moved document Weekly Community Update - 081624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,972 - DEBUG - Assigned document ID 5b4446baf8401790c2586b948d7ab9fc4d2b57aad6be270605009e56012c81b1 to Weekly Community Update - 081624.pdf
+2025-01-09 16:48:21,972 - INFO - Moved new document Weekly Community Update - 081624.pdf from New_Documents to In_Processing, assigned ID: 5b4446baf8401790c2586b948d7ab9fc4d2b57aad6be270605009e56012c81b1
+2025-01-09 16:48:21,975 - INFO - Moved document Weekly Community Update - 082324 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,975 - DEBUG - Assigned document ID 3db8f84919f384408fde8e56f0676a3edcdd910e3ea5ed4ddf20772d47c247af to Weekly Community Update - 082324 (1).pdf
+2025-01-09 16:48:21,975 - INFO - Moved new document Weekly Community Update - 082324 (1).pdf from New_Documents to In_Processing, assigned ID: 3db8f84919f384408fde8e56f0676a3edcdd910e3ea5ed4ddf20772d47c247af
+2025-01-09 16:48:21,977 - INFO - Moved document Weekly Community Update - 083024 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,978 - DEBUG - Assigned document ID 3971afd11fefe5351b4771b25f2ead34d9441ff3e5087820fab4e90198363c7c to Weekly Community Update - 083024 (1).pdf
+2025-01-09 16:48:21,978 - INFO - Moved new document Weekly Community Update - 083024 (1).pdf from New_Documents to In_Processing, assigned ID: 3971afd11fefe5351b4771b25f2ead34d9441ff3e5087820fab4e90198363c7c
+2025-01-09 16:48:21,980 - INFO - Moved document Weekly Community Update - 090624.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,980 - DEBUG - Assigned document ID f0f3354717f38ce845f5d4179c4879bd0fe50fa53565336334a43f304d557fb1 to Weekly Community Update - 090624.pdf
+2025-01-09 16:48:21,980 - INFO - Moved new document Weekly Community Update - 090624.pdf from New_Documents to In_Processing, assigned ID: f0f3354717f38ce845f5d4179c4879bd0fe50fa53565336334a43f304d557fb1
+2025-01-09 16:48:21,982 - INFO - Moved document Weekly Community Update - 091324.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,982 - DEBUG - Assigned document ID 49ca8831739ef25bbaa20039067f84be173c0680751772aa7f18db41d4918d23 to Weekly Community Update - 091324.pdf
+2025-01-09 16:48:21,982 - INFO - Moved new document Weekly Community Update - 091324.pdf from New_Documents to In_Processing, assigned ID: 49ca8831739ef25bbaa20039067f84be173c0680751772aa7f18db41d4918d23
+2025-01-09 16:48:21,986 - INFO - Moved document Weekly Community Update - 092024.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,986 - DEBUG - Assigned document ID b86fc366cde65a6c104495b1186e534cfacf145ab37bba5cd9fe996c37afa6cf to Weekly Community Update - 092024.pdf
+2025-01-09 16:48:21,986 - INFO - Moved new document Weekly Community Update - 092024.pdf from New_Documents to In_Processing, assigned ID: b86fc366cde65a6c104495b1186e534cfacf145ab37bba5cd9fe996c37afa6cf
+2025-01-09 16:48:21,988 - INFO - Moved document Weekly Community Update - 092724.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,988 - DEBUG - Assigned document ID a0164679562e769b5dabd83972e8664b4f0a71b8dbf390de8681be24828800c3 to Weekly Community Update - 092724.pdf
+2025-01-09 16:48:21,988 - INFO - Moved new document Weekly Community Update - 092724.pdf from New_Documents to In_Processing, assigned ID: a0164679562e769b5dabd83972e8664b4f0a71b8dbf390de8681be24828800c3
+2025-01-09 16:48:21,991 - INFO - Moved document Weekly Community Update - 100424.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,991 - DEBUG - Assigned document ID f7a1f7e7a1a51c70c4050ca47bdaf801129c479cc713f3f096c4e93180cada76 to Weekly Community Update - 100424.pdf
+2025-01-09 16:48:21,991 - INFO - Moved new document Weekly Community Update - 100424.pdf from New_Documents to In_Processing, assigned ID: f7a1f7e7a1a51c70c4050ca47bdaf801129c479cc713f3f096c4e93180cada76
+2025-01-09 16:48:21,993 - INFO - Moved document Weekly Community Update - 102524.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,993 - DEBUG - Assigned document ID ae05cfb3174640cab0fe816d378147d3c6aab3b888b0db8b3ec367614cf5bf90 to Weekly Community Update - 102524.pdf
+2025-01-09 16:48:21,993 - INFO - Moved new document Weekly Community Update - 102524.pdf from New_Documents to In_Processing, assigned ID: ae05cfb3174640cab0fe816d378147d3c6aab3b888b0db8b3ec367614cf5bf90
+2025-01-09 16:48:21,997 - INFO - Moved document Weekly Community Update - 110124.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:21,997 - DEBUG - Assigned document ID fcf31c4e2c13bb11a9b1e5dc71a8b5a0e0374fd2e7fcb86429d9e882170f71f4 to Weekly Community Update - 110124.pdf
+2025-01-09 16:48:21,998 - INFO - Moved new document Weekly Community Update - 110124.pdf from New_Documents to In_Processing, assigned ID: fcf31c4e2c13bb11a9b1e5dc71a8b5a0e0374fd2e7fcb86429d9e882170f71f4
+2025-01-09 16:48:22,000 - INFO - Moved document Weekly Community Update - 110824.pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:22,000 - DEBUG - Assigned document ID 48712573a7379045af34c47384aa5cc9ab525ab0294634447480724a9c7d5735 to Weekly Community Update - 110824.pdf
+2025-01-09 16:48:22,000 - INFO - Moved new document Weekly Community Update - 110824.pdf from New_Documents to In_Processing, assigned ID: 48712573a7379045af34c47384aa5cc9ab525ab0294634447480724a9c7d5735
+2025-01-09 16:48:22,003 - INFO - Moved document Weekly Community Update - 111524 (1).pdf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing
+2025-01-09 16:48:22,003 - DEBUG - Assigned document ID 83af1fdf062dafb34c9260680b81b9bf5f1344cc914025e29fd470720bf88d32 to Weekly Community Update - 111524 (1).pdf
+2025-01-09 16:48:22,003 - INFO - Moved new document Weekly Community Update - 111524 (1).pdf from New_Documents to In_Processing, assigned ID: 83af1fdf062dafb34c9260680b81b9bf5f1344cc914025e29fd470720bf88d32
+2025-01-09 16:48:22,010 - INFO - Script finished.
+2025-01-09 16:51:16,510 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-09 16:51:16,510 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-09 16:51:16,511 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
