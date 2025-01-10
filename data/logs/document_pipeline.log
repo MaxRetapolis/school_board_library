@@ -2025,3 +2025,591 @@
 2025-01-09 16:51:16,510 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
 2025-01-09 16:51:16,510 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
 2025-01-09 16:51:16,511 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
+2025-01-09 16:54:21,465 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-09 16:54:21,465 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-09 16:54:21,466 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
+2025-01-09 16:54:21,467 - INFO - Index cleansing complete. Removed 0 missing documents.
+2025-01-09 16:54:21,468 - INFO - Attempting to classify document ID: 0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\081324 BOARD BUZZ.pdf
+2025-01-09 16:54:21,487 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:21,489 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:21,702 - WARNING - Error importing jpype dependencies. Fallback to subprocess.
+2025-01-09 16:54:21,702 - WARNING - No module named 'jpype'
+2025-01-09 16:54:21,705 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:21,706 - INFO - Document 0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d classified as: PDF-Text-Images
+2025-01-09 16:54:21,706 - INFO - Completed classification for document ID: 0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d, Outcome: PDF-Text-Images
+2025-01-09 16:54:21,706 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:21,706 - INFO - Classification combinations updated for document ID: 0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d with: ['Text', 'Images']
+2025-01-09 16:54:21,706 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:21,711 - INFO - Moved document 0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:21,711 - INFO - Document ID: 0b06af37cbb505e01e4a1ef7aed415eb28e913dddd53642a6b8a5d3fc6ad2e6d moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:21,711 - INFO - Attempting to classify document ID: 5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\082724 BOARD BUZZ.pdf
+2025-01-09 16:54:21,715 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:21,715 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:21,718 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:21,718 - INFO - Document 5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e classified as: PDF-Text-Images
+2025-01-09 16:54:21,719 - INFO - Completed classification for document ID: 5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e, Outcome: PDF-Text-Images
+2025-01-09 16:54:21,719 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:21,719 - INFO - Classification combinations updated for document ID: 5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e with: ['Text', 'Images']
+2025-01-09 16:54:21,719 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:21,721 - INFO - Moved document 5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:21,721 - INFO - Document ID: 5ad7b5cc42b01975f600b4b9ba821ebd63cad47d9e62556390e6d96067f7a25e moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:21,721 - INFO - Attempting to classify document ID: dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\091024 BOARD BUZZ.pdf
+2025-01-09 16:54:21,727 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:21,728 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:21,731 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:21,731 - INFO - Document dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef classified as: PDF-Text-Images
+2025-01-09 16:54:21,731 - INFO - Completed classification for document ID: dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef, Outcome: PDF-Text-Images
+2025-01-09 16:54:21,731 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:21,732 - INFO - Classification combinations updated for document ID: dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef with: ['Text', 'Images']
+2025-01-09 16:54:21,732 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:21,734 - INFO - Moved document dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:21,734 - INFO - Document ID: dea897ae591c2c2600489297f86802c8bb555481aa6e9046699733cf1d0834ef moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:21,734 - INFO - Attempting to classify document ID: 63c3240c119e0bcd8564bb452ef8084bd12d3afe1c8c4861b9929e18b1bbdf7a, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\092424 BOARD BUZZ.pdf
+2025-01-09 16:54:21,740 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:21,741 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:21,744 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:21,744 - INFO - Document 63c3240c119e0bcd8564bb452ef8084bd12d3afe1c8c4861b9929e18b1bbdf7a classified as: PDF-Text-Images
+2025-01-09 16:54:21,744 - INFO - Completed classification for document ID: 63c3240c119e0bcd8564bb452ef8084bd12d3afe1c8c4861b9929e18b1bbdf7a, Outcome: PDF-Text-Images
+2025-01-09 16:54:21,744 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:21,744 - INFO - Classification combinations updated for document ID: 63c3240c119e0bcd8564bb452ef8084bd12d3afe1c8c4861b9929e18b1bbdf7a with: ['Text', 'Images']
+2025-01-09 16:54:21,745 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:21,747 - INFO - Moved document 63c3240c119e0bcd8564bb452ef8084bd12d3afe1c8c4861b9929e18b1bbdf7a to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:21,747 - INFO - Document ID: 63c3240c119e0bcd8564bb452ef8084bd12d3afe1c8c4861b9929e18b1bbdf7a moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:21,748 - INFO - Attempting to classify document ID: 7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\10-22-2024.auto_generated_captions.vtt
+2025-01-09 16:54:21,748 - WARNING - No classification rule found for extension 'vtt' (document ID: 7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa)
+2025-01-09 16:54:21,748 - INFO - Attempting to classify document ID: 65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\10-8-2024.auto_generated_captions.vtt
+2025-01-09 16:54:21,749 - WARNING - No classification rule found for extension 'vtt' (document ID: 65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b)
+2025-01-09 16:54:21,749 - INFO - Attempting to classify document ID: 02b724fce7b8a45382e5d3bc885c31bcf5bcdf6b8b8aca89ce904e87be8c8e2f, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\102224 BOARD BUZZ.pdf
+2025-01-09 16:54:21,753 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:21,753 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:21,756 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:21,756 - INFO - Document 02b724fce7b8a45382e5d3bc885c31bcf5bcdf6b8b8aca89ce904e87be8c8e2f classified as: PDF-Text-Images
+2025-01-09 16:54:21,757 - INFO - Completed classification for document ID: 02b724fce7b8a45382e5d3bc885c31bcf5bcdf6b8b8aca89ce904e87be8c8e2f, Outcome: PDF-Text-Images
+2025-01-09 16:54:21,757 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:21,757 - INFO - Classification combinations updated for document ID: 02b724fce7b8a45382e5d3bc885c31bcf5bcdf6b8b8aca89ce904e87be8c8e2f with: ['Text', 'Images']
+2025-01-09 16:54:21,757 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:21,759 - INFO - Moved document 02b724fce7b8a45382e5d3bc885c31bcf5bcdf6b8b8aca89ce904e87be8c8e2f to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:21,759 - INFO - Document ID: 02b724fce7b8a45382e5d3bc885c31bcf5bcdf6b8b8aca89ce904e87be8c8e2f moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:21,759 - INFO - Attempting to classify document ID: 7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\11-12-2024.auto_generated_captions.vtt
+2025-01-09 16:54:21,759 - WARNING - No classification rule found for extension 'vtt' (document ID: 7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4)
+2025-01-09 16:54:21,759 - INFO - Attempting to classify document ID: a87a05b7329b56662f3f43d182e942a38154b95c1ccc499d491a431cff31aa77, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\111224 BOARD BUZZ.pdf
+2025-01-09 16:54:21,763 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:21,764 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:21,767 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:21,767 - INFO - Document a87a05b7329b56662f3f43d182e942a38154b95c1ccc499d491a431cff31aa77 classified as: PDF-Text-Images
+2025-01-09 16:54:21,767 - INFO - Completed classification for document ID: a87a05b7329b56662f3f43d182e942a38154b95c1ccc499d491a431cff31aa77, Outcome: PDF-Text-Images
+2025-01-09 16:54:21,767 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:21,768 - INFO - Classification combinations updated for document ID: a87a05b7329b56662f3f43d182e942a38154b95c1ccc499d491a431cff31aa77 with: ['Text', 'Images']
+2025-01-09 16:54:21,768 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:21,769 - INFO - Moved document a87a05b7329b56662f3f43d182e942a38154b95c1ccc499d491a431cff31aa77 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:21,770 - INFO - Document ID: a87a05b7329b56662f3f43d182e942a38154b95c1ccc499d491a431cff31aa77 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:21,770 - INFO - Attempting to classify document ID: b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\2023-24 Prop 28 Annual Report.pdf
+2025-01-09 16:54:21,771 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:21,775 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:21,775 - INFO - Document b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2 classified as: PDF-Images
+2025-01-09 16:54:21,775 - INFO - Completed classification for document ID: b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2, Outcome: PDF-Images
+2025-01-09 16:54:21,775 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:21,776 - INFO - Classification combinations updated for document ID: b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2 with: ['Images']
+2025-01-09 16:54:21,776 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Images
+2025-01-09 16:54:21,778 - INFO - Moved document b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Images with type: PDF-Images
+2025-01-09 16:54:21,778 - INFO - Document ID: b8c8da3ba71d794eaaaa9c442dad403a04e6f6c8178c68ccc1af17edbbde83e2 moved to Classified folder as: PDF-Images
+2025-01-09 16:54:21,778 - INFO - Attempting to classify document ID: 430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\2024-25 Prop 28 Presentation.pdf
+2025-01-09 16:54:21,780 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:21,781 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:21,784 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:21,784 - INFO - Document 430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0 classified as: PDF-Text-Images
+2025-01-09 16:54:21,784 - INFO - Completed classification for document ID: 430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0, Outcome: PDF-Text-Images
+2025-01-09 16:54:21,784 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:21,785 - INFO - Classification combinations updated for document ID: 430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0 with: ['Text', 'Images']
+2025-01-09 16:54:21,785 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:21,788 - INFO - Moved document 430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:21,788 - INFO - Document ID: 430a5537497e565fe3ce89e2d06b0fde35e552c03a7a1af090389aeaa18948b0 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:21,788 - INFO - Attempting to classify document ID: 3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\7-2-2024.subtitle.webvtt.vtt
+2025-01-09 16:54:21,788 - WARNING - No classification rule found for extension 'vtt' (document ID: 3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103)
+2025-01-09 16:54:21,788 - INFO - Attempting to classify document ID: 9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-13-2024.subtitle.webvtt.vtt
+2025-01-09 16:54:21,788 - WARNING - No classification rule found for extension 'vtt' (document ID: 9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e)
+2025-01-09 16:54:21,788 - INFO - Attempting to classify document ID: 2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-27-2024.auto_generated_captions.vtt
+2025-01-09 16:54:21,789 - WARNING - No classification rule found for extension 'vtt' (document ID: 2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f)
+2025-01-09 16:54:21,789 - INFO - Attempting to classify document ID: 149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\9-10-2024.subtitle.webvtt.vtt
+2025-01-09 16:54:21,789 - WARNING - No classification rule found for extension 'vtt' (document ID: 149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa)
+2025-01-09 16:54:21,789 - INFO - Attempting to classify document ID: 147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\9-24-2024.subtitle.webvtt.vtt
+2025-01-09 16:54:21,789 - WARNING - No classification rule found for extension 'vtt' (document ID: 147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459)
+2025-01-09 16:54:21,789 - INFO - Attempting to classify document ID: 3250db99420a0f35508a7c0070246c308ffebed374be8df14d3f386f0f27932c, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Bd Govern HB BK Rev Sept. 2022 - FINAL, updated title page 1-2024.pdf
+2025-01-09 16:54:21,797 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:21,798 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:21,804 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:21,804 - INFO - Document 3250db99420a0f35508a7c0070246c308ffebed374be8df14d3f386f0f27932c classified as: PDF-Text-Images
+2025-01-09 16:54:21,805 - INFO - Completed classification for document ID: 3250db99420a0f35508a7c0070246c308ffebed374be8df14d3f386f0f27932c, Outcome: PDF-Text-Images
+2025-01-09 16:54:21,805 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:21,805 - INFO - Classification combinations updated for document ID: 3250db99420a0f35508a7c0070246c308ffebed374be8df14d3f386f0f27932c with: ['Text', 'Images']
+2025-01-09 16:54:21,805 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:21,808 - INFO - Moved document 3250db99420a0f35508a7c0070246c308ffebed374be8df14d3f386f0f27932c to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:21,808 - INFO - Document ID: 3250db99420a0f35508a7c0070246c308ffebed374be8df14d3f386f0f27932c moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:21,808 - INFO - Attempting to classify document ID: be9c43bb8a40b8cd7f10cfce50592c936e111f0e7df271d7ca2dc0ab4dc37c63, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 1.pdf
+2025-01-09 16:54:22,046 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:22,046 - INFO - Document be9c43bb8a40b8cd7f10cfce50592c936e111f0e7df271d7ca2dc0ab4dc37c63 classified as: PDF-Unknown
+2025-01-09 16:54:22,046 - INFO - Completed classification for document ID: be9c43bb8a40b8cd7f10cfce50592c936e111f0e7df271d7ca2dc0ab4dc37c63, Outcome: PDF-Unknown
+2025-01-09 16:54:22,046 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:22,047 - INFO - Classification combinations updated for document ID: be9c43bb8a40b8cd7f10cfce50592c936e111f0e7df271d7ca2dc0ab4dc37c63 with: []
+2025-01-09 16:54:22,047 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown
+2025-01-09 16:54:22,051 - INFO - Moved document be9c43bb8a40b8cd7f10cfce50592c936e111f0e7df271d7ca2dc0ab4dc37c63 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-09 16:54:22,052 - INFO - Document ID: be9c43bb8a40b8cd7f10cfce50592c936e111f0e7df271d7ca2dc0ab4dc37c63 moved to Classified folder as: PDF-Unknown
+2025-01-09 16:54:22,052 - INFO - Attempting to classify document ID: 07b69cf201418f5abf9008c7648405871c7f1980f292445cb36498f91e18e802, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 2.pdf
+2025-01-09 16:54:22,289 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:22,289 - INFO - Document 07b69cf201418f5abf9008c7648405871c7f1980f292445cb36498f91e18e802 classified as: PDF-Unknown
+2025-01-09 16:54:22,289 - INFO - Completed classification for document ID: 07b69cf201418f5abf9008c7648405871c7f1980f292445cb36498f91e18e802, Outcome: PDF-Unknown
+2025-01-09 16:54:22,290 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:22,290 - INFO - Classification combinations updated for document ID: 07b69cf201418f5abf9008c7648405871c7f1980f292445cb36498f91e18e802 with: []
+2025-01-09 16:54:22,290 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown
+2025-01-09 16:54:22,294 - INFO - Moved document 07b69cf201418f5abf9008c7648405871c7f1980f292445cb36498f91e18e802 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-09 16:54:22,294 - INFO - Document ID: 07b69cf201418f5abf9008c7648405871c7f1980f292445cb36498f91e18e802 moved to Classified folder as: PDF-Unknown
+2025-01-09 16:54:22,294 - INFO - Attempting to classify document ID: 4e355198b027cb3f105e36ea8e6a1ee2a7cb163653150e48cf57e8e510c53891, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 3.pdf
+2025-01-09 16:54:22,491 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:22,491 - INFO - Document 4e355198b027cb3f105e36ea8e6a1ee2a7cb163653150e48cf57e8e510c53891 classified as: PDF-Unknown
+2025-01-09 16:54:22,491 - INFO - Completed classification for document ID: 4e355198b027cb3f105e36ea8e6a1ee2a7cb163653150e48cf57e8e510c53891, Outcome: PDF-Unknown
+2025-01-09 16:54:22,492 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:22,492 - INFO - Classification combinations updated for document ID: 4e355198b027cb3f105e36ea8e6a1ee2a7cb163653150e48cf57e8e510c53891 with: []
+2025-01-09 16:54:22,492 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown
+2025-01-09 16:54:22,503 - INFO - Moved document 4e355198b027cb3f105e36ea8e6a1ee2a7cb163653150e48cf57e8e510c53891 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-09 16:54:22,503 - INFO - Document ID: 4e355198b027cb3f105e36ea8e6a1ee2a7cb163653150e48cf57e8e510c53891 moved to Classified folder as: PDF-Unknown
+2025-01-09 16:54:22,504 - INFO - Attempting to classify document ID: 13350d88caafa77e51bc9178d890dad0172b2b2557f3fa40fa0d257da7c9a86b, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 4.pdf
+2025-01-09 16:54:22,705 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:22,705 - INFO - Document 13350d88caafa77e51bc9178d890dad0172b2b2557f3fa40fa0d257da7c9a86b classified as: PDF-Unknown
+2025-01-09 16:54:22,705 - INFO - Completed classification for document ID: 13350d88caafa77e51bc9178d890dad0172b2b2557f3fa40fa0d257da7c9a86b, Outcome: PDF-Unknown
+2025-01-09 16:54:22,706 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:22,706 - INFO - Classification combinations updated for document ID: 13350d88caafa77e51bc9178d890dad0172b2b2557f3fa40fa0d257da7c9a86b with: []
+2025-01-09 16:54:22,706 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown
+2025-01-09 16:54:22,710 - INFO - Moved document 13350d88caafa77e51bc9178d890dad0172b2b2557f3fa40fa0d257da7c9a86b to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-09 16:54:22,710 - INFO - Document ID: 13350d88caafa77e51bc9178d890dad0172b2b2557f3fa40fa0d257da7c9a86b moved to Classified folder as: PDF-Unknown
+2025-01-09 16:54:22,710 - INFO - Attempting to classify document ID: 494220dc71a4613384be88693e80a53c11bcd51b0df201a21e2c72d539902b71, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 5.pdf
+2025-01-09 16:54:22,834 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:22,834 - INFO - Document 494220dc71a4613384be88693e80a53c11bcd51b0df201a21e2c72d539902b71 classified as: PDF-Unknown
+2025-01-09 16:54:22,835 - INFO - Completed classification for document ID: 494220dc71a4613384be88693e80a53c11bcd51b0df201a21e2c72d539902b71, Outcome: PDF-Unknown
+2025-01-09 16:54:22,835 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:22,835 - INFO - Classification combinations updated for document ID: 494220dc71a4613384be88693e80a53c11bcd51b0df201a21e2c72d539902b71 with: []
+2025-01-09 16:54:22,835 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown
+2025-01-09 16:54:22,840 - INFO - Moved document 494220dc71a4613384be88693e80a53c11bcd51b0df201a21e2c72d539902b71 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-09 16:54:22,840 - INFO - Document ID: 494220dc71a4613384be88693e80a53c11bcd51b0df201a21e2c72d539902b71 moved to Classified folder as: PDF-Unknown
+2025-01-09 16:54:22,840 - INFO - Attempting to classify document ID: 9b8121fbf97d378b86d33a57c52dd1fb3cc242f5bdeb3143dd5ecf2a742ce3cd, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 6.pdf
+2025-01-09 16:54:23,051 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,052 - INFO - Document 9b8121fbf97d378b86d33a57c52dd1fb3cc242f5bdeb3143dd5ecf2a742ce3cd classified as: PDF-Unknown
+2025-01-09 16:54:23,052 - INFO - Completed classification for document ID: 9b8121fbf97d378b86d33a57c52dd1fb3cc242f5bdeb3143dd5ecf2a742ce3cd, Outcome: PDF-Unknown
+2025-01-09 16:54:23,052 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,052 - INFO - Classification combinations updated for document ID: 9b8121fbf97d378b86d33a57c52dd1fb3cc242f5bdeb3143dd5ecf2a742ce3cd with: []
+2025-01-09 16:54:23,053 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown
+2025-01-09 16:54:23,054 - INFO - Moved document 9b8121fbf97d378b86d33a57c52dd1fb3cc242f5bdeb3143dd5ecf2a742ce3cd to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-09 16:54:23,055 - INFO - Document ID: 9b8121fbf97d378b86d33a57c52dd1fb3cc242f5bdeb3143dd5ecf2a742ce3cd moved to Classified folder as: PDF-Unknown
+2025-01-09 16:54:23,055 - INFO - Attempting to classify document ID: 10743e776f014d3c6275cceaf4986939a696bdd7fdc690e17762357c2339f124, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 7.pdf
+2025-01-09 16:54:23,283 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,283 - INFO - Document 10743e776f014d3c6275cceaf4986939a696bdd7fdc690e17762357c2339f124 classified as: PDF-Unknown
+2025-01-09 16:54:23,283 - INFO - Completed classification for document ID: 10743e776f014d3c6275cceaf4986939a696bdd7fdc690e17762357c2339f124, Outcome: PDF-Unknown
+2025-01-09 16:54:23,284 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,284 - INFO - Classification combinations updated for document ID: 10743e776f014d3c6275cceaf4986939a696bdd7fdc690e17762357c2339f124 with: []
+2025-01-09 16:54:23,284 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown
+2025-01-09 16:54:23,286 - INFO - Moved document 10743e776f014d3c6275cceaf4986939a696bdd7fdc690e17762357c2339f124 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-09 16:54:23,286 - INFO - Document ID: 10743e776f014d3c6275cceaf4986939a696bdd7fdc690e17762357c2339f124 moved to Classified folder as: PDF-Unknown
+2025-01-09 16:54:23,286 - INFO - Attempting to classify document ID: 1457637122affe5767665bb789119e30b1ca0d3ac5c322edcdc70dd2938c6e84, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Meeting Minutes - 8.pdf
+2025-01-09 16:54:23,322 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,322 - INFO - Document 1457637122affe5767665bb789119e30b1ca0d3ac5c322edcdc70dd2938c6e84 classified as: PDF-Unknown
+2025-01-09 16:54:23,322 - INFO - Completed classification for document ID: 1457637122affe5767665bb789119e30b1ca0d3ac5c322edcdc70dd2938c6e84, Outcome: PDF-Unknown
+2025-01-09 16:54:23,322 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,322 - INFO - Classification combinations updated for document ID: 1457637122affe5767665bb789119e30b1ca0d3ac5c322edcdc70dd2938c6e84 with: []
+2025-01-09 16:54:23,323 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown
+2025-01-09 16:54:23,324 - INFO - Moved document 1457637122affe5767665bb789119e30b1ca0d3ac5c322edcdc70dd2938c6e84 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Unknown with type: PDF-Unknown
+2025-01-09 16:54:23,325 - INFO - Document ID: 1457637122affe5767665bb789119e30b1ca0d3ac5c322edcdc70dd2938c6e84 moved to Classified folder as: PDF-Unknown
+2025-01-09 16:54:23,325 - INFO - Attempting to classify document ID: 0ef85b81d84ef88e25260c5ed70ed49b5938f9669b622008702397001f23e614, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-13-2024.pdf
+2025-01-09 16:54:23,328 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,334 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,335 - INFO - Document 0ef85b81d84ef88e25260c5ed70ed49b5938f9669b622008702397001f23e614 classified as: PDF-Text
+2025-01-09 16:54:23,335 - INFO - Completed classification for document ID: 0ef85b81d84ef88e25260c5ed70ed49b5938f9669b622008702397001f23e614, Outcome: PDF-Text
+2025-01-09 16:54:23,335 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,335 - INFO - Classification combinations updated for document ID: 0ef85b81d84ef88e25260c5ed70ed49b5938f9669b622008702397001f23e614 with: ['Text']
+2025-01-09 16:54:23,335 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-09 16:54:23,338 - INFO - Moved document 0ef85b81d84ef88e25260c5ed70ed49b5938f9669b622008702397001f23e614 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-09 16:54:23,338 - INFO - Document ID: 0ef85b81d84ef88e25260c5ed70ed49b5938f9669b622008702397001f23e614 moved to Classified folder as: PDF-Text
+2025-01-09 16:54:23,339 - INFO - Attempting to classify document ID: cd93020aa391271b9ecdec9a0b647f5c75a9982568bfd4041342e0d4d4f9d979, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-08-27-2024.pdf
+2025-01-09 16:54:23,341 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,347 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,347 - INFO - Document cd93020aa391271b9ecdec9a0b647f5c75a9982568bfd4041342e0d4d4f9d979 classified as: PDF-Text
+2025-01-09 16:54:23,347 - INFO - Completed classification for document ID: cd93020aa391271b9ecdec9a0b647f5c75a9982568bfd4041342e0d4d4f9d979, Outcome: PDF-Text
+2025-01-09 16:54:23,347 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,348 - INFO - Classification combinations updated for document ID: cd93020aa391271b9ecdec9a0b647f5c75a9982568bfd4041342e0d4d4f9d979 with: ['Text']
+2025-01-09 16:54:23,348 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-09 16:54:23,350 - INFO - Moved document cd93020aa391271b9ecdec9a0b647f5c75a9982568bfd4041342e0d4d4f9d979 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-09 16:54:23,351 - INFO - Document ID: cd93020aa391271b9ecdec9a0b647f5c75a9982568bfd4041342e0d4d4f9d979 moved to Classified folder as: PDF-Text
+2025-01-09 16:54:23,351 - INFO - Attempting to classify document ID: cb9021cf86861da128563e0fd56296bbd6b196722be2eafeb6266c72d86b7f6b, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-10-2024.pdf
+2025-01-09 16:54:23,353 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,358 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,359 - INFO - Document cb9021cf86861da128563e0fd56296bbd6b196722be2eafeb6266c72d86b7f6b classified as: PDF-Text
+2025-01-09 16:54:23,359 - INFO - Completed classification for document ID: cb9021cf86861da128563e0fd56296bbd6b196722be2eafeb6266c72d86b7f6b, Outcome: PDF-Text
+2025-01-09 16:54:23,359 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,359 - INFO - Classification combinations updated for document ID: cb9021cf86861da128563e0fd56296bbd6b196722be2eafeb6266c72d86b7f6b with: ['Text']
+2025-01-09 16:54:23,359 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-09 16:54:23,362 - INFO - Moved document cb9021cf86861da128563e0fd56296bbd6b196722be2eafeb6266c72d86b7f6b to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-09 16:54:23,362 - INFO - Document ID: cb9021cf86861da128563e0fd56296bbd6b196722be2eafeb6266c72d86b7f6b moved to Classified folder as: PDF-Text
+2025-01-09 16:54:23,362 - INFO - Attempting to classify document ID: 804b99e9bff9be67672f2fe0f6668ce43a34eba9e8be2b50757de398e0030057, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-09-24-2024.pdf
+2025-01-09 16:54:23,364 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,371 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,371 - INFO - Document 804b99e9bff9be67672f2fe0f6668ce43a34eba9e8be2b50757de398e0030057 classified as: PDF-Text
+2025-01-09 16:54:23,371 - INFO - Completed classification for document ID: 804b99e9bff9be67672f2fe0f6668ce43a34eba9e8be2b50757de398e0030057, Outcome: PDF-Text
+2025-01-09 16:54:23,371 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,372 - INFO - Classification combinations updated for document ID: 804b99e9bff9be67672f2fe0f6668ce43a34eba9e8be2b50757de398e0030057 with: ['Text']
+2025-01-09 16:54:23,372 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-09 16:54:23,373 - INFO - Moved document 804b99e9bff9be67672f2fe0f6668ce43a34eba9e8be2b50757de398e0030057 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-09 16:54:23,374 - INFO - Document ID: 804b99e9bff9be67672f2fe0f6668ce43a34eba9e8be2b50757de398e0030057 moved to Classified folder as: PDF-Text
+2025-01-09 16:54:23,374 - INFO - Attempting to classify document ID: 667db199644cd9f3f1324a774850e8ce42be0a336e813aae2eb2221e5e540d09, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-08-2024.pdf
+2025-01-09 16:54:23,376 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,377 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,382 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,382 - INFO - Document 667db199644cd9f3f1324a774850e8ce42be0a336e813aae2eb2221e5e540d09 classified as: PDF-Text-Images
+2025-01-09 16:54:23,382 - INFO - Completed classification for document ID: 667db199644cd9f3f1324a774850e8ce42be0a336e813aae2eb2221e5e540d09, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,382 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,383 - INFO - Classification combinations updated for document ID: 667db199644cd9f3f1324a774850e8ce42be0a336e813aae2eb2221e5e540d09 with: ['Text', 'Images']
+2025-01-09 16:54:23,383 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,384 - INFO - Moved document 667db199644cd9f3f1324a774850e8ce42be0a336e813aae2eb2221e5e540d09 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,385 - INFO - Document ID: 667db199644cd9f3f1324a774850e8ce42be0a336e813aae2eb2221e5e540d09 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,385 - INFO - Attempting to classify document ID: 10bd1b6341ce51b1e25a74e5d863fe5ef0e9437cdd87509a0e74d008073b3178, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024 (1).pdf
+2025-01-09 16:54:23,388 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,395 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,395 - INFO - Document 10bd1b6341ce51b1e25a74e5d863fe5ef0e9437cdd87509a0e74d008073b3178 classified as: PDF-Text
+2025-01-09 16:54:23,396 - INFO - Completed classification for document ID: 10bd1b6341ce51b1e25a74e5d863fe5ef0e9437cdd87509a0e74d008073b3178, Outcome: PDF-Text
+2025-01-09 16:54:23,396 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,396 - INFO - Classification combinations updated for document ID: 10bd1b6341ce51b1e25a74e5d863fe5ef0e9437cdd87509a0e74d008073b3178 with: ['Text']
+2025-01-09 16:54:23,396 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-09 16:54:23,399 - INFO - Moved document 10bd1b6341ce51b1e25a74e5d863fe5ef0e9437cdd87509a0e74d008073b3178 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-09 16:54:23,399 - INFO - Document ID: 10bd1b6341ce51b1e25a74e5d863fe5ef0e9437cdd87509a0e74d008073b3178 moved to Classified folder as: PDF-Text
+2025-01-09 16:54:23,399 - INFO - Attempting to classify document ID: 8af74f6b08729b6990be755284f2b0cad9c2f65488d79d91ff76f2abc15b557d, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-10-22-2024.pdf
+2025-01-09 16:54:23,402 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,408 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,408 - INFO - Document 8af74f6b08729b6990be755284f2b0cad9c2f65488d79d91ff76f2abc15b557d classified as: PDF-Text
+2025-01-09 16:54:23,408 - INFO - Completed classification for document ID: 8af74f6b08729b6990be755284f2b0cad9c2f65488d79d91ff76f2abc15b557d, Outcome: PDF-Text
+2025-01-09 16:54:23,408 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,408 - INFO - Classification combinations updated for document ID: 8af74f6b08729b6990be755284f2b0cad9c2f65488d79d91ff76f2abc15b557d with: ['Text']
+2025-01-09 16:54:23,408 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-09 16:54:23,410 - INFO - Moved document 8af74f6b08729b6990be755284f2b0cad9c2f65488d79d91ff76f2abc15b557d to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-09 16:54:23,410 - INFO - Document ID: 8af74f6b08729b6990be755284f2b0cad9c2f65488d79d91ff76f2abc15b557d moved to Classified folder as: PDF-Text
+2025-01-09 16:54:23,411 - INFO - Attempting to classify document ID: e414ca7dfd5b709460abcbe98f2435a3bcc334135ba5962dba0bfc4809b7f450, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024 (1).pdf
+2025-01-09 16:54:23,413 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,419 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,419 - INFO - Document e414ca7dfd5b709460abcbe98f2435a3bcc334135ba5962dba0bfc4809b7f450 classified as: PDF-Text
+2025-01-09 16:54:23,419 - INFO - Completed classification for document ID: e414ca7dfd5b709460abcbe98f2435a3bcc334135ba5962dba0bfc4809b7f450, Outcome: PDF-Text
+2025-01-09 16:54:23,420 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,420 - INFO - Classification combinations updated for document ID: e414ca7dfd5b709460abcbe98f2435a3bcc334135ba5962dba0bfc4809b7f450 with: ['Text']
+2025-01-09 16:54:23,420 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-09 16:54:23,422 - INFO - Moved document e414ca7dfd5b709460abcbe98f2435a3bcc334135ba5962dba0bfc4809b7f450 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-09 16:54:23,422 - INFO - Document ID: e414ca7dfd5b709460abcbe98f2435a3bcc334135ba5962dba0bfc4809b7f450 moved to Classified folder as: PDF-Text
+2025-01-09 16:54:23,422 - INFO - Attempting to classify document ID: 40ac2d62ffbef74e24d566484fee9876fad5f98fac13856416041e48936f39d9, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Regular Meeting of the Board of Trustees-11-12-2024.pdf
+2025-01-09 16:54:23,425 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,431 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,431 - INFO - Document 40ac2d62ffbef74e24d566484fee9876fad5f98fac13856416041e48936f39d9 classified as: PDF-Text
+2025-01-09 16:54:23,431 - INFO - Completed classification for document ID: 40ac2d62ffbef74e24d566484fee9876fad5f98fac13856416041e48936f39d9, Outcome: PDF-Text
+2025-01-09 16:54:23,431 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,432 - INFO - Classification combinations updated for document ID: 40ac2d62ffbef74e24d566484fee9876fad5f98fac13856416041e48936f39d9 with: ['Text']
+2025-01-09 16:54:23,432 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-09 16:54:23,434 - INFO - Moved document 40ac2d62ffbef74e24d566484fee9876fad5f98fac13856416041e48936f39d9 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-09 16:54:23,435 - INFO - Document ID: 40ac2d62ffbef74e24d566484fee9876fad5f98fac13856416041e48936f39d9 moved to Classified folder as: PDF-Text
+2025-01-09 16:54:23,435 - INFO - Attempting to classify document ID: 01705b8ab6c128a2faa4d21bfc2906c3ed08289b07cc43c1cfdd01e49bd7a9ff, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Shamrock Presentation 9_24_24 (1).pdf
+2025-01-09 16:54:23,438 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,439 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,443 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,443 - INFO - Document 01705b8ab6c128a2faa4d21bfc2906c3ed08289b07cc43c1cfdd01e49bd7a9ff classified as: PDF-Text-Images
+2025-01-09 16:54:23,443 - INFO - Completed classification for document ID: 01705b8ab6c128a2faa4d21bfc2906c3ed08289b07cc43c1cfdd01e49bd7a9ff, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,443 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,443 - INFO - Classification combinations updated for document ID: 01705b8ab6c128a2faa4d21bfc2906c3ed08289b07cc43c1cfdd01e49bd7a9ff with: ['Text', 'Images']
+2025-01-09 16:54:23,444 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,446 - INFO - Moved document 01705b8ab6c128a2faa4d21bfc2906c3ed08289b07cc43c1cfdd01e49bd7a9ff to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,446 - INFO - Document ID: 01705b8ab6c128a2faa4d21bfc2906c3ed08289b07cc43c1cfdd01e49bd7a9ff moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,446 - INFO - Attempting to classify document ID: cd437bb6cd1a9cbb21af350e17d96610d84ea3908f8ce109e7fdfa9c9001eeaf, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\SPECIAL Meeting of the Board of Trustees-07-02-2024.pdf
+2025-01-09 16:54:23,450 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,454 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,455 - INFO - Document cd437bb6cd1a9cbb21af350e17d96610d84ea3908f8ce109e7fdfa9c9001eeaf classified as: PDF-Text
+2025-01-09 16:54:23,455 - INFO - Completed classification for document ID: cd437bb6cd1a9cbb21af350e17d96610d84ea3908f8ce109e7fdfa9c9001eeaf, Outcome: PDF-Text
+2025-01-09 16:54:23,455 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,455 - INFO - Classification combinations updated for document ID: cd437bb6cd1a9cbb21af350e17d96610d84ea3908f8ce109e7fdfa9c9001eeaf with: ['Text']
+2025-01-09 16:54:23,455 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text
+2025-01-09 16:54:23,457 - INFO - Moved document cd437bb6cd1a9cbb21af350e17d96610d84ea3908f8ce109e7fdfa9c9001eeaf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text with type: PDF-Text
+2025-01-09 16:54:23,457 - INFO - Document ID: cd437bb6cd1a9cbb21af350e17d96610d84ea3908f8ce109e7fdfa9c9001eeaf moved to Classified folder as: PDF-Text
+2025-01-09 16:54:23,457 - INFO - Attempting to classify document ID: b3d7339b95fbe3e18008b110a18432c85feb69d08aae8d282c677da2ad42abb9, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 062824 (1).pdf
+2025-01-09 16:54:23,461 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,461 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,465 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,466 - INFO - Document b3d7339b95fbe3e18008b110a18432c85feb69d08aae8d282c677da2ad42abb9 classified as: PDF-Text-Images
+2025-01-09 16:54:23,466 - INFO - Completed classification for document ID: b3d7339b95fbe3e18008b110a18432c85feb69d08aae8d282c677da2ad42abb9, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,466 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,466 - INFO - Classification combinations updated for document ID: b3d7339b95fbe3e18008b110a18432c85feb69d08aae8d282c677da2ad42abb9 with: ['Text', 'Images']
+2025-01-09 16:54:23,466 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,468 - INFO - Moved document b3d7339b95fbe3e18008b110a18432c85feb69d08aae8d282c677da2ad42abb9 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,469 - INFO - Document ID: b3d7339b95fbe3e18008b110a18432c85feb69d08aae8d282c677da2ad42abb9 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,469 - INFO - Attempting to classify document ID: d3c1d373c0498e5c6c015d2420dc5fe1b600d7ef8f12f1a1e88995a26594ff6a, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 071224 (1).pdf
+2025-01-09 16:54:23,473 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,473 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,477 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,478 - INFO - Document d3c1d373c0498e5c6c015d2420dc5fe1b600d7ef8f12f1a1e88995a26594ff6a classified as: PDF-Text-Images
+2025-01-09 16:54:23,478 - INFO - Completed classification for document ID: d3c1d373c0498e5c6c015d2420dc5fe1b600d7ef8f12f1a1e88995a26594ff6a, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,478 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,479 - INFO - Classification combinations updated for document ID: d3c1d373c0498e5c6c015d2420dc5fe1b600d7ef8f12f1a1e88995a26594ff6a with: ['Text', 'Images']
+2025-01-09 16:54:23,479 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,482 - INFO - Moved document d3c1d373c0498e5c6c015d2420dc5fe1b600d7ef8f12f1a1e88995a26594ff6a to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,482 - INFO - Document ID: d3c1d373c0498e5c6c015d2420dc5fe1b600d7ef8f12f1a1e88995a26594ff6a moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,482 - INFO - Attempting to classify document ID: 1091639732a37ee566733304af55d4e3d89de896288d8034180f0bb5478c8854, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 072624.pdf
+2025-01-09 16:54:23,485 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,486 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,489 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,490 - INFO - Document 1091639732a37ee566733304af55d4e3d89de896288d8034180f0bb5478c8854 classified as: PDF-Text-Images
+2025-01-09 16:54:23,490 - INFO - Completed classification for document ID: 1091639732a37ee566733304af55d4e3d89de896288d8034180f0bb5478c8854, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,490 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,490 - INFO - Classification combinations updated for document ID: 1091639732a37ee566733304af55d4e3d89de896288d8034180f0bb5478c8854 with: ['Text', 'Images']
+2025-01-09 16:54:23,491 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,492 - INFO - Moved document 1091639732a37ee566733304af55d4e3d89de896288d8034180f0bb5478c8854 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,493 - INFO - Document ID: 1091639732a37ee566733304af55d4e3d89de896288d8034180f0bb5478c8854 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,493 - INFO - Attempting to classify document ID: 3d549a4a43a89974324645a0d32ae06f5a8a1fe4bb98472d291030c1de179691, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 080924.pdf
+2025-01-09 16:54:23,496 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,497 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,500 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,501 - INFO - Document 3d549a4a43a89974324645a0d32ae06f5a8a1fe4bb98472d291030c1de179691 classified as: PDF-Text-Images
+2025-01-09 16:54:23,501 - INFO - Completed classification for document ID: 3d549a4a43a89974324645a0d32ae06f5a8a1fe4bb98472d291030c1de179691, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,501 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,501 - INFO - Classification combinations updated for document ID: 3d549a4a43a89974324645a0d32ae06f5a8a1fe4bb98472d291030c1de179691 with: ['Text', 'Images']
+2025-01-09 16:54:23,502 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,503 - INFO - Moved document 3d549a4a43a89974324645a0d32ae06f5a8a1fe4bb98472d291030c1de179691 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,504 - INFO - Document ID: 3d549a4a43a89974324645a0d32ae06f5a8a1fe4bb98472d291030c1de179691 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,504 - INFO - Attempting to classify document ID: 5b4446baf8401790c2586b948d7ab9fc4d2b57aad6be270605009e56012c81b1, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 081624.pdf
+2025-01-09 16:54:23,508 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,509 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,513 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,513 - INFO - Document 5b4446baf8401790c2586b948d7ab9fc4d2b57aad6be270605009e56012c81b1 classified as: PDF-Text-Images
+2025-01-09 16:54:23,513 - INFO - Completed classification for document ID: 5b4446baf8401790c2586b948d7ab9fc4d2b57aad6be270605009e56012c81b1, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,514 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,514 - INFO - Classification combinations updated for document ID: 5b4446baf8401790c2586b948d7ab9fc4d2b57aad6be270605009e56012c81b1 with: ['Text', 'Images']
+2025-01-09 16:54:23,514 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,517 - INFO - Moved document 5b4446baf8401790c2586b948d7ab9fc4d2b57aad6be270605009e56012c81b1 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,517 - INFO - Document ID: 5b4446baf8401790c2586b948d7ab9fc4d2b57aad6be270605009e56012c81b1 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,517 - INFO - Attempting to classify document ID: 3db8f84919f384408fde8e56f0676a3edcdd910e3ea5ed4ddf20772d47c247af, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 082324 (1).pdf
+2025-01-09 16:54:23,520 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,521 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,525 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,526 - INFO - Document 3db8f84919f384408fde8e56f0676a3edcdd910e3ea5ed4ddf20772d47c247af classified as: PDF-Text-Images
+2025-01-09 16:54:23,526 - INFO - Completed classification for document ID: 3db8f84919f384408fde8e56f0676a3edcdd910e3ea5ed4ddf20772d47c247af, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,526 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,526 - INFO - Classification combinations updated for document ID: 3db8f84919f384408fde8e56f0676a3edcdd910e3ea5ed4ddf20772d47c247af with: ['Text', 'Images']
+2025-01-09 16:54:23,526 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,528 - INFO - Moved document 3db8f84919f384408fde8e56f0676a3edcdd910e3ea5ed4ddf20772d47c247af to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,528 - INFO - Document ID: 3db8f84919f384408fde8e56f0676a3edcdd910e3ea5ed4ddf20772d47c247af moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,528 - INFO - Attempting to classify document ID: 3971afd11fefe5351b4771b25f2ead34d9441ff3e5087820fab4e90198363c7c, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 083024 (1).pdf
+2025-01-09 16:54:23,531 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,532 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,536 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,536 - INFO - Document 3971afd11fefe5351b4771b25f2ead34d9441ff3e5087820fab4e90198363c7c classified as: PDF-Text-Images
+2025-01-09 16:54:23,536 - INFO - Completed classification for document ID: 3971afd11fefe5351b4771b25f2ead34d9441ff3e5087820fab4e90198363c7c, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,537 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,537 - INFO - Classification combinations updated for document ID: 3971afd11fefe5351b4771b25f2ead34d9441ff3e5087820fab4e90198363c7c with: ['Text', 'Images']
+2025-01-09 16:54:23,537 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,539 - INFO - Moved document 3971afd11fefe5351b4771b25f2ead34d9441ff3e5087820fab4e90198363c7c to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,539 - INFO - Document ID: 3971afd11fefe5351b4771b25f2ead34d9441ff3e5087820fab4e90198363c7c moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,540 - INFO - Attempting to classify document ID: f0f3354717f38ce845f5d4179c4879bd0fe50fa53565336334a43f304d557fb1, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 090624.pdf
+2025-01-09 16:54:23,543 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,544 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,547 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,548 - INFO - Document f0f3354717f38ce845f5d4179c4879bd0fe50fa53565336334a43f304d557fb1 classified as: PDF-Text-Images
+2025-01-09 16:54:23,548 - INFO - Completed classification for document ID: f0f3354717f38ce845f5d4179c4879bd0fe50fa53565336334a43f304d557fb1, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,548 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,548 - INFO - Classification combinations updated for document ID: f0f3354717f38ce845f5d4179c4879bd0fe50fa53565336334a43f304d557fb1 with: ['Text', 'Images']
+2025-01-09 16:54:23,548 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,550 - INFO - Moved document f0f3354717f38ce845f5d4179c4879bd0fe50fa53565336334a43f304d557fb1 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,550 - INFO - Document ID: f0f3354717f38ce845f5d4179c4879bd0fe50fa53565336334a43f304d557fb1 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,551 - INFO - Attempting to classify document ID: 49ca8831739ef25bbaa20039067f84be173c0680751772aa7f18db41d4918d23, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 091324.pdf
+2025-01-09 16:54:23,553 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,554 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,558 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,558 - INFO - Document 49ca8831739ef25bbaa20039067f84be173c0680751772aa7f18db41d4918d23 classified as: PDF-Text-Images
+2025-01-09 16:54:23,558 - INFO - Completed classification for document ID: 49ca8831739ef25bbaa20039067f84be173c0680751772aa7f18db41d4918d23, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,558 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,559 - INFO - Classification combinations updated for document ID: 49ca8831739ef25bbaa20039067f84be173c0680751772aa7f18db41d4918d23 with: ['Text', 'Images']
+2025-01-09 16:54:23,559 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,561 - INFO - Moved document 49ca8831739ef25bbaa20039067f84be173c0680751772aa7f18db41d4918d23 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,562 - INFO - Document ID: 49ca8831739ef25bbaa20039067f84be173c0680751772aa7f18db41d4918d23 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,562 - INFO - Attempting to classify document ID: b86fc366cde65a6c104495b1186e534cfacf145ab37bba5cd9fe996c37afa6cf, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092024.pdf
+2025-01-09 16:54:23,565 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,566 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,570 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,571 - INFO - Document b86fc366cde65a6c104495b1186e534cfacf145ab37bba5cd9fe996c37afa6cf classified as: PDF-Text-Images
+2025-01-09 16:54:23,571 - INFO - Completed classification for document ID: b86fc366cde65a6c104495b1186e534cfacf145ab37bba5cd9fe996c37afa6cf, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,571 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,571 - INFO - Classification combinations updated for document ID: b86fc366cde65a6c104495b1186e534cfacf145ab37bba5cd9fe996c37afa6cf with: ['Text', 'Images']
+2025-01-09 16:54:23,572 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,573 - INFO - Moved document b86fc366cde65a6c104495b1186e534cfacf145ab37bba5cd9fe996c37afa6cf to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,574 - INFO - Document ID: b86fc366cde65a6c104495b1186e534cfacf145ab37bba5cd9fe996c37afa6cf moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,574 - INFO - Attempting to classify document ID: a0164679562e769b5dabd83972e8664b4f0a71b8dbf390de8681be24828800c3, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 092724.pdf
+2025-01-09 16:54:23,578 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,579 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,583 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,583 - INFO - Document a0164679562e769b5dabd83972e8664b4f0a71b8dbf390de8681be24828800c3 classified as: PDF-Text-Images
+2025-01-09 16:54:23,583 - INFO - Completed classification for document ID: a0164679562e769b5dabd83972e8664b4f0a71b8dbf390de8681be24828800c3, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,583 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,584 - INFO - Classification combinations updated for document ID: a0164679562e769b5dabd83972e8664b4f0a71b8dbf390de8681be24828800c3 with: ['Text', 'Images']
+2025-01-09 16:54:23,584 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,586 - INFO - Moved document a0164679562e769b5dabd83972e8664b4f0a71b8dbf390de8681be24828800c3 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,586 - INFO - Document ID: a0164679562e769b5dabd83972e8664b4f0a71b8dbf390de8681be24828800c3 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,586 - INFO - Attempting to classify document ID: f7a1f7e7a1a51c70c4050ca47bdaf801129c479cc713f3f096c4e93180cada76, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 100424.pdf
+2025-01-09 16:54:23,590 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,591 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,595 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,595 - INFO - Document f7a1f7e7a1a51c70c4050ca47bdaf801129c479cc713f3f096c4e93180cada76 classified as: PDF-Text-Images
+2025-01-09 16:54:23,595 - INFO - Completed classification for document ID: f7a1f7e7a1a51c70c4050ca47bdaf801129c479cc713f3f096c4e93180cada76, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,595 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,595 - INFO - Classification combinations updated for document ID: f7a1f7e7a1a51c70c4050ca47bdaf801129c479cc713f3f096c4e93180cada76 with: ['Text', 'Images']
+2025-01-09 16:54:23,596 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,597 - INFO - Moved document f7a1f7e7a1a51c70c4050ca47bdaf801129c479cc713f3f096c4e93180cada76 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,597 - INFO - Document ID: f7a1f7e7a1a51c70c4050ca47bdaf801129c479cc713f3f096c4e93180cada76 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,598 - INFO - Attempting to classify document ID: ae05cfb3174640cab0fe816d378147d3c6aab3b888b0db8b3ec367614cf5bf90, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 102524.pdf
+2025-01-09 16:54:23,602 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,603 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,607 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,607 - INFO - Document ae05cfb3174640cab0fe816d378147d3c6aab3b888b0db8b3ec367614cf5bf90 classified as: PDF-Text-Images
+2025-01-09 16:54:23,608 - INFO - Completed classification for document ID: ae05cfb3174640cab0fe816d378147d3c6aab3b888b0db8b3ec367614cf5bf90, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,608 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,608 - INFO - Classification combinations updated for document ID: ae05cfb3174640cab0fe816d378147d3c6aab3b888b0db8b3ec367614cf5bf90 with: ['Text', 'Images']
+2025-01-09 16:54:23,608 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,611 - INFO - Moved document ae05cfb3174640cab0fe816d378147d3c6aab3b888b0db8b3ec367614cf5bf90 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,611 - INFO - Document ID: ae05cfb3174640cab0fe816d378147d3c6aab3b888b0db8b3ec367614cf5bf90 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,612 - INFO - Attempting to classify document ID: fcf31c4e2c13bb11a9b1e5dc71a8b5a0e0374fd2e7fcb86429d9e882170f71f4, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110124.pdf
+2025-01-09 16:54:23,616 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,617 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,622 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,622 - INFO - Document fcf31c4e2c13bb11a9b1e5dc71a8b5a0e0374fd2e7fcb86429d9e882170f71f4 classified as: PDF-Text-Images
+2025-01-09 16:54:23,622 - INFO - Completed classification for document ID: fcf31c4e2c13bb11a9b1e5dc71a8b5a0e0374fd2e7fcb86429d9e882170f71f4, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,623 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,623 - INFO - Classification combinations updated for document ID: fcf31c4e2c13bb11a9b1e5dc71a8b5a0e0374fd2e7fcb86429d9e882170f71f4 with: ['Text', 'Images']
+2025-01-09 16:54:23,623 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,625 - INFO - Moved document fcf31c4e2c13bb11a9b1e5dc71a8b5a0e0374fd2e7fcb86429d9e882170f71f4 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,625 - INFO - Document ID: fcf31c4e2c13bb11a9b1e5dc71a8b5a0e0374fd2e7fcb86429d9e882170f71f4 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,625 - INFO - Attempting to classify document ID: 48712573a7379045af34c47384aa5cc9ab525ab0294634447480724a9c7d5735, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 110824.pdf
+2025-01-09 16:54:23,629 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,629 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,633 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,633 - INFO - Document 48712573a7379045af34c47384aa5cc9ab525ab0294634447480724a9c7d5735 classified as: PDF-Text-Images
+2025-01-09 16:54:23,633 - INFO - Completed classification for document ID: 48712573a7379045af34c47384aa5cc9ab525ab0294634447480724a9c7d5735, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,634 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,634 - INFO - Classification combinations updated for document ID: 48712573a7379045af34c47384aa5cc9ab525ab0294634447480724a9c7d5735 with: ['Text', 'Images']
+2025-01-09 16:54:23,634 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,636 - INFO - Moved document 48712573a7379045af34c47384aa5cc9ab525ab0294634447480724a9c7d5735 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,636 - INFO - Document ID: 48712573a7379045af34c47384aa5cc9ab525ab0294634447480724a9c7d5735 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,636 - INFO - Attempting to classify document ID: 83af1fdf062dafb34c9260680b81b9bf5f1344cc914025e29fd470720bf88d32, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\Weekly Community Update - 111524 (1).pdf
+2025-01-09 16:54:23,640 - INFO - Use case 'extract_text_from_pdf' returned: True
+2025-01-09 16:54:23,641 - INFO - Use case 'detect_images_in_pdf' returned: True
+2025-01-09 16:54:23,645 - ERROR - Error classifying PDF for tables: `java` command is not found from this Python process.Please ensure Java is installed and PATH is set for `java`
+2025-01-09 16:54:23,645 - INFO - Document 83af1fdf062dafb34c9260680b81b9bf5f1344cc914025e29fd470720bf88d32 classified as: PDF-Text-Images
+2025-01-09 16:54:23,645 - INFO - Completed classification for document ID: 83af1fdf062dafb34c9260680b81b9bf5f1344cc914025e29fd470720bf88d32, Outcome: PDF-Text-Images
+2025-01-09 16:54:23,645 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 16:54:23,646 - INFO - Classification combinations updated for document ID: 83af1fdf062dafb34c9260680b81b9bf5f1344cc914025e29fd470720bf88d32 with: ['Text', 'Images']
+2025-01-09 16:54:23,646 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images
+2025-01-09 16:54:23,648 - INFO - Moved document 83af1fdf062dafb34c9260680b81b9bf5f1344cc914025e29fd470720bf88d32 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\PDF-Text-Images with type: PDF-Text-Images
+2025-01-09 16:54:23,648 - INFO - Document ID: 83af1fdf062dafb34c9260680b81b9bf5f1344cc914025e29fd470720bf88d32 moved to Classified folder as: PDF-Text-Images
+2025-01-09 16:54:23,651 - INFO - Updated document index saved successfully.
+2025-01-09 17:03:01,310 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-09 17:03:01,311 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-09 17:03:01,311 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
+2025-01-09 17:03:01,312 - INFO - Index cleansing complete. Removed 0 missing documents.
+2025-01-09 17:03:01,314 - INFO - Attempting to classify document ID: 7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\10-22-2024.auto_generated_captions.vtt
+2025-01-09 17:03:01,314 - INFO - Use case 'analyze_vtt_content' returned: Text-Only
+2025-01-09 17:03:01,314 - INFO - Document 7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa classified as: Text-Only
+2025-01-09 17:03:01,314 - INFO - Completed classification for document ID: 7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa, Outcome: Text-Only
+2025-01-09 17:03:01,314 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 17:03:01,315 - INFO - Classification combinations updated for document ID: 7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa with: ['Text-Only']
+2025-01-09 17:03:01,315 - INFO - Created Classified subfolder: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only
+2025-01-09 17:03:01,326 - INFO - Moved document 7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-09 17:03:01,326 - INFO - Document ID: 7af60d473278b5bd9abeccc60889e5b415594716fa2bb51458425a7314df56aa moved to Classified folder as: Text-Only
+2025-01-09 17:03:01,326 - INFO - Attempting to classify document ID: 65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\10-8-2024.auto_generated_captions.vtt
+2025-01-09 17:03:01,327 - INFO - Use case 'analyze_vtt_content' returned: Text-Only
+2025-01-09 17:03:01,327 - INFO - Document 65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b classified as: Text-Only
+2025-01-09 17:03:01,327 - INFO - Completed classification for document ID: 65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b, Outcome: Text-Only
+2025-01-09 17:03:01,327 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 17:03:01,328 - INFO - Classification combinations updated for document ID: 65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b with: ['Text-Only']
+2025-01-09 17:03:01,328 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only
+2025-01-09 17:03:01,330 - INFO - Moved document 65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-09 17:03:01,330 - INFO - Document ID: 65984614ee15849ea5e1fdee1a8625275cc6af3161040236436bca01ed20227b moved to Classified folder as: Text-Only
+2025-01-09 17:03:01,330 - INFO - Attempting to classify document ID: 7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\11-12-2024.auto_generated_captions.vtt
+2025-01-09 17:03:01,330 - INFO - Use case 'analyze_vtt_content' returned: Text-Only
+2025-01-09 17:03:01,331 - INFO - Document 7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4 classified as: Text-Only
+2025-01-09 17:03:01,331 - INFO - Completed classification for document ID: 7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4, Outcome: Text-Only
+2025-01-09 17:03:01,331 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 17:03:01,331 - INFO - Classification combinations updated for document ID: 7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4 with: ['Text-Only']
+2025-01-09 17:03:01,331 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only
+2025-01-09 17:03:01,333 - INFO - Moved document 7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-09 17:03:01,333 - INFO - Document ID: 7db5e09e2591c151b250bf627873c7448001600f1b7def67b94bcb752576c4f4 moved to Classified folder as: Text-Only
+2025-01-09 17:03:01,333 - INFO - Attempting to classify document ID: 3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\7-2-2024.subtitle.webvtt.vtt
+2025-01-09 17:03:01,333 - INFO - Use case 'analyze_vtt_content' returned: Text-Only
+2025-01-09 17:03:01,333 - INFO - Document 3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103 classified as: Text-Only
+2025-01-09 17:03:01,334 - INFO - Completed classification for document ID: 3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103, Outcome: Text-Only
+2025-01-09 17:03:01,334 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 17:03:01,334 - INFO - Classification combinations updated for document ID: 3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103 with: ['Text-Only']
+2025-01-09 17:03:01,334 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only
+2025-01-09 17:03:01,336 - INFO - Moved document 3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-09 17:03:01,337 - INFO - Document ID: 3d6df0b66d357be2f1e5ed6aa5202dacb6583ff48c233588d19dda9aae5bc103 moved to Classified folder as: Text-Only
+2025-01-09 17:03:01,337 - INFO - Attempting to classify document ID: 9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-13-2024.subtitle.webvtt.vtt
+2025-01-09 17:03:01,337 - INFO - Use case 'analyze_vtt_content' returned: Text-Only
+2025-01-09 17:03:01,337 - INFO - Document 9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e classified as: Text-Only
+2025-01-09 17:03:01,338 - INFO - Completed classification for document ID: 9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e, Outcome: Text-Only
+2025-01-09 17:03:01,338 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 17:03:01,338 - INFO - Classification combinations updated for document ID: 9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e with: ['Text-Only']
+2025-01-09 17:03:01,339 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only
+2025-01-09 17:03:01,340 - INFO - Moved document 9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-09 17:03:01,341 - INFO - Document ID: 9a079b37a4ce4472aaa98a3ec98866f587df53ce7fb40fbb4ecd065fc1c52b3e moved to Classified folder as: Text-Only
+2025-01-09 17:03:01,341 - INFO - Attempting to classify document ID: 2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\8-27-2024.auto_generated_captions.vtt
+2025-01-09 17:03:01,341 - INFO - Use case 'analyze_vtt_content' returned: Text-Only
+2025-01-09 17:03:01,341 - INFO - Document 2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f classified as: Text-Only
+2025-01-09 17:03:01,341 - INFO - Completed classification for document ID: 2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f, Outcome: Text-Only
+2025-01-09 17:03:01,342 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 17:03:01,342 - INFO - Classification combinations updated for document ID: 2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f with: ['Text-Only']
+2025-01-09 17:03:01,342 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only
+2025-01-09 17:03:01,343 - INFO - Moved document 2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-09 17:03:01,344 - INFO - Document ID: 2e4b1ffb2f1550aaa8a212633c308f03bf72a76e5c89cb67e1ac6a610a73ba8f moved to Classified folder as: Text-Only
+2025-01-09 17:03:01,344 - INFO - Attempting to classify document ID: 149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\9-10-2024.subtitle.webvtt.vtt
+2025-01-09 17:03:01,344 - INFO - Use case 'analyze_vtt_content' returned: Text-Only
+2025-01-09 17:03:01,344 - INFO - Document 149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa classified as: Text-Only
+2025-01-09 17:03:01,344 - INFO - Completed classification for document ID: 149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa, Outcome: Text-Only
+2025-01-09 17:03:01,345 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 17:03:01,345 - INFO - Classification combinations updated for document ID: 149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa with: ['Text-Only']
+2025-01-09 17:03:01,345 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only
+2025-01-09 17:03:01,346 - INFO - Moved document 149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-09 17:03:01,347 - INFO - Document ID: 149bf55faa4ceac3449685479e69889999d0c2849b0b11099a8e36ef450c2afa moved to Classified folder as: Text-Only
+2025-01-09 17:03:01,347 - INFO - Attempting to classify document ID: 147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459, Filepath: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\In_Processing\9-24-2024.subtitle.webvtt.vtt
+2025-01-09 17:03:01,347 - INFO - Use case 'analyze_vtt_content' returned: Text-Only
+2025-01-09 17:03:01,347 - INFO - Document 147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459 classified as: Text-Only
+2025-01-09 17:03:01,347 - INFO - Completed classification for document ID: 147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459, Outcome: Text-Only
+2025-01-09 17:03:01,347 - ERROR - Error updating classification combinations: name 'COMBINATIONS_FILE' is not defined
+2025-01-09 17:03:01,348 - INFO - Classification combinations updated for document ID: 147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459 with: ['Text-Only']
+2025-01-09 17:03:01,348 - DEBUG - Classified subfolder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only
+2025-01-09 17:03:01,351 - INFO - Moved document 147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459 to C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified\Text-Only with type: Text-Only
+2025-01-09 17:03:01,352 - INFO - Document ID: 147cc9d205bf98452cd3cae18b9e76c4f896bfb7308c8af8fc5f4082bffc5459 moved to Classified folder as: Text-Only
+2025-01-09 17:03:01,354 - INFO - Updated document index saved successfully.
+2025-01-09 17:03:35,484 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-09 17:03:35,484 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-09 17:03:35,485 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
+2025-01-09 17:03:35,485 - INFO - Index cleansing complete. Removed 0 missing documents.
+2025-01-09 17:03:35,489 - INFO - Updated document index saved successfully.
+2025-01-09 17:08:14,802 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-09 17:08:14,803 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-09 17:08:14,804 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
+2025-01-09 17:08:14,804 - INFO - Index cleansing complete. Removed 0 missing documents.
+2025-01-09 17:08:14,809 - INFO - Updated document index saved successfully.
+2025-01-09 21:15:23,510 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-09 21:15:23,511 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-09 21:15:23,511 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
+2025-01-09 21:15:23,512 - INFO - Index cleansing complete. Removed 0 missing documents.
+2025-01-09 21:15:23,518 - INFO - Updated document index saved successfully.
+2025-01-09 21:20:52,111 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-09 21:20:52,112 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-09 21:20:52,113 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
+2025-01-09 21:20:52,114 - INFO - Index cleansing complete. Removed 0 missing documents.
+2025-01-09 21:20:52,120 - INFO - Updated document index saved successfully.
+2025-01-09 21:23:31,317 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-09 21:23:31,318 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-09 21:23:31,318 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
+2025-01-09 21:23:31,319 - INFO - Index cleansing complete. Removed 0 missing documents.
+2025-01-09 21:23:31,323 - INFO - Updated document index saved successfully.
+2025-01-09 21:26:08,509 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-09 21:26:08,510 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-09 21:26:08,510 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
+2025-01-09 21:26:08,511 - INFO - Index cleansing complete. Removed 0 missing documents.
+2025-01-09 21:26:08,516 - INFO - Updated document index saved successfully.

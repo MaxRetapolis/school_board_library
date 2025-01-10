@@ -24,7 +24,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from index_management import load_index, save_index, index_exists, cleanse_index
 from file_operations import move_file, delete_file
-from utils import generate_document_id
+from utils import generate_document_id, calculate_hash
 from logging_setup import setup_logging, get_logger
 
 # Import configuration
@@ -287,13 +287,13 @@ def classify_vtt_document(filepath):
     try:
         with open(filepath, "r", encoding="utf-8") as file:
             content = file.read()
-            if content.strip():  # Check if the text content is non-empty
-                return "VTT-Text-Only"
+            if content.strip():
+                return "Text-Only"
             else:
-                return "VTT-Text-Empty"
+                return "Text-Empty"
     except Exception as e:
         logging.error(f"Error classifying VTT document: {e}")
-        return "VTT-Unknown"
+        return "Text-Unknown"
 
 def classify_zip_contents(filepath):
     """Classifies a ZIP document to analyze its content."""
@@ -373,18 +373,17 @@ def determine_document_type(doc_id, index, primary_classification):
     """Determines the final document type based on primary and secondary classifications."""
     metadata = index[doc_id]["metadata"]
 
-    # Handling for PDF documents
-    if (primary_classification == "PDF"):
-        classifications = []
-        if metadata.get("extract_text_from_pdf"):
-            classifications.append("Text")
-        if metadata.get("detect_images_in_pdf"):
-            classifications.append("Images")
-        if metadata.get("detect_tables_in_pdf"):
-            classifications.append("Tables")
+    # Use standardized tags to build final doc type
+    text_tag = "Text" if metadata.get("Text") == "Yes" else ""
+    images_tag = "Images" if metadata.get("Images") == "Yes" else ""
+    tables_tag = "Tables" if metadata.get("Tables") == "Yes" else ""
+    parts = [part for part in [text_tag, images_tag, tables_tag] if part]
 
-        document_type = "PDF-" + "-".join(classifications) if classifications else "PDF-Unknown"
-        return document_type
+    if primary_classification == "PDF":
+        if parts:
+            return "PDF-" + "-".join(parts)
+        else:
+            return "PDF-Unknown"
 
     # Handling for DOCX documents
     elif primary_classification == "DOCX":
@@ -446,6 +445,12 @@ def move_to_classified_folder(doc_id, doc_data, classified_folder):
             logging.debug(f"Classified subfolder already exists: {destination_folder}")
 
         new_filepath = os.path.join(destination_folder, os.path.basename(doc_data["filepath"]))
+        if os.path.exists(new_filepath):
+            logging.info(f"File {new_filepath} already exists, moving to Duplicates.")
+            doc_data["status"] = "Duplicates"
+            move_to_duplicates_folder(doc_id, doc_data)
+            return
+
         shutil.move(doc_data["filepath"], new_filepath)
         doc_data["filepath"] = new_filepath
         doc_data["status"] = "Classified"
@@ -481,6 +486,8 @@ def move_to_duplicates_folder(doc_id, doc_data):
             new_filename = filename
 
         new_filepath = os.path.join(duplicates_folder, new_filename)
+        if os.path.exists(new_filepath):
+            os.remove(new_filepath)  # Overwrite existing duplicates
         shutil.move(doc_data["filepath"], new_filepath)
         doc_data["filepath"] = new_filepath
         doc_data["status"] = "Duplicates"
@@ -497,6 +504,9 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     logging.info(f"Attempting to classify document ID: {doc_id}, Filepath: {filepath}")
 
     extension = get_file_extension(filepath)
+
+    # Recalculate hash before processing
+    doc_data["hash"] = calculate_hash(filepath)
 
     if extension not in decision_tree:
         outcome = f"No classification rule found for extension '{extension}'"
@@ -528,6 +538,11 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     index[doc_id]["document_type"] = primary_classification
     index[doc_id]["metadata"]["document_type"] = primary_classification
 
+    # Remove old classification flags
+    for flag in ["Text", "Images", "Tables"]:
+        if flag in index[doc_id]["metadata"]:
+            del index[doc_id]["metadata"][flag]
+
     secondary_use_cases = decision_tree[extension]["secondary"]["use_cases"]
     secondary_classifications = []
 
@@ -544,17 +559,20 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
                 else:
                     # Map boolean results to specific classification labels
                     if isinstance(result, bool):
-                        classification_label = ""
-                        if use_case == "extract_text_from_pdf" and result:
-                            classification_label = "Text"
-                        elif use_case == "detect_images_in_pdf" and result:
-                            classification_label = "Images"
-                        elif use_case == "detect_tables_in_pdf" and result:
-                            classification_label = "Tables"
-                        # Add more mappings as needed for other use cases
-                        if classification_label:
-                            index[doc_id]["metadata"][use_case] = classification_label
-                            secondary_classifications.append(classification_label)
+                        if result:
+                            if use_case == "extract_text_from_pdf":
+                                index[doc_id]["metadata"]["Text"] = "Yes"
+                            elif use_case == "detect_images_in_pdf":
+                                index[doc_id]["metadata"]["Images"] = "Yes"
+                            elif use_case == "detect_tables_in_pdf":
+                                index[doc_id]["metadata"]["Tables"] = "Yes"
+                        else:
+                            if use_case == "extract_text_from_pdf":
+                                index[doc_id]["metadata"]["Text"] = "No"
+                            elif use_case == "detect_images_in_pdf":
+                                index[doc_id]["metadata"]["Images"] = "No"
+                            elif use_case == "detect_tables_in_pdf":
+                                index[doc_id]["metadata"]["Tables"] = "No"
                     else:
                         index[doc_id]["metadata"][use_case] = result
                         secondary_classifications.append(result)  # Append the classification result
@@ -600,6 +618,9 @@ def classify_documents_sequentially(index, decision_tree, use_case_to_function):
     for doc_id, doc_data in documents_to_classify:
         try:
             classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index)
+            # Ensure document is moved to the appropriate folder after classification
+            if doc_data["status"] == "In_Processing":
+                move_to_classified_folder(doc_id, doc_data, CLASSIFIED_FOLDER)
         except Exception as e:
             logging.error(f"Error classifying document {doc_id}: {e}")
             index[doc_id]["status"] = "Errors"
