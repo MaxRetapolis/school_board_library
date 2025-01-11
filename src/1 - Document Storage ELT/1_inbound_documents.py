@@ -316,3 +316,8 @@ def process_documents():
 
 if __name__ == "__main__":
     process_documents()
+
+# Example modification to utilize common secondary classifications if necessary
+# Ensure that when documents are moved to In_Processing, their metadata aligns with standardized classifications
+
+# ...existing code...

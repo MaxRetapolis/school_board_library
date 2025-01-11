@@ -13,7 +13,7 @@
         "primary": "DOCX",
         "secondary": {
             "use_cases": [
-                "analyze_docx_structure"
+                "analyze_doc_structure"
             ]
         }
     },

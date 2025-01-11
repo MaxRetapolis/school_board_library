@@ -30,9 +30,21 @@ from logging_setup import setup_logging, get_logger
 # Import configuration
 from config import ROOT_FOLDER, INDEX_FILE, LOGS_FOLDER, LOG_FILE, CLASSIFIED_FOLDER
 
+# Define COMBINATIONS_FILE early
+COMBINATIONS_FILE = os.path.join(ROOT_FOLDER, "data", "documents", "classification_combinations.json")
+
 # Initialize logging using config
 setup_logging(LOG_FILE)
 logger = get_logger(__name__)
+
+# Add a console handler to print only errors
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.ERROR)
+console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+logger.addHandler(console_handler)
+
+# Ensure the directory for the log file exists
+os.makedirs(LOGS_FOLDER, exist_ok=True)
 
 # --- Configuration ---
 ROOT_FOLDER = ROOT_FOLDER  # Already imported from config.py
@@ -50,6 +62,7 @@ def load_decision_tree(filepath):
         with open(decision_tree_path, "r") as f:
             decision_tree = json.load(f)
         logging.info(f"Decision tree loaded from {decision_tree_path}")
+        logging.debug(f"Decision tree content: {decision_tree}")  # Add debug logging
         return decision_tree
     except Exception as e:
         logging.error(f"Error loading decision tree: {e}")
@@ -336,8 +349,9 @@ def classify_odt_document(filepath):
         logging.error(f"Error classifying ODT document: {e}")
         return "ODT-Unknown"
 
+# Modify the update_classification_combinations function to track counts
 def update_classification_combinations(primary_classification, secondary_classifications):
-    """Updates the classification combinations file with new combinations."""
+    """Updates the classification combinations file with new combinations and counts."""
     try:
         if os.path.exists(COMBINATIONS_FILE):
             with open(COMBINATIONS_FILE, "r") as f:
@@ -345,23 +359,154 @@ def update_classification_combinations(primary_classification, secondary_classif
         else:
             combinations = []
 
-        new_combination = {
-            "primary_classification": primary_classification,
-            "secondary_classifications": secondary_classifications
-        }
+        # Sort secondary classifications for consistency
+        sorted_secondary = sorted(secondary_classifications)
 
-        if new_combination not in combinations:
+        # Check if the combination already exists and increment count
+        for combo in combinations:
+            if (combo["primary_classification"] == primary_classification and
+                sorted(combo["secondary_classifications"]) == sorted_secondary):
+                combo["count"] += 1
+                logging.info(f"Incremented count for classification combination: {combo}")
+                break
+        else:
+            new_combination = {
+                "primary_classification": primary_classification,
+                "secondary_classifications": sorted_secondary,
+                "count": 1  # Initialize count
+            }
             combinations.append(new_combination)
-            with open(COMBINATIONS_FILE, "w") as f:
-                json.dump(combinations, f, indent=4)
-            logging.info(f"Updated classification combinations with: {new_combination}")
+            logging.info(f"Added new classification combination: {new_combination}")
+
+        with open(COMBINATIONS_FILE, "w") as f:
+            json.dump(combinations, f, indent=4)
     except Exception as e:
         logging.error(f"Error updating classification combinations: {e}")
 
-# --- Helper Functions ---
+# Ensure the file extension is correctly formatted before looking it up in the decision tree.
 def get_file_extension(filepath):
-    """Extracts the file extension from a filepath."""
-    return os.path.splitext(filepath)[1].lower().lstrip('.')  # Remove the leading dot
+    """Returns the file extension for a given filepath."""
+    return os.path.splitext(filepath)[1].lower().lstrip('.')
+
+# Ensure that secondary classifications are standardized in classify_document
+def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index):
+    """Classifies a document based on the decision tree."""
+    filepath = doc_data["filepath"]
+    current_folder = os.path.basename(os.path.dirname(filepath))
+
+    # Remove the forced 'return' when physically in Classified folder
+    if "Classified" in os.path.dirname(filepath) and doc_data["status"] == "In_Processing":
+        logging.info(
+            f"Document {doc_id} is in Classified folder but index shows 'In_Processing'. "
+            "Re-classifying and updating metadata instead of skipping."
+        )
+        # doc_data["status"] = "Classified"  # Remove or comment out this direct status change
+        # ...continue classification process instead of returning...
+
+    # Allow re-classification if file is in Duplicates folder but status is In_Processing
+    if "Duplicates" in os.path.dirname(filepath) and doc_data["status"] == "In_Processing":
+        logging.info(
+            f"Document {doc_id} is physically in Duplicates folder but index shows 'In_Processing'. "
+            "Overwriting duplicates and re-classifying."
+        )
+        # ...existing code to remove or overwrite duplicates if needed...
+        # doc_data["status"] = "In_Processing"  # Ensure we keep it In_Processing for classification
+
+    # ...existing code that re-classifies the document normally...
+    # (Removed any early 'return' so classification isn't skipped)
+
+    extension = get_file_extension(filepath)
+    logging.debug(f"Classifying document ID: {doc_id}, Extension: {extension}")  # Add debug logging
+
+    # Recalculate hash before processing
+    doc_data["hash"] = calculate_hash(filepath)
+
+    if extension not in decision_tree:
+        outcome = f"No classification rule found for extension '{extension}'"
+        logging.warning(f"{outcome} (document ID: {doc_id})")
+        logging.debug(f"Available extensions in decision tree: {list(decision_tree.keys())}")  # Add debug logging
+        return
+
+    primary_classification = decision_tree[extension]["primary"]
+    index[doc_id]["document_type"] = primary_classification
+    index[doc_id]["metadata"]["document_type"] = primary_classification
+
+    # Remove old classification flags
+    for flag in ["Text", "Images", "Tables"]:
+        if flag in index[doc_id]["metadata"]:
+            del index[doc_id]["metadata"][flag]
+
+    secondary_use_cases = decision_tree[extension]["secondary"]["use_cases"]
+    secondary_classifications = []
+
+    # Execute use cases in order
+    for use_case in secondary_use_cases:
+        if use_case in use_case_to_function:
+            classification_function = use_case_to_function[use_case]
+            result = classification_function(filepath)
+            if result:
+                # If it's True/False or a descriptive string, parse it into standard keys
+                if isinstance(result, bool):
+                    if result:
+                        if use_case == "extract_text_from_pdf":
+                            index[doc_id]["metadata"]["Text"] = "Yes"
+                        elif use_case == "detect_images_in_pdf":
+                            index[doc_id]["metadata"]["Images"] = "Yes"
+                        elif use_case == "detect_tables_in_pdf":
+                            index[doc_id]["metadata"]["Tables"] = "Yes"
+                    else:
+                        if use_case == "extract_text_from_pdf":
+                            index[doc_id]["metadata"]["Text"] = "No"
+                        elif use_case == "detect_images_in_pdf":
+                            index[doc_id]["metadata"]["Images"] = "No"
+                        elif use_case == "detect_tables_in_pdf":
+                            index[doc_id]["metadata"]["Tables"] = "No"
+                else:
+                    # For strings like "Text-with-Images", parse into standard keys
+                    parse_classification_result(result, index[doc_id]["metadata"])
+                # Collect standardized secondary classifications
+                for key in ["Text", "Images", "Tables"]:
+                    if index[doc_id]["metadata"].get(key) == "Yes":
+                        if key not in secondary_classifications:
+                            secondary_classifications.append(key)
+                logging.info(f"Use case '{use_case}' returned: {result}")
+
+    # Determine final document type
+    document_type = determine_document_type(doc_id, index, primary_classification)
+    index[doc_id]["document_type"] = document_type
+    logging.info(f"Document {doc_id} classified as: {document_type}")
+
+    # Log the classification outcome with detailed information
+    logging.info(f"Completed classification for document ID: {doc_id}, Outcome: {document_type}")
+
+    # Update classification combinations
+    update_classification_combinations(primary_classification, secondary_classifications)
+    logging.info(f"Classification combinations updated for document ID: {doc_id} with: {secondary_classifications}")
+
+    # Move document to classified folder
+    move_to_classified_folder(doc_id, doc_data, CLASSIFIED_FOLDER)
+    logging.info(f"Document ID: {doc_id} moved to Classified folder as: {document_type}")
+
+def parse_classification_result(result, metadata):
+    """
+    Parses any result string or boolean and sets metadata['Text'], metadata['Images'],
+    or metadata['Tables'] = 'Yes' or 'No' based on the outcome.
+    """
+    # If result is a string describing content (e.g. "DOCX-Text-with-Images-and-Tables")
+    if isinstance(result, str):
+        # Convert to lowercase for easier checks
+        lower_res = result.lower()
+        if "text" in lower_res:
+            metadata["Text"] = "Yes"
+        if "images" in lower_res:
+            metadata["Images"] = "Yes"
+        if "tables" in lower_res:
+            metadata["Tables"] = "Yes"
+    # If result is a boolean from a detection function
+    elif isinstance(result, bool):
+        # Example usage: detect_images_in_pdf -> True => metadata["Images"] = "Yes"
+        # This logic is set by calling code in classify_document.
+        pass
 
 def determine_document_type(doc_id, index, primary_classification):
     """Determines the final document type based on primary and secondary classifications."""
@@ -491,150 +636,6 @@ def move_to_duplicates_folder(doc_id, doc_data):
 
 # --- Main Classification Logic ---
 
-def parse_classification_result(result, metadata):
-    """
-    Parses any result string or boolean and sets metadata['Text'], metadata['Images'],
-    or metadata['Tables'] = 'Yes' or 'No' based on the outcome.
-    """
-    # If result is a string describing content (e.g. "DOCX-Text-with-Images-and-Tables")
-    if isinstance(result, str):
-        # Convert to lowercase for easier checks
-        lower_res = result.lower()
-        if "text" in lower_res:
-            metadata["Text"] = "Yes"
-        if "images" in lower_res:
-            metadata["Images"] = "Yes"
-        if "tables" in lower_res:
-            metadata["Tables"] = "Yes"
-    # If result is a boolean from a detection function
-    elif isinstance(result, bool):
-        # Example usage: detect_images_in_pdf -> True => metadata["Images"] = "Yes"
-        # This logic is set by calling code in classify_document.
-        pass
-
-def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index):
-    """Classifies a document based on the decision tree."""
-    filepath = doc_data["filepath"]
-    current_folder = os.path.basename(os.path.dirname(filepath))
-
-    # Remove the forced 'return' when physically in Classified folder
-    if "Classified" in os.path.dirname(filepath) and doc_data["status"] == "In_Processing":
-        logging.info(
-            f"Document {doc_id} is in Classified folder but index shows 'In_Processing'. "
-            "Re-classifying and updating metadata instead of skipping."
-        )
-        # doc_data["status"] = "Classified"  # Remove or comment out this direct status change
-        # ...continue classification process instead of returning...
-
-    # Allow re-classification if file is in Duplicates folder but status is In_Processing
-    if "Duplicates" in os.path.dirname(filepath) and doc_data["status"] == "In_Processing":
-        logging.info(
-            f"Document {doc_id} is physically in Duplicates folder but index shows 'In_Processing'. "
-            "Overwriting duplicates and re-classifying."
-        )
-        # ...existing code to remove or overwrite duplicates if needed...
-        # doc_data["status"] = "In_Processing"  # Ensure we keep it In_Processing for classification
-
-    # ...existing code that re-classifies the document normally...
-    # (Removed any early 'return' so classification isn't skipped)
-
-    extension = get_file_extension(filepath)
-
-    # Recalculate hash before processing
-    doc_data["hash"] = calculate_hash(filepath)
-
-    if extension not in decision_tree:
-        outcome = f"No classification rule found for extension '{extension}'"
-        logging.warning(f"{outcome} (document ID: {doc_id})")
-        return
-
-    # Check for duplicates based on hash
-    current_hash = doc_data.get("hash")
-    duplicate_found = False
-    original_doc_id = None
-
-    for existing_id, existing_data in index.items():
-        if existing_id != doc_id and existing_data.get("hash") == current_hash:
-            duplicate_found = True
-            original_doc_id = existing_id
-            break
-
-    if duplicate_found:
-        logging.info(f"Duplicate detected: Document ID {doc_id} is a duplicate of Document ID {original_doc_id}")
-        # Update only the duplicate's status and metadata
-        index[doc_id]["status"] = "Duplicates"
-        index[doc_id]["metadata"]["duplicate_of"] = original_doc_id
-        # Move duplicate to Duplicates folder
-        move_to_duplicates_folder(doc_id, doc_data)
-        logging.info(f"Moved duplicate document ID: {doc_id} to Duplicates folder")
-        return
-
-    primary_classification = decision_tree[extension]["primary"]
-    index[doc_id]["document_type"] = primary_classification
-    index[doc_id]["metadata"]["document_type"] = primary_classification
-
-    # Remove old classification flags
-    for flag in ["Text", "Images", "Tables"]:
-        if flag in index[doc_id]["metadata"]:
-            del index[doc_id]["metadata"][flag]
-
-    secondary_use_cases = decision_tree[extension]["secondary"]["use_cases"]
-    secondary_classifications = []
-
-    # Execute use cases in order
-    for use_case in secondary_use_cases:
-        if use_case in use_case_to_function:
-            classification_function = use_case_to_function[use_case]
-            result = classification_function(filepath)
-            if result:
-                # If it's True/False or a descriptive string, parse it into standard keys
-                if isinstance(result, bool):
-                    if result:
-                        if use_case == "extract_text_from_pdf":
-                            index[doc_id]["metadata"]["Text"] = "Yes"
-                        elif use_case == "detect_images_in_pdf":
-                            index[doc_id]["metadata"]["Images"] = "Yes"
-                        elif use_case == "detect_tables_in_pdf":
-                            index[doc_id]["metadata"]["Tables"] = "Yes"
-                    else:
-                        if use_case == "extract_text_from_pdf":
-                            index[doc_id]["metadata"]["Text"] = "No"
-                        elif use_case == "detect_images_in_pdf":
-                            index[doc_id]["metadata"]["Images"] = "No"
-                        elif use_case == "detect_tables_in_pdf":
-                            index[doc_id]["metadata"]["Tables"] = "No"
-                else:
-                    # For strings like "DOCX-Text-with-Images", parse into standard keys
-                    parse_classification_result(result, index[doc_id]["metadata"])
-                secondary_classifications.append(result)
-                logging.info(f"Use case '{use_case}' returned: {result}")
-
-    # Determine final document type
-    document_type = determine_document_type(doc_id, index, primary_classification)
-    index[doc_id]["document_type"] = document_type
-    logging.info(f"Document {doc_id} classified as: {document_type}")
-
-    # Log the classification outcome with detailed information
-    logging.info(f"Completed classification for document ID: {doc_id}, Outcome: {document_type}")
-
-    # Update classification combinations
-    update_classification_combinations(primary_classification, secondary_classifications)
-    logging.info(f"Classification combinations updated for document ID: {doc_id} with: {secondary_classifications}")
-
-    # Move document to classified folder
-    move_to_classified_folder(doc_id, doc_data, CLASSIFIED_FOLDER)
-    logging.info(f"Document ID: {doc_id} moved to Classified folder as: {document_type}")
-
-def initialize_index(index_file):
-    if not index_exists(index_file):
-        index = {}
-        save_index(index_file, index)
-    else:
-        index = load_index(index_file)
-    return index
-
-index = initialize_index(INDEX_FILE)
-
 def classify_documents_sequentially(index, decision_tree, use_case_to_function):
     in_processing_folder = os.path.join(ROOT_FOLDER, "In_Processing")
     if not os.path.exists(in_processing_folder):
@@ -671,8 +672,19 @@ def classify_documents_sequentially(index, decision_tree, use_case_to_function):
     # Save index after processing all In_Processing folder documents
     save_index(INDEX_FILE, index)
 
+def initialize_index(index_file):
+    if not index_exists(index_file):
+        index = {}
+        save_index(index_file, index)
+    else:
+        index = load_index(index_file)
+    return index
+
+index = initialize_index(INDEX_FILE)
+
 # --- Main Execution ---
 if __name__ == "__main__":
+    logging.info("Starting document classification process.")
     # Load the decision tree
     decision_tree = load_decision_tree("classification_decision_tree.json")
     if not decision_tree:
@@ -729,4 +741,5 @@ if __name__ == "__main__":
         logging.info("Updated document index saved successfully.")
     except Exception as e:
         logging.error(f"Error saving updated document index: {e}")
-COMBINATIONS_FILE = os.path.join(ROOT_FOLDER, "data", "documents", "classification_combinations.json")
+
+    logging.info("Document classification process completed.")

@@ -4,28 +4,33 @@
         "secondary_classifications": [
             "Text",
             "Images"
-        ]
+        ],
+        "count": 10
     },
     {
         "primary_classification": "VTT",
         "secondary_classifications": [
             "VTT-Text-Only"
-        ]
+        ],
+        "count": 5
     },
     {
         "primary_classification": "PDF",
         "secondary_classifications": [
             "Images"
-        ]
+        ],
+        "count": 3
     },
     {
         "primary_classification": "PDF",
-        "secondary_classifications": []
+        "secondary_classifications": [],
+        "count": 0
     },
     {
         "primary_classification": "PDF",
         "secondary_classifications": [
             "Text"
-        ]
+        ],
+        "count": 1
     }
 ]
