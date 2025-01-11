@@ -497,9 +497,34 @@ def move_to_duplicates_folder(doc_id, doc_data):
 
 # --- Main Classification Logic ---
 
+def parse_classification_result(result, metadata):
+    """
+    Parses any result string or boolean and sets metadata['Text'], metadata['Images'],
+    or metadata['Tables'] = 'Yes' or 'No' based on the outcome.
+    """
+    # If result is a string describing content (e.g. "DOCX-Text-with-Images-and-Tables")
+    if isinstance(result, str):
+        # Convert to lowercase for easier checks
+        lower_res = result.lower()
+        if "text" in lower_res:
+            metadata["Text"] = "Yes"
+        if "images" in lower_res:
+            metadata["Images"] = "Yes"
+        if "tables" in lower_res:
+            metadata["Tables"] = "Yes"
+    # If result is a boolean from a detection function
+    elif isinstance(result, bool):
+        # Example usage: detect_images_in_pdf -> True => metadata["Images"] = "Yes"
+        # This logic is set by calling code in classify_document.
+        pass
+
 def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index):
     """Classifies a document based on the decision tree."""
-    filepath = doc_data["filepath"]  # Retrieve the filepath from doc_data
+    filepath = doc_data["filepath"]
+    if "Classified" in os.path.dirname(filepath):
+        logging.info(f"Document {doc_id} found physically in Classified folder but index shows '{doc_data['status']}'. Updating status and skipping classification.")
+        doc_data["status"] = "Classified"
+        return
     # Log the start of classification attempt
     logging.info(f"Attempting to classify document ID: {doc_id}, Filepath: {filepath}")
 
@@ -552,30 +577,26 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
             classification_function = use_case_to_function[use_case]
             result = classification_function(filepath)
             if result:
-                if isinstance(result, list):
-                    for item in result:
-                        index[doc_id]["metadata"][use_case] = item
-                        secondary_classifications.append(item)  # Append the classification result
-                else:
-                    # Map boolean results to specific classification labels
-                    if isinstance(result, bool):
-                        if result:
-                            if use_case == "extract_text_from_pdf":
-                                index[doc_id]["metadata"]["Text"] = "Yes"
-                            elif use_case == "detect_images_in_pdf":
-                                index[doc_id]["metadata"]["Images"] = "Yes"
-                            elif use_case == "detect_tables_in_pdf":
-                                index[doc_id]["metadata"]["Tables"] = "Yes"
-                        else:
-                            if use_case == "extract_text_from_pdf":
-                                index[doc_id]["metadata"]["Text"] = "No"
-                            elif use_case == "detect_images_in_pdf":
-                                index[doc_id]["metadata"]["Images"] = "No"
-                            elif use_case == "detect_tables_in_pdf":
-                                index[doc_id]["metadata"]["Tables"] = "No"
+                # If it's True/False or a descriptive string, parse it into standard keys
+                if isinstance(result, bool):
+                    if result:
+                        if use_case == "extract_text_from_pdf":
+                            index[doc_id]["metadata"]["Text"] = "Yes"
+                        elif use_case == "detect_images_in_pdf":
+                            index[doc_id]["metadata"]["Images"] = "Yes"
+                        elif use_case == "detect_tables_in_pdf":
+                            index[doc_id]["metadata"]["Tables"] = "Yes"
                     else:
-                        index[doc_id]["metadata"][use_case] = result
-                        secondary_classifications.append(result)  # Append the classification result
+                        if use_case == "extract_text_from_pdf":
+                            index[doc_id]["metadata"]["Text"] = "No"
+                        elif use_case == "detect_images_in_pdf":
+                            index[doc_id]["metadata"]["Images"] = "No"
+                        elif use_case == "detect_tables_in_pdf":
+                            index[doc_id]["metadata"]["Tables"] = "No"
+                else:
+                    # For strings like "DOCX-Text-with-Images", parse into standard keys
+                    parse_classification_result(result, index[doc_id]["metadata"])
+                secondary_classifications.append(result)
                 logging.info(f"Use case '{use_case}' returned: {result}")
 
     # Determine final document type
@@ -614,6 +635,7 @@ def classify_documents_sequentially(index, decision_tree, use_case_to_function):
         for doc_id, doc_data in index.items() 
         if doc_data["status"] == "In_Processing"
     ]
+    logging.info(f"Found {len(documents_to_classify)} documents in 'In_Processing' for classification.")
     
     for doc_id, doc_data in documents_to_classify:
         try:
@@ -687,3 +709,4 @@ if __name__ == "__main__":
         logging.info("Updated document index saved successfully.")
     except Exception as e:
         logging.error(f"Error saving updated document index: {e}")
+```

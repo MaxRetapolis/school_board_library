@@ -2613,3 +2613,8 @@
 2025-01-09 21:26:08,510 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
 2025-01-09 21:26:08,511 - INFO - Index cleansing complete. Removed 0 missing documents.
 2025-01-09 21:26:08,516 - INFO - Updated document index saved successfully.
+2025-01-10 19:01:45,979 - INFO - Decision tree loaded from c:\Users\Maxim\Documents\VSCode\school_board_library\src\1 - Document Storage ELT\classification_decision_tree.json
+2025-01-10 19:01:45,979 - INFO - Document index loaded from C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\documents_index.json
+2025-01-10 19:01:45,980 - DEBUG - Classified folder already exists: C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents\Classified
+2025-01-10 19:01:45,981 - INFO - Index cleansing complete. Removed 0 missing documents.
+2025-01-10 19:01:45,985 - INFO - Updated document index saved successfully.
