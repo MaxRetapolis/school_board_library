@@ -42,12 +42,6 @@ CLASSIFIED_FOLDER = CLASSIFIED_FOLDER
 # --- Logging Setup ---
 os.makedirs(LOGS_FOLDER, exist_ok=True)
 
-# Add console handler
-console_handler = logging.StreamHandler()
-console_handler.setLevel(logging.INFO)
-console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-logging.getLogger().addHandler(console_handler)
-
 # Load the decision tree
 def load_decision_tree(filepath):
     """Loads the decision tree from a JSON file."""
@@ -521,12 +515,28 @@ def parse_classification_result(result, metadata):
 def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index):
     """Classifies a document based on the decision tree."""
     filepath = doc_data["filepath"]
-    if "Classified" in os.path.dirname(filepath):
-        logging.info(f"Document {doc_id} found physically in Classified folder but index shows '{doc_data['status']}'. Updating status and skipping classification.")
-        doc_data["status"] = "Classified"
-        return
-    # Log the start of classification attempt
-    logging.info(f"Attempting to classify document ID: {doc_id}, Filepath: {filepath}")
+    current_folder = os.path.basename(os.path.dirname(filepath))
+
+    # Remove the forced 'return' when physically in Classified folder
+    if "Classified" in os.path.dirname(filepath) and doc_data["status"] == "In_Processing":
+        logging.info(
+            f"Document {doc_id} is in Classified folder but index shows 'In_Processing'. "
+            "Re-classifying and updating metadata instead of skipping."
+        )
+        # doc_data["status"] = "Classified"  # Remove or comment out this direct status change
+        # ...continue classification process instead of returning...
+
+    # Allow re-classification if file is in Duplicates folder but status is In_Processing
+    if "Duplicates" in os.path.dirname(filepath) and doc_data["status"] == "In_Processing":
+        logging.info(
+            f"Document {doc_id} is physically in Duplicates folder but index shows 'In_Processing'. "
+            "Overwriting duplicates and re-classifying."
+        )
+        # ...existing code to remove or overwrite duplicates if needed...
+        # doc_data["status"] = "In_Processing"  # Ensure we keep it In_Processing for classification
+
+    # ...existing code that re-classifies the document normally...
+    # (Removed any early 'return' so classification isn't skipped)
 
     extension = get_file_extension(filepath)
 
@@ -626,29 +636,39 @@ def initialize_index(index_file):
 index = initialize_index(INDEX_FILE)
 
 def classify_documents_sequentially(index, decision_tree, use_case_to_function):
-    # Cleanse index before classification
-    index = cleanse_index(index, ["In_Processing", "Duplicates", "Classified"])
-    save_index(INDEX_FILE, index)
-    
-    documents_to_classify = [
-        (doc_id, doc_data) 
-        for doc_id, doc_data in index.items() 
-        if doc_data["status"] == "In_Processing"
-    ]
-    logging.info(f"Found {len(documents_to_classify)} documents in 'In_Processing' for classification.")
-    
-    for doc_id, doc_data in documents_to_classify:
+    in_processing_folder = os.path.join(ROOT_FOLDER, "In_Processing")
+    if not os.path.exists(in_processing_folder):
+        logging.warning(f"In_Processing folder not found: {in_processing_folder}")
+        return
+
+    # For each file in In_Processing, hash it, then classify or re-classify
+    for filename in os.listdir(in_processing_folder):
+        filepath = os.path.join(in_processing_folder, filename)
+        if not os.path.isfile(filepath):
+            continue
+
+        doc_hash = calculate_hash(filepath)
+        if doc_hash not in index:
+            index[doc_hash] = {
+                "document_id": doc_hash,
+                "filepath": filepath,
+                "filename": filename,
+                "extension": os.path.splitext(filename)[1],
+                "status": "In_Processing",
+                "metadata": {}
+            }
+        else:
+            index[doc_hash]["filepath"] = filepath
+            index[doc_hash]["status"] = "In_Processing"
+
         try:
-            classify_document(doc_id, doc_data, decision_tree, use_case_to_function, index)
-            # Ensure document is moved to the appropriate folder after classification
-            if doc_data["status"] == "In_Processing":
-                move_to_classified_folder(doc_id, doc_data, CLASSIFIED_FOLDER)
+            classify_document(doc_hash, index[doc_hash], decision_tree, use_case_to_function, index)
         except Exception as e:
-            logging.error(f"Error classifying document {doc_id}: {e}")
-            index[doc_id]["status"] = "Errors"
+            logging.error(f"Error classifying document {doc_hash}: {e}")
+            index[doc_hash]["status"] = "Errors"
             save_index(INDEX_FILE, index)
-    
-    # Save index after classification
+
+    # Save index after processing all In_Processing folder documents
     save_index(INDEX_FILE, index)
 
 # --- Main Execution ---
@@ -709,4 +729,4 @@ if __name__ == "__main__":
         logging.info("Updated document index saved successfully.")
     except Exception as e:
         logging.error(f"Error saving updated document index: {e}")
-```
+COMBINATIONS_FILE = os.path.join(ROOT_FOLDER, "data", "documents", "classification_combinations.json")
