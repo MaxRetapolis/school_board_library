@@ -74,7 +74,7 @@ class Document:
         self.size = os.path.getsize(filepath)
         self.hash = hash_file(filepath)  # Generate hash of the file contents
         self.status = None  # Will be set based on the folder
-        self.document_id = self.hash  # Use hash as document ID
+        self.document_id = self.hash  # Make sure we use the file's hash as the document ID
         self.metadata = {}
 
     def to_dict(self):

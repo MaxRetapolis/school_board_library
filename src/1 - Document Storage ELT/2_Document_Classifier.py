@@ -420,6 +420,7 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
 
     # Recalculate hash before processing
     doc_data["hash"] = calculate_hash(filepath)
+    doc_id = doc_data["hash"]  # Ensure doc_id matches the file hash
 
     if extension not in decision_tree:
         outcome = f"No classification rule found for extension '{extension}'"
@@ -430,6 +431,7 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     primary_classification = decision_tree[extension]["primary"]
     index[doc_id]["document_type"] = primary_classification
     index[doc_id]["metadata"]["document_type"] = primary_classification
+    index[doc_id]["metadata"]["primary_classification"] = primary_classification
 
     # Remove old classification flags
     for flag in ["Text", "Images", "Tables"]:
@@ -439,6 +441,7 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     secondary_use_cases = decision_tree[extension]["secondary"]["use_cases"]
     secondary_classifications = []
 
+    index[doc_id]["metadata"]["secondary_classifications"] = []
     # Execute use cases in order
     for use_case in secondary_use_cases:
         if use_case in use_case_to_function:
@@ -470,6 +473,7 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
                         if key not in secondary_classifications:
                             secondary_classifications.append(key)
                 logging.info(f"Use case '{use_case}' returned: {result}")
+                index[doc_id]["metadata"]["secondary_classifications"].append(use_case)
 
     # Determine final document type
     document_type = determine_document_type(doc_id, index, primary_classification)
