@@ -491,6 +491,8 @@ def classify_document(doc_id, doc_data, decision_tree, use_case_to_function, ind
     move_to_classified_folder(doc_id, doc_data, CLASSIFIED_FOLDER)
     logging.info(f"Document ID: {doc_id} moved to Classified folder as: {document_type}")
 
+    return doc_data
+
 def parse_classification_result(result, metadata):
     """
     Parses any result string or boolean and sets metadata['Text'], metadata['Images'],
@@ -509,8 +511,8 @@ def parse_classification_result(result, metadata):
     # If result is a boolean from a detection function
     elif isinstance(result, bool):
         # Example usage: detect_images_in_pdf -> True => metadata["Images"] = "Yes"
-        # This logic is set by calling code in classify_document.
-        pass
+        metadata["Images"] = "Yes" if result else "No"
+        metadata["functions_classification"] = ["detect_images_in_pdf"]
 
 def determine_document_type(doc_id, index, primary_classification):
     """Determines the final document type based on primary and secondary classifications."""
@@ -745,5 +747,7 @@ if __name__ == "__main__":
         logging.info("Updated document index saved successfully.")
     except Exception as e:
         logging.error(f"Error saving updated document index: {e}")
+
+    logging.info("Document classification process completed.")
 
     logging.info("Document classification process completed.")
