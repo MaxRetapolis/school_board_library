@@ -1,0 +1,58 @@
+{
+    "use_cases": [
+      {
+        "name": "Ingest & Classify New Documents",
+        "description": "Handles newly arrived documents placed in the 'New_Documents' folder. The system checks if they are already known (via hash). If not, they are indexed and moved to 'In_Processing' for classification.",
+        "rules": [
+          {
+            "folder_name": "New_Documents",
+            "action": "move_to_in_processing",
+            "reason": "All new files should be processed for the first time."
+          },
+          {
+            "folder_name": "In_Processing",
+            "action": "skip",
+            "reason": "Files already in processing do not need special handling in this use case."
+          },
+          {
+            "folder_name": "Duplicates",
+            "action": "skip",
+            "reason": "Existing duplicates are out of scope for new document ingestion."
+          },
+          {
+            "folder_name": "Classified",
+            "action": "skip",
+            "reason": "Already-classified documents are not 'new.'"
+          }
+        ]
+      },
+      {
+        "name": "Normal In_Processing Classification",
+        "description": "Covers the standard classification flow for documents currently in the 'In_Processing' folder. After classification, they will be moved to either 'Classified' or 'Duplicates' if a hash match is found.",
+        "rules": [
+          {
+            "folder_name": "In_Processing",
+            "action": "classify_and_move",
+            "reason": "Documents are classified using the existing classification decision tree, then moved to 'Classified' or 'Duplicates' as appropriate."
+          },
+          {
+            "folder_name": "New_Documents",
+            "action": "skip",
+            "reason": "Use case pertains only to documents already in 'In_Processing'."
+          },
+          {
+            "folder_name": "Classified",
+            "action": "skip",
+            "reason": "Documents that are already classified do not require normal processing."
+          },
+          {
+            "folder_name": "Duplicates",
+            "action": "skip",
+            "reason": "Duplicates remain duplicates unless specifically reclassified."
+          }
+        ]
+      }
+      // ---- NEXT USE CASES HERE ----
+    ]
+  }
+  
