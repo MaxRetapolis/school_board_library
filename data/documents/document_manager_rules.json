@@ -1,4 +1,36 @@
 {
+    "_meta_documentation": [
+      "==========================================",
+      " LIST OF USE CASES & SUMMARY:",
+      " 1) Ingest & Classify New Documents",
+      " 2) Normal In_Processing Classification",
+      " 3) Re-Classify All Documents (Bulk Operation)",
+      " 4) Selective Re-Classification (Ad Hoc)",
+      " 5) Duplicate Detection & Management",
+      " 6) Error Handling & Retries",
+      " 7) Manual Override or Folder Mismatch",
+      " 8) Folder Maintenance & Housekeeping",
+      "------------------------------------------",
+      " COMMON FOLDERS:",
+      "   - New_Documents",
+      "   - In_Processing",
+      "   - Classified",
+      "   - Duplicates",
+      "   - Errors",
+      "------------------------------------------",
+      " COMMON ACTIONS (examples):",
+      "   - skip",
+      "   - move_to_in_processing",
+      "   - classify_and_move",
+      "   - move_to_duplicates_if_duplicate",
+      "   - move_to_errors_if_classification_fails",
+      "   - force_move_to_in_processing_if_unindexed",
+      "   - archive_if_exceeds_retention",
+      "------------------------------------------",
+      " NOTE: This meta_documentation block is for humans only",
+      "       and can be safely ignored by JSON parsers.",
+      "=========================================="
+    ],
     "use_cases": [
       {
         "name": "Ingest & Classify New Documents",
@@ -51,8 +83,193 @@
             "reason": "Duplicates remain duplicates unless specifically reclassified."
           }
         ]
+      },
+      {
+        "name": "Re-Classify All Documents (Bulk Operation)",
+        "description": "When classification rules change drastically, every file in every folder is re-examined. Documents in 'Classified', 'Duplicates', or 'Errors' may be moved to 'In_Processing' for re-check and updated classification.",
+        "rules": [
+          {
+            "folder_name": "Classified",
+            "action": "move_to_in_processing",
+            "reason": "We need to re-check documents that were previously classified under old rules."
+          },
+          {
+            "folder_name": "Duplicates",
+            "action": "move_to_in_processing",
+            "reason": "Files marked as duplicates should be re-evaluated in case the definition of 'duplicate' changed."
+          },
+          {
+            "folder_name": "Errors",
+            "action": "move_to_in_processing",
+            "reason": "Retry classification for previously failed documents; new rules might succeed now."
+          },
+          {
+            "folder_name": "In_Processing",
+            "action": "keep_in_place",
+            "reason": "Already queued for classification, no change needed."
+          },
+          {
+            "folder_name": "New_Documents",
+            "action": "keep_in_place",
+            "reason": "No special bulk re-classification needed; new files follow the normal ingestion process."
+          }
+        ]
+      },
+      {
+        "name": "Selective Re-Classification (Ad Hoc)",
+        "description": "Allows an admin or user to manually flag certain documents for re-check. Those documents, regardless of folder, are moved back to 'In_Processing'. All others remain unaffected.",
+        "rules": [
+          {
+            "folder_name": "Classified",
+            "action": "move_to_in_processing_when_flagged",
+            "reason": "Only flagged documents are physically moved for re-check; unflagged items remain 'Classified'."
+          },
+          {
+            "folder_name": "Duplicates",
+            "action": "move_to_in_processing_when_flagged",
+            "reason": "If flagged, the system can re-check potential duplicates under updated rules."
+          },
+          {
+            "folder_name": "Errors",
+            "action": "move_to_in_processing_when_flagged",
+            "reason": "If flagged, the system retries classification with new or corrected logic."
+          },
+          {
+            "folder_name": "In_Processing",
+            "action": "keep_in_place",
+            "reason": "Already set for classification."
+          },
+          {
+            "folder_name": "New_Documents",
+            "action": "keep_in_place",
+            "reason": "Ad hoc re-check applies mainly to documents already processed once."
+          },
+          {
+            "folder_name": "UnlistedFolder",
+            "action": "skip",
+            "reason": "Folders not recognized by the system are ignored unless specifically flagged."
+          }
+        ]
+      },
+      {
+        "name": "Duplicate Detection & Management",
+        "description": "When a file has the same hash as an existing doc in the index, it should be flagged or moved to 'Duplicates'. This avoids reprocessing and prevents multiple copies from being misclassified.",
+        "rules": [
+          {
+            "folder_name": "In_Processing",
+            "action": "move_to_duplicates_if_duplicate",
+            "reason": "If classification or a hash check confirms the file is already known, place it in 'Duplicates'."
+          },
+          {
+            "folder_name": "Duplicates",
+            "action": "keep_in_place",
+            "reason": "Existing duplicates remain unless specifically reclassified or removed."
+          },
+          {
+            "folder_name": "Classified",
+            "action": "skip",
+            "reason": "Files already in 'Classified' won't typically become duplicates unless reclassification logic merges them."
+          },
+          {
+            "folder_name": "New_Documents",
+            "action": "hash_check_and_move",
+            "reason": "When a new file arrives, check hash. If it matches an existing doc, move to 'Duplicates'; otherwise, 'In_Processing'."
+          }
+        ]
+      },
+      {
+        "name": "Error Handling & Retries",
+        "description": "When documents fail classification or produce errors, they may be placed in 'Errors'. The system can later retry them if logic or environment conditions change.",
+        "rules": [
+          {
+            "folder_name": "In_Processing",
+            "action": "move_to_errors_if_classification_fails",
+            "reason": "If classification fails, put the doc in 'Errors' for manual or automated follow-up."
+          },
+          {
+            "folder_name": "Errors",
+            "action": "move_to_in_processing_for_retry",
+            "reason": "When we're ready to retry, pull it out of 'Errors' for another classification attempt."
+          },
+          {
+            "folder_name": "Classified",
+            "action": "skip",
+            "reason": "Documents that are successfully classified should not be marked as errors."
+          },
+          {
+            "folder_name": "Duplicates",
+            "action": "skip",
+            "reason": "Duplicates are not errors unless there's a classification or parsing problem."
+          },
+          {
+            "folder_name": "New_Documents",
+            "action": "skip",
+            "reason": "New files haven't been processed yet; they won't be flagged errors until classification is attempted."
+          }
+        ]
+      },
+      {
+        "name": "Manual Override or Folder Mismatch",
+        "description": "Handles cases where a user manually placed a file into an unexpected folder, or the system detects a mismatch between the index and actual file location. The system reconciles these inconsistencies.",
+        "rules": [
+          {
+            "folder_name": "Classified",
+            "action": "force_move_to_in_processing_if_unindexed",
+            "reason": "If the system doesn't recognize a file in 'Classified' (not in index), move it for proper handling."
+          },
+          {
+            "folder_name": "Duplicates",
+            "action": "force_move_to_in_processing_if_unindexed",
+            "reason": "If unrecognized, treat it as new. If recognized but was never flagged duplicate, reevaluate."
+          },
+          {
+            "folder_name": "New_Documents",
+            "action": "skip",
+            "reason": "Misplacements are less likely here, since new docs belong in this folder anyway."
+          },
+          {
+            "folder_name": "In_Processing",
+            "action": "keep_in_place",
+            "reason": "Already in the staging area for classification or re-check."
+          },
+          {
+            "folder_name": "Errors",
+            "action": "force_move_to_in_processing_if_unindexed",
+            "reason": "If an unindexed file is found in Errors, place it in 'In_Processing' for initial classification."
+          }
+        ]
+      },
+      {
+        "name": "Folder Maintenance & Housekeeping",
+        "description": "Periodically verifies that no documents are stuck in 'In_Processing' or 'Errors' for too long, and ensures older items in 'Classified' or 'Duplicates' are archived or removed per retention policies.",
+        "rules": [
+          {
+            "folder_name": "In_Processing",
+            "action": "flag_if_too_old",
+            "reason": "Any doc lingering here beyond a certain time may be stuck or overlooked."
+          },
+          {
+            "folder_name": "Errors",
+            "action": "flag_if_too_old",
+            "reason": "Documents that remain in 'Errors' beyond a threshold might require manual intervention."
+          },
+          {
+            "folder_name": "Classified",
+            "action": "archive_if_exceeds_retention",
+            "reason": "Move older classified docs to long-term archive or remove them if policy states."
+          },
+          {
+            "folder_name": "Duplicates",
+            "action": "archive_or_remove_duplicates_if_exceeds_retention",
+            "reason": "Older duplicates may be pruned or archived if they are no longer needed."
+          },
+          {
+            "folder_name": "New_Documents",
+            "action": "skip",
+            "reason": "Housekeeping focuses on docs that have been processed or erred. Newly arrived docs are not subject to retention-based maintenance yet."
+          }
+        ]
       }
-      // ---- NEXT USE CASES HERE ----
     ]
   }
   
