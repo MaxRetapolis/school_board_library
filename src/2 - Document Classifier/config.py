@@ -1,7 +1,8 @@
 import os
 import logging
 
-ROOT_FOLDER = "C:/Users/Maxim/Documents/VSCode/school_board_library/data/documents"
+# For testing, you might want to use a test directory
+ROOT_FOLDER = "C:/temp/document_classifier_test"  # Modify this path as needed
 INDEX_FILE = os.path.join(ROOT_FOLDER, "documents_index.json")
 LOGS_FOLDER = os.path.join(os.path.dirname(ROOT_FOLDER), "logs")
 LOG_FILE = os.path.join(LOGS_FOLDER, "document_pipeline.log")
