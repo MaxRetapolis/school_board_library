@@ -1,2 +1,7 @@
 *.yml
+*.yaml
 *.env
+.env
+.env.*
+.aider*
+*.local

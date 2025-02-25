@@ -5,3 +5,4 @@ C:\school_board_library\experiments\2_modularization_Ollama\exp_2_venv
 **/.env
 **/*.yml
 **/.aider.conf.yml
+.aider*
