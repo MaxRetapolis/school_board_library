@@ -1,0 +1,75 @@
+
+# 2025-02-24 12:19:42.428616
++y
+
+# 2025-02-24 12:19:52.340174
++n
+
+# 2025-02-24 12:20:06.623895
++test
+
+# 2025-02-24 18:54:46.527410
++/ask what time is it
+
+# 2025-02-24 18:55:01.672909
++/ask explain the repo
+
+# 2025-02-24 18:55:57.407174
++n
+
+# 2025-02-24 18:56:09.048009
++/tokens
+
+# 2025-02-24 18:56:43.860851
++/copy-context
+
+# 2025-02-24 18:58:39.494004
++/code help me create a yaml config file
+
+# 2025-02-24 18:59:21.772386
++what is my google api key
+
+# 2025-02-24 18:59:51.992925
++/chat-mode
+
+# 2025-02-24 19:00:17.001116
++help
+
+# 2025-02-24 19:12:00.716887
++/code start populating the config yaml file - google api - AIzaSyCS7_C8G2Q-pO7fKH6MVfIskIG-V0113Yw
+
+# 2025-02-24 19:12:11.305013
++d
+
+# 2025-02-24 19:12:14.672145
++y
+
+# 2025-02-24 19:12:20.255719
++d
+
+# 2025-02-24 19:13:05.043992
++/ask where did you place this file?
+
+# 2025-02-24 19:13:52.824279
++/ask find the file and echo here along with the path
+
+# 2025-02-24 19:14:12.025344
++ find . -name "config.yaml"
+
+# 2025-02-24 19:27:25.288299
++cd /c:/Users/Maxim/Documents/VSCode/school_board_library
++git rm configs/config.yaml
++git commit -m "Remove configs/config.yaml from repository"
++git push
+
+# 2025-02-24 19:36:37.157275
++/clear
+
+# 2025-02-24 19:36:44.581476
++--version
+
+# 2025-02-24 19:38:27.136793
++model
+
+# 2025-02-24 20:43:01.017987
++/exit
