@@ -9,3 +9,12 @@ aider/venv/
 **/*.yml
 **/.aider.conf.yml
 .aider*
+
+# Ignore aider related files and directories
+aider/
+aider/**
+
+# Ignore other common files
+*.log
+*.tmp
+*.bak

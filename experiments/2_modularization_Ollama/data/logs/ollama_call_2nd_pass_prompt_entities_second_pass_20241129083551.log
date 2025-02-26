@@ -1,6 +1,0 @@
-2024-11-29 08:35:51,547 - INFO - Logging initialized.
-2024-11-29 08:35:51,548 - INFO - Step: Starting Ollama Second Pass...
-2024-11-29 08:35:51,552 - INFO - Step: Loaded prompt, pre-analyzed entities, and text to analyze.
-2024-11-29 08:35:51,553 - INFO - Step: Combined prompt, pre-analyzed entities, and text to analyze.
-2024-11-29 08:35:52,224 - WARNING - Step: No response received from Ollama.
-2024-11-29 08:35:52,224 - INFO - Total execution time: 0.6787 seconds.

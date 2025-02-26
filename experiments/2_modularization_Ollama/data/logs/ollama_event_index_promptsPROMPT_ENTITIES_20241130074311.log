@@ -1,4 +1,0 @@
-2024-11-30 07:43:11,587 - INFO - Logging initialized.
-2024-11-30 07:43:11,587 - INFO - Step: Starting Ollama Event Indexer...
-2024-11-30 07:43:11,589 - INFO - Step: Loading prompt file: C:\school_board_library\experiments\2_modularization_Ollama\data\promptsPROMPT_ENTITIES.TXT
-2024-11-30 07:43:11,591 - ERROR - Step: Failed to load prompt file: [Errno 2] No such file or directory: 'C:\\school_board_library\\experiments\\2_modularization_Ollama\\data\\promptsPROMPT_ENTITIES.TXT'

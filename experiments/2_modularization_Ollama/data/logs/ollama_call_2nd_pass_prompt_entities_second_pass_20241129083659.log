@@ -1,4 +1,0 @@
-2024-11-29 08:36:59,505 - INFO - Logging initialized.
-2024-11-29 08:36:59,505 - INFO - Step: Starting Ollama Second Pass...
-2024-11-29 08:36:59,688 - INFO - Available models: ['NAME                        ID              SIZE      MODIFIED    ', 'mxbai-embed-large:latest    468836162de7    669 MB    2 weeks ago    ', 'llama3.2:latest             a80c4f17acd5    2.0 GB    2 weeks ago    ', 'nomic-embed-text:latest     0a109f422b47    274 MB    2 weeks ago    ', 'llama3.2:1b                 baf6a787fdff    1.3 GB    2 weeks ago']
-2024-11-29 08:36:59,688 - ERROR - Model 'small' does not exist. Available models: ['NAME                        ID              SIZE      MODIFIED    ', 'mxbai-embed-large:latest    468836162de7    669 MB    2 weeks ago    ', 'llama3.2:latest             a80c4f17acd5    2.0 GB    2 weeks ago    ', 'nomic-embed-text:latest     0a109f422b47    274 MB    2 weeks ago    ', 'llama3.2:1b                 baf6a787fdff    1.3 GB    2 weeks ago']
