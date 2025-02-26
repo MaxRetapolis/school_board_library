@@ -1,7 +1,8 @@
-C:\school_board_library\experiments\1_prelearning\venv
-C:\school_board_library\experiments\2_modularization_Ollama\exp_2_venv
-C:\school_board_library\aider\venv
-
+# Ignore virtual environments
+venv/
+experiments/1_prelearning/venv/
+experiments/2_modularization_Ollama/exp_2_venv/
+aider/venv/
 
 # Configuration and environment files
 **/.env
