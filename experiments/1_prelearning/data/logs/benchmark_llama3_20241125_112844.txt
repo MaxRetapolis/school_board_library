@@ -1,5 +1,0 @@
-Start Time: 2024-11-25 11:22:01
-End Time: 2024-11-25 11:28:44
-Number of Lines Processed: 140
-Time per Line (seconds): 2.873807
-Model Used: llama3.2:1b

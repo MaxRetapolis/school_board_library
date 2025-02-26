@@ -1,2 +1,0 @@
-Processed File: c:/school_board_library/experiments/2_modularization_Ollama/inbound_documents/10-8-2024.auto_generated_captions_converted.txt
-Total Number of Tokens: 125744
