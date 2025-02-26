@@ -1,0 +1,214 @@
+Approach to Extract Multiple Events from a Large Document Using Full Context Window
+
+Introduction
+
+You have a large document (over 120,000 tokens) containing multiple events, and you want to extract and describe each event individually, utilizing the full context window of the model. However, the model's output window is limited to 2,000 tokens, which isn't sufficient to output detailed descriptions of all events simultaneously.
+
+To address this challenge, you can implement a strategy that leverages the model's large input context to process the entire document at once but then focuses on one event at a time in the output. This method ensures that each event is described comprehensively while adhering to the output token limit.
+Solution Overview
+
+    Process the Entire Document Once: Feed the entire document into the model's input context along with a prompt that instructs the model to identify all events and assign unique identifiers to each.
+
+    Generate an Index of Events: In the first output, ask the model to produce an index or list of all events with brief summaries and unique identifiers (e.g., event numbers or names).
+
+    Iteratively Extract Detailed Descriptions: For each event, create a new prompt that includes the full document (or necessary context) and asks the model to focus solely on that specific event, providing a detailed description.
+
+    Loop Through Events: Repeat the process for each event, ensuring that each output stays within the 2,000-token limit.
+
+Detailed Steps
+Step 1: Generate an Index of Events
+
+Purpose: Identify all events in the document and assign unique identifiers to them.
+
+Prompt Structure:
+
+You are operating in Ontology Expert Mode.
+
+**Task**: Analyze the following document and identify all events according to the predefined ontology. For each event, provide a brief summary and assign a unique identifier.
+
+**Instructions**:
+- Read the entire document carefully.
+- Identify and list all events.
+- For each event, provide:
+  - Event Identifier (e.g., Event 1, Event 2)
+  - Event Name
+  - Brief Summary (1-2 sentences)
+
+**Output Format**:
+- **Event Identifier**:
+  - **Event Name**:
+  - **Brief Summary**:
+
+**Document**:
+[Insert the full document here]
+
+Outcome: The model outputs a list of events with unique identifiers and brief summaries, all within the 2,000-token output limit.
+Step 2: Extract Detailed Descriptions Iteratively
+
+Purpose: Obtain comprehensive details for each event individually.
+
+For Each Event:
+
+Prompt Structure:
+
+You are operating in Ontology Expert Mode.
+
+**Task**: Provide a detailed description of **Event [Identifier]**, utilizing the full context of the document.
+
+**Instructions**:
+- Focus solely on **Event [Identifier]** as previously identified.
+- Provide all relevant details according to the ontology, including attributes and relationships.
+- Ensure the output is within 2,000 tokens.
+
+**Output Format**:
+- **Event**:
+  - **Event Identifier**:
+  - **Event Name**:
+  - [Include all relevant attributes and detailed descriptions]
+
+**Document**:
+[Insert the full document here]
+
+Outcome: The model provides a detailed description of the specified event, utilizing the full context of the document, and staying within the output token limit.
+Step 3: Automate the Process
+
+Purpose: Streamline the extraction process for efficiency.
+
+Implementation:
+
+    Scripting: Use a script or program to automate the iterative prompting.
+    Looping: After obtaining the index of events, loop over each event identifier and send a prompt to the model as per Step 2.
+    Data Collection: Collect and compile the outputs for each event into a structured format or database.
+
+Benefits of This Approach
+
+    Full Context Utilization: Each prompt includes the entire document, allowing the model to reference any part of the text for accurate and detailed event descriptions.
+
+    Output Token Limit Compliance: By focusing on one event per prompt, the output stays within the 2,000-token limit.
+
+    Structured and Detailed Outputs: The model can provide comprehensive information for each event, following the ontology's structure.
+
+Considerations
+
+    Input Size: Ensure the total input (prompt plus document) does not exceed the model's maximum input context window (120,000 tokens in your case).
+
+    Processing Time: Processing multiple prompts (one per event) may increase the total computation time.
+
+    Resource Management: Monitor system resources and manage them efficiently, especially if automating a large number of prompts.
+
+    Cost: If using a paid API or service, consider the cost implications of multiple requests.
+
+Example Implementation
+Step 1: Get Event Index
+
+Prompt:
+
+You are operating in Ontology Expert Mode.
+
+**Task**: Analyze the following document and identify all events according to the predefined ontology. For each event, provide a brief summary and assign a unique identifier.
+
+**Instructions**:
+- Read the entire document carefully.
+- Identify and list all events.
+- For each event, provide:
+  - Event Identifier (e.g., Event 1, Event 2)
+  - Event Name
+  - Brief Summary (1-2 sentences)
+
+**Output Format**:
+- **Event Identifier**:
+  - **Event Name**:
+  - **Brief Summary**:
+
+**Document**:
+[Insert the full document here]
+
+Model Output:
+
+Event 1:
+  - Event Name: Annual Budget Meeting
+  - Brief Summary: A meeting held on May 5th, 2023, where board members discussed and approved the proposed budget for the upcoming fiscal year.
+
+Event 2:
+  - Event Name: Curriculum Committee Meeting
+  - Brief Summary: A session on September 10th, 2023, where new science textbooks were reviewed by the committee and educators.
+
+Event 3:
+  - Event Name: Policy Amendment on Remote Learning
+  - Brief Summary: On October 15th, 2023, the board approved amendments to the remote learning policy to accommodate hybrid models.
+
+Step 2: Detailed Description for Each Event
+
+For Event 1
+
+Prompt:
+
+You are operating in Ontology Expert Mode.
+
+**Task**: Provide a detailed description of **Event 1**, utilizing the full context of the document.
+
+**Instructions**:
+- Focus solely on **Event 1** as previously identified.
+- Provide all relevant details according to the ontology, including attributes and relationships.
+- Ensure the output is within 2,000 tokens.
+
+**Output Format**:
+- **Event**:
+  - **Event Identifier**: Event 1
+  - **Event Name**: Annual Budget Meeting
+  - **Event Type**: Budget Cycle
+  - **Date and Time**: May 5th, 2023
+  - **Location**: District Office
+  - **Participants**:
+    - **People**:
+      - Maria Rodriguez (Chairperson)
+      - Alan Chen (Treasurer)
+      - Other board members
+    - **Organizations**:
+      - School Board
+  - **Agenda Items or Topics Discussed**:
+    - Proposed allocations for the upcoming fiscal year
+    - Funding for new educational programs
+    - Infrastructure improvements
+  - **Decisions Made or Outcomes**:
+    - Budget approved with a majority vote
+  - **Related Documents**:
+    - Proposed Budget Report
+    - Meeting Minutes of May 5th, 2023
+  - **Resources Involved**:
+    - Upcoming fiscal year's budget allocations
+  - **Document Name**: Board_Meeting_Minutes_May2023.pdf
+
+**Document**:
+[Insert the full document here]
+
+Model Output:
+
+(The model provides the detailed description as per the prompt.)
+
+Repeat Step 2 for Each Event
+
+    Update the prompt for Event 2, Event 3, and so on, using the same structure.
+
+Alternative Approach: Using the Model's Capabilities
+
+If your model supports multi-turn conversations or has features that allow it to process instructions iteratively, you can:
+
+    Include an Instruction to Process Events Sequentially: In your initial prompt, instruct the model to focus on one event at a time and to await further instructions before proceeding to the next event.
+
+    Use System Messages or Special Tokens: If the model recognizes system prompts or special tokens, you can guide its behavior more precisely.
+
+Note: This approach depends on the model's specific capabilities and may not be as reliable as the iterative method outlined above.
+Additional Tips
+
+    External Tracking: Keep track of event identifiers and processed events externally (e.g., in a spreadsheet or database) since the model doesn't retain memory across separate prompts.
+
+    Optimize Prompts: Keep your prompts concise to maximize the space available for the model to generate detailed outputs.
+
+    Error Handling: Implement checks in your script to handle cases where the model might not produce the expected output format.
+
+    Parallel Processing: If computational resources allow, process multiple events in parallel to save time.
+
+Conclusion
+
+By structuring your prompts to focus on one event at a time and leveraging the model's large input context window, you can effectively extract detailed information about each event from your large document, despite the limited output window. Automating the process ensures efficiency and consistency, making the extracted knowledge readily explorable for new school board members.

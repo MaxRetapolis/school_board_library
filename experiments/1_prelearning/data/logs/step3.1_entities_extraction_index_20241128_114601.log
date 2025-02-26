@@ -1,0 +1,153 @@
+2024-11-28 11:46:03,294 - INFO - Number of files to process: 1
+2024-11-28 11:46:03,294 - INFO - Model selected: small
+2024-11-28 11:46:03,295 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-28 11:46:03,297 - INFO - Selected the first 1 file(s) to process.
+2024-11-28 11:46:03,301 - INFO - \U0001f680 Starting processing for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 11:46:03,302 - INFO - \U0001f504 Starting processing for prompt: Prompt for LLaMA 3.2: Ontology-Based Entity Indexing from School Board Documents
+
+**Ontology Expert Mode Activation**
+
+You are now operating in Ontology Expert Mode. As an expert in ontologies, you understand complex structures involving entities, relationships, events, processes, and states within specific domains.
+
+**Goal**
+
+You are helping school board members and all other stakeholders, including parents, teachers, and community members, understand the materials created in the board meetings. **The project aims to establish civic transparency and provide effective civic oversight around school board decisions, ensuring that all stakeholder groups have access to and can engage with publicly available documents to promote accountability and informed participation.**
+
+Your task is to extract and list unique entities from provided chunks of documents related to school board operations to create an index. The extracted entities should be categorized according to the predefined ontology for the School Board New Member Copilot, which includes:
+
+- Events
+- People
+- Organizations
+- Documents
+- Resources
+
+**Instructions**
+
+1. **Read the Document Carefully**
+   - Analyze the provided text thoroughly to understand the context.
+
+2. **Identify and Extract Entities**
+   - Look for all unique entities that match the defined categories in the ontology.
+   - For each entity, extract key attributes sufficient to distinguish it from others.
+   - Focus on essential information to create a clear and concise index.
+
+3. **Provide Structured Output**
+   - Present the extracted information in a structured format as specified below.
+   - Ensure each entity is described in 100 words or less across all attributes.
+
+**Attributes to Extract for Each Entity**
+
+- **Events:**
+  - **Event Identifier:** A unique identifier (e.g., Event 1, Event 2).
+  - **Event Name:** The official or commonly used name of the event.
+  - **Event Type:** Category of the event (e.g., Board Meeting, Policy Approval).
+  - **Date:** When the event occurred or is scheduled to occur (include the year).
+  - **Document Name:** The name of the document from which the event was extracted.
+
+- **People:**
+  - **Person Identifier:** A unique identifier (e.g., Person 1, Person 2).
+  - **Full Name:** The full name of the person.
+  - **Role or Title:** Their role within the school board context.
+  - **Affiliated Organization:** The organization they are associated with.
+  - **Document Name:** The name of the document from which the person was extracted.
+
+- **Organizations:**
+  - **Organization Identifier:** A unique identifier (e.g., Organization 1).
+  - **Organization Name:** The official name of the organization.
+  - **Type:** Type of organization (e.g., School Board, Committee).
+  - **Document Name:** The name of the document from which the organization was extracted.
+
+- **Documents:**
+  - **Document Identifier:** A unique identifier (e.g., Document 1).
+  - **Document Name:** The name of the document.
+  - **Date:** Date of the document (include the year).
+  - **Document Type:** Type of document (e.g., Meeting Minutes, Policy Report).
+
+- **Resources:**
+  - **Resource Identifier:** A unique identifier (e.g., Resource 1).
+  - **Resource Name:** Name or description of the resource.
+  - **Resource Type:** Type of resource (e.g., Budget Item, Facility).
+  - **Document Name:** The name of the document from which the resource was extracted.
+
+**Output Format**
+
+Provide the index of entities in the following format:
+
+- **Entity Type:** Events
+
+  - **Event Identifier:** Event 1
+    - **Event Name:** Annual Budget Meeting
+    - **Event Type:** Budget Cycle
+    - **Date:** May 5th, 2023
+    - **Document Name:** Budget_Report_2023.pdf
+
+  - **Event Identifier:** Event 2
+    - **Event Name:** Curriculum Committee Meeting
+    - **Event Type:** Committee Session
+    - **Date:** September 10th, 2023
+    - **Document Name:** Curriculum_Review_Sept2023.docx
+
+- **Entity Type:** People
+
+  - **Person Identifier:** Person 1
+    - **Full Name:** Maria Rodriguez
+    - **Role or Title:** Chairperson
+    - **Affiliated Organization:** School Board
+    - **Document Name:** Board_Meeting_Minutes_May2023.pdf
+
+  - **Person Identifier:** Person 2
+    - **Full Name:** Alan Chen
+    - **Role or Title:** Treasurer
+    - **Affiliated Organization:** School Board
+    - **Document Name:** Budget_Report_2023.pdf
+
+- **Entity Type:** Organizations
+
+  - **Organization Identifier:** Organization 1
+    - **Organization Name:** School Board
+    - **Type:** Educational Governance Body
+    - **Document Name:** Board_Meeting_Minutes_May2023.pdf
+
+  - **Organization Identifier:** Organization 2
+    - **Organization Name:** Curriculum Committee
+    - **Type:** Committee
+    - **Document Name:** Curriculum_Review_Sept2023.docx
+
+- **Entity Type:** Documents
+
+  - **Document Identifier:** Document 1
+    - **Document Name:** Budget_Report_2023.pdf
+    - **Date:** May 5th, 2023
+    - **Document Type:** Financial Report
+
+  - **Document Identifier:** Document 2
+    - **Document Name:** Curriculum_Review_Sept2023.docx
+    - **Date:** September 10th, 2023
+    - **Document Type:** Review Document
+
+- **Entity Type:** Resources
+
+  - **Resource Identifier:** Resource 1
+    - **Resource Name:** Proposed Budget Allocations
+    - **Resource Type:** Budget Item
+    - **Document Name:** Budget_Report_2023.pdf
+
+  - **Resource Identifier:** Resource 2
+    - **Resource Name:** New Science Textbooks
+    - **Resource Type:** Educational Material
+    - **Document Name:** Curriculum_Review_Sept2023.docx
+
+**Additional Notes**
+
+- **Uniqueness:** Ensure each entity is listed only once in the index.
+- **Clarity:** Use clear and concise language.
+- **Completeness:** Extract all entities necessary to create a comprehensive index.
+- **Description Limit:** Ensure each entity is described in under 100 words across all attributes. We are building an index and only need to create a collection of distinct events; details about each event will be extracted in the next step after this one.
+
+2024-11-28 11:46:03,303 - INFO - \U0001f50d Starting token calculation for prompt.
+2024-11-28 11:46:03,305 - INFO - \U0001f4a1 Prompt tokens: 1362
+2024-11-28 11:46:03,318 - INFO - \u2705 Total tokens (3179) within limit. Output token buffer set to 20000. No chunking needed.
+2024-11-28 11:46:03,321 - INFO - \u2705 Finished processing prompt for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 11:46:03,323 - INFO - \U0001f3c1 Finished processing for file: C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt
+2024-11-28 11:46:03,324 - INFO - \U0001f4ca Total tokens for 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt': 3179
+2024-11-28 11:46:03,326 - INFO - \u23f1\ufe0f Elapsed time for 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt': 0.023488 seconds

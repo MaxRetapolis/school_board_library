@@ -1,0 +1,7 @@
+2024-11-29 18:16:16,906 - INFO - Logging initialized.
+2024-11-29 18:16:16,907 - INFO - Starting Ollama Index TXT to JSON Converter...
+2024-11-29 18:16:16,909 - INFO - Prompt loaded successfully.
+2024-11-29 18:16:16,910 - INFO - Text file loaded successfully.
+2024-11-29 18:16:16,910 - INFO - Text parsed to JSON successfully.
+2024-11-29 18:16:16,912 - INFO - JSON output saved to file: C:\school_board_library\experiments\2_modularization_Ollama\data\index_output\ollama_index_txt_JSON_prompt_entities_index_JSON_20241129181616.json
+2024-11-29 18:16:16,913 - INFO - Total execution time: 0.0056 seconds.

@@ -1,0 +1,18 @@
+2024-11-27 17:32:28,243 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-27 17:32:28,253 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-27 17:32:28,480 - DEBUG - https://huggingface.co:443 "HEAD /gpt2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-27 17:32:29,349 - INFO - Available tokens for chunking: 117477
+2024-11-27 17:32:29,351 - INFO - Processing Document: 081324 BOARD BUZZ.pdf
+2024-11-27 17:32:29,524 - DEBUG - https://huggingface.co:443 "HEAD /gpt2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-27 17:32:30,496 - DEBUG - https://huggingface.co:443 "HEAD /gpt2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-27 17:32:30,993 - INFO - Prepared prompt for chunk 1 of '081324 BOARD BUZZ.pdf' with 2431 inbound tokens.
+2024-11-27 17:36:47,638 - DEBUG - Resetting dropped connection: huggingface.co
+2024-11-27 17:36:47,866 - DEBUG - https://huggingface.co:443 "HEAD /gpt2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-27 17:36:48,190 - INFO - Received response for chunk 1 of '081324 BOARD BUZZ.pdf' with 582 outbound tokens.
+2024-11-27 17:36:48,193 - INFO - Extracted 0 entities from chunk 1 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 17:36:48,196 - DEBUG - Chunk 1 Metrics: Inbound Tokens = 2431, Outbound Tokens = 582, Processing Time = 257.20s
+2024-11-27 17:36:48,197 - WARNING - No entities were extracted from any documents.
+2024-11-27 17:36:48,199 - INFO - Total Inbound Tokens: 2431
+2024-11-27 17:36:48,201 - INFO - Total Outbound Tokens: 582
+2024-11-27 17:36:48,202 - DEBUG - Benchmarking Data - Document: 081324 BOARD BUZZ.pdf, Chunk: 1, Inbound Tokens: 2431, Outbound Tokens: 582, Processing Time (s): 257.2
+2024-11-27 17:36:48,206 - INFO - Saved benchmarking data to 'C:\school_board_library\experiments\1_prelearning\data\benchmarking\benchmarking_index_20241127_173228.json'.

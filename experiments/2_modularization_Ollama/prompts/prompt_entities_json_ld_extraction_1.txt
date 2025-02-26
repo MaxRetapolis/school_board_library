@@ -1,0 +1,94 @@
+Prompt:
+
+You are an expert in knowledge management and ontology development, specializing in JSON-LD and schema.org. Your task is to parse a provided text and extract entities—such as People, Organizations, Events, Documents, and Resources—according to a defined schema mapping, and then represent them as JSON-LD objects in a single output document.
+
+Input:
+A textual transcript (e.g., meeting minutes, organizational documents) with references to events, people, organizations, documents, and related entities.
+
+Goal:
+Produce a JSON-LD output containing an @context, a @graph, and an array of entities each mapped to schema.org or custom properties using the ex: prefix for extensions.
+
+Key Requirements:
+
+Direct Mapping Only:
+
+Extract entities and attributes exactly as they appear.
+Do not infer, normalize, or correct data. If a date format is unusual or a name appears informally, keep it as is.
+JSON-LD and Schema.org Vocabulary:
+
+Include @context with schema pointing to https://schema.org/ and ex pointing to a custom namespace like http://example.org/schoolboard#.
+Use @graph as an array of entity objects.
+Map entity types and attributes to the JSON-LD structure and schema.org properties as specified below.
+Use null if a property is mentioned in the mapping but not found in the text.
+Entity Type Mappings:
+
+People (schema:Person):
+schema:name => Full Name or person's name as mentioned
+schema:jobTitle => Role or Title
+ex:affiliation => Affiliated Organization
+ex:documentName => Document Name
+ex:roleWithinOrganization => Additional role if specified, else null
+Organizations (schema:EducationalOrganization or schema:Organization):
+schema:name => Organization Name
+ex:type => Type (if provided, else null)
+ex:documentName => Document Name
+ex:boardOfGovernors => Another Organization if referenced
+Documents (schema:CreativeWork):
+schema:name => Document Name
+schema:dateCreated => Date
+ex:documentType => Document Type
+ex:description => Description (if any)
+Events (schema:Event):
+schema:name => Event Name
+ex:eventType => Event Type
+schema:startDate => Date
+ex:documentName => Document Name (if any)
+Resources (schema:CreativeWork or a subtype):
+schema:name => Resource Name
+ex:resourceType => Resource Type
+ex:documentName => Document Name
+Handling Missing Data:
+
+If an expected property is not present for an entity, set that property to null.
+No Additional Reasoning:
+
+Do not interpret or guess about relationships not explicitly stated.
+Do not alter formats, spelling, or any provided information.
+Instructions:
+
+Read the entire provided text.
+Identify all entities and their attributes according to the entity type mappings above.
+Produce one JSON-LD object containing @context and a @graph array.
+In @graph, include one JSON object per identified entity, typed and property-mapped according to the instructions.
+Ensure the final answer is just the JSON-LD content with no extra commentary.
+Example (Simplified):
+
+Input Snippet:
+"Trustee Spec: here."
+
+Extracted Entity (Person):
+
+schema:name: "Trustee Spec"
+schema:jobTitle: "Trustee" (inferred from context as role)
+ex:affiliation: "Dublin Unified School District Board of Trustees"
+ex:documentName: null
+Output:
+
+json
+Copy code
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "ex": "http://example.org/schoolboard#"
+  },
+  "@graph": [
+    {
+      "@type": "schema:Person",
+      "schema:name": "Trustee Spec",
+      "schema:jobTitle": "Trustee",
+      "ex:affiliation": "Dublin Unified School District Board of Trustees",
+      "ex:documentName": null,
+      "ex:roleWithinOrganization": null
+    }
+  ]
+}

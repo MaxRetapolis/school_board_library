@@ -1,0 +1,20 @@
+2024-11-29 15:13:17,627 - INFO - Logging initialized.
+2024-11-29 15:13:17,627 - INFO - Step: Starting Ollama Event Indexer...
+2024-11-29 15:13:17,627 - INFO - Step: Loading prompt file: c:/school_board_library/experiments/2_modularization_Ollama/prompts/prompt_entities_index.txt
+2024-11-29 15:13:17,627 - INFO - Step: Prompt loaded successfully.
+2024-11-29 15:13:17,627 - INFO - Step: Loading previous model output file: c:/school_board_library/experiments/2_modularization_Ollama/data/model_output/ollama_call_prompt_entities_20241129084129.txt
+2024-11-29 15:13:17,627 - INFO - Step: Previous model output loaded successfully.
+2024-11-29 15:13:17,642 - INFO - Step: Combined prompt and previous model output.
+2024-11-29 15:13:17,642 - INFO - Step: Selecting model: small
+2024-11-29 15:13:17,643 - INFO - Step: Model selected: llama3.2:1b
+2024-11-29 15:13:17,645 - INFO - Step: Calling Ollama API with combined text...
+2024-11-29 15:15:56,409 - INFO - Response from Ollama before parsing (first 100 chars): [?25l\u2819 [?25h[?25l[2K[1G\u2819 [?25h[?25l[2K[1G\u2838 [?25h[?25l[2K[1G\u2838 [?25h[?25l[2K[1G\u2834 [?2
+2024-11-29 15:15:56,423 - INFO - Clean output from Ollama (first 100 chars): I'll assist you in creating an ontology-based entity index from the provided chunks of documents rel
+2024-11-29 15:15:56,424 - INFO - Response from Ollama before parsing (first 100 chars): I'll assist you in creating an ontology-based entity index from the provided chunks of documents rel
+2024-11-29 15:15:56,426 - INFO - Step: Writing index output to file: C:\school_board_library\experiments\2_modularization_Ollama\data\index_output\ollama_event_index_prompt_entities_index_20241129151556.txt
+2024-11-29 15:15:56,426 - INFO - Cleaned output with embedded JSON:
+I'll assist you in creating an ontology-based entity index from the provided chunks of documents related to school board operations.**Ontology Expert Mode Activation**To proceed, I'll need to understand the predefined ontology for the School Board New Member Copilot. Please provide me with more information about the ontology structure, including:1. Entity types (e.g., Events, People, Organizations, Documents, Resources)2. Attributes for each entity type3. Relationships between entitiesAdditionally, please share the provided document chunks, which will be used to extract unique entities from the text.Once I have this information, I'll assist you in:1. Extracting and categorizing unique entities into the predefined ontology2. Presenting the extracted information in a structured format (plain text and JSON)3. Providing a dual output formatPlease provide the necessary information, and I'll get started on creating the ontology-based entity index for school board documents.
+2024-11-29 15:15:56,428 - INFO - Formatted response after post-processing (first 100 chars): I'll assist you in creating an ontology-based entity index from the provided chunks of documents rel
+2024-11-29 15:15:56,429 - INFO - Cleaned output saved to file: C:\school_board_library\experiments\2_modularization_Ollama\data\index_output\ollama_event_index_prompt_entities_index_20241129151556.txt
+2024-11-29 15:15:56,430 - INFO - Step: Index output written successfully.
+2024-11-29 15:15:56,432 - INFO - Total execution time: 158.8029 seconds.

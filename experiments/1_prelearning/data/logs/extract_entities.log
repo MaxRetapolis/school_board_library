@@ -1,0 +1,52 @@
+2024-11-27 13:02:01,955 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-27 13:02:05,941 - INFO - Available tokens for chunking: 119168
+2024-11-27 13:02:06,757 - INFO - Prepared prompt for chunk 1 of '081324 BOARD BUZZ.pdf' with 2463 inbound tokens.
+2024-11-27 13:04:58,510 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-27 13:04:59,307 - INFO - Available tokens for chunking: 119168
+2024-11-27 13:05:00,087 - INFO - Prepared prompt for chunk 1 of '081324 BOARD BUZZ.pdf' with 2463 inbound tokens.
+2024-11-27 13:06:22,956 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-27 13:06:23,782 - INFO - Available tokens for chunking: 119168
+2024-11-27 13:06:24,669 - INFO - Prepared prompt for chunk 1 of '081324 BOARD BUZZ.pdf' with 2463 inbound tokens.
+2024-11-27 13:06:24,799 - ERROR - Ollama command failed: Error: unknown flag: --max-tokens
+
+2024-11-27 13:06:24,801 - ERROR - No response from model for chunk 1 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 13:06:24,802 - WARNING - No entities were extracted from any documents.
+2024-11-27 13:06:24,803 - INFO - Total Inbound Tokens: 2463
+2024-11-27 13:06:24,804 - INFO - Total Outbound Tokens: 0
+2024-11-27 13:10:47,930 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-27 13:10:48,547 - INFO - Available tokens for chunking: 127168
+2024-11-27 13:10:49,474 - INFO - Prepared prompt for chunk 1 of '081324 BOARD BUZZ.pdf' with 2463 inbound tokens.
+2024-11-27 13:10:49,580 - ERROR - Ollama command failed: Error: unknown flag: --max-tokens
+
+2024-11-27 13:10:49,583 - ERROR - No response from model for chunk 1 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 13:10:49,584 - WARNING - No entities were extracted from any documents.
+2024-11-27 13:10:49,587 - INFO - Total Inbound Tokens: 2463
+2024-11-27 13:10:49,588 - INFO - Total Outbound Tokens: 0
+2024-11-27 13:15:50,080 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-27 13:15:50,651 - INFO - Available tokens for chunking: 127168
+2024-11-27 13:15:50,653 - INFO - Processing Document: 081324 BOARD BUZZ.pdf
+2024-11-27 13:15:51,318 - INFO - Prepared prompt for chunk 1 of '081324 BOARD BUZZ.pdf' with 2463 inbound tokens.
+2024-11-27 13:18:49,076 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-27 13:18:49,783 - INFO - Available tokens for chunking: 127168
+2024-11-27 13:18:49,784 - INFO - Processing Document: 081324 BOARD BUZZ.pdf
+2024-11-27 13:18:50,652 - INFO - Prepared prompt for chunk 1 of '081324 BOARD BUZZ.pdf' with 2463 inbound tokens.
+2024-11-27 13:19:15,377 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-27 13:19:15,973 - INFO - Processing Document: 081324 BOARD BUZZ.pdf
+2024-11-27 13:19:16,745 - INFO - Prepared prompt for chunk 1 of '081324 BOARD BUZZ.pdf' with 2463 inbound tokens.
+2024-11-27 13:23:25,174 - INFO - Received response for chunk 1 of '081324 BOARD BUZZ.pdf' with 349 outbound tokens.
+2024-11-27 13:23:25,176 - INFO - Extracted 0 entities from chunk 1 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 13:23:25,178 - WARNING - No entities were extracted from any documents.
+2024-11-27 13:23:25,179 - INFO - Total Inbound Tokens: 2463
+2024-11-27 13:23:25,180 - INFO - Total Outbound Tokens: 349
+2024-11-27 13:23:25,228 - INFO - Saved benchmarking data to 'C:\school_board_library\experiments\1_prelearning\data\benchmarking\benchmarking.json'.
+2024-11-27 13:25:01,616 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-27 13:25:02,238 - INFO - Available tokens for chunking: 127168
+2024-11-27 13:25:02,240 - INFO - Processing Document: 081324 BOARD BUZZ.pdf
+2024-11-27 13:25:02,985 - INFO - Prepared prompt for chunk 1 of '081324 BOARD BUZZ.pdf' with 2463 inbound tokens.
+2024-11-27 13:25:03,095 - ERROR - Ollama command failed: Error: unknown flag: --max-tokens
+
+2024-11-27 13:25:03,097 - ERROR - No response from model for chunk 1 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 13:25:03,099 - WARNING - No entities were extracted from any documents.
+2024-11-27 13:25:03,100 - INFO - Total Inbound Tokens: 2463
+2024-11-27 13:25:03,101 - INFO - Total Outbound Tokens: 0
+2024-11-27 13:25:03,103 - INFO - Saved benchmarking data to 'C:\school_board_library\experiments\1_prelearning\data\benchmarking\benchmarking.json'.

@@ -1,0 +1,82 @@
+2024-11-27 08:11:41,504 - ERROR - Unexpected error during Ollama command: name 'OLLAMA_MODEL' is not defined
+2024-11-27 08:11:41,507 - WARNING - API Connectivity Test returned an empty response.
+2024-11-27 08:11:41,587 - INFO - Loaded 43 available file(s) from 'C:\school_board_library\experiments\1_prelearning\data\2_available_converted_files.json'.
+2024-11-27 08:11:41,589 - INFO - Selected the first 1 file(s) to process.
+2024-11-27 08:11:41,592 - INFO - 1 out of 1 selected file(s) are valid and will be processed.
+2024-11-27 08:11:41,611 - INFO - Cleared the documents_chunks folder: C:\school_board_library\experiments\1_prelearning\data\documents_chunks
+2024-11-27 08:11:41,619 - INFO - \U0001f4c4 Processing Document: 081324 BOARD BUZZ.pdf
+2024-11-27 08:11:41,624 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 7 chunk(s).
+2024-11-27 08:11:41,624 - INFO - Split 'C:\school_board_library\experiments\1_prelearning\data\converted_documents\081324 BOARD BUZZ_converted.txt' into 7 chunk(s).
+2024-11-27 08:11:41,627 - INFO - \U0001f504 Processing Chunk 1/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 08:11:41,675 - INFO - \U0001f4c4 Written chunk 1 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk1_0_1500.txt'.
+2024-11-27 08:11:41,677 - INFO - Ollama API prompt for Chunk 1: 
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 1
+**Start Character:** 0
+**End Character:** 1500
+**Chunk File Name:** 081324 BOARD BUZZ_chunk1_0_1500.txt
+
+
+Text to analyze:
+
+210608DUSD REGULAR BOARD MEETING: AUGUST 13, 2024 The key items discussed  during the August 13, 2024 Regular Board Meeting include:   ITEM G2 : Citizens  Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023   ITEM L1 : Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 School ITEM G2 : Citizens  Bond Oversight Committee Annual Reports for Fiscal Years 2021-2022 and 2022-2023 The Independent Citizens' Bond Oversight Committee (CBOC) is submitting the 2021-2022 and 2022-2023 Annual Reports to the Board of Trustees. Due to committee membership turnover, the 2021-2022 report has not been presented to the Board and both reports are being presented simultaneously. The purpose of the CBOC is to inform the public and the Board regarding expenditures of bond funds pursuant to Education Code Section 15278. In order to notify the community of the availability of the reports, the CBOC has decided to post  yers with QR code links in all community facilities such as City Hall, the library, The Wave, and the Senior Center. Messages will be sent out through District communication channels to families, and CBOC members will post on local social media platforms as well. In addition, District Communications staff will add information regarding the availability of the reports to the District website, issue a press release to the local media, and route to the Dublin Chamber of Commerce. Presenting the
+2024-11-27 08:12:42,717 - INFO - Ollama API response for Chunk 1: The text provided appears to be a summary or a document related to a board meeting, specifically the August 13, 2024 Regular Board Meeting. It discusses two items:
+
+1. The Citizens Bond Oversight Committee (CBOC) is submitting annual reports for Fiscal Years 2021-2022 and 2022-2023.
+2. The CBOC will post QR code links in community facilities such as City Hall, the library, The Wave, and the Senior Center to notify the public of the availability of the reports.
+
+No further details or analysis are provided in the text beyond these two points.
+2024-11-27 08:12:42,719 - INFO - \U0001f4c4 Written model output for Chunk 1 to 'C:\school_board_library\experiments\1_prelearning\data\relationships\relationships_text_081324 BOARD BUZZ_converted_20241127_081141.txt'.
+2024-11-27 08:12:42,719 - ERROR - Model output is not valid JSON.
+2024-11-27 08:12:42,720 - INFO - Parsed Relationships for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 08:12:42,720 - WARNING - No relationships found in response for Chunk 1 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 08:12:42,723 - INFO - \U0001f504 Processing Chunk 2/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 08:12:42,726 - INFO - \U0001f4c4 Written chunk 2 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk2_1200_2700.txt'.
+2024-11-27 08:12:42,728 - INFO - Ollama API prompt for Chunk 2: 
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 2
+**Start Character:** 1200
+**End Character:** 2700
+**Chunk File Name:** 081324 BOARD BUZZ_chunk2_1200_2700.txt
+
+
+Text to analyze:
+
+d CBOC members will post on local social media platforms as well. In addition, District Communications staff will add information regarding the availability of the reports to the District website, issue a press release to the local media, and route to the Dublin Chamber of Commerce. Presenting the reports is the current CBOC Chair, Seema Badar.   ATTACHMENTS: Click here for all related documents VOTE: (No vote taken) AYE - NAY - Livestream Viewers: 43 Unique Zoom Participants: 0 STAFF NEWS The Board introduced two leadership staff members hired over the summer:   Cindy Ma, our new Child Nutrition Supervisor   Chiharu Kitchens, the new Assistant Principal at Dublin High. ITEM L1 : Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 School The Dublin Crossing Speci c Plan originally consisted of the demolition of existing dwellings and other site improvements, and the construction of a  residential mixed-use development with up to 1,995 single and multi-family residential units; up to 200,000 square feet of retail, office and/or commercial  uses; a 30-acre community park and a  ve-acre neighborhood park ( Project ). The Project also included a 12-acre school site to serve up to 900  kindergarten through 5th grade students ( Original School Project ). On November 5, 2013, the City of Dublin ( City ) approved the Project, which included  the Original School Project, and adopted Resolution No. 186-13 certifying
+2024-11-27 08:13:31,259 - INFO - Ollama API response for Chunk 2: Here is the text analysis of the given document:
+
+**Key Findings:**
+- The CBOC Chair, Seema Badar, will present reports on local social media platforms.
+- District Communications staff will add information to the District website about report availability.
+- A press release will be issued to the local media.
+- Two leadership staff members (Cindy Ma as Child Nutrition Supervisor and Chiharu Kitchens as Assistant Principal) were introduced over the summer.
+
+**Key Points:**
+- Resolution No. 2024-25-04, Finding No Further Environmental Review Is Required For the Shamrock Hills TK-8 School, has been approved.
+- The Dublin Crossing Specific Plan originally consisted of demolishing existing dwellings and improving site, but was modified to include residential mixed-use development with up to 1,995 units.
+- A 12-acre school site will be established for kindergarten through 5th grade students.
+- An additional 30-acre community park and a 2.5-acre neighborhood park are planned.
+
+**Tone and Style:**
+- Formal tone, indicating the official document of the CBOC.
+- Professional language used, suggesting a standard business or government report.
+2024-11-27 08:13:31,260 - INFO - \U0001f4c4 Written model output for Chunk 2 to 'C:\school_board_library\experiments\1_prelearning\data\relationships\relationships_text_081324 BOARD BUZZ_converted_20241127_081141.txt'.
+2024-11-27 08:13:31,260 - ERROR - Model output is not valid JSON.
+2024-11-27 08:13:31,260 - INFO - Parsed Relationships for Source '081324 BOARD BUZZ_converted.txt': []
+2024-11-27 08:13:31,261 - WARNING - No relationships found in response for Chunk 2 of '081324 BOARD BUZZ.pdf'.
+2024-11-27 08:13:31,263 - INFO - \U0001f504 Processing Chunk 3/7 of '081324 BOARD BUZZ.pdf'
+2024-11-27 08:13:31,266 - INFO - \U0001f4c4 Written chunk 3 to 'C:\school_board_library\experiments\1_prelearning\data\documents_chunks\081324 BOARD BUZZ_chunk3_2400_3897.txt'.
+2024-11-27 08:13:31,292 - INFO - Ollama API prompt for Chunk 3: 
+
+**Document Name:** 081324 BOARD BUZZ.pdf
+**Chunk Number:** 3
+**Start Character:** 2400
+**End Character:** 3897
+**Chunk File Name:** 081324 BOARD BUZZ_chunk3_2400_3897.txt
+
+
+Text to analyze:
+
+The Project also included a 12-acre school site to serve up to 900  kindergarten through 5th grade students ( Original School Project ). On November 5, 2013, the City of Dublin ( City ) approved the Project, which included  the Original School Project, and adopted Resolution No. 186-13 certifying the Dublin Crossing Speci c Plan Final Environmental Impact Report ( EIR ) for  the Project (State Clearinghouse No. 2012062009) in compliance with the California Environmental Quality Act (Pub. Resources Code,   21000 et seq.) and the  CEQA Guidelines (14 Cal. Code Regs.,   15000 et seq.) ( CEQA ). In connection with the consideration and adoption of the Dublin Crossing Speci c Plan and  EIR, a Statement of Findings, a Statement of Overriding Considerations ( SOC ), a Mitigation Monitoring and Reporting Program ( MMRP ), were also  adopted. The District was noti ed by the City pursuant to all applicable CEQA provisions during the environmental review process conducted for the EIR  and reviewed and commented on the EIR. Further, the previously certi ed EIR evaluated and mitigated the impacts of the Original School Project with the  anticipated development of the Dublin Crossing Speci c Plan. The District has now determined that the Dublin Crossing community would be better  served  by siting a TK-8 school, to be named the Shamrock Hills TK-8 School, in the Project area rather than the originally proposed K-5 school and expanding the  number of students from 900 to 1,054

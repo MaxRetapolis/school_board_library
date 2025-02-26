@@ -1,0 +1,7 @@
+2024-11-29 18:30:23,987 - INFO - Logging initialized.
+2024-11-29 18:30:23,991 - INFO - Starting Ollama Index TXT to JSON Converter...
+2024-11-29 18:30:23,992 - INFO - Prompt loaded successfully.
+2024-11-29 18:30:23,997 - INFO - Text file loaded successfully.
+2024-11-29 18:30:24,002 - INFO - Starting parse_text_to_json function.
+2024-11-29 18:30:24,004 - INFO - Final entities structure: {}
+2024-11-29 18:30:24,004 - ERROR - Failed to parse text to JSON.

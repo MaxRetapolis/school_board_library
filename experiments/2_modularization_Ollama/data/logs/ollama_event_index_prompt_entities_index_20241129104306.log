@@ -1,0 +1,18 @@
+2024-11-29 10:43:06,641 - INFO - Logging initialized.
+2024-11-29 10:43:06,642 - INFO - Step: Starting Ollama Event Indexer...
+2024-11-29 10:43:06,644 - INFO - Step: Loading prompt file: c:/school_board_library/experiments/2_modularization_Ollama/prompts/prompt_entities_index.txt
+2024-11-29 10:43:06,645 - INFO - Step: Prompt loaded successfully.
+2024-11-29 10:43:06,647 - INFO - Step: Loading previous model output file: c:/school_board_library/experiments/2_modularization_Ollama/data/model_output/ollama_call_prompt_entities_20241129084129.txt
+2024-11-29 10:43:06,672 - INFO - Step: Previous model output loaded successfully.
+2024-11-29 10:43:06,674 - INFO - Step: Combined prompt and previous model output.
+2024-11-29 10:43:06,675 - INFO - Step: Selecting model: small
+2024-11-29 10:43:06,676 - INFO - Step: Model selected: llama3.2:1b
+2024-11-29 10:43:06,677 - INFO - Step: Calling Ollama API with combined text...
+2024-11-29 10:47:19,367 - INFO - Response from Ollama before parsing (first 100 chars): [?25l\u280b [?25h[?25l[2K[1G\u2839 [?25h[?25l[2K[1G\u2838 [?25h[?25l[2K[1G\u283c [?25h[?25l[2K[1G\u283c [?2
+2024-11-29 10:47:19,375 - INFO - Clean output from Ollama (first 100 chars): I'll assist you in extracting and listing unique entities from the provided document, categorizing t
+2024-11-29 10:47:19,376 - INFO - Response from Ollama before parsing (first 100 chars): I'll assist you in extracting and listing unique entities from the provided document, categorizing t
+2024-11-29 10:47:19,379 - INFO - Step: Writing index output to file: C:\school_board_library\experiments\2_modularization_Ollama\data\index_output\ollama_event_index_prompt_entities_index_20241129104719.txt
+2024-11-29 10:47:19,379 - ERROR - Failed to parse output as JSON.
+2024-11-29 10:47:19,379 - ERROR - Failed to parse output as JSON. Attempting to extract JSON segment.
+2024-11-29 10:47:19,381 - ERROR - Step: Failed to format the model output.
+2024-11-29 10:47:19,381 - INFO - Total execution time: 252.7387 seconds.

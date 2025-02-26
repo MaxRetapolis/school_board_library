@@ -1,0 +1,19 @@
+*.yml
+*.yaml
+*.env
+.env
+.env.*
+.aider*
+*.local
+
+
+C:\school_board_library\experiments\1_prelearning\venv
+C:\school_board_library\experiments\2_modularization_Ollama\exp_2_venv
+C:\school_board_library\aider\venv
+
+
+# Configuration and environment files
+**/.env
+**/*.yml
+**/.aider.conf.yml
+.aider*

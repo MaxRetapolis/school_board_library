@@ -1,0 +1,729 @@
+WEBVTT
+
+STYLE
+::cue {
+line-height: 5.33vh;
+font-size: 4.1vh;
+font-family: monospace;
+font-style: normal;
+font-weight: normal;
+background-color: black;
+color: white;
+}
+::cue(c.transparent) {
+color: transparent;
+}
+::cue(c.semi-transparent) {
+color: rgba(0, 0, 0, 0.5);
+}
+::cue(c.opaque) {
+color: rgba(0, 0, 0, 1);
+}
+::cue(c.blink) {
+text-decoration: blink;
+}
+::cue(c.white) {
+color: white;
+}
+::cue(c.red) {
+color: red;
+}
+::cue(c.green) {
+color: lime;
+}
+::cue(c.blue) {
+color: blue;
+}
+::cue(c.cyan) {
+color: cyan;
+}
+::cue(c.yellow) {
+color: yellow;
+}
+::cue(c.magenta) {
+color: magenta;
+}
+::cue(c.black) {
+color: black;
+}
+::cue(c.bg_transparent) {
+background-color: transparent;
+}
+::cue(c.bg_semi-transparent) {
+background-color: rgba(0, 0, 0, 0.5);
+}
+::cue(c.bg_opaque) {
+background-color: rgba(0, 0, 0, 1);
+}
+::cue(c.bg_white) {
+background-color: white;
+}
+::cue(c.bg_green) {
+background-color: lime;
+}
+::cue(c.bg_blue) {
+background-color: blue;
+}
+::cue(c.bg_cyan) {
+background-color: cyan;
+}
+::cue(c.bg_red) {
+background-color: red;
+}
+::cue(c.bg_yellow) {
+background-color: yellow;
+}
+::cue(c.bg_magenta) {
+background-color: magenta;
+}
+::cue(c.bg_black) {
+background-color: black;
+}
+::cue(c.bg_white.bg_semi-transparent) {
+background-color: rgba(255, 255, 255, 0.5);
+}
+::cue(c.bg_green.bg_semi-transparent) {
+background-color: rgba(0, 256, 0, 0.5);
+}
+::cue(c.bg_blue.bg_semi-transparent) {
+background-color: rgba(0, 0, 255, 0.5);
+}
+::cue(c.bg_cyan.bg_semi-transparent) {
+background-color: rgba(0, 255, 255, 0.5);
+}
+::cue(c.bg_red.bg_semi-transparent) {
+background-color: rgba(255, 0, 0, 0.5);
+}
+::cue(c.bg_yellow.bg_semi-transparent) {
+background-color: rgba(255, 255, 0, 0.5);
+}
+::cue(c.bg_magenta.bg_semi-transparent) {
+background-color: rgba(255, 0, 255, 0.5);
+}
+::cue(c.bg_black.bg_semi-transparent) {
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+1
+00:00:02.760 --> 00:00:08.316
+Here, um trustee Blackman. Is she running? Oh I see her
+
+2
+00:00:08.316 --> 00:00:09.060
+walking in.
+
+3
+00:00:13.290 --> 00:00:18.550
+So trusty Blackman just walked in. Um, trustee sharer here
+
+4
+00:00:18.550 --> 00:00:22.330
+trustee quo here and trust trustee pelm is also here. So we
+
+5
+00:00:22.330 --> 00:00:23.890
+do have a quorum
+
+6
+00:00:23.950 --> 00:00:27.941
+Um, is there anything anyone would like anything to change
+
+7
+00:00:27.941 --> 00:00:29.419
+on the agenda?
+
+8
+00:00:29.420 --> 00:00:32.480
+Um, we only have a couple items but
+
+9
+00:00:33.990 --> 00:00:38.290
+Anyone, if not, I will take a motion to approve the agenda.
+
+10
+00:00:38.290 --> 00:00:40.170
+I'll move we approve the agenda.
+
+11
+00:00:40.170 --> 00:00:45.056
+1 second motion a second all in favor. All right motion
+
+12
+00:00:45.056 --> 00:00:49.242
+carries. Um, and then do we have anyone online for public
+
+13
+00:00:49.242 --> 00:00:52.679
+comment? I don't see anyone in person. We we do not okay.
+
+14
+00:00:52.680 --> 00:00:55.590
+Um, and we're only do um
+
+15
+00:00:55.850 --> 00:00:58.950
+public comment for the closed session or at this point and
+
+16
+00:00:58.950 --> 00:01:01.890
+then we are going to adjourn to closed session. It should
+
+17
+00:01:01.890 --> 00:01:05.910
+not be too long be about how long would you expect?
+
+18
+00:01:05.910 --> 00:01:09.013
+10 minutes or so, and then we'll be back um in Open
+
+19
+00:01:09.013 --> 00:01:09.709
+Session. Thanks.
+
+20
+00:14:16.575 --> 00:14:19.765
+All righty. We have returned from closed session.
+
+21
+00:14:19.765 --> 00:14:24.455
+And I have um 2 items to report out of closed session. The
+
+22
+00:14:24.455 --> 00:14:28.075
+first is a motion was made by trustee sharer and seconded
+
+23
+00:14:28.075 --> 00:14:31.555
+by trustee spec to approve the appointment of chiharu
+
+24
+00:14:31.555 --> 00:14:35.275
+kitchens. So the to the certificated leadership position of
+
+25
+00:14:35.275 --> 00:14:38.260
+assistant principal Comprehensive High School. The motion
+
+26
+00:14:38.260 --> 00:14:40.795
+was approved with a 50 vote.
+
+27
+00:14:41.565 --> 00:14:45.265
+And a motion was made by trustee spec and seconded by
+
+28
+00:14:45.265 --> 00:14:49.465
+trustee Blackman to approve the appointment of Cindy ma to
+
+29
+00:14:49.465 --> 00:14:52.725
+the classified leadership position of supervisor Child
+
+30
+00:14:52.725 --> 00:14:56.005
+Nutrition Services. The motion was approved by the vote of
+
+31
+00:14:56.005 --> 00:14:57.385
+5 to zero.
+
+32
+00:14:58.485 --> 00:15:04.105
+And that is all we have to approve out of closed. Um
+
+33
+00:15:04.165 --> 00:15:06.785
+I don't know your last name. I'm sorry.
+
+34
+00:15:07.115 --> 00:15:11.175
+20 that's 20 can trustee pwani. Please lead us in the
+
+35
+00:15:11.175 --> 00:15:12.285
+Pledge of Allegiance. Yes.
+
+36
+00:15:15.155 --> 00:15:19.328
+I pledge allegiance to the flag of the United States of
+
+37
+00:15:19.328 --> 00:15:19.994
+America.
+
+38
+00:15:19.995 --> 00:15:24.763
+To the Republic for which it stands 1 nation under God
+
+39
+00:15:24.763 --> 00:15:27.817
+indivisible with liberty and justice for all.
+
+40
+00:15:30.787 --> 00:15:34.313
+Thank you. And could you also please read our district
+
+41
+00:15:34.313 --> 00:15:38.127
+mission statement? Yes Dublin Unified School District
+
+42
+00:15:38.127 --> 00:15:41.027
+mission statement Unified School District will educate
+
+43
+00:15:41.027 --> 00:15:43.727
+every student to become a lifelong learner by providing a
+
+44
+00:15:43.727 --> 00:15:45.987
+safe and supportive environment that Fosters Collective
+
+45
+00:15:45.987 --> 00:15:48.467
+responsibility for each Student Success.
+
+46
+00:15:49.617 --> 00:15:52.762
+All right. Thank you. Um, we next have our public comment
+
+47
+00:15:52.762 --> 00:15:57.062
+period because this is a special board meeting. Um, any
+
+48
+00:15:57.063 --> 00:16:00.277
+public comments must be related to items that are on the
+
+49
+00:16:00.277 --> 00:16:01.477
+agenda today.
+
+50
+00:16:01.477 --> 00:16:04.887
+Um, do we have I don't see anyone in person. Do we have
+
+51
+00:16:04.887 --> 00:16:08.817
+anyone online? No, 1 online Okay. Um
+
+52
+00:16:08.817 --> 00:16:11.349
+And I'm going to go ahead and move on to the action item
+
+53
+00:16:11.349 --> 00:16:15.177
+for this evening, which is a resolution, um for the
+
+54
+00:16:15.177 --> 00:16:17.067
+election in November.
+
+55
+00:16:18.657 --> 00:16:24.584
+Yes, I did receive um, 1 media inquiry and uh 1 public
+
+56
+00:16:24.585 --> 00:16:26.977
+inquiry about why we're holding a special meeting this
+
+57
+00:16:27.000 --> 00:16:30.757
+evening. Uh, and I'll take full responsibility that this
+
+58
+00:16:30.757 --> 00:16:34.037
+was a resolution that should have been brought at our last
+
+59
+00:16:34.037 --> 00:16:37.927
+board meeting, uh, as the board knows we Consolidated the 2
+
+60
+00:16:37.927 --> 00:16:41.377
+board meetings to 1, uh, and staff was really focused on
+
+61
+00:16:41.377 --> 00:16:44.413
+the direction the board was going with the sfid, uh
+
+62
+00:16:44.413 --> 00:16:47.977
+resolution, uh for a potential Bond, uh, and this was just
+
+63
+00:16:48.000 --> 00:16:49.957
+an oversight on our part and I apologize.
+
+64
+00:16:49.957 --> 00:16:54.097
+guys for that so tonight's resolution is to allow for the
+
+65
+00:16:54.097 --> 00:16:59.848
+board to authorize um for to inform the county, uh office
+
+66
+00:16:59.848 --> 00:17:03.236
+of uh education in the county Allama County Register of
+
+67
+00:17:03.237 --> 00:17:08.467
+Voters, uh for us to actually uh order a an election, uh
+
+68
+00:17:08.467 --> 00:17:11.317
+request for consolidation and specifications for the
+
+69
+00:17:11.317 --> 00:17:15.817
+election, uh order and in this case, uh, this is for the
+
+70
+00:17:15.817 --> 00:17:20.332
+areas of 1 3 and 4. Uh, and so we need this resolution, uh
+
+71
+00:17:20.377 --> 00:17:24.327
+to meet the statutory deadline, uh, which is uh the 5th of
+
+72
+00:17:24.327 --> 00:17:27.157
+July to get this resolution to the register of Voters.
+
+73
+00:17:27.767 --> 00:17:31.407
+Thank you for that clarification. Um trustee Terrier. Yes.
+
+74
+00:17:31.407 --> 00:17:34.947
+I have a I have a clarifying question. Sure. Okay, great,
+
+75
+00:17:34.947 --> 00:17:39.057
+um in the resolution, I noticed we're maintaining the
+
+76
+00:17:39.597 --> 00:17:44.137
+500 dollar uh payment that goes towards
+
+77
+00:17:44.137 --> 00:17:50.457
+the uh candidate statement and those candidate statement
+
+78
+00:17:50.457 --> 00:17:53.327
+fees are based on kind of the size of the election. I know
+
+79
+00:17:53.327 --> 00:17:56.187
+it's more for presidential election than
+
+80
+00:17:57.008 --> 00:18:00.678
+Cubatur and all action, but but not a whole lot.
+
+81
+00:18:00.678 --> 00:18:03.708
+but my question is, um
+
+82
+00:18:03.708 --> 00:18:06.858
+when I did my first election.
+
+83
+00:18:07.218 --> 00:18:09.568
+16 years ago now
+
+84
+00:18:09.568 --> 00:18:10.818
+um
+
+85
+00:18:10.818 --> 00:18:14.248
+the $500 covered.
+
+86
+00:18:14.248 --> 00:18:20.538
+The full cost of the candidate statement and as in the
+
+87
+00:18:20.538 --> 00:18:25.908
+intervening years the 500 dollars now is is
+
+88
+00:18:25.908 --> 00:18:29.748
+based on the last time I ran a year ago was roughly a
+
+89
+00:18:29.748 --> 00:18:31.868
+little more than half.
+
+90
+00:18:31.868 --> 00:18:35.198
+and I'm guessing this time it's going to be about half of
+
+91
+00:18:35.198 --> 00:18:40.088
+the cost of the of the of the statement and
+
+92
+00:18:40.088 --> 00:18:44.968
+I I was wondering did you give any consideration?
+
+93
+00:18:45.000 --> 00:18:49.338
+To raising that due to higher costs over the years because
+
+94
+00:18:49.338 --> 00:18:51.858
+like I say 16 years ago covered the whole cost.
+
+95
+00:18:54.738 --> 00:18:58.498
+I did not give any consideration to that. Uh, I didn't take
+
+96
+00:18:58.498 --> 00:19:01.918
+that into the account. Uh, this is something that we could
+
+97
+00:19:01.918 --> 00:19:04.438
+make the adjustment of the board. We like to change that
+
+98
+00:19:04.438 --> 00:19:08.278
+amount. I have the ability to do that before I send it off.
+
+99
+00:19:08.278 --> 00:19:12.658
+Um, but uh, it was the same amount that we did at the last
+
+100
+00:19:12.658 --> 00:19:15.478
+election. It says I wasn't here for the last election.
+
+101
+00:19:15.478 --> 00:19:17.743
+Well, I guess I was here for the last election know it
+
+102
+00:19:17.743 --> 00:19:18.388
+wasn't
+
+103
+00:19:18.888 --> 00:19:23.560
+I was here since it wasn't any issue was brought up then we
+
+104
+00:19:23.560 --> 00:19:26.758
+just copied it for this 1 so I it was a
+
+105
+00:19:27.000 --> 00:19:30.148
+I just we're bringing up then since I would be 1 of the
+
+106
+00:19:30.148 --> 00:19:33.253
+people benefiting but now I'm not 1 of the people
+
+107
+00:19:33.253 --> 00:19:38.008
+benefiting so I feel on a little firmer ground to uh to to
+
+108
+00:19:38.008 --> 00:19:39.628
+to bring it up.
+
+109
+00:19:39.628 --> 00:19:43.088
+um anyway when we get to the
+
+110
+00:19:43.788 --> 00:19:49.788
+Comment section of this, uh item, I I may propose that we
+
+111
+00:19:49.788 --> 00:19:51.358
+increase that. Thank you.
+
+112
+00:19:52.968 --> 00:19:55.618
+Is there any other questions?
+
+113
+00:19:57.558 --> 00:20:00.058
+Does someone want to make a motion?
+
+114
+00:20:00.058 --> 00:20:01.668
+regarding this
+
+115
+00:20:02.238 --> 00:20:06.718
+Um, I'll make a motion that we approve.
+
+116
+00:20:06.718 --> 00:20:12.948
+resolution 202425 Dash 03
+
+117
+00:20:12.948 --> 00:20:16.728
+with the modification to increase
+
+118
+00:20:16.728 --> 00:20:21.648
+the uh amount paid for the candidate statement
+
+119
+00:20:21.648 --> 00:20:25.628
+from 500 to 900
+
+120
+00:20:33.208 --> 00:20:34.958
+I'll second.
+
+121
+00:20:34.958 --> 00:20:39.192
+How much was it? Oh, I'm sorry.
+
+122
+00:20:39.193 --> 00:20:42.823
+We have a motion in a second. Um the original
+
+123
+00:20:43.433 --> 00:20:45.213
+um
+
+124
+00:20:45.213 --> 00:20:48.033
+resolution called for 500 and that's what it's been for a
+
+125
+00:20:48.033 --> 00:20:50.643
+while and you're sending to 900.
+
+126
+00:20:50.643 --> 00:20:53.803
+Are there any additional motions or questions, uh trustee
+
+127
+00:20:53.803 --> 00:20:54.553
+spec?
+
+128
+00:20:54.553 --> 00:20:57.223
+I don't have another motion. I would just say I'm I'm
+
+129
+00:20:57.223 --> 00:21:00.703
+definitely on board with increasing it. I I'm the only
+
+130
+00:21:00.703 --> 00:21:02.695
+reason I didn't second is I would have gone with 800
+
+131
+00:21:02.695 --> 00:21:05.608
+because I feel like I didn't have to pay it 2 years ago
+
+132
+00:21:05.608 --> 00:21:08.923
+because no 1 rann against me but 4 years ago. Um, I believe
+
+133
+00:21:08.923 --> 00:21:17.263
+it was in the 8 0 0. 0 0 0
+
+134
+00:21:23.803 --> 00:21:29.173
+but if if you want to make a an alternate motion of 800,
+
+135
+00:21:29.173 --> 00:21:30.733
+uh, we can vote on that 1
+
+136
+00:21:30.733 --> 00:21:34.153
+Okay, then I'll I'll make an alternate motion of.
+
+137
+00:21:34.353 --> 00:21:36.103
+approving
+
+138
+00:21:36.103 --> 00:21:41.993
+resolution number 2425 Dash 03, uh with the 800 dollar
+
+139
+00:21:42.000 --> 00:21:43.853
+limit on the dollar amount.
+
+140
+00:21:44.313 --> 00:21:47.983
+Do you want to do it up to 800?
+
+141
+00:21:48.000 --> 00:21:53.423
+Or do you want to up to up to or including 800? Okay.
+
+142
+00:21:55.053 --> 00:21:56.563
+Hold on a second.
+
+143
+00:21:56.813 --> 00:21:59.613
+Okay. So now we have
+
+144
+00:21:59.613 --> 00:22:01.153
+another motion
+
+145
+00:22:01.153 --> 00:22:03.943
+We can go to go for a third unless.
+
+146
+00:22:04.383 --> 00:22:07.873
+I don't see anyone else making a motion on that 1.
+
+147
+00:22:07.873 --> 00:22:09.463
+um
+
+148
+00:22:09.463 --> 00:22:11.553
+Then I'm going to go ahead and call for a vote starting
+
+149
+00:22:11.553 --> 00:22:17.165
+with our last motion, which is um up to 800 dollars for the
+
+150
+00:22:17.165 --> 00:22:18.053
+ballot statement.
+
+151
+00:22:18.053 --> 00:22:21.323
+um, trustee pwani I
+
+152
+00:22:21.323 --> 00:22:22.513
+everyone else
+
+153
+00:22:22.513 --> 00:22:26.343
+I I motion carries unanimously.
+
+154
+00:22:26.443 --> 00:22:29.693
+And that was our only item on the agenda.
+
+155
+00:22:30.203 --> 00:22:33.903
+Hopefully anyone who has joined us this evening has uh
+
+156
+00:22:33.903 --> 00:22:36.483
+enjoyed the brief meeting. Um, so I will take a motion to
