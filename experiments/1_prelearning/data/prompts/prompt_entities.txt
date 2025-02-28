@@ -314,4 +314,4 @@ Extracted Entities:
 - **Attention to Detail:** Ensure all extracted information is accurate and relevant.
 - **Clarity:** Use clear and concise language in the output.
 - **Completeness:** Extract all entities and their attributes as per the instructions.
-- **Omission:** If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."
+- **Omission:** If certain information is not available in the text, it is acceptable to leave those fields blank or note them as "Not specified."[PASTE THE ENTIRE CONTENT OF prompt_entities.txt HERE]

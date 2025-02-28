@@ -138,3 +138,4 @@ Provide the index of entities in the following format:
 - **Clarity:** Use clear and concise language.
 - **Completeness:** Extract all entities necessary to create a comprehensive index.
 - **Description Limit:** Ensure each entity is described in under 100 words across all attributes. We are building an index and only need to create a collection of distinct events; details about each event will be extracted in the next step after this one.
+[PASTE THE ENTIRE CONTENT OF prompt_entities_index.txt HERE]
