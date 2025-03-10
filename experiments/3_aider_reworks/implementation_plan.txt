@@ -1,0 +1,418 @@
+# Implementation Plan: Function Stubs and Docstrings
+
+# --- Step 1: Document Ingestion ---
+# File: src/step1_read_documents.py
+
+def list_document_files(raw_documents_dir):
+    """
+    Lists all document files within the specified raw documents directory.
+
+    Args:
+        raw_documents_dir (str): The path to the directory containing the raw documents.
+
+    Returns:
+        list: A list of file paths to the documents.
+    """
+    pass
+
+def detect_file_format(file_path):
+    """
+    Detects the format of a given file.
+
+    Args:
+        file_path (str): The path to the file.
+
+    Returns:
+        str: The file format (e.g., "pdf", "docx", "txt", "vtt").  Returns None if format is unsupported.
+    """
+    pass
+
+def convert_pdf_to_text(file_path, output_path):
+    """
+    Converts a PDF file to plain text.  Handles both text-based and image-based PDFs (using OCR if necessary).
+
+    Args:
+        file_path (str): The path to the PDF file.
+        output_path (str): The path to save the converted text file.
+
+    Returns:
+        bool: True if conversion was successful, False otherwise.
+    """
+    pass
+
+def convert_docx_to_text(file_path, output_path):
+    """
+    Converts a DOCX file to plain text.
+
+    Args:
+        file_path (str): The path to the DOCX file.
+        output_path (str): The path to save the converted text file.
+
+    Returns:
+        bool: True if conversion was successful, False otherwise.
+    """
+    pass
+
+def read_text_file(file_path):
+    """
+    Reads the content of a plain text file.
+
+    Args:
+        file_path (str): The path to the text file.
+
+    Returns:
+        str: The content of the text file.  Returns None if an error occurs.
+    """
+    pass
+
+def parse_vtt_file(file_path):
+    """
+    Parses a VTT file and extracts the text content.
+
+    Args:
+        file_path (str): The path to the VTT file.
+
+    Returns:
+        str: The extracted text content from the VTT file. Returns None if an error occurs.
+    """
+    pass
+
+def convert_document(file_path, output_dir):
+    """
+    Converts a document to plain text based on its format.
+
+    Args:
+        file_path (str): The path to the document.
+        output_dir (str): The directory to save the converted text file.
+
+    Returns:
+        str: The path to the converted text file, or None if conversion failed.
+    """
+    pass
+
+def update_document_index(index_file, file_path, converted_path, status, error_message=None):
+    """
+    Updates the document index with information about a processed document.
+
+    Args:
+        index_file (str): Path to the JSON index file.
+        file_path (str): Original file path.
+        converted_path (str): Path to the converted file.
+        status (str): Processing status ("pending", "converted", "failed").
+        error_message (str, optional): Error message if processing failed. Defaults to None.
+    """
+    pass
+
+def run_document_ingestion(raw_documents_dir, output_dir, index_file):
+    """
+    Main function for document ingestion.  Coordinates the listing, conversion, and indexing of documents.
+
+    Args:
+        raw_documents_dir (str): The directory containing the raw documents.
+        output_dir (str): The directory to store the converted text files.
+        index_file (str): The path to the JSON index file.
+    """
+    pass
+
+# --- Step 2: Text Preprocessing ---
+# File: src/step2_preprocess_documents.py
+
+def remove_whitespace(text):
+    """
+    Removes extra whitespace from the text.
+
+    Args:
+        text (str): The input text.
+
+    Returns:
+        str: The text with extra whitespace removed.
+    """
+    pass
+
+def normalize_text(text, lowercase=True, remove_stopwords=False):
+    """
+    Normalizes the text by lowercasing and optionally removing stop words.
+
+    Args:
+        text (str): The input text.
+        lowercase (bool): Whether to convert the text to lowercase. Defaults to True.
+        remove_stopwords (bool): Whether to remove stop words. Defaults to False.
+
+    Returns:
+        str: The normalized text.
+    """
+    pass
+
+def handle_special_characters(text):
+    """
+    Handles special characters in the text (e.g., replaces or removes them).
+
+    Args:
+        text (str): The input text.
+
+    Returns:
+        str: The text with special characters handled.
+    """
+    pass
+
+def preprocess_text(text):
+    """
+    Performs the complete text preprocessing pipeline.
+
+    Args:
+        text (str): The input text.
+
+    Returns:
+        str: The preprocessed text.
+    """
+    pass
+
+def run_text_preprocessing(input_dir, output_dir):
+    """
+    Main function for text preprocessing.  Loads converted text files, preprocesses them, and saves the results.
+
+    Args:
+        input_dir (str): The directory containing the converted text files.
+        output_dir (str): The directory to store the preprocessed text files.
+    """
+    pass
+
+# --- Step 3: Entity Extraction ---
+# File: src/step3_extract_entities.py
+
+def extract_entities_with_spacy(text, spacy_model):
+    """
+    Extracts entities from the text using spaCy.
+
+    Args:
+        text (str): The input text.
+        spacy_model: The loaded spaCy model.
+
+    Returns:
+        list: A list of dictionaries, where each dictionary represents an entity
+              and contains keys like 'text', 'type', 'start_char', 'end_char'.
+    """
+    pass
+
+def create_entity_list(doc):
+    """
+    Creates a list of entities from a spaCy Doc object.
+
+    Args:
+        doc (spacy.tokens.Doc): The spaCy Doc object.
+
+    Returns:
+        list: A list of entity dictionaries.
+    """
+    pass
+
+def save_entities_to_json(entities, output_file):
+    """
+    Saves the extracted entities to a JSON file.
+
+    Args:
+        entities (list): The list of entity dictionaries.
+        output_file (str): The path to the output JSON file.
+    """
+    pass
+
+def run_entity_extraction(input_dir, output_dir, spacy_model_name):
+    """
+    Main function for entity extraction. Loads preprocessed text, extracts entities, and saves them to JSON files.
+
+    Args:
+        input_dir (str): The directory containing the preprocessed text files.
+        output_dir (str): The directory to store the extracted entities (JSON files).
+        spacy_model_name (str): The name of the spaCy model to use.
+    """
+    pass
+
+# --- Step 4: Relationship Extraction ---
+# File: src/step4_extract_relationships.py
+
+def extract_relationships_with_spacy(text, spacy_model):
+    """
+    Extracts relationships between entities using spaCy's dependency parser.
+
+    Args:
+        text (str): The input text.
+        spacy_model: The loaded spaCy model.
+
+    Returns:
+        list: A list of dictionaries, where each dictionary represents a relationship
+              and contains keys like 'subject', 'object', 'relation', 'sentence'.
+    """
+    pass
+
+def define_relationship_patterns():
+    """
+    Defines patterns for identifying relationships based on dependency labels and POS tags.
+
+    Returns:
+        list: A list of relationship patterns.
+    """
+    pass
+
+def apply_relationship_patterns(doc, patterns):
+    """
+    Applies the defined relationship patterns to a spaCy Doc object.
+
+    Args:
+        doc (spacy.tokens.Doc): The spaCy Doc object.
+        patterns (list): The list of relationship patterns.
+
+    Returns:
+        list: A list of extracted relationships.
+    """
+    pass
+def save_relationships_to_json(relationships, output_file):
+    """
+    Saves the extracted relationships to a JSON file.
+
+    Args:
+        relationships (list): The list of relationship dictionaries.
+        output_file (str): The path to the output JSON file.
+    """
+    pass
+
+def run_relationship_extraction(input_dir, output_dir, spacy_model_name):
+    """
+    Main function for relationship extraction.  Loads preprocessed text and extracted entities,
+    extracts relationships, and saves them to JSON files.
+
+    Args:
+        input_dir (str): The directory containing the preprocessed text files.
+        output_dir (str): The directory to store the extracted relationships (JSON files).
+        spacy_model_name (str): The name of the spaCy model to use.
+    """
+    pass
+
+# --- Step 5: Data Structuring and Knowledge Graph Update ---
+# File: src/step5_update_knowledge_graph.py
+
+def create_board_meeting_object(meeting_data):
+    """
+    Creates a BoardMeeting object from the extracted data.
+
+    Args:
+        meeting_data (dict): A dictionary containing meeting information.
+
+    Returns:
+        BoardMeeting: A BoardMeeting object.
+    """
+    pass
+
+def create_participant_object(participant_data):
+    """
+    Creates a Participant object from the extracted data.
+
+    Args:
+        participant_data (dict): A dictionary containing participant information.
+
+    Returns:
+        Participant: A Participant object.
+    """
+    pass
+
+def create_event_object(event_data):
+    """
+    Creates an Event object from the extracted data.
+
+    Args:
+        event_data (dict): A dictionary containing event information.
+
+    Returns:
+        Event: An Event object.
+    """
+    pass
+
+def create_topic_object(topic_data):
+    """
+    Creates a Topic object from the extracted data.
+
+    Args:
+        topic_data (dict): A dictionary containing topic information.
+
+    Returns:
+        Topic: A Topic object.
+    """
+    pass
+
+def update_neo4j_graph(board_meeting, participants, events, topics, neo4j_config):
+    """
+    Updates the Neo4j knowledge graph with the extracted data.  Handles creating new nodes
+    and relationships, and updating existing ones if necessary.
+
+    Args:
+        board_meeting (BoardMeeting): The BoardMeeting object.
+        participants (list): A list of Participant objects.
+        events (list): A list of Event objects.
+        topics (list): A list of Topic objects.
+        neo4j_config (dict): Configuration parameters for connecting to Neo4j.
+    """
+    pass
+
+def run_knowledge_graph_update(entity_dir, relationship_dir, neo4j_config):
+    """
+    Main function for data structuring and knowledge graph update.  Loads extracted entities
+    and relationships, creates data objects, and updates the Neo4j graph.
+
+    Args:
+        entity_dir (str): The directory containing the extracted entities (JSON files).
+        relationship_dir (str): The directory containing the extracted relationships (JSON files).
+        neo4j_config (dict): Configuration parameters for connecting to Neo4j.
+    """
+    pass
+
+# --- Ontology ---
+# File: src/ontology/ontology.py
+
+class BoardMeeting:
+    """
+    Represents a board meeting.
+
+    Attributes:
+        date (str): The date of the meeting.
+        location (str): The location of the meeting.
+        attendees (list): A list of Participants.
+        topics (list): A list of Topics discussed.
+        resolutions (list): A list of Events representing resolutions.
+        meeting_type (str): The type of meeting (e.g., "Regular", "Special").
+        last_updated (datetime): Timestamp of the last update to this node.
+    """
+    pass
+
+class Participant:
+    """
+    Represents a participant in a board meeting.
+
+    Attributes:
+        name (str): The name of the participant.
+        role (str): The role of the participant (e.g., "Board Member", "Superintendent").
+        affiliation (str): The affiliation of the participant.
+    """
+    pass
+
+class Event:
+    """
+    Represents an event that occurred during a board meeting.
+
+    Attributes:
+        event_type (str): The type of event (e.g., "Presentation", "Resolution").
+        description (str): A description of the event.
+        outcome (str): The outcome of the event.
+        related_topics (list): A list of Topics related to the event.
+    """
+    pass
+
+class Topic:
+    """
+    Represents a topic discussed during a board meeting.
+
+    Attributes:
+        name (str): The name of the topic.
+        description (str): A description of the topic.
+        keywords (list): Keywords associated with the topic.
+        category (str): The category of the topic.
+    """
+    pass
