@@ -2,14 +2,30 @@
 
 ## Dependencies
 
-The document classifier requires the following Python packages to be installed:
+The document classifier requires the following Python packages to be installed for optimal performance:
 
 1. **python-magic**: Used for MIME type detection
    - Install with `pip install python-magic`
    - On Windows, also install `python-magic-bin`: `pip install python-magic-bin`
+   - On Linux, can be installed with `apt-get install python3-magic`
 
 2. **PyPDF2**: Used for PDF text extraction
    - Install with `pip install PyPDF2`
+   - On Linux, can be installed with `apt-get install python3-pypdf2`
+
+## Fallback Implementations
+
+The document classifier now includes fallback implementations to handle missing dependencies:
+
+1. **Fallback MIME Type Detection**
+   - If `python-magic` is not available, the system uses Python's built-in `mimetypes` module
+   - This approach is less accurate but allows the classifier to function
+   - File types are determined based on file extensions
+
+2. **Fallback PDF Text Layer Detection**
+   - If `PyPDF2` is not available, a simple extension-based detection is used
+   - All files with `.pdf` extension are assumed to be text-based PDFs
+   - This is less accurate but allows for basic classification
 
 ## Common Exceptions During Execution
 
@@ -72,9 +88,36 @@ The document classifier uses the following folder structure:
   - `Classified/PDF-Unknown/`: Documents that couldn't be classified
   - `In_Processing/`: Documents currently being processed
 
+## Using the Classifier
+
+The document classifier can be used in two ways:
+
+1. **Using the API**: Import and use the `DocumentClassifier` class directly in your code
+   ```python
+   from Claude.document_classifier.main.document_classifier import DocumentClassifier
+   
+   classifier = DocumentClassifier()
+   classification = classifier.classify_document('/path/to/document.pdf')
+   print(f"Document classified as: {classification}")
+   ```
+
+2. **Using the Command-Line Script**: Run the classification script to process files from the inbound directory
+   ```bash
+   python Claude/document_classifier/main/classify_inbound.py
+   ```
+   This script:
+   - Reads files from `Claude/inbound`
+   - Classifies each file
+   - Moves files to the appropriate subdirectory under `Claude/outbound/Classified/`
+   - Provides a summary of classification results
+
+You can modify the script to process all files or a specific number by changing the `max_files` parameter.
+
 ## Notes for Production Deployment
 
-1. The system requires a Python environment with the necessary dependencies installed.
+1. The system requires a Python environment with the necessary dependencies installed, but can now operate with fallback implementations if dependencies are missing.
 2. Make sure the directory structure exists and has appropriate permissions.
-3. For large document sets, consider adding batch processing capabilities.
-4. The classification is based on document features, not content analysis, so accuracy depends on the structure of the documents.
+3. For large document sets, the `classify_inbound.py` script provides batch processing capabilities.
+4. Classification is more accurate with the required dependencies, but will still function with basic accuracy using fallbacks.
+5. Log output provides details about which implementation (optimal or fallback) is being used.
+6. In production, consider expanding the fallback implementations for better accuracy without dependencies.

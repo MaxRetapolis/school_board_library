@@ -1,5 +1,8 @@
 from typing import Dict, Optional, Any, Union
+import logging
 
+# Set up logging
+logger = logging.getLogger(__name__)
 
 def classify_document(features: Dict[str, Any]) -> str:
     """
@@ -7,6 +10,8 @@ def classify_document(features: Dict[str, Any]) -> str:
     
     Args:
         features: Dictionary with 'mime_type' (str) and 'has_text_layer' (bool or None).
+        Optional keys include 'using_fallback_mime' and 'using_fallback_pdf' to indicate
+        if fallback detection methods were used.
         
     Returns:
         str: One of 'Text-based PDF', 'Text-based non-PDF', 'Image-based document', or 'Unknown'.
@@ -20,6 +25,17 @@ def classify_document(features: Dict[str, Any]) -> str:
     
     mime_type = features['mime_type']
     has_text_layer = features.get('has_text_layer', None)  # None for non-PDFs
+    using_fallback_mime = features.get('using_fallback_mime', False)
+    using_fallback_pdf = features.get('using_fallback_pdf', False)
+    
+    # Log if we're using fallback methods
+    if using_fallback_mime or using_fallback_pdf:
+        logger.warning(f"Using fallbacks - mime: {using_fallback_mime}, pdf: {using_fallback_pdf}")
+        logger.warning("Classification may be less accurate due to fallback detection methods")
+    
+    # If using fallback PDF detection, we need to be cautious about PDF text layer determination
+    if using_fallback_pdf and mime_type == 'application/pdf':
+        logger.info("Using fallback PDF text layer detection based on file extension only")
     
     # Classification rules
     # Rule 1: Text-based PDF

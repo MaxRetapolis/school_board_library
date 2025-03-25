@@ -12,6 +12,21 @@ logging.basicConfig(
 )
 logger = logging.getLogger('DocumentClassifier')
 
+# Check if required dependencies are available
+try:
+    import magic
+    MAGIC_AVAILABLE = True
+except ImportError:
+    MAGIC_AVAILABLE = False
+    logger.warning("python-magic library not available - using fallback MIME type detection")
+
+try:
+    import PyPDF2
+    PYPDF2_AVAILABLE = True
+except ImportError:
+    PYPDF2_AVAILABLE = False
+    logger.warning("PyPDF2 library not available - using fallback PDF detection")
+
 
 class DocumentClassifier:
     """

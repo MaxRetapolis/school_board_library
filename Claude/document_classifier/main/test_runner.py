@@ -3,6 +3,7 @@
 import os
 import sys
 import logging
+import importlib.util
 from pathlib import Path
 
 # Add the project root to the Python path
@@ -20,19 +21,60 @@ def main():
     """Test runner for documenting execution with exception handling."""
     logger.info("Beginning test run to document exceptions")
     
+    # Check Python version
+    logger.info(f"Python version: {sys.version}")
+    logger.info(f"Python path: {sys.path}")
+    
+    # Check if we can install packages
+    logger.info("Checking package installation options:")
+    
+    # Check if pip is available
+    try:
+        import pip
+        logger.info("pip is available - you can install packages with pip")
+    except ImportError:
+        logger.warning("pip is not available - packages need to be installed with apt-get")
+        logger.info("Try: sudo apt-get install python3-magic python3-pypdf2")
+    
+    # Check for alternative package installations
+    for module_name in ['magic', 'PyPDF2']:
+        try:
+            module_spec = importlib.util.find_spec(module_name)
+            if module_spec:
+                logger.info(f"Module {module_name} is already installed at {module_spec.origin}")
+            else:
+                alternative_names = {
+                    'magic': ['python3-magic', 'libmagic'],
+                    'PyPDF2': ['python3-pypdf2', 'pypdf2', 'pypdf']
+                }
+                
+                for alt_name in alternative_names.get(module_name, []):
+                    alt_spec = importlib.util.find_spec(alt_name)
+                    if alt_spec:
+                        logger.info(f"Found alternative module: {alt_name} at {alt_spec.origin}")
+                        if module_name == 'magic' and alt_name == 'libmagic':
+                            logger.info("libmagic can be used with: import magic.Magic as Magic")
+                        break
+                else:
+                    logger.error(f"No alternative found for {module_name}")
+        except ImportError:
+            logger.error(f"Error checking for module {module_name}")
+    
     # Attempt to import the required modules
     try:
         import magic
-        logger.info("Successfully imported python-magic module")
+        logger.info(f"Successfully imported python-magic module: {magic.__file__}")
     except ImportError:
         logger.error("Failed to import python-magic module. Please install it with: pip install python-magic")
         logger.error("On Windows, you may also need: pip install python-magic-bin")
+        logger.error("On Linux, try: sudo apt-get install python3-magic")
     
     try:
         import PyPDF2
-        logger.info("Successfully imported PyPDF2 module")
+        logger.info(f"Successfully imported PyPDF2 module: {PyPDF2.__file__}")
     except ImportError:
         logger.error("Failed to import PyPDF2 module. Please install it with: pip install PyPDF2")
+        logger.error("On Linux, try: sudo apt-get install python3-pypdf2")
     
     # Check if inbound and outbound directories exist
     inbound_dir = os.path.join(project_root, 'Claude', 'inbound')
