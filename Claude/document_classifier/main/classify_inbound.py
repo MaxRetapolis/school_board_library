@@ -62,6 +62,8 @@ def classify_and_move_files(max_files=None):
         'Text-based PDF': 0,
         'Text-based non-PDF': 0,
         'Image-based document': 0,
+        'PDF-Text-With-Images': 0,
+        'Plain-Text-Special-Format': 0,
         'Unknown': 0,
         'Error': 0
     }

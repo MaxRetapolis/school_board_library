@@ -13,19 +13,42 @@ The document classifier requires the following Python packages to be installed f
    - Install with `pip install PyPDF2`
    - On Linux, can be installed with `apt-get install python3-pypdf2`
 
+## Enhanced Features
+
+The document classifier now includes several enhanced features:
+
+1. **Expanded Classification Categories**
+   - `PDF-Text-With-Images`: PDFs that contain both text and images that may need OCR
+   - `Plain-Text-Special-Format`: Special text formats like WebVTT (.vtt) subtitle files
+
+2. **OCR Need Detection**
+   - The system now detects PDFs that likely need OCR processing
+   - Large PDFs are flagged as potentially containing images requiring OCR
+   - When the full PDF analysis libraries are available, this will be more accurate
+
+3. **Text Content Sampling**
+   - For unknown file types, the system samples file content to check if it's text-based
+   - This allows detection of text files with non-standard extensions
+   - Uses a heuristic that checks for a high percentage of printable ASCII characters
+
 ## Fallback Implementations
 
-The document classifier now includes fallback implementations to handle missing dependencies:
+The document classifier includes fallback implementations to handle missing dependencies:
 
 1. **Fallback MIME Type Detection**
    - If `python-magic` is not available, the system uses Python's built-in `mimetypes` module
    - This approach is less accurate but allows the classifier to function
    - File types are determined based on file extensions
+   - Now includes detection for .vtt and .srt subtitle files
 
 2. **Fallback PDF Text Layer Detection**
    - If `PyPDF2` is not available, a simple extension-based detection is used
    - All files with `.pdf` extension are assumed to be text-based PDFs
    - This is less accurate but allows for basic classification
+   
+3. **Fallback OCR Need Detection**
+   - Uses file size heuristics to identify PDFs that might need OCR
+   - Large PDFs (over 500KB) are assumed to potentially contain images
 
 ## Common Exceptions During Execution
 
@@ -85,6 +108,8 @@ The document classifier uses the following folder structure:
   - `Classified/PDF-Text/`: Text-based PDF files
   - `Classified/Text-Only/`: Text-based non-PDF files
   - `Classified/PDF-Images/`: Image-based documents
+  - `Classified/PDF-Mixed/`: PDFs containing both text and images that may need OCR
+  - `Classified/Text-Special/`: Special text formats like WebVTT (.vtt) subtitle files
   - `Classified/PDF-Unknown/`: Documents that couldn't be classified
   - `In_Processing/`: Documents currently being processed
 

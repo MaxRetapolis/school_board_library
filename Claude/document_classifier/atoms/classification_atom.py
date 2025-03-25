@@ -37,8 +37,15 @@ def classify_document(features: Dict[str, Any]) -> str:
     if using_fallback_pdf and mime_type == 'application/pdf':
         logger.info("Using fallback PDF text layer detection based on file extension only")
     
+    # Get OCR needs feature if available
+    needs_ocr = features.get('needs_ocr', False)
+    
     # Classification rules
-    # Rule 1: Text-based PDF
+    # Rule 1a: Text-based PDF with images (mixed content)
+    if mime_type == "application/pdf" and has_text_layer is True and needs_ocr is True:
+        return "PDF-Text-With-Images"
+        
+    # Rule 1b: Text-based PDF
     if mime_type == "application/pdf" and has_text_layer is True:
         return "Text-based PDF"
     
@@ -47,13 +54,21 @@ def classify_document(features: Dict[str, Any]) -> str:
        mime_type in ["image/jpeg", "image/png", "image/tiff", "image/bmp"]:
         return "Image-based document"
     
-    # Rule 3: Text-based non-PDF
+    # Rule 3a: Special text formats
+    if mime_type in ["text/vtt", "text/srt"]:
+        return "Plain-Text-Special-Format"
+    
+    # Rule 3b: Text-based non-PDF
     if mime_type in [
         "application/msword",
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
         "text/plain",
         "application/rtf"
     ]:
+        return "Text-based non-PDF"
+    
+    # Rule 4: Binary files that are actually text-based
+    if using_fallback_mime and 'is_text' in features and features['is_text'] is True:
         return "Text-based non-PDF"
     
     # Default: Unknown

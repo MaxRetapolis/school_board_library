@@ -5,10 +5,50 @@ This is used when python-magic is not available.
 
 import os
 import mimetypes
+import logging
 from typing import Union, BinaryIO, TextIO
 
 # Initialize mimetypes
 mimetypes.init()
+
+# Set up logging
+logger = logging.getLogger(__name__)
+
+def sample_is_text(file_path: str, sample_size: int = 2048) -> bool:
+    """
+    Sample the beginning of a file to determine if it's likely a text file.
+    
+    Args:
+        file_path: Path to the file to sample
+        sample_size: Number of bytes to sample (default: 2KB)
+        
+    Returns:
+        bool: True if the file appears to be text, False otherwise
+    """
+    try:
+        with open(file_path, 'rb') as f:
+            sample = f.read(sample_size)
+            
+        # Check if sample contains mostly printable ASCII characters
+        if not sample:
+            return False
+            
+        # Count printable ASCII characters (32-126) and common whitespace/control chars
+        printable_count = sum(32 <= b <= 126 or b in (9, 10, 13) for b in sample)
+        
+        # If sample is >70% printable ASCII, it's likely text
+        text_ratio = printable_count / len(sample)
+        
+        # Log the results for debugging
+        if text_ratio > 0.7:
+            logger.debug(f"File {file_path} appears to be text (ratio: {text_ratio:.2f})")
+        else:
+            logger.debug(f"File {file_path} doesn't appear to be text (ratio: {text_ratio:.2f})")
+            
+        return text_ratio > 0.7
+    except Exception as e:
+        logger.warning(f"Error sampling file {file_path}: {str(e)}")
+        return False
 
 def detect_mime_type_fallback(file_path_or_object: Union[str, BinaryIO, TextIO]) -> str:
     """
@@ -44,12 +84,23 @@ def detect_mime_type_fallback(file_path_or_object: Union[str, BinaryIO, TextIO])
                     mime_type = 'image/png'
                 elif ext == '.txt':
                     mime_type = 'text/plain'
+                elif ext in ['.vtt', '.webvtt']:
+                    mime_type = 'text/vtt'  # WebVTT subtitle format
+                elif ext == '.srt':
+                    mime_type = 'text/srt'  # SRT subtitle format
                 elif ext == '.doc':
                     mime_type = 'application/msword'
                 elif ext == '.docx':
                     mime_type = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
                 else:
-                    mime_type = 'application/octet-stream'  # Default binary type
+                    # Try to detect if it's a text file by sampling content
+                    if isinstance(file_path_or_object, str) and os.path.exists(file_path_or_object):
+                        if sample_is_text(file_path_or_object):
+                            mime_type = 'text/plain'
+                        else:
+                            mime_type = 'application/octet-stream'  # Default binary type
+                    else:
+                        mime_type = 'application/octet-stream'  # Default binary type
             
             return mime_type
         

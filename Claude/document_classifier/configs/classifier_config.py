@@ -32,6 +32,8 @@ PATHS = {
         'Text-based PDF': './Claude/outbound/Classified/PDF-Text/',
         'Text-based non-PDF': './Claude/outbound/Classified/Text-Only/',
         'Image-based document': './Claude/outbound/Classified/PDF-Images/',
+        'PDF-Text-With-Images': './Claude/outbound/Classified/PDF-Mixed/',
+        'Plain-Text-Special-Format': './Claude/outbound/Classified/Text-Special/',
         'Unknown': './Claude/outbound/Classified/PDF-Unknown/',
     },
     'IN_PROCESSING_DIR': './Claude/outbound/In_Processing/',
