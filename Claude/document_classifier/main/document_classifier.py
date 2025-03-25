@@ -2,8 +2,8 @@ from typing import Union, BinaryIO, TextIO, Dict, Any
 import logging
 
 # Import the required molecules
-from src.document_classifier.molecules.feature_extractor import FeatureExtractor
-from src.document_classifier.molecules.classifier_logic import ClassifierLogic
+from Claude.document_classifier.molecules.feature_extractor import FeatureExtractor
+from Claude.document_classifier.molecules.classifier_logic import ClassifierLogic
 
 # Configure logging
 logging.basicConfig(

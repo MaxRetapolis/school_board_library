@@ -4,7 +4,7 @@ import io
 from unittest.mock import patch, MagicMock
 
 # Import the atom to test
-from src.document_classifier.atoms.mime_type_detector import detect_mime_type
+from Claude.document_classifier.atoms.mime_type_detector import detect_mime_type
 
 
 class TestMimeTypeDetector(unittest.TestCase):

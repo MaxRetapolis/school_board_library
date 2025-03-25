@@ -1,7 +1,7 @@
 import unittest
 
 # Import the atom to test
-from src.document_classifier.atoms.classification_atom import classify_document
+from Claude.document_classifier.atoms.classification_atom import classify_document
 
 
 class TestClassificationAtom(unittest.TestCase):

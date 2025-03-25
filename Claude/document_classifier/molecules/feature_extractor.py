@@ -2,8 +2,8 @@ from typing import Dict, Union, BinaryIO, TextIO, Any, Optional
 import os
 
 # Import the required atoms
-from src.document_classifier.atoms.mime_type_detector import detect_mime_type
-from src.document_classifier.atoms.pdf_text_layer_detector import has_text_layer
+from Claude.document_classifier.atoms.mime_type_detector import detect_mime_type
+from Claude.document_classifier.atoms.pdf_text_layer_detector import has_text_layer
 
 
 class FeatureExtractor:

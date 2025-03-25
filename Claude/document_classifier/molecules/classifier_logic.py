@@ -1,7 +1,7 @@
 from typing import Dict, Any
 
 # Import the required atom
-from src.document_classifier.atoms.classification_atom import classify_document
+from Claude.document_classifier.atoms.classification_atom import classify_document
 
 
 class ClassifierLogic:

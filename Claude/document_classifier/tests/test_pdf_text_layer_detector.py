@@ -3,7 +3,7 @@ import io
 from unittest.mock import patch, MagicMock, mock_open
 
 # Import the atom to test
-from src.document_classifier.atoms.pdf_text_layer_detector import has_text_layer
+from Claude.document_classifier.atoms.pdf_text_layer_detector import has_text_layer
 
 
 class TestPdfTextLayerDetector(unittest.TestCase):
