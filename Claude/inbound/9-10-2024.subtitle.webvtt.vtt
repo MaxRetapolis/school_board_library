@@ -1,0 +1,8085 @@
+WEBVTT
+
+STYLE
+::cue {
+line-height: 5.33vh;
+font-size: 4.1vh;
+font-family: monospace;
+font-style: normal;
+font-weight: normal;
+background-color: black;
+color: white;
+}
+::cue(c.transparent) {
+color: transparent;
+}
+::cue(c.semi-transparent) {
+color: rgba(0, 0, 0, 0.5);
+}
+::cue(c.opaque) {
+color: rgba(0, 0, 0, 1);
+}
+::cue(c.blink) {
+text-decoration: blink;
+}
+::cue(c.white) {
+color: white;
+}
+::cue(c.red) {
+color: red;
+}
+::cue(c.green) {
+color: lime;
+}
+::cue(c.blue) {
+color: blue;
+}
+::cue(c.cyan) {
+color: cyan;
+}
+::cue(c.yellow) {
+color: yellow;
+}
+::cue(c.magenta) {
+color: magenta;
+}
+::cue(c.black) {
+color: black;
+}
+::cue(c.bg_transparent) {
+background-color: transparent;
+}
+::cue(c.bg_semi-transparent) {
+background-color: rgba(0, 0, 0, 0.5);
+}
+::cue(c.bg_opaque) {
+background-color: rgba(0, 0, 0, 1);
+}
+::cue(c.bg_white) {
+background-color: white;
+}
+::cue(c.bg_green) {
+background-color: lime;
+}
+::cue(c.bg_blue) {
+background-color: blue;
+}
+::cue(c.bg_cyan) {
+background-color: cyan;
+}
+::cue(c.bg_red) {
+background-color: red;
+}
+::cue(c.bg_yellow) {
+background-color: yellow;
+}
+::cue(c.bg_magenta) {
+background-color: magenta;
+}
+::cue(c.bg_black) {
+background-color: black;
+}
+::cue(c.bg_white.bg_semi-transparent) {
+background-color: rgba(255, 255, 255, 0.5);
+}
+::cue(c.bg_green.bg_semi-transparent) {
+background-color: rgba(0, 256, 0, 0.5);
+}
+::cue(c.bg_blue.bg_semi-transparent) {
+background-color: rgba(0, 0, 255, 0.5);
+}
+::cue(c.bg_cyan.bg_semi-transparent) {
+background-color: rgba(0, 255, 255, 0.5);
+}
+::cue(c.bg_red.bg_semi-transparent) {
+background-color: rgba(255, 0, 0, 0.5);
+}
+::cue(c.bg_yellow.bg_semi-transparent) {
+background-color: rgba(255, 255, 0, 0.5);
+}
+::cue(c.bg_magenta.bg_semi-transparent) {
+background-color: rgba(255, 0, 255, 0.5);
+}
+::cue(c.bg_black.bg_semi-transparent) {
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+1
+00:00:04.660 --> 00:00:08.924
+Trustee spec is not yet here but we expect her momentarily,
+
+2
+00:00:08.924 --> 00:00:12.248
+trustee Blackman here trustee charriere has not yet arrived
+
+3
+00:00:12.248 --> 00:00:16.210
+but again we are expecting him. Vice president quote here,
+
+4
+00:00:16.210 --> 00:00:18.920
+president Pellum here, thank you. We have a quorum all
+
+5
+00:00:18.920 --> 00:00:21.672
+righty. Next would be the adoption of the agenda. Is there
+
+6
+00:00:21.672 --> 00:00:24.972
+anyone any board member or staff wishing to pull anything
+
+7
+00:00:24.973 --> 00:00:27.679
+from the agenda? Nothing from staff.
+
+8
+00:00:28.860 --> 00:00:30.160
+Anyone.
+
+9
+00:00:30.160 --> 00:00:32.915
+All righty. Then I will take a motion to approve the agenda
+
+10
+00:00:32.915 --> 00:00:34.130
+as presented.
+
+11
+00:00:35.220 --> 00:00:38.140
+I move that we approve the agenda as presented.
+
+12
+00:00:38.140 --> 00:00:40.580
+Second, all in favor.
+
+13
+00:00:40.580 --> 00:00:43.910
+I oh, sorry.
+
+14
+00:00:43.910 --> 00:00:46.698
+You're not usually here when we we vote on that. Um, sorry
+
+15
+00:00:46.698 --> 00:00:47.619
+about that the next 1
+
+16
+00:00:47.710 --> 00:00:51.410
+Um, next, we will do our Pledge of Allegiance. I have our
+
+17
+00:00:51.410 --> 00:00:53.390
+student trustee has 1.
+
+18
+00:00:56.190 --> 00:01:00.350
+I pledge allegiance to the flag of the United States of
+
+19
+00:01:00.350 --> 00:01:05.398
+America, and to the Republic for which it stands, 1 nation,
+
+20
+00:01:05.398 --> 00:01:09.520
+under God, indivisible, with liberty, and justice for all.
+
+21
+00:01:14.250 --> 00:01:17.110
+And if you would also, please reach our district, mission
+
+22
+00:01:17.110 --> 00:01:17.860
+statement.
+
+23
+00:01:18.660 --> 00:01:22.205
+Mission statement. Dublin Unified School. District will
+
+24
+00:01:22.231 --> 00:01:24.814
+educate every student to become a lifelong learner by
+
+25
+00:01:24.814 --> 00:01:27.499
+providing a safe and supportive environment that Fosters
+
+26
+00:01:27.500 --> 00:01:30.460
+Collective responsibility for each Student Success.
+
+27
+00:01:31.290 --> 00:01:35.750
+All righty and 1 more thing is up for your student board
+
+28
+00:01:35.750 --> 00:01:36.790
+member report.
+
+29
+00:01:39.120 --> 00:01:42.280
+So Emerald, High School had its first football games
+
+30
+00:01:42.280 --> 00:01:45.340
+against California. High school on August 29th, in Berkeley
+
+31
+00:01:45.340 --> 00:01:47.110
+High School on september 5th.
+
+32
+00:01:47.110 --> 00:01:49.990
+For new students, Emerald is hosting coffee with counselors
+
+33
+00:01:49.990 --> 00:01:53.032
+tomorrow in the lecture hall or organized by the EHS County
+
+34
+00:01:53.032 --> 00:01:54.099
+Department.
+
+35
+00:01:54.100 --> 00:01:56.610
+Last Friday, they held their Club information.
+
+36
+00:01:56.610 --> 00:01:58.488
+Informational meeting for students interested in starting
+
+37
+00:01:58.488 --> 00:02:01.530
+the inaugural Emerald High School clubs in chapters.
+
+38
+00:02:01.530 --> 00:02:04.470
+Lastly, EHS leadership has begun planning their
+
+39
+00:02:04.470 --> 00:02:06.540
+housewarming dance for later this month.
+
+40
+00:02:07.310 --> 00:02:10.216
+Valley. High School has hosted several community building
+
+41
+00:02:10.216 --> 00:02:13.919
+events over the last 2 weeks, including an ice cream social
+
+42
+00:02:13.920 --> 00:02:16.566
+and a trip to the Oakland A's game. In addition, all
+
+43
+00:02:16.566 --> 00:02:18.690
+all students have continued their participation in The
+
+44
+00:02:18.690 --> 00:02:21.990
+Culinary class, which takes place 3 times a week, as a part
+
+45
+00:02:21.990 --> 00:02:24.290
+of the students, as a part of the student. Friendly
+
+46
+00:02:24.290 --> 00:02:27.510
+curriculum looking ahead values planning, a schoolwide
+
+47
+00:02:27.510 --> 00:02:30.180
+Sonoma ropes course, and a back to school night. Barbecue,
+
+48
+00:02:30.526 --> 00:02:33.266
+At Dublin. High School and Intruder. Drill was held
+
+49
+00:02:33.266 --> 00:02:36.506
+yesterday to educate students on how to react in in such a
+
+50
+00:02:36.506 --> 00:02:37.556
+situation.
+
+51
+00:02:37.556 --> 00:02:41.246
+This week is spirit week. Monday featured an ad, Adam
+
+52
+00:02:41.246 --> 00:02:44.166
+Sandler. Theme Tuesday was anything but a backpack.
+
+53
+00:02:44.166 --> 00:02:47.346
+Wednesday has no specific theme. Thursday, will be dynamic
+
+54
+00:02:47.346 --> 00:02:49.986
+Duos, and Friday is neon clothing to coincide with the
+
+55
+00:02:49.986 --> 00:02:52.146
+first football game of the season that evening
+
+56
+00:02:52.146 --> 00:02:54.998
+Seniors also began planning their skit and dance practices
+
+57
+00:02:54.998 --> 00:02:58.226
+for homecoming. Yesterday in the Wells, Middle School NPR.
+
+58
+00:02:58.226 --> 00:03:02.026
+The tailgate event on september 30th for girls, football
+
+59
+00:03:02.026 --> 00:03:04.566
+had a blue out theme with a raffle featuring sponsored
+
+60
+00:03:04.566 --> 00:03:08.046
+prizes cornhole and food provided by the athletic boosters
+
+61
+00:03:08.046 --> 00:03:09.346
+for purchase.
+
+62
+00:03:09.346 --> 00:03:12.479
+Additionally, DHS clubs that applied for approval, have
+
+63
+00:03:12.479 --> 00:03:14.920
+been chartered. And the club. Prayer will take place this
+
+64
+00:03:14.921 --> 00:03:16.226
+Friday during lunch.
+
+65
+00:03:16.226 --> 00:03:19.276
+ASB has been working hard to involve all faculty and
+
+66
+00:03:19.276 --> 00:03:22.096
+students, ensuring everyone feels included and welcome to
+
+67
+00:03:22.096 --> 00:03:25.426
+campus. 1 initiative is the created creation of dubb
+
+68
+00:03:25.426 --> 00:03:27.880
+buddies, where leadership members partner with staff to
+
+69
+00:03:27.880 --> 00:03:30.586
+keep them informed about all the doubly activities.
+
+70
+00:03:30.796 --> 00:03:34.196
+over the past week, I worked with the media Committee in
+
+71
+00:03:34.196 --> 00:03:36.536
+leadership to post to August board meeting summaries on my
+
+72
+00:03:36.536 --> 00:03:39.056
+student board member, Instagram account, my Sewanee for
+
+73
+00:03:39.056 --> 00:03:39.956
+progress
+
+74
+00:03:39.956 --> 00:03:42.866
+In collaboration with the DHS leadership account to
+
+75
+00:03:42.866 --> 00:03:44.946
+increase visibility among students.
+
+76
+00:03:44.946 --> 00:03:48.456
+I also partnered with the ASB, vice president, Soho keshi to
+
+77
+00:03:48.456 --> 00:03:51.558
+interview, DHS admin or superintendent and trustee spec
+
+78
+00:03:51.558 --> 00:03:54.222
+about our new car's acronym for the upcoming school video
+
+79
+00:03:54.223 --> 00:03:57.325
+bulletin, which will be shown to the to all DHS students
+
+80
+00:03:57.326 --> 00:03:58.346
+next week.
+
+81
+00:03:58.496 --> 00:04:01.926
+I met with the Afghan Student Association to set our goal
+
+82
+00:04:01.926 --> 00:04:04.578
+of increasing donations from elementary schools for Afghan
+
+83
+00:04:04.579 --> 00:04:07.536
+students and they as they have had success doing. So in the
+
+84
+00:04:07.536 --> 00:04:10.191
+past at Dublin Elementary School and we began planning
+
+85
+00:04:10.191 --> 00:04:12.036
+Afghan cultural day for the spring.
+
+86
+00:04:12.036 --> 00:04:15.046
+I'm also holding informational meetings next week for
+
+87
+00:04:15.046 --> 00:04:18.106
+students to attend regarding subgroup meetings at the USD
+
+88
+00:04:18.106 --> 00:04:21.726
+high schools to subgroup committees at USD, high schools to
+
+89
+00:04:21.726 --> 00:04:24.766
+identify widespread student issues, and explore Solutions
+
+90
+00:04:24.766 --> 00:04:26.806
+with the hope of forming. These groups soon.
+
+91
+00:04:26.806 --> 00:04:28.076
+Thank you.
+
+92
+00:04:29.186 --> 00:04:31.386
+All right. Thank you.
+
+93
+00:04:31.386 --> 00:04:36.336
+I don't see anyone from DTA. Is there anyone online for
+
+94
+00:04:36.336 --> 00:04:37.416
+DTA?
+
+95
+00:04:37.416 --> 00:04:41.946
+okay, and then um, CSEA said they did not have a
+
+96
+00:04:41.946 --> 00:04:47.016
+Uh, comment tonight. So we'll move forward and go to a
+
+97
+00:04:47.016 --> 00:04:49.236
+report on maintenance grounds and custodial projects from
+
+98
+00:04:49.236 --> 00:04:49.926
+the summer.
+
+99
+00:04:52.946 --> 00:04:56.970
+Good evening, president, pelum trustee superintendent Funk.
+
+100
+00:04:57.000 --> 00:04:59.286
+This is actually 1 of the most fun presentations that we
+
+101
+00:04:59.286 --> 00:05:01.566
+get to bring to the board every year. And so, I'm really
+
+102
+00:05:01.566 --> 00:05:04.720
+excited to tonight to introduce our director of Maintenance
+
+103
+00:05:04.720 --> 00:05:07.265
+and operations, Mr. Tim Leo to you, give the board and the
+
+104
+00:05:07.266 --> 00:05:09.666
+community, an update on the work that they've accomplished
+
+105
+00:05:09.666 --> 00:05:12.996
+uh, this summer and it's quite a lot. So thank you.
+
+106
+00:05:19.054 --> 00:05:23.354
+Little president felon members of the board superintendent?
+
+107
+00:05:23.354 --> 00:05:28.024
+F, we have externally a great teams here in uh, for Amano
+
+108
+00:05:28.024 --> 00:05:29.824
+Department. We're excited to highlight some of our projects
+
+109
+00:05:29.824 --> 00:05:31.354
+and work that has been completed this summer.
+
+110
+00:05:31.354 --> 00:05:34.114
+I would like to thank the Board of Trustees. Mr. Funk and
+
+111
+00:05:34.114 --> 00:05:36.574
+Mr. Hobbs, who have been extremely supportive of the emo
+
+112
+00:05:36.574 --> 00:05:39.434
+department and I'd like to thank you all on behalf of the M
+
+113
+00:05:39.434 --> 00:05:40.144
+team.
+
+114
+00:05:40.554 --> 00:05:45.064
+Uh, real quickly. I'd like to introduce the meno team, the
+
+115
+00:05:45.064 --> 00:05:47.104
+assistant director in meno supervisors.
+
+116
+00:05:52.024 --> 00:05:56.054
+Uh, Bunnell assistant director. I know.
+
+117
+00:05:56.244 --> 00:05:57.754
+you would, uh,
+
+118
+00:05:58.404 --> 00:06:00.874
+Kenny wheeler. Ground supervisor.
+
+119
+00:06:02.764 --> 00:06:05.744
+Ramon Sanchez maintenance operations, supervisor.
+
+120
+00:06:06.524 --> 00:06:09.984
+Hi guy. Rose maintenance operations, supervisor.
+
+121
+00:06:10.404 --> 00:06:12.244
+Thank you, gentlemen.
+
+122
+00:06:26.564 --> 00:06:29.424
+The slide that will show you the difference between routine
+
+123
+00:06:29.424 --> 00:06:31.344
+restricted versus deferred maintenance.
+
+124
+00:06:33.484 --> 00:06:36.884
+Dublin Elementary, we resurfaced the bathroom floors with
+
+125
+00:06:36.884 --> 00:06:40.484
+new epoxy. We also put backpack hooks up on the exterior of
+
+126
+00:06:40.484 --> 00:06:41.384
+all classrooms.
+
+127
+00:06:42.544 --> 00:06:45.635
+Uh, for Emerald High. That's a pretty quite a big
+
+128
+00:06:45.636 --> 00:06:50.144
+undertaking for a locksmith uh 3 H. 350 construction Kors,
+
+129
+00:06:50.144 --> 00:06:53.534
+250 key cards were made and 700 keys were stamped and
+
+130
+00:06:53.534 --> 00:06:55.544
+labeled and inventoried for our staff.
+
+131
+00:06:57.014 --> 00:07:01.034
+Ever Elementary, we had a state of the art of an install
+
+132
+00:07:01.034 --> 00:07:03.744
+with steam ovens and we also installed speed limit signs in
+
+133
+00:07:03.744 --> 00:07:04.974
+the main parking lot.
+
+134
+00:07:07.304 --> 00:07:11.079
+Dhy. We pour new concrete next to the lunch shelter, uh
+
+135
+00:07:11.079 --> 00:07:14.484
+near front door installed for better Public Access as well.
+
+136
+00:07:17.044 --> 00:07:21.884
+Green. New bathroom floor, surfaces installed all exterior.
+
+137
+00:07:21.884 --> 00:07:25.364
+Doors on the whole campus were painted. And we also had a
+
+138
+00:07:25.364 --> 00:07:28.154
+new state-of-the-art steam of an insult there as well.
+
+139
+00:07:29.734 --> 00:07:34.634
+Frederickson. We removed a igloo. That was having some
+
+140
+00:07:34.634 --> 00:07:38.062
+issues on the playground resurfaced. It and also had speed
+
+141
+00:07:38.063 --> 00:07:39.854
+bumps installed in the main parking. Lots
+
+142
+00:07:42.524 --> 00:07:46.189
+Cold newly installed playground surface, the students are
+
+143
+00:07:46.190 --> 00:07:48.444
+loving this already. They're all over it, it's really good
+
+144
+00:07:48.444 --> 00:07:51.864
+to see the students play on this. Also, a new steam oven
+
+145
+00:07:51.864 --> 00:07:53.814
+state of art as well, was installed.
+
+146
+00:07:55.166 --> 00:07:59.037
+Cottonwood installed, speed limits, uh, signs in the main
+
+147
+00:07:59.037 --> 00:08:01.565
+parking lot repair to stairwell Landing leading the
+
+148
+00:08:01.566 --> 00:08:02.196
+library.
+
+149
+00:08:03.206 --> 00:08:06.786
+Fallon a new sport pickle ball. That's been taken over our
+
+150
+00:08:06.786 --> 00:08:09.576
+district. We just had courts painted for the school year.
+
+151
+00:08:11.326 --> 00:08:14.366
+Uh, I believe there is 3 quarts there.
+
+152
+00:08:14.366 --> 00:08:16.606
+Possibly, I think it's 4 actually.
+
+153
+00:08:17.196 --> 00:08:20.518
+I guess that's a real up and coming sport now for the kids
+
+154
+00:08:20.518 --> 00:08:21.315
+to play.
+
+155
+00:08:21.406 --> 00:08:24.866
+Uh, Wells, Middle School, new roof on the D building and
+
+156
+00:08:24.866 --> 00:08:27.828
+the h building interior. Hallways were painted and stair
+
+157
+00:08:27.828 --> 00:08:29.275
+rails as well.
+
+158
+00:08:30.576 --> 00:08:34.456
+Valley Valley High. We installed a new office wall for
+
+159
+00:08:34.456 --> 00:08:37.546
+privacy for conferences and meetings with students.
+
+160
+00:08:39.096 --> 00:08:44.396
+York Learning Center. We installed VCT Tile in the main
+
+161
+00:08:44.396 --> 00:08:46.636
+entrance to the gym and the day room.
+
+162
+00:08:48.000 --> 00:08:51.786
+Also, York Learning Center, adult roof, had a roof that
+
+163
+00:08:51.786 --> 00:08:53.946
+really need to be replaced. That was also taking care of
+
+164
+00:08:53.946 --> 00:08:54.936
+the summer as well.
+
+165
+00:08:56.576 --> 00:09:00.316
+York Learning Center. Also had all the siding replaced on
+
+166
+00:09:00.316 --> 00:09:02.196
+the portable classrooms.
+
+167
+00:09:04.376 --> 00:09:08.776
+Neilson had a new Ada ramp installed as well for access to
+
+168
+00:09:08.776 --> 00:09:10.026
+the front of the school.
+
+169
+00:09:12.426 --> 00:09:20.086
+Dublin. High School. We uh put a roof on to the band room.
+
+170
+00:09:20.156 --> 00:09:23.706
+We also restripe the parking lots.
+
+171
+00:09:25.786 --> 00:09:28.340
+Concrete was poured outside, the boardroom here at the
+
+172
+00:09:28.340 --> 00:09:31.195
+district office this summer and a portable sighting over in
+
+173
+00:09:31.196 --> 00:09:33.866
+other parking lot. With all our Portables, I had siding
+
+174
+00:09:33.866 --> 00:09:36.446
+replace repainted refinished as well as the ramps.
+
+175
+00:09:39.946 --> 00:09:43.886
+Total cost of summer summer, projects of 1.6 million.
+
+176
+00:09:48.066 --> 00:09:51.196
+Here's some of our continuing project, Focus.
+
+177
+00:09:51.356 --> 00:09:52.806
+Sorry.
+
+178
+00:10:00.646 --> 00:10:02.876
+I'd like to add.
+
+179
+00:10:02.886 --> 00:10:05.866
+Real briefly, sodium apartment, cleaned, approximately
+
+180
+00:10:05.866 --> 00:10:10.606
+1,444 square foot of classrooms offices. Nprs and
+
+181
+00:10:10.606 --> 00:10:12.136
+restrooms. Districtwide.
+
+182
+00:10:12.136 --> 00:10:15.776
+As well as cleaning after all summer school programs.
+
+183
+00:10:19.076 --> 00:10:23.508
+Grounds Department, nature cleanup and uh safety hazard
+
+184
+00:10:23.508 --> 00:10:26.256
+removal. And next to Nielsen, as we do own the property
+
+185
+00:10:26.256 --> 00:10:27.396
+next to the creek.
+
+186
+00:10:27.662 --> 00:10:31.752
+Dhy Murray and DHS had tree pruning and Coleman Fallon
+
+187
+00:10:31.752 --> 00:10:33.792
+landscape and mulching was installed.
+
+188
+00:10:33.852 --> 00:10:38.872
+Um, DHS all landscaped areas had Renovations made to them.
+
+189
+00:10:41.032 --> 00:10:44.012
+And there are many more projects that we did not list.
+
+190
+00:10:44.012 --> 00:10:46.052
+Here, we have about approximately 30 to 35 more projects
+
+191
+00:10:46.052 --> 00:10:49.797
+but for time's sake, we're going to cut a little short
+
+192
+00:10:49.798 --> 00:10:53.372
+here. I will if you would like I would send you all of our
+
+193
+00:10:53.372 --> 00:10:55.442
+other projects to the board if you'd like to see them.
+
+194
+00:10:55.802 --> 00:10:57.762
+Is there any questions?
+
+195
+00:10:58.252 --> 00:11:00.572
+I see that would be great if you could send it to. This is
+
+196
+00:11:00.572 --> 00:11:02.672
+great. It's nice to see all the all the little things that
+
+197
+00:11:02.672 --> 00:11:04.772
+really do help make a difference on all of our campuses and
+
+198
+00:11:04.772 --> 00:11:08.072
+see that the broad reach that you guys are able to to get
+
+199
+00:11:08.072 --> 00:11:11.912
+across our campus, our school campuses, so that they we're
+
+200
+00:11:11.912 --> 00:11:15.032
+welcome and ready for to start the school year, trustee
+
+201
+00:11:15.032 --> 00:11:17.072
+Blackman, your question. I just want to thank you for all
+
+202
+00:11:17.072 --> 00:11:19.712
+the work that you do, and I thank thank you for actually
+
+203
+00:11:19.712 --> 00:11:22.382
+coming with your team. I know just coming over and
+
+204
+00:11:22.382 --> 00:11:24.092
+introducing yourself but it's really nice to actually see
+
+205
+00:11:24.152 --> 00:11:27.952
+you here. Um, I realized it's a really large district and
+
+206
+00:11:28.112 --> 00:11:30.772
+it's growing, but it's so important to make the
+
+207
+00:11:30.772 --> 00:11:32.992
+environments feel welcome when students come back to
+
+208
+00:11:33.000 --> 00:11:35.000
+campus. And so, it's really important. The work that you
+
+209
+00:11:35.000 --> 00:11:37.292
+do. Thank you so very much and for presenting this to us
+
+210
+00:11:37.292 --> 00:11:39.332
+today. Absolutely. Thank you.
+
+211
+00:11:39.332 --> 00:11:44.392
+Thank you, everyone. Well, Tim, uh, the speed signs that
+
+212
+00:11:44.412 --> 00:11:47.242
+were added to the 2 schools were they added because they
+
+213
+00:11:47.242 --> 00:11:50.712
+were missing or they're brand new. Uh, they were missing
+
+214
+00:11:50.712 --> 00:11:51.582
+and
+
+215
+00:11:51.582 --> 00:11:53.605
+people were not really paying attention. What was written
+
+216
+00:11:53.606 --> 00:11:56.252
+on the ground here and there. So we decided to put them up
+
+217
+00:11:56.252 --> 00:11:59.420
+and said, so do we have those at all the sites? Uh, I can
+
+218
+00:11:59.432 --> 00:12:01.985
+get that answer for you. I'm not sure. But if not, I think
+
+219
+00:12:01.986 --> 00:12:05.120
+we should add them to each site absolutely. Um, throughout
+
+220
+00:12:05.120 --> 00:12:07.532
+the year when when you guys have the chance to do that,
+
+221
+00:12:07.532 --> 00:12:10.079
+absolutely. But we should be consistent. Absolutely. Thank
+
+222
+00:12:10.080 --> 00:12:12.752
+you. All right, thank you, everyone. All right, thank you.
+
+223
+00:12:12.752 --> 00:12:13.922
+Thank you. See your team.
+
+224
+00:12:13.932 --> 00:12:15.292
+Thanks everyone.
+
+225
+00:12:16.732 --> 00:12:19.412
+All righty. Next up.
+
+226
+00:12:19.412 --> 00:12:24.352
+We have Mr. Hobbs with the UN audited actuals,
+
+227
+00:12:26.332 --> 00:12:29.162
+All right, good evening again. Thank you.
+
+228
+00:12:30.882 --> 00:12:34.672
+If you can get that presentation up, thank you so much.
+
+229
+00:12:35.742 --> 00:12:38.972
+All right. So tonight we are at that point in our pin wheel
+
+230
+00:12:39.000 --> 00:12:41.512
+where I'm only showing you 1. First of all, because tonight
+
+231
+00:12:41.512 --> 00:12:44.602
+we're only talking about the year that's already ended the
+
+232
+00:12:44.602 --> 00:12:46.522
+2324 budget cycle.
+
+233
+00:12:46.522 --> 00:12:50.022
+And we have completed the work necessary to close our books
+
+234
+00:12:50.022 --> 00:12:53.022
+for the year. Um, this is actually a pretty huge effort
+
+235
+00:12:53.022 --> 00:12:56.422
+that involves not only my fiscal Services team but also a
+
+236
+00:12:56.652 --> 00:13:00.882
+work from our uh sites and departments to ensure that we've
+
+237
+00:13:00.882 --> 00:13:04.062
+closed out all of our purchase orders correctly, determine
+
+238
+00:13:04.062 --> 00:13:08.262
+what? Purchase orders. We're truly done and paid off what
+
+239
+00:13:08.262 --> 00:13:09.282
+purchase order still had outstanding in.
+
+240
+00:13:09.282 --> 00:13:12.136
+Voices what we're rolling forward to the new year. So
+
+241
+00:13:12.137 --> 00:13:14.702
+there's quite a bit of work to be done to clean up and
+
+242
+00:13:14.702 --> 00:13:17.282
+close the books each year. But we're now at that point
+
+243
+00:13:17.282 --> 00:13:20.882
+where we actually know how the year ended, um, and that's
+
+244
+00:13:20.882 --> 00:13:23.162
+what we're going to report out on tonight. Um,
+
+245
+00:13:23.162 --> 00:13:26.922
+the general fund remains solvent as we projected when we
+
+246
+00:13:26.922 --> 00:13:29.222
+talked about, uh, how we were going to end the books when
+
+247
+00:13:29.222 --> 00:13:32.357
+we presented the estimated actuals along with the budget
+
+248
+00:13:32.357 --> 00:13:33.452
+back in May
+
+249
+00:13:33.452 --> 00:13:36.662
+Um, the total ending balance for the general fund is 31.9
+
+250
+00:13:36.662 --> 00:13:40.952
+million and you can see how that gets broken out. Um I did
+
+251
+00:13:40.952 --> 00:13:44.892
+misalign on this there is a uh 1 line item for prepaid
+
+252
+00:13:44.892 --> 00:13:48.932
+expenses. Expenses that we paid in the 2324 year for
+
+253
+00:13:49.032 --> 00:13:51.512
+conferences and such that were coming up in the summer that
+
+254
+00:13:51.512 --> 00:13:55.244
+we prepaid for. Um, and so that's another $110,000. The
+
+255
+00:13:55.244 --> 00:13:58.508
+bottom line that the undesignated 10.167 is in fact,
+
+256
+00:13:58.508 --> 00:13:59.642
+correct.
+
+257
+00:14:00.752 --> 00:14:03.912
+On the restricted side of the budget, we have again. Lots
+
+258
+00:14:03.912 --> 00:14:06.912
+of pots of money with specific strings attached to them. We
+
+259
+00:14:06.912 --> 00:14:09.612
+call those our restricted dollars, that also called
+
+260
+00:14:09.612 --> 00:14:11.502
+sometimes. Categorical dollars.
+
+261
+00:14:11.502 --> 00:14:15.532
+Here, we identify exactly what makes up each of those line
+
+262
+00:14:15.532 --> 00:14:17.922
+items and how many dollars are left in each of those
+
+263
+00:14:17.922 --> 00:14:21.042
+programs. Um, I included special education, we occasionally
+
+264
+00:14:21.042 --> 00:14:23.442
+have a little bit of money left on there. This year, we
+
+265
+00:14:23.442 --> 00:14:26.202
+brought that to zero. We do try. You know, we as you know,
+
+266
+00:14:26.202 --> 00:14:28.222
+we have to make a contribution from the unrestricted
+
+267
+00:14:28.222 --> 00:14:31.782
+general fund to cover the cost of educating our students
+
+268
+00:14:31.782 --> 00:14:35.502
+with exceptional needs. And this year, we were able to get
+
+269
+00:14:35.502 --> 00:14:38.672
+that number, just dialed in to exactly enough to cover that
+
+270
+00:14:38.672 --> 00:14:39.252
+with no EX
+
+271
+00:14:39.252 --> 00:14:42.132
+so that's why you see a zero there, the rest of these
+
+272
+00:14:42.172 --> 00:14:44.512
+dollars, of course, carry over into the New Year and have
+
+273
+00:14:44.512 --> 00:14:47.616
+to be used for the purposes for which they've been um
+
+274
+00:14:47.616 --> 00:14:50.982
+assigned when the uh the state or federal governments gave
+
+275
+00:14:51.000 --> 00:14:52.542
+those dollars to US.
+
+276
+00:14:53.192 --> 00:14:56.712
+We also are highlighting the ending fund balance for all of
+
+277
+00:14:56.712 --> 00:14:59.012
+our other funds. Every now and then, you'll hear in the
+
+278
+00:14:59.012 --> 00:15:01.632
+news about a government agency that discovers that they
+
+279
+00:15:01.632 --> 00:15:04.752
+found money that they had forgotten about. Um, 1 of the
+
+280
+00:15:04.752 --> 00:15:07.447
+ways that can happen is that they just stopped reporting
+
+281
+00:15:07.447 --> 00:15:10.571
+out on the regular about money and different funds that
+
+282
+00:15:10.572 --> 00:15:12.462
+maybe don't get used very often.
+
+283
+00:15:12.462 --> 00:15:14.882
+Um and so we like highlighting this slide because it
+
+284
+00:15:14.882 --> 00:15:17.992
+indicates all of our funds other than fundo 1 the general
+
+285
+00:15:18.000 --> 00:15:22.102
+fund and what remains in each of those, the only 1 on here.
+
+286
+00:15:22.128 --> 00:15:23.762
+That's still a little bit unusual, just because we haven't
+
+287
+00:15:23.762 --> 00:15:27.062
+used it. Um, except, in the last couple years is fund 40,
+
+288
+00:15:27.062 --> 00:15:29.722
+and you may recall, this is where we're we, uh, brought in
+
+289
+00:15:29.722 --> 00:15:32.327
+the proceeds from our loan, for our solar project and where
+
+290
+00:15:32.328 --> 00:15:35.472
+we've been expending money to cover the cost of that solar
+
+291
+00:15:35.472 --> 00:15:38.512
+project, we expect that money to be gone at the end of this
+
+292
+00:15:38.512 --> 00:15:40.762
+year, as we wrap that project up.
+
+293
+00:15:42.166 --> 00:15:46.466
+In our bond again just because our bond program is so big
+
+294
+00:15:46.466 --> 00:15:49.706
+fund, 21, Encompass, all of our bond dollars. But we
+
+295
+00:15:49.706 --> 00:15:52.274
+typically break that out to show you the balances in each
+
+296
+00:15:52.274 --> 00:15:55.586
+of the bond funds. You'll notice that finally measure, c
+
+297
+00:15:55.586 --> 00:15:58.166
+and e are actually both off of this list. We have fully
+
+298
+00:15:58.166 --> 00:16:01.226
+expended those 2 bond funds and so there is no ending fund
+
+299
+00:16:01.286 --> 00:16:04.783
+balance and those 2 we still of course have measure h and a
+
+300
+00:16:04.783 --> 00:16:08.005
+a lot of measure J left to spend um, as well as we're now
+
+301
+00:16:08.005 --> 00:16:10.646
+tracking the state reimbursement dollars in their own sub
+
+302
+00:16:10.646 --> 00:16:12.718
+fund, and we'll start reporting those out as their own
+
+303
+00:16:12.718 --> 00:16:15.895
+separate bucket. And Co meaning them with
+
+304
+00:16:15.896 --> 00:16:19.336
+um named bond funds because they're not technically Bond
+
+305
+00:16:19.336 --> 00:16:22.421
+dollars any longer but still very much for facilities
+
+306
+00:16:22.421 --> 00:16:23.606
+projects
+
+307
+00:16:24.516 --> 00:16:27.616
+and then finally, this is, again, a relatively new slide,
+
+308
+00:16:27.616 --> 00:16:30.656
+but we've been asked to show kind of how do we compare
+
+309
+00:16:30.816 --> 00:16:33.743
+versus where did we start the year with our assumptions and
+
+310
+00:16:33.743 --> 00:16:35.500
+our projections about what, our budget was going to look
+
+311
+00:16:35.500 --> 00:16:40.066
+like and where we ended. And again, as we typically do
+
+312
+00:16:40.066 --> 00:16:44.936
+we've, um, uh, received more money than we thought we were
+
+313
+00:16:44.936 --> 00:16:47.126
+going to at the start of the year and we've spent more
+
+314
+00:16:47.126 --> 00:16:49.156
+money than we thought we were going to you at the start of
+
+315
+00:16:49.156 --> 00:16:53.556
+the year. Um in most years up to that point that has netted
+
+316
+00:16:53.556 --> 00:16:55.876
+netted out to an improvement in our overall budget, this
+
+317
+00:16:56.431 --> 00:16:58.780
+unique. If you look at that larger chart on the right side
+
+318
+00:16:58.780 --> 00:17:01.336
+you'll see that we actually underperformed our budget for
+
+319
+00:17:01.336 --> 00:17:03.781
+budget for the first time in years. And I attribute that
+
+320
+00:17:03.781 --> 00:17:06.328
+mostly to the fact that we weren't frankly expecting to
+
+321
+00:17:06.328 --> 00:17:09.066
+settle as large as we did on our salaries. And so our
+
+322
+00:17:09.066 --> 00:17:10.726
+expenditures grew at a faster rate than our
+
+323
+00:17:10.726 --> 00:17:14.026
+Revenues and that explains the difference between where we
+
+324
+00:17:14.026 --> 00:17:16.306
+projected at the start of the year and where we ended the
+
+325
+00:17:16.416 --> 00:17:19.751
+year. Um, again continuing to deficit spend, that's the
+
+326
+00:17:19.751 --> 00:17:22.330
+story we've been talking about for a while now. Um, and the
+
+327
+00:17:22.331 --> 00:17:24.586
+problem that we're trying to solve is we move forward,
+
+328
+00:17:25.566 --> 00:17:29.446
+So tonight what we're asking the board to do is to approve
+
+329
+00:17:29.446 --> 00:17:32.506
+the UN audited actuals. And at that point, they get turned
+
+330
+00:17:32.506 --> 00:17:35.326
+over to our independent auditor, who is already doing the
+
+331
+00:17:35.326 --> 00:17:39.301
+work to review, um, our books and our practices to ensure.
+
+332
+00:17:39.301 --> 00:17:43.126
+And to tell the community that we've fairly presented these
+
+333
+00:17:43.126 --> 00:17:46.966
+numbers, um, they will finish their independent audit and
+
+334
+00:17:46.966 --> 00:17:50.197
+turn that over to the State Controllers Office in December
+
+335
+00:17:50.197 --> 00:17:52.845
+and then they will come back and present to this board in
+
+336
+00:17:52.846 --> 00:17:57.291
+January. Meanwhile, we're of course, still very much into,
+
+337
+00:17:57.291 --> 00:17:59.745
+you know, budget monitoring and management mode for the
+
+338
+00:17:59.746 --> 00:18:04.591
+2425 year, as well as preparing for the 2526 budget season.
+
+339
+00:18:04.591 --> 00:18:07.606
+And so, the next report for the 2425 budget will be the
+
+340
+00:18:07.606 --> 00:18:10.516
+first interim report, which will show you where we're at
+
+341
+00:18:10.516 --> 00:18:13.126
+through the end of October. And that will happen at the
+
+342
+00:18:13.126 --> 00:18:14.536
+December 3rd board meeting.
+
+343
+00:18:14.871 --> 00:18:19.951
+With that, I am happy to answer any questions. I'm not sure.
+
+344
+00:18:19.951 --> 00:18:22.435
+I guess that is the last slide. I thought I had a question
+
+345
+00:18:22.435 --> 00:18:24.871
+slide. Um, any questions or comments from the board? I'll
+
+346
+00:18:24.871 --> 00:18:26.971
+be happy to answer them trustee Blackman.
+
+347
+00:18:27.000 --> 00:18:30.471
+Thank you for the presentation information. I know it isn't
+
+348
+00:18:30.471 --> 00:18:32.716
+much different from where we thought we left off at the end
+
+349
+00:18:32.716 --> 00:18:37.843
+of the spring. Um, 1 question I had about, um, in the
+
+350
+00:18:37.843 --> 00:18:41.151
+document um, around. I think it's page 97 or so, we there's
+
+351
+00:18:41.151 --> 00:18:43.951
+some information about nutrition services.
+
+352
+00:18:43.951 --> 00:18:46.366
+And so some of our comparative information that shows um
+
+353
+00:18:46.366 --> 00:18:49.651
+last year versus moving forward into this year.
+
+354
+00:18:49.651 --> 00:18:53.169
+I know that we have slightly fewer students, roughly 30
+
+355
+00:18:53.169 --> 00:18:56.001
+fewer Ada projected going forward.
+
+356
+00:18:56.001 --> 00:18:58.563
+But I noticed there are nutrition budget. If you just look
+
+357
+00:18:58.564 --> 00:19:02.821
+at the food cost item where we're at funding food itself,
+
+358
+00:19:02.821 --> 00:19:05.921
+we have about a half a million dollar drop.
+
+359
+00:19:05.921 --> 00:19:09.186
+Now, it goes from about a $4 million budget to a 3 and a
+
+360
+00:19:09.186 --> 00:19:11.916
+half million dollar budget. But we're really only losing 30
+
+361
+00:19:11.916 --> 00:19:14.856
+students. So I was sort of curious what we would attribute.
+
+362
+00:19:14.856 --> 00:19:18.711
+The the loss of half a million dollars to is it just
+
+363
+00:19:18.711 --> 00:19:22.881
+something that the feds cut or the state cut or
+
+364
+00:19:22.881 --> 00:19:26.319
+um because that's just raw food dollars that we're not
+
+365
+00:19:26.319 --> 00:19:29.217
+seeing and I'm wondering if they cut the amount per student
+
+366
+00:19:29.218 --> 00:19:33.197
+that they provide, or if it's something else that we, it's
+
+367
+00:19:33.197 --> 00:19:35.259
+just a large number for the number of students that we
+
+368
+00:19:35.259 --> 00:19:36.351
+lost. So
+
+369
+00:19:39.001 --> 00:19:42.641
+So, to answer part of your question, no, there is no change
+
+370
+00:19:42.641 --> 00:19:44.561
+in the amount of Revenue, we're getting per meal, so we
+
+371
+00:19:44.561 --> 00:19:46.925
+still get reimbursed at the same rates. We were getting it
+
+372
+00:19:46.925 --> 00:19:50.201
+last year, so there's been no change to that. Um, as far as
+
+373
+00:19:50.201 --> 00:19:54.141
+what the, uh, specific difference is in why that number has
+
+374
+00:19:54.141 --> 00:19:56.741
+gone down. I am not prepared to answer that tonight, but I
+
+375
+00:19:56.741 --> 00:19:59.054
+can certainly do some research and put a report together
+
+376
+00:19:59.055 --> 00:20:02.741
+for the board for a future. I'm assuming part of it is the
+
+377
+00:20:02.945 --> 00:20:07.001
+chef um position and all of the ovens that we just
+
+378
+00:20:07.001 --> 00:20:10.091
+purchased and installed at all the schools.
+
+379
+00:20:10.941 --> 00:20:13.843
+Again, I need to do some research but yeah, you're
+
+380
+00:20:13.843 --> 00:20:16.441
+absolutely right. We have we did install quite a bit of
+
+381
+00:20:16.441 --> 00:20:18.241
+Hardware. This summer. You saw a couple of those ovens in
+
+382
+00:20:18.281 --> 00:20:21.241
+the presentation. Um so let me do a little research and
+
+383
+00:20:21.241 --> 00:20:24.101
+identify what is contributing to that discrepancy between
+
+384
+00:20:24.101 --> 00:20:26.809
+those and if it's really a difference between food, or if
+
+385
+00:20:26.809 --> 00:20:30.181
+it's a difference between some of those other, um,
+
+386
+00:20:30.451 --> 00:20:34.071
+Capital cost they're about like 3 or 4 line items and the 1
+
+387
+00:20:34.071 --> 00:20:36.761
+that dropped precipitously was just the food.
+
+388
+00:20:36.761 --> 00:20:39.711
+So that's why I was curious. If we only had a 30 student
+
+389
+00:20:39.711 --> 00:20:42.298
+drop. If we were just receiving few fewer funds for some
+
+390
+00:20:42.299 --> 00:20:44.211
+reason, maybe there's just something that kicked in and it
+
+391
+00:20:44.211 --> 00:20:45.951
+just seemed like a large amount of money. I know, you're
+
+392
+00:20:45.951 --> 00:20:48.171
+very interested superintendent, Funk, and ensuring that we
+
+393
+00:20:48.171 --> 00:20:51.531
+actually provide, you know, appropriate amount of food for
+
+394
+00:20:51.531 --> 00:20:53.571
+students and that sort of thing. And it just caught me is
+
+395
+00:20:53.571 --> 00:20:55.851
+like it might actually crimp the ability for us to do that,
+
+396
+00:20:55.851 --> 00:20:57.831
+so I thought I'd bring it up. Thank you very much.
+
+397
+00:20:59.854 --> 00:21:01.664
+Trustee Speck.
+
+398
+00:21:01.664 --> 00:21:05.002
+Uh thank you for the presentation. Um, I have a couple
+
+399
+00:21:05.003 --> 00:21:08.222
+questions. Um first I appreciate I I tend to ask you
+
+400
+00:21:08.312 --> 00:21:12.335
+questions offline. Um every time you come up so I
+
+401
+00:21:12.335 --> 00:21:15.722
+appreciate you um answering those questions for me um um
+
+402
+00:21:15.722 --> 00:21:20.474
+via email. Um, so when we approved in June, obviously we
+
+403
+00:21:20.474 --> 00:21:24.574
+you know did not have enough money to cover our budget. And
+
+404
+00:21:24.574 --> 00:21:27.467
+so part of the budget, we approved in June had a 5.5
+
+405
+00:21:27.468 --> 00:21:31.814
+million cut, um, for next year school year and the
+
+406
+00:21:31.831 --> 00:21:35.103
+following year, um, as I look at these numbers, they're
+
+407
+00:21:35.434 --> 00:21:39.134
+fairly similar to what you expected in June. Um, when you
+
+408
+00:21:39.134 --> 00:21:43.754
+showed us the 3 year plan with that total of 11 million
+
+409
+00:21:43.772 --> 00:21:46.265
+dollars, that we would need to cut from the budget, we were
+
+410
+00:21:46.266 --> 00:21:49.394
+ending the third year at just under a million dollars. Um,
+
+411
+00:21:49.394 --> 00:21:54.062
+are we still roughly in that spot? Are we? Um, what I can
+
+412
+00:21:54.062 --> 00:21:57.134
+tell from this is we're improved slightly but not much um
+
+413
+00:21:57.134 --> 00:22:01.659
+to maybe like 2 million dollars versus slightly under 1, is
+
+414
+00:22:01.659 --> 00:22:02.084
+that
+
+415
+00:22:02.084 --> 00:22:06.234
+Accurate. Um as we come upon these big decisions, we're
+
+416
+00:22:06.234 --> 00:22:09.264
+going to have to make this year. Absolutely. So all else
+
+417
+00:22:09.264 --> 00:22:11.949
+equal if if all the other projections hold true for the
+
+418
+00:22:11.949 --> 00:22:14.004
+next 3 years that we talked about when we adopted the
+
+419
+00:22:14.004 --> 00:22:16.164
+budget or when you adopted the budget in June
+
+420
+00:22:16.164 --> 00:22:20.040
+Then yeah, the the short version is that we had about 920
+
+421
+00:22:20.040 --> 00:22:24.384
+thousand dollars. Um, Fallout at the at the UN audited
+
+422
+00:22:24.384 --> 00:22:26.544
+actuals in the unrestricted general fund.
+
+423
+00:22:26.544 --> 00:22:30.864
+So you can basically take that chart from that night.
+
+424
+00:22:30.864 --> 00:22:35.415
+And just add that 921000 to the bottom line number on all
+
+425
+00:22:35.416 --> 00:22:38.244
+of those. So yeah, I think it improves it to about 1.7 1.8
+
+426
+00:22:38.244 --> 00:22:42.396
+million in that uh third year out instead of the 800 plus
+
+427
+00:22:42.396 --> 00:22:45.072
+plus thousand that we had shown. Okay. So slight
+
+428
+00:22:45.072 --> 00:22:49.301
+Improvement but um, clearly not 11 million dollars. So,
+
+429
+00:22:49.301 --> 00:22:53.663
+unfortunately, um, barring some dramatic increase from the
+
+430
+00:22:54.364 --> 00:22:57.774
+years. We would still have to make some very serious Cuts
+
+431
+00:22:57.774 --> 00:23:02.874
+in order to have a balanced budget, inn 3, 3 years. Um,
+
+432
+00:23:03.154 --> 00:23:08.242
+Can you help me with, um, on the slide? I appreciate those
+
+433
+00:23:08.243 --> 00:23:10.904
+ending balances, and especially the rationale we never want
+
+434
+00:23:10.904 --> 00:23:14.774
+to just find that money sitting somewhere. Um, the fun, 35
+
+435
+00:23:14.774 --> 00:23:17.789
+County school facilities fund. Can you help me with what
+
+436
+00:23:17.789 --> 00:23:21.494
+that is? That is actually reimbursement from opsc that
+
+437
+00:23:21.494 --> 00:23:24.344
+we've not yet transferred into fund 211.
+
+438
+00:23:24.344 --> 00:23:27.369
+So those are actually dollars that we've gotten from the
+
+439
+00:23:27.369 --> 00:23:30.519
+state. I'm not sure frankly why it's titled County school
+
+440
+00:23:30.519 --> 00:23:34.104
+facilities fund but when the state reimburses us for
+
+441
+00:23:34.104 --> 00:23:37.789
+projects that we've done in the past those days, get
+
+442
+00:23:37.790 --> 00:23:41.244
+deposited first in the fund, 35, and then we come and ask
+
+443
+00:23:41.244 --> 00:23:43.944
+the board to let us move those into fund 211. And we just
+
+444
+00:23:43.944 --> 00:23:45.584
+haven't done that with them, okay? These but this is a
+
+445
+00:23:45.584 --> 00:23:46.134
+state usually, right?
+
+446
+00:23:46.134 --> 00:23:49.155
+Not counting money state money. Okay. So it's what we've
+
+447
+00:23:49.156 --> 00:23:51.736
+talked about in numerous times and it's it goes into our
+
+448
+00:23:51.736 --> 00:23:54.916
+building fund. Exactly? Okay, thank you. Um,
+
+449
+00:23:55.506 --> 00:23:59.806
+I know that you're just presenting on the UN audited.
+
+450
+00:23:59.806 --> 00:24:01.936
+Actuals, is there any other
+
+451
+00:24:01.956 --> 00:24:05.536
+News you've had from the state um that would help us get
+
+452
+00:24:05.536 --> 00:24:09.796
+excited about our next 2 years or are we still looking at
+
+453
+00:24:09.796 --> 00:24:14.536
+the same as what you had presented in June? I have no new
+
+454
+00:24:14.536 --> 00:24:16.996
+news to report on the state budget. There is been no
+
+455
+00:24:16.996 --> 00:24:19.936
+significant change in our projections or expectations about
+
+456
+00:24:19.936 --> 00:24:21.436
+what that looks like. Okay. I
+
+457
+00:24:21.436 --> 00:24:24.472
+Was your answer but I um felt the need to ask the question.
+
+458
+00:24:24.472 --> 00:24:26.026
+So thank you very much this 1.
+
+459
+00:24:26.496 --> 00:24:30.256
+Unfortunately, that was the same expression. He gave entire
+
+460
+00:24:30.256 --> 00:24:32.536
+cabinet uh last week.
+
+461
+00:24:35.536 --> 00:24:38.686
+All righty. Thank you. Um, I think we do, we need to vote
+
+462
+00:24:38.686 --> 00:24:42.938
+to accept these. Except this, I'll take a motion. I'll move
+
+463
+00:24:42.938 --> 00:24:47.575
+that. We accept the UN audited actuals, I'll second
+
+464
+00:24:47.876 --> 00:24:53.556
+All righty, trustee peswani. I everyone else I I I carries
+
+465
+00:24:53.556 --> 00:24:56.016
+unanimously. Thank you. All right thank you.
+
+466
+00:24:56.676 --> 00:25:01.328
+Next up is our open public? Comment period. Um if there's
+
+467
+00:25:01.328 --> 00:25:05.355
+anyone do we have any in-person? I don't see any
+
+468
+00:25:05.426 --> 00:25:09.126
+Paint papers. I don't see any person. If there is anyone
+
+469
+00:25:09.126 --> 00:25:11.536
+online who would like to make a public comment during the
+
+470
+00:25:11.536 --> 00:25:14.736
+open public comment. I'll give you about a minute or so.
+
+471
+00:25:14.736 --> 00:25:17.016
+To get logged on and raise your hand.
+
+472
+00:25:17.016 --> 00:25:21.456
+Um otherwise any any public comments would need to be on
+
+473
+00:25:21.456 --> 00:25:23.256
+the agenda is item.
+
+474
+00:25:23.256 --> 00:25:25.236
+During that that time.
+
+475
+00:25:25.586 --> 00:25:27.636
+so, just
+
+476
+00:25:28.966 --> 00:25:31.166
+Double-checking.
+
+477
+00:25:31.416 --> 00:25:33.436
+No 1. Okay.
+
+478
+00:25:33.706 --> 00:25:38.936
+Well, then we will move on to the first reading.
+
+479
+00:25:39.516 --> 00:25:41.236
+um,
+
+480
+00:25:41.236 --> 00:25:44.196
+of a board policy.
+
+481
+00:25:44.196 --> 00:25:45.526
+Dr. Campbell
+
+482
+00:25:46.746 --> 00:25:50.026
+thank you, president pelum superintendent. Funk Board of
+
+483
+00:25:50.026 --> 00:25:54.136
+Trustees and members of our community. Uh, Dave. While the
+
+484
+00:25:54.136 --> 00:25:57.874
+our CTO was here last couple of weeks and presenting to you
+
+485
+00:25:57.874 --> 00:26:02.086
+board policy on the AI and he is here before you with a
+
+486
+00:26:02.109 --> 00:26:05.805
+different board policy, but it fits within the same vein
+
+487
+00:26:05.866 --> 00:26:10.143
+and or theme in terms of Dublin, Unified School District
+
+488
+00:26:10.143 --> 00:26:13.826
+being on the front edge or the Leading Edge of um of
+
+489
+00:26:13.826 --> 00:26:17.659
+creating policy relating to this. You probably heard a lot
+
+490
+00:26:17.672 --> 00:26:20.761
+of news and Governor noem talking about cell phones in the
+
+491
+00:26:20.762 --> 00:26:25.230
+classroom. So I just wanted to recognize Dave, his team for
+
+492
+00:26:25.231 --> 00:26:29.626
+coming here to you for a first reading. And so Dave Waldy,
+
+493
+00:26:38.397 --> 00:26:42.112
+I still don't I still don't know how Hobbs has it this low?
+
+494
+00:26:42.112 --> 00:26:46.837
+Okay. Uh, good evening, uh president palum superintendent,
+
+495
+00:26:46.837 --> 00:26:50.437
+Funk Board of Trustees and executive cabinet. Uh, tonight I
+
+496
+00:26:50.437 --> 00:26:54.165
+bring to you the first reading of board policy and
+
+497
+00:26:54.166 --> 00:26:57.997
+administrative regulation 5131.8.
+
+498
+00:26:57.997 --> 00:27:01.117
+Entitled mobile communication devices.
+
+499
+00:27:01.117 --> 00:27:05.011
+Uh, just a little background for you in 2019, the state
+
+500
+00:27:05.012 --> 00:27:10.677
+legislature passed AB 272, Which authorized a change in Ed
+
+501
+00:27:10.677 --> 00:27:16.969
+code, uh, 48901.5 and 48901.7 which allowed school
+
+502
+00:27:16.970 --> 00:27:21.057
+districts to adopt and pass part, uh, policies regarding
+
+503
+00:27:21.057 --> 00:27:25.505
+the use of cell phones in, um, in classrooms and on school
+
+504
+00:27:25.506 --> 00:27:29.683
+sites. But it was optional. So, um, it wasn't a requirement
+
+505
+00:27:29.683 --> 00:27:34.016
+for, um, school boards to do this, but 2 weeks ago,
+
+506
+00:27:34.017 --> 00:27:40.157
+Uh, the state legislature passed AB 3216, which requires
+
+507
+00:27:40.157 --> 00:27:43.883
+governing boards to adopt a policy for the use of student
+
+508
+00:27:43.884 --> 00:27:48.977
+of cell phone use, um, by 2026 and update that policy,
+
+509
+00:27:48.977 --> 00:27:50.177
+every 5 years.
+
+510
+00:27:50.177 --> 00:27:55.617
+So, interesting enough. Um, starting last septembar, our
+
+511
+00:27:55.617 --> 00:27:58.737
+technology advisory committee smartphones subcommittee
+
+512
+00:27:58.737 --> 00:28:02.577
+began working. Uh looking at developing a resolution or
+
+513
+00:28:02.724 --> 00:28:09.117
+policy under the ABA 272 guidelines and with their work and
+
+514
+00:28:09.117 --> 00:28:12.657
+the assistance of superintendent Funk, and our, um, School
+
+515
+00:28:12.669 --> 00:28:15.604
+site principals. We have a board policy and administrative
+
+516
+00:28:15.605 --> 00:28:18.747
+regulation before you today, that is in line with the new,
+
+517
+00:28:18.747 --> 00:28:21.057
+uh, legislation that was passed 2 weeks ago.
+
+518
+00:28:21.057 --> 00:28:25.267
+uh, this policy before you outlined student use of
+
+519
+00:28:25.267 --> 00:28:30.161
+smartphones phones and other devices uh on school sites
+
+520
+00:28:30.162 --> 00:28:33.157
+like uh SmartWatches and um
+
+521
+00:28:33.157 --> 00:28:35.257
+Uh, like Bluetooth headphones.
+
+522
+00:28:35.257 --> 00:28:39.307
+For TK, through 8, students will not be able to use their
+
+523
+00:28:39.307 --> 00:28:42.847
+cell phones during the school day. Uh, those cell phones
+
+524
+00:28:42.847 --> 00:28:46.657
+and other devices must be put, uh, turned off and put away.
+
+525
+00:28:46.657 --> 00:28:50.334
+in the high school, students can use their, uh, phones
+
+526
+00:28:50.335 --> 00:28:54.457
+before school during lunch and after school, but they need
+
+527
+00:28:54.457 --> 00:28:58.577
+to be turned off during all other educational times.
+
+528
+00:28:58.577 --> 00:29:01.047
+students with medical conditions that require the use of a
+
+529
+00:29:01.047 --> 00:29:05.047
+phone such as a diabetic Monitor, and or have a
+
+530
+00:29:05.047 --> 00:29:09.777
+individualized education plan or 504 that involves the use
+
+531
+00:29:09.777 --> 00:29:13.582
+of a device will be able to use their devices uh, in the
+
+532
+00:29:13.583 --> 00:29:16.287
+classroom and during instructional time.
+
+533
+00:29:16.287 --> 00:29:20.336
+And I just wanted to note that, uh, all students can still
+
+534
+00:29:20.337 --> 00:29:24.357
+use their phones and cases of emergency and, uh, or and or
+
+535
+00:29:24.357 --> 00:29:25.617
+perceive threat.
+
+536
+00:29:25.617 --> 00:29:30.287
+Uh students are still um not allowed to use their phones in
+
+537
+00:29:30.287 --> 00:29:33.362
+bathrooms uh locker rooms or in areas of perceived privacy
+
+538
+00:29:33.362 --> 00:29:37.337
+and students. Still must comply with the acceptable use
+
+539
+00:29:37.337 --> 00:29:42.977
+policy, um, while on School site. So that includes. Um,
+
+540
+00:29:43.217 --> 00:29:47.837
+also includes like after after uh, after school like
+
+541
+00:29:47.837 --> 00:29:49.997
+sporting events and things like that. So just because the
+
+542
+00:29:49.997 --> 00:29:51.947
+Bell Rings doesn't mean this policy stops.
+
+543
+00:29:51.947 --> 00:29:54.577
+And I welcome any of your questions today.
+
+544
+00:29:55.887 --> 00:29:57.757
+Trustee spec.
+
+545
+00:29:57.757 --> 00:30:02.797
+Um, I have a question on SmartWatches um, specifically for
+
+546
+00:30:02.797 --> 00:30:03.697
+K8
+
+547
+00:30:03.697 --> 00:30:07.097
+Although, I guess for all of them to some degree. But, um,
+
+548
+00:30:07.097 --> 00:30:12.571
+How, you know a phone you can. Um put up front. Like how do
+
+549
+00:30:12.571 --> 00:30:14.887
+we know they're off? Um,
+
+550
+00:30:14.887 --> 00:30:18.807
+And are you expecting with this that they aren't allowed to
+
+551
+00:30:18.807 --> 00:30:24.127
+wear them? Like, what is off for a smartwatch? You can turn
+
+552
+00:30:24.127 --> 00:30:27.727
+us. Like, I have a smart 1. Sure, it's on my desk. Mine's
+
+553
+00:30:27.727 --> 00:30:29.707
+on. Do not disturb because it's a board meeting and I'm not
+
+554
+00:30:29.707 --> 00:30:31.207
+supposed to have texts. Yeah. But like is that
+
+555
+00:30:31.207 --> 00:30:34.582
+That. Is that, okay, that they have, no, it should be
+
+556
+00:30:34.582 --> 00:30:37.427
+turned off. And the reason for that is, we do have students
+
+557
+00:30:37.427 --> 00:30:38.107
+that
+
+558
+00:30:38.107 --> 00:30:42.057
+they will set their phone like away in their backpack or
+
+559
+00:30:42.057 --> 00:30:44.577
+set their phone, in 1 of the sleeves, that's provided and
+
+560
+00:30:44.577 --> 00:30:47.697
+that they will use their phone. In order to, they will use
+
+561
+00:30:47.697 --> 00:30:50.307
+their smartwatch to control their phone to make phone calls
+
+562
+00:30:50.307 --> 00:30:55.593
+to, to the playlists on their headphones. So, um, we are
+
+563
+00:30:55.593 --> 00:30:57.417
+requiring them to be turned off.
+
+564
+00:30:57.477 --> 00:31:00.817
+How that's going to happen, would be in working with the
+
+565
+00:31:00.817 --> 00:31:04.657
+principals and also working with the teacher uh, the DTA to
+
+566
+00:31:04.657 --> 00:31:07.501
+to how we are going to implement that part. But I it's
+
+567
+00:31:07.501 --> 00:31:10.097
+important that those are turned off because we know that
+
+568
+00:31:10.097 --> 00:31:14.947
+students can kind of lean over and and, and, and still play
+
+569
+00:31:14.947 --> 00:31:17.617
+their music and be distracted. Still take phone calls,
+
+570
+00:31:17.617 --> 00:31:20.257
+still take texts on their texts on their phone. Depending
+
+571
+00:31:20.257 --> 00:31:22.987
+on what kind of phone, uh, smart. I'm sorry.
+
+572
+00:31:22.987 --> 00:31:25.787
+From their phone on their Smartwatch, depending on what the
+
+573
+00:31:25.787 --> 00:31:26.897
+Smartwatch they have.
+
+574
+00:31:26.897 --> 00:31:29.847
+So it is it is still important that they can definitely
+
+575
+00:31:29.848 --> 00:31:32.717
+text while on a smartwatch.
+
+576
+00:31:32.717 --> 00:31:36.007
+I have received texts from a student on their Smartwatch,
+
+577
+00:31:36.007 --> 00:31:37.567
+so, um,
+
+578
+00:31:37.567 --> 00:31:43.211
+So, physically off, I I I think I'm not really sure exactly
+
+579
+00:31:43.211 --> 00:31:45.627
+how I feel about it but I I know a lot of parents are
+
+580
+00:31:45.727 --> 00:31:47.435
+putting these on their kids especially younger for
+
+581
+00:31:47.435 --> 00:31:50.207
+elementary to track their kids and so when it's off, they
+
+582
+00:31:50.207 --> 00:31:54.011
+cannot track their child. So I do think we're going to have
+
+583
+00:31:54.011 --> 00:31:57.077
+some push back on that. Um
+
+584
+00:31:57.465 --> 00:32:03.865
+Uh, in do not disturb, they cannot receive a text but um,
+
+585
+00:32:03.910 --> 00:32:07.352
+they can send a text and, um, but they can still be
+
+586
+00:32:07.353 --> 00:32:11.605
+tracked, correct. Um, but they could definitely like I
+
+587
+00:32:11.605 --> 00:32:13.665
+could right now, send a text, but they aren't coming in
+
+588
+00:32:13.665 --> 00:32:17.785
+because it's in do not disturb. So we would allow it to
+
+589
+00:32:17.785 --> 00:32:19.765
+still be on the wrist, but we would expect it to be fully
+
+590
+00:32:19.765 --> 00:32:23.315
+powered off. Yes, if it's on the wrist. Yeah, for for right
+
+591
+00:32:23.316 --> 00:32:28.530
+now, but also all smart watch manufacturers, make different
+
+592
+00:32:28.531 --> 00:32:33.085
+kinds of functions and features and so we could possibly
+
+593
+00:32:33.085 --> 00:32:35.695
+also investigate that as well. But like I said it's it's
+
+594
+00:32:35.695 --> 00:32:38.329
+going to be I think the 3 groups getting together how that
+
+595
+00:32:38.329 --> 00:32:41.095
+particular 1 because that is very specific. Yeah.
+
+596
+00:32:41.095 --> 00:32:43.155
+I just know there's more and more.
+
+597
+00:32:43.155 --> 00:32:47.165
+Kids at the elementary school, having them on. Um,
+
+598
+00:32:47.165 --> 00:32:49.415
+Necessarily to a positive. I mean, I've heard stories of
+
+599
+00:32:49.415 --> 00:32:50.705
+parents showing up.
+
+600
+00:32:50.705 --> 00:32:54.755
+Um, and you know, the kid didn't actually go to the office
+
+601
+00:32:54.755 --> 00:32:57.755
+and say I feel bad. They just told Mom and Dad on the watch
+
+602
+00:32:57.755 --> 00:32:59.880
+and the mom and dad came to the office and said I'm ready
+
+603
+00:32:59.881 --> 00:33:02.555
+to pick the kid up and kids still in the classroom. So I
+
+604
+00:33:02.555 --> 00:33:04.595
+mean I know that there's some definitely some negatives
+
+605
+00:33:04.595 --> 00:33:07.055
+happening because the kids have them on. But um, you know
+
+606
+00:33:07.055 --> 00:33:09.395
+for the most part parents are tracking their kid and that's
+
+607
+00:33:09.395 --> 00:33:11.765
+why they have it on. So um
+
+608
+00:33:11.965 --> 00:33:18.569
+Okay um from a phone standpoint uh is the expectation. It's
+
+609
+00:33:18.581 --> 00:33:20.538
+off as well, it's not just do not disturb, it's like
+
+610
+00:33:20.539 --> 00:33:24.605
+completely powered off, correct? Um for the K8, uh, 4K 8
+
+611
+00:33:24.605 --> 00:33:28.187
+and 4 high school and during instructional times, not
+
+612
+00:33:28.188 --> 00:33:30.613
+during lunch before, and after school. But during
+
+613
+00:33:30.614 --> 00:33:32.585
+instructional times for the high school, that it is powered
+
+614
+00:33:32.585 --> 00:33:35.199
+off, okay? And that's pretty much the expectation. Right
+
+615
+00:33:35.199 --> 00:33:38.134
+now, particularly with many teachers, as they go like,
+
+616
+00:33:38.135 --> 00:33:40.179
+sometimes they put them in sleeves and things, things like
+
+617
+00:33:40.179 --> 00:33:43.444
+that in the where they, they should be powered down because
+
+618
+00:33:43.445 --> 00:33:45.869
+obviously texts come through all these things. They can
+
+619
+00:33:45.869 --> 00:33:47.795
+disrupt the classroom. Sure. Yeah.
+
+620
+00:33:48.245 --> 00:33:52.965
+But they can use them during emergency purposes, so they
+
+621
+00:33:52.965 --> 00:33:56.025
+can turn on their phones. If there is a a threat to the
+
+622
+00:33:56.025 --> 00:33:58.695
+school or they perceive a threat to themselves.
+
+623
+00:34:02.155 --> 00:34:03.755
+Trustee Blackman.
+
+624
+00:34:05.205 --> 00:34:09.445
+Thank you for the presentation. Um, I have a couple
+
+625
+00:34:09.445 --> 00:34:10.885
+comments and questions, um,
+
+626
+00:34:11.925 --> 00:34:16.717
+so um, I guess 1 of the things that I wanted to ask about
+
+627
+00:34:16.717 --> 00:34:19.285
+is under the board policy. For example, there is a
+
+628
+00:34:19.285 --> 00:34:21.385
+statement in there and this is why I want to clarify
+
+629
+00:34:21.385 --> 00:34:24.160
+because obviously something changed last 2 weeks. When we
+
+630
+00:34:24.160 --> 00:34:26.965
+talk about confiscating, a device from a student.
+
+631
+00:34:26.965 --> 00:34:32.355
+um, I understand why but are we actually
+
+632
+00:34:32.477 --> 00:34:35.817
+When it's out of their control, this is not like a book.
+
+633
+00:34:35.817 --> 00:34:38.767
+Or a bag. This is an electronic device that needs to be
+
+634
+00:34:38.767 --> 00:34:42.257
+powered up. So are we confiscating it and placing it in
+
+635
+00:34:42.257 --> 00:34:44.814
+place, where it can remain charged so that the student
+
+636
+00:34:44.814 --> 00:34:46.936
+doesn't lose all. I'm not saying we're going to hold it all
+
+637
+00:34:46.937 --> 00:34:49.712
+day but who knows? Would we actually retain it in a matter
+
+638
+00:34:49.719 --> 00:34:52.416
+that would be able to still hold its charge so they don't
+
+639
+00:34:52.417 --> 00:34:55.457
+lose content and information on it because we just left it
+
+640
+00:34:55.457 --> 00:34:57.977
+unplugged somewhere in a cabinet until the parents show up.
+
+641
+00:34:57.987 --> 00:35:02.722
+Uh, I would believe the expectation is that. Um, the phone
+
+642
+00:35:02.722 --> 00:35:05.617
+is powered down when it is given to the teacher.
+
+643
+00:35:05.617 --> 00:35:08.317
+And then the teacher has the ability to take it to the
+
+644
+00:35:08.317 --> 00:35:10.684
+office or call a campus. Supervisor to bring it to the
+
+645
+00:35:10.684 --> 00:35:12.596
+office for it to be safely secured.
+
+646
+00:35:12.597 --> 00:35:15.267
+Okay, so you would say that somewhere in the document that
+
+647
+00:35:15.267 --> 00:35:17.147
+when it's handed over, it's going to be powered down. Yeah,
+
+648
+00:35:17.147 --> 00:35:20.127
+we could add that. Okay. Um, the next question I had was
+
+649
+00:35:20.127 --> 00:35:24.447
+about, um, when the search and seizure piece. Um, I
+
+650
+00:35:24.447 --> 00:35:27.987
+understand that there is this notion that when there is
+
+651
+00:35:27.987 --> 00:35:29.247
+perhaps,
+
+652
+00:35:29.247 --> 00:35:33.837
+um, some reason on the part of staff to believe that they
+
+653
+00:35:33.837 --> 00:35:38.937
+need to see and view what's on the cell phone or maybe it's
+
+654
+00:35:38.937 --> 00:35:42.687
+the watch. Um, I want to ask about
+
+655
+00:35:42.687 --> 00:35:46.439
+FCC rules and regulations around that. I know then some
+
+656
+00:35:46.440 --> 00:35:49.532
+instances like law enforcement is not allowed to ask you
+
+657
+00:35:49.532 --> 00:35:52.537
+for your phone and to have access to it unless they have a
+
+658
+00:35:52.537 --> 00:35:53.237
+warrant.
+
+659
+00:35:53.237 --> 00:35:56.767
+So I want to understand when students are handing over
+
+660
+00:35:56.767 --> 00:35:57.817
+their phone,
+
+661
+00:35:57.817 --> 00:36:00.829
+Granted many of them are minors. They wouldn't know what
+
+662
+00:36:00.829 --> 00:36:04.417
+the law provides and doesn't provide. Do we know for
+
+663
+00:36:04.417 --> 00:36:07.317
+certain that we are lawfully allowed to ask them to hand
+
+664
+00:36:07.317 --> 00:36:10.857
+over full access to their phone, or do we, in fact have to
+
+665
+00:36:10.857 --> 00:36:12.877
+have a warrant to ask for that.
+
+666
+00:36:12.877 --> 00:36:16.947
+My understanding and and um, superintendent Punk might be
+
+667
+00:36:16.947 --> 00:36:20.367
+able to clarify more that they do have to have a a warrant
+
+668
+00:36:20.787 --> 00:36:22.627
+or they have to have the they're underage of parents
+
+669
+00:36:22.627 --> 00:36:25.149
+permission in order to be the phone. We could ask for
+
+670
+00:36:25.149 --> 00:36:28.926
+permission. Yeah, yeah. There there's nothing that's
+
+671
+00:36:28.927 --> 00:36:31.955
+prevents us from asking the student. May we assess your
+
+672
+00:36:31.956 --> 00:36:35.067
+phone. You don't need a warrant for that. The police do,
+
+673
+00:36:35.067 --> 00:36:39.237
+right? But the School site does not so but if a student
+
+674
+00:36:39.237 --> 00:36:41.847
+refuses, they don't give you permission, then you don't
+
+675
+00:36:41.847 --> 00:36:44.037
+have the right to access the phone, unless you have a
+
+676
+00:36:44.037 --> 00:36:45.307
+warrant because I understand what the police that's
+
+677
+00:36:45.307 --> 00:36:47.343
+correct. They have they have to ask and you have to give
+
+678
+00:36:47.343 --> 00:36:49.407
+permission but you can say no. And the only way they get to
+
+679
+00:36:49.407 --> 00:36:52.107
+it is with a warrant so this would be the same. So would we
+
+680
+00:36:52.107 --> 00:36:54.807
+clarify that in the policy then so that when we talk about
+
+681
+00:36:54.807 --> 00:36:57.467
+educating students about their rights that that's in this
+
+682
+00:36:57.467 --> 00:36:59.511
+piece that they understand what their rights are with
+
+683
+00:36:59.511 --> 00:37:00.687
+regard to privacy,
+
+684
+00:37:02.047 --> 00:37:06.107
+um, on the are, um,
+
+685
+00:37:06.107 --> 00:37:09.029
+I know the are isn't really anything the board reviews but I
+
+686
+00:37:09.030 --> 00:37:12.120
+just want to ask a couple things about um,
+
+687
+00:37:12.640 --> 00:37:15.440
+Know, when students are in PE.
+
+688
+00:37:15.440 --> 00:37:18.226
+The PE teacher especially when they're running laps, ask
+
+689
+00:37:18.226 --> 00:37:21.043
+them to time. Their laps, most of the students do that by
+
+690
+00:37:21.043 --> 00:37:24.099
+actually using their watch, or their cell phone. So if
+
+691
+00:37:24.100 --> 00:37:26.650
+we're asking students, not that they're supposed to do
+
+692
+00:37:26.650 --> 00:37:27.960
+this, they just do it. Have default, because they don't
+
+693
+00:37:27.960 --> 00:37:30.909
+have enough, stop watches for all the kids. Are we going to
+
+694
+00:37:30.910 --> 00:37:34.210
+be providing stopwatches for all of that? Now that students
+
+695
+00:37:34.210 --> 00:37:36.814
+are going to have to place their phones? I don't know where
+
+696
+00:37:36.814 --> 00:37:39.130
+on the field, that's another question where they're
+
+697
+00:37:39.130 --> 00:37:41.410
+supposed to place their phones because they always are told
+
+698
+00:37:41.410 --> 00:37:42.880
+not to put in their locker.
+
+699
+00:37:42.880 --> 00:37:46.105
+But are we going to make some accommodation for how PE is
+
+700
+00:37:46.105 --> 00:37:49.430
+sort of reliant on students using phones to track timing of
+
+701
+00:37:49.430 --> 00:37:50.110
+laps?
+
+702
+00:37:50.110 --> 00:37:52.450
+Well, I guess the question is where are they storing them?
+
+703
+00:37:52.450 --> 00:37:55.546
+Now, if they're if they're doing PE and they're risking the
+
+704
+00:37:55.546 --> 00:37:59.658
+danger of them being broken or cracked or anything to that
+
+705
+00:37:59.658 --> 00:38:04.749
+effect, um, we do put in into the are that the teachers
+
+706
+00:38:04.750 --> 00:38:10.135
+cannot require, um, uh, activity that. So, you know, solely
+
+707
+00:38:10.135 --> 00:38:13.390
+requires a cell phone to be done that. We cannot require,
+
+708
+00:38:13.390 --> 00:38:16.250
+um, or we cannot provide additional, right? So, this is
+
+709
+00:38:16.250 --> 00:38:20.620
+what you're asking about. The, the, the stopwatch, um,
+
+710
+00:38:20.620 --> 00:38:25.150
+But we do have the ability in um, number 2 where a teacher
+
+711
+00:38:25.150 --> 00:38:27.970
+or administrator can grant the ability.
+
+712
+00:38:27.970 --> 00:38:30.760
+For a student to use it. So that might be a case where that
+
+713
+00:38:30.760 --> 00:38:34.420
+would be, but then they'd have to be turned off afterwards.
+
+714
+00:38:34.420 --> 00:38:37.900
+Okay, so to follow up with that, a couple things have been
+
+715
+00:38:37.900 --> 00:38:40.920
+conveyed to me is that, uh, yearbook, for example is a
+
+716
+00:38:40.920 --> 00:38:42.820
+course, which requires the students to be able to go
+
+717
+00:38:42.820 --> 00:38:45.570
+through the school and photograph other students. So I know
+
+718
+00:38:45.570 --> 00:38:47.620
+we're saying we're supposed to turn off our phones and
+
+719
+00:38:47.620 --> 00:38:49.504
+they're not supposed to be using them. But these students
+
+720
+00:38:49.504 --> 00:38:52.060
+in particular have been staying that they have issues right
+
+721
+00:38:52.060 --> 00:38:56.200
+now because either if 1 if they don't have a camera or a
+
+722
+00:38:56.200 --> 00:38:58.630
+phone to take photographs that's 1 issue but if they do
+
+723
+00:38:58.630 --> 00:39:01.740
+this policy would prevent them from actually doing what
+
+724
+00:39:01.740 --> 00:39:04.540
+they're supposed to be doing as part of their classwork.
+
+725
+00:39:04.540 --> 00:39:07.744
+So are we going to do something as a workaround? Do they
+
+726
+00:39:07.744 --> 00:39:09.580
+wear a patch that says like yearbooks. We know if they have
+
+727
+00:39:09.580 --> 00:39:13.060
+their camera on that that's okay. Is there something that
+
+728
+00:39:13.060 --> 00:39:16.540
+would have to be disclosed? Why they're using their phone?
+
+729
+00:39:16.540 --> 00:39:18.400
+Or are we just going to say blanket? No phone. And we're
+
+730
+00:39:18.400 --> 00:39:20.620
+going to provide them all with school cameras to use.
+
+731
+00:39:23.560 --> 00:39:28.820
+So the policy is clear that a teacher can allow the
+
+732
+00:39:28.820 --> 00:39:32.900
+students to use the phone. Uh, you just can't require it
+
+733
+00:39:32.900 --> 00:39:35.756
+for a student that does not have a phone without providing
+
+734
+00:39:35.828 --> 00:39:41.274
+an alternative, uh, device. And so, if they don't have
+
+735
+00:39:41.274 --> 00:39:44.719
+photo cameras for your book, and the teacher says, you can
+
+736
+00:39:44.719 --> 00:39:49.592
+use your uh, cell phone to take those pictures. Then
+
+737
+00:39:49.592 --> 00:39:50.570
+ideally that teacher is going to
+
+738
+00:39:50.570 --> 00:39:55.073
+Give a pass so that the student, uh, anyone on campus that
+
+739
+00:39:55.073 --> 00:39:57.490
+stops them will know. They're part of the yearbook group.
+
+740
+00:39:57.490 --> 00:39:59.932
+You don't need to put that in the policy. That's an
+
+741
+00:39:59.933 --> 00:40:02.888
+individual, uh, teacher that would have to work that out.
+
+742
+00:40:02.888 --> 00:40:04.753
+That's great. I'm glad you're explaining that because I
+
+743
+00:40:04.753 --> 00:40:07.133
+wasn't certain how staff on site would identify the
+
+744
+00:40:07.133 --> 00:40:09.526
+students with yearbook taking photographs and they would be
+
+745
+00:40:09.527 --> 00:40:11.213
+stopped all the time so if there's something there, that's
+
+746
+00:40:11.213 --> 00:40:14.873
+great. Um, thank you. Um, the last question I want to ask
+
+747
+00:40:14.953 --> 00:40:18.653
+about something the law of our high school students use and
+
+748
+00:40:18.653 --> 00:40:22.433
+it has mostly due because when our School DHS was very
+
+749
+00:40:22.433 --> 00:40:26.165
+impacted by the population of our students and during any
+
+750
+00:40:26.165 --> 00:40:29.041
+class time, there would be a lot of students handing in
+
+751
+00:40:29.042 --> 00:40:31.223
+homework handing in projects
+
+752
+00:40:31.223 --> 00:40:33.903
+That would allow times. Get lost because there's just a
+
+753
+00:40:33.903 --> 00:40:36.903
+pile where it all gets stacked up as you leave the door. A
+
+754
+00:40:36.903 --> 00:40:39.123
+lot of students were notified by teachers over many years.
+
+755
+00:40:39.123 --> 00:40:42.273
+That their work was lost not handed in and they'd be docked
+
+756
+00:40:42.273 --> 00:40:45.893
+for it. Students became when the Advent of the cell phone
+
+757
+00:40:45.893 --> 00:40:49.023
+came about students began to photograph their work being
+
+758
+00:40:49.023 --> 00:40:52.467
+handed in. So they actually had a record and therefore if
+
+759
+00:40:52.467 --> 00:40:54.783
+ever it was lost, they had something to come back to
+
+760
+00:40:54.783 --> 00:40:56.673
+teachers show. In fact it had been handed in it.
+
+761
+00:40:56.673 --> 00:40:59.428
+So if we're not doing that, are we going to provide some
+
+762
+00:40:59.428 --> 00:41:02.363
+other means to validate when work gets handed in than, in
+
+763
+00:41:02.363 --> 00:41:05.117
+fact, it is actually handed in because this happens every
+
+764
+00:41:05.118 --> 00:41:08.473
+year, it's almost every student and at least 1 or more of
+
+765
+00:41:08.623 --> 00:41:11.923
+their classes. And given our grading policy, I don't want
+
+766
+00:41:11.923 --> 00:41:14.323
+to see students affected by the fact that we shouldn't be
+
+767
+00:41:14.323 --> 00:41:16.273
+doing paper handins. But we do
+
+768
+00:41:16.273 --> 00:41:19.023
+So, if there's some way that we can augment that to
+
+769
+00:41:19.023 --> 00:41:20.943
+guarantee that students still have the ability to show that
+
+770
+00:41:20.943 --> 00:41:23.503
+they've documented that their work was handed in. I don't
+
+771
+00:41:23.503 --> 00:41:25.823
+know how I'm leaving a map to you but that's some of these
+
+772
+00:41:25.843 --> 00:41:28.183
+students have come to rely on because they have no other
+
+773
+00:41:28.183 --> 00:41:30.680
+way to justify a piece of work went in. If they don't
+
+774
+00:41:30.681 --> 00:41:33.583
+actually have a copy of that work being handed in, so,
+
+775
+00:41:33.583 --> 00:41:36.743
+That's my only other comment to the are. Thank you.
+
+776
+00:41:38.113 --> 00:41:39.953
+Joseph Sewanee
+
+777
+00:41:40.533 --> 00:41:44.368
+I have a couple comments regarding it being necessary for
+
+778
+00:41:44.368 --> 00:41:47.713
+the students to have their smartphones powered off. So I
+
+779
+00:41:47.713 --> 00:41:50.653
+understand that um, when we're talking about smart watches,
+
+780
+00:41:50.653 --> 00:41:54.253
+how like if the smartphone is just left on or on do not
+
+781
+00:41:54.253 --> 00:41:57.133
+disturb how they can easily like connect to the cell phone,
+
+782
+00:41:57.133 --> 00:42:00.433
+and still do the same things. But I know majority of
+
+783
+00:42:00.433 --> 00:42:02.893
+students, from what I've seen, don't actually own smart
+
+784
+00:42:02.893 --> 00:42:05.645
+watches. I know the younger groups especially in elementary
+
+785
+00:42:05.645 --> 00:42:08.182
+elementary school or trustees spec said, uh, for tracking
+
+786
+00:42:08.182 --> 00:42:10.973
+their parents, let them wear these but in middle school and
+
+787
+00:42:10.973 --> 00:42:13.813
+and high school, I think less students were smart watches,
+
+788
+00:42:13.933 --> 00:42:17.923
+they mainly just have a cell phone. And my concern about
+
+789
+00:42:17.923 --> 00:42:20.653
+about this is, as you said, phones are, of course,
+
+790
+00:42:20.683 --> 00:42:23.728
+permitted in an emergency, but if their phone is powered
+
+791
+00:42:23.728 --> 00:42:27.713
+off, and the emergency is like extremely urgent turning on
+
+792
+00:42:27.713 --> 00:42:31.093
+a lot of these phones and getting them connected to, um,
+
+793
+00:42:31.093 --> 00:42:33.844
+like just service or anything takes a takes a good amount
+
+794
+00:42:33.845 --> 00:42:36.865
+of time and it really depends on the phone and I've just
+
+795
+00:42:36.865 --> 00:42:40.213
+noticed this. And with that, my question comes like, why is
+
+796
+00:42:40.213 --> 00:42:40.933
+it necessary?
+
+797
+00:42:40.933 --> 00:42:44.045
+Carry that phones. Have to be powered off and can't be kept
+
+798
+00:42:44.046 --> 00:42:45.618
+on. Do not disturb.
+
+799
+00:42:45.668 --> 00:42:50.208
+Um, more to the you talking about phones, not smart watches
+
+800
+00:42:50.208 --> 00:42:53.562
+right now, sorry? Yeah. Smart phones. Okay. So when we talk
+
+801
+00:42:53.563 --> 00:42:55.848
+about smartphones 1 of the reasons they should be powered
+
+802
+00:42:55.848 --> 00:43:01.408
+off is 1, is that students will? Like I said before they
+
+803
+00:43:01.408 --> 00:43:04.836
+will put their head, their, their wireless headphones on
+
+804
+00:43:04.836 --> 00:43:09.408
+set a playlist said anything. Um, and B and sit there and
+
+805
+00:43:09.438 --> 00:43:12.888
+listen and not being engaged uh in the in the classroom
+
+806
+00:43:12.888 --> 00:43:16.608
+instruction. The second is um,
+
+807
+00:43:16.668 --> 00:43:21.508
+we would be taking time out of the classroom for each,
+
+808
+00:43:21.508 --> 00:43:24.928
+teach for a teacher, to make sure that every single
+
+809
+00:43:24.928 --> 00:43:29.058
+Students cell phone is put on, Do Not Disturb and that is
+
+810
+00:43:29.058 --> 00:43:31.698
+taking away from instructional time within the classroom.
+
+811
+00:43:31.698 --> 00:43:35.082
+So that would be a good at least 5 minutes. Considering if
+
+812
+00:43:35.082 --> 00:43:39.198
+you have a class of 36, um, a 5 minutes for the teacher to
+
+813
+00:43:39.198 --> 00:43:41.778
+go and verify that if we have them off, then we know that
+
+814
+00:43:41.778 --> 00:43:46.386
+they're not. Um, then they're not going to be ringing or uh
+
+815
+00:43:46.386 --> 00:43:49.488
+uh, or you know, you hear text. You know, all those kinds
+
+816
+00:43:49.488 --> 00:43:53.448
+of things going on while. Um, school is instructional time.
+
+817
+00:43:54.218 --> 00:43:58.798
+And, um, if will the teacher like confirm, if the phones are
+
+818
+00:43:58.798 --> 00:44:02.160
+powered off, or will there be no confirmation for that, if
+
+819
+00:44:02.161 --> 00:44:06.678
+that's, um, 1, if the hopefully that the student can show
+
+820
+00:44:06.678 --> 00:44:10.158
+the teacher, there's all they have to do is show it up and
+
+821
+00:44:10.158 --> 00:44:13.698
+and um, there's a couple other ways, the other ideas to
+
+822
+00:44:13.698 --> 00:44:16.500
+have it packed away. You know, if it's off during the
+
+823
+00:44:16.501 --> 00:44:20.988
+school day, we want to create a environment and a
+
+824
+00:44:21.000 --> 00:44:24.620
+You know, um, how to say it, I want to say a process or
+
+825
+00:44:24.621 --> 00:44:27.193
+anything, that's students know that these need to be put
+
+826
+00:44:27.194 --> 00:44:30.273
+away and they they shouldn't be out, uh, during
+
+827
+00:44:30.299 --> 00:44:32.387
+instructional time. So, let me clarify, I think what I
+
+828
+00:44:32.388 --> 00:44:36.948
+heard you say, uh, the expectation is that teachers, every
+
+829
+00:44:36.948 --> 00:44:40.088
+period are not checking cell phones, and that students are
+
+830
+00:44:40.088 --> 00:44:44.352
+not walking in showing their phone is off. If a student,
+
+831
+00:44:44.352 --> 00:44:47.808
+has their phone out and the teacher sees that and the
+
+832
+00:44:47.808 --> 00:44:51.798
+teacher asks to see that phone, if it's not powered off,
+
+833
+00:44:51.798 --> 00:44:54.888
+then that's going to be a violation, right? If it's off,
+
+834
+00:44:54.888 --> 00:44:57.456
+they're going to tell them. Just put put the phone back,
+
+835
+00:44:57.456 --> 00:44:58.128
+but
+
+836
+00:44:58.128 --> 00:45:01.668
+I'm not, we're not going to be the police on this and I'm
+
+837
+00:45:01.668 --> 00:45:04.938
+not support. The governor has never been a teacher, he has
+
+838
+00:45:04.938 --> 00:45:08.118
+no idea what it's like to be in the classroom and I'm not
+
+839
+00:45:08.118 --> 00:45:12.368
+going to require our teachers to be the police mob on cell
+
+840
+00:45:12.368 --> 00:45:15.168
+phones, if a student violates the policy,
+
+841
+00:45:15.168 --> 00:45:18.468
+Then we expect them to hand the phone over and be respectful
+
+842
+00:45:18.468 --> 00:45:21.764
+for it. They'll get it back at the end of the day. Um, but
+
+843
+00:45:21.764 --> 00:45:23.948
+I'm, we're not going to get into this checking every single
+
+844
+00:45:23.948 --> 00:45:27.128
+phone. Every single period, I mean that's just not doable.
+
+845
+00:45:28.208 --> 00:45:29.928
+Trustee spec.
+
+846
+00:45:29.928 --> 00:45:33.008
+Can I ask you some more questions trustee Sewanee since
+
+847
+00:45:33.008 --> 00:45:36.808
+you're living it? Um I I know like as a parent um at back
+
+848
+00:45:36.848 --> 00:45:38.780
+to school night, I heard way more about cell phones than
+
+849
+00:45:38.781 --> 00:45:41.523
+I've ever heard um, in a positive way like they would show
+
+850
+00:45:41.628 --> 00:45:44.142
+me this block at the front and this is where they're, you
+
+851
+00:45:44.142 --> 00:45:47.328
+know, I'm putting their phone's, um, both at the middle
+
+852
+00:45:47.338 --> 00:45:49.668
+school and high school level, I heard much more about it.
+
+853
+00:45:49.668 --> 00:45:52.488
+Um, so I assume you have experienced that as a student. Um,
+
+854
+00:45:52.488 --> 00:45:55.248
+have you been given Direction on, when you put your phone
+
+855
+00:45:55.248 --> 00:45:58.608
+up there, do they want it powered off? Do they want it on?
+
+856
+00:45:58.608 --> 00:46:01.428
+Do not disturb. Is there any sort of standard? I'm just
+
+857
+00:46:01.428 --> 00:46:04.848
+curious your experiences. So of course we are required to
+
+858
+00:46:04.848 --> 00:46:08.798
+put our phones up there, but most teachers say, just keep
+
+859
+00:46:08.798 --> 00:46:11.958
+it on silent as long as it's silent. There will be no issue
+
+860
+00:46:12.000 --> 00:46:15.768
+because I mean, actually, there's no different different
+
+861
+00:46:15.768 --> 00:46:18.288
+between there's no difference between having a powered off
+
+862
+00:46:18.288 --> 00:46:20.328
+and on silent from like the teacher's perspective because
+
+863
+00:46:20.328 --> 00:46:22.308
+all that the teachers aim for is that there's no like
+
+864
+00:46:22.308 --> 00:46:24.888
+ringing or buzzing going on. And yeah, that's just their
+
+865
+00:46:24.888 --> 00:46:27.678
+main like idea when telling us to put our phones away.
+
+866
+00:46:27.678 --> 00:46:31.768
+Okay, I would say and I don't think it really, I guess it
+
+867
+00:46:31.768 --> 00:46:34.498
+does say, turned off in here. I'd rather leave this to
+
+868
+00:46:34.498 --> 00:46:38.368
+teacher, um, preference, frankly. Um, I like, the the
+
+869
+00:46:38.368 --> 00:46:40.734
+blocks that they have at the front, it gets it away.
+
+870
+00:46:40.735 --> 00:46:42.319
+Although some are using, hey, you're putting them right
+
+871
+00:46:42.320 --> 00:46:44.668
+there on your desk because we might have a need for it, but
+
+872
+00:46:44.668 --> 00:46:47.488
+I can see the 5 out and there's a group of 5. And so, I see
+
+873
+00:46:47.488 --> 00:46:49.468
+5 phones, like, every teacher kind of had some different
+
+874
+00:46:49.468 --> 00:46:51.848
+ways. They did it, which and they all had good rationale
+
+875
+00:46:51.848 --> 00:46:55.828
+for it. Um, but I would rather leave this to the teacher as
+
+876
+00:46:55.888 --> 00:47:00.293
+far as a turned off versus a do not disturb. If they, um,
+
+877
+00:47:00.293 --> 00:47:03.196
+start with, hey, you know, being silenced, fine, and they
+
+878
+00:47:03.268 --> 00:47:05.413
+start to have problems with it and then, that teacher says,
+
+879
+00:47:05.413 --> 00:47:08.548
+forget it now. They're all off, then they're all off. Um,
+
+880
+00:47:08.548 --> 00:47:12.088
+but if it's all working good and they are okay with do not
+
+881
+00:47:12.088 --> 00:47:13.558
+disturb, then
+
+882
+00:47:13.558 --> 00:47:16.968
+Yeah, I guess that's my opinion. Um I I like having a
+
+883
+00:47:16.968 --> 00:47:19.748
+policy, I don't want the kids to have them. It's absolutely
+
+884
+00:47:19.748 --> 00:47:24.048
+a distraction but um I I just I don't know that. I feel
+
+885
+00:47:24.048 --> 00:47:27.228
+like we need to be that prescriptive to our teachers.
+
+886
+00:47:30.978 --> 00:47:34.778
+I would say I I kind of agree on that. I I feel like there
+
+887
+00:47:34.778 --> 00:47:38.029
+is that lag time if you're everybody's turning it on and at
+
+888
+00:47:38.029 --> 00:47:41.686
+and at the same time when lunch hits or whatever. And, you
+
+889
+00:47:41.914 --> 00:47:45.378
+just I I wonder about that and I think back in the day when
+
+890
+00:47:45.378 --> 00:47:47.608
+when we used to, like, pay for ringtones because we thought
+
+891
+00:47:47.608 --> 00:47:51.568
+that was like, I don't know that my kids phone ever makes
+
+892
+00:47:51.568 --> 00:47:54.058
+noise like, I feel like for the most part I mean, I don't
+
+893
+00:47:54.058 --> 00:47:55.918
+know, maybe that's just them, but
+
+894
+00:47:55.950 --> 00:47:59.850
+Most kids have it and I know mine said it to do not disturb
+
+895
+00:47:59.850 --> 00:48:04.546
+during the day, like they have it set from 7:15, to
+
+896
+00:48:04.546 --> 00:48:07.750
+whatever time they get out that day on, do not disturb
+
+897
+00:48:07.750 --> 00:48:08.860
+automatically.
+
+898
+00:48:08.860 --> 00:48:13.100
+And that's been an expectation. We've had, um,
+
+899
+00:48:13.100 --> 00:48:14.870
+and so, I
+
+900
+00:48:14.870 --> 00:48:18.130
+I do think this turning off feels a bit.
+
+901
+00:48:18.130 --> 00:48:21.925
+Over the top. Um if we're going to allow it during the
+
+902
+00:48:21.970 --> 00:48:24.370
+other times and if they are using it during class and if
+
+903
+00:48:24.370 --> 00:48:26.110
+you don't you know like then you got to wait forever to
+
+904
+00:48:26.110 --> 00:48:28.870
+boot their phone up to then go do something. So I think
+
+905
+00:48:28.870 --> 00:48:32.890
+there are times that they do use it. Um, and I know yeah,
+
+906
+00:48:32.890 --> 00:48:35.100
+like video production they're using, but they also had
+
+907
+00:48:35.100 --> 00:48:37.600
+cameras if they needed it and that kind of thing. So,
+
+908
+00:48:37.890 --> 00:48:41.920
+I, I'm a little torn on on whether we require.
+
+909
+00:48:42.140 --> 00:48:46.380
+Require the off at the high school. I do think the the
+
+910
+00:48:46.380 --> 00:48:50.880
+watches definitely become an issue and I think it's very
+
+911
+00:48:50.880 --> 00:48:52.920
+hard for the younger kids.
+
+912
+00:48:52.920 --> 00:48:57.930
+To understand and control that and like, without kind of
+
+913
+00:48:57.930 --> 00:49:00.642
+firm boundaries on that, um, because yeah, I've had the
+
+914
+00:49:00.642 --> 00:49:02.850
+same thing, while all of a sudden you start hearing an
+
+915
+00:49:02.850 --> 00:49:05.346
+adult talking and you're like, where are they coming from?
+
+916
+00:49:05.346 --> 00:49:07.380
+And it's some kids watch.
+
+917
+00:49:07.380 --> 00:49:11.340
+So I can see that 1 being turned off. I, I just
+
+918
+00:49:11.340 --> 00:49:15.120
+I'm a little torn, I don't I whether to go all the way of
+
+919
+00:49:15.120 --> 00:49:17.916
+turning it off during the school day, um, and I do
+
+920
+00:49:17.916 --> 00:49:23.040
+appreciate um, the kind of carve outs for medical
+
+921
+00:49:23.040 --> 00:49:26.080
+I know, um, students who are diabetic or stuff, you know,
+
+922
+00:49:26.080 --> 00:49:29.760
+rely on that to track blood sugar during the day, um, or it
+
+923
+00:49:29.760 --> 00:49:34.696
+might be in an IEP or 504. So, I, I glad that is there, um,
+
+924
+00:49:34.696 --> 00:49:37.240
+you know, from the beginning. So that I
+
+925
+00:49:37.950 --> 00:49:41.221
+Say I'm a little torn on whether that the turn off or just
+
+926
+00:49:41.221 --> 00:49:44.469
+put on silent, do not disturb and if you're, if it starts
+
+927
+00:49:44.470 --> 00:49:46.256
+making noise, then it's a problem that needs to get turned
+
+928
+00:49:46.257 --> 00:49:48.700
+off. But if it's can be silent,
+
+929
+00:49:49.130 --> 00:49:50.790
+and then,
+
+930
+00:49:50.790 --> 00:49:52.100
+just equal.
+
+931
+00:49:52.520 --> 00:49:56.820
+Yeah, that's a hard 1 only I know because with the Advent
+
+932
+00:49:56.820 --> 00:50:00.420
+of earbuds and the fact that they can control it and the
+
+933
+00:50:00.420 --> 00:50:02.554
+kids with long hair, you can't tell that they have it on. I
+
+934
+00:50:02.554 --> 00:50:03.839
+mean so that's another
+
+935
+00:50:03.840 --> 00:50:06.800
+Complexity, like, if you don't make them turn it off. They
+
+936
+00:50:06.800 --> 00:50:08.120
+are listening to music because
+
+937
+00:50:08.120 --> 00:50:10.390
+The daughter does that when I'm talking to her?
+
+938
+00:50:11.340 --> 00:50:15.340
+What are you doing, mine? Do too right. I mean they they'll
+
+939
+00:50:15.340 --> 00:50:18.070
+leave 1 year open and you know, I'm listening to you but
+
+940
+00:50:18.070 --> 00:50:20.612
+the other 1 is anyways. So that's 1 thing. And the other
+
+941
+00:50:20.612 --> 00:50:22.359
+thing I want to bring up was
+
+942
+00:50:22.360 --> 00:50:25.260
+At the middle school level. Um,
+
+943
+00:50:25.260 --> 00:50:28.582
+Because when I first saw a policy it was like complete ban
+
+944
+00:50:28.582 --> 00:50:31.690
+for the day for middle school as well. And I was surprised
+
+945
+00:50:31.690 --> 00:50:35.614
+that was, um, there but um, but that was based on feedback
+
+946
+00:50:35.614 --> 00:50:36.190
+from
+
+947
+00:50:36.190 --> 00:50:39.164
+The Middle School administrators and teachers themselves,
+
+948
+00:50:39.164 --> 00:50:41.444
+right? It's it's not something that we just decided.
+
+949
+00:50:41.444 --> 00:50:44.727
+To put in their correct, the, uh, middle school principals
+
+950
+00:50:44.727 --> 00:50:48.473
+requested to be added to the, uh, primary uh, students.
+
+951
+00:50:48.474 --> 00:50:50.394
+Okay, thanks.
+
+952
+00:50:51.444 --> 00:50:56.154
+Trustee Blackman. So I just having had a 1 kid, go all the
+
+953
+00:50:56.155 --> 00:50:58.492
+way through the schools with cell phones. I have to say
+
+954
+00:50:58.492 --> 00:51:00.364
+that. I really appreciate the fact that there were these
+
+955
+00:51:00.364 --> 00:51:02.884
+cell phone Pockets at the front of the room and it got put
+
+956
+00:51:02.884 --> 00:51:05.704
+away. The reason why I like that is because if you weren't
+
+957
+00:51:05.704 --> 00:51:08.644
+using it, is that it was out of sight, out of mind.
+
+958
+00:51:08.644 --> 00:51:11.784
+Cell phones, still transmit images during the day. And for
+
+959
+00:51:11.784 --> 00:51:14.379
+anybody else seeing a table with other students, I'm sorry,
+
+960
+00:51:14.379 --> 00:51:16.644
+but anybody else has their phone on with the images popping
+
+961
+00:51:16.644 --> 00:51:18.864
+up, somebody sends you something you might be on silent but
+
+962
+00:51:18.864 --> 00:51:21.555
+that stuff is still popping up. It's still a distraction
+
+963
+00:51:21.555 --> 00:51:24.023
+for everybody else around you. The bangs, the dings and all
+
+964
+00:51:24.024 --> 00:51:26.664
+that other stuff are still really annoying. But I'm also
+
+965
+00:51:26.664 --> 00:51:29.124
+concerned about if we don't Institute something that
+
+966
+00:51:29.124 --> 00:51:32.124
+actually creates a quiet space for when students are going
+
+967
+00:51:32.124 --> 00:51:35.604
+through exams or testing because for some students having
+
+968
+00:51:35.604 --> 00:51:38.364
+those auditory distractions or even visual distractions
+
+969
+00:51:38.364 --> 00:51:41.184
+actually disturb their ability to actually do their work
+
+970
+00:51:41.184 --> 00:51:44.619
+during those assessments. So even though we might leave it
+
+971
+00:51:44.619 --> 00:51:47.664
+up to some of the teachers to figure out the best way to
+
+972
+00:51:47.664 --> 00:51:50.124
+eliminate the distractions, not just for you personally.
+
+973
+00:51:50.349 --> 00:51:53.004
+for the other students in the room, I actually feel that we
+
+974
+00:51:53.004 --> 00:51:55.104
+need to have something that's a little bit more defined for
+
+975
+00:51:55.104 --> 00:51:57.904
+when we're having assessments because I am concerned if we
+
+976
+00:51:57.904 --> 00:52:00.264
+leave a watch on a student. If we have somebody with a cell
+
+977
+00:52:00.264 --> 00:52:02.304
+phone, if something's binging something's lighting up that
+
+978
+00:52:02.304 --> 00:52:05.004
+it is kind of a distraction for others. So I'd like to see
+
+979
+00:52:05.004 --> 00:52:06.174
+something that addresses that
+
+980
+00:52:06.174 --> 00:52:07.044
+Thank you.
+
+981
+00:52:13.434 --> 00:52:18.094
+Okay, so this is a first reading correct correct. Um,
+
+982
+00:52:18.734 --> 00:52:22.194
+do you need more information from us at this point in time,
+
+983
+00:52:22.194 --> 00:52:23.154
+or
+
+984
+00:52:24.234 --> 00:52:25.834
+Okay.
+
+985
+00:52:26.844 --> 00:52:29.944
+All righty. Thank you. All right, thank you very much.
+
+986
+00:52:30.224 --> 00:52:37.074
+And next we have an update on summer. 2014, 24 learning.
+
+987
+00:52:37.074 --> 00:52:39.701
+Yeah, president pelum and super 10 of funk, and Board of
+
+988
+00:52:39.718 --> 00:52:44.013
+Trustees and members of the community. Um, this is, I think
+
+989
+00:52:44.014 --> 00:52:48.444
+this is my favorite presentation all year. Um, this is an
+
+990
+00:52:48.444 --> 00:52:51.948
+annual presentation. Let me back up. So last year, you got
+
+991
+00:52:51.948 --> 00:52:55.086
+1 separate presentation on summer, school or summer
+
+992
+00:52:55.087 --> 00:52:58.644
+programming. And then you have a separate presentation on
+
+993
+00:52:58.644 --> 00:53:02.094
+what we did for the teachers, for, for their uh, summer
+
+994
+00:53:02.094 --> 00:53:04.616
+learning. And we decided as an ed services team. And I
+
+995
+00:53:04.617 --> 00:53:06.229
+thought it was a good idea. If somebody made the suggestion
+
+996
+00:53:06.230 --> 00:53:08.784
+that we just combine it into 1 presentation. So what you're
+
+997
+00:53:08.784 --> 00:53:11.604
+going to see tonight is even though it's 1 slide deck. It's
+
+998
+00:53:11.604 --> 00:53:15.654
+it's really 2 unique presentations. 1 is on our credit
+
+999
+00:53:15.654 --> 00:53:20.364
+recovery and our esy students and then the other 1 is
+
+1000
+00:53:20.364 --> 00:53:24.259
+A presentation on, um, what our teachers did this summer, in
+
+1001
+00:53:24.259 --> 00:53:27.399
+order to learn. So that being said, I'd like to introduce
+
+1002
+00:53:27.399 --> 00:53:31.119
+for the second year in a row, our our summer school admin
+
+1003
+00:53:31.227 --> 00:53:33.765
+teams. I'd like to introduce Lisa Deaconess. She was our
+
+1004
+00:53:33.766 --> 00:53:37.939
+principal and then also Jennifer Keller. She was our, uh,
+
+1005
+00:53:37.939 --> 00:53:40.914
+assistant principal that primarily oversaw, our extended
+
+1006
+00:53:40.914 --> 00:53:44.469
+student. Um uh school year for our students at Fred this
+
+1007
+00:53:44.469 --> 00:53:48.930
+year. Um during at the end of the summer uh the credit
+
+1008
+00:53:48.931 --> 00:53:51.843
+recovery uh Curtis har. You've seen him a lot and he's
+
+1009
+00:53:51.843 --> 00:53:54.504
+going to come in and he's going to close out the credit
+
+1010
+00:53:54.504 --> 00:53:57.759
+recovery portion of it. And then what you're going to see
+
+1011
+00:53:57.759 --> 00:54:00.909
+after that is, you're going to have Casey Nissen and Ahmed
+
+1012
+00:54:00.909 --> 00:54:02.959
+Sonni. They're going to come up and they're going to
+
+1013
+00:54:02.959 --> 00:54:05.919
+present what they did during the summer to help support our
+
+1014
+00:54:05.919 --> 00:54:09.039
+new teachers and our teachers that are currently in our
+
+1015
+00:54:09.039 --> 00:54:12.879
+system. So with that I'd like to introduce Lisa donus and
+
+1016
+00:54:12.879 --> 00:54:14.019
+Jennifer Keller.
+
+1017
+00:54:18.769 --> 00:54:21.959
+Thank you. Thank you Dr. Campbell
+
+1018
+00:54:22.839 --> 00:54:24.739
+Good evening.
+
+1019
+00:54:24.739 --> 00:54:27.729
+Superintendent Funk Board of Trustees. Thank you for having
+
+1020
+00:54:27.729 --> 00:54:28.569
+us.
+
+1021
+00:54:28.569 --> 00:54:29.669
+so,
+
+1022
+00:54:29.669 --> 00:54:34.546
+This was our second summer um as the dynamic duo summer
+
+1023
+00:54:34.546 --> 00:54:39.414
+school admin team. Um and so speaking to our high school
+
+1024
+00:54:39.415 --> 00:54:42.786
+program, um it serves students in grades 9, through 12
+
+1025
+00:54:42.787 --> 00:54:47.016
+current high school students um that were needing to either
+
+1026
+00:54:47.016 --> 00:54:49.759
+recover missing credits. So they failed the class the first
+
+1027
+00:54:49.759 --> 00:54:50.339
+time or
+
+1028
+00:54:50.339 --> 00:54:54.599
+Or they got their credits, but that grade needed to be
+
+1029
+00:54:54.599 --> 00:54:58.049
+remediated in order for them to maintain their University
+
+1030
+00:54:58.049 --> 00:55:01.739
+admissions, the a3g eligibility. So perhaps the passing
+
+1031
+00:55:01.739 --> 00:55:04.259
+grade was D minus through D, Plus.
+
+1032
+00:55:04.259 --> 00:55:07.589
+They got their credit for graduation, but they wanted to
+
+1033
+00:55:07.589 --> 00:55:10.709
+tie up loose sentence. So, we had 2 groups there, um, for
+
+1034
+00:55:10.709 --> 00:55:14.309
+the credit recovery program. And then we also had, um,
+
+1035
+00:55:14.309 --> 00:55:17.705
+extended school year for um, qualifying special education
+
+1036
+00:55:17.849 --> 00:55:21.869
+students on our campus. Um, so for the DHS summer program,
+
+1037
+00:55:21.869 --> 00:55:25.429
+we had self-contained core classes, um, and we required
+
+1038
+00:55:25.429 --> 00:55:29.069
+daily in-person attendance. Um, and there was the
+
+1039
+00:55:29.069 --> 00:55:32.249
+combination of online, coursework completion, using the
+
+1040
+00:55:32.249 --> 00:55:36.299
+Edgenuity platform. But also students attending daily re,
+
+1041
+00:55:36.299 --> 00:55:39.449
+um, receiving additional support from classroom teachers.
+
+1042
+00:55:39.629 --> 00:55:43.769
+Um, we were very excited to be able to offer uh, additional
+
+1043
+00:55:43.769 --> 00:55:48.438
+English 1 and English 2 um, through a daily direct
+
+1044
+00:55:48.487 --> 00:55:52.144
+instruction model. Uh, and that's just for students that
+
+1045
+00:55:52.145 --> 00:55:55.829
+needed additional literacy support. Um, and also very
+
+1046
+00:55:55.829 --> 00:55:59.241
+excited that we were able to offer a credit recovery course
+
+1047
+00:55:59.242 --> 00:56:02.609
+for Sci. Biology students and special education that
+
+1048
+00:56:02.609 --> 00:56:04.289
+qualified for Sci box.
+
+1049
+00:56:04.289 --> 00:56:07.886
+Ohio that needed Credit Recovery. Um and having that option
+
+1050
+00:56:07.887 --> 00:56:10.992
+for them as well, with a special education, teacher
+
+1051
+00:56:10.992 --> 00:56:12.132
+present.
+
+1052
+00:56:13.792 --> 00:56:18.118
+A little more on the High School summer program. So, um, of
+
+1053
+00:56:18.119 --> 00:56:23.312
+course it was designed for seniors right? That needed to
+
+1054
+00:56:23.312 --> 00:56:27.782
+meet graduation requirements. Um, though, we also had
+
+1055
+00:56:27.782 --> 00:56:32.252
+Uh, math, tutors on site. So we had 2 tutors that are
+
+1056
+00:56:32.252 --> 00:56:34.672
+normally are in our arc, our tutoring center during the
+
+1057
+00:56:34.672 --> 00:56:38.372
+school year and they were on site. Um, they would push in
+
+1058
+00:56:38.372 --> 00:56:41.312
+to classrooms supporting students that were doing the enu
+
+1059
+00:56:41.312 --> 00:56:45.339
+math, coursework. In addition to the teachers, um, we had
+
+1060
+00:56:45.340 --> 00:56:47.572
+academic support, we had social emotional counseling
+
+1061
+00:56:47.572 --> 00:56:52.124
+support. We had a classroom set up specifically, um, with,
+
+1062
+00:56:52.124 --> 00:56:55.124
+uh, wellness support that students could pop into if they
+
+1063
+00:56:55.124 --> 00:56:58.257
+needed to take a break, or they needed to speak with our
+
+1064
+00:56:58.258 --> 00:57:00.572
+mental health clinician. And then, of course, our
+
+1065
+00:57:00.572 --> 00:57:04.352
+classified staff. Um, the secretary we had 2 campus
+
+1066
+00:57:04.352 --> 00:57:08.000
+supervisors at Dublin High, the data processor, our health
+
+1067
+00:57:08.000 --> 00:57:11.432
+services assistant, all the behind the scenes hands that
+
+1068
+00:57:11.432 --> 00:57:14.212
+keep the program in motion. And of course our child
+
+1069
+00:57:14.212 --> 00:57:17.312
+nutrition services that would bring the healthy snacks by
+
+1070
+00:57:17.312 --> 00:57:20.252
+the summer school office every day. In addition to having
+
+1071
+00:57:20.252 --> 00:57:22.884
+the brunch time offerings for the kiddos to pick up outside
+
+1072
+00:57:22.885 --> 00:57:24.212
+the cafeteria.
+
+1073
+00:57:24.532 --> 00:57:30.677
+Okay, here are the stats. Um, so this summer, we had 233
+
+1074
+00:57:30.677 --> 00:57:34.022
+students that completed their summer school, coursework.
+
+1075
+00:57:34.152 --> 00:57:36.832
+Total credits earned.
+
+1076
+00:57:36.912 --> 00:57:39.232
+1485.
+
+1077
+00:57:39.252 --> 00:57:40.732
+I know.
+
+1078
+00:57:41.012 --> 00:57:46.152
+270 letter, grades increased to that c minus and above
+
+1079
+00:57:46.152 --> 00:57:48.792
+meaning. The a3g eligibility.
+
+1080
+00:57:48.792 --> 00:57:52.382
+And of course, we had our 2 3 week sessions kiddos enrolled
+
+1081
+00:57:52.382 --> 00:57:57.030
+in both sessions if needed. Um, and then a 40 different
+
+1082
+00:57:57.030 --> 00:58:00.522
+courses that we offered and students were enrolled in
+
+1083
+00:58:00.532 --> 00:58:05.799
+We had our very second, um, graduation ceremony and it
+
+1084
+00:58:05.807 --> 00:58:09.152
+seems to be a new tradition for for Dublin unified, having
+
+1085
+00:58:09.152 --> 00:58:12.338
+a separate summer graduation ceremony. So we were super
+
+1086
+00:58:12.338 --> 00:58:16.052
+excited to offer this opportunity. We had 5 seniors that
+
+1087
+00:58:16.052 --> 00:58:19.029
+graduated through our summer program. Thank you to those of
+
+1088
+00:58:19.030 --> 00:58:24.152
+you that were able to to attend um and 2 of our graduates
+
+1089
+00:58:24.152 --> 00:58:28.112
+in the process fulfilled, their last bits of their a
+
+1090
+00:58:28.112 --> 00:58:31.028
+through G requirements. In addition to the high school uh
+
+1091
+00:58:31.040 --> 00:58:34.232
+diploma requirements, which was amazing. Um all 5 of our
+
+1092
+00:58:34.272 --> 00:58:37.424
+graduates are currently enrolled in college. Um 2 of them
+
+1093
+00:58:37.460 --> 00:58:41.861
+at local community, colleges 3 are currently at 4 year
+
+1094
+00:58:41.861 --> 00:58:46.211
+universities, um, 1, uh, Academy of Art 1 San Jose State,
+
+1095
+00:58:46.212 --> 00:58:48.452
+and 1 at a private university in New York state,
+
+1096
+00:58:48.452 --> 00:58:53.477
+Um and as I said we had uh 5 graduates 3 families who were
+
+1097
+00:58:53.477 --> 00:58:56.387
+so glad that they could attend 2 were out of town. But
+
+1098
+00:58:56.387 --> 00:59:00.287
+overall, um, all were were just very Overjoyed to have the
+
+1099
+00:59:00.287 --> 00:59:02.687
+opportunity. So, thank you.
+
+1100
+00:59:03.477 --> 00:59:07.249
+Now, turning it over to my colleague esy. Administrator
+
+1101
+00:59:07.249 --> 00:59:08.287
+Jennifer Keller,
+
+1102
+00:59:09.237 --> 00:59:13.537
+Hello, thank you for the opportunity to be here Board of
+
+1103
+00:59:13.537 --> 00:59:16.417
+Trustees superintendent Funk. Uh, I would like to just
+
+1104
+00:59:16.417 --> 00:59:19.177
+share with you some of our highlights from the esy program.
+
+1105
+00:59:19.177 --> 00:59:21.697
+Um, otherwise the extended school year program, this is the
+
+1106
+00:59:21.697 --> 00:59:23.377
+program that is
+
+1107
+00:59:23.777 --> 00:59:27.417
+this is the program that is designed for students with
+
+1108
+00:59:27.417 --> 00:59:31.377
+qualifying IEPs to maintain and make growth towards their
+
+1109
+00:59:31.377 --> 00:59:36.561
+uh to their IEP. The we had a a very large program this
+
+1110
+00:59:36.561 --> 00:59:41.847
+summer, it grew quite a bit. We had about 225 students. We
+
+1111
+00:59:41.847 --> 00:59:45.882
+had 17 classes ranging from preschool to the transition age
+
+1112
+00:59:45.882 --> 00:59:48.822
+and we were housed at Frederickson. Elementary school as
+
+1113
+00:59:48.822 --> 00:59:51.477
+well as Dublin. High School campus.
+
+1114
+00:59:51.477 --> 00:59:55.853
+Uh we service the students who qualified with for Resource
+
+1115
+00:59:55.853 --> 00:59:59.317
+Services as well as mild moderate and extensive needs
+
+1116
+00:59:59.317 --> 01:00:03.817
+supports. We had a wonderful staff comprised of returning
+
+1117
+01:00:03.817 --> 01:00:06.737
+staff members. Many of them who are teachers that are
+
+1118
+01:00:06.737 --> 01:00:09.597
+working this during the school year with their students, as
+
+1119
+01:00:09.597 --> 01:00:13.562
+well as instructional assistants. We had a a multitude of
+
+1120
+01:00:13.562 --> 01:00:17.057
+different Specialists as well. Uh, from ranging from
+
+1121
+01:00:17.057 --> 01:00:18.437
+behaviorist OT, special
+
+1122
+01:00:18.437 --> 01:00:21.037
+Specialist. It was it was a really wonderful team that we
+
+1123
+01:00:21.077 --> 01:00:25.007
+had this year. Uh I think 1 of the 1 of the highlights that
+
+1124
+01:00:25.007 --> 01:00:27.297
+we had was the fact that we had so many returning staff
+
+1125
+01:00:27.297 --> 01:00:30.377
+members that worked to support the students in Dublin.
+
+1126
+01:00:31.957 --> 01:00:34.667
+Yeah, thank you. Thank you.
+
+1127
+01:00:39.657 --> 01:00:44.317
+You know, these 2 amazing leaders that just presented. Um,
+
+1128
+01:00:44.317 --> 01:00:48.190
+our have a lot of humility and a very humble in The Amazing
+
+1129
+01:00:48.190 --> 01:00:52.836
+lift in work, that is basically opening a new school. Every
+
+1130
+01:00:52.837 --> 01:00:57.157
+summer with almost 500, students building Master schedules.
+
+1131
+01:00:57.157 --> 01:01:01.725
+Hiring a whole new staff. Uh, no small feat for what they
+
+1132
+01:01:01.726 --> 01:01:05.394
+both were able to accomplish and lead. And so I just with a
+
+1133
+01:01:05.394 --> 01:01:09.096
+lot of gratitude, thank the 2 of them as well as all of the
+
+1134
+01:01:09.097 --> 01:01:13.417
+different departments. Um HR Child Nutrition department,
+
+1135
+01:01:13.417 --> 01:01:18.727
+um, special education. Um I'm sure I'm leaving a department
+
+1136
+01:01:18.727 --> 01:01:22.047
+out but I mean it takes every single Department in our
+
+1137
+01:01:22.047 --> 01:01:25.357
+district to launch a successful summer program and super
+
+1138
+01:01:25.357 --> 01:01:27.897
+proud of the work that we've been able to accomplish in
+
+1139
+01:01:27.897 --> 01:01:30.817
+really changing the trajectory of some of our students
+
+1140
+01:01:30.817 --> 01:01:31.987
+lives.
+
+1141
+01:01:31.987 --> 01:01:34.745
+uh some of the things that really stood out and that we
+
+1142
+01:01:34.745 --> 01:01:37.775
+would like to consider um for future summer programming is
+
+1143
+01:01:37.775 --> 01:01:40.955
+the graduation ceremony for our seniors who finished during
+
+1144
+01:01:40.955 --> 01:01:44.735
+the summer. Is a great addition that we um started last
+
+1145
+01:01:44.735 --> 01:01:48.017
+last year. Uh, this is something that we anticipate
+
+1146
+01:01:48.018 --> 01:01:53.405
+continuing. It's a great way to just show. Um, show our
+
+1147
+01:01:53.405 --> 01:01:55.025
+students, uh, just
+
+1148
+01:01:55.025 --> 01:01:58.295
+Give them that opportunity to celebrate um, with us and
+
+1149
+01:01:58.295 --> 01:01:59.645
+with their families.
+
+1150
+01:01:59.645 --> 01:02:02.815
+Uh 1 of the things that uh that we added a couple of years
+
+1151
+01:02:02.815 --> 01:02:06.895
+ago is a administrator specifically designated to oversee
+
+1152
+01:02:06.895 --> 01:02:10.495
+our extended school year program. Um we would like to see
+
+1153
+01:02:10.495 --> 01:02:15.115
+that continue as well as that is um that I was talking with
+
+1154
+01:02:15.115 --> 01:02:19.240
+uh with Jennifer Keller this last week and just the amount
+
+1155
+01:02:19.240 --> 01:02:20.845
+of um
+
+1156
+01:02:20.845 --> 01:02:24.365
+logistical Pieces Just for the drop off and pick up of
+
+1157
+01:02:24.365 --> 01:02:27.545
+students each and every day. Uh, and the things that are
+
+1158
+01:02:27.545 --> 01:02:30.485
+required to do that. It really does, uh, require a lot of
+
+1159
+01:02:30.485 --> 01:02:34.025
+oversight, um, with the amount of transportation and
+
+1160
+01:02:34.025 --> 01:02:36.965
+vehicles that come on to, uh, our campuses, uh, for our
+
+1161
+01:02:36.965 --> 01:02:38.435
+students in esy,
+
+1162
+01:02:38.435 --> 01:02:41.655
+um, we continue to seek additional credit recovery options,
+
+1163
+01:02:41.655 --> 01:02:44.367
+not just during the summer but throughout the school year
+
+1164
+01:02:44.511 --> 01:02:47.850
+outside of the school day, uh, so that we can continue to
+
+1165
+01:02:47.850 --> 01:02:51.512
+support our students that are, um, not quite on track for
+
+1166
+01:02:51.512 --> 01:02:54.654
+graduation or credit deficient, um, to be able to help them
+
+1167
+01:02:54.655 --> 01:02:58.995
+get back on track, um, for um, both a to G and also on
+
+1168
+01:02:58.995 --> 01:03:01.965
+graduation track, um, as well as
+
+1169
+01:03:01.965 --> 01:03:05.535
+During the summer, increasing the options that we have for
+
+1170
+01:03:05.535 --> 01:03:11.355
+credit recovery. Uh this year uh we added in as Lisa said a
+
+1171
+01:03:11.355 --> 01:03:14.415
+a, an in-person direct instruction element separate from
+
+1172
+01:03:14.415 --> 01:03:19.125
+Edgenuity for students, that EU just doesn't work well for,
+
+1173
+01:03:19.125 --> 01:03:22.775
+for, uh, we were only able to do it for a couple of our
+
+1174
+01:03:22.775 --> 01:03:25.305
+our courses, and we hope to expand that work to have more
+
+1175
+01:03:25.335 --> 01:03:28.415
+direct, um, instruction offerings for our students as well.
+
+1176
+01:03:28.415 --> 01:03:31.275
+So, again, thank you to the 2 of you for your leadership
+
+1177
+01:03:31.275 --> 01:03:33.525
+and launching a successful program.
+
+1178
+01:03:33.525 --> 01:03:36.855
+At this time, I would like to actually curse.
+
+1179
+01:03:36.985 --> 01:03:38.315
+Yep.
+
+1180
+01:03:39.405 --> 01:03:42.745
+I have a question. Yeah just to clarifying question for you
+
+1181
+01:03:42.745 --> 01:03:46.915
+and I don't mean to put either you or uh Dr. Campbell on
+
+1182
+01:03:46.915 --> 01:03:52.036
+the spot. Um due to the reduction of the 4 million that we
+
+1183
+01:03:52.036 --> 01:03:54.875
+we identify in the board approved last year, we had to
+
+1184
+01:03:54.885 --> 01:03:58.387
+reduce our summer offerings, uh, and we also played some
+
+1185
+01:03:58.388 --> 01:04:00.642
+Shell Games with how we funded summer school, can you
+
+1186
+01:04:00.642 --> 01:04:04.164
+remind us how much summer school was and what funds we
+
+1187
+01:04:04.165 --> 01:04:05.095
+used?
+
+1188
+01:04:06.378 --> 01:04:10.352
+Yeah summer school costs a couple hundred thousand dollars.
+
+1189
+01:04:10.352 --> 01:04:14.187
+It's I think that I budget like dollars for every summer um
+
+1190
+01:04:14.188 --> 01:04:18.418
+just for this particular summer school, um the the summer
+
+1191
+01:04:18.418 --> 01:04:22.768
+school we're actually the last funding for the um,
+
+1192
+01:04:22.768 --> 01:04:27.528
+The Esser funds from the Biden Administration has paid for
+
+1193
+01:04:27.528 --> 01:04:30.528
+summer school for the past couple of years. We knew that it
+
+1194
+01:04:30.528 --> 01:04:34.060
+was going to run out at the end of this year. So looking
+
+1195
+01:04:34.060 --> 01:04:39.152
+toward next summer. So the summer of 2025 we have put
+
+1196
+01:04:39.153 --> 01:04:42.852
+summer school costs with our supplemental Grant. So it's
+
+1197
+01:04:42.852 --> 01:04:46.068
+it's going to we know this is a a vital program and it's an
+
+1198
+01:04:46.068 --> 01:04:48.468
+important program that we prioritize. And so it's going to
+
+1199
+01:04:48.468 --> 01:04:50.148
+come out of our supplemental Grant.
+
+1200
+01:04:50.628 --> 01:04:54.528
+Do you do you want to pause here to ask questions about
+
+1201
+01:04:54.528 --> 01:04:57.748
+summer school? Before we go on to teacher learning? I have
+
+1202
+01:04:57.748 --> 01:05:00.208
+a question. The supplemental Grant. Can you tell me more?
+
+1203
+01:05:00.208 --> 01:05:01.978
+Is that a federal? Is that a state?
+
+1204
+01:05:01.978 --> 01:05:05.988
+Sorry, it's educational ease. I I apologize. Uh, it comes
+
+1205
+01:05:06.000 --> 01:05:10.682
+from the state that is the money that, um, districts, get
+
+1206
+01:05:10.682 --> 01:05:12.278
+in each district, gets a different amount of depends on the
+
+1207
+01:05:12.278 --> 01:05:17.570
+unduplicated student count. So it's the eel Learners the,
+
+1208
+01:05:17.570 --> 01:05:20.522
+um, the Foster students and the students that are on free
+
+1209
+01:05:20.522 --> 01:05:22.818
+and reduced lunch. So, depending on what your percentage is
+
+1210
+01:05:22.818 --> 01:05:27.086
+then, um, you get a, you get, um, you get some money back
+
+1211
+01:05:27.086 --> 01:05:30.938
+for our case, Dublin, we got 3.5 million dollars, this past
+
+1212
+01:05:30.938 --> 01:05:34.358
+year. For next year we're looking at about 3.8 million
+
+1213
+01:05:34.938 --> 01:05:38.722
+And is it pretty open on what you can spend it on? So, we're
+
+1214
+01:05:38.722 --> 01:05:42.238
+just using to spend some portion on. Sorry. Yeah. It's
+
+1215
+01:05:42.238 --> 01:05:44.878
+primarily to support the needs of the unduplicated,
+
+1216
+01:05:44.878 --> 01:05:48.551
+students. However, you can use it for students, um, for all
+
+1217
+01:05:48.564 --> 01:05:51.597
+students. But it's primarily for the needs for unduplicated
+
+1218
+01:05:51.598 --> 01:05:54.958
+students and this, um, using it for summer school credit
+
+1219
+01:05:54.958 --> 01:05:59.278
+recovery is a is a, it's, it's an expense, it's allowable.
+
+1220
+01:06:03.218 --> 01:06:05.868
+All right. Thank you.
+
+1221
+01:06:07.318 --> 01:06:11.803
+Are we still on question? Yeah, okay. Great. Um, thank you
+
+1222
+01:06:11.803 --> 01:06:13.897
+for the presentation. That was great. Um, on the high
+
+1223
+01:06:13.898 --> 01:06:17.018
+school. Um, Credit Recovery, can you give me an idea of
+
+1224
+01:06:17.018 --> 01:06:20.948
+like how many we're doing versus in the classroom? Like
+
+1225
+01:06:20.948 --> 01:06:22.958
+what percent of students?
+
+1226
+01:06:24.968 --> 01:06:28.458
+Just roughly right. Um,
+
+1227
+01:06:28.458 --> 01:06:37.288
+I would say probably um, 80 75% um, doing the Edgenuity but
+
+1228
+01:06:37.288 --> 01:06:39.767
+But of course, they're still with the teacher in the
+
+1229
+01:06:39.768 --> 01:06:43.458
+classroom, right? But the the model right is on the online
+
+1230
+01:06:43.458 --> 01:06:46.848
+platform, but they're still coming every day. Um, and then
+
+1231
+01:06:46.848 --> 01:06:51.480
+the other. Yeah, 25%. We were able to offer um the teacher
+
+1232
+01:06:51.480 --> 01:06:55.452
+teacher directed, um, all class. We're doing this together.
+
+1233
+01:06:55.452 --> 01:06:58.766
+turn to page 3. So yeah. Okay. And then, so for the, I
+
+1234
+01:06:58.766 --> 01:07:01.067
+think you said it, but for the Edgenuity ones, they are all
+
+1235
+01:07:01.068 --> 01:07:03.408
+coming in person, doing it on like a school, district
+
+1236
+01:07:03.408 --> 01:07:04.308
+Chromebook, correct with
+
+1237
+01:07:04.308 --> 01:07:07.989
+That a teacher there to help it as needed, okay? But they
+
+1238
+01:07:07.989 --> 01:07:10.209
+could be on all sorts of different classes. Like 1 teacher
+
+1239
+01:07:10.209 --> 01:07:11.169
+could have
+
+1240
+01:07:11.169 --> 01:07:16.729
+30 kids on all different Ingenuity kind of classes. Yes, we
+
+1241
+01:07:16.729 --> 01:07:21.995
+did. Definitely try to group students uh together. Um, so
+
+1242
+01:07:21.996 --> 01:07:25.457
+certain courses together and also teacher credential area,
+
+1243
+01:07:25.457 --> 01:07:29.316
+just making sure that, um, right that we have say, for
+
+1244
+01:07:29.317 --> 01:07:32.189
+example, all the math kiddos in the same room, um, and
+
+1245
+01:07:32.189 --> 01:07:35.729
+being able to yeah. Okay. And, um, you talked about 2
+
+1246
+01:07:35.729 --> 01:07:39.749
+different 3-e sessions, um, in a 3 week session, if I'm a
+
+1247
+01:07:39.749 --> 01:07:42.479
+high schooler, am I only doing 1 class?
+
+1248
+01:07:42.679 --> 01:07:49.159
+So, um, for Edgenuity, it is 1 course at a time, right? So,
+
+1249
+01:07:49.159 --> 01:07:54.179
+um, it is self-paced so, um, if they finish it before, the
+
+1250
+01:07:54.179 --> 01:07:57.366
+end of a 3 week session, if they have another course that
+
+1251
+01:07:57.367 --> 01:08:00.479
+their counselor has recommended they do, they're welcome to
+
+1252
+01:08:00.479 --> 01:08:05.159
+return to us for session 2 and start it then or some money.
+
+1253
+01:08:05.159 --> 01:08:07.379
+We're impatient. And they said, nope. Yes sir, let's get me
+
+1254
+01:08:07.379 --> 01:08:09.779
+started on that now. But as a high schooler, you had
+
+1255
+01:08:09.779 --> 01:08:12.366
+opportunity to basically 2 classes only write correct. You
+
+1256
+01:08:12.367 --> 01:08:14.925
+could do up to 2 courses in summer school courses. Um,
+
+1257
+01:08:14.925 --> 01:08:17.698
+however, if they are graduating seniors to earn their
+
+1258
+01:08:17.699 --> 01:08:21.499
+diploma, right? We did make the exception for those. Um, a
+
+1259
+01:08:21.499 --> 01:08:24.899
+few to do up to 3 as needed, only though, if it was to earn
+
+1260
+01:08:24.899 --> 01:08:25.829
+their diploma,
+
+1261
+01:08:27.000 --> 01:08:29.949
+Okay. Thank you. Thank you. Thank you.
+
+1262
+01:08:31.719 --> 01:08:33.349
+All right.
+
+1263
+01:08:33.349 --> 01:08:37.359
+Thank you, and we can keep going with the adults adult
+
+1264
+01:08:37.359 --> 01:08:40.329
+learning. So, at this time, I'd like to invite up Casey,
+
+1265
+01:08:40.329 --> 01:08:43.491
+Nissen and Ishani to talk to you about some of our adult
+
+1266
+01:08:43.492 --> 01:08:44.469
+learning this summer.
+
+1267
+01:08:50.409 --> 01:08:53.929
+Good evening before Ash meet and I share professional
+
+1268
+01:08:53.929 --> 01:08:56.929
+learning opportunities from the summer. I'd like to begin
+
+1269
+01:08:56.929 --> 01:08:59.821
+by Framing the work that has been done, leading up to where
+
+1270
+01:08:59.821 --> 01:09:03.769
+we are now specifically, answering our PLC Focus questions,
+
+1271
+01:09:03.769 --> 01:09:05.869
+the first 2 questions,
+
+1272
+01:09:05.869 --> 01:09:08.859
+Have been a central focus of our work over the last 2
+
+1273
+01:09:09.519 --> 01:09:12.612
+with respect to question 1. What do we expect our students
+
+1274
+01:09:12.613 --> 01:09:15.599
+to learn? We have provided professional learning on the
+
+1275
+01:09:15.599 --> 01:09:18.159
+on the effective use of adopted curriculum and
+
+1276
+01:09:18.193 --> 01:09:20.781
+collectively. Develop course outlines with essential
+
+1277
+01:09:20.781 --> 01:09:23.404
+standards in order to provide a guaranteed and viable.
+
+1278
+01:09:23.405 --> 01:09:26.799
+Curriculum for question 2, how will we know when they have
+
+1279
+01:09:26.799 --> 01:09:29.299
+learned it? There has been significant work done on
+
+1280
+01:09:29.299 --> 01:09:30.879
+assessment and Grading.
+
+1281
+01:09:30.879 --> 01:09:34.404
+And this work in both areas has carried forward in both new
+
+1282
+01:09:34.404 --> 01:09:38.277
+higher orientation and Summer Academy to ensure coherence
+
+1283
+01:09:38.277 --> 01:09:39.909
+across our system.
+
+1284
+01:09:40.506 --> 01:09:45.046
+This brings me to new hire orientation, an event near and
+
+1285
+01:09:45.046 --> 01:09:47.746
+dear to my heart. As I have been the TV tip. Induction
+
+1286
+01:09:47.746 --> 01:09:51.406
+coordinator here in Dublin for many, many years. Um, I'm in
+
+1287
+01:09:51.406 --> 01:09:54.466
+a new role now, but I still love overseeing this event. Um,
+
+1288
+01:09:54.466 --> 01:09:59.026
+it was a 2-day event with over 10 sessions, 20 facilitators
+
+1289
+01:09:59.026 --> 01:10:02.926
+and over 60, new staff, participate participating in the
+
+1290
+01:10:02.926 --> 01:10:06.346
+event, as 1 can see, the outcomes connect to our district
+
+1291
+01:10:06.346 --> 01:10:10.186
+priorities and also include new Staff, feel feeling,
+
+1292
+01:10:10.186 --> 01:10:12.552
+welcome and connected. So they would be ready to welcome
+
+1293
+01:10:12.553 --> 01:10:15.256
+our students. On the first day of school,
+
+1294
+01:10:16.246 --> 01:10:19.406
+Here are session highlights. So you could see the
+
+1295
+01:10:19.406 --> 01:10:23.306
+connections to our ongoing work to highlight a few. We had
+
+1296
+01:10:23.306 --> 01:10:25.466
+sessions on implicit bias,
+
+1297
+01:10:25.466 --> 01:10:28.911
+The power of a guaranteed and viable, curriculum homework
+
+1298
+01:10:28.911 --> 01:10:32.596
+and Grading. And of course we had a site orientation in
+
+1299
+01:10:32.596 --> 01:10:35.436
+order for new staff to get acquainted with the nuts and
+
+1300
+01:10:35.436 --> 01:10:37.206
+bolts of their School site.
+
+1301
+01:10:38.816 --> 01:10:44.181
+The feedback was very positive with a 100% of participants
+
+1302
+01:10:44.181 --> 01:10:46.656
+agreeing. The orientation was well, planned and
+
+1303
+01:10:46.656 --> 01:10:51.036
+interactive, and 99% stating the orientation modeled
+
+1304
+01:10:51.036 --> 01:10:54.402
+effective strategies to create an optimal learning
+
+1305
+01:10:54.403 --> 01:10:58.116
+environment for students. The word cloud was created by
+
+1306
+01:10:58.116 --> 01:11:01.636
+asking participants their key. Takeaways, some key words
+
+1307
+01:11:01.636 --> 01:11:04.296
+that surfaced were students.
+
+1308
+01:11:04.296 --> 01:11:08.376
+Help and help is used in the context um that help is
+
+1309
+01:11:08.376 --> 01:11:10.926
+available, not help me.
+
+1310
+01:11:11.556 --> 01:11:15.836
+Um Equity grading support and relationships and I'm sure
+
+1311
+01:11:15.836 --> 01:11:18.424
+you're familiar with a wordcloud. The, the larger words
+
+1312
+01:11:18.424 --> 01:11:21.106
+that are repeated are the ones that are larger.
+
+1313
+01:11:21.296 --> 01:11:25.332
+Um overall it was a really positive Day 2 days of learning
+
+1314
+01:11:25.332 --> 01:11:28.776
+with our new staff. So I will now turn it over to ashme to
+
+1315
+01:11:28.776 --> 01:11:31.026
+share about summer Academy.
+
+1316
+01:11:34.436 --> 01:11:36.606
+Thank you, Casey.
+
+1317
+01:11:36.606 --> 01:11:40.746
+Summer Academy this year was offered, um, only for 1 day,
+
+1318
+01:11:40.746 --> 01:11:44.266
+um, right after our new hire orientation, which is actually
+
+1319
+01:11:44.266 --> 01:11:47.781
+a good segue for our new hires, um, to also take part in
+
+1320
+01:11:47.811 --> 01:11:51.406
+these optional, professional learning events. Um, there
+
+1321
+01:11:51.506 --> 01:11:56.286
+were about 18 sessions offered in close to 115 participants
+
+1322
+01:11:56.286 --> 01:11:59.826
+again new and old who engaged in this optional
+
+1323
+01:11:59.826 --> 01:12:04.401
+professional. Um, learning day as Casey mentioned already,
+
+1324
+01:12:04.401 --> 01:12:08.706
+the offered sessions were aligned with the USD priorities.
+
+1325
+01:12:08.796 --> 01:12:12.163
+Um, some of the sessions that were offered were glad
+
+1326
+01:12:12.164 --> 01:12:16.536
+strategies for eel. Uh, eel students. Um, District adopted
+
+1327
+01:12:16.536 --> 01:12:20.931
+curriculum, training has been continued, notice and note,
+
+1328
+01:12:20.931 --> 01:12:25.096
+Avid collaboration, and also information on updated, um,
+
+1329
+01:12:25.096 --> 01:12:26.556
+grading policies.
+
+1330
+01:12:27.116 --> 01:12:31.356
+As you can see, the feedback was overwhelmingly positive
+
+1331
+01:12:31.356 --> 01:12:35.736
+with 96% of participants stating that the professional
+
+1332
+01:12:35.736 --> 01:12:39.696
+learning was aligned to clear learning objectives and was
+
+1333
+01:12:39.696 --> 01:12:44.196
+relevant to their role. Moreover, 93% of the participants
+
+1334
+01:12:44.196 --> 01:12:47.976
+also walking away with clear next steps that they plan to
+
+1335
+01:12:48.000 --> 01:12:49.956
+apply in their practice.
+
+1336
+01:12:51.436 --> 01:12:56.618
+To elaborate on the feedback. Here are a few teacher quotes
+
+1337
+01:12:56.619 --> 01:13:00.716
+where they have stated how their needs as a learner, what
+
+1338
+01:13:00.716 --> 01:13:04.436
+addressed and met in the sessions that they attended.
+
+1339
+01:13:07.726 --> 01:13:11.966
+As we move forward, we'll continue to align professional
+
+1340
+01:13:12.000 --> 01:13:15.806
+learning opportunities with identified student needs. And
+
+1341
+01:13:15.806 --> 01:13:20.186
+with the district priorities. This year, the focus for both
+
+1342
+01:13:20.186 --> 01:13:24.506
+district-wide PD days. The November 1st and the March 14th.
+
+1343
+01:13:24.506 --> 01:13:27.026
+Will be inclusion and belonging.
+
+1344
+01:13:27.026 --> 01:13:31.246
+Specifically taking a deeper dive into the third PLC
+
+1345
+01:13:31.246 --> 01:13:35.746
+question, how will we respond when some students do not
+
+1346
+01:13:35.746 --> 01:13:36.766
+learn?
+
+1347
+01:13:36.766 --> 01:13:41.356
+This theme is connected to all dusd priorities. Our current
+
+1348
+01:13:41.356 --> 01:13:46.216
+lcap. Um, and again, all the USD priorities, namely
+
+1349
+01:13:46.288 --> 01:13:50.416
+curriculum and instruction Equity, PLC work and social
+
+1350
+01:13:50.416 --> 01:13:52.096
+emotional Wellness.
+
+1351
+01:13:53.556 --> 01:13:57.236
+Last, but not the least to conclude in the words of John
+
+1352
+01:13:57.236 --> 01:13:57.916
+Hattie.
+
+1353
+01:13:57.916 --> 01:14:01.436
+The effect of teachers, professional development on student
+
+1354
+01:14:01.436 --> 01:14:05.156
+achievement, cannot be overstated. When teachers engage in
+
+1355
+01:14:05.156 --> 01:14:07.736
+targeted, professional learning, that deepens their
+
+1356
+01:14:07.736 --> 01:14:12.296
+understanding of instructional practices in hand, enhances
+
+1357
+01:14:12.296 --> 01:14:15.536
+their ability to reflect on their own learning. They become
+
+1358
+01:14:15.536 --> 01:14:19.599
+more effective Educators. This Effectiveness translates
+
+1359
+01:14:19.599 --> 01:14:23.155
+directly into improved student outcomes as well. Taught
+
+1360
+01:14:23.156 --> 01:14:25.916
+students are more likely to achieve at higher levels
+
+1361
+01:14:25.916 --> 01:14:31.041
+regardless of their starting points. Therefore investing in
+
+1362
+01:14:31.041 --> 01:14:34.128
+teacher, professional development is an investment in the
+
+1363
+01:14:34.129 --> 01:14:37.855
+future success of all students. Thank you.
+
+1364
+01:14:39.486 --> 01:14:44.416
+Thank you. Are there any questions comments?
+
+1365
+01:14:45.016 --> 01:14:49.736
+Screen. I was happy to kick off the new teacher when I was
+
+1366
+01:14:49.736 --> 01:14:50.966
+great to see all the
+
+1367
+01:14:51.086 --> 01:14:54.396
+New Happy eager faces and and people that we brought in so
+
+1368
+01:14:54.426 --> 01:14:56.586
+it's good. Good to have that and good to have everybody
+
+1369
+01:14:56.586 --> 01:15:00.026
+together. I think to kind of start the year and feel
+
+1370
+01:15:00.026 --> 01:15:04.188
+connected and so we want to keep doing that. Thank you. Um,
+
+1371
+01:15:04.189 --> 01:15:05.016
+trustee Blackman
+
+1372
+01:15:05.016 --> 01:15:09.288
+Um, so I had a question when um, on the calendar is the next
+
+1373
+01:15:09.288 --> 01:15:11.789
+next staff professional development day, is that in
+
+1374
+01:15:11.789 --> 01:15:15.004
+October, or is that coming up in the spring? November
+
+1375
+01:15:15.004 --> 01:15:17.089
+first, I think what it said, November 1st and then 1 in
+
+1376
+01:15:17.089 --> 01:15:19.609
+March, okay. It just, that was my 1 question.
+
+1377
+01:15:20.649 --> 01:15:23.869
+All right. Thank you. Thank you. Thank you.
+
+1378
+01:15:24.289 --> 01:15:25.649
+oh,
+
+1379
+01:15:25.649 --> 01:15:28.099
+all right. Do we have comments?
+
+1380
+01:15:29.439 --> 01:15:32.071
+I know I asked questions but I didn't understand if we have
+
+1381
+01:15:32.071 --> 01:15:36.679
+public comments on the okay. So can we make a comment? Um
+
+1382
+01:15:36.679 --> 01:15:40.759
+sure thank you. So I want I want to thank the work that
+
+1383
+01:15:40.759 --> 01:15:42.259
+occurs during the summer.
+
+1384
+01:15:42.259 --> 01:15:45.549
+It's very important for our new staff to feel connected.
+
+1385
+01:15:45.549 --> 01:15:49.747
+I would ask at the November PD, if we could address some of
+
+1386
+01:15:49.747 --> 01:15:53.029
+the confusion surrounding about starting the new year and
+
+1387
+01:15:53.029 --> 01:15:53.809
+Grading,
+
+1388
+01:15:53.809 --> 01:15:57.679
+We have issues across our schools with the ability to
+
+1389
+01:15:57.679 --> 01:16:01.879
+implement our grading system, especially applying it to the
+
+1390
+01:16:01.879 --> 01:16:04.999
+rubrics. Teachers are making up their own system because
+
+1391
+01:16:04.999 --> 01:16:07.834
+they don't understand how to apply our new grading
+
+1392
+01:16:07.834 --> 01:16:11.299
+standards to rubrics. So it would be something to bring up
+
+1393
+01:16:11.299 --> 01:16:13.951
+in November with staff. I think it would greatly help. Some
+
+1394
+01:16:13.951 --> 01:16:15.559
+of our teachers. Thank you.
+
+1395
+01:16:18.289 --> 01:16:23.909
+Okay. All right. Moving on. We have HR with
+
+1396
+01:16:23.909 --> 01:16:26.739
+a lot of board policies.
+
+1397
+01:16:26.739 --> 01:16:30.236
+That I know everyone in the state I think is doing right
+
+1398
+01:16:30.236 --> 01:16:31.208
+about now.
+
+1399
+01:16:31.209 --> 01:16:35.739
+Good evening, and thank you. Um, I'm here tonight with a
+
+1400
+01:16:35.739 --> 01:16:38.559
+partner. Uh, we've been working on a presentation to share
+
+1401
+01:16:38.559 --> 01:16:41.889
+with you this evening regarding updates revisions and new
+
+1402
+01:16:41.889 --> 01:16:45.819
+policies and procedures that either are Title 9 policies,
+
+1403
+01:16:45.819 --> 01:16:49.119
+or relate to Title, 9 policies. All of these policies are
+
+1404
+01:16:49.119 --> 01:16:51.609
+required and we look forward to talking to you about that.
+
+1405
+01:16:52.619 --> 01:16:56.619
+Good evening. Um, I know Heather will be going over these
+
+1406
+01:16:56.619 --> 01:16:59.139
+policies, and I'll be more than happy to answer any
+
+1407
+01:16:59.139 --> 01:17:01.089
+questions that our student related as well.
+
+1408
+01:17:01.909 --> 01:17:03.629
+Thank you.
+
+1409
+01:17:05.959 --> 01:17:10.574
+So as you can see, from the background provided in the um
+
+1410
+01:17:10.704 --> 01:17:14.778
+board agenda item, we are coming this evening to update you
+
+1411
+01:17:14.779 --> 01:17:17.999
+on new updated title, 9 policies that became effective on
+
+1412
+01:17:18.000 --> 01:17:22.319
+August 1st. And any Associated policies that need to be
+
+1413
+01:17:22.319 --> 01:17:24.479
+updated in relation to that.
+
+1414
+01:17:24.479 --> 01:17:28.899
+I will be talking through those pre um, policies with you
+
+1415
+01:17:28.899 --> 01:17:33.819
+in a presentation. And do I have the ability to bring that
+
+1416
+01:17:33.819 --> 01:17:36.609
+up or keoki? Do you do that for me?
+
+1417
+01:17:37.162 --> 01:17:39.392
+Or someone in the back.
+
+1418
+01:17:39.392 --> 01:17:40.632
+Thank you.
+
+1419
+01:17:41.362 --> 01:17:43.562
+It's all the way at the bottom.
+
+1420
+01:17:43.562 --> 01:17:45.982
+The very last attachment.
+
+1421
+01:17:47.102 --> 01:17:51.432
+and if you can go to presentation mode,
+
+1422
+01:18:08.042 --> 01:18:12.882
+thank you. Am I able to advance the slide myself?
+
+1423
+01:18:12.882 --> 01:18:16.992
+Perfect. All right. Wonderful as I stated earlier, um,
+
+1424
+01:18:16.992 --> 01:18:20.232
+Marco and I have been working on the presentation and we
+
+1425
+01:18:20.232 --> 01:18:22.512
+look forward to providing you a summary.
+
+1426
+01:18:22.512 --> 01:18:25.854
+So, a few little updates on the background of Title 9. As
+
+1427
+01:18:25.854 --> 01:18:29.196
+you might recall um about 4 years ago title name policies
+
+1428
+01:18:29.196 --> 01:18:33.432
+were updated significantly in 2020 and effective August
+
+1429
+01:18:33.432 --> 01:18:36.522
+August 1st. We have some updates to those policies,
+
+1430
+01:18:36.522 --> 01:18:41.562
+particularly related around new non-discrimination, um,
+
+1431
+01:18:41.562 --> 01:18:45.172
+procedures and additionally, an expansion of the definition
+
+1432
+01:18:45.172 --> 01:18:47.922
+of harassment that can occur around being discriminated,
+
+1433
+01:18:47.922 --> 01:18:51.182
+against based on your sex characteristics, gender,
+
+1434
+01:18:51.182 --> 01:18:54.462
+identity, sexual orientation and I'll explain a little bit
+
+1435
+01:18:54.462 --> 01:18:56.922
+more about that as we go along.
+
+1436
+01:18:56.922 --> 01:18:59.752
+I do want to emphasize that discrimination has also been
+
+1437
+01:18:59.752 --> 01:19:03.196
+expanded to include sex. Stereotypes pregnancy and related
+
+1438
+01:19:03.196 --> 01:19:04.432
+conditions.
+
+1439
+01:19:04.432 --> 01:19:07.982
+There are a number of ways now that a complaint or a
+
+1440
+01:19:07.982 --> 01:19:10.842
+concern that comes our way or that we become aware of will
+
+1441
+01:19:10.842 --> 01:19:13.630
+qualify under Title 9 and require investigating under those
+
+1442
+01:19:13.630 --> 01:19:17.744
+policies as opposed to in the 2020 regulations. It was a
+
+1443
+01:19:17.745 --> 01:19:22.106
+bit more stringent and difficult to qualify under Title 9.
+
+1444
+01:19:22.106 --> 01:19:24.602
+Although there were a number of other policies we would um
+
+1445
+01:19:24.602 --> 01:19:29.162
+investigate particularly in the UCP around uh sex
+
+1446
+01:19:29.162 --> 01:19:31.082
+harassment claim that might come forward.
+
+1447
+01:19:32.022 --> 01:19:34.897
+Just a list of the policies that we're bringing forward
+
+1448
+01:19:34.897 --> 01:19:36.902
+tonight, which I'm going to describe briefly as I go
+
+1449
+01:19:36.902 --> 01:19:38.632
+through the next slides.
+
+1450
+01:19:38.632 --> 01:19:43.938
+The um policies that are in the 4000 series will be staff
+
+1451
+01:19:43.938 --> 01:19:48.162
+policies. The 5000 series will be student policies and then
+
+1452
+01:19:48.162 --> 01:19:50.862
+any other policies with different numbers? Uh, tend to be
+
+1453
+01:19:50.862 --> 01:19:55.602
+more generic as, in example of non-discrimination and UCP.
+
+1454
+01:19:57.222 --> 01:20:02.074
+I think 1 of the pieces to really take under consideration
+
+1455
+01:20:02.074 --> 01:20:06.202
+are the key takeaways um, or some essential takeaways in
+
+1456
+01:20:06.322 --> 01:20:08.499
+the policies that I'm just going to highlight for you,
+
+1457
+01:20:08.499 --> 01:20:13.161
+briefly 1 is that, uh, complaint filing is much easier.
+
+1458
+01:20:13.162 --> 01:20:14.062
+Now,
+
+1459
+01:20:14.062 --> 01:20:17.493
+Particularly related to the fact that if we hear something
+
+1460
+01:20:17.493 --> 01:20:20.583
+or we see something in writing, whether or not you tell us,
+
+1461
+01:20:20.583 --> 01:20:23.907
+you want to um, have it filed under that policy. We need to
+
+1462
+01:20:23.907 --> 01:20:26.763
+take note of that and then streamline the way that you can
+
+1463
+01:20:26.763 --> 01:20:29.763
+get that, um, procedure followed up on.
+
+1464
+01:20:29.763 --> 01:20:32.193
+Additionally, as I mentioned earlier, there's a broader
+
+1465
+01:20:32.193 --> 01:20:36.448
+harassment definition that includes, um, the way in which
+
+1466
+01:20:36.448 --> 01:20:40.273
+we determine whether or not it will qualify under the 2029
+
+1467
+01:20:40.273 --> 01:20:44.473
+policies. It had to be both subjectively and if objectively
+
+1468
+01:20:44.473 --> 01:20:50.773
+offensive and severe or pervasive, um, now it can also just
+
+1469
+01:20:50.773 --> 01:20:54.913
+be objectively offensive. So we use some broader,
+
+1470
+01:20:54.913 --> 01:20:58.528
+definitions to explain how it may, or may not qualify. And
+
+1471
+01:20:58.528 --> 01:21:01.264
+then as I mentioned earlier the expanded protections around
+
+1472
+01:21:01.265 --> 01:21:05.023
+gender identity sexual orientation, sexual stereotypes
+
+1473
+01:21:05.023 --> 01:21:08.413
+which we are seeing come up a bit already this year and
+
+1474
+01:21:08.413 --> 01:21:11.293
+then characteristic sex characteristics.
+
+1475
+01:21:11.293 --> 01:21:14.768
+A new piece of the title 9 policies includes accommodations
+
+1476
+01:21:14.768 --> 01:21:18.155
+related to pregnancy that requires that for pregnant
+
+1477
+01:21:18.155 --> 01:21:22.283
+students and employees that we assure them of not being
+
+1478
+01:21:22.283 --> 01:21:25.376
+discriminated against within our Leah, which is our school
+
+1479
+01:21:25.376 --> 01:21:26.272
+district.
+
+1480
+01:21:26.273 --> 01:21:29.383
+And there's a much broader expansion of training
+
+1481
+01:21:29.383 --> 01:21:32.843
+requirements. So now we are required to train all
+
+1482
+01:21:32.843 --> 01:21:36.143
+employees, annually on Title, 9 and sex, discrimination
+
+1483
+01:21:36.143 --> 01:21:39.773
+policies and procedures. Additionally, there's an expanded
+
+1484
+01:21:39.773 --> 01:21:43.223
+training component that includes those that are directly
+
+1485
+01:21:43.223 --> 01:21:48.323
+involved in Title, 9 policies, 1 would be sort of an upper
+
+1486
+01:21:48.371 --> 01:21:51.593
+um, level of who might be involved in investigating, or
+
+1487
+01:21:51.593 --> 01:21:54.648
+researching those policies, assistant soups soups. Some of
+
+1488
+01:21:54.649 --> 01:21:58.443
+those people that are working directly on it directors. And
+
+1489
+01:21:58.443 --> 01:22:00.854
+then there's a level in the middle that includes people
+
+1490
+01:22:00.863 --> 01:22:04.163
+that are categorized as confidential employees. They're not
+
+1491
+01:22:04.163 --> 01:22:07.223
+necessarily what we would categorize as confidential
+
+1492
+01:22:07.223 --> 01:22:10.223
+employees. Typically, there are those employees that might
+
+1493
+01:22:10.391 --> 01:22:14.663
+um, be privy to or around people who might be talking to
+
+1494
+01:22:14.683 --> 01:22:17.229
+them about things like this that could occur to them.
+
+1495
+01:22:17.230 --> 01:22:19.883
+Typically, some of those folks will include your Council
+
+1496
+01:22:19.883 --> 01:22:22.943
+counselors and mental health staff, so they have a
+
+1497
+01:22:22.943 --> 01:22:26.435
+specifically designed training. And then, lastly, um, all
+
+1498
+01:22:26.436 --> 01:22:26.453
+the
+
+1499
+01:22:26.453 --> 01:22:27.543
+Students.
+
+1500
+01:22:27.543 --> 01:22:30.803
+Need to have age appropriate training and information
+
+1501
+01:22:30.803 --> 01:22:33.513
+provided. All of those trainings have either been completed
+
+1502
+01:22:33.513 --> 01:22:35.233
+or are currently underway.
+
+1503
+01:22:37.083 --> 01:22:40.063
+The other piece that's really important Within These
+
+1504
+01:22:40.063 --> 01:22:43.783
+policies is the grievance procedures. So, with the title 9
+
+1505
+01:22:43.783 --> 01:22:47.947
+policy violation, we have new administrative regulations
+
+1506
+01:22:47.947 --> 01:22:50.563
+regulations that talk about what the grievance procedures
+
+1507
+01:22:50.563 --> 01:22:54.203
+will include and I provided you, with some updates. There
+
+1508
+01:22:54.203 --> 01:22:56.233
+there's a, a scope of the definition.
+
+1509
+01:22:56.233 --> 01:23:00.484
+The way that we respond to and support victims, um what the
+
+1510
+01:23:00.485 --> 01:23:03.335
+procedures involve particularly around something new,
+
+1511
+01:23:03.335 --> 01:23:07.115
+that's called an informal resolution process. So when a
+
+1512
+01:23:07.115 --> 01:23:09.652
+complaint comes in and we decide or determine that it does
+
+1513
+01:23:09.652 --> 01:23:13.264
+qualify under Title 9, we have the opportunity to First
+
+1514
+01:23:13.265 --> 01:23:16.415
+determine whether or not both the respondent, the people
+
+1515
+01:23:16.415 --> 01:23:18.995
+that have been accused of something, the complainant those
+
+1516
+01:23:18.995 --> 01:23:21.715
+that have brought the concerns forward are interested in
+
+1517
+01:23:21.715 --> 01:23:25.145
+and willing to consider an informal resolution process.
+
+1518
+01:23:25.145 --> 01:23:29.325
+We have to identify supportive measures. Um, of course, as
+
+1519
+01:23:29.325 --> 01:23:33.225
+always not necessarily new, we have to ensure that, um,
+
+1520
+01:23:33.225 --> 01:23:36.945
+victims and those that are responding to those claims are
+
+1521
+01:23:36.945 --> 01:23:39.945
+not retaliated against, there's the expansion of the
+
+1522
+01:23:39.945 --> 01:23:42.375
+pregnancy and related accommodations, and then the training
+
+1523
+01:23:42.375 --> 01:23:44.475
+requirements that I mentioned earlier,
+
+1524
+01:23:44.475 --> 01:23:48.605
+This slide talks a bit about student policy updates.
+
+1525
+01:23:48.605 --> 01:23:52.747
+A big component of the updates. Within Title, 9 includes an
+
+1526
+01:23:52.747 --> 01:23:56.469
+entirely new update to non-discrimination. There's a policy
+
+1527
+01:23:56.470 --> 01:24:00.925
+specific to title non non-discrimination. Um, and
+
+1528
+01:24:00.925 --> 01:24:04.255
+additionally, we have an expanded. Um,
+
+1529
+01:24:04.255 --> 01:24:08.382
+Guidance around requirements for locating, those postings.
+
+1530
+01:24:08.382 --> 01:24:11.860
+Making sure they're very transparent. We have to include,
+
+1531
+01:24:11.861 --> 01:24:15.305
+um, them on our website, which we did before, but we have a
+
+1532
+01:24:15.305 --> 01:24:18.725
+broader, um, understanding now of where we have to put
+
+1533
+01:24:18.725 --> 01:24:20.165
+those items.
+
+1534
+01:24:20.165 --> 01:24:24.975
+And then, um, an expansion around. Um, the pregnancy and
+
+1535
+01:24:25.015 --> 01:24:28.128
+child birth, which I explained to include uh, married
+
+1536
+01:24:28.128 --> 01:24:30.074
+pregnant or parenting students.
+
+1537
+01:24:31.325 --> 01:24:35.925
+The policy updates related to employee again. Expand the
+
+1538
+01:24:35.925 --> 01:24:39.105
+non-discrimination piece we have, um, the
+
+1539
+01:24:39.105 --> 01:24:41.400
+non-discrimination policy that was already in place. The
+
+1540
+01:24:41.400 --> 01:24:44.675
+4030 we have, um, expansion around, lactation
+
+1541
+01:24:44.675 --> 01:24:49.065
+accommodations. And then, um, updated policies related to
+
+1542
+01:24:49.065 --> 01:24:52.095
+sex discrimination and sex-based harassment.
+
+1543
+01:24:52.095 --> 01:24:55.197
+Are uniform, complaint procedures coming forward tonight
+
+1544
+01:24:55.197 --> 01:24:56.644
+with an update.
+
+1545
+01:24:56.645 --> 01:25:00.975
+And um, further non-discrimination and and uh
+
+1546
+01:25:00.975 --> 01:25:04.275
+discrimination around District programs and activities.
+
+1547
+01:25:04.875 --> 01:25:08.535
+because we need to ensure that because of an allegation
+
+1548
+01:25:08.535 --> 01:25:11.316
+that may be made or someone is victimized by something
+
+1549
+01:25:11.316 --> 01:25:14.219
+that's included within Title 9 that they are not
+
+1550
+01:25:14.220 --> 01:25:17.895
+discriminated against in a way that wouldn't, um, involve
+
+1551
+01:25:17.895 --> 01:25:22.320
+not being able to access a program at work, a program at
+
+1552
+01:25:22.320 --> 01:25:24.135
+school or the instructional program.
+
+1553
+01:25:25.745 --> 01:25:29.455
+That's a general policy. Kind of overview of everything
+
+1554
+01:25:29.455 --> 01:25:32.008
+that's coming forward. We'd love to answer any questions
+
+1555
+01:25:32.008 --> 01:25:35.399
+that you have. You can see, um, if you add them up, we've
+
+1556
+01:25:35.400 --> 01:25:39.225
+got about 38 updates, or new policies and regulations. So
+
+1557
+01:25:39.385 --> 01:25:42.840
+hope that um we've provided you with enough of a summary
+
+1558
+01:25:42.840 --> 01:25:45.249
+and we're here to answer any questions that you may have
+
+1559
+01:25:45.249 --> 01:25:47.871
+and Marco and I are probably going to tag team and that a
+
+1560
+01:25:47.871 --> 01:25:48.734
+little bit
+
+1561
+01:25:48.735 --> 01:25:51.066
+I was going to start off. Do we have any public comment on
+
+1562
+01:25:51.066 --> 01:25:52.506
+this item?
+
+1563
+01:25:52.506 --> 01:25:55.451
+Okay, and if there's anyone who wishes to make public
+
+1564
+01:25:55.451 --> 01:25:59.025
+comment, please log on in the next minute or 2 to do so,
+
+1565
+01:25:59.026 --> 01:26:00.406
+um, we can do that.
+
+1566
+01:26:00.406 --> 01:26:03.886
+um, any questions from board members right now, trustee
+
+1567
+01:26:03.886 --> 01:26:05.416
+Blackman and then trustee quo,
+
+1568
+01:26:05.416 --> 01:26:07.626
+So, I probably have a couple questions while I asked some
+
+1569
+01:26:07.626 --> 01:26:10.576
+now. So, I understand this is being rolled out by the
+
+1570
+01:26:10.576 --> 01:26:13.486
+Department of Education and part of something is presented
+
+1571
+01:26:13.486 --> 01:26:16.096
+to us. A while ago, is that it's actually tied to Federal
+
+1572
+01:26:16.096 --> 01:26:19.036
+funding for schools specific to the programs that are
+
+1573
+01:26:19.036 --> 01:26:20.986
+federally funded correct
+
+1574
+01:26:21.000 --> 01:26:24.551
+That is a piece of of the regulation, that's coming
+
+1575
+01:26:24.551 --> 01:26:27.602
+forward. Yes. So have, we received anything from the
+
+1576
+01:26:27.602 --> 01:26:30.686
+federal government stating that failure to enact the
+
+1577
+01:26:30.686 --> 01:26:33.986
+changes in Title 9, will result in them pulling funds from
+
+1578
+01:26:33.986 --> 01:26:36.446
+our school or our district. So they haven't issued
+
+1579
+01:26:36.446 --> 01:26:40.226
+anything. Stating that the that this is, okay? I'm seeing,
+
+1580
+01:26:40.226 --> 01:26:43.190
+um, assistant superintendent, Campbell shake its head, you
+
+1581
+01:26:43.190 --> 01:26:46.496
+know? And I, I have not seen anything. No, not nor am I
+
+1582
+01:26:46.496 --> 01:26:49.514
+aware of that at this time. So I'm gonna ask a couple
+
+1583
+01:26:49.514 --> 01:26:51.626
+questions and I'll probably let somebody else and come
+
+1584
+01:26:51.626 --> 01:26:54.026
+back. Um, the next question is, do we actually have any
+
+1585
+01:26:54.026 --> 01:26:55.676
+evidence? Um, well
+
+1586
+01:26:55.676 --> 01:26:59.166
+Who approves changes to law?
+
+1587
+01:26:59.166 --> 01:27:02.721
+And maybe this is profun by asking it, but I have to ask it
+
+1588
+01:27:02.736 --> 01:27:06.416
+because it's we're being asked to update Title 9 and I'm
+
+1589
+01:27:06.416 --> 01:27:09.426
+going to ask if Congress is actually approved. The changes
+
+1590
+01:27:09.426 --> 01:27:10.536
+to the law.
+
+1591
+01:27:10.996 --> 01:27:14.876
+If anybody knows that answer, that would be most helpful.
+
+1592
+01:27:14.926 --> 01:27:20.186
+So the regulations are they come out of the Department of
+
+1593
+01:27:20.186 --> 01:27:24.686
+Education tied to the funding that is, uh, provided by the
+
+1594
+01:27:24.686 --> 01:27:28.166
+Department of Education. So, in the overall Congress
+
+1595
+01:27:28.166 --> 01:27:30.806
+budget, they allocate so much money to the Department of
+
+1596
+01:27:30.806 --> 01:27:33.962
+Education and the department determines how they're going
+
+1597
+01:27:33.962 --> 01:27:37.766
+to divvy that up and they determine the regs, that govern
+
+1598
+01:27:37.766 --> 01:27:39.626
+the money that's received.
+
+1599
+01:27:39.626 --> 01:27:43.284
+So no indirectly. The Congress does not pass the regs that
+
+1600
+01:27:43.284 --> 01:27:47.636
+come out of the Department of um, education. Okay, so Town
+
+1601
+01:27:47.636 --> 01:27:49.176
+9 is a regulation. It's not law.
+
+1602
+01:27:50.766 --> 01:27:56.986
+Oh no, there are federal laws. Um, but if you read through
+
+1603
+01:27:57.000 --> 01:27:59.986
+each of these policies, you'll see which ones are regs and
+
+1604
+01:28:00.000 --> 01:28:03.226
+which ones are laws, the laws are approved by the Congress,
+
+1605
+01:28:03.226 --> 01:28:05.896
+the regs come out of the Department of Ed.
+
+1606
+01:28:05.896 --> 01:28:08.826
+I, I just want the reason why I asked the clarification is
+
+1607
+01:28:08.826 --> 01:28:11.126
+to try and understand, um,
+
+1608
+01:28:11.126 --> 01:28:14.926
+Where we stand with enacting the changes, if aspects of it,
+
+1609
+01:28:14.926 --> 01:28:16.906
+have not been approved by Congress.
+
+1610
+01:28:22.526 --> 01:28:26.406
+Sorry. I'm sure I can comment on that right now trustee
+
+1611
+01:28:26.406 --> 01:28:28.686
+Blackman, but I can look into that and Marco and I can
+
+1612
+01:28:28.686 --> 01:28:32.539
+bring some information back to you. What I would say in
+
+1613
+01:28:32.539 --> 01:28:35.585
+connection to what superintendent Funk said is yes the
+
+1614
+01:28:35.749 --> 01:28:38.756
+Department of Education is involved but also Title 9 as I
+
+1615
+01:28:38.756 --> 01:28:42.605
+think we all know, as a federal law that, um, specifically
+
+1616
+01:28:42.626 --> 01:28:45.398
+prohibits certain types, of behavior. And then
+
+1617
+01:28:45.398 --> 01:28:47.785
+additionally, with all of these policies and procedures
+
+1618
+01:28:47.786 --> 01:28:51.306
+coming out of csba and updates related to that, there are a
+
+1619
+01:28:51.306 --> 01:28:54.546
+number of assembly bills, Senate bills, other legal, um,
+
+1620
+01:28:54.546 --> 01:28:57.657
+parameters that feed into the policies that we're updating
+
+1621
+01:28:57.657 --> 01:28:58.535
+tonight.
+
+1622
+01:28:58.845 --> 01:29:02.245
+Okay, that's helpful. I'll I'll see the floor for now. I
+
+1623
+01:29:02.245 --> 01:29:03.925
+have other questions. I'll ask them later.
+
+1624
+01:29:08.085 --> 01:29:12.025
+I was just curious about the timeline between the feds
+
+1625
+01:29:12.025 --> 01:29:16.225
+regulation that was released in April and then when did csb
+
+1626
+01:29:16.225 --> 01:29:18.625
+come out with theirs and then now we're doing it.
+
+1627
+01:29:18.625 --> 01:29:21.848
+In septembar, is it? I imagine it was because we're waiting
+
+1628
+01:29:21.849 --> 01:29:24.815
+on csba. Thank you. I think that's a very good question.
+
+1629
+01:29:24.815 --> 01:29:26.975
+You know we were waiting for all of the guidelines to be
+
+1630
+01:29:27.000 --> 01:29:30.287
+provided to us. In fact some of the updates were available
+
+1631
+01:29:30.287 --> 01:29:33.875
+from csba but new policies. We actually didn't even have
+
+1632
+01:29:33.875 --> 01:29:37.295
+from csba this summer and we're waiting for them to come
+
+1633
+01:29:37.295 --> 01:29:40.145
+into play. So we were starting to implement some of this
+
+1634
+01:29:40.145 --> 01:29:43.365
+work and plan for it based on what we knew was coming down.
+
+1635
+01:29:43.365 --> 01:29:47.003
+Um and then to get all the policies ready to update for you
+
+1636
+01:29:47.003 --> 01:29:48.965
+and here we are.
+
+1637
+01:29:48.965 --> 01:29:50.235
+Thank you.
+
+1638
+01:29:50.235 --> 01:29:54.381
+Can I just build on that? So you have all of the ones you,
+
+1639
+01:29:54.381 --> 01:29:57.645
+um, brought to us. You did get something from csba on them.
+
+1640
+01:29:57.645 --> 01:30:00.885
+Yes bye. Bye, this point. Okay, it's just peace me. I
+
+1641
+01:30:00.885 --> 01:30:03.925
+assumed they were coming in. Okay. Uh in some cases yes the
+
+1642
+01:30:03.965 --> 01:30:06.870
+new policy around non-discrimination was something that we
+
+1643
+01:30:06.870 --> 01:30:09.525
+had to work a little bit more closely with legal on in
+
+1644
+01:30:09.625 --> 01:30:13.045
+order to get a draft working and then when csb came out
+
+1645
+01:30:13.045 --> 01:30:16.405
+came out, we um, connected the 2. But we were already
+
+1646
+01:30:16.405 --> 01:30:18.805
+drafting it in advance because we didn't get to want to get
+
+1647
+01:30:18.805 --> 01:30:22.965
+too far beyond the August 1 timeline, okay? And so we use
+
+1648
+01:30:22.965 --> 01:30:27.285
+the guidelines from csba and then are there any that we had
+
+1649
+01:30:27.285 --> 01:30:28.515
+to get our own legal?
+
+1650
+01:30:28.515 --> 01:30:31.875
+Um, involvement in or did we have enough guidance from csba
+
+1651
+01:30:31.875 --> 01:30:32.925
+to go off of?
+
+1652
+01:30:33.185 --> 01:30:36.915
+Ultimately, we had guidance from csba on everything I'm
+
+1653
+01:30:36.915 --> 01:30:39.585
+looking at the policies to see which 1, I think it's the
+
+1654
+01:30:39.585 --> 01:30:42.405
+0410 on the slide that we're on right now.
+
+1655
+01:30:43.255 --> 01:30:45.125
+Excuse me.
+
+1656
+01:30:45.125 --> 01:30:48.755
+yeah, the 0410 is the policy that we were beginning to
+
+1657
+01:30:48.755 --> 01:30:51.331
+draft on our own and then had legal weigh in and then
+
+1658
+01:30:51.331 --> 01:30:54.355
+updated for csba when it came out and
+
+1659
+01:30:54.355 --> 01:30:58.205
+Gosh, it came out in August. Okay, great. Thank you. You're
+
+1660
+01:30:58.206 --> 01:30:58.695
+welcome.
+
+1661
+01:30:59.695 --> 01:31:03.695
+And just I I was looking at another.
+
+1662
+01:31:03.695 --> 01:31:06.760
+School District board agenda for the this meeting tonight
+
+1663
+01:31:06.760 --> 01:31:10.355
+and they have virtually the same exact board policy. We
+
+1664
+01:31:10.355 --> 01:31:13.255
+might have talked to each other. Yes, yes. Um, on the
+
+1665
+01:31:13.255 --> 01:31:15.811
+agenda tonight and I know it's been a topic of discussion
+
+1666
+01:31:15.811 --> 01:31:19.195
+at multiple districts. Um, so the expectation is because
+
+1667
+01:31:19.195 --> 01:31:23.155
+this all went in it, you know, April or August 1st that we
+
+1668
+01:31:23.155 --> 01:31:27.295
+should now be then updating all of these. Um, in order to
+
+1669
+01:31:27.295 --> 01:31:28.855
+be in compliance with
+
+1670
+01:31:29.588 --> 01:31:33.138
+State laws and federal regulations precisely.
+
+1671
+01:31:36.698 --> 01:31:39.108
+Any other trustee Luckman.
+
+1672
+01:31:39.308 --> 01:31:42.228
+Just go up with some questions and some of the changes that
+
+1673
+01:31:42.228 --> 01:31:45.576
+were brought about by the update. The 2024 update to Town
+
+1674
+01:31:45.576 --> 01:31:48.508
+Line there are 2 terms that I would like if you could
+
+1675
+01:31:48.508 --> 01:31:51.948
+explain the definition of them that would be helpful, 6
+
+1676
+01:31:51.948 --> 01:31:54.588
+stereotypes and sex characteristics. Those are new to the
+
+1677
+01:31:54.588 --> 01:31:55.488
+language.
+
+1678
+01:32:01.878 --> 01:32:06.443
+I'll take the, um, stereotypes and you just let us know
+
+1679
+01:32:06.478 --> 01:32:08.998
+which, uh, policy representing, please? Yeah. It's
+
+1680
+01:32:09.000 --> 01:32:12.262
+actually, in almost all of them. Usually in the first 2
+
+1681
+01:32:12.262 --> 01:32:15.310
+paragraphs. There's something about a list and it includes
+
+1682
+01:32:15.310 --> 01:32:18.778
+changes, which include things like marital family. Status,
+
+1683
+01:32:18.778 --> 01:32:21.994
+lactation Etc, goes on in, in almost, always it lists. The
+
+1684
+01:32:21.994 --> 01:32:25.404
+sex stereotypes and sex characteristics. I think in the
+
+1685
+01:32:25.405 --> 01:32:27.898
+typical language we've seen used in the last couple of
+
+1686
+01:32:27.898 --> 01:32:30.872
+years. All the other terms are very common. I don't think
+
+1687
+01:32:30.872 --> 01:32:33.597
+these 2 are commonly understood.
+
+1688
+01:32:33.628 --> 01:32:37.580
+As sex stereotypes. Um, in fact, we're working on
+
+1689
+01:32:37.580 --> 01:32:42.088
+something. Uh, thank you recently where, um, someone makes
+
+1690
+01:32:42.088 --> 01:32:47.243
+a comment about, um, a person's gender that references the
+
+1691
+01:32:47.243 --> 01:32:52.095
+way, um, their, their specific gender and might be a
+
+1692
+01:32:52.096 --> 01:32:56.228
+stereotype to that, uh, there are a lot of terms that
+
+1693
+01:32:56.228 --> 01:32:58.808
+people use for, for instance, to maybe describe.
+
+1694
+01:32:58.888 --> 01:33:02.988
+Males or people who identify as male or females, or people
+
+1695
+01:33:03.000 --> 01:33:06.428
+who identify as females that stereotypes them in a way
+
+1696
+01:33:06.428 --> 01:33:07.508
+that's derogatory.
+
+1697
+01:33:07.508 --> 01:33:10.118
+Um, I'm trying to think of an example. I don't want to give
+
+1698
+01:33:10.118 --> 01:33:12.398
+the example that we're working on right now because I, I
+
+1699
+01:33:12.398 --> 01:33:15.878
+need to hold that confidentially. Um, but I think any
+
+1700
+01:33:15.878 --> 01:33:18.398
+number of us right now are thinking of terms that people
+
+1701
+01:33:18.398 --> 01:33:21.406
+have used in our heads of the way. That folks might
+
+1702
+01:33:21.407 --> 01:33:23.543
+stereotype us because of the gender they believe we're in
+
+1703
+01:33:23.543 --> 01:33:28.118
+and it's derogatory. Um, characteristics. Um, sex
+
+1704
+01:33:28.118 --> 01:33:30.638
+characteristics, do you want to chime in there?
+
+1705
+01:33:30.638 --> 01:33:33.358
+Yeah, I'd be more than happy to give you my best
+
+1706
+01:33:33.358 --> 01:33:36.438
+interpretation of it and can report back later. Uh but uh
+
+1707
+01:33:36.438 --> 01:33:39.348
+something that comes up is disposition um characteristics
+
+1708
+01:33:39.348 --> 01:33:42.258
+of appearance. Um those are 2 items that come up.
+
+1709
+01:33:42.258 --> 01:33:43.388
+Yeah.
+
+1710
+01:33:43.398 --> 01:33:46.486
+So the reason why I ask is because there's love confusion
+
+1711
+01:33:46.486 --> 01:33:49.978
+about the term gender and sex. Sex characteristics isn't
+
+1712
+01:33:49.978 --> 01:33:51.358
+gender identity related.
+
+1713
+01:33:51.358 --> 01:33:54.888
+So when we use the term, somebody who presents themselves
+
+1714
+01:33:54.888 --> 01:33:57.888
+as say, female or male, that's actually sex related, not
+
+1715
+01:33:57.888 --> 01:34:01.345
+gender. And that would be in the a woman versus man would
+
+1716
+01:34:01.346 --> 01:34:03.528
+be a gender identity, and the weight 1 would want to
+
+1717
+01:34:03.528 --> 01:34:06.468
+express themselves. So I want to make sure that if we're
+
+1718
+01:34:06.468 --> 01:34:09.168
+providing some clarification as to the definition that it's
+
+1719
+01:34:09.168 --> 01:34:12.510
+very clear that those the use of the terms is very clear
+
+1720
+01:34:12.511 --> 01:34:15.708
+and consistent. So if you could come back with what those
+
+1721
+01:34:15.708 --> 01:34:18.588
+are defined, as I know, I would help understand what it
+
+1722
+01:34:18.588 --> 01:34:21.939
+means because I really don't and I want to thank you. Well
+
+1723
+01:34:21.940 --> 01:34:22.428
+certainly
+
+1724
+01:34:27.331 --> 01:34:30.647
+Any other do we have? Any anyone login for public comment?
+
+1725
+01:34:30.647 --> 01:34:31.691
+Nope. Okay.
+
+1726
+01:34:32.671 --> 01:34:35.841
+so, um,
+
+1727
+01:34:35.841 --> 01:34:39.171
+I want to reserve comments. Um, I'm a little concerned with
+
+1728
+01:34:39.171 --> 01:34:42.591
+this and actually any District absorbing these right now.
+
+1729
+01:34:42.591 --> 01:34:46.021
+Um because there are several large lawsuits that are
+
+1730
+01:34:46.021 --> 01:34:48.151
+underway in the federal courts and the recent decision
+
+1731
+01:34:48.151 --> 01:34:51.391
+August 16th by the Supreme Court of the United States to
+
+1732
+01:34:51.391 --> 01:34:55.771
+allow the court cases to go through, not to suspend aspects
+
+1733
+01:34:55.771 --> 01:34:59.371
+of those court cases to allow the rest of the new title,
+
+1734
+01:34:59.371 --> 01:35:03.691
+um, 9 to be accepted, but rather to hold all of those
+
+1735
+01:35:03.691 --> 01:35:07.135
+changes. Until these, uh, there's 3 pretty large court,
+
+1736
+01:35:07.135 --> 01:35:10.711
+cases affecting 26 States and 1 court case affects
+
+1737
+01:35:10.711 --> 01:35:12.031
+essentially every state.
+
+1738
+01:35:12.031 --> 01:35:16.021
+So my concern is by absorbing these changes. Now, knowing
+
+1739
+01:35:16.021 --> 01:35:18.801
+that scotus is already turned it down. Saying that the
+
+1740
+01:35:18.801 --> 01:35:21.441
+actual individuals who have brought these cases have
+
+1741
+01:35:21.441 --> 01:35:22.341
+standing,
+
+1742
+01:35:22.341 --> 01:35:25.671
+And given the actual details of that standing and what the
+
+1743
+01:35:25.671 --> 01:35:28.941
+statements were from the courts. I'm concerned absorbing
+
+1744
+01:35:28.941 --> 01:35:31.683
+any of these changes right now because in all likelihood
+
+1745
+01:35:31.683 --> 01:35:34.460
+within the next year, many of the things we're absorbing
+
+1746
+01:35:34.461 --> 01:35:37.768
+right now will actually be rendered under judicial review
+
+1747
+01:35:37.768 --> 01:35:41.300
+is not acceptable. 1 of the clear statements by the courts.
+
+1748
+01:35:41.301 --> 01:35:44.421
+Is that the definition of Sex and the origination of Title
+
+1749
+01:35:44.421 --> 01:35:49.311
+9 was very clear absorbing and changing that definition to
+
+1750
+01:35:49.311 --> 01:35:52.401
+absorb other rights and conditions Act.
+
+1751
+01:35:52.401 --> 01:35:56.661
+Actually is seen by the courts is not actually file
+
+1752
+01:35:56.661 --> 01:35:58.911
+following the original intent of Title 9.
+
+1753
+01:35:58.911 --> 01:36:02.871
+So, whereas we probably need titles or other regulations to
+
+1754
+01:36:02.871 --> 01:36:06.171
+address those needs for those individuals, the courts May,
+
+1755
+01:36:06.171 --> 01:36:08.331
+and I think I'm concerned right now. We have a supreme
+
+1756
+01:36:08.331 --> 01:36:10.341
+court that is very sympathetic to this.
+
+1757
+01:36:10.341 --> 01:36:13.506
+So my concern is moving ahead with changes when in fact in
+
+1758
+01:36:13.506 --> 01:36:15.902
+the next couple of months, who knows what's going to happen
+
+1759
+01:36:15.941 --> 01:36:18.421
+with the election. But certainly in these court cases, we
+
+1760
+01:36:18.421 --> 01:36:22.241
+may end up being reverting or coming back to all of these
+
+1761
+01:36:22.241 --> 01:36:25.505
+pieces. So I would ask before we move ahead to quickly that
+
+1762
+01:36:25.505 --> 01:36:28.241
+we might actually want to get some feedback on where we
+
+1763
+01:36:28.241 --> 01:36:31.961
+stand should the reading, and maybe we need a legal expert
+
+1764
+01:36:31.961 --> 01:36:35.681
+in either a federal judicial review to give us an update as
+
+1765
+01:36:35.681 --> 01:36:38.561
+to whether they think in fact, some of this is actually
+
+1766
+01:36:38.573 --> 01:36:41.777
+heading to be reversed in some ways. I said that because I
+
+1767
+01:36:41.777 --> 01:36:43.721
+just don't want to be back here having to redo this all
+
+1768
+01:36:43.721 --> 01:36:46.613
+over again. We spent a lot of time on it to begin with. Um,
+
+1769
+01:36:46.613 --> 01:36:49.623
+I'm am a little surprised given some of the legal reviews
+
+1770
+01:36:49.623 --> 01:36:54.080
+of the changes, the fact that there were 2, roughly, 250
+
+1771
+01:36:54.081 --> 01:36:57.281
+revisions done to create the final document we have seen
+
+1772
+01:36:57.281 --> 01:36:59.651
+and thousands and thousands of public comments.
+
+1773
+01:36:59.651 --> 01:37:02.573
+Um, my understanding is that the very last review that was
+
+1774
+01:37:02.573 --> 01:37:06.013
+supposed to be issued was halted and that this new title 9
+
+1775
+01:37:06.013 --> 01:37:07.283
+was issued.
+
+1776
+01:37:07.283 --> 01:37:11.093
+And the latest information is that now it's created a whole
+
+1777
+01:37:11.093 --> 01:37:13.265
+series of court cases and when these court cases roll
+
+1778
+01:37:13.265 --> 01:37:14.873
+through they're going to be more
+
+1779
+01:37:14.873 --> 01:37:17.373
+So, whereas I would like us. There's some really good
+
+1780
+01:37:17.373 --> 01:37:20.493
+policies in here. I love the family piece, the lactation
+
+1781
+01:37:20.493 --> 01:37:23.145
+piece and the protections for uh, our pregnant students.
+
+1782
+01:37:23.157 --> 01:37:25.068
+Some of those things have never been addressed before and
+
+1783
+01:37:25.068 --> 01:37:27.512
+they're wonderful. But I do understand that there are
+
+1784
+01:37:27.513 --> 01:37:31.003
+certain things that people feel there are changes. The
+
+1785
+01:37:31.003 --> 01:37:33.550
+speed is you mentioned about how we're able to process
+
+1786
+01:37:33.550 --> 01:37:38.172
+these issues faster actually trampled on due process that
+
+1787
+01:37:38.173 --> 01:37:41.593
+in a court case would actually allow the individual who is
+
+1788
+01:37:41.593 --> 01:37:44.025
+being accused to actually have a greater level of due
+
+1789
+01:37:44.025 --> 01:37:47.799
+process so there are concerns at that level as well. There
+
+1790
+01:37:47.800 --> 01:37:51.933
+are free speech issues. They're first amendment issues that
+
+1791
+01:37:51.943 --> 01:37:54.595
+basically have not been addressed and will be in these
+
+1792
+01:37:54.595 --> 01:37:57.776
+court cases. So again, I'm just going to throw that out
+
+1793
+01:37:57.813 --> 01:38:00.393
+there that we're rushing into this very quickly. I think we
+
+1794
+01:38:00.393 --> 01:38:02.433
+should actually look at what's going on at the federal
+
+1795
+01:38:02.433 --> 01:38:05.823
+level. Maybe the state just wants us to do this anyways and
+
+1796
+01:38:05.823 --> 01:38:08.253
+that we'll redo it when they end up changing it. But I just
+
+1797
+01:38:08.253 --> 01:38:10.653
+want to put that out there. I have plenty of comments, the
+
+1798
+01:38:10.653 --> 01:38:13.773
+document happy to meet separately to review them. But I
+
+1799
+01:38:13.773 --> 01:38:15.123
+just want us to be aware of the
+
+1800
+01:38:15.123 --> 01:38:17.949
+Fact that we're rushing into this very quickly before we've
+
+1801
+01:38:17.949 --> 01:38:20.763
+actually seen the outcome of some of these cases. Thank
+
+1802
+01:38:20.763 --> 01:38:21.033
+you.
+
+1803
+01:38:21.033 --> 01:38:24.603
+Thank you for sharing your concerns. Can I understand by
+
+1804
+01:38:24.603 --> 01:38:29.873
+the word used? Absorb are you um raising an issue with
+
+1805
+01:38:29.873 --> 01:38:33.158
+potentially approving these policies at this time? So
+
+1806
+01:38:33.158 --> 01:38:35.693
+before we even go there,
+
+1807
+01:38:35.693 --> 01:38:40.183
+Does the board concur that you want us to slow down, or is
+
+1808
+01:38:40.183 --> 01:38:42.613
+the board, okay? With us bringing forward the second
+
+1809
+01:38:42.613 --> 01:38:45.613
+reading, uh, at the next board meeting. I was going to, I
+
+1810
+01:38:45.613 --> 01:38:48.289
+was going to comment that say each time there's a new
+
+1811
+01:38:48.289 --> 01:38:51.028
+presidential Administration. There are updates to Title 9,
+
+1812
+01:38:51.028 --> 01:38:54.013
+it was each department of Ed does updates, it it gets
+
+1813
+01:38:54.013 --> 01:38:56.893
+updated every time. So I think we're always going to be
+
+1814
+01:38:56.893 --> 01:38:58.693
+doing updates. I think
+
+1815
+01:38:58.693 --> 01:39:01.087
+We're on Ninth circuit. I don't think there's anything
+
+1816
+01:39:01.087 --> 01:39:04.033
+going on with ninth circuit on there and I think that we
+
+1817
+01:39:04.033 --> 01:39:07.033
+need to be following federal guidelines as they are
+
+1818
+01:39:07.033 --> 01:39:10.775
+currently re and I personally think we need to move forward
+
+1819
+01:39:10.775 --> 01:39:12.222
+with these. I don't know.
+
+1820
+01:39:12.223 --> 01:39:15.390
+where everyone else feels I, I think we need to be moving
+
+1821
+01:39:15.390 --> 01:39:19.332
+forward, so that we are compliant with current federal
+
+1822
+01:39:19.333 --> 01:39:20.833
+regulations as
+
+1823
+01:39:20.833 --> 01:39:24.663
+presented to us by the state and the federal government.
+
+1824
+01:39:27.863 --> 01:39:32.823
+Uh, do we put ourselves at risk, if we slow down and
+
+1825
+01:39:32.823 --> 01:39:35.763
+proceed cautiously and waiting for something that might
+
+1826
+01:39:35.763 --> 01:39:39.183
+take years months for Supreme Court to decide,
+
+1827
+01:39:39.814 --> 01:39:44.426
+I think that's a very good question. Um I do think it's very
+
+1828
+01:39:44.426 --> 01:39:47.354
+important for us to approve the policies. Um and the
+
+1829
+01:39:47.354 --> 01:39:49.904
+absence of having the policies updated were operating in
+
+1830
+01:39:49.904 --> 01:39:54.014
+the dark, we do have law and procedure that we have to
+
+1831
+01:39:54.014 --> 01:39:56.654
+follow. We currently do have Title 9 cases that were
+
+1832
+01:39:56.654 --> 01:39:59.534
+investigating. Um, and I'm very much looking forward. I
+
+1833
+01:39:59.534 --> 01:40:02.174
+think both Marco and I to having the policies adopted so
+
+1834
+01:40:02.174 --> 01:40:06.014
+that we can enact those policies and procedures. Um,
+
+1835
+01:40:06.014 --> 01:40:08.390
+additionally, I think it's very important to note that with
+
+1836
+01:40:08.390 --> 01:40:11.114
+the 2020 policies that came down. There were a lot of
+
+1837
+01:40:11.114 --> 01:40:14.444
+concerns about those policies as as you stated trustee
+
+1838
+01:40:14.444 --> 01:40:17.114
+Blackman. Um, similarly those policies have been up for
+
+1839
+01:40:17.114 --> 01:40:20.894
+debate for almost 4 years. Um and then updates have come
+
+1840
+01:40:20.894 --> 01:40:23.444
+and naturally, I think it's important for you all to know
+
+1841
+01:40:23.444 --> 01:40:26.342
+that with any updates and changes that come, we will update
+
+1842
+01:40:26.342 --> 01:40:29.924
+the policies promptly to reflect new legal guidelines.
+
+1843
+01:40:32.924 --> 01:40:37.224
+Um, yeah, I hear your concerns but this is a current
+
+1844
+01:40:37.224 --> 01:40:39.077
+federal law and I think we need to be following current
+
+1845
+01:40:39.077 --> 01:40:42.083
+federal law. So I'm aligned with proceeding to Second
+
+1846
+01:40:42.084 --> 01:40:42.834
+reading.
+
+1847
+01:40:46.324 --> 01:40:48.614
+trustee quote, you have
+
+1848
+01:40:48.614 --> 01:40:51.884
+Are you what do you like us to move forward?
+
+1849
+01:40:52.624 --> 01:40:56.714
+So I think at this point, we have 3 3 to move forward. So
+
+1850
+01:40:56.714 --> 01:40:59.984
+yes, we do want to proceed to a second reading. Um, if
+
+1851
+01:41:00.000 --> 01:41:03.215
+there's any specific feedback, um, I felt like it was
+
+1852
+01:41:03.215 --> 01:41:06.043
+pretty straightforward and what what I've been reading
+
+1853
+01:41:06.044 --> 01:41:09.464
+along um with everything so I didn't have anything specific
+
+1854
+01:41:09.464 --> 01:41:10.454
+but
+
+1855
+01:41:10.454 --> 01:41:11.624
+um,
+
+1856
+01:41:11.624 --> 01:41:14.684
+if anyone does please, please share that before the next
+
+1857
+01:41:14.684 --> 01:41:17.534
+meeting, so we can kind of address that.
+
+1858
+01:41:17.894 --> 01:41:22.104
+Whatever, but I think um, the consensus is to move forward.
+
+1859
+01:41:22.104 --> 01:41:23.504
+Thank you.
+
+1860
+01:41:23.754 --> 01:41:25.594
+More questions.
+
+1861
+01:41:30.184 --> 01:41:33.104
+That brings us to consent.
+
+1862
+01:41:33.324 --> 01:41:38.404
+Um, that would be h. I n j.
+
+1863
+01:41:38.404 --> 01:41:41.534
+Tonight, is there anything anyone would like to pull from?
+
+1864
+01:41:42.324 --> 01:41:44.104
+Trustee Blackman.
+
+1865
+01:41:44.424 --> 01:41:47.374
+Um, J2 I just have a question.
+
+1866
+01:41:51.264 --> 01:41:53.944
+Otherwise I'll take a motion to approve the rest of them.
+
+1867
+01:41:53.944 --> 01:41:56.784
+I'll make a motion that we approve the consent calendar, h.
+
+1868
+01:41:56.784 --> 01:41:59.224
+I and J minus J2
+
+1869
+01:41:59.594 --> 01:42:01.224
+I'll second.
+
+1870
+01:42:02.254 --> 01:42:06.824
+Um, trustee pisani. Hi, everyone else. Hi, hi, hi. Hi.
+
+1871
+01:42:06.824 --> 01:42:12.594
+All righty J2 is a second reading on um working remotely.
+
+1872
+01:42:13.108 --> 01:42:16.328
+The reason why I want to pull it is really just to address.
+
+1873
+01:42:16.328 --> 01:42:19.208
+Um, I thought it was brought up before when we were
+
+1874
+01:42:19.208 --> 01:42:23.408
+reviewing this but this mostly touches on things like when
+
+1875
+01:42:23.408 --> 01:42:26.618
+there's a pandemic or something really large like
+
+1876
+01:42:26.618 --> 01:42:30.530
+Facilities. Get shut down, fires, whatever it is. The 1
+
+1877
+01:42:30.531 --> 01:42:33.418
+thing, I thought we had brought up with the that discussion
+
+1878
+01:42:33.418 --> 01:42:37.882
+discussion, was though, the ability to work remotely due to
+
+1879
+01:42:38.158 --> 01:42:41.478
+of medical need or necessity. And I thought that was going
+
+1880
+01:42:41.478 --> 01:42:44.068
+was going to be incorporated into this. I didn't see it.
+
+1881
+01:42:44.068 --> 01:42:46.840
+Um, from the point of view, like a, whether it's Ada,
+
+1882
+01:42:46.841 --> 01:42:49.123
+whether it's a medical issue, you're perfectly capable of
+
+1883
+01:42:49.123 --> 01:42:52.138
+doing the work, you just can't physically come into the
+
+1884
+01:42:52.138 --> 01:42:55.438
+office. So, is there something that we can roll into it?
+
+1885
+01:42:55.438 --> 01:42:57.898
+That makes that accommodation, or is this? Policy is
+
+1886
+01:42:57.898 --> 01:43:01.298
+strictly for like large, massive, like emergencies, where
+
+1887
+01:43:01.298 --> 01:43:02.878
+we have to shut down schools
+
+1888
+01:43:03.478 --> 01:43:08.138
+Or there's a remote work plan request in there, right?
+
+1889
+01:43:08.798 --> 01:43:12.598
+Yes I I didn't sorry I didn't see it. That allowed for
+
+1890
+01:43:12.598 --> 01:43:16.698
+things like individual or personal based on health. Some
+
+1891
+01:43:16.698 --> 01:43:19.278
+healthy might be a month-long, something like that. I
+
+1892
+01:43:19.278 --> 01:43:21.418
+didn't see any accommodation. It sounded like it was based
+
+1893
+01:43:21.418 --> 01:43:24.108
+on some sort of big massive emergency need.
+
+1894
+01:43:24.108 --> 01:43:28.038
+It could be taken care of a loved 1. It could be, um, a
+
+1895
+01:43:28.038 --> 01:43:31.068
+personal your personal health, that where you can still do,
+
+1896
+01:43:31.068 --> 01:43:34.818
+the work from home. Um, that's why you submit the plan and
+
+1897
+01:43:34.818 --> 01:43:38.358
+the request, if I can point you to, um, a paragraph in the
+
+1898
+01:43:38.358 --> 01:43:43.698
+policy. Um, for example, in the 41 4113.5, um, fourth
+
+1899
+01:43:43.698 --> 01:43:47.478
+paragraph, uh, excuse me for the paragraph. Yeah. Unless
+
+1900
+01:43:47.478 --> 01:43:50.358
+otherwise approved in advance, and then it goes on to
+
+1901
+01:43:50.358 --> 01:43:53.118
+explain that you shall notify your supervisor. Um, if
+
+1902
+01:43:53.118 --> 01:43:55.714
+you're unable to do your work assignments, due to, you
+
+1903
+01:43:55.715 --> 01:43:59.118
+know, unforeseen circumstances illness, things like that.
+
+1904
+01:43:59.118 --> 01:44:02.178
+So it does. And that doesn't specifically say that you'll
+
+1905
+01:44:02.178 --> 01:44:05.568
+have the, the remote request approved because of illness.
+
+1906
+01:44:05.568 --> 01:44:09.918
+But, um, we regularly receive remote work plan requests.
+
+1907
+01:44:10.178 --> 01:44:12.318
+it either comes from the employee or it comes from the
+
+1908
+01:44:12.348 --> 01:44:16.158
+supervisor who's already talked to the employee, um, and we
+
+1909
+01:44:16.278 --> 01:44:19.200
+have, uh, some procedures that we've given to our managers
+
+1910
+01:44:19.201 --> 01:44:23.682
+around their, um, flexibility and autonomy for approving.
+
+1911
+01:44:23.682 --> 01:44:24.228
+Very, very short.
+
+1912
+01:44:24.228 --> 01:44:27.148
+term remote work and then the plan when the plan needs to
+
+1913
+01:44:27.148 --> 01:44:30.448
+come into play because it's for a longer term need
+
+1914
+01:44:30.448 --> 01:44:33.868
+And I think that we are pretty flexible around considering
+
+1915
+01:44:33.868 --> 01:44:36.858
+those as long as they're essential duties, can be completed
+
+1916
+01:44:36.858 --> 01:44:37.728
+at home.
+
+1917
+01:44:37.728 --> 01:44:40.008
+Okay, thank you very much for the clarification.
+
+1918
+01:44:40.668 --> 01:44:44.368
+All right, if there's any no questions, and I'll take a
+
+1919
+01:44:44.368 --> 01:44:45.988
+motion to approve this.
+
+1920
+01:44:46.049 --> 01:44:50.349
+I'll make a motion that we approve item J2 1, second.
+
+1921
+01:44:50.439 --> 01:44:54.514
+All righty trustee Vonnie I everyone else. Hi hi, hi
+
+1922
+01:44:54.514 --> 01:44:58.999
+Carrie's unanimously. Um there are no written reports
+
+1923
+01:44:58.999 --> 01:44:59.869
+tonight
+
+1924
+01:44:59.869 --> 01:45:04.099
+Um and then anything on future items?
+
+1925
+01:45:08.169 --> 01:45:12.229
+No, I certainly will add 2 items that will be coming to the
+
+1926
+01:45:12.229 --> 01:45:17.314
+board in the near future. Uh, the first is pertaining to
+
+1927
+01:45:17.314 --> 01:45:22.609
+our continued negotiation with the city of Dublin on, uh,
+
+1928
+01:45:22.609 --> 01:45:26.842
+securing a softball baseball field for Emerald, uh, but at
+
+1929
+01:45:26.843 --> 01:45:30.289
+the and that's progressing fairly nicely. But at the same
+
+1930
+01:45:30.289 --> 01:45:35.065
+time, we are, uh, putting together plans for potentially,
+
+1931
+01:45:35.065 --> 01:45:38.629
+um, upgrading the softball and baseball fields at Dublin
+
+1932
+01:45:38.629 --> 01:45:42.469
+High, which would include lights. Uh, so that if we do not
+
+1933
+01:45:42.469 --> 01:45:45.760
+have the, uh, contract in place, the agreement in place
+
+1934
+01:45:45.761 --> 01:45:49.459
+with the Sea of Dublin, we will be able to stack practices
+
+1935
+01:45:49.459 --> 01:45:53.089
+and games. Uh, so that will be coming either at the second
+
+1936
+01:45:53.089 --> 01:45:56.609
+board meeting in september or the 1st in October as well
+
+1937
+01:45:56.629 --> 01:46:01.334
+as. Uh, Dublin High School is the last, uh, School in the
+
+1938
+01:46:01.335 --> 01:46:04.999
+district that does not have uh, security fencing.
+
+1939
+01:46:04.999 --> 01:46:09.357
+Decorative security fencing around. Uh, we are going out to
+
+1940
+01:46:09.357 --> 01:46:13.479
+bid for that and we'll be bringing back for the boards. Um,
+
+1941
+01:46:13.479 --> 01:46:18.379
+discussion on uh, installing decorative security fencing
+
+1942
+01:46:18.409 --> 01:46:22.297
+around, uh, the entire campus and hopefully that will come
+
+1943
+01:46:22.297 --> 01:46:26.089
+uh, in the next 1 or 2 board meetings. So, I just wanted to
+
+1944
+01:46:26.089 --> 01:46:29.359
+to prep the board and the community on those 2 topics.
+
+1945
+01:46:30.179 --> 01:46:33.399
+Thank, thank you for that. Uh, trustee Blackman.
+
+1946
+01:46:33.399 --> 01:46:36.534
+So it I had a brief question. I don't know if it's a total
+
+1947
+01:46:36.534 --> 01:46:39.639
+presentation, but the use of materials that we fund, I
+
+1948
+01:46:39.639 --> 01:46:43.269
+notice in our doc, uh, presentation earlier with regards to
+
+1949
+01:46:43.269 --> 01:46:46.464
+our budget, we discussed funds that we received for
+
+1950
+01:46:46.464 --> 01:46:49.209
+purchase of materials and supplies. Do we have any
+
+1951
+01:46:49.209 --> 01:46:52.149
+limitations on the use of those materials that we place on
+
+1952
+01:46:52.149 --> 01:46:54.969
+staff? Is there any way to understand? What limitations
+
+1953
+01:46:54.969 --> 01:46:57.627
+might be? Like, if we provide you with a computer, I
+
+1954
+01:46:57.627 --> 01:46:59.769
+understand students aren't allowed to use certain programs.
+
+1955
+01:46:59.769 --> 01:47:02.349
+If we provide you with a textbook, you're only allowed to
+
+1956
+01:47:02.349 --> 01:47:04.761
+look at these 3 chapters are there any? I'm hearing that
+
+1957
+01:47:04.761 --> 01:47:07.449
+there's limitations being put on staff and I just want to
+
+1958
+01:47:07.449 --> 01:47:11.949
+understand, do we? If we have limitations on how 1 uses the
+
+1959
+01:47:11.949 --> 01:47:14.373
+materials we Supply in the classroom, have we ever
+
+1960
+01:47:14.373 --> 01:47:17.169
+presented that? Or do we just have anybody can use any
+
+1961
+01:47:17.169 --> 01:47:19.299
+material any? Which way to
+
+1962
+01:47:19.299 --> 01:47:22.660
+Cover, the curriculum. We've asked the teachers to cover.
+
+1963
+01:47:25.411 --> 01:47:29.051
+So that's the future topic. We can address it right now.
+
+1964
+01:47:29.051 --> 01:47:30.611
+That's why I asked is if you could though
+
+1965
+01:47:32.921 --> 01:47:34.971
+Anything else?
+
+1966
+01:47:35.061 --> 01:47:37.541
+Um, I don't think there's any changes to the governance
+
+1967
+01:47:37.541 --> 01:47:38.641
+calendar.
+
+1968
+01:47:38.641 --> 01:47:42.321
+I saw, um, trustee reports trustee spec.
+
+1969
+01:47:42.321 --> 01:47:46.621
+Um, I just have 1 item. Um, I was able to, um, go to both
+
+1970
+01:47:46.621 --> 01:47:50.071
+Dublin High and emerald during the school day and, um,
+
+1971
+01:47:50.071 --> 01:47:53.631
+I appreciate both Francis Marine, hosting me, um, answering
+
+1972
+01:47:53.631 --> 01:47:56.631
+all my questions. It was great to actually see students at
+
+1973
+01:47:56.631 --> 01:48:00.231
+Emerald. I've visited the school number of times, um, as it
+
+1974
+01:48:00.231 --> 01:48:02.737
+was being built, but, um, had yet to actually see it with
+
+1975
+01:48:02.737 --> 01:48:05.210
+students. So it was great to see, um, some of the
+
+1976
+01:48:05.211 --> 01:48:07.691
+classrooms and some of the great learning happening there
+
+1977
+01:48:07.691 --> 01:48:12.651
+and, um, experience a lunch, um, day there. Um, and of
+
+1978
+01:48:12.651 --> 01:48:16.071
+course, always great to see Dublin High and to see the, um,
+
+1979
+01:48:16.071 --> 01:48:19.744
+the red reduced students and, um, some of the reduced
+
+1980
+01:48:19.744 --> 01:48:23.030
+pressure that that school is now, um, experiencing, that's
+
+1981
+01:48:23.031 --> 01:48:23.691
+all I have.
+
+1982
+01:48:24.121 --> 01:48:27.281
+Should I see black 1? Nothing to report. Thank you, just
+
+1983
+01:48:27.281 --> 01:48:27.821
+equal.
+
+1984
+01:48:28.231 --> 01:48:30.161
+Oh, nothing to report.
+
+1985
+01:48:30.161 --> 01:48:32.491
+I have nothing to report either. All my meetings are coming
+
+1986
+01:48:32.491 --> 01:48:33.571
+up shortly.
+
+1987
+01:48:33.571 --> 01:48:37.401
+Um superintendent, I'm good too.
+
+1988
+01:48:38.091 --> 01:48:40.831
+apparently it's been a quiet last couple weeks, everyone's
+
+1989
+01:48:40.831 --> 01:48:44.431
+just getting settled in, um, then
+
+1990
+01:48:44.431 --> 01:48:48.351
+I think we just have the board meeting evaluation.
+
+1991
+01:48:48.351 --> 01:48:52.221
+Thank you for everyone making it, sorry. We were running a
+
+1992
+01:48:52.221 --> 01:48:54.741
+couple minutes late to the public, but we just, you know
+
+1993
+01:48:54.741 --> 01:48:57.231
+all had to get here from various things.
+
+1994
+01:48:57.231 --> 01:49:00.531
+Um, if not, then I will take a motion to adjourn.
+
+1995
+01:49:00.531 --> 01:49:04.711
+I'll move that we adjourn. I'll second trustee peswani. I
