@@ -26,22 +26,22 @@ MIME_TYPES = {
 
 # Paths configuration
 PATHS = {
-    'INPUT_DIR': './data/raw_documents/',
-    'OUTPUT_DIR': './data/documents/',
+    'INPUT_DIR': './Claude/inbound/',
+    'OUTPUT_DIR': './Claude/outbound/',
     'CLASSIFIED_DIR': {
-        'Text-based PDF': './data/documents/Classified/PDF-Text/',
-        'Text-based non-PDF': './data/documents/Classified/Text-Only/',
-        'Image-based document': './data/documents/Classified/PDF-Images/',
-        'Unknown': './data/documents/Classified/PDF-Unknown/',
+        'Text-based PDF': './Claude/outbound/Classified/PDF-Text/',
+        'Text-based non-PDF': './Claude/outbound/Classified/Text-Only/',
+        'Image-based document': './Claude/outbound/Classified/PDF-Images/',
+        'Unknown': './Claude/outbound/Classified/PDF-Unknown/',
     },
-    'IN_PROCESSING_DIR': './data/documents/In_Processing/',
+    'IN_PROCESSING_DIR': './Claude/outbound/In_Processing/',
 }
 
 # Logging configuration
 LOGGING = {
     'LEVEL': 'INFO',  # DEBUG, INFO, WARNING, ERROR, CRITICAL
     'FORMAT': '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    'FILE': './logs/document_classifier.log',
+    'FILE': './Claude/logs/document_classifier.log',
 }
 
 # Classification rules

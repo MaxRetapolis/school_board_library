@@ -10,7 +10,7 @@ project_root = Path(__file__).resolve().parent.parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 # Import the DocumentClassifier
-from src.document_classifier.main.document_classifier import DocumentClassifier
+from Claude.document_classifier.main.document_classifier import DocumentClassifier
 
 # Configure logging
 logging.basicConfig(
@@ -26,8 +26,8 @@ def main():
     classifier = DocumentClassifier()
     logger.info("DocumentClassifier initialized")
     
-    # Get sample files from raw_documents directory
-    sample_dir = os.path.join(project_root, 'data', 'raw_documents')
+    # Get sample files from Claude/inbound directory
+    sample_dir = os.path.join(project_root, 'Claude', 'inbound')
     if not os.path.exists(sample_dir):
         logger.error(f"Sample directory not found: {sample_dir}")
         return
