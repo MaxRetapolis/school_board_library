@@ -12,6 +12,13 @@ from datetime import date
 
 # Add parent directory to import path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Import configuration
+from src.config import (
+    DOCUMENT_TYPES,
+    DOCUMENT_FORMATS
+)
+
 from src.usage_db_generator import (
     generate_meeting_dates,
     generate_document_metadata,
@@ -41,8 +48,9 @@ class TestUsageDBGenerator(unittest.TestCase):
     def test_generate_document_metadata(self):
         """Test the generate_document_metadata function"""
         meeting_dates = [date(2023, 1, 1), date(2023, 1, 15)]
-        doc_types = ["Agenda", "Meeting Minutes", "Report"]
-        formats = ["PDF", "Audio"]
+        # Use subset of configuration document types and formats
+        doc_types = DOCUMENT_TYPES[:3]  # First 3 types from config
+        formats = DOCUMENT_FORMATS[:2]  # First 2 formats from config
         num_non_meeting = 5
         
         metadata = generate_document_metadata(meeting_dates, doc_types, formats, num_non_meeting)
@@ -88,9 +96,11 @@ class TestUsageDBGenerator(unittest.TestCase):
         # Should have 1 document * 3 days = 3 entries
         self.assertEqual(3, len(usage_data))
         
-        # Check structure of usage data
-        for doc_name, usage_date, bot_hits, people_hits, total_hits in usage_data:
+        # Check structure of usage data with document_type and document_format
+        for doc_name, doc_type, doc_format, usage_date, bot_hits, people_hits, total_hits in usage_data:
             self.assertEqual("Agenda_2023-01-01", doc_name)
+            self.assertEqual("Agenda", doc_type)
+            self.assertEqual("PDF", doc_format)
             self.assertTrue(isinstance(usage_date, date))
             self.assertTrue(usage_date >= start_date and usage_date <= end_date)
             self.assertTrue(isinstance(bot_hits, int))
@@ -99,10 +109,10 @@ class TestUsageDBGenerator(unittest.TestCase):
     
     def test_store_in_sqlite(self):
         """Test the store_in_sqlite function"""
-        # Test data
+        # Test data with document_type and document_format
         usage_data = [
-            ("Doc1", date(2023, 1, 1), 10, 20, 30),
-            ("Doc2", date(2023, 1, 2), 5, 15, 20)
+            ("Doc1", "Report", "PDF", date(2023, 1, 1), 10, 20, 30),
+            ("Doc2", "Agenda", "Audio", date(2023, 1, 2), 5, 15, 20)
         ]
         
         # Use in-memory database for testing
@@ -116,6 +126,8 @@ class TestUsageDBGenerator(unittest.TestCase):
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS usage (
                     document_name TEXT,
+                    document_type TEXT,
+                    document_format TEXT,
                     date TEXT,
                     bot_hits INTEGER,
                     people_hits INTEGER,
@@ -123,12 +135,12 @@ class TestUsageDBGenerator(unittest.TestCase):
                 )
             """)
             formatted_data = [
-                (name, date.strftime('%Y-%m-%d'), b_hits, p_hits, t_hits)
-                for name, date, b_hits, p_hits, t_hits in data
+                (name, doc_type, doc_format, date.strftime('%Y-%m-%d'), b_hits, p_hits, t_hits)
+                for name, doc_type, doc_format, date, b_hits, p_hits, t_hits in data
             ]
             cursor.executemany("""
-                INSERT INTO usage (document_name, date, bot_hits, people_hits, total_hits)
-                VALUES (?, ?, ?, ?, ?)
+                INSERT INTO usage (document_name, document_type, document_format, date, bot_hits, people_hits, total_hits)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
             """, formatted_data)
             connection.commit()
         
@@ -141,8 +153,8 @@ class TestUsageDBGenerator(unittest.TestCase):
         rows = cursor.fetchall()
         
         self.assertEqual(2, len(rows))
-        self.assertEqual(("Doc1", "2023-01-01", 10, 20, 30), rows[0])
-        self.assertEqual(("Doc2", "2023-01-02", 5, 15, 20), rows[1])
+        self.assertEqual(("Doc1", "Report", "PDF", "2023-01-01", 10, 20, 30), rows[0])
+        self.assertEqual(("Doc2", "Agenda", "Audio", "2023-01-02", 5, 15, 20), rows[1])
         
         # Close the connection
         conn.close()

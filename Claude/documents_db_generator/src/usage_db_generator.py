@@ -13,6 +13,16 @@ reusable functional blocks.
 from datetime import date, timedelta
 import random
 import sqlite3
+import os
+import sys
+
+# Add current directory to path to allow importing config module
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src.config import (
+    DATABASE_FILE, MEETING_START_DATE, MEETING_END_DATE, MEETING_FREQUENCY_DAYS,
+    USAGE_START_DATE, USAGE_END_DATE, DOCUMENT_TYPES, DOCUMENT_FORMATS,
+    NON_MEETING_DOCUMENTS, NUM_BOTS, NUM_PEOPLE, CHUNK_SIZE
+)
 
 def generate_meeting_dates(start_date, end_date, frequency_days):
     """
@@ -107,7 +117,7 @@ def generate_usage_data(document_metadata, start_date, end_date, bot_names, peop
         people_names: A list of people name strings
         
     Returns:
-        A list of tuples: (document_name, date, bot_hits, people_hits, total_hits)
+        A list of tuples: (document_name, document_type, document_format, date, bot_hits, people_hits, total_hits)
     """
     usage_data = []
     date_list = []
@@ -116,7 +126,7 @@ def generate_usage_data(document_metadata, start_date, end_date, bot_names, peop
         date_list.append(current_date)
         current_date += timedelta(days=1)
     
-    for _, _, doc_name, _ in document_metadata:
+    for doc_type, doc_format, doc_name, _ in document_metadata:
         for date in date_list:
             num_bots = random.randint(0, min(5, len(bot_names)))
             num_people = random.randint(0, min(10, len(people_names)))
@@ -125,52 +135,64 @@ def generate_usage_data(document_metadata, start_date, end_date, bot_names, peop
             bot_hits = sum(random.randint(1, 50) for _ in bots)
             people_hits = sum(random.randint(1, 50) for _ in people)
             total_hits = bot_hits + people_hits
-            usage_data.append((doc_name, date, bot_hits, people_hits, total_hits))
+            usage_data.append((doc_name, doc_type, doc_format, date, bot_hits, people_hits, total_hits))
     
     return usage_data
 
-def store_in_sqlite(usage_data, db_name="usage.db"):
+def store_in_sqlite(usage_data, db_path=DATABASE_FILE):
     """
     Store usage data in an SQLite database.
     
     Args:
-        usage_data: A list of (document_name, date, bot_hits, people_hits, total_hits) tuples
-        db_name: A string for the database file name
+        usage_data: A list of (document_name, document_type, document_format, date, bot_hits, people_hits, total_hits) tuples
+        db_path: The full path to the database file
         
     Returns:
         None (creates an SQLite database file)
     """
-    conn = sqlite3.connect(db_name)
-    cursor = conn.cursor()
+    try:
+        # Ensure database directory exists
+        os.makedirs(os.path.dirname(db_path), exist_ok=True)
+        
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS usage (
+                document_name TEXT,
+                document_type TEXT,
+                document_format TEXT,
+                date TEXT,
+                bot_hits INTEGER,
+                people_hits INTEGER,
+                total_hits INTEGER
+            )
+        """)
+        
+        # Convert dates to string format for SQLite
+        formatted_data = [
+            (name, doc_type, doc_format, date.strftime('%Y-%m-%d'), b_hits, p_hits, t_hits)
+            for name, doc_type, doc_format, date, b_hits, p_hits, t_hits in usage_data
+        ]
+        
+        # Batch inserts for better performance
+        for i in range(0, len(formatted_data), CHUNK_SIZE):
+            chunk = formatted_data[i:i + CHUNK_SIZE]
+            cursor.executemany("""
+                INSERT INTO usage (document_name, document_type, document_format, date, bot_hits, people_hits, total_hits)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            """, chunk)
+        
+        conn.commit()
+        print(f"Database '{db_path}' created successfully.")
+    except sqlite3.Error as e:
+        print(f"Database error: {e}")
+    except Exception as e:
+        print(f"Error: {e}")
+    finally:
+        if conn:
+            conn.close()
     
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS usage (
-            document_name TEXT,
-            date TEXT,
-            bot_hits INTEGER,
-            people_hits INTEGER,
-            total_hits INTEGER
-        )
-    """)
-    
-    # Convert dates to string format for SQLite
-    formatted_data = [
-        (name, date.strftime('%Y-%m-%d'), b_hits, p_hits, t_hits)
-        for name, date, b_hits, p_hits, t_hits in usage_data
-    ]
-    
-    # Batch inserts for better performance
-    chunk_size = 1000
-    for i in range(0, len(formatted_data), chunk_size):
-        chunk = formatted_data[i:i + chunk_size]
-        cursor.executemany("""
-            INSERT INTO usage (document_name, date, bot_hits, people_hits, total_hits)
-            VALUES (?, ?, ?, ?, ?)
-        """, chunk)
-    
-    conn.commit()
-    conn.close()
-    print(f"Database '{db_name}' created successfully.")
 
 def main():
     """
@@ -180,29 +202,41 @@ def main():
     random.seed(42)
     
     # Block 1: Generate meeting dates
-    start_date = date(2022, 10, 1)
-    end_date = date(2023, 10, 1)
-    meeting_dates = generate_meeting_dates(start_date, end_date, 14)
+    meeting_dates = generate_meeting_dates(
+        MEETING_START_DATE, 
+        MEETING_END_DATE, 
+        MEETING_FREQUENCY_DAYS
+    )
     print(f"Generated {len(meeting_dates)} meeting dates")
     
     # Block 2: Generate document metadata
-    doc_types = ["Meeting Minutes", "Agenda", "Report", "Presentation", "Budget", "Newsletter"]
-    formats = ["PDF", "Audio", "Video", "Text"]
-    metadata = generate_document_metadata(meeting_dates, doc_types, formats, num_non_meeting=20)
+    metadata = generate_document_metadata(
+        meeting_dates, 
+        DOCUMENT_TYPES, 
+        DOCUMENT_FORMATS, 
+        num_non_meeting=NON_MEETING_DOCUMENTS
+    )
     print(f"Generated metadata for {len(metadata)} documents")
     
     # Block 3: Generate bots and people
-    bot_names, people_names = generate_bots_and_people(num_bots=10, num_people=100)
+    bot_names, people_names = generate_bots_and_people(
+        num_bots=NUM_BOTS, 
+        num_people=NUM_PEOPLE
+    )
     print(f"Generated {len(bot_names)} bots and {len(people_names)} people")
     
-    # Block 4: Generate usage data (3-month period)
-    usage_start = date(2023, 7, 1)
-    usage_end = date(2023, 10, 1)
-    usage_data = generate_usage_data(metadata, usage_start, usage_end, bot_names, people_names)
+    # Block 4: Generate usage data for the configured period
+    usage_data = generate_usage_data(
+        metadata, 
+        USAGE_START_DATE, 
+        USAGE_END_DATE, 
+        bot_names, 
+        people_names
+    )
     print(f"Generated {len(usage_data)} usage data entries")
     
     # Block 5: Store in SQLite
-    store_in_sqlite(usage_data, "usage.db")
+    store_in_sqlite(usage_data, DATABASE_FILE)
 
 if __name__ == "__main__":
     main()
