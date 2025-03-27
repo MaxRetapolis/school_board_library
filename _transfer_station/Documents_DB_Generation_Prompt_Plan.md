@@ -122,7 +122,7 @@ def generate_document_metadata(meeting_dates, document_types, formats, num_non_m
     
     return metadata
 ```
-
+   
 **Notes**:
 - Use `strftime('%Y-%m-%d')` for consistent date formatting in names.
 
