@@ -1,20 +1,23 @@
 import os
 import logging
 
-# For testing, you might want to use a test directory
-ROOT_FOLDER = "C:/temp/document_classifier_test"  # Modify this path as needed
-INDEX_FILE = os.path.join(ROOT_FOLDER, "documents_index.json")
-LOGS_FOLDER = os.path.join(os.path.dirname(ROOT_FOLDER), "logs")
+# Use real project paths
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ROOT_FOLDER = os.path.join(BASE_DIR, "data")
+INDEX_FILE = os.path.join(ROOT_FOLDER, "documents/documents_index.json")
+LOGS_FOLDER = os.path.join(ROOT_FOLDER, "logs")
+if not os.path.exists(LOGS_FOLDER):
+    os.makedirs(LOGS_FOLDER)
 LOG_FILE = os.path.join(LOGS_FOLDER, "document_pipeline.log")
-CLASSIFIED_FOLDER = os.path.join(ROOT_FOLDER, "Classified")
-COMBINATIONS_FILE = os.path.join(ROOT_FOLDER, "classification_combinations.json")
-FOLDER_LIST_FILE = os.path.join(ROOT_FOLDER, "folder_list.json")
+CLASSIFIED_FOLDER = os.path.join(ROOT_FOLDER, "documents/Classified")
+COMBINATIONS_FILE = os.path.join(ROOT_FOLDER, "documents/classification_combinations.json")
+FOLDER_LIST_FILE = os.path.join(ROOT_FOLDER, "documents/folder_list.json")
 
 DEFAULT_FOLDERS = {
-    "new": "New_Documents",
-    "processing": "In_Processing",
-    "duplicates": "Duplicates",
-    "classified": "Classified"
+    "new": "documents/In_Processing",
+    "processing": "documents/In_Processing",
+    "duplicates": "documents/Duplicates",
+    "classified": "documents/Classified"
 }
 
 LOGGING_LEVEL = logging.INFO

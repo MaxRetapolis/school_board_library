@@ -7,6 +7,23 @@ My belief is that 60 % of copilot use cases can be solved with "shallow" knowled
 I am rewriting the pipeline based on the learnings from three experiments ran in Late Nov/ early Dec (see the experiments folder).
 This readme file will describe in detail the components as I build them.
 
+## Getting Started
+
+### Setup
+1. Clone the repository
+2. Install the dependencies: `python -m venv venv && source venv/bin/activate && pip install -r requirements.txt`
+3. Run the document classifier: `python process_documents.py`
+
+### Project Structure
+- `src/` - Core source code
+  - `2 - Document Classifier/` - Document classification system
+- `data/` - Data storage
+  - `raw_documents/` - Original source documents
+  - `documents/` - Processed and classified documents
+    - `Classified/` - Documents organized by classification type
+    - `In_Processing/` - Documents being processed
+  - `logs/` - System logs
+
 ## Design Principles ##
 1. Modularity, linearity, databus/ document storage
 2. Observability - every step should create events, metrics, log entries
